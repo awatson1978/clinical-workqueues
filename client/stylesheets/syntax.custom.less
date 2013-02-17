@@ -1,0 +1,96 @@
+
+
+
+.padded{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.padded-horizontal{
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.without-padding .nopadding{
+  padding: 0px;
+  margin: 0px;
+}
+.dotted{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: lightgray;
+}
+.panel_container{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+}
+.hidden{
+    visibility: hidden;
+    display: none;
+}
+.doesnt-overlap-header{
+  padding-top: 40px;
+}
+.spacer{
+  height: 20px;
+}
+.centered{
+  text-align: center;
+}
+.bottom-anchored{
+  position: fixed;
+  bottom: 50px;
+}
+.bottom-anchor{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+.bold{
+  font-weight: bold;
+}
+.gray-border{
+  border: 1px solid lightgray;
+}
+@corner-radius: .4em;
+.with-rounded-corners {
+  -moz-border-radius: 				@corner-radius /*{global-radii-blocks}*/;
+  -webkit-border-radius: 				@corner-radius /*{global-radii-blocks}*/;
+  border-radius: 						@corner-radius /*{global-radii-blocks}*/;
+}
+
+.reference{
+  position: relative;
+}
+.close{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  font-size: 1.8em;
+  top: -2px;
+}
+.close:hover{
+  color: red;
+  cursor: pointer;
+}
+
+.left-anchored{
+  position: fixed;
+  left: 0px;
+}
+.right-anchored{
+  position: fixed;
+  right: 0px;
+}
+.slide-tab{
+  width: 200px;
+  top: 60px;
+}
+.sidebar{
+  width: 274px;
+  opacity: 0.9;
+}

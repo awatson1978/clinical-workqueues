@@ -1,0 +1,103 @@
+<template name="guest_todos">
+
+    <!-- Call to Action Panel -->
+    <div class="row">
+        <div class="twelve columns">
+
+            <div>
+                <h4>Request a Physician Consult...</h4>
+
+                <div class="row">
+                    <div id="questionBox" class="nine columns">
+                        <div id="guest-todo-box">
+                            <textarea rows="4" type="text" id="guest-todo" placeholder="Be sure to include symptoms, history, and your contact information...." />
+                        </div>
+                        <p>Your question will be routed to our physician question queue, and will be answered in the order it was received. </p>
+                    </div>
+                    <div class="three columns">
+                        <img src="http://placehold.it/240x240" />
+                    </div>
+                </div>
+                <div class="row" id="contactUsButtonRow">
+                    <div class="two columns">
+                        <a href="#" class="radius button left small">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</template>
+
+
+
+<template name="guest_page">
+    <!-- Nav and Banner -->
+
+    <div class="row" style="margin-top: 40px;">
+        <div class="twelve columns">
+
+            <!-- Main Banner Image - place in a paragraph to enforce the modular scale spacing -->
+            <p>
+                <!--<img src="http://placehold.it/1000x400&text=[banner img]" />-->
+                {{> guest_todos }}
+            </p>
+        </div>
+    </div>
+
+    <!-- End Nav and Banner -->
+
+
+    <!-- Main Content Section -->
+
+    <!--<div class="row">-->
+
+        <!--<div class="eight columns">-->
+            <!--<h4>This is a content section.</h4>-->
+            <!--<p>Veggies sunt bona vobis, proinde vos postulo esse magis lettuce brussels sprout parsnip black-eyed pea tomatillo.</p>-->
+            <!--<p>Carrot burdock green bean grape carrot ricebean parsley fennel pumpkin swiss chard radish wakame epazote lotus root. Chicory chicory sea lettuce kohlrabi epazote catsear caulie. Prairie turnip scallion salad water spinach chickweed zucchini onion asparagus peanut celery bush tomato coriander chickpea carrot.</p>-->
+            <!--<p><a href="#" class="secondary small button">View More &rarr;</a></p>-->
+        <!--</div>-->
+
+        <!--<div class="four columns">-->
+
+            <!--&lt;!&ndash; Gallery sidebar with a block grid. Note: block grid items should be the same size for optimal results &ndash;&gt;-->
+
+            <!--<ul class="block-grid three-up">-->
+                <!--<li><a href="#"><img src="http://placehold.it/120x120" /></a></li>-->
+                <!--<li><a href="#"><img src="http://placehold.it/120x120" /></a></li>-->
+                <!--<li><a href="#"><img src="http://placehold.it/120x120" /></a></li>-->
+                <!--<li><a href="#"><img src="http://placehold.it/120x120" /></a></li>-->
+                <!--<li><a href="#"><img src="http://placehold.it/120x120" /></a></li>-->
+                <!--<li><a href="#"><img src="http://placehold.it/120x120" /></a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+
+    <!-- Footer -->
+
+    <footer class="row" style="position: fixed; align: center; bottom: 0px; width: 100%;">
+        <div class="twelve columns">
+            <hr />
+            <div class="row">
+                <div class="six columns">
+                    <p>&copy; Copyright no one at all. Go to town.</p>
+                </div>
+                <div class="six columns">
+                    <ul class="link-list right">
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                        <li><a href="#">Link 6</a></li>
+                        <li><a href="#">Link 7</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</template>

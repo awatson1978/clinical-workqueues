@@ -1,0 +1,27 @@
+<template name="lists">
+    <h3>Queues</h3>
+    <div id="lists">
+        {{#each lists}}
+            <div class="list {{selected}}">
+                <div class="note">
+                {{#if editing}}
+                <div class="edit">
+                    <input class="list-name-input" id="list-name-input" type="text" value="{{name}}" />
+                </div>
+                {{else}}
+                <div class="display">
+                    <a class="list-name {{name_class}}" href="/{{_id}}">
+                        {{name}}
+                    </a>
+                    <p class="list-count">{{count}}</p>
+
+                </div>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    <div id="createList" style="display:none;">
+        <input type="text" id="new-list" placeholder="New list" />
+    </div>
+</template>

@@ -1,0 +1,38 @@
+.content{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+}
+#main-pane {
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 0px;
+    padding-left: 195px;
+    overflow: auto;
+    width: 100%;
+}
+
+#side-pane {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    right: auto;
+    overflow: auto;
+    background: #eee;
+    border-right: 1px solid #999;
+    background: #ddd;
+}
+
+#top-tag-filter, #bottom-pane {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,52 @@
+
+<template name="todos">
+    {{#if any_list_selected}}
+    <div id="items-view">
+        <ul id="item-list">
+            {{#each todos}}
+            {{> todo_item}}
+            {{/each}}
+        </ul>
+    </div>
+    <div id="new-todo-box">
+        <input type="text" id="new-todo" placeholder="New item" />
+    </div>
+    {{/if}}
+</template>
+
+<template name="todo_item">
+    <li class="todo {{done_class}}">
+        <ul class="inline-list">
+            {{#if editing}}
+            <li class="edit">
+                <input id="todo-input" type="text" value="{{text}}" />
+            </li>
+            {{else}}
+            <li class="destroy"></li>
+            <li class="display">
+                <input class="check" name="markdone" type="checkbox" {{{done_checkbox}}} />
+            </li>
+            <li class="display">
+                <span class="todo-text">{{text}}</span>
+            </li>
+            {{/if}}
+            <li class="item-tags">
+                {{#each tag_objs}}
+                <div class="tag removable_tag">
+                    <div class="name">{{tag}}</div>
+                    <div class="remove"></div>
+                </div>
+                {{/each}}
+                {{#if adding_tag}}
+                <div class="tag edittag">
+                    <input type="text" id="edittag-input" value="" />
+                </div>
+                {{else}}
+                <div class="tag addtag">
+                    +tag
+                </div>
+                {{/if}}
+            </li>
+        </ul>
+    </li>
+</template>

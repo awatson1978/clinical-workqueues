@@ -1,0 +1,138 @@
+#guest-todo-box {
+    margin: 0px;
+    font-size: 160%;
+    position: relative;
+    height: 195px;
+}
+textarea#guest-todo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#new-todo-box {
+    position: fixed;
+    bottom: 40px;
+    font-size: 160%;
+    left: 0px;
+    height: 40px;
+    padding-right: 45px;
+    padding-left: 213px;
+    width: 100%;
+}
+
+#new-todo {
+    width: 100%;
+}
+
+#items-view {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#item-list .todo {
+    display: block;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+}
+
+#item-list .todo .destroy {
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    height: 20px;
+    width: 20px;
+}
+
+#item-list .todo .display, #item-list .todo .edit {
+    margin-left: 30px;
+    height: 100%;
+    width: auto;
+    float: left;
+    padding-top: 18px;
+    line-height: 1;
+}
+
+#todo-input {
+    width: 300px;
+    position: relative;
+    top: -3px;
+}
+
+#item-list .done .todo-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+#item-list .todo:hover .destroy {
+    background: url('/destroy.png') no-repeat 0 0;
+}
+
+#item-list .todo .destroy:hover {
+    background-position: 0 -20px;
+}
+
+#item-list .todo .item-tags {
+    overflow: auto;
+    float: right;
+    margin-right: 40px;
+    margin-top: -7px;
+}
+
+#item-list .todo .item-tags .tag {
+    margin-top: 15px;
+}
+
+#item-list .todo .item-tags .removable_tag {
+    padding-right: 22px;
+}
+
+#item-list .todo .item-tags .tag .remove {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    bottom: 0;
+    width: 16px;
+    background: url("/close_16.png") no-repeat 0 center;
+}
+
+#item-list .todo .item-tags .tag .remove:hover {
+    background-position: -16px center;
+}
+
+#item-list .todo .item-tags div.addtag {
+    background: none;
+    color: #333;
+    border: 1px dashed #999;
+}
+
+#item-list .todo .check {
+    float: left;
+    width: 25px;
+    margin-top: 0px;
+}
+
+#item-list .todo .todo-text {
+    float: left;
+    margin-left: -10px;
+    font-size: 100%;
+}
+
+#item-list .todo .edit input {
+    margin-left: 35px;
+    maring-top: 5px;
+}
+
+#edittag-input {
+    width: 80px;
+    height: 22px !important;
+    padding: 0px;
+    margin: 0px;
+}

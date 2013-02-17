@@ -1,0 +1,23 @@
+
+@media only screen and (min-width: 800px) {
+    .footer-nav-bar{
+        position: fixed;
+        bottom: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .footer-nav-bar{
+        position: fixed;
+        bottom: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+    }
+    .header-nav-bar{
+        background: #4D4D4D !important;
+        z-index: 1000;
+    }
+}

@@ -1,0 +1,63 @@
+<head>
+  <title>Clinical Workqueues</title>
+</head>
+
+
+<body>
+    <div data-role="header" data-theme="none" class="header-nav-bar">
+        <ul class="nav-bar header-nav-bar">
+            <li class="pentasyllabicLogoListItem">
+                <img class="pentasyllabicLogo" src="/images/pentasyllabic.logo.square.transparent.png">
+            </li>
+            <li><a href="#">clinical-workqueues.herokuapp.com</a></li>
+            <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
+        </ul>
+    </div>
+    <div class="content" data-role="content">
+        {{> app_container }}
+    </div><!-- /header -->
+</body>
+
+<template name="app_container">
+    {{#if loggedIn}}
+    {{> home_page }}
+    {{else }}
+    {{> guest_page }}
+    {{/if }}
+    {{> footerBarTemplate }}
+</template>
+
+<template name="home_page">
+    <div id="top-tag-filter">
+        {{> tag_filter}}
+    </div>
+    <div id="main-pane">
+        {{> todos}}
+    </div>
+
+    <div id="side-pane">
+        {{> lists}}
+    </div>
+</template>
+
+
+<template name="tag_filter">
+  <div id="tag-filter" class="tag-list">
+    <!--<div class="label">Show:</div>-->
+    {{#each tags}}
+      <div class="tag {{selected}}">
+        {{tag_text}} <span class="count">({{count}})</span>
+      </div>
+    {{/each}}
+  </div>
+</template>
+
+<template name="footerBarTemplate">
+    <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
+        <ul class="nav-bar footer-nav-bar ">
+            <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
+            <!--<li><a href="#" onclick='showPage("#snomedPage");'><span class="pictographs">4  </span>Anatomy Browser</a></li>-->
+        </ul>
+    </div>
+</template>
+
