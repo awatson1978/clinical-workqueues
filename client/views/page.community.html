@@ -1,0 +1,100 @@
+<template name="communityPageTemplate">
+    <div class="page" id="communityPage">
+        <div class="doesnt-overlap-header">
+            <div class="spacer row"></div>
+            <div class="row">
+                <div class="six columns" id="community-members-list">
+                    <input id="filterInput" type="text" class="search" />
+                    <ul id="item-list" class="list">
+                        {{#each communityUsers}}
+                        {{> userItemTemplate}}
+                        {{/each}}
+                    </ul>
+                    <!--<div class="hide-for-medium hide-for-small sidebar">-->
+                        <!--<div id="tag-filter" class="tag-list">-->
+                            <!--<ul class="tag-list sort-by">-->
+                                <!--<li class="sort tag" data-sort="user-email">Sort - Email</li>-->
+                                <!--<li class="sort tag" data-sort="user-posts">Sort - Health Entries</li>-->
+                                <!--<li class="sort tag" data-sort="user-rank">Sort - Health Rank</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+                <div class="six columns hide-for-small">
+                    <div class="row panel">
+                        <h6>{{user_count}} Registered Users</h6>
+                    </div>
+                    <div class="spacer row"></div>
+                    <div class="row panel">
+                        <h6>{{collaborators_count }} Health Collaborators</h6>
+                        <ul class="collaborators list">
+                            {{#each collaborators}}
+                            {{> collaboratorItem}}
+                            {{/each}}
+                        </ul>
+                    </div>
+
+                    {{#if showQuickViewPanel}}
+                        {{> quickViewPanelTemplate}}
+                    {{/if}}
+
+                    <div class="spacer row"></div>
+                    <div class="hidden row">
+                        <img class="dotted infograph with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<template name="quickViewPanelTemplate">
+    <div class="spacer row"></div>
+    <div class="row">
+        <div id="quicKViewPanel" class="reference panel">
+            <div class="card-northwest green card-meta-data">{{ user_id }}</div>
+
+            <div class="spacer row"></div>
+            <div class="avatar">
+                <img class="avatar with-rounded-corners gray-border" src="{{ user_avatar }}" />
+            </div>
+            <div class="spacer row"></div>
+            <div class="bold">{{ user_name }}</div>
+            <div>{{ user_email }}</div>
+
+            <div class="spacer row"></div>
+            <div class="small clear-carewatch button">watch this person</div>
+            <div class="small clear-carewatch button">share diary with this person</div>
+
+            {{#if isAdmin }}
+            <div class="spacer row"></div>
+            <div class="small delete-user button">delete user</div>
+            <div class="small clear-collaborators button">clear collaborators</div>
+            <div class="small clear-carewatch button">clear carewatch</div>
+            {{/if}}
+
+        </div>
+    </div>
+</template>
+<template name="userItemTemplate">
+    <li class="rounded-corners user-card">
+        <div class="row without-padding">
+
+            <div class="hide-for-small two columns">
+                <img class="gray-border" src="{{ userImage }}" />
+            </div>
+            <div class="ten columns without-padding">
+                <div class="card-northwest green card-meta-data without-padding">{{ _id }}</div>
+                <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
+                <div class="user-posts">Posts: {{userHealthEntries}}</div>
+                <div class="user-rank">HealthRank: {{userHealthRank}}</div>
+            </div>
+        </div>
+    </li>
+</template>
+
+<template name="collaboratorItem">
+    <li>
+        <span class="collaborator">{{name}}</span>
+        <span class="destroy"></span>
+    </li>
+</template>

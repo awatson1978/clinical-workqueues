@@ -1,0 +1,100 @@
+<template name="profilePageTemplate">
+    <div class="page" id="profilePage">
+
+            <div class="doesnt-overlap-header row"></div>
+            <div class="spacer row"></div>
+
+            <div class="row">
+                <div class="two columns">
+                    <img class="drop-zone with-rounded-corners gray-border" id="drop_zone" src="{{user_image}}" />
+                </div>
+                <div class="ten columns">
+                    <div class="panel row">
+                        <span class="card-northwest green card-meta-data">{{user_id}}</span>
+                        <span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>
+
+                            <ul id="profileItems" class="profile-items card-data dictionary">
+                                <li>
+                                    <span id="profile-display-name-label" class="dictionary-key hidden-top-row">Name</span>
+                                    {{#if editing_name}}
+                                    <div id="userNameInput" class="edit dictionary-value-editing hidden-top-row">
+                                        <input id="profile-input-name" type="text" placeholder="Jane Doe" value="{{user_name}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing hidden-top-row">
+                                        <span id="profile-display-name" class="dictionary-value hidden-top-row">{{user_name}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
+
+                                <li >
+                                    <span id="profile-display-birthdate-label" class="dictionary-key">Birthdate</span>
+                                    {{#if editing_birthdate}}
+                                    <div id="userDateOfBirthInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-birth-date" type="text" placeholder="1969/01/27" value="{{user_birthdate}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display dictionary-value-editing">
+                                        <span id="profile-display-birth-date" class="dictionary-value">{{user_birthdate}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
+
+                                <li>
+                                    <span id="profile-display-avatar-label" class="dictionary-key">Avatar</span>
+                                    {{#if editing_avatar}}
+                                    <div id="userAvatarInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-avatar" type="text" placeholder="28371d8c-42be-4a67-83aa-27a863fe9060.png" value="{{user_avatar}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userAvatarDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                        <span id="profile-display-avatar" class="dictionary-value">{{user_avatar}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
+
+                                <li>
+                                    <span id="profile-display-collaborators-label" class="dictionary-key">Collaborators</span>
+                                    <div id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display dictionary-value-multiline">
+                                        <div>
+                                            <ul class="collaborators list">
+                                                {{#each user_collaborators}}
+                                                {{> collaboratorItem}}
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <span id="profile-display-carewatch-label" class="dictionary-key hidden-bottom-row">Carewatch</span>
+                                    <div id="userCarewatchDisplay" class="userCarewatchDisplay display dictionary-value-multiline">
+                                        <div>
+                                            <ul class="carewatch list">
+                                                {{#each user_carewatch}}
+                                                {{> carewatchItem}}
+                                                {{/each}}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+                    </div>
+                    <div class="spacer row"></div>
+                    <div id="json-content" class="row panel notepad">
+                        {{ user_json }}
+                    </div>
+                </div>
+            </div>
+    </div>
+</template>
+
+<template name="carewatchItem">
+    <li>
+        <span class="collaborator">{{ name }}</span>
+        <span class="destroy"></span>
+    </li>
+</template>
