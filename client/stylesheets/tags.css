@@ -1,0 +1,75 @@
+
+.tag {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    font-size: 80%;
+    /*font-weight: bold;*/
+    background: #999;
+    color: #fff;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+
+    position: relative;
+}
+
+#tag-filter .label {
+    float: left;
+    margin-top: 9px;
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+#tag-filter .tag {
+    margin-top: 10px;
+    border: 1px solid #777;
+}
+
+#tag-filter .selected {
+    /* background: #69d; */
+    background: rgb(194, 209, 219);
+    color: black;
+}
+
+#tag-filter .count {
+    font-weight: normal;
+    padding-left: 2px;
+}
+
+.sidebar-tab{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 3px;
+    padding: 10px;
+    font-size: 80%;
+    /*font-weight: bold;*/
+    background: #666666;
+    color: #fff;
+
+    border: 1px solid #666666;
+
+    -webkit-border-top-left-radius: 2px;
+    -moz-border-radius-topleft: 2px;
+    border-top-left-radius: 2px;
+
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-left-radius: 10px;
+
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    -moz-transition: opacity 0.3s linear;
+    -webkit-transition: opacity 0.3s linear;
+    -o-transition: opacity 0.3s linear;
+
+    position: relative;
+    width: 110%;
+}

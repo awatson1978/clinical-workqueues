@@ -28,29 +28,14 @@
 </template>
 
 <template name="home_page">
-    <div id="top-tag-filter">
-        {{> tag_filter}}
-    </div>
     <div id="main-pane">
         {{> todos}}
     </div>
+    {{> sidebarTemplate }}
 
-    <div id="side-pane">
-        {{> lists}}
-    </div>
 </template>
 
 
-<template name="tag_filter">
-  <div id="tag-filter" class="tag-list">
-    <!--<div class="label">Show:</div>-->
-    {{#each tags}}
-      <div class="tag {{selected}}">
-        {{tag_text}} <span class="count">({{count}})</span>
-      </div>
-    {{/each}}
-  </div>
-</template>
 
 <template name="footerBarTemplate">
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">

@@ -1,9 +1,16 @@
+<template name="sidebarTemplate">
+    <div id="side-pane">
+        {{> lists}}
+        <hr style="border: 1px solid lightgray;">
+        {{> tag_filter}}
+    </div>
+</template>
+
 <template name="lists">
-    <h3>Queues</h3>
     <div id="lists">
         {{#each lists}}
             <div class="list {{selected}}">
-                <div class="note">
+                <div class="sidebar-tab note">
                 {{#if editing}}
                 <div class="edit">
                     <input class="list-name-input" id="list-name-input" type="text" value="{{name}}" />
@@ -13,8 +20,7 @@
                     <a class="list-name {{name_class}}" href="/{{_id}}">
                         {{name}}
                     </a>
-                    <p class="list-count">{{count}}</p>
-
+                    <!--<p class="list-count">{{count}}</p>-->
                 </div>
                 {{/if}}
             </div>
@@ -25,3 +31,15 @@
         <input type="text" id="new-list" placeholder="New list" />
     </div>
 </template>
+
+<template name="tag_filter">
+    <div id="tag-filter" class="tag-list">
+        <!--<div class="label">Show:</div>-->
+        {{#each tags}}
+        <div class="sidebar-tab {{selected}}">
+            {{tag_text}} <span class="count">({{count}})</span>
+        </div>
+        {{/each}}
+    </div>
+</template>
+

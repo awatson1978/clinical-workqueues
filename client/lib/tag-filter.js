@@ -31,7 +31,7 @@ Template.tag_filter.selected = function () {
 };
 
 Template.tag_filter.events({
-    'mousedown .tag': function () {
+    'mousedown .sidebar-tab': function () {
         if (Session.equals('tag_filter', this.tag))
             Session.set('tag_filter', null);
         else

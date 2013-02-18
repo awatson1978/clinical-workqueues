@@ -2,39 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/pentasyllabic.logo.square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/pentasyllabic.logo.square.transparent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.nav-bar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.base.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.colors.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.fonts.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.pentasyllabic.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.nav-bar.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.blockgrid.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.blockgrid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.blockquotes.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.blockquotes.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.button.groups.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.button.groups.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.buttons.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.buttons.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.forms.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.forms.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.grid.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.grid.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.html.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.html.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.links.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.links.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.lists.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.lists.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.messages.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.messages.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.misc.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.misc.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.print.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.print.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.tabs.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.tabs.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation.top-bar.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.top-bar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/ui.sidebar.lists.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/ui.sidebar.tagfilter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/tags.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/second-opinion.iml" afterPath="$PROJECT_DIR$/.idea/clinical-workqueues.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/views/lists.html" afterPath="$PROJECT_DIR$/client/views/sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/lists.js" afterPath="$PROJECT_DIR$/client/lib/lists.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/tag-filter.js" afterPath="$PROJECT_DIR$/client/lib/tag-filter.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" afterPath="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.css" afterPath="$PROJECT_DIR$/client/stylesheets/lists.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/todos.css" afterPath="$PROJECT_DIR$/client/stylesheets/todos.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/lists.html" afterPath="$PROJECT_DIR$/client/views/lists.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.layout.css" afterPath="$PROJECT_DIR$/client/stylesheets/pages.layout.css" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,97 +33,83 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6338164">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="11" selection-start="823" selection-end="823" vertical-scroll-proportion="-10.56">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="todos.css" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/todos.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="13" selection-start="503" selection-end="503" vertical-scroll-proportion="0.5794392">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="0" selection-start="439" selection-end="513" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="layout.navigation.bars.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="lists.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/views/lists.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="11" selection-start="860" selection-end="860" vertical-scroll-proportion="-16.64">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="lists.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="20" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="todos.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/todos.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="112" column="30" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/main.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="lists.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/lib/lists.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="25" selection-start="801" selection-end="801" vertical-scroll-proportion="0.37959668">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="-22.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="47" selection-start="946" selection-end="946" vertical-scroll-proportion="0.5439625">
+              <folding>
+                <element signature="n#style#0;n#hr#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#template#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/lists.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="50" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pages.layout.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.layout.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="12" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tags.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/tags.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="22" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="foundation.lists.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.lists.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="38" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lists.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="35" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tag-filter.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/tag-filter.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="2" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -156,28 +122,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/public/stylesheets/pages.layout.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/lists.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/foundation.css" />
-        <option value="$PROJECT_DIR$/client/stylesheets/foundation.css" />
-        <option value="$PROJECT_DIR$/client/stylesheets/media.css" />
-        <option value="$PROJECT_DIR$/client/stylesheets/app.css" />
-        <option value="$PROJECT_DIR$/client/views/todos.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.layout.css" />
         <option value="$PROJECT_DIR$/client/views/guest.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/lists.css" />
-        <option value="$PROJECT_DIR$/client/views/lists.html" />
         <option value="$PROJECT_DIR$/client/lib/lists.js" />
-        <option value="$PROJECT_DIR$/client/main.css" />
-        <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/todos.css" />
+        <option value="$PROJECT_DIR$/client/views/sidebar.lists.html" />
+        <option value="$PROJECT_DIR$/client/views/sidebar.tag.filter.html" />
+        <option value="$PROJECT_DIR$/client/views/lists.html" />
+        <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/client/lib/ui.sidebar.tagfilter.js" />
+        <option value="$PROJECT_DIR$/client/lib/ui.sidebar.lists.js" />
+        <option value="$PROJECT_DIR$/client/lib/tag-filter.js" />
+        <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.layout.css" />
+        <option value="$PROJECT_DIR$/client/views/sidebar.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" />
+        <option value="$PROJECT_DIR$/client/stylesheets/lists.css" />
+        <option value="$PROJECT_DIR$/client/stylesheets/tags.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="28" />
+    <option name="x" value="-6" />
+    <option name="y" value="27" />
     <option name="width" value="1438" />
     <option name="height" value="1026" />
   </component>
@@ -207,92 +173,31 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -302,11 +207,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -320,11 +225,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -338,11 +243,33 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="second-opinion" />
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foundation-css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -356,6 +283,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,16 +291,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="web-ide.project.structure" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/views" />
+      <recent name="$PROJECT_DIR$/client/lib" />
       <recent name="$PROJECT_DIR$/client/stylesheets" />
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/server" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tests" />
@@ -420,12 +348,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="28" width="1438" height="1026" extended-state="0" />
+    <frame x="-6" y="27" width="1438" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32596686" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26855123" sideWeight="0.67403316" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -436,6 +363,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32596686" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -494,105 +422,118 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="37" selection-end="37" vertical-scroll-proportion="0.058027077" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/todos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="25" selection-start="225" selection-end="237" vertical-scroll-proportion="0.3125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1235" selection-end="1235" vertical-scroll-proportion="-22.5" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="129" selection-end="129" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="371" selection-end="371" vertical-scroll-proportion="0.40618956" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="30" selection-start="4068" selection-end="4068" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/lists.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="801" selection-end="801" vertical-scroll-proportion="0.37959668">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="11" selection-start="860" selection-end="860" vertical-scroll-proportion="-16.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.base.less">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/media.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.blockgrid.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="439" selection-end="513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="11" selection-start="823" selection-end="823" vertical-scroll-proportion="-10.56">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/todos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="503" selection-end="503" vertical-scroll-proportion="0.5794392">
+        <state line="60" column="1" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.81093395">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="35" selection-start="1100" selection-end="1100" vertical-scroll-proportion="0.7289294">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="5" selection-start="701" selection-end="701" vertical-scroll-proportion="0.7835991">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.tagfilter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="550" selection-end="550" vertical-scroll-proportion="0.23690204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.lists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="28" selection-start="929" selection-end="929" vertical-scroll-proportion="0.49202734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="949" selection-end="949" vertical-scroll-proportion="-22.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/tag-filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="2" selection-start="717" selection-end="717" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="1" selection-start="37" selection-end="37" vertical-scroll-proportion="0.03644647">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/lists.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="50" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="12" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="21" selection-start="443" selection-end="443" vertical-scroll-proportion="0.46728972">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="35" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.lists.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="38" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/tags.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="22" selection-start="552" selection-end="552" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="47" selection-start="946" selection-end="946" vertical-scroll-proportion="0.5439625">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#template#1;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

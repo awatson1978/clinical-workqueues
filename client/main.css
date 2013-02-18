@@ -56,48 +56,4 @@ h3 {
 /*}*/
 
 
-.tag {
-    cursor: pointer;
-    float: left;
-    margin: 5px;
-    padding: 5px;
-    font-size: 80%;
-    font-weight: bold;
-    background: #999;
-    color: #fff;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -o-border-radius: 4px;
-
-    opacity: 1;
-    transition: opacity 0.3s linear;
-    -moz-transition: opacity 0.3s linear;
-    -webkit-transition: opacity 0.3s linear;
-    -o-transition: opacity 0.3s linear;
-
-    position: relative;
-}
-
-#tag-filter .label {
-    float: left;
-    margin-top: 9px;
-    margin-left: 12px;
-    margin-right: 8px;
-}
-
-#tag-filter .tag {
-    margin-top: 10px;
-    border: 1px solid #777;
-}
-
-#tag-filter .selected {
-    background: #69d;
-}
-
-#tag-filter .count {
-    font-weight: normal;
-    padding-left: 2px;
-}
-
 
