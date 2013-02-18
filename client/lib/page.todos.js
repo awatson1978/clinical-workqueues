@@ -1,7 +1,8 @@
 ////////// Todos //////////
 
 Template.todos.any_list_selected = function () {
-    return !Session.equals('list_id', null);
+    //return !Session.equals('list_id', null);
+    return true;
 };
 
 Template.todos.events(okCancelEvents(
@@ -104,6 +105,8 @@ Template.todos.todos = function () {
     // selected based on list_id and tag_filter.
 
     var list_id = Session.get('list_id');
+    console.log('list_id:' + Session.get('list_id'));
+
     if (!list_id)
         return {};
 

@@ -1,7 +1,7 @@
 
 @media only screen and (min-width: 800px) {
     .footer-nav-bar{
-        position: fixed;
+        /*position: fixed;*/
         bottom: 0px;
         margin-bottom: 0px;
         padding-bottom: 0px;

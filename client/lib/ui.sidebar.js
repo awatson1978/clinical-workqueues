@@ -3,14 +3,16 @@
 Template.lists.lists = function () {
     return Lists.find({}, {sort: {name: 1}});
 };
-Template.lists.count = function () {
-    //TODO:  add tally of number of todos in a list
-    return Todos.find({list_id: this._id}).count();
-};
+//Template.lists.count = function () {
+//    //TODO:  add tally of number of todos in a list
+//    return Todos.find({list_id: this._id}).count();
+//};
 
 Template.lists.events({
     'mousedown .list': function (evt) { // select list
         Router.setList(this._id);
+        Session.set('list_id', this._id);
+        //alert(this._id);
     },
     'click .list': function (evt) {
         // prevent clicks on <a> from refreshing the page.

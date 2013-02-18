@@ -1,3 +1,4 @@
+@lightblue: rgb(194, 209, 219);
 
 .tag {
     cursor: pointer;
@@ -35,7 +36,7 @@
 
 #tag-filter .selected {
     /* background: #69d; */
-    background: rgb(194, 209, 219);
+    background: @lightblue;
     color: black;
 }
 
@@ -72,4 +73,36 @@
 
     position: relative;
     width: 110%;
+}
+.sidebar-tile {
+    background: #f2f2f2;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.sidebar-tile:hover{
+    border: 1px solid gray;
+    background-color: @lightblue;
+}
+.sidebar-tile > :first-child { margin-top: 0; }
+.sidebar-tile > :last-child { margin-bottom: 0; }
+.sidebar-tile.callout { background: #2ba6cb; color: #fff; border-color: #2284a1; -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5); -moz-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5); box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.5); }
+.sidebar-tile.callout a { color: #fff; }
+.sidebar-tile.callout .button { background: white; border: none; color: #2ba6cb; text-shadow: none; }
+.sidebar-tile.callout .button:hover { background: rgba(255, 255, 255, 0.8); }
+.sidebar-tile.radius { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+
+.sidebar-tiles{
+    position: absolute;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#side-pane .columns{
+    padding: 5px;
 }

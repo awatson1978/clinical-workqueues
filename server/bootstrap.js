@@ -29,10 +29,10 @@ Meteor.startup(function () {
       var list_id = Lists.insert({name: data[i].name});
       for (var j = 0; j < data[i].contents.length; j++) {
         var info = data[i].contents[j];
-        Todos.insert({list_id: list_id,
+        console.log(Todos.insert({list_id: list_id,
                       text: info[0],
                       timestamp: timestamp,
-                      tags: info.slice(1)});
+                      tags: info.slice(1)}));
         timestamp += 1; // ensure unique timestamp.
       }
     }
