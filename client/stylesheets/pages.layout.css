@@ -26,6 +26,7 @@
     background: #eee;
     border-right: 1px solid #999;
     background: #ddd;
+    padding-top: 8px;
 }
 
 #top-tag-filter, #bottom-pane {

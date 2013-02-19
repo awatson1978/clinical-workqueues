@@ -24,9 +24,8 @@
 <template name="home_page">
     <div class="page" id="main-pane">
         {{> todos}}
+        {{> sidebarTemplate }}
     </div>
-    {{> sidebarTemplate }}
-
 </template>
 
 
@@ -44,6 +43,7 @@
 <template name="footerBarTemplate">
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         <ul class="nav-bar footer-nav-bar">
+            <li><a href="#" onclick='showPage("#main-pane");'><span class="pictographs">4  </span>Workqueues</a></li>
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">4  </span>Community</a></li>
             <li><a href="#" onclick='showPage("#profilePage");'><span class="pictographs">4  </span>My Profile</a></li>
             <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
