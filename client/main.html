@@ -13,15 +13,15 @@
 
 <template name="app_container">
     {{#if loggedIn}}
-        {{> home_page }}
-        {{!> profilePageTemplate }}
-        {{!> communityPageTemplate }}
+        {{> workqueuesPageTemplate }}
+        {{> profilePageTemplate }}
+        {{> communityPageTemplate }}
     {{else }}
         {{> guest_page }}
     {{/if }}
 </template>
 
-<template name="home_page">
+<template name="workqueuesPageTemplate">
     <div class="page" id="main-pane">
         {{> todos}}
         {{> sidebarTemplate }}

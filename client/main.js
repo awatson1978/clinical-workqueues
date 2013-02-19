@@ -38,8 +38,9 @@ Meteor.startup(function () {
         Session.set("resize", new Date());
     });
 
-    // set default page views
-    hidePages();
-    showHomePage();
+    //    set default page views
+    //    hidePages();
+    //    showHomePage();
+    showPage("#main-pane");
 });
 
