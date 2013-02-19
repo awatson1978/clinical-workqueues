@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/app.scrollbars.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/navigation.links.js" afterPath="$PROJECT_DIR$/client/lib/navigation.links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="$PROJECT_DIR$/client/views/page.community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.card.less" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +27,7 @@
           <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="39" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.84313726">
+                <state line="38" column="48" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.74509805">
                   <folding />
                 </state>
               </provider>
@@ -73,19 +66,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lists.card.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="lists.card.less" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="24" column="14" selection-start="370" selection-end="370" vertical-scroll-proportion="0.48917198">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.scrollbars.less" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="app.scrollbars.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/app.scrollbars.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="27" column="25" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -142,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/lib/helpers.js" />
         <option value="$PROJECT_DIR$/client/lib/helpers/helpers.js" />
         <option value="$PROJECT_DIR$/client/subscriptions.js" />
         <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
@@ -158,6 +150,7 @@
         <option value="$PROJECT_DIR$/client/views/page.community.html" />
         <option value="$PROJECT_DIR$/client/views/page.profile.html" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
       </list>
     </option>
   </component>
@@ -536,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="39" selection-start="2105" selection-end="2105" vertical-scroll-proportion="0.84313726">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/navigation.links.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="14" selection-start="911" selection-end="911" vertical-scroll-proportion="0.0">
@@ -594,16 +580,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="48" selection-start="1939" selection-end="1939" vertical-scroll-proportion="0.74509805">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/app.scrollbars.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="27" column="25" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="370" selection-end="370" vertical-scroll-proportion="0.48917198">
           <folding />
         </state>
       </provider>
