@@ -5,13 +5,12 @@
 
 <body>
     {{> headerBarTemplate }}
-    <div class="content" data-role="content">
-        {{> app_container }}
-    </div>
+    {{> app_container }}
     {{> footerBarTemplate }}
 </body>
 
 <template name="app_container">
+    <div class="content" data-role="content">
     {{#if loggedIn}}
         {{> workqueuesPageTemplate }}
         {{> profilePageTemplate }}
@@ -19,6 +18,7 @@
     {{else }}
         {{> guest_page }}
     {{/if }}
+    </div>
 </template>
 
 <template name="workqueuesPageTemplate">

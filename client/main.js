@@ -20,6 +20,19 @@ Session.set('editing_itemname', null);
 
 
 
+Meteor.startup(function () {
+    Backbone.history.start({pushState: true});
+
+    $(window).resize(function(evt) {
+        Session.set("resize", new Date());
+    });
+});
+Template.app_container.rendered = function(){
+    //$('#profilePage').addClass('hidden');
+    //$('#communityPage').addClass('hidden');
+    showPage('#main-pane');
+};
+
 
 Template.app_container.loggedIn = function () {
     console.log('loggedIn called');
@@ -32,15 +45,4 @@ Template.app_container.loggedIn = function () {
     }
 };
 
-
-Meteor.startup(function () {
-    $(window).resize(function(evt) {
-        Session.set("resize", new Date());
-    });
-
-    //    set default page views
-    //    hidePages();
-    //    showHomePage();
-    showPage("#main-pane");
-});
 

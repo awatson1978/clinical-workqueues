@@ -12,23 +12,6 @@ Template.communityPageTemplate.events({
     'keypress input': function (evt, tmpl) {
        Session.set('community_members_filter', $('#filterInput').val());
        Meteor.flush();
-    },
-    'click .delete-user': function(){
-        alert('delete user not implemented yet!');
-    },
-    'click .clear-collaborators': function(){
-        Meteor.call('clearCollaborators', Session.get('selected_community_member'), function () {
-            var user = Meteor.users.findOnce({ '_id': Meteor.userId });
-            alert('Collaborators: ' + user.profile.collaborators.count());
-        });
-        //Meteor.users.update({ '_id': Session.get('selected_community_member' )} , {$unset: { carewatch: '' }});
-    },
-    'click .clear-carewatch': function(){
-        Meteor.call('clearCarewatch', Session.get('selected_community_member'), function (){
-            var user = Meteor.users.findOnce({ '_id': Meteor.userId });
-            alert('Carewatch Members: '+ user.profile.carewatch.count());
-        });
-        //Meteor.users.update({ '_id': Session.get('selected_community_member' )} , {$unset: { collaborators: '' }});
     }
 });
 Template.communityPageTemplate.communityUsers = function () {
@@ -145,9 +128,9 @@ Template.userItemTemplate.events({
 
     },
     'click .user-card': function () {
-        Session.set('selected_community_member', this._id);
-        Session.set('show_quick_view_panel', true);
-        Meteor.flush();
+        //Session.set('selected_community_member', this._id);
+        //Session.set('show_quick_view_panel', true);
+        //Meteor.flush();
     }
 });
 Template.userItemTemplate.userEmail = function () {

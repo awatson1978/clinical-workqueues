@@ -1,6 +1,6 @@
 <template name="communityPageTemplate">
-    <div class="page hidden" id="communityPage">
-        <div class="doesnt-overlap-header">
+    <div class="page" id="communityPage">
+        <div class="">
             <div class="spacer row"></div>
             <div class="row">
                 <div class="six columns" id="community-members-list">
@@ -25,14 +25,14 @@
                         <h6>{{user_count}} Registered Users</h6>
                     </div>
                     <div class="spacer row"></div>
-                    <div class="row panel">
-                        <h6>{{collaborators_count }} Health Collaborators</h6>
-                        <ul class="collaborators list">
-                            {{#each collaborators}}
-                            {{> collaboratorItem}}
-                            {{/each}}
-                        </ul>
-                    </div>
+                    <!--<div class="row panel">-->
+                        <!--<h6>{{collaborators_count }} Health Collaborators</h6>-->
+                        <!--<ul class="collaborators list">-->
+                            <!--{{#each collaborators}}-->
+                            <!--{{> collaboratorItem}}-->
+                            <!--{{/each}}-->
+                        <!--</ul>-->
+                    <!--</div>-->
 
                     {{#if showQuickViewPanel}}
                         {{> quickViewPanelTemplate}}
@@ -83,7 +83,7 @@
                 <img class="gray-border" src="{{ userImage }}" />
             </div>
             <div class="ten columns without-padding">
-                <div class="card-northwest green card-meta-data without-padding">{{ _id }}</div>
+                <div class="card-northwest gray card-meta-data without-padding">{{ _id }}</div>
                 <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
                 <div class="user-posts">Posts: {{userHealthEntries}}</div>
                 <div class="user-rank">HealthRank: {{userHealthRank}}</div>
