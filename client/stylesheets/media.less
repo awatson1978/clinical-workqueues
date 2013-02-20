@@ -1,23 +1,76 @@
 
 @media only screen and (min-width: 768px) {
-    .footer-nav-bar{
-        /*position: fixed;*/
-        bottom: 0px;
-        margin-bottom: 0px;
-        padding-bottom: 0px;
-        width: 100%;
-    }
+  .footer-nav-bar{
+      /*position: fixed;*/
+      bottom: 0px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      width: 100%;
+  }
+
+  // grid adjustments
+  //  [class*="column"] + [class*="column"]:last-child { float: right; }
+  //  [class*="column"] + [class*="column"].end { float: left; }
 }
 @media only screen and (max-width: 768px) {
-    .footer-nav-bar{
+  #main-pane {
+    padding-left: 0px;
+  }
+  .footer-nav-bar{
         /*position: fixed;*/
         bottom: 0px;
         margin-bottom: 0px;
         padding-bottom: 0px;
         width: 100%;
-    }
-    .header-nav-bar{
-        background: #4D4D4D !important;
-        z-index: 1000;
-    }
+  }
+  .header-nav-bar{
+      background: #4D4D4D !important;
+      z-index: 1000;
+  }
+  .user-card{
+    height: 60px;
+    padding-left: 20px;
+  }
+  .columns{
+    padding: 0px !important;
+    margin: 0px;
+  }
+  .columns{
+    float: none;
+  }
+
+// grid adjustments
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  [class*="column"] + [class*="column"].first-child { float: left; }
 }
+
+
+//-------------------------------------------------
+
+
+
+@media only screen and (max-width: 480px) {
+  .footer-nav-bar{
+//    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+  .header-nav-bar{
+    background: #4D4D4D !important;
+    z-index: 1000;
+  }
+  .columns{
+    float: none;
+  }
+  .user-card-image{
+
+  }
+
+// grid adjustments
+  [class*="column"] + [class*="column"]:last-child { float: none; }
+  [class*="column"] + [class*="column"].first-child { float: left; }
+
+}
+
