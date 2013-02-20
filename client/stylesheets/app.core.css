@@ -1,0 +1,23 @@
+ul {
+    list-style: none;
+}
+input {
+    font-size: 100%;
+}
+
+a, a:visited, a:active {
+    color: #258;
+}
+
+h3 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 120%;
+    padding: 8px 6px;
+    text-align: center;
+}
+
+
+.ui-loader{
+    visibility: hidden;
+}

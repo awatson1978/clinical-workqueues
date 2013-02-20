@@ -1,0 +1,36 @@
+.clipped_corner {
+  position: relative;
+}
+
+.clipped_corner .top_left, .clipped_corner .top_right,
+.clipped_corner .bottom_left, .clipped_corner .bottom_right {
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.clipped_corner .top_left {
+  top: 0;
+  left: 0;
+  border-top: 15px solid white;
+  border-right: 15px solid transparent;
+}
+.clipped_corner .top_right {
+  top: 0;
+  right: 0;
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
+}
+.clipped_corner .bottom_left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 15px solid white;
+  border-right: 15px solid transparent;
+}
+.clipped_corner .bottom_right {
+  bottom: 0;
+  right: 0;
+  border-bottom: 15px solid white;
+  border-left: 15px solid transparent;
+}
+

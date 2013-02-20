@@ -230,10 +230,6 @@ Template.profilePageTemplate.user_carewatch = function () {
         return "List of carewatch members not available right now.";
     }
 };
-Template.profilePageTemplate.user_json = function () {
-    var selectedUser = Meteor.user();
-    return JSON.stringify(selectedUser);
-};
 Template.profilePageTemplate.user_image = function () {
     try{
         var src = "images/placeholder-240x240.gif";
@@ -251,7 +247,13 @@ Template.profilePageTemplate.user_image = function () {
         log_event(err, LogLevel.Error);
     }
 };
-
+//Template.profilePageTemplate.user_json = function () {
+//    var selectedUser = Meteor.user();
+//    return JSON.stringify(selectedUser);
+//};
+//Template.profilePageTemplate.rendered = function(){
+//    Session.set('json_content', JSON.stringify(Meteor.user()));
+//};
 
 
 // --------------------------------------------------------
@@ -286,14 +288,14 @@ Template.profilePageTemplate.rendered = function () {
 
     // set up the filepicker.io drop_zone
     document.getElementById('drop_zone').addEventListener('mousedown', function(){
-        filepicker.pick(function(fpfile){
-            log_event('selected file: ' + fpfile.url);
-            //alert('You just uploaded '+fpfile.filename + '! '+ 'You can access the file at '+ fpfile.url);
-
-            // so, yeah, instead of saving the name of the local file to the mongo database
-            // we're just going to save the url from the filepicker.io service.
-            Meteor.users.update(Meteor.userId(), {$set: { 'profile.avatar': cleanName( fpfile.url ) }});
-        });
+//        filepicker.pick(function(fpfile){
+//            log_event('selected file: ' + fpfile.url);
+//            //alert('You just uploaded '+fpfile.filename + '! '+ 'You can access the file at '+ fpfile.url);
+//
+//            // so, yeah, instead of saving the name of the local file to the mongo database
+//            // we're just going to save the url from the filepicker.io service.
+//            Meteor.users.update(Meteor.userId(), {$set: { 'profile.avatar': cleanName( fpfile.url ) }});
+//        });
         //jQuery('#import_files_input').click();
     }, false);
 };

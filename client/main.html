@@ -41,11 +41,18 @@
     </div>
 </template>
 <template name="footerBarTemplate">
+    {{#if showJsonPanel }}
+    <div id="json-content" class="row panel jsondata notepad">
+        {{ jsonData }}
+    </div>
+    {{/if }}
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         <ul class="nav-bar footer-nav-bar">
             <li><a href="#" onclick='showPage("#main-pane");'><span class="pictographs">4  </span>Workqueues</a></li>
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">4  </span>Community</a></li>
-            <li><a href="#" onclick='showPage("#profilePage");'><span class="pictographs">4  </span>My Profile</a></li>
+            <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">4  </span>My Profile</a></li>
+            <li><a href="#" onclick='showPage("#dropboxPage");'><span class="pictographs">m  </span>Dropbox</a></li>
+            <li><a href="#" onclick='toggleJsonPanel();'><span class="pictographs">E  </span>Object Inspection</a></li>
             <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
             <!--<li><a href="#" onclick='showPage("#snomedPage");'><span class="pictographs">4  </span>Anatomy Browser</a></li>-->
         </ul>

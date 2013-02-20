@@ -14,8 +14,8 @@ Session.set('editing_listname', null);
 // When editing todo text, ID of the todo
 Session.set('editing_itemname', null);
 
-// Subscribe to 'lists' collection on startup.
-// Select a list once data has arrived.
+Session.set('display_profile_json_panel', false);
+Session.set('json_content', "panel for inspecting data objects");
 
 
 
@@ -26,6 +26,8 @@ Meteor.startup(function () {
     $(window).resize(function(evt) {
         Session.set("resize", new Date());
     });
+
+    showCurrentSessionPage();
 });
 Template.app_container.rendered = function(){
     //$('#profilePage').addClass('hidden');
@@ -44,5 +46,17 @@ Template.app_container.loggedIn = function () {
         return false;
     }
 };
-
+Template.footerBarTemplate.showJsonPanel = function(){
+    return Session.get('display_profile_json_panel');
+};
+Template.footerBarTemplate.jsonData = function(){
+    return Session.get('json_content');
+};
+function toggleJsonPanel(){
+    if(Session.get('display_profile_json_panel')){
+        Session.set('display_profile_json_panel',false);
+    }else{
+        Session.set('display_profile_json_panel',true);
+    }
+}
 
