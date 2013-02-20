@@ -3,13 +3,14 @@
         <div class="">
             <div class="spacer row"></div>
             <div class="row">
-                <div class="six columns" id="community-members-list">
+                <div class="fixed-layout six columns" id="community-members-list">
                     <input id="filterInput" type="text" class="search" />
-                    <ul id="item-list" class="list">
-                        {{#each communityUsers}}
-                        {{> userItemTemplate}}
-                        {{/each}}
-                    </ul>
+                    {{#if showQuickViewPanel}}
+                    {{> quickViewPanelTemplate}}
+                    {{else}}
+                    <div class="itaintrocketscience">lorem ipsum</div>
+                    {{/if}}
+
                     <!--<div class="hide-for-medium hide-for-small sidebar">-->
                         <!--<div id="tag-filter" class="tag-list">-->
                             <!--<ul class="tag-list sort-by">-->
@@ -21,10 +22,14 @@
                     <!--</div>-->
                 </div>
                 <div class="six columns hide-for-small">
-                    <div class="row panel">
-                        <h6>{{user_count}} Registered Users</h6>
-                    </div>
-                    <div class="spacer row"></div>
+                    <ul id="item-list" class="list">
+                        {{#each communityUsers}}
+                        {{> userItemTemplate}}
+                        {{/each}}
+                    </ul>                    <!--<div class="row panel">-->
+                        <!--<h6>{{user_count}} Registered Users</h6>-->
+                    <!--</div>-->
+                    <!--<div class="spacer row"></div>-->
                     <!--<div class="row panel">-->
                         <!--<h6>{{collaborators_count }} Health Collaborators</h6>-->
                         <!--<ul class="collaborators list">-->
@@ -34,9 +39,6 @@
                         <!--</ul>-->
                     <!--</div>-->
 
-                    {{#if showQuickViewPanel}}
-                        {{> quickViewPanelTemplate}}
-                    {{/if}}
 
                     <div class="spacer row"></div>
                     <div class="hidden row">
@@ -56,7 +58,7 @@
                 <span class="white card-meta-data">{{user_id}}</span>
                 <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
             </div>
-            <img class="user-card-image drop-zone gray-border"  src="{{user_image}}" />
+            <img class="user-card-image gray-border" src="{{user_avatar}}" />
 
             <div class="user-card-data">
                 <div class="twelve columns">
