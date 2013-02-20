@@ -104,6 +104,7 @@ Template.quickViewPanelTemplate.user_avatar = function () {
 //--------------------------------------------------------------------
 // userItemTemplate
 
+
 Template.userItemTemplate.events({
     'dblclick .user-card': function () {
         // first we update the logged in user's profile
@@ -128,9 +129,10 @@ Template.userItemTemplate.events({
 
     },
     'click .user-card': function () {
-        //Session.set('selected_community_member', this._id);
-        //Session.set('show_quick_view_panel', true);
-        //Meteor.flush();
+        //alert('click!');
+        Session.set('selected_community_member', this._id);
+        Session.set('show_quick_view_panel', true);
+        Meteor.flush();
     }
 });
 Template.userItemTemplate.userEmail = function () {

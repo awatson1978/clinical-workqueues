@@ -1,28 +1,28 @@
-Template.profilePageTemplate.editing_email = function () {
+Template.userCardTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace);
     return Session.equals('editing_profile_email', "true");
 };
-Template.profilePageTemplate.editing_name = function () {
+Template.userCardTemplate.editing_name = function () {
     log_event('Template.profilePageTemplate.editing_name', LogLevel.Trace);
     return Session.equals('editing_profile_name', "true");
 };
-Template.profilePageTemplate.editing_birthdate = function () {
+Template.userCardTemplate.editing_birthdate = function () {
     log_event('Template.profilePageTemplate.editing_birthdate', LogLevel.Trace);
     return Session.equals('editing_profile_birthdate', "true");
 };
-Template.profilePageTemplate.editing_avatar = function () {
+Template.userCardTemplate.editing_avatar = function () {
     log_event('Template.profilePageTemplate.editing_avatar', LogLevel.Trace);
     return Session.equals('editing_profile_avatar', "true");
 };
-Template.profilePageTemplate.editing_collaborators = function () {
+Template.userCardTemplate.editing_collaborators = function () {
     log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace);
     return Session.equals('editing_profile_collaborators', "true");
 };
-Template.profilePageTemplate.editing_carewatch = function () {
+Template.userCardTemplate.editing_carewatch = function () {
     log_event('Template.profilePageTemplate.editing_carewatch', LogLevel.Trace);
     return Session.equals('editing_profile_carewatch_members', "true");
 };
-Template.profilePageTemplate.events(
+Template.userCardTemplate.events(
     okCancelEvents('#userCarewatchInput',
         {
             ok: function (value) {
@@ -36,7 +36,7 @@ Template.profilePageTemplate.events(
                 Session.set('editing_profile_carewatch_members', "false");
             }
         })
-);Template.profilePageTemplate.events(
+);Template.userCardTemplate.events(
     okCancelEvents('#userCollaboratorsInput',
         {
             ok: function (value) {
@@ -51,7 +51,7 @@ Template.profilePageTemplate.events(
             }
         })
 );
-Template.profilePageTemplate.events(
+Template.userCardTemplate.events(
     okCancelEvents('#userAvatarInput',
         {
             ok: function (value) {
@@ -66,7 +66,7 @@ Template.profilePageTemplate.events(
             }
         })
 );
-Template.profilePageTemplate.events(
+Template.userCardTemplate.events(
     okCancelEvents('#userDateOfBirthInput',
         {
             ok: function (value) {
@@ -81,7 +81,7 @@ Template.profilePageTemplate.events(
             }
         })
 );
-Template.profilePageTemplate.events(
+Template.userCardTemplate.events(
     okCancelEvents('#userNameInput',
         {
             ok: function (value) {
@@ -96,7 +96,7 @@ Template.profilePageTemplate.events(
             }
         })
 );
-Template.profilePageTemplate.events(
+Template.userCardTemplate.events(
     okCancelEvents('#userEmailInput',
         {
             ok: function (value) {
@@ -111,7 +111,7 @@ Template.profilePageTemplate.events(
             }
         })
 );
-Template.profilePageTemplate.events({
+Template.userCardTemplate.events({
     'dblclick .userEmailDisplay': function (evt, tmpl) {
         Session.set('editing_profile_email', "true");
         Meteor.flush(); // update DOM before focus
@@ -140,16 +140,10 @@ Template.profilePageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }}, function(){
         });
-    },
-    'change input': function(ev) {
-        _.each(ev.srcElement.files, function(file) {
-            // the following will save to the server's local file system
-            Meteor.saveFile(file, file.name);
-        });
     }
 });
 
-Template.profilePageTemplate.user_name = function () {
+Template.userCardTemplate.user_name = function () {
     try{
         if(Meteor.user().profile){
             return Meteor.user().profile.name;
@@ -161,7 +155,7 @@ Template.profilePageTemplate.user_name = function () {
         log_event(err, LogLevel.Error);
     }
 };
-Template.profilePageTemplate.user_id = function () {
+Template.userCardTemplate.user_id = function () {
     try{
         if(Meteor.user()){
             return Meteor.user()._id;
@@ -173,7 +167,7 @@ Template.profilePageTemplate.user_id = function () {
         log_error(err,LogLevel.Error);
     }
 };
-Template.profilePageTemplate.user_email = function () {
+Template.userCardTemplate.user_email = function () {
     try
     {
         if(Meteor.user().emails){
@@ -187,7 +181,7 @@ Template.profilePageTemplate.user_email = function () {
         log_event(err, LogLevel.Error);
     }
 };
-Template.profilePageTemplate.user_birthdate = function () {
+Template.userCardTemplate.user_birthdate = function () {
     try{
         if(Meteor.user().profile){
             return Meteor.user().profile.dateOfBirth;
@@ -199,7 +193,7 @@ Template.profilePageTemplate.user_birthdate = function () {
         log_event(err, LogLevel.Error);
     }
 };
-Template.profilePageTemplate.user_avatar = function () {
+Template.userCardTemplate.user_avatar = function () {
     try{
         if(Meteor.user().profile){
             return Meteor.user().profile.avatar;
@@ -211,7 +205,7 @@ Template.profilePageTemplate.user_avatar = function () {
         log_event(err, LogLevel.Error);
     }
 };
-Template.profilePageTemplate.user_collaborators = function () {
+Template.userCardTemplate.user_collaborators = function () {
     // Meteor.user().profile breaks when user is logged out
     if(Meteor.user()){
         if(Meteor.user().profile){
@@ -221,7 +215,7 @@ Template.profilePageTemplate.user_collaborators = function () {
         return "List of collaborators not available right now.";
     }
 };
-Template.profilePageTemplate.user_carewatch = function () {
+Template.userCardTemplate.user_carewatch = function () {
     if(Meteor.user()){
         if(Meteor.user().profile){
             return Meteor.user().profile.carewatch;
@@ -230,7 +224,7 @@ Template.profilePageTemplate.user_carewatch = function () {
         return "List of carewatch members not available right now.";
     }
 };
-Template.profilePageTemplate.user_image = function () {
+Template.userCardTemplate.user_image = function () {
     try{
         var src = "images/placeholder-240x240.gif";
 
@@ -282,7 +276,7 @@ Template.profilePageTemplate.loggedIn = function () {
 
 
 
-Template.profilePageTemplate.rendered = function () {
+Template.userCardTemplate.rendered = function () {
 
     jQuery('#profilePage').css('min-height', window.innerHeight);
 

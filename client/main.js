@@ -16,6 +16,7 @@ Session.set('editing_itemname', null);
 
 Session.set('display_profile_json_panel', false);
 Session.set('json_content', "panel for inspecting data objects");
+Session.set('current_page', '#main-pane');
 
 
 
@@ -26,13 +27,9 @@ Meteor.startup(function () {
     $(window).resize(function(evt) {
         Session.set("resize", new Date());
     });
-
-    showCurrentSessionPage();
 });
 Template.app_container.rendered = function(){
-    //$('#profilePage').addClass('hidden');
-    //$('#communityPage').addClass('hidden');
-    showPage('#main-pane');
+    showCurrentSessionPage();
 };
 
 

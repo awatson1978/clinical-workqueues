@@ -52,7 +52,7 @@
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">4  </span>Community</a></li>
             <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">4  </span>My Profile</a></li>
             <li><a href="#" onclick='showPage("#dropboxPage");'><span class="pictographs">m  </span>Dropbox</a></li>
-            <li><a href="#" onclick='toggleJsonPanel();'><span class="pictographs">E  </span>Object Inspection</a></li>
+            <li style="position: fixed; right: 0px;"><a href="#" onclick='toggleJsonPanel();'><span class="pictographs">E  </span></a></li>
             <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
             <!--<li><a href="#" onclick='showPage("#snomedPage");'><span class="pictographs">4  </span>Anatomy Browser</a></li>-->
         </ul>

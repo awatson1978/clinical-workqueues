@@ -49,45 +49,60 @@
 </template>
 <template name="quickViewPanelTemplate">
     <div class="spacer row"></div>
-    <div class="row">
-        <div id="quicKViewPanel" class="reference panel">
-            <div class="card-northwest green card-meta-data">{{ user_id }}</div>
-
-            <div class="spacer row"></div>
-            <div class="avatar">
-                <img class="avatar with-rounded-corners gray-border" src="{{ user_avatar }}" />
+    <div class="user-card-block row">
+        <div class="panel user-card-detailed">
+            <div class="card-header rounded-top-right">
+                <!--<div class="top_right"></div>-->
+                <span class="white card-meta-data">{{user_id}}</span>
+                <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
             </div>
-            <div class="spacer row"></div>
-            <div class="bold">{{ user_name }}</div>
-            <div>{{ user_email }}</div>
+            <img class="user-card-image drop-zone gray-border"  src="{{user_image}}" />
 
-            <div class="spacer row"></div>
-            <div class="small clear-carewatch button">watch this person</div>
-            <div class="small clear-carewatch button">share diary with this person</div>
+            <div class="user-card-data">
+                <div class="twelve columns">
 
-            {{#if isAdmin }}
-            <div class="spacer row"></div>
-            <div class="small delete-user button">delete user</div>
-            <div class="small clear-collaborators button">clear collaborators</div>
-            <div class="small clear-carewatch button">clear carewatch</div>
-            {{/if}}
-
+                </div>
+            </div>
         </div>
     </div>
+    <!--<div class="spacer row"></div>-->
+    <!--<div class="row">-->
+        <!--<div id="quicKViewPanel" class="reference panel">-->
+            <!--<div class="card-northwest green card-meta-data">{{ user_id }}</div>-->
+
+            <!--<div class="spacer row"></div>-->
+            <!--<div class="avatar">-->
+                <!--<img class="avatar with-rounded-corners gray-border" src="{{ user_avatar }}" />-->
+            <!--</div>-->
+            <!--<div class="spacer row"></div>-->
+            <!--<div class="bold">{{ user_name }}</div>-->
+            <!--<div>{{ user_email }}</div>-->
+
+            <!--<div class="spacer row"></div>-->
+            <!--<div class="small clear-carewatch button">watch this person</div>-->
+            <!--<div class="small clear-carewatch button">share diary with this person</div>-->
+
+            <!--{{#if isAdmin }}-->
+            <!--<div class="spacer row"></div>-->
+            <!--<div class="small delete-user button">delete user</div>-->
+            <!--<div class="small clear-collaborators button">clear collaborators</div>-->
+            <!--<div class="small clear-carewatch button">clear carewatch</div>-->
+            <!--{{/if}}-->
+
+        <!--</div>-->
+    <!--</div>-->
 </template>
 <template name="userItemTemplate">
-    <li class="rounded-corners user-card">
-        <div class="row without-padding">
+    <li class="rounded-corners user-card without-padding">
+        <img class="card-image gray-border" src="{{ userImage }}" />
 
-            <div class="hide-for-small two columns">
-                <img class="gray-border" src="{{ userImage }}" />
-            </div>
-            <div class="ten columns without-padding">
-                <div class="card-northwest gray card-meta-data without-padding">{{ _id }}</div>
-                <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
-                <div class="user-posts">Posts: {{userHealthEntries}}</div>
-                <div class="user-rank">HealthRank: {{userHealthRank}}</div>
-            </div>
+        <!--<div class="hide-for-small two columns">-->
+        <!--</div>-->
+        <div class="card-data">
+            <div class="card-northwest gray card-meta-data without-padding">{{ _id }}</div>
+            <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
+            <div class="user-posts">Posts: {{userHealthEntries}}</div>
+            <div class="user-rank">HealthRank: {{userHealthRank}}</div>
         </div>
     </li>
 </template>

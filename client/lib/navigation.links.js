@@ -7,6 +7,7 @@ function showPage(page){
     hidePages();
     $(page).removeClass('hidden');
     Session.set('current_page', page);
+    Session.set('json_content', page);
     //console.log('current page: ' + page);
     //parseBreadCrumbs(page);
 }
