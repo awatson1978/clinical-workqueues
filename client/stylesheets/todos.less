@@ -73,10 +73,12 @@ textarea#guest-todo {
 
 #item-list .todo:hover .destroy {
     background: url('/destroy.png') no-repeat 0 0;
+    z-index: 1000;
 }
 
 #item-list .todo .destroy:hover {
     background-position: 0 -20px;
+  z-index: 1000;
 }
 
 #item-list .todo .item-tags {
@@ -107,10 +109,12 @@ textarea#guest-todo {
     background-position: -16px center;
 }
 
-#item-list .todo .item-tags div.addtag {
+.addtag {
     background: none;
     color: #333;
     border: 1px dashed #999;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
 #item-list .todo .check {
@@ -135,4 +139,43 @@ textarea#guest-todo {
     height: 22px !important;
     padding: 0px;
     margin: 0px;
+}
+
+//--------------------------------
+
+.horizontal-tags{
+  position: absolute;
+  top: 8.5px;
+  right: 40px;
+  background-color: white;
+}
+.bookend-right{
+  position: absolute;
+  background: white;
+  width: 40px;
+  height: 30px;
+  right: 0px;
+  top: 10px;
+  z-index: 100;
+}
+.bookend-left{
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  height: 35px;
+  width: 20px;
+  z-index: 100000;
+
+  background: -webkit-gradient(linear,
+  right top,
+  left top,
+  color-stop(0, rgba(255, 255, 255, 1)),
+  color-stop(1, rgba(255, 255, 255, 0)));
+  background: -ms-linear-gradient(bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0));
+  background: -moz-linear-gradient(center bottom,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(255, 255, 255, 0) 100%);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",#00f2f2f2,#FFf2f2f2));
 }

@@ -19,7 +19,7 @@
         <ul class="inline-list">
             {{#if editing}}
             <li class="edit">
-                <input id="todo-input" type="text" value="{{text}}" />
+                <input id="todo-input" type="text" value="{{!text}}" />
             </li>
             {{else}}
             <li class="destroy"></li>
@@ -30,23 +30,28 @@
                 <span class="todo-text">{{text}}</span>
             </li>
             {{/if}}
-            <li class="item-tags">
-                {{#each tag_objs}}
-                <div class="tag removable_tag">
-                    <div class="name">{{tag}}</div>
-                    <div class="remove"></div>
-                </div>
-                {{/each}}
-                {{#if adding_tag}}
-                <div class="tag edittag">
-                    <input type="text" id="edittag-input" value="" />
-                </div>
-                {{else}}
-                <div class="tag addtag">
-                    +tag
-                </div>
-                {{/if}}
-            </li>
+            <!--<li class="item-tags">-->
+                <!---->
+            <!--</li>-->
         </ul>
+        <ul class="horizontal-tags">
+            <li class="bookend-left"></li>
+            {{#each tag_objs}}
+            <li class="tag removable_tag">
+                <div class="name">{{tag}}</div>
+                <div class="remove"></div>
+            </li>
+            {{/each}}
+            {{#if adding_tag}}
+            <li class="tag edittag">
+                <input type="text" id="edittag-input" value="" />
+            </li>
+            {{else}}
+            <li class="tag addtag">
+                +tag
+            </il>
+            {{/if}}
+        </ul>
+        <div class="bookend-right"></li>
     </li>
 </template>

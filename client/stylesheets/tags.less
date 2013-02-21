@@ -2,8 +2,10 @@
 
 .tag {
     cursor: pointer;
+    float: left;
     margin: 5px;
-    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 80%;
     /*font-weight: bold;*/
     background: #999;
@@ -45,6 +47,16 @@
     padding-left: 2px;
 }
 
+
+//-------------------------------------
+
+.tag-list{
+  position: absolute;
+}
+
+.sidebar-group li{
+  display: inline;
+}
 .sidebar-tab{
     cursor: pointer;
     margin-left: 10px;
@@ -72,8 +84,22 @@
     -o-transition: opacity 0.3s linear;
 
     position: relative;
-    width: 110%;
+    width: 160%;
 }
+
+.sidebar-tab-accent{
+  position: absolute;
+  margin-left: 5px;
+  margin-top: -10px;
+  float: right;
+  width: 10px;
+  height: 33px;
+  background: #666666;
+  border: 1px solid #666666;
+}
+
+
+
 .sidebar-tile {
     background: #f2f2f2;
     border: 1px solid lightgray;
@@ -102,8 +128,9 @@
     width: 100%;
     padding-left: 5px;
     padding-right: 5px;
-    bottom: 140px;
+    bottom: 50px;
 }
 #side-pane .columns{
     padding: 5px;
 }
+//-------------------------------------
