@@ -1,3 +1,9 @@
+Template.sidebarTemplate.events({
+    'click .sidebar-tile': function(){
+        alert('alert');
+    }
+});
+
 ////////// Lists //////////
 
 Template.lists.lists = function () {

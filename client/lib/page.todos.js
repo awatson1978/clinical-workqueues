@@ -1,5 +1,23 @@
 ////////// Todos //////////
 
+Template.todos.rendered = function(){
+    jQuery("img[rel]").overlay({
+        // custom top position
+        top: (window.innerHeight / 2) - 275,
+        left: (((window.innerWidth - 200) - 675) / 2) + 200,
+
+        // some mask tweaks suitable for facebox-looking dialogs
+        mask: {
+            color: '#ebecff',
+            loadSpeed: 200,
+            opacity: 0.9
+        },
+
+        closeOnClick: true,
+        load: false
+    });
+};
+
 Template.todos.any_list_selected = function () {
     //return !Session.equals('list_id', null);
     return true;
@@ -161,7 +179,6 @@ Template.todo_item.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#todo-input"));
     },
-
     'click .remove': function (evt) {
         var tag = this.tag;
         var id = this.todo_id;
