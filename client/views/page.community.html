@@ -3,7 +3,7 @@
         <div class="">
             <div class="spacer row"></div>
             <div class="row">
-                <div class="fixed-layout six columns" id="community-members-list">
+                <div class="six columns" id="community-members-list">
                     <input id="filterInput" type="text" class="search" />
                     {{#if showQuickViewPanel}}
                     {{> quickViewPanelTemplate}}
@@ -51,22 +51,24 @@
 </template>
 <template name="quickViewPanelTemplate">
     <div class="spacer row"></div>
-    <div class="user-card-block row">
-        <div class="panel user-card-detailed">
-            <div class="card-header rounded-top-right">
-                <!--<div class="top_right"></div>-->
-                <span class="white card-meta-data">{{user_id}}</span>
-                <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
-            </div>
-            <img class="user-card-image gray-border" src="{{user_avatar}}" />
+        <div class="user-card-block row">
+            <div class="panel user-card-detailed">
+                <div class="card-header rounded-top-right">
+                    <!--<div class="top_right"></div>-->
+                    <span class="white card-meta-data">{{user_id}}</span>
+                    <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
+                </div>
+                <img class="user-card-image gray-border" src="{{user_avatar}}" />
 
-            <div class="user-card-data">
-                <div class="twelve columns">
-
+                <div class="user-card-synopsis">
+                    <div class="spacer row"></div>
+                    <span class="user-card-synopsis-name">{{ user_name }}</span><br>
+                    <span class="user-card-synopsis-email">{{ user_email }}</span><br>
                 </div>
             </div>
         </div>
     </div>
+
     <!--<div class="spacer row"></div>-->
     <!--<div class="row">-->
         <!--<div id="quicKViewPanel" class="reference panel">-->

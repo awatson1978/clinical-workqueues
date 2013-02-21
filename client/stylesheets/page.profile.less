@@ -26,12 +26,13 @@
 .card-header{
   position: absolute;
   top: -20px;
-  left: 0px;
+  left: -0.5px;
   height: 20px;
-  width: 50%;
+  width: 300px;
   background-color: #666666;
   color: white;
-//  border: 1px solid gray;
+  padding-left: 10px;
+  padding-top: 2px;
 }
 .user-card-image{
   position: absolute;
@@ -40,10 +41,44 @@
   border: none;
 }
 .user-card-data{
-  padding-left: 140px;
+  position: absolute;
+  padding-left: 120px;
   width: 100%;
+}
+.user-card-synopsis{
+  position: absolute;
+  padding-left: 210px;
+  width: 100%;
+}
+.user-card-synopsis-name{
+  padding-top: 10px;
+  font-weight: bold;
 }
 .user-card-block{
   position: relative;
   height: 20px;
+}
+.user-card-detailed:hover{
+  border: 1px solid darksalmon !important;
+  cursor: pointer;
+}
+.user-card-detailed:hover .card-header{
+  background-color: darksalmon;
+}
+
+.user-card-button{
+  width: 80%;
+  border: 1px solid gray;
+  background-color: lightgray;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+.user-card-button:hover{
+  border: 1px solid red;
 }
