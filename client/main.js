@@ -18,7 +18,7 @@ Session.set('display_profile_json_panel', false);
 Session.set('json_content', "panel for inspecting data objects");
 Session.set('current_page', '#main-pane');
 
-
+Session.set('show_task_detail_panel', false);
 
 
 Meteor.startup(function () {
@@ -49,6 +49,10 @@ Template.footerBarTemplate.showJsonPanel = function(){
 Template.footerBarTemplate.jsonData = function(){
     return Session.get('json_content');
 };
+
+//-----------------------------------------------------
+// TODO: refactor toggle functions to helper.js
+
 function toggleJsonPanel(){
     if(Session.get('display_profile_json_panel')){
         Session.set('display_profile_json_panel',false);
@@ -56,4 +60,12 @@ function toggleJsonPanel(){
         Session.set('display_profile_json_panel',true);
     }
 }
-
+function toggleTaskDetailPanel(){
+    if(Session.get('show_task_detail_panel')){
+        Session.set('show_task_detail_panel',false);
+        $('#new-todo-box').removeClass('hidden');
+    }else{
+        Session.set('show_task_detail_panel',true);
+        $('#new-todo-box').addClass('hidden');
+    }
+}

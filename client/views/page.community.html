@@ -3,13 +3,15 @@
         <div class="">
             <div class="spacer row"></div>
             <div class="row">
-                <div class="six columns" id="community-members-list">
-                    <input id="filterInput" type="text" class="search" />
-                    {{#if showQuickViewPanel}}
-                    {{> quickViewPanelTemplate}}
-                    {{else}}
-                    <div class="itaintrocketscience">lorem ipsum</div>
-                    {{/if}}
+                <div id="community-inspection-column" class="six columns" >
+                    <div id="community-inspection-block" class="top-anchored">
+                        <input id="filterInput" type="text" class="search" />
+                        {{#if showQuickViewPanel}}
+                        {{> quickViewPanelTemplate}}
+                        {{else}}
+                        <div class="itaintrocketscience">Phasellus sit amet ante sed mi egestas adipiscing id in sem. Ut sapien lorem, iaculis id auctor sed, ultrices sit amet eros. Maecenas risus nisl, lacinia sit amet semper id, aliquet et velit. Pellentesque id eros nulla. Suspendisse gravida nisi eget nibh hendrerit auctor. Nullam lorem purus, viverra sed convallis rutrum, congue id ligula. Ut ut sapien eget libero feugiat elementum. Vivamus id molestie felis. Proin ultricies elit condimentum lectus congue ultrices. </div>
+                        {{/if}}
+                    </div>
 
                     <!--<div class="hide-for-medium hide-for-small sidebar">-->
                         <!--<div id="tag-filter" class="tag-list">-->
@@ -21,7 +23,7 @@
                         <!--</div>-->
                     <!--</div>-->
                 </div>
-                <div class="six columns hide-for-small">
+                <div id="community-members-list" class="six columns hide-for-small">
                     <ul id="item-list" class="list">
                         {{#each communityUsers}}
                         {{> userItemTemplate}}

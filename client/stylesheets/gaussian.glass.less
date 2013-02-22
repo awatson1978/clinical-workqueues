@@ -1,0 +1,54 @@
+//http://acidmartin.wordpress.com/2012/12/01/css3-gaussian-blur-revisited/
+
+:root .css3-gaussian-blur *
+{
+  text-shadow: 0 0 10px rgba(0, 0, 0, .5) !important;
+  color: transparent !important;
+  background-image: none !important;
+  border-color: rgba(0, 0, 0, .05) !important;
+/* disable the pointer events for blurred zones */
+  -moz-pointer-events: none !important;
+  -webkit-pointer-events: none !important;
+  pointer-events: none !important;
+}
+
+:root .css3-gaussian-blur input,
+:root .css3-gaussian-blur textarea,
+:root .css3-gaussian-blur button,
+:root .css3-gaussian-blur select
+{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5) !important;
+  border-color: rgba(0, 0, 0, .05) !important;
+  resize: none !important;
+  opacity: .5 !important;
+}
+
+:root .css3-gaussian-blur img,
+:root .css3-gaussian-blur input,
+:root .css3-gaussian-blur input[type="file"],
+:root .css3-gaussian-blur input[type="checkbox"],
+:root .css3-gaussian-blur input[type="radio"]
+:root .css3-gaussian-blur textarea,
+:root .css3-gaussian-blur select
+{
+  opacity: .2 !important;
+  background: transparent none !important;
+}
+
+:root .css3-gaussian-blur fieldset
+{
+  border-color: transparent !important;
+}
+
+/* Vendor-specific styles */
+/* CSS3 filters are currently supported by Chrome only */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  :root .css3-gaussian-blur img
+  {
+    -webkit-filter: blur(15px) !important;
+    filter: blur(15px) !important;
+    opacity: 1 !important; /* restore the opacity for that browser */
+  }
+}
+
+

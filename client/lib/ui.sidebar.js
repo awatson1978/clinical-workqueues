@@ -1,6 +1,7 @@
 Template.sidebarTemplate.events({
     'click .sidebar-tile': function(){
-        alert('alert');
+        //alert('this button could be configured to send data to and launch an existing applicatoin in *your* workflow.  Contact pentasyllabic.com to learn more.');
+        toggleTaskDetailPanel();
     }
 });
 

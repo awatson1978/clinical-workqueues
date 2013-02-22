@@ -14,7 +14,9 @@ Meteor.startup(function () {
             profile: {
                 name: 'Administrator',
                 role: 'Administrator',
-                avatar: '/userspace/house/lisa.cuddy.jpg'
+                avatar: '/userspace/house/lisa.cuddy.jpg',
+                collaborators: '',
+                carewatch: ''
             }
         });
         log_event('Administrator account created: ' + userId, LogLevel.Info);

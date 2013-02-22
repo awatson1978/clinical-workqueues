@@ -54,3 +54,21 @@ function parseBreadCrumbs(page){
     }
 }
 
+
+
+
+function hidePages(){
+    console.log('hiding pages');
+    $('.page').addClass('hidden');
+}
+function showPage(page){
+    hidePages();
+    $(page).removeClass('hidden');
+    Session.set('current_page', page);
+}
+function showHomePage(){
+    showPage("#home_page");
+}
+function showCurrentSessionPage(){
+    showPage(Session.get('current_page'));
+}

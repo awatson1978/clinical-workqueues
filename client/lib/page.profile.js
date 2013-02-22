@@ -1,3 +1,6 @@
+Template.userCardTemplate.rendered = function(){
+    $('#userProfileCard').css('width',window.innerWidth - 40);
+};
 Template.userCardTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace);
     return Session.equals('editing_profile_email', "true");
@@ -205,25 +208,25 @@ Template.userCardTemplate.user_avatar = function () {
         log_event(err, LogLevel.Error);
     }
 };
-Template.userCardTemplate.user_collaborators = function () {
-    // Meteor.user().profile breaks when user is logged out
-    if(Meteor.user()){
-        if(Meteor.user().profile){
-            return Meteor.user().profile.collaborators;
-        }
-    }else{
-        return "List of collaborators not available right now.";
-    }
-};
-Template.userCardTemplate.user_carewatch = function () {
-    if(Meteor.user()){
-        if(Meteor.user().profile){
-            return Meteor.user().profile.carewatch;
-        }
-    }else{
-        return "List of carewatch members not available right now.";
-    }
-};
+//Template.userCardTemplate.user_collaborators = function () {
+//    // Meteor.user().profile breaks when user is logged out
+//    if(Meteor.user()){
+//        if(Meteor.user().profile){
+//            return Meteor.user().profile.collaborators;
+//        }
+//    }else{
+//        return "List of collaborators not available right now.";
+//    }
+//};
+//Template.userCardTemplate.user_carewatch = function () {
+//    if(Meteor.user()){
+//        if(Meteor.user().profile){
+//            return Meteor.user().profile.carewatch;
+//        }
+//    }else{
+//        return "List of carewatch members not available right now.";
+//    }
+//};
 Template.userCardTemplate.user_image = function () {
     try{
         var src = "images/placeholder-240x240.gif";

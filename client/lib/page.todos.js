@@ -1,21 +1,11 @@
 ////////// Todos //////////
 
-Template.todos.rendered = function(){
-    jQuery("img[rel]").overlay({
-        // custom top position
-        top: (window.innerHeight / 2) - 275,
-        left: (((window.innerWidth - 200) - 675) / 2) + 200,
-
-        // some mask tweaks suitable for facebox-looking dialogs
-        mask: {
-            color: '#ebecff',
-            loadSpeed: 200,
-            opacity: 0.9
-        },
-
-        closeOnClick: true,
-        load: false
-    });
+Template.taskDetailCardTemplate.rendered = function(){
+    $('#taskDetailCard').css('width', window.innerWidth - 240);
+    $('#taskDetailCard').css('left', 220);
+};
+Template.taskDetailCardTemplate.showTaskDetail = function(){
+    return Session.get('show_task_detail_panel');
 };
 
 Template.todos.any_list_selected = function () {
@@ -160,6 +150,9 @@ Template.todo_item.adding_tag = function () {
 };
 
 Template.todo_item.events({
+    'click .todo': function(){
+        toggleTaskDetailPanel();
+    },
     'click .check': function () {
         Todos.update(this._id, {$set: {done: !this.done}});
     },
