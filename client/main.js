@@ -69,3 +69,5 @@ function toggleTaskDetailPanel(){
         $('#new-todo-box').addClass('hidden');
     }
 }
+
+

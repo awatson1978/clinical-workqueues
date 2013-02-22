@@ -231,6 +231,11 @@ Template.userCardTemplate.user_image = function () {
     try{
         var src = "images/placeholder-240x240.gif";
 
+
+        if(Meteor.user().services.facebook){
+            return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
+            //return Meteor.user().services.facebook.id;
+        }else
         // CONFLICT?
         // this wants to be Meteor.user().profile so the default image displays if there's no profile
         // but, I think it's also causing crashes elsewhere if the Meteor.
@@ -238,7 +243,8 @@ Template.userCardTemplate.user_image = function () {
             src = $.trim(Meteor.user().profile.avatar);
         }
         log_event('profile avatar src: ' + src, LogLevel.Info);
-        return src;
+        //return src;
+
     }
     catch(err){
         log_event(err, LogLevel.Error);

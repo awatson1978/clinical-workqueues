@@ -57,3 +57,14 @@ Meteor.publish('userProfile', function (userId) {
         'emails[0].address': 1
     }});
 });
+
+Meteor.publish("facebook_avatar_url", function() {
+    return Meteor.users.find({_id: this.userId}, {fields: {
+        'services.facebook.id': 1,
+        'services.facebook.name': 1,
+        'services.facebook.gender': 1,
+        'services.facebook.picture': 1,
+        'services.facebook.picture.data': 1,
+        'services.facebook.picture.data.url': 1
+    }});
+});

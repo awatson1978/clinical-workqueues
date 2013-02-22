@@ -10,12 +10,13 @@ Meteor.subscribe('lists', function () {
 
 Meteor.subscribe('usersDirectory');
 Meteor.subscribe('hipaa');
-
+Meteor.subscribe('facebook_avatar_url');
 
 // Always be subscribed to the todos for the selected list.
 Meteor.autosubscribe(function () {
     Meteor.subscribe('usersDirectory');
     Meteor.subscribe('hipaa');
+    Meteor.subscribe('facebook_avatar_url', Meteor.userId());
 
     Meteor.subscribe('userProfile', Meteor.userId());
 

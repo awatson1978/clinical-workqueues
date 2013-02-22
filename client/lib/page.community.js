@@ -1,8 +1,8 @@
 Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.quickViewPanelTemplate.helpers(genericUserDisplayObject);
 
-Template.communityPageTemplate.rendered = function(){
-    $('#community-inspection-block').css('width',$('#community-inspection-column').css('width'))
+Template.communityInspectionColumn.rendered = function(){
+    $('#community-inspection-block').css('width',$('#community-members-list').width())
 };
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
@@ -137,6 +137,7 @@ Template.userItemTemplate.events({
         //alert('click!');
         Session.set('selected_community_member', this._id);
         Session.set('show_quick_view_panel', true);
+        Session.set('json_content', JSON.stringify(this));
         Meteor.flush();
     }
 });
