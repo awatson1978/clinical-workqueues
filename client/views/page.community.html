@@ -2,29 +2,23 @@
     <div class="page" id="communityPage">
         <div class="doesnt-overlap-header">
             <div class="spacer row"></div>
-            <div class="row">
-                <div id="community-members-list">
-                    <div class="spacer row hide-for-small"></div>
-                    <div class="hidden row hide-for-small">
-                        <img class="dotted infograph with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
-                    </div>
-                    <div class="spacer row hide-for-small"></div>
-                    <ul id="item-list" class="list dont-overlap-user-card">
-                        {{#each communityUsers}}
-                        {{> userItemTemplate}}
-                        {{/each}}
-                    </ul>
-                    <div class="spacer row"></div>
-                    <div id="community-inspection-column">
-                        {{> communityInspectionColumn }}
-                    </div>
-                </div>
+            <div class="spacer row hide-for-small"></div>
+            <div id="communityMembersList">
+                <ul id="item-list" class="list dont-overlap-user-card">
+                    {{#each communityUsers}}
+                    {{> userItemTemplate}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="spacer row hide-for-small"></div>
+            <div id="communityInspectionColumn">
+                {{> communityInspectionColumn }}
             </div>
         </div>
     </div>
 </template>
 <template name="communityInspectionColumn">
-    <div id="community-inspection-block" class="top-anchored">
+    <div id="communityInspectionBlock" class="top-anchored">
         <input id="filterInput" type="text" class="search" />
         {{#if showQuickViewPanel}}
         {{> quickViewPanelTemplate}}
@@ -38,7 +32,7 @@
         <div id="userQuickViewPanel" class="panel user-card-detailed">
             <div class="card-header rounded-top-right">
                 <!--<div class="top_right"></div>-->
-                <span class="white card-meta-data">{{user_id}}</span>
+                <span class="white card-meta-data barcode">*{{user_id}}*</span>
                 <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
             </div>
             <img class="user-card-image" src="{{user_avatar}}" />
@@ -85,7 +79,7 @@
         <!--<div class="hide-for-small two columns">-->
         <!--</div>-->
         <div class="card-data">
-            <div class="card-northwest gray card-meta-data without-padding">{{ _id }}</div>
+            <div class="card-northwest gray card-meta-data without-padding barcode">*{{ _id }}*</div>
             <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
             <div class="user-posts">Posts: {{userHealthEntries}}</div>
             <div class="user-rank">HealthRank: {{userHealthRank}}</div>

@@ -15,6 +15,7 @@ Template.app_container.resize = function(){
 Meteor.startup = function() {
     $(window).resize(function(evt) {
         Session.set("last_resize", new Date());
+        detectOrientation();
     });
 };
 $('#community-members-list').unbind('touchmove');

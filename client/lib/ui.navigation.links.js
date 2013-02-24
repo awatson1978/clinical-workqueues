@@ -8,6 +8,7 @@ function showPage(page){
     $(page).removeClass('hidden');
     Session.set('current_page', page);
     Session.set('json_content', page);
+    detectOrientation();
     //console.log('current page: ' + page);
     //parseBreadCrumbs(page);
 }
