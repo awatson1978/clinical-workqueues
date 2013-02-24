@@ -23,8 +23,10 @@
 
 <template name="workqueuesPageTemplate">
     <div class="page" id="main-pane">
-        {{> todos}}
-        {{> sidebarTemplate }}
+        <div class="foo">
+            {{> todos}}
+            {{> sidebarTemplate }}
+        </div>
     </div>
 </template>
 
@@ -50,8 +52,8 @@
         <ul class="nav-bar footer-nav-bar">
             <li><a href="#" onclick='showPage("#main-pane");'><span class="pictographs">4  </span>Workqueues</a></li>
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">g  </span>Community</a></li>
-            <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">k  </span>My Profile</a></li>
-            <li><a href="#" onclick='showPage("#dropboxPage");'><span class="pictographs">m  </span>Dropbox</a></li>
+            <!--<li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">k  </span>My Profile</a></li>-->
+            <!--<li><a href="#" onclick='showPage("#dropboxPage");'><span class="pictographs">m  </span>Dropbox</a></li>-->
             <li style="position: fixed; right: 0px;"><a href="#" onclick='toggleJsonPanel();'><span class="pictographs">E  </span></a></li>
             <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
             <!--<li><a href="#" onclick='showPage("#snomedPage");'><span class="pictographs">4  </span>Anatomy Browser</a></li>-->

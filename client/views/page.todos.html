@@ -8,16 +8,16 @@
             {{/each}}
         </ul>
     </div>
-    <div id="new-todo-box">
-        <input type="text" id="new-todo" placeholder="New item" />
-    </div>
+    <!--<div id="new-todo-box">-->
+    <!--<input type="text" id="new-todo" placeholder="New item" />-->
+    <!--</div>-->
     {{/if}}
     <!--<div class="three columns">-->
-        <!--<img class="dynamic panel" rel="#photo41" src="/images/placeholder-240x240.gif" />-->
+    <!--<img class="dynamic panel" rel="#photo41" src="/images/placeholder-240x240.gif" />-->
     <!--</div>-->
     <!--<div class="simple_overlay" id="photo41">-->
-        <!--<img src="/images/placeholder-240x240.gif" />-->
-        <!--<div class="close"></div>-->
+    <!--<img src="/images/placeholder-240x240.gif" />-->
+    <!--<div class="close"></div>-->
     <!--</div>-->
     {{> taskDetailCardTemplate }}
 </template>
@@ -63,12 +63,12 @@
                 <span class="todo-text">{{text}}</span>
             </li>
             {{/if}}
-            <!--<li class="item-tags">-->
-                <!---->
-            <!--</li>-->
+            <li class="item-tags">
+
+            </li>
         </ul>
         <ul class="horizontal-tags">
-            <li class="bookend-left"></li>
+            <!--<li class="bookend-left"></li>-->
             {{#each tag_objs}}
             <li class="tag removable_tag">
                 <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
@@ -85,6 +85,6 @@
             </il>
             {{/if}}
         </ul>
-        <div class="bookend-right"></li>
+        <!--<div class="bookend-right"></li>-->
     </li>
 </template>

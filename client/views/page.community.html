@@ -1,43 +1,22 @@
 <template name="communityPageTemplate">
     <div class="page" id="communityPage">
-        <div class="">
+        <div class="doesnt-overlap-header">
             <div class="spacer row"></div>
             <div class="row">
-                <div id="community-inspection-column" class="six columns" >
-                    {{> communityInspectionColumn }}
-
-                    <!--<div class="hide-for-medium hide-for-small sidebar">-->
-                        <!--<div id="tag-filter" class="tag-list">-->
-                            <!--<ul class="tag-list sort-by">-->
-                                <!--<li class="sort tag" data-sort="user-email">Sort - Email</li>-->
-                                <!--<li class="sort tag" data-sort="user-posts">Sort - Health Entries</li>-->
-                                <!--<li class="sort tag" data-sort="user-rank">Sort - Health Rank</li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                </div>
-                <div id="community-members-list" class="six columns hide-for-small">
-                    <ul id="item-list" class="list">
+                <div id="community-members-list">
+                    <div class="spacer row hide-for-small"></div>
+                    <div class="hidden row hide-for-small">
+                        <img class="dotted infograph with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
+                    </div>
+                    <div class="spacer row hide-for-small"></div>
+                    <ul id="item-list" class="list dont-overlap-user-card">
                         {{#each communityUsers}}
                         {{> userItemTemplate}}
                         {{/each}}
-                    </ul>                    <!--<div class="row panel">-->
-                        <!--<h6>{{user_count}} Registered Users</h6>-->
-                    <!--</div>-->
-                    <!--<div class="spacer row"></div>-->
-                    <!--<div class="row panel">-->
-                        <!--<h6>{{collaborators_count }} Health Collaborators</h6>-->
-                        <!--<ul class="collaborators list">-->
-                            <!--{{#each collaborators}}-->
-                            <!--{{> collaboratorItem}}-->
-                            <!--{{/each}}-->
-                        <!--</ul>-->
-                    <!--</div>-->
-
-
+                    </ul>
                     <div class="spacer row"></div>
-                    <div class="hidden row">
-                        <img class="dotted infograph with-rounded-corners" id="drop_zone" src="images/placeholder-240x240.gif" />
+                    <div id="community-inspection-column">
+                        {{> communityInspectionColumn }}
                     </div>
                 </div>
             </div>
@@ -50,26 +29,24 @@
         {{#if showQuickViewPanel}}
         {{> quickViewPanelTemplate}}
         {{else}}
-        <div class="itaintrocketscience">Phasellus sit amet ante sed mi egestas adipiscing id in sem. Ut sapien lorem, iaculis id auctor sed, ultrices sit amet eros. Maecenas risus nisl, lacinia sit amet semper id, aliquet et velit. Pellentesque id eros nulla. Suspendisse gravida nisi eget nibh hendrerit auctor. Nullam lorem purus, viverra sed convallis rutrum, congue id ligula. Ut ut sapien eget libero feugiat elementum. Vivamus id molestie felis. Proin ultricies elit condimentum lectus congue ultrices. </div>
+        <div class="itaintrocketscience hide-for-small">Phasellus sit amet ante sed mi egestas adipiscing id in sem. Ut sapien lorem, iaculis id auctor sed, ultrices sit amet eros. Maecenas risus nisl, lacinia sit amet semper id, aliquet et velit. Pellentesque id eros nulla. Suspendisse gravida nisi eget nibh hendrerit auctor. Nullam lorem purus, viverra sed convallis rutrum, congue id ligula. Ut ut sapien eget libero feugiat elementum. Vivamus id molestie felis. Proin ultricies elit condimentum lectus congue ultrices. </div>
         {{/if}}
     </div>
 </template>
 <template name="quickViewPanelTemplate">
     <div class="spacer row"></div>
-        <div class="user-card-block row">
-            <div class="panel user-card-detailed">
-                <div class="card-header rounded-top-right">
-                    <!--<div class="top_right"></div>-->
-                    <span class="white card-meta-data">{{user_id}}</span>
-                    <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
-                </div>
-                <img class="user-card-image gray-border" src="{{user_avatar}}" />
+        <div id="userQuickViewPanel" class="panel user-card-detailed">
+            <div class="card-header rounded-top-right">
+                <!--<div class="top_right"></div>-->
+                <span class="white card-meta-data">{{user_id}}</span>
+                <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
+            </div>
+            <img class="user-card-image" src="{{user_avatar}}" />
 
-                <div class="user-card-synopsis">
-                    <div class="spacer row"></div>
-                    <span class="user-card-synopsis-name">{{ user_name }}</span><br>
-                    <span class="user-card-synopsis-email">{{ user_email }}</span><br>
-                </div>
+            <div class="user-card-synopsis">
+                <div class="spacer row"></div>
+                <span class="user-card-synopsis-name">{{ user_name }}</span><br>
+                <span class="user-card-synopsis-email">{{ user_email }}</span><br>
             </div>
         </div>
     </div>

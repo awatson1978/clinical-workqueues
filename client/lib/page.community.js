@@ -2,7 +2,13 @@ Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.quickViewPanelTemplate.helpers(genericUserDisplayObject);
 
 Template.communityInspectionColumn.rendered = function(){
-    $('#community-inspection-block').css('width',$('#community-members-list').width())
+    $('#community-inspection-block').css('width',$('#community-members-list').width());
+//    $("#communityPage").bind("swipeleft", function(){
+//        alert('swipeleft!');
+//    });
+//    $("#communityPage").bind("swiperight", function(){
+//        alert('swipeleft!');
+//    });
 };
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
@@ -20,7 +26,7 @@ Template.communityPageTemplate.events({
 Template.communityPageTemplate.communityUsers = function () {
         return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
 };
-Template.communityPageTemplate.showQuickViewPanel = function () {
+Template.communityInspectionColumn.showQuickViewPanel = function () {
     log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace);
     return Session.get('show_quick_view_panel');
 };

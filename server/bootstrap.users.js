@@ -124,7 +124,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Octavia Butler',
                     role: 'Patient',
-                    avatar: '/userspace/others/george.washington.carver.jpg'
+                    avatar: '/userspace/others/octavia.butler.jpg'
                 }
             },
             {   username: 'carver',
@@ -133,7 +133,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'George Washington Carver',
                     role: 'Chemist',
-                    avatar: '/userspace/others/samuel.clemens.jpg'
+                    avatar: '/userspace/others/george.washington.carver.jpg'
                 }
             },
             {   username: 'shelley',

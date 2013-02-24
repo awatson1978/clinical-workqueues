@@ -1,12 +1,7 @@
 ////////// Todos //////////
 
-Template.taskDetailCardTemplate.rendered = function(){
-    $('#taskDetailCard').css('width', window.innerWidth - 240);
-    $('#taskDetailCard').css('left', 220);
-};
-Template.taskDetailCardTemplate.showTaskDetail = function(){
-    return Session.get('show_task_detail_panel');
-};
+
+//----------------------------------------------------------------------
 
 Template.todos.any_list_selected = function () {
     //return !Session.equals('list_id', null);
@@ -151,7 +146,9 @@ Template.todo_item.adding_tag = function () {
 
 Template.todo_item.events({
     'click .todo': function(){
-        toggleTaskDetailPanel();
+        //toggleTaskDetailPanel();
+        Session.set('selected_task_id', false);
+        Session.set('show_task_detail_panel', true);
     },
     'click .check': function () {
         Todos.update(this._id, {$set: {done: !this.done}});
@@ -207,3 +204,60 @@ Template.todo_item.events(okCancelEvents(
             Session.set('editing_addtag', null);
         }
     }));
+
+
+//----------------------------------------------------------------------------------
+
+Template.taskDetailCardTemplate.rendered = function(){
+    $('#taskDetailCard').css('width', window.innerWidth - 240);
+    $('#taskDetailCard').css('left', 220);
+//    $("#taskDetailCard").bind("swipeleft", function(){
+//        alert('swipeleft!');
+//    });
+//    $("#taskDetailCard").bind("swiperight", function(){
+//        alert('swipeleft!');
+//    });
+//    $("#taskDetailCard").bind("swipedown", function(){
+//        //alert('swipedown!');
+//        Session.set('show_task_detail_panel',false);
+//    });
+    $("#taskDetailCard").bind("swipeleft", function(){
+        alert('swipeleft!');
+    });
+    $("#taskDetailCard").bind("swiperight", function(){
+        alert('swiperight!');
+    });
+    $("#taskDetailCard").bind("swipeleftdown swipedown swiperightdown", function(){
+        //alert('swipedown!');
+        Session.set('show_task_detail_panel',false);
+        Meteor.flush();
+    });
+};
+Template.taskDetailCardTemplate.showTaskDetail = function(){
+    return Session.get('show_task_detail_panel');
+};
+
+
+//Template.taskDetailCardTemplate.tag_objs = function () {
+//    return _.map(Todos.findOne(Session.set('selected_task_id')).tags || [], function (tag) {
+//        return {todo_id: Session.set('selected_task_id'), tag: tag};
+//    });
+//};
+//
+//Template.taskDetailCardTemplate.done_class = function () {
+//    var todo = Todos.findOne(Session.set('selected_task_id'));
+//    return todo.done ? 'done' : '';
+//};
+//
+//Template.taskDetailCardTemplate.done_checkbox = function () {
+//    var todo = Todos.findOne(Session.set('selected_task_id'));
+//    return todo.done ? 'checked="checked"' : '';
+//};
+//
+//Template.taskDetailCardTemplate.editing = function () {
+//    return Session.equals('editing_itemname', Session.set('selected_task_id'));
+//};
+//
+//Template.taskDetailCardTemplate.adding_tag = function () {
+//    return Session.equals('editing_addtag', Session.set('selected_task_id'));
+//};
