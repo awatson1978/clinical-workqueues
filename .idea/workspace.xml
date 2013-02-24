@@ -2,65 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/cordova-2.5.0rc1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/detect-browser/app.platform.detection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/detect-browser/page.unsupported.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/helpers/jquery.jgestures.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/depend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.hashchange.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.buttonMarkup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.define.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.degradeInputs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.docs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.fieldContain.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.init.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.links.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.navigation.pushstate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.nojs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.ns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.support.orientation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.support.touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.transitions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.vmouse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.widget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.zoom.iosorientationfix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.zoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.tag.inserter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.ui.widget.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/jquery.mobile/text.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/mobile/mobile-fixed-layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/mobile/mobile-fixed-layout.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/lib/helpers/jgestures.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/lib/helpers/jquery.mobile-1.1.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/views/app.platform.detection.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/jquery.mobile-1.1.1.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile-1.1.1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/app.platform.detection.js" afterPath="$PROJECT_DIR$/client/lib/ui.resize.rules.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/navigation.links.js" afterPath="$PROJECT_DIR$/client/lib/ui.navigation.links.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/jquery.mobile-1.1.1.js" afterPath="$PROJECT_DIR$/client/lib/helpers/jquery.mobile-1.1.1.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/depend.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/depend.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/events/navigate.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/events/navigate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/events/orientationchange.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/events/orientationchange.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/events/throttledresize.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/events/throttledresize.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/events/touch.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/events/touch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/index.php" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/index.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.hashchange.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.hashchange.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.buttonMarkup.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.buttonMarkup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.core.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.core.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.define.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.define.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.degradeInputs.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.degradeInputs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.docs.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.docs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.events.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.events.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.fieldContain.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.fieldContain.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.grid.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.grid.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.init.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.init.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.links.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.links.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.media.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.media.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.navigation.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.navigation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.navigation.pushstate.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.navigation.pushstate.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.nojs.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.nojs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.ns.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.ns.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.support.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.support.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.support.orientation.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.support.orientation.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.support.touch.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.support.touch.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.transition.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.transition.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.transitions.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.transitions.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.vmouse.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.vmouse.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.widget.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.widget.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.zoom.iosorientationfix.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.zoom.iosorientationfix.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.mobile.zoom.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.mobile.zoom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.tag.inserter.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.tag.inserter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/jquery.ui.widget.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/jquery.ui.widget.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/navigation/history.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/navigation/history.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/navigation/method.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/navigation/method.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/navigation/navigator.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/navigation/navigator.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/navigation/path.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/navigation/path.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/text.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/text.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/flip.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/flip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/flow.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/flow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/pop.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/pop.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/slide.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/slide.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/slidedown.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/slidedown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/slidefade.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/slidefade.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/slideup.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/slideup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/transitions/turn.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/transitions/turn.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/addFirstLastClasses.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/addFirstLastClasses.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/collapsible.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/collapsible.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/collapsibleSet.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/collapsibleSet.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/controlgroup.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/controlgroup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/dialog.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/dialog.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/fixedToolbar.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/fixedToolbar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/fixedToolbar.workarounds.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/fixedToolbar.workarounds.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/button.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/button.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/checkboxradio.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/checkboxradio.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/rangeslider.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/rangeslider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/reset.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/reset.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/select.custom.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/select.custom.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/select.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/select.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/slider.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/slider.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/slider.tooltip.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/slider.tooltip.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/forms/textinput.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/forms/textinput.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/listview.autodividers.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/listview.autodividers.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/listview.filter.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/listview.filter.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/listview.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/listview.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/loader.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/loader.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/navbar.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/navbar.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/page.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/page.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/page.sections.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/page.sections.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/panel.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/panel.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/popup.arrow.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/popup.arrow.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/popup.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/popup.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/table.columntoggle.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/table.columntoggle.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/table.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/table.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/jquery.mobile/widgets/table.reflow.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile/widgets/table.reflow.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.todos.js" afterPath="$PROJECT_DIR$/client/lib/page.todos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/app.core.less" afterPath="$PROJECT_DIR$/client/stylesheets/app.core.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/app.layout.less" afterPath="$PROJECT_DIR$/client/stylesheets/app.layout.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.card.less" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/media.less" afterPath="$PROJECT_DIR$/client/stylesheets/media.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/todos.less" afterPath="$PROJECT_DIR$/client/stylesheets/todos.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="$PROJECT_DIR$/client/views/page.community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.todos.html" afterPath="$PROJECT_DIR$/client/views/page.todos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/sidebar.html" afterPath="$PROJECT_DIR$/client/views/sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.users.js" afterPath="$PROJECT_DIR$/server/bootstrap.users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.resize.rules.js" afterPath="$PROJECT_DIR$/client/lib/ui.resize.rules.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,28 +112,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="media.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/media.less">
+          <file leaf-file-name="lists.card.less" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="61" column="3" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.unsupported.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/detect-browser/page.unsupported.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="11" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pages.community.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="92" column="31" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+                <state line="40" column="13" selection-start="606" selection-end="606" vertical-scroll-proportion="0.7940447">
                   <folding />
                 </state>
               </provider>
@@ -127,10 +130,28 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lists.card.less" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+          <file leaf-file-name="pages.community.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="11" selection-start="618" selection-end="618" vertical-scroll-proportion="0.70553595">
+                <state line="92" column="31" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.unsupported.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/detect-browser/page.unsupported.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="11" selection-start="157" selection-end="157" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="media.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/media.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="61" column="3" selection-start="1130" selection-end="1130" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -143,7 +164,7 @@
           <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="94" column="0" selection-start="4639" selection-end="4639" vertical-scroll-proportion="-27.0">
+                <state line="94" column="0" selection-start="4639" selection-end="4639" vertical-scroll-proportion="-0.64">
                   <folding />
                 </state>
               </provider>
@@ -176,19 +197,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ui.navigation.links.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ui.navigation.links.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/ui.navigation.links.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="1" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.99196327">
+                <state line="54" column="1" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ui.resize.rules.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ui.resize.rules.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="40" column="49" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.77294683">
                   <folding />
                 </state>
               </provider>
@@ -247,10 +268,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="45" />
-    <option name="y" value="54" />
-    <option name="width" value="1467" />
-    <option name="height" value="1041" />
+    <option name="x" value="9" />
+    <option name="y" value="28" />
+    <option name="width" value="1541" />
+    <option name="height" value="998" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -410,7 +431,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="detect-browser" />
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -450,10 +475,10 @@
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/detect-browser" />
-      <recent name="$PROJECT_DIR$/client/lib/helpers" />
-      <recent name="$PROJECT_DIR$/client/lib/jquery.mobile" />
       <recent name="$PROJECT_DIR$/.scrap" />
+      <recent name="$PROJECT_DIR$/client/lib/helpers" />
+      <recent name="$PROJECT_DIR$/client/detect-browser" />
+      <recent name="$PROJECT_DIR$/client/lib/jquery.mobile" />
       <recent name="$PROJECT_DIR$/client/lib" />
     </key>
   </component>
@@ -495,13 +520,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="54" width="1467" height="1041" extended-state="0" />
+    <frame x="9" y="28" width="1541" height="998" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14750692" sideWeight="0.6745321" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21277997" sideWeight="0.986317" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -630,7 +655,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="4639" selection-end="4639" vertical-scroll-proportion="-27.0">
+        <state line="94" column="0" selection-start="4639" selection-end="4639" vertical-scroll-proportion="-0.64">
           <folding />
         </state>
       </provider>
@@ -649,20 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="11" selection-start="618" selection-end="618" vertical-scroll-proportion="0.70553595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/detect-browser/app.platform.detection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="13" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
@@ -672,7 +683,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.navigation.links.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="1" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.99196327">
+        <state line="54" column="1" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="49" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.77294683">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="13" selection-start="606" selection-end="606" vertical-scroll-proportion="0.7940447">
           <folding />
         </state>
       </provider>

@@ -43,6 +43,6 @@ define([
 	'./jquery.mobile.zoom',
 	'./jquery.mobile.zoom.iosorientationfix'
 ], function( require ) {
-	require( [ './jquery.mobile.init' ], function() {} );
+	require( [ './jquery.mobile.init.js' ], function() {} );
 });
 //>>excludeEnd("jqmBuildExclude");
