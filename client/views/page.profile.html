@@ -7,18 +7,13 @@
     </div>
 </template>
 
-<template name="carewatchItem">
-    <li>
-        <span class="collaborator">{{ name }}</span>
-        <span class="destroy"></span>
-    </li>
-</template>
+
 <template name="userCardTemplate">
     <div class="user-card-block padded row">
         <div id="userProfileCard" class="panel user-card-detailed">
             <div class="card-header clipped_corner rounded-top-right">
                 <!--<div class="top_right"></div>-->
-                <span class="white card-meta-data">{{user_id}}</span>
+                <span class="white card-meta-data barcode">*{{user_id}}*</span>
                 <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
             </div>
             <img class="user-card-image drop-zone gray-border" id="drop_zone" src="{{user_image}}" />
@@ -67,36 +62,43 @@
                             </div>
                             {{/if}}
                         </li>
-
-                        <!--<li>-->
-                            <!--<div id="profile-display-collaborators-label" class="dictionary-key">Collaborators</div>-->
-                            <!--<div id="userCollaboratorsDisplay" class="userCollaboratorsDisplay display dictionary-value-multiline">-->
-                                <!--<div>-->
-                                    <!--<ul class="collaborators list">-->
-                                        <!--{{#each user_collaborators}}-->
-                                        <!--{{> collaboratorItem}}-->
-                                        <!--{{/each}}-->
-                                    <!--</ul>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
-
-                        <!--<li>-->
-                            <!--<div id="profile-display-carewatch-label" class="dictionary-key hidden-bottom-row">Carewatch</div>-->
-                            <!--<div id="userCarewatchDisplay" class="userCarewatchDisplay display dictionary-value-multiline">-->
-                                <!--<div>-->
-                                    <!--<ul class="carewatch list">-->
-                                        <!--{{#each user_carewatch}}-->
-                                        <!--{{> carewatchItem}}-->
-                                        <!--{{/each}}-->
-                                    <!--</ul>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</li>-->
                     </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer row"></div>
+        <div id="userProfileCardExtended" class="user-card-detailed-extended">
+            <div class="user-card-data-extended">
+                <div class="six columns no-left-padding">
+                    <div class="profile-list-label"><span class="pictograph">^</span> Carewatch</div>
+                    <div class="panel">
+                        <ul class="carewatch-data simple-user list">
+                            {{#each user_carewatch}}
+                            <li>
+                                <span class="collaborator">{{ name }}</span>
+                                <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="six columns no-right-padding">
+                    <div class="profile-list-label fullwidth"><span class="pictograph">`  </span>Collaborators</div>
+                    <div class="panel">
+                        <ul class="collaborators-data simple-user list">
+                            {{#each user_collaborators}}
+                            <li>
+                                <span class="collaborator">{{ name }}</span>
+                                <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
 </template>
+

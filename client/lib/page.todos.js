@@ -147,7 +147,12 @@ Template.todo_item.adding_tag = function () {
 Template.todo_item.events({
     'click .todo': function(){
         //toggleTaskDetailPanel();
-        Session.set('selected_task_id', false);
+        Session.set('selected_task_id', this._id);
+        Session.set('selected_task_done_status', this.done);
+        Session.set('selected_task_text', this.text);
+    },
+    'dblclick .todo': function(){
+        //toggleTaskDetailPanel();
         Session.set('show_task_detail_panel', true);
     },
     'click .check': function () {
@@ -235,6 +240,29 @@ Template.taskDetailCardTemplate.rendered = function(){
 };
 Template.taskDetailCardTemplate.showTaskDetail = function(){
     return Session.get('show_task_detail_panel');
+};
+Template.taskDetailCardTemplate.todo_id = function(){
+    return Session.get('selected_task_id');
+};
+Template.taskDetailCardTemplate.todo_text = function(){
+    return Session.get('selected_task_text');
+};
+Template.taskDetailCardTemplate.todo_done = function(){
+    return Session.get('selected_task_done_status') ? 'checked="checked"' : '';
+};
+Template.taskDetailCardTemplate.todo_image = function(){
+    return '/images/placeholder-240x240.gif';
+};
+Template.taskDetailCardTemplate.tag_objs = function(){
+    return _.map(this.tags || [], function (tag) {
+        return {todo_id: ession.get('selected_task_id'), tag: tag};
+    });
+};
+//Template.taskDetailCardTemplate.tag = function(){
+//    return Session.get('selected_task_tags');
+//};
+Template.taskDetailCardTemplate.adding_tag = function(){
+    return false;
 };
 
 

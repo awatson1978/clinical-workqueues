@@ -38,6 +38,7 @@ Meteor.publish("usersDirectory", function () {
         'profile': true,
         'profile.name': true,
         'profile.avatar': true,
+        'profile.pushRecipients': true,
         'emails': true,
         'emails[0].address': true,
         'emails.address': true
@@ -45,16 +46,17 @@ Meteor.publish("usersDirectory", function () {
 });
 Meteor.publish('userProfile', function (userId) {
     return Meteor.users.find({_id: this.userId}, {fields: {
-        '_id': 1,
-        'username': 1,
-        'profile': 1,
-        'profile.name': 1,
-        'profile.avatar': 1,
-        'profile.collaborators': 1,
-        'profile.carewatch': 1,
-        'profile.currentPage': 1,
-        'emails': 1,
-        'emails[0].address': 1
+        '_id': true,
+        'username': true,
+        'profile': true,
+        'profile.name': true,
+        'profile.avatar': true,
+        'profile.collaborators': true,
+        'profile.carewatch': true,
+        'profile.currentPage': true,
+        'profile.pushRecipients': true,
+        'emails': true,
+        'emails[0].address': true
     }});
 });
 

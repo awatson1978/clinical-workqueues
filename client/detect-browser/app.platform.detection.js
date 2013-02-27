@@ -32,6 +32,9 @@ var version = navigator.appVersion;
     var isSecure = /^https/i.test(window.location.protocol);
     var isIE7InIE8 = isIE7 && DOC.documentMode == 7;
 
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+
+
 navigator.sayswho= (function(){
     var N= navigator.appName, ua= navigator.userAgent, tem;
     var M= ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);

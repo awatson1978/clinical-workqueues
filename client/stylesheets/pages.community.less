@@ -14,7 +14,7 @@
 //  -moz-border-radius: 4px;
 //  border-radius: 4px;
 }
-.user-card:hover{
+.no-touch .user-card:hover{
   border: 1px solid @lightblue;
   background-color: @lightblue;
 
@@ -27,7 +27,7 @@
 .user-card:hover .user-id{
   color: white;
 }
-.user-card:hover .user-select{
+.no-touch .user-card:hover .user-select{
   visibility: visible;
   display: block;
 }
@@ -88,32 +88,32 @@
 // wheeee!  we're starting to actually use less!
 // please note the nested layout rules
 
-.collaborators, .carewatch{
-
-  // these items are not nested
-  padding-top: 5px;
-
-
-  // these items *are* nested
-  li:hover{
-    cursor: pointer;
-    color: red;
-  }
-  li .destroy {
-    cursor: pointer;
-    float: right;
-    right: 12px;
-    top: 15px;
-    height: 20px;
-    width: 20px;
-  }
-  li:hover .destroy {
-    background: url('/icons/destroy.png') no-repeat 0 0;
-  }
-  li .destroy:hover {
-    background-position: 0 -20px;
-  }
-}
+//.collaborators, .carewatch{
+//
+//  // these items are not nested
+//  padding-top: 5px;
+//
+//
+//  // these items *are* nested
+//  li:hover{
+//    cursor: pointer;
+//    color: red;
+//  }
+//  li .destroy {
+//    cursor: pointer;
+//    float: right;
+//    right: 12px;
+//    top: 15px;
+//    height: 20px;
+//    width: 20px;
+//  }
+//  li:hover .destroy {
+//    background: url('/icons/destroy.png') no-repeat 0 0;
+//  }
+//  li .destroy:hover {
+//    background-position: 0 -20px;
+//  }
+//}
 
 .first-column-position{
   position: absolute;
@@ -135,6 +135,15 @@
   top: 20px;
 }
 
+.communication-recipient-icon{
+  font-size: 3em;
+  position: absolute;
+  bottom: 0px;
+  color: #666666;
+}
+.no-touch .user-card-detailed:hover .communication-recipient-icon{
+  color: darksalmon;
+}
 //---------------------------------------------
 
 @media only screen and (min-width: 768px) {

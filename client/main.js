@@ -47,10 +47,10 @@ Template.app_container.loggedIn = function () {
         return false;
     }
 };
-Template.footerBarTemplate.showJsonPanel = function(){
+Template.jsonContentPanelTemplate.showJsonPanel = function(){
     return Session.get('display_profile_json_panel');
 };
-Template.footerBarTemplate.jsonData = function(){
+Template.jsonContentPanelTemplate.jsonData = function(){
     return Session.get('json_content');
 };
 
@@ -73,7 +73,13 @@ function toggleTaskDetailPanel(){
         $('#new-todo-box').addClass('hidden');
     }
 }
-
+function toggleSidebarVisibility(){
+    if(Session.get('show_sidebar_panel')){
+        Session.set('show_sidebar_panel',false);
+    }else{
+        Session.set('show_sidebar_panel',true);
+    }
+}
 
 
 //-------------------------------------------------------

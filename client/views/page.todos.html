@@ -29,18 +29,31 @@
     {{#if showTaskDetail}}
     <div class="spacer row"></div>
     <div class="padded row">
-        <div id="taskDetailCard" class="css3-gaussian-blur panel user-card-detailed bottom-anchored">
+        <div id="taskDetailCard" class="panel user-card-detailed bottom-anchored no-background">
             <div class="card-header rounded-top-right">
-                <!--<div class="top_right"></div>-->
-                <span class="white card-meta-data">{{user_id}}</span>
-                <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
+                <span class="white card-meta-data barcode">{{todo_id}}</span>
             </div>
-            <img class="user-card-image gray-border" src="{{user_avatar}}" />
-
+            <img class="user-card-image" src="{{todo_image}}" />
             <div class="user-card-synopsis">
                 <div class="spacer row"></div>
-                <span class="user-card-synopsis-name">{{ user_name }}</span><br>
-                <span class="user-card-synopsis-email">{{ user_email }}</span><br>
+                <span class="user-card-synopsis-name">{{ todo_text }}</span><br>
+                <span class="user-card-synopsis-email">{{ todo_done }}</span><br>
+                <ul class="bottom-anchored detailed-task-card-tags">
+                    <!--<li class="bookend-left"></li>-->
+                    {{#each tag_objs}}
+                    <li class="tag removable_tag">
+                        <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
+
+                    </li>
+                    {{/each}}
+                    {{#if adding_tag}}
+                    <li class="tag edittag">
+                        <input type="text" id="edittag-input-card" value="" />
+                    </li>
+                    {{else}}
+                    <li class="addtag pictograph tag">J</li>
+                    {{/if}}
+                </ul>
             </div>
         </div>
     </div>
@@ -80,9 +93,7 @@
                 <input type="text" id="edittag-input" value="" />
             </li>
             {{else}}
-            <li class="tag addtag">
-                +tag
-            </il>
+            <li class="addtag pictograph tag">J</il>
             {{/if}}
         </ul>
         <!--<div class="bookend-right"></li>-->

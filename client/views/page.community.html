@@ -21,68 +21,40 @@
     <div id="communityInspectionBlock" class="top-anchored">
         <input id="filterInput" type="text" class="search" />
         {{#if showQuickViewPanel}}
-        {{> quickViewPanelTemplate}}
+        <div class="spacer row"></div>
+            <div id="userQuickViewPanel" class="panel user-card-detailed">
+                <div class="card-header rounded-top-right">
+                    <!--<div class="top_right"></div>-->
+                    <span class="white card-meta-data barcode">*{{user_id}}*</span>
+                    <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
+                </div>
+                <img id="userCardImage" class="user-card-image" src="{{user_avatar}}" />
+
+                <div class="user-card-synopsis fullheight unselectable">
+                    <div class="spacer row"></div>
+                    <span class="user-card-synopsis-name">{{ user_name }}</span><br>
+                    <span class="user-card-synopsis-email">{{ user_email }}</span><br>
+                    <span id="broadcastIcon" class="{{isBroadcastRecipient}} communication-recipient-icon pictograph">^</span>
+                </div>
+            </div>
+        </div>
         {{else}}
         <div class="itaintrocketscience hide-for-small">Phasellus sit amet ante sed mi egestas adipiscing id in sem. Ut sapien lorem, iaculis id auctor sed, ultrices sit amet eros. Maecenas risus nisl, lacinia sit amet semper id, aliquet et velit. Pellentesque id eros nulla. Suspendisse gravida nisi eget nibh hendrerit auctor. Nullam lorem purus, viverra sed convallis rutrum, congue id ligula. Ut ut sapien eget libero feugiat elementum. Vivamus id molestie felis. Proin ultricies elit condimentum lectus congue ultrices. </div>
         {{/if}}
     </div>
 </template>
-<template name="quickViewPanelTemplate">
-    <div class="spacer row"></div>
-        <div id="userQuickViewPanel" class="panel user-card-detailed">
-            <div class="card-header rounded-top-right">
-                <!--<div class="top_right"></div>-->
-                <span class="white card-meta-data barcode">*{{user_id}}*</span>
-                <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
-            </div>
-            <img class="user-card-image" src="{{user_avatar}}" />
-
-            <div class="user-card-synopsis">
-                <div class="spacer row"></div>
-                <span class="user-card-synopsis-name">{{ user_name }}</span><br>
-                <span class="user-card-synopsis-email">{{ user_email }}</span><br>
-            </div>
-        </div>
-    </div>
-
-    <!--<div class="spacer row"></div>-->
-    <!--<div class="row">-->
-        <!--<div id="quicKViewPanel" class="reference panel">-->
-            <!--<div class="card-northwest green card-meta-data">{{ user_id }}</div>-->
-
-            <!--<div class="spacer row"></div>-->
-            <!--<div class="avatar">-->
-                <!--<img class="avatar with-rounded-corners gray-border" src="{{ user_avatar }}" />-->
-            <!--</div>-->
-            <!--<div class="spacer row"></div>-->
-            <!--<div class="bold">{{ user_name }}</div>-->
-            <!--<div>{{ user_email }}</div>-->
-
-            <!--<div class="spacer row"></div>-->
-            <!--<div class="small clear-carewatch button">watch this person</div>-->
-            <!--<div class="small clear-carewatch button">share diary with this person</div>-->
-
-            <!--{{#if isAdmin }}-->
-            <!--<div class="spacer row"></div>-->
-            <!--<div class="small delete-user button">delete user</div>-->
-            <!--<div class="small clear-collaborators button">clear collaborators</div>-->
-            <!--<div class="small clear-carewatch button">clear carewatch</div>-->
-            <!--{{/if}}-->
-
-        <!--</div>-->
-    <!--</div>-->
-</template>
 <template name="userItemTemplate">
     <li class="rounded-corners user-card without-padding">
         <img class="card-image gray-border" src="{{ userImage }}" />
-
-        <!--<div class="hide-for-small two columns">-->
-        <!--</div>-->
         <div class="card-data">
             <div class="card-northwest gray card-meta-data without-padding barcode">*{{ _id }}*</div>
             <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
-            <div class="user-posts">Posts: {{userHealthEntries}}</div>
-            <div class="user-rank">HealthRank: {{userHealthRank}}</div>
+            <!--<div class="user-posts">Posts: {{userHealthEntries}}</div>-->
+            <!--<div class="card-northeast user-rank">HealthRank: {{userHealthRank}}</div>-->
+            <ul class="card-southeast pictograph-buttons">
+                <li class="gray largish pictograph">^</li>
+                <li class="gray largish pictograph">`</li>
+            </ul>
         </div>
     </li>
 </template>

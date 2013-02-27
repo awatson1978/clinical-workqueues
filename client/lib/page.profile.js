@@ -1,5 +1,6 @@
 Template.userCardTemplate.rendered = function(){
     $('#userProfileCard').css('width',window.innerWidth - 40);
+    //$('#userProfileCardExtended').css('height',$('#userCarewatchDisplay').css('height') + $('#userCollaboratorsDisplay').css('height') + 40);
 };
 Template.userCardTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace);
@@ -140,9 +141,27 @@ Template.userCardTemplate.events({
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#profile-input-collaborator"));
     },
-    'click .destroy': function (evt, tmpl) {
-        Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }}, function(){
-        });
+    'click .carewatch-data .destroy': function (evt, tmpl) {
+        if(confirm("Are you sure you want to remove " + this.name + " from your carewatch list?")){
+            Meteor.users.update(this._id, {$pull: { 'profile.collaborators': {
+                _id: Meteor.user()._id,
+                name: Meteor.user().profile.name
+            } }},function(){
+                //console.log('write something to hipaa log here);
+            });
+            Meteor.users.update(Meteor.userId(), {$pull: { 'profile.carewatch': this }});
+        }
+    },
+    'click .collaborators-data .destroy': function (evt, tmpl) {
+        if(confirm("Are you sure you want to remove " + this.name + " from your list of collaborators?")){
+            Meteor.users.update(this._id, {$pull: { 'profile.carewatch': {
+                _id: Meteor.user()._id,
+                name: Meteor.user().profile.name
+            }}},function(){
+                //console.log('write something to hipaa log here);
+            });
+            Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }}, function(){});
+        }
     }
 });
 
@@ -208,41 +227,49 @@ Template.userCardTemplate.user_avatar = function () {
         log_event(err, LogLevel.Error);
     }
 };
-//Template.userCardTemplate.user_collaborators = function () {
-//    // Meteor.user().profile breaks when user is logged out
-//    if(Meteor.user()){
-//        if(Meteor.user().profile){
-//            return Meteor.user().profile.collaborators;
-//        }
-//    }else{
-//        return "List of collaborators not available right now.";
-//    }
-//};
-//Template.userCardTemplate.user_carewatch = function () {
-//    if(Meteor.user()){
-//        if(Meteor.user().profile){
-//            return Meteor.user().profile.carewatch;
-//        }
-//    }else{
-//        return "List of carewatch members not available right now.";
-//    }
-//};
+Template.userCardTemplate.user_collaborators = function () {
+    try{
+        // Meteor.user().profile breaks when user is logged out
+        if(Meteor.user().profile){
+            return Meteor.user().profile.collaborators;
+        }else{
+            return "List of carewatch members not available right now.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
+Template.userCardTemplate.user_carewatch = function () {
+    try{
+        if(Meteor.user().profile){
+            return Meteor.user().profile.carewatch;
+        }else{
+            return "List of carewatch members not available right now.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
 Template.userCardTemplate.user_image = function () {
     try{
-        var src = "images/placeholder-240x240.gif";
-
 
         if(Meteor.user().services.facebook){
             return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
-            //return Meteor.user().services.facebook.id;
-        }else
+        }else if(Meteor.user().profile){
+            return $.trim(Meteor.user().profile.avatar);
+        }else{
+            return "/images/placeholder-240x240.gif";
+        }
+
         // CONFLICT?
         // this wants to be Meteor.user().profile so the default image displays if there's no profile
         // but, I think it's also causing crashes elsewhere if the Meteor.
-        if(Meteor.user().profile){
-            src = $.trim(Meteor.user().profile.avatar);
-        }
-        log_event('profile avatar src: ' + src, LogLevel.Info);
+//        if(Meteor.user().profile){
+//            src = $.trim(Meteor.user().profile.avatar);
+//        }
+//        log_event('profile avatar src: ' + src, LogLevel.Info);
         //return src;
 
     }
