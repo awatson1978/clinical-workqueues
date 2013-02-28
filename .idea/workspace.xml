@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.panels.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/page.unsupported.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/tips/tips.barcodes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/views/tips/tricks.barcode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/detect-browser/app.platform.detection.js" afterPath="$PROJECT_DIR$/client/detect-browser/app.platform.detection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.todos.js" afterPath="$PROJECT_DIR$/client/lib/page.todos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.button.groups.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.button.groups.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" afterPath="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.card.less" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.profile.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.fonts.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.fonts.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/todos.less" afterPath="$PROJECT_DIR$/client/stylesheets/todos.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="$PROJECT_DIR$/client/views/page.community.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.todos.html" afterPath="$PROJECT_DIR$/client/views/page.todos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,22 +25,31 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.60319674">
+    <splitter split-orientation="horizontal" split-proportion="0.4190687">
       <split-first>
         <leaf>
-          <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="169" column="34" selection-start="7702" selection-end="7702" vertical-scroll-proportion="0.95427436">
+                <state line="220" column="40" selection-start="8915" selection-end="8915" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.profile.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="syntax.fonts.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.fonts.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="72" column="25" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.profile.less" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="111" column="12" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
+                <state line="84" column="1" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.15188584">
                   <folding />
                 </state>
               </provider>
@@ -100,25 +91,16 @@
           <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="8" selection-start="3360" selection-end="3360" vertical-scroll-proportion="-39.68">
+                <state line="57" column="39" selection-start="2911" selection-end="2911" vertical-scroll-proportion="-26.84">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="lists.card.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="74" column="1" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="29" selection-start="5232" selection-end="5232" vertical-scroll-proportion="-38.92">
+                <state line="101" column="17" selection-start="5833" selection-end="5833" vertical-scroll-proportion="0.8313892">
                   <folding />
                 </state>
               </provider>
@@ -133,10 +115,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="175" column="50" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.5203252">
+                <state line="157" column="24" selection-start="5704" selection-end="5704" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -157,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/detect-browser/app.platform.detection.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/todos.less" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less" />
@@ -165,22 +146,23 @@
         <option value="$PROJECT_DIR$/client/views/page.todos.html" />
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
-        <option value="$PROJECT_DIR$/client/views/page.community.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.button.groups.css" />
         <option value="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.panels.css" />
         <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/views/page.community.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/syntax.fonts.less" />
+        <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
+        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
+    <option name="x" value="11" />
     <option name="y" value="22" />
-    <option name="width" value="1391" />
-    <option name="height" value="1167" />
+    <option name="width" value="1376" />
+    <option name="height" value="1151" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -495,13 +477,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="22" width="1391" height="1167" extended-state="0" />
+    <frame x="11" y="22" width="1376" height="1151" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1438499" sideWeight="0.9960876" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16851442" sideWeight="0.97911835" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -571,13 +553,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/layout.navigation.bars.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="18" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.7802908">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.pentasyllabic.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -622,37 +597,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="8" selection-start="3360" selection-end="3360" vertical-scroll-proportion="-39.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="21" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="1" selection-start="1090" selection-end="1090" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="12" selection-start="1881" selection-end="1881" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="29" selection-start="5232" selection-end="5232" vertical-scroll-proportion="-38.92">
           <folding />
         </state>
       </provider>
@@ -671,16 +618,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="50" selection-start="6456" selection-end="6456" vertical-scroll-proportion="0.5203252">
+        <state line="59" column="0" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.fonts.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="25" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="39" selection-start="2911" selection-end="2911" vertical-scroll-proportion="-26.84">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="34" selection-start="7702" selection-end="7702" vertical-scroll-proportion="0.95427436">
+        <state line="220" column="40" selection-start="8915" selection-end="8915" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="157" column="24" selection-start="5704" selection-end="5704" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="17" selection-start="5833" selection-end="5833" vertical-scroll-proportion="0.8313892">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="1" selection-start="1453" selection-end="1453" vertical-scroll-proportion="0.15188584">
           <folding />
         </state>
       </provider>

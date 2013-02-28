@@ -49,7 +49,6 @@
                             </div>
                             {{/if}}
                         </li>
-
                         <li>
                             <div id="profile-display-avatar-label" class="dictionary-key">Avatar</div>
                             {{#if editing_avatar}}
@@ -62,6 +61,18 @@
                             </div>
                             {{/if}}
                         </li>
+                        <li>
+                            <div id="profile-display-dropbox-label" class="dictionary-key">Dropbox</div>
+                            <div id="userDropBoxDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                <span id="profile-display-dropbox" class="dictionary-value">{{user_dropbox}}</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="profile-display-active-collaborator-label" class="dictionary-key">Collaborator</div>
+                            <div id="userActiveCollaboratorDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                <span id="profile-display-active-collaborator" class="dictionary-value">{{user_active_collaborator}}</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -71,7 +82,7 @@
         <div id="userProfileCardExtended" class="user-card-detailed-extended">
             <div class="user-card-data-extended">
                 <div class="six columns no-left-padding">
-                    <div class="profile-list-label"><span class="pictograph">^</span> Carewatch</div>
+                    <div class="profile-list-label"><span class="pictograph">j</span> Carewatch</div>
                     <div class="panel">
                         <ul class="carewatch-data simple-user list">
                             {{#each user_carewatch}}
@@ -84,7 +95,7 @@
                     </div>
                 </div>
                 <div class="six columns no-right-padding">
-                    <div class="profile-list-label fullwidth"><span class="pictograph">`  </span>Collaborators</div>
+                    <div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>
                     <div class="panel">
                         <ul class="collaborators-data simple-user list">
                             {{#each user_collaborators}}
