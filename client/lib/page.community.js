@@ -2,17 +2,64 @@ Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.communityInspectionColumn.helpers(genericUserDisplayObject);
 
 Template.communityInspectionColumn.rendered = function(){
-    $('#community-inspection-block').css('width',$('#community-members-list').width());
-    if(!isMobile){
-        $('#communityPage').addClass('no-touch');
+    //$('#community-inspection-block').css('width',$('#community-members-list').width());
+    if(isMobile){
+        $('#communityPage').removeClass('no-touch');
+
+        $("#communityPage").bind("swipeleft", function(){
+            alert('swipeleft!');
+        });
+        $("#communityPage").bind("swiperight", function(){
+            alert('swipeleft!');
+        });
+        //detectOrientation();
+    }else{
+//        if(window.innerWidth > 800){
+//            resizeCommunityPageForLandscape();
+//        }else{
+//            resizeCommunityPageForPortrait();
+//        }
     }
-//    $("#communityPage").bind("swipeleft", function(){
-//        alert('swipeleft!');
-//    });
-//    $("#communityPage").bind("swiperight", function(){
-//        alert('swipeleft!');
-//    });
+
+
+    // TODO:  think through whether it's better to default to portrait or landscape
+//    if(window.innerWidth > 800){
+//        $('#userProfileCard').css('width',window.innerWidth - 40);
+//        $('#userProfileCard').addClass('userProfileCard-landscape-layout');
+//        $('#userProfileCard').removeClass('userProfileCard-portrait-layout');
+//
+//        //TODO: set userProfileCardExtended width the same as userProfileCard
+//    }else{
+//        //$('#userProfileCard').css('width',window.innerWidth - 40);
+//        $('#userProfileCard').css('background-color','blue');
+//        $('#userProfileCard').addClass('userProfileCard-portrait-layout');
+//        $('#userProfileCard').removeClass('userProfileCard-landscape-layout');
+//
+//        //TODO: set userProfileCardExtended width the same as userProfileCard
+//    }
+
 };
+
+//Template.communityPageTemplate.rendered = function(){
+//    // TODO:  think through whether it's better to default to portrait or landscape
+//    if(window.innerWidth > 800){
+//        resizeCommunityPageForLandscape();
+//    }else{
+//        resizeCommunityPageForPortrait();
+//    }
+//};
+//Template.communityPageTemplate.resize = function(){
+//    if(window.innerWidth > 1024){
+//        resizeCommunityPageForLandscape();
+//    }else{
+//        resizeCommunityPageForPortrait();
+//    }
+//    return Session.get("resize");
+//};
+
+//Template.communityPageTemplate.resize = function(){
+//  return Session.get('resize');
+//};
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
@@ -125,14 +172,28 @@ Template.communityInspectionColumn.isBroadcastRecipient = function(){
         return "hidden";
     }
 };
-//Template.communityInspectionColumn.events({
-//    'click .user-card-detailed': function (evt, tmpl) {
-//        //Meteor.user().profile.pushRecipients
-//        //Session.set('',);
-//        Meteor.users.update(Meteor.userId(), {$addToSet: { 'profile.pushRecipients': this._id }});
-//
-//    }
-//});
+Template.communityInspectionColumn.events({
+    'click .transfer-icon': function () {
+        // TODO:  remove any active collaborator in the user profile
+
+        // TODO:  add selected user's ID to profile's active collaborator field
+
+        // TODO:  check if selected user's ID is currently the active collaborator - if so, remove it
+        alert("transfer");
+    },
+    'click .collaborator-icon': function () {
+        // TODO:  check if selected user's ID is currently in Meteor.user().profile.collaborators - if so, remove it
+
+        // TODO:  add selected user's ID to Meteor.user().profile.collaborators
+        alert("collaborator");
+    },
+    'click .carewatch-icon': function () {
+        // TODO:  check if selected user's ID is currently in Meteor.user().profile.carewatch - if so, remove it
+
+        // TODO:  add selected user's ID to Meteor.user().profile.carewatch
+        alert("carewatch");
+    }
+});
 
 //--------------------------------------------------------------------
 // userItemTemplate
@@ -170,6 +231,15 @@ Template.userItemTemplate.events({
         //$('#userCardImage').attr('src', '/images/placeholder-240x240.gif');
 
         Meteor.flush();
+    },
+    'click .transfer-icon': function () {
+        alert("transfer: " + JSON.stringify(this));
+    },
+    'click .collaborator-icon': function () {
+        alert("collaborator: " + JSON.stringify(this));
+    },
+    'click .carewatch-icon': function () {
+        alert("carewatch: " + JSON.stringify(this));
     }
 });
 Template.userItemTemplate.userEmail = function () {
@@ -189,18 +259,27 @@ Template.userItemTemplate.userName = function () {
         return 'User name not available.'
     }
 };
-Template.userItemTemplate.userHealthEntries = function () {
-    log_event('Template.userItemTemplate.userHealthEntries', LogLevel.Trace);
-    return toInteger(Math.random() * 25000);
+Template.userItemTemplate.isCarewatched = function () {
+    //TODO:  check Meteor.user().profile.carewatch and return "selected" or null
 };
-Template.userItemTemplate.userNetworkSize = function () {
-    log_event('Template.userItemTemplate.userNetworkSize', LogLevel.Trace);
-    return toInteger(Math.random() * 240);
+Template.userItemTemplate.isCollaborator = function () {
+    //TODO:  check Meteor.user().profile.collaborators and return "selected" or null
 };
-Template.userItemTemplate.userHealthRank = function () {
-    log_event('Template.userItemTemplate.userHealthRank', LogLevel.Trace);
-    return toInteger(Math.random() * 100);
+Template.userItemTemplate.isActiveCollaborator = function () {
+    //TODO:  check Meteor.user().profile.activeCollaboator and return "selected" or null
 };
+//Template.userItemTemplate.userHealthEntries = function () {
+//    log_event('Template.userItemTemplate.userHealthEntries', LogLevel.Trace);
+//    return toInteger(Math.random() * 25000);
+//};
+//Template.userItemTemplate.userNetworkSize = function () {
+//    log_event('Template.userItemTemplate.userNetworkSize', LogLevel.Trace);
+//    return toInteger(Math.random() * 240);
+//};
+//Template.userItemTemplate.userHealthRank = function () {
+//    log_event('Template.userItemTemplate.userHealthRank', LogLevel.Trace);
+//    return toInteger(Math.random() * 100);
+//};
 Template.userItemTemplate.userImage = function () {
     log_event('Template.userItemTemplate.user_image', LogLevel.Trace);
     var src = "images/placeholder-240x240.gif";

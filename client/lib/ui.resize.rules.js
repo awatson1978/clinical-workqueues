@@ -2,7 +2,7 @@ detectOrientation();
 window.onorientationchange = detectOrientation;
 function detectOrientation(){
     console.log('detecting orientation: ' + window.orientation);
-    resizeCommunityPageForLandscape();
+    //resizeCommunityPageForLandscape();
 
     if(typeof window.onorientationchange != 'undefined'){
         if ( window.orientation == 0 ) {
@@ -11,12 +11,18 @@ function detectOrientation(){
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
+            else if(Session.equals('current_page', "#profilePage")){
+                resizeProfilePageForPortrait();
+            }
         }
         else if ( window.orientation == 90 ) {
             //Do Something In Landscape Mode
             //alert('orientation change!');
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
+            }
+            else if(Session.equals('current_page', "#profilePage")){
+                resizeProfilePageForLandscape();
             }
         }
         else if ( window.orientation == -90 ) {
@@ -25,6 +31,9 @@ function detectOrientation(){
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
             }
+            else if(Session.equals('current_page', "#profilePage")){
+                resizeProfilePageForLandscape();
+            }
         }
         else if ( window.orientation == 180 ) {
             //Do Something In Portrait Mode
@@ -32,35 +41,45 @@ function detectOrientation(){
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
+            else if(Session.equals('current_page', "#profilePage")){
+                resizeProfilePageForPortrait();
+            }
         }
     }
 }
 
 
 function resizeCommunityPageForLandscape(){
-    //if(window.innerWidth > 768){
     $('#communityInspectionBlock').removeClass('fullwidth padded');
-    $('#communityMembersList').removeClass('fullwidth padded fullscreen-single-column-position');
+    //$('#communityMembersList').removeClass('fullwidth padded fullscreen-single-column-position');
     $('#communityInspectionBlock').removeClass('bottom-anchored');
     $('#communityInspectionColumn').removeClass('fullwidth padded');
 
     $('#communityInspectionBlock').addClass('forty-percent-width');
-    $('#communityMembersList').addClass('forty-percent-width');
+    //$('#communityMembersList').addClass('forty-percent-width');
     $('#communityInspectionBlock').addClass('first-column-position');
-    $('#communityMembersList').addClass('second-column-position');
-//    }else{
-//        resizeCommunityPageForPortrait();
-//    }
+    //$('#communityMembersList').addClass('second-column-position');
 };
 function resizeCommunityPageForPortrait(){
     $('#communityInspectionBlock').removeClass('forty-percent-width');
-    $('#communityMembersList').removeClass('forty-percent-width');
     $('#communityInspectionBlock').removeClass('first-column-position');
-    $('#communityMembersList').removeClass('second-column-position');
+    //$('#communityMembersList').removeClass('forty-percent-width');
+    //$('#communityMembersList').removeClass('second-column-position');
 
     $('#communityInspectionBlock').addClass('fullwidth padded');
-    $('#communityMembersList').addClass('fullwidth padded fullscreen-single-column-position');
+    //$('#communityMembersList').addClass('fullwidth padded fullscreen-single-column-position');
 
     $('#communityInspectionBlock').addClass('bottom-anchored');
     $('#communityInspectionColumn').addClass('fullwidth padded');
+};
+
+function resizeProfilePageForLandscape(){
+    //TODO: set userProfileCardExtended width the same as userProfileCard
+    $('#userProfileCard').addClass('userProfileCard-landscape-layout');
+    $('#userProfileCard').removeClass('userProfileCard-portrait-layout');
+};
+function resizeProfilePageForPortrait(){
+    //TODO: set userProfileCardExtended width the same as userProfileCard
+    $('#userProfileCard').addClass('userProfileCard-portrait-layout');
+    $('#userProfileCard').removeClass('userProfileCard-landscape-layout');
 };

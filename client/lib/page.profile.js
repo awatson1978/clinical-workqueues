@@ -1,6 +1,19 @@
 Template.userCardTemplate.rendered = function(){
-    $('#userProfileCard').css('width',window.innerWidth - 40);
+    // TODO:  think through whether it's better to default to portrait or landscape
+    if(window.innerWidth > 800){
+        resizeProfilePageForLandscape();
+    }else{
+        resizeProfilePageForPortrait();
+    }
     //$('#userProfileCardExtended').css('height',$('#userCarewatchDisplay').css('height') + $('#userCollaboratorsDisplay').css('height') + 40);
+};
+Template.userCardTemplate.resize = function(){
+    if(window.innerWidth > 1024){
+        resizeProfilePageForLandscape();
+    }else{
+        resizeProfilePageForPortrait();
+    }
+    return Session.get("resize");
 };
 Template.userCardTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace);
@@ -252,6 +265,33 @@ Template.userCardTemplate.user_carewatch = function () {
         log_event(err, LogLevel.Error);
     }
 };
+
+
+Template.userCardTemplate.user_dropbox = function () {
+    try{
+        if(Meteor.user().profile){
+            return Meteor.user().profile.dropbox;
+        }else{
+            return "No dropbox item.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
+Template.userCardTemplate.user_active_collaborator = function () {
+    try{
+        if(Meteor.user().profile){
+            return Meteor.user().profile.activeCollaborator;
+        }else{
+            return "No active collaborator currently set.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
+
 Template.userCardTemplate.user_image = function () {
     try{
 

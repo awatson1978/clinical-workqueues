@@ -1,5 +1,5 @@
 
-// Session IDs
+// session variables
 Session.set('list_id', null);
 
 Session.set('tag_filter', null);
@@ -17,20 +17,24 @@ Session.set('selected_task_id', false);
 Session.set('selected_message_recipient', '');
 Session.set('is_supported_browser', false);
 
+
+// first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
     Session.set('is_supported_browser', true);
 }
 
-
-Meteor.startup(function () {
-    Backbone.history.start({pushState: true});
-
-    $(window).resize(function(evt) {
-        Session.set("resize", new Date());
-    });
+// layout is dependent upon viewport, which can change if the browser window is resized
+// or if the user rotates the screen
+$(window).resize(function(evt) {
+    Session.set("resize", new Date());
 });
 
-// generally speaking, this isn't the correct place to add page specific rendering code
+// we make sure that navigation history is enabled
+Meteor.startup(function () {
+    Backbone.history.start({pushState: true});
+});
+
+// warning:  generally speaking, app_container.rendered isn't the correct place to add page specific rendering code
 // it will fire for each sub-template, and often fires two dozen times or more
 Template.app_container.rendered = function(){
     showCurrentSessionPage();
@@ -47,39 +51,7 @@ Template.app_container.loggedIn = function () {
         return false;
     }
 };
-Template.jsonContentPanelTemplate.showJsonPanel = function(){
-    return Session.get('display_profile_json_panel');
-};
-Template.jsonContentPanelTemplate.jsonData = function(){
-    return Session.get('json_content');
-};
 
-//-----------------------------------------------------
-// TODO: refactor toggle functions to helper.js
-
-function toggleJsonPanel(){
-    if(Session.get('display_profile_json_panel')){
-        Session.set('display_profile_json_panel',false);
-    }else{
-        Session.set('display_profile_json_panel',true);
-    }
-}
-function toggleTaskDetailPanel(){
-    if(Session.get('show_task_detail_panel')){
-        Session.set('show_task_detail_panel',false);
-        $('#new-todo-box').removeClass('hidden');
-    }else{
-        Session.set('show_task_detail_panel',true);
-        $('#new-todo-box').addClass('hidden');
-    }
-}
-function toggleSidebarVisibility(){
-    if(Session.get('show_sidebar_panel')){
-        Session.set('show_sidebar_panel',false);
-    }else{
-        Session.set('show_sidebar_panel',true);
-    }
-}
 
 
 //-------------------------------------------------------
@@ -116,4 +88,43 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+
+
+//-----------------------------------------------------
+// Controls for the JSON inspection and debugging panel
+
+Template.jsonContentPanelTemplate.showJsonPanel = function(){
+    return Session.get('display_profile_json_panel');
+};
+Template.jsonContentPanelTemplate.jsonData = function(){
+    return Session.get('json_content');
+};
+
+//-----------------------------------------------------
+// TODO: refactor toggle functions to helper.js ????
+
+function toggleJsonPanel(){
+    if(Session.get('display_profile_json_panel')){
+        Session.set('display_profile_json_panel',false);
+    }else{
+        Session.set('display_profile_json_panel',true);
+    }
+}
+function toggleTaskDetailPanel(){
+    if(Session.get('show_task_detail_panel')){
+        Session.set('show_task_detail_panel',false);
+        $('#new-todo-box').removeClass('hidden');
+    }else{
+        Session.set('show_task_detail_panel',true);
+        $('#new-todo-box').addClass('hidden');
+    }
+}
+function toggleSidebarVisibility(){
+    if(Session.get('show_sidebar_panel')){
+        Session.set('show_sidebar_panel',false);
+    }else{
+        Session.set('show_sidebar_panel',true);
+    }
+}
 

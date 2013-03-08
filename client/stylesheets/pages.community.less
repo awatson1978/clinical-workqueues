@@ -1,4 +1,6 @@
-@lightblue: rgb(194, 209, 219);
+//@lightblue: rgb(194, 209, 219);
+//@lightblue: #F3FAFF;
+@highlight-color: #ffdfcc;
 
 .user-id{
   color: lightsteelblue;
@@ -15,8 +17,8 @@
 //  border-radius: 4px;
 }
 .no-touch .user-card:hover{
-  border: 1px solid @lightblue;
-  background-color: @lightblue;
+  border: 1px solid @highlight-color;
+  background-color: @highlight-color;
 
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
@@ -84,36 +86,7 @@
   cursor: pointer;
 }
 
-
-// wheeee!  we're starting to actually use less!
-// please note the nested layout rules
-
-//.collaborators, .carewatch{
-//
-//  // these items are not nested
-//  padding-top: 5px;
-//
-//
-//  // these items *are* nested
-//  li:hover{
-//    cursor: pointer;
-//    color: red;
-//  }
-//  li .destroy {
-//    cursor: pointer;
-//    float: right;
-//    right: 12px;
-//    top: 15px;
-//    height: 20px;
-//    width: 20px;
-//  }
-//  li:hover .destroy {
-//    background: url('/icons/destroy.png') no-repeat 0 0;
-//  }
-//  li .destroy:hover {
-//    background-position: 0 -20px;
-//  }
-//}
+//---------------------------------------------
 
 .first-column-position{
   position: absolute;
@@ -122,17 +95,27 @@
 }
 .second-column-position{
   position: absolute;
-  left: 56.66%;
+  left: 53.33%;
   top: 20px;
   margin-bottom: 50px;
+  z-index: 1000;
 }
 .forty-percent-width{
   width: 40%;
 }
-.fullscreen-single-column-position{
+.portait-single-column-layout{
   position: absolute;
-  left: 0px;
+  left: 5%;
+  width: 90%;
+}
+.portrait-userlist-position{
+  top: 40px;
+}
+.portrait-search-position{
   top: 20px;
+}
+.portrait-quickview-position{
+
 }
 
 .communication-recipient-icon{
@@ -148,29 +131,56 @@
 
 @media only screen and (min-width: 768px) {
   #communityInspectionBlock {
+    .forty-percent-width;
+    .first-column-position;
   }
   #communityMembersList {
+    .forty-percent-width;
+    .second-column-position;
   }
   #userQuickViewPanel{
   }
 }
 @media only screen and (max-width: 768px) {
+  #communityInspectionBlock {
+  }
+  #communityMembersList {
+    .portait-single-column-layout;
+    .portrait-userlist-position;
+  }
+  #userQuickViewPanel{
+    .portrait-quickview-position;
+  }
+  #communityPage{
+    .user-card-detailed{
+      bottom: 0px;
+    }
+    .user-card-detailed{
+      position: fixed;
+      bottom: 40px;
+      z-index: 1000;
+      background-color: white;
+    }
+    .dont-overlap-user-card{
+      margin-top: 30px;
+      margin-bottom: 260px;
+    }
+  }
   #item-list{
     top: 100px;
   }
-  .user-card-detailed{
-    bottom: 0px;
-  }
-  .user-card-detailed{
-    position: fixed;
-    bottom: 40px;
-    z-index: 1000;
-    background-color: white;
-  }
-  .dont-overlap-user-card{
-    margin-top: 30px;
-    margin-bottom: 260px;
-  }
 }
 @media only screen and (max-width: 480px) {
+}
+
+
+//------------------------------------------------
+.transfer-icon:hover{
+  color: darksalmon;
+}
+.collaborator-icon:hover{
+  color: darksalmon;
+}
+.carewatch-icon:hover{
+  color: darksalmon;
 }
