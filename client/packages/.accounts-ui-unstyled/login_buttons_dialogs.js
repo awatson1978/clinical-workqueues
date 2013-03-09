@@ -6,7 +6,7 @@
   //
   // populate the session so that the appropriate dialogs are
   // displayed by reading variables set by accounts-urls, which parses
-  // special URLs. since accounts-ui depends on accounts-urls, we are
+  // special URLs. since .accounts-ui depends on accounts-urls, we are
   // guaranteed to have these set at this point.
   //
 
@@ -20,7 +20,7 @@
 
   // Needs to be in Meteor.startup because of a package loading order
   // issue. We can't be sure that accounts-password is loaded earlier
-  // than accounts-ui so Accounts.verifyEmail might not be defined.
+  // than .accounts-ui so Accounts.verifyEmail might not be defined.
   Meteor.startup(function () {
     if (Accounts._verifyEmailToken) {
       Accounts.verifyEmail(Accounts._verifyEmailToken, function(error) {

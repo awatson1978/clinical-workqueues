@@ -22,7 +22,7 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
-  api.use('accounts-ui-unstyled');
+  api.use('..accounts-ui-unstyled');
   api.use('tinytest');
   api.add_files('accounts_ui_tests.js', 'client');
 });

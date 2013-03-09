@@ -3,7 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.use('accounts-ui-unstyled', 'client');
+  api.use('..accounts-ui-unstyled', 'client');
   api.use('less', 'client');
 
   api.add_files(['login_buttons.less'], 'client');
