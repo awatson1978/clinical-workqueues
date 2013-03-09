@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_client.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_client.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_common.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_configure.html" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_configure.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_configure.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_configure.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_login_button.css" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_login_button.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_server.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_server.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-facebook/package.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-facebook/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/accounts_ui.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/accounts_ui.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/accounts_ui_tests.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/accounts_ui_tests.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons.html" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dialogs.html" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dialogs.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dialogs.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dialogs.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dropdown.html" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dropdown.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dropdown.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dropdown.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_session.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_session.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_single.html" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_single.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_single.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_single.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/package.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui/login_buttons.less" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui/login_buttons.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/accounts-ui/package.js" afterPath="$PROJECT_DIR$/client/packages/.accounts-ui/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.guest.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.guest.html" afterPath="$PROJECT_DIR$/client/views/page.guest.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +37,7 @@
           <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="267" column="0" selection-start="10012" selection-end="10012" vertical-scroll-proportion="0.0">
+                <state line="276" column="15" selection-start="10255" selection-end="10255" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -65,7 +46,7 @@
           <file leaf-file-name="page.guest.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="150" selection-start="5179" selection-end="5179" vertical-scroll-proportion="0.5655271">
+                <state line="14" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.2735043">
                   <folding>
                     <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                   </folding>
@@ -76,7 +57,7 @@
           <file leaf-file-name="page.guest.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="1" column="20" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+                <state line="10" column="8" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -125,7 +106,7 @@
           <file leaf-file-name="page.todos.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="38" selection-start="411" selection-end="411" vertical-scroll-proportion="0.022695035">
+                <state line="26" column="38" selection-start="755" selection-end="755" vertical-scroll-proportion="0.2496454">
                   <folding />
                 </state>
               </provider>
@@ -175,8 +156,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="46" />
-    <option name="y" value="537" />
+    <option name="x" value="59" />
+    <option name="y" value="520" />
     <option name="width" value="2351" />
     <option name="height" value="888" />
   </component>
@@ -421,8 +402,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="46" y="537" width="2351" height="888" extended-state="0" />
-    <editor active="false" />
+    <frame x="59" y="520" width="2351" height="888" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -556,13 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="267" column="0" selection-start="10012" selection-end="10012" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="36" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.0">
@@ -591,13 +565,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="411" selection-end="411" vertical-scroll-proportion="0.022695035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="19" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
@@ -605,16 +572,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="276" column="15" selection-start="10255" selection-end="10255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="38" selection-start="755" selection-end="755" vertical-scroll-proportion="0.2496454">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+        <state line="10" column="8" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="150" selection-start="5179" selection-end="5179" vertical-scroll-proportion="0.5655271">
+        <state line="14" column="0" selection-start="841" selection-end="841" vertical-scroll-proportion="0.2735043">
           <folding>
             <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
