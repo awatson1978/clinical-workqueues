@@ -3,6 +3,7 @@
 
 //----------------------------------------------------------------------
 
+
 Template.todos.any_list_selected = function () {
     return !Session.equals('list_id', null);
     //return true;

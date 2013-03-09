@@ -2,7 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/visionStatement/day-of-glass-app-1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/visionStatement/day-of-glass-app-2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/visionStatement/day-of-glass-money-shot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/visionStatement/day-of-glass-screenshot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_configure.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_configure.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_login_button.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/facebook_server.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-facebook/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/accounts_ui.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/accounts_ui_tests.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dialogs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dialogs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dropdown.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dropdown.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_session.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_single.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_single.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui/login_buttons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/accounts-ui/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/detect-browser/app.platform.detection.js" afterPath="$PROJECT_DIR$/client/packages/detect-browser/app.platform.detection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/detect-browser/page.unsupported.html" afterPath="$PROJECT_DIR$/client/packages/detect-browser/page.unsupported.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/mobile/mobile-fixed-layout.html" afterPath="$PROJECT_DIR$/client/packages/mobile/mobile-fixed-layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/mobile/mobile-fixed-layout.js" afterPath="$PROJECT_DIR$/client/packages/mobile/mobile-fixed-layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.todos.js" afterPath="$PROJECT_DIR$/client/lib/page.todos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.guest.html" afterPath="$PROJECT_DIR$/client/views/page.guest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.todos.html" afterPath="$PROJECT_DIR$/client/views/page.todos.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,49 +54,42 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56805664">
+    <splitter split-orientation="horizontal" split-proportion="0.7354184">
       <split-first>
         <leaf>
-          <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="297" column="2" selection-start="10055" selection-end="10055" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.guest.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="-3.2">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="page.todos.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="52" selection-start="1438" selection-end="1438" vertical-scroll-proportion="-16.64">
+                <state line="12" column="11" selection-start="859" selection-end="859" vertical-scroll-proportion="-7.68">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="facebook_client.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file:///usr/local/meteor/packages/accounts-facebook/facebook_client.js">
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
+                <state line="267" column="0" selection-start="10012" selection-end="10012" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="readme.txt" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/readme.txt">
+          <file leaf-file-name="page.guest.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="42" selection-start="144" selection-end="144" vertical-scroll-proportion="0.067226894">
+                <state line="42" column="98" selection-start="5127" selection-end="5127" vertical-scroll-proportion="0.61538464">
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.guest.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="1" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -109,19 +135,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.todos.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="page.todos.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="35" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+                <state line="16" column="38" selection-start="411" selection-end="411" vertical-scroll-proportion="0.36312056">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="8" selection-start="795" selection-end="795" vertical-scroll-proportion="0.35344094">
+                <state line="20" column="19" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -142,30 +168,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/stylesheets/tags.less" />
-        <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/client/lib/ui.resize.rules.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/views/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/views/page.community.html" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/todos.less" />
-        <option value="$PROJECT_DIR$/client/views/page.guest.html" />
-        <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
-        <option value="$PROJECT_DIR$/client/views/page.todos.html" />
-        <option value="/usr/local/meteor/packages/accounts-facebook/facebook_client.js" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="/usr/local/meteor/packages/accounts-facebook/facebook_client.js" />
+        <option value="$PROJECT_DIR$/client/views/page.todos.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
+        <option value="$PROJECT_DIR$/model.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/accounts-ui/login_buttons.less" />
+        <option value="$PROJECT_DIR$/client/packages/accounts-ui/login_buttons.less" />
+        <option value="$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dropdown.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
+        <option value="$PROJECT_DIR$/client/views/page.guest.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="31" />
-    <option name="y" value="22" />
-    <option name="width" value="1568" />
-    <option name="height" value="1360" />
+    <option name="x" value="46" />
+    <option name="y" value="537" />
+    <option name="width" value="2351" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -235,6 +261,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -275,24 +333,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -324,18 +364,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/client/lib" />
-      <recent name="$PROJECT_DIR$/client" />
-      <recent name="$PROJECT_DIR$/client/mobile" />
-      <recent name="$PROJECT_DIR$/client/lib/helpers" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/client/packages/accounts-ui-unstyled" />
+      <recent name="$PROJECT_DIR$/client/packages/accounts-facebook" />
+      <recent name="$PROJECT_DIR$/packages/accounts-facebook" />
+      <recent name="$PROJECT_DIR$/packages/accounts-ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/font" />
-      <recent name="$PROJECT_DIR$/.scrap" />
-      <recent name="$PROJECT_DIR$/client/lib/helpers" />
-      <recent name="$PROJECT_DIR$/client/detect-browser" />
-      <recent name="$PROJECT_DIR$/client/lib/jquery.mobile" />
+      <recent name="$PROJECT_DIR$/public/images/visionStatement" />
+      <recent name="$PROJECT_DIR$/public/images/vision" />
+      <recent name="$PROJECT_DIR$/client/packages" />
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -376,13 +416,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="22" width="1568" height="1360" extended-state="0" />
+    <frame x="46" y="537" width="2351" height="888" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27360776" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17734627" sideWeight="0.72524273" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1176976" sideWeight="0.72639227" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -391,7 +432,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2747573" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -464,51 +504,39 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.js">
+    <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="12" column="11" selection-start="859" selection-end="859" vertical-scroll-proportion="-7.68">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+    <entry file="file:///usr/local/meteor/packages/accounts-facebook/facebook_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="57" selection-start="5320" selection-end="5320" vertical-scroll-proportion="0.0">
+        <state line="14" column="28" selection-start="470" selection-end="470" vertical-scroll-proportion="0.1882353">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
+    <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="50" selection-start="2229" selection-end="2229" vertical-scroll-proportion="0.0">
+        <state line="10" column="32" selection-start="304" selection-end="318" vertical-scroll-proportion="0.13445379">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="31" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-facebook/facebook_client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="20" selection-start="2110" selection-end="2110" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="124" selection-end="124" vertical-scroll-proportion="-3.2">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/todos.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="23" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.20390823">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="36" selection-start="1188" selection-end="1188" vertical-scroll-proportion="-10.48">
+        <state line="23" column="12" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -520,59 +548,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="1" selection-start="129" selection-end="129" vertical-scroll-proportion="0.09240924">
+        <state line="23" column="13" selection-start="927" selection-end="927" vertical-scroll-proportion="-14.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dropdown.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="42" selection-start="3243" selection-end="3243" vertical-scroll-proportion="0.33295584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-ui-unstyled/login_buttons_dialogs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="9" selection-start="145" selection-end="145" vertical-scroll-proportion="0.10311493">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-ui-unstyled/accounts_ui_tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="781" selection-end="781" vertical-scroll-proportion="0.3137255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-ui/package.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="248" selection-end="248" vertical-scroll-proportion="0.16511868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/packages/accounts-ui/login_buttons.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="160" column="24" selection-start="5749" selection-end="5749" vertical-scroll-proportion="0.39263803">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="267" column="0" selection-start="10012" selection-end="10012" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0">
+        <state line="16" column="38" selection-start="411" selection-end="411" vertical-scroll-proportion="0.36312056">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="795" selection-end="795" vertical-scroll-proportion="0.35344094">
+        <state line="5" column="1" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/meteor/packages/accounts-facebook/facebook_configure.js">
+    <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/meteor/packages/accounts-facebook/facebook_server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.6005004">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="52" selection-start="1438" selection-end="1438" vertical-scroll-proportion="-16.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/meteor/packages/accounts-facebook/facebook_client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="42" selection-start="144" selection-end="144" vertical-scroll-proportion="0.067226894">
-          <folding />
+        <state line="42" column="98" selection-start="5127" selection-end="5127" vertical-scroll-proportion="0.61538464">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

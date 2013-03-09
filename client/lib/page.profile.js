@@ -281,7 +281,7 @@ Template.userCardTemplate.user_dropbox = function () {
 Template.userCardTemplate.user_active_collaborator = function () {
     try{
         if(Meteor.user().profile.activeCollaborator){
-            return Meteor.user().profile.activeCollaborator;
+            return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name;
         }else{
             return "No active collaborator currently set.";
         }
