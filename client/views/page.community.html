@@ -38,9 +38,9 @@
                     <span id="broadcastIcon" class="{{isBroadcastRecipient}} communication-recipient-icon pictograph">^</span>
 
                     <ul class="card-southeast-bottom pictograph-buttons">
-                        <li class="gray largish transfer-icon pictograph">o</li>
-                        <li class="gray largish collaborator-icon pictograph">a</li>
-                        <li class="gray largish carewatch-icon pictograph">j</li>
+                        <li class="largish transfer-icon pictograph">o</li>
+                        <li class="largish collaborator-icon pictograph">a</li>
+                        <li class="largish carewatch-icon pictograph">j</li>
                     </ul>
                 </div>
             </div>
@@ -61,9 +61,9 @@
             <!--<div class="user-posts">Posts: {{userHealthEntries}}</div>-->
             <!--<div class="card-northeast user-rank">HealthRank: {{userHealthRank}}</div>-->
             <ul class="card-southeast pictograph-buttons">
-                <li class="gray largish transfer-icon pictograph">o</li>
-                <li class="gray largish collaborator-icon pictograph">a</li>
-                <li class="gray largish carewatch-icon pictograph">j</li>
+                <li class="{{isActiveCollaborator}} largish transfer-icon pictograph">o</li>
+                <li class="{{isCollaborator}} largish collaborator-icon pictograph">a</li>
+                <li class="{{isCarewatched}} largish carewatch-icon pictograph">j</li>
             </ul>
         </div>
     </li>

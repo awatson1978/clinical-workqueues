@@ -55,6 +55,8 @@ Meteor.publish('userProfile', function (userId) {
         'profile.carewatch': true,
         'profile.currentPage': true,
         'profile.pushRecipients': true,
+        'profile.activeCollaborator': true,
+        'profile.dropBox': true,
         'emails': true,
         'emails[0].address': true
     }});

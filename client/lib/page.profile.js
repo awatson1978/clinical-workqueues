@@ -5,7 +5,6 @@ Template.userCardTemplate.rendered = function(){
     }else{
         resizeProfilePageForPortrait();
     }
-    //$('#userProfileCardExtended').css('height',$('#userCarewatchDisplay').css('height') + $('#userCollaboratorsDisplay').css('height') + 40);
 };
 Template.userCardTemplate.resize = function(){
     if(window.innerWidth > 1024){
@@ -269,7 +268,7 @@ Template.userCardTemplate.user_carewatch = function () {
 
 Template.userCardTemplate.user_dropbox = function () {
     try{
-        if(Meteor.user().profile){
+        if(Meteor.user().profile.dropbox){
             return Meteor.user().profile.dropbox;
         }else{
             return "No dropbox item.";
@@ -281,7 +280,7 @@ Template.userCardTemplate.user_dropbox = function () {
 };
 Template.userCardTemplate.user_active_collaborator = function () {
     try{
-        if(Meteor.user().profile){
+        if(Meteor.user().profile.activeCollaborator){
             return Meteor.user().profile.activeCollaborator;
         }else{
             return "No active collaborator currently set.";
@@ -291,7 +290,18 @@ Template.userCardTemplate.user_active_collaborator = function () {
         log_event(err, LogLevel.Error);
     }
 };
-
+Template.userCardTemplate.user_currentpage = function () {
+    try{
+        if(Meteor.user().profile.lastPage){
+            return Meteor.user().profile.currentPage;
+        }else{
+            return "No active page set.";
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
 Template.userCardTemplate.user_image = function () {
     try{
 
@@ -329,11 +339,11 @@ Template.userCardTemplate.user_image = function () {
 // --------------------------------------------------------
 // CAREWATCH
 
-Template.carewatchItem.carewatch_email = function () {
-    log_event('Template.carewatchItem.carewatch_email', LogLevel.Trace);
-    //return this.address;
-    return 'foo@hoo.com';
-};
+//Template.carewatchItem.carewatch_email = function () {
+//    log_event('Template.carewatchItem.carewatch_email', LogLevel.Trace);
+//    //return this.address;
+//    return 'foo@hoo.com';
+//};
 
 
 

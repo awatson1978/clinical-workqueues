@@ -1,3 +1,5 @@
+@import 'syntax.custom.less';
+
 //@lightblue: rgb(194, 209, 219);
 //@lightblue: #F3FAFF;
 @highlight-color: #ffdfcc;
@@ -129,6 +131,7 @@
 }
 //---------------------------------------------
 
+// landscape orientation
 @media only screen and (min-width: 768px) {
   #communityInspectionBlock {
     .forty-percent-width;
@@ -141,8 +144,11 @@
   #userQuickViewPanel{
   }
 }
+
+//portrait orientation
 @media only screen and (max-width: 768px) {
   #communityInspectionBlock {
+    .fullwidth;
   }
   #communityMembersList {
     .portait-single-column-layout;
@@ -160,6 +166,9 @@
       bottom: 40px;
       z-index: 1000;
       background-color: white;
+    }
+    .user-card-detailed-extended{
+      top: 200px;
     }
     .dont-overlap-user-card{
       margin-top: 30px;

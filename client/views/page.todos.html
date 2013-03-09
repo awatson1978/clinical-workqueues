@@ -8,6 +8,8 @@
             {{/each}}
         </ul>
     </div>
+    {{else}}
+    <p class="padded itaintrocketscience"><span class="pictograph">= </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consectetur lectus nibh. Vestibulum id nisi sapien. Curabitur ullamcorper ipsum quis massa accumsan varius. Donec condimentum orci eu eros tincidunt auctor. Proin placerat, lectus eget iaculis vehicula, leo elit tincidunt justo, vitae tristique orci nulla vitae enim. Vestibulum iaculis, libero nec hendrerit pulvinar, risus nisi commodo urna, tristique lacinia magna sem ac neque. Ut sit amet nisl sapien, eleifend scelerisque metus. Phasellus sed nibh magna, ac blandit ante.</p>
     <!--<div id="new-todo-box">-->
     <!--<input type="text" id="new-todo" placeholder="New item" />-->
     <!--</div>-->
@@ -68,7 +70,7 @@
                 <input id="todo-input" type="text" value="{{!text}}" />
             </li>
             {{else}}
-            <li class="destroy"></li>
+            <!--<li class="destroy"></li>-->
             <li class="display">
                 <input class="check" name="markdone" type="checkbox" {{{done_checkbox}}} />
             </li>
