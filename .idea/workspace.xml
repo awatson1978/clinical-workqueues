@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/audio/audio.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/audio/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/detect-browser/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/fonts/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/packages/mobile/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.tutorials.less" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/icons-18-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/icons-18-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/icons-36-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/images/icons-36-white.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.grid.css" afterPath="$PROJECT_DIR$/client/stylesheets/foundation-css/foundation.grid.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.sidebar.js" afterPath="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.guest.html" afterPath="$PROJECT_DIR$/client/views/page.guest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.todos.html" afterPath="$PROJECT_DIR$/client/views/page.todos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/sidebar.html" afterPath="$PROJECT_DIR$/client/views/sidebar.html" />
-    </list>
+    <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="" />
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,10 +22,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="70" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.31623933">
+                <state line="55" column="13" selection-start="2288" selection-end="2288" vertical-scroll-proportion="1.2535613">
                   <folding />
                 </state>
               </provider>
@@ -82,10 +62,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sidebar.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="sidebar.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="20" selection-start="313" selection-end="313" vertical-scroll-proportion="0.17902099">
+                <state line="30" column="23" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.67132866">
                   <folding />
                 </state>
               </provider>
@@ -560,16 +540,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
+    <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="70" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.31623933">
+        <state line="30" column="23" selection-start="1287" selection-end="1287" vertical-scroll-proportion="0.67132866">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
+    <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="20" selection-start="313" selection-end="313" vertical-scroll-proportion="0.17902099">
+        <state line="55" column="13" selection-start="2288" selection-end="2288" vertical-scroll-proportion="1.2535613">
           <folding />
         </state>
       </provider>
