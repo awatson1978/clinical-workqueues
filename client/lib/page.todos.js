@@ -59,50 +59,6 @@ Template.todos.events(okCancelEvents(
     })
 );
 
-Template.guest_todos.events(okCancelEvents(
-    '#guest-todo',
-    {
-        ok: function (text, evt) {
-            console.log('guest wants to register an item!');
-            var tag = Session.get('tag_filter');
-            console.log('tags: ' + tag);
-
-            console.log('text.length: ' + text.length);
-            if (text.length) {
-                console.log('text: ' + text);
-                console.log('list_id: ' + Session.get('list_id'));
-                console.log('owner: ' + Meteor.userId());
-
-                Meteor.call('createQuestion', {
-                    text: text,
-                    list_id: Session.get('list_id'),
-                    done: false,
-                    timestamp: (new Date()).getTime(),
-                    tags: tag ? [tag] : [],
-                    owner: Meteor.userId(),
-                    tags: tag ? [tag] : [],
-                    public: 'public'
-                }, function (error, todo) {
-                    console.log('error: ' + error);
-                    console.log('todo: ' + todo);
-                    if (! error) {
-                        jQuery("#questionBox").html("Thanks for contacting us!  We'll get back to you within 5 business days.");
-                        jQuery("#contactUsButton").fadeOut();
-//                        Session.set("selected", todo);
-//                        if (! public && Meteor.users.find().count() > 1)
-//                            openInviteDialog();
-                    }
-                });
-                //Session.set("showCreateDialog", false);
-            } else {
-                Session.set("createError",
-                    "It needs a title and a description, or why bother?");
-            }
-
-            evt.target.value = '';
-        }
-    })
-);
 
 Template.todos.todos = function () {
     // Determine which todos to display in main pane,
