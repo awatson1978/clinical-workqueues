@@ -1,22 +1,24 @@
 
-// session variables
-Session.set('list_id', null);
 
+// TODO: convert session variables into Meteor.user().profile items
+Session.set('list_id', null);
 Session.set('tag_filter', null);
+Session.set('current_page', '#main-pane');
+Session.set('selected_task_id', false);
+Session.set('show_sidebar_panel',true);
+
+// session variables
 Session.set('editing_addtag', null);
 Session.set('editing_listname', null);
 Session.set('editing_itemname', null);
 
+// TODO:  sync terminology between 'show' and 'display'
+Session.set('show_task_detail_panel', false);
 Session.set('display_profile_json_panel', false);
 Session.set('json_content', "panel for inspecting data objects");
-Session.set('current_page', '#main-pane');
 
-Session.set('show_task_detail_panel', false);
-Session.set('selected_task_id', false);
 
-Session.set('selected_message_recipient', '');
 Session.set('is_supported_browser', false);
-
 
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){

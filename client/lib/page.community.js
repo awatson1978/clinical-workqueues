@@ -6,12 +6,13 @@ Template.communityInspectionColumn.rendered = function(){
     if(isMobile){
         $('#communityPage').removeClass('no-touch');
 
-        $("#communityPage").bind("swipeleft", function(){
-            alert('swipeleft!');
-        });
-        $("#communityPage").bind("swiperight", function(){
-            alert('swipeleft!');
-        });
+//        $("#communityPage").bind("swipeleft", function(){
+//            alert('swipeleft!');
+//        });
+//        $("#communityPage").bind("swiperight", function(){
+//            alert('swipeleft!');
+//        });
+
         //detectOrientation();
     }else{
 //        if(window.innerWidth > 800){
@@ -52,50 +53,11 @@ Template.communityPageTemplate.user_count = function () {
     log_event('Template.communityPageTemplate.user_count', LogLevel.Trace);
     return Meteor.users.find().count();
 };
-//Template.communityPageTemplate.collaborators = function () {
-//    log_event('Template.communityPageTemplate.collaborators', LogLevel.Trace);
-//    // Meteor.user().profile breaks when user is logged out
-//    if(Meteor.user()){
-//        if(Meteor.user().profile){
-//            if(Meteor.user().profile.collaborators){
-//                return Meteor.user().profile.collaborators;
-//            }
-////            return Meteor.user().profile.collaborators;
-//        }
-//    }else{
-//        return 'Collaborators unavailable.';
-//    }};
-//Template.communityPageTemplate.collaborators_count = function () {
-//    // Meteor.user().profile breaks when user is logged out
-//    if(Meteor.user()){
-//        if(Meteor.user().profile){
-//            if(Meteor.user().profile.collaborators){
-//                return Meteor.user().profile.collaborators.length;
-//            }else{
-//                return '0';
-//            }
-//        }else{
-//            return 'No user profile created. 0';
-//        }
-//    }else{
-//        return 'User not logged in.  0';
-//    }
-//};
-//
-
 
 
 //--------------------------------------------------------------------
 // quickViewPanelTemplate
 
-//Template.collaboratorItem.collaborator_email = function () {
-//    log_event('Template.collaboratorItem.collaborator_email', LogLevel.Trace);
-//    return this.address;
-//};
-//Template.collaboratorItem.collaborator_name = function () {
-//    log_event('Template.collaboratorItem.collaborator_email', LogLevel.Trace);
-//    return this.username;
-//};
 
 Template.communityInspectionColumn.user_id = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
@@ -275,18 +237,6 @@ Template.userItemTemplate.isActiveCollaborator = function () {
         log_event(err, LogLevel.Error);
     }
 };
-//Template.userItemTemplate.userHealthEntries = function () {
-//    log_event('Template.userItemTemplate.userHealthEntries', LogLevel.Trace);
-//    return toInteger(Math.random() * 25000);
-//};
-//Template.userItemTemplate.userNetworkSize = function () {
-//    log_event('Template.userItemTemplate.userNetworkSize', LogLevel.Trace);
-//    return toInteger(Math.random() * 240);
-//};
-//Template.userItemTemplate.userHealthRank = function () {
-//    log_event('Template.userItemTemplate.userHealthRank', LogLevel.Trace);
-//    return toInteger(Math.random() * 100);
-//};
 Template.userItemTemplate.userImage = function () {
     log_event('Template.userItemTemplate.user_image', LogLevel.Trace);
     var src = "images/placeholder-240x240.gif";
@@ -296,6 +246,11 @@ Template.userItemTemplate.userImage = function () {
     log_event('profile avatar src: ' + src, LogLevel.Info);
     return src;
 };
+
+
+//--------------------------------------------------------------------
+//--------------------------------------------------------------------
+// HELPER FUNCTIONS
 
 function toInteger(number){
     return Math.round(

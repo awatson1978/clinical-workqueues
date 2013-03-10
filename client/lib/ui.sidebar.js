@@ -1,3 +1,8 @@
+Template.sidebarTemplate.sidebarIsVisible = function(){
+    return Session.get('show_sidebar_panel');
+};
+
+
 Template.sidebarTemplate.events({
     'click .sidebar-tile': function(){
         //alert('this button could be configured to send data to and launch an existing applicatoin in *your* workflow.  Contact pentasyllabic.com to learn more.');
