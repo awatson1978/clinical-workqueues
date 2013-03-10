@@ -54,12 +54,10 @@
 </template>
 <template name="userItemTemplate">
     <li class="rounded-corners user-card without-padding">
-        <img class="card-image gray-border" src="{{ userImage }}" />
+        <img class="card-image with gray-border" src="{{ userImage }}" />
         <div class="card-data">
             <div class="card-northwest gray card-meta-data without-padding barcode">*{{ _id }}*</div>
             <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
-            <!--<div class="user-posts">Posts: {{userHealthEntries}}</div>-->
-            <!--<div class="card-northeast user-rank">HealthRank: {{userHealthRank}}</div>-->
             <ul class="card-southeast pictograph-buttons">
                 <li class="{{isActiveCollaborator}} largish transfer-icon pictograph">o</li>
                 <li class="{{isCollaborator}} largish collaborator-icon pictograph">a</li>

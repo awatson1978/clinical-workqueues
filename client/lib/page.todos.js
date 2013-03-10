@@ -5,8 +5,11 @@
 
 
 Template.todos.any_list_selected = function () {
-    return !Session.equals('list_id', null);
-    //return true;
+    if(Session.equals('list_id', undefined)){
+        return false;
+    }else{
+        return !Session.equals('list_id', null);
+    };
 };
 
 Template.todos.events(okCancelEvents(
@@ -171,6 +174,11 @@ Template.todo_item.events(okCancelEvents(
 //----------------------------------------------------------------------------------
 
 Template.taskDetailCardTemplate.rendered = function(){
+
+    Session.set('show_sidebar_panel',true);
+    layoutWorkqueuesPageWithPanel();
+    
+    // TODO: Refactor these into CSS files
     $('#taskDetailCard').css('width', window.innerWidth - 240);
     $('#taskDetailCard').css('left', 220);
 //    $("#taskDetailCard").bind("swipeleft", function(){

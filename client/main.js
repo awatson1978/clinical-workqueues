@@ -32,6 +32,7 @@ $(window).resize(function(evt) {
 });
 
 // we make sure that navigation history is enabled
+// this only runs when the server is started up
 Meteor.startup(function () {
     Backbone.history.start({pushState: true});
 });
@@ -125,8 +126,18 @@ function toggleTaskDetailPanel(){
 function toggleSidebarVisibility(){
     if(Session.get('show_sidebar_panel')){
         Session.set('show_sidebar_panel',false);
+        layoutWorkqueuesPageWithoutPanel();
     }else{
         Session.set('show_sidebar_panel',true);
+        layoutWorkqueuesPageWithPanel();
     }
 }
 
+function layoutWorkqueuesPageWithPanel() {
+    $('#main-pane').css('left', '195px');
+    $('#main-pane').css('width', window.innerWidth - 195);
+}
+function layoutWorkqueuesPageWithoutPanel() {
+    $('#main-pane').css('left', '0');
+    $('#main-pane').css('width', window.innerWidth);
+}

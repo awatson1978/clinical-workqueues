@@ -36,7 +36,6 @@ Template.lists.events({
         activateInput(tmpl.find("#list-name-input"));
     }
 });
-
 // Attach events to keydown, keyup, and blur on "New list" input box.
 Template.lists.events(okCancelEvents(
     '#new-list',
