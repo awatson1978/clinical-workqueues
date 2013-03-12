@@ -134,10 +134,10 @@ function toggleSidebarVisibility(){
 }
 
 function layoutWorkqueuesPageWithPanel() {
-    $('#main-pane').css('left', '195px');
+    //$('#main-pane').css('left', '195px');
     $('#main-pane').css('width', window.innerWidth - 195);
 }
 function layoutWorkqueuesPageWithoutPanel() {
-    $('#main-pane').css('left', '0');
+    //$('#main-pane').css('left', '0');
     $('#main-pane').css('width', window.innerWidth);
 }

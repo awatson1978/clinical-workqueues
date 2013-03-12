@@ -177,7 +177,7 @@ Template.taskDetailCardTemplate.rendered = function(){
 
     Session.set('show_sidebar_panel',true);
     layoutWorkqueuesPageWithPanel();
-    
+
     // TODO: Refactor these into CSS files
     $('#taskDetailCard').css('width', window.innerWidth - 240);
     $('#taskDetailCard').css('left', 220);

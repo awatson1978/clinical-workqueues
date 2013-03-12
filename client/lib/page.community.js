@@ -32,13 +32,9 @@ Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
     },
-    'change input': function (evt, tmpl) {
-        Session.set('community_members_filter', $('#filterInput').val());
+    'keyup #communitySearchInput': function (evt, tmpl) {
+        Session.set('community_members_filter', $('#communitySearchInput').val());
         Meteor.flush();
-    },
-    'keypress input': function (evt, tmpl) {
-       Session.set('community_members_filter', $('#filterInput').val());
-       Meteor.flush();
     }
 });
 Template.communityPageTemplate.communityUsers = function () {

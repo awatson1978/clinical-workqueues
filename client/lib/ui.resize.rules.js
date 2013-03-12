@@ -51,23 +51,17 @@ function detectOrientation(){
 
 function resizeCommunityPageForLandscape(){
     $('#communityInspectionBlock').removeClass('fullwidth padded');
-    //$('#communityMembersList').removeClass('fullwidth padded fullscreen-single-column-position');
     $('#communityInspectionBlock').removeClass('bottom-anchored');
     $('#communityInspectionColumn').removeClass('fullwidth padded');
 
     $('#communityInspectionBlock').addClass('forty-percent-width');
-    //$('#communityMembersList').addClass('forty-percent-width');
     $('#communityInspectionBlock').addClass('first-column-position');
-    //$('#communityMembersList').addClass('second-column-position');
 };
 function resizeCommunityPageForPortrait(){
     $('#communityInspectionBlock').removeClass('forty-percent-width');
     $('#communityInspectionBlock').removeClass('first-column-position');
-    //$('#communityMembersList').removeClass('forty-percent-width');
-    //$('#communityMembersList').removeClass('second-column-position');
 
     $('#communityInspectionBlock').addClass('fullwidth padded');
-    //$('#communityMembersList').addClass('fullwidth padded fullscreen-single-column-position');
 
     $('#communityInspectionBlock').addClass('bottom-anchored');
     $('#communityInspectionColumn').addClass('fullwidth padded');
