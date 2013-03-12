@@ -21,11 +21,19 @@
             <div class="panel">
                 <h5>My Stats</h5>
                 <hr>
+                {{#constant}}
+                    <div class="d3chart" id="sunburstChart"></div>
+                {{/constant}}
             </div>
             <div class="spacer row"></div>
             <div class="panel">
                 <h5>Community Stats</h5>
                 <hr>
+                {{#constant}}
+                <div class="d3chart" id="dataDrivenDocumentChart">
+                    <svg id="simpleLineChartGraphic"></svg>
+                </div>
+                {{/constant}}
             </div>
         </div>
         <div class="six columns">
