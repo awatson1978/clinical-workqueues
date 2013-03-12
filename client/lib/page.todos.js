@@ -2,7 +2,24 @@
 
 
 //----------------------------------------------------------------------
+Template.todos.rendered = function(){
+    Session.set('show_sidebar_panel',true);
+    layoutWorkqueuesPageWithPanel();
 
+    $('.d3chart').css('height', '200px');
+
+
+    renderSunburst();
+
+    self.node = self.find("#dataDrivenDocumentChart svg");
+    if (! self.handle) {
+        self.handle = Meteor.autorun(function(){
+
+            renderBarChart();
+
+        });
+    };
+};
 
 Template.todos.any_list_selected = function () {
     if(Session.equals('list_id', undefined)){
@@ -175,8 +192,8 @@ Template.todo_item.events(okCancelEvents(
 
 Template.taskDetailCardTemplate.rendered = function(){
 
-    Session.set('show_sidebar_panel',true);
-    layoutWorkqueuesPageWithPanel();
+
+
 
     // TODO: Refactor these into CSS files
     $('#taskDetailCard').css('width', window.innerWidth - 240);

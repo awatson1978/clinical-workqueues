@@ -1,8 +1,10 @@
 function renderSunburst(){
-    var width = window.innerWidth,
-        height = window.innerHeight - 120,
+    var width = $('#statsColumn').width() - 40,
+        height = 300,
         radius = Math.min(width, height) / 2,
         color = d3.scale.category20c();
+
+    $('#sunburstPanel').css('height', ($('#statsColumn').width() - 20));
 
     var svg = d3.select("#sunburstChart").append("svg")
         .attr("id", "svg")

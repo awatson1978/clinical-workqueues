@@ -16,23 +16,21 @@
     <div class="spacer row"></div>
     <div class="row">
 
-        <div class="six columns">
+        <div id="statsColumn" class="six columns">
             <div class="spacer row"></div>
             <div class="panel">
                 <h5>My Stats</h5>
                 <hr>
                 {{#constant}}
-                    <div class="d3chart" id="sunburstChart"></div>
+                <div class="d3chart" id="barGraphChart"></div>
                 {{/constant}}
             </div>
             <div class="spacer row"></div>
-            <div class="panel">
+            <div id="sunburstPanel" class="panel">
                 <h5>Community Stats</h5>
                 <hr>
                 {{#constant}}
-                <div class="d3chart" id="dataDrivenDocumentChart">
-                    <svg id="simpleLineChartGraphic"></svg>
-                </div>
+                <div class="d3chart" id="sunburstChart"></div>
                 {{/constant}}
             </div>
         </div>

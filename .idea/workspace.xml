@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/helpers/d3.v3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/helpers/date.format.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/nv.d3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/datafile/flare.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" afterPath="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js" afterPath="$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.graphs.js" afterPath="$PROJECT_DIR$/client/lib/page.graphs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.todos.js" afterPath="$PROJECT_DIR$/client/lib/page.todos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.navigation.links.js" afterPath="$PROJECT_DIR$/client/lib/ui.navigation.links.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.todos.html" afterPath="$PROJECT_DIR$/client/views/page.todos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.js" afterPath="$PROJECT_DIR$/server/bootstrap.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,46 +35,46 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="41" selection-start="699" selection-end="699" vertical-scroll-proportion="-11.076923">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="362" column="0" selection-start="12731" selection-end="12731" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="92" column="32" selection-start="5455" selection-end="5455" vertical-scroll-proportion="-3.76">
+                <state line="124" column="14" selection-start="7135" selection-end="7135" vertical-scroll-proportion="-39.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.graphs.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.graphs.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.todos.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="page.todos.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.68091166">
+                <state line="24" column="50" selection-start="799" selection-end="799" vertical-scroll-proportion="-15.36">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.todos.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="13" column="58" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bootstrap.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="19" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.26366">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="graph.bar.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.bar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="48" column="29" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -73,10 +84,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="page.community.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
+          <file leaf-file-name="graph.sunburst.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="20" selection-start="352" selection-end="352" vertical-scroll-proportion="0.15954416">
+                <state line="1" column="47" selection-start="43" selection-end="74" vertical-scroll-proportion="0.01300813">
                   <folding />
                 </state>
               </provider>
@@ -97,12 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-        <option value="$PROJECT_DIR$/client/main.html" />
-        <option value="$PROJECT_DIR$/client/views/sidebar.html" />
-        <option value="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
-        <option value="$PROJECT_DIR$/client/lib/ui.resize.rules.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.todos.less" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/app.layout.less" />
@@ -110,17 +115,23 @@
         <option value="$PROJECT_DIR$/client/views/page.community.html" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
-        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
         <option value="$PROJECT_DIR$/client/lib/helpers/google.analytics.tracker.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.graphs.js" />
+        <option value="$PROJECT_DIR$/client/lib/ui.navigation.links.js" />
+        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
+        <option value="$PROJECT_DIR$/server/bootstrap.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
+        <option value="$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js" />
         <option value="$PROJECT_DIR$/client/views/page.todos.html" />
+        <option value="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="461" />
-    <option name="width" value="2351" />
-    <option name="height" value="888" />
+    <option name="x" value="10" />
+    <option name="y" value="32" />
+    <option name="width" value="1654" />
+    <option name="height" value="1391" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -208,7 +219,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="datafile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,42 +234,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -355,11 +330,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/client/lib/helpers" />
+      <recent name="$PROJECT_DIR$/client" />
       <recent name="$PROJECT_DIR$/client/lib/graphs" />
       <recent name="$PROJECT_DIR$/client/lib" />
-      <recent name="$PROJECT_DIR$/client/lib/helpers" />
-      <recent name="$PROJECT_DIR$/client/packages/fonts" />
-      <recent name="$PROJECT_DIR$/client/packages/audio" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/packages/audio" />
@@ -407,13 +382,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="461" width="2351" height="888" extended-state="0" />
+    <frame x="10" y="32" width="1654" height="1391" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27249023" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1434708" sideWeight="0.7275098" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20478234" sideWeight="0.9984252" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -422,7 +398,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27249023" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -495,114 +470,114 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
+    <entry file="file://$PROJECT_DIR$/client/nv.d3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="38" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.021621622">
+        <state line="17" column="0" selection-start="507" selection-end="507" vertical-scroll-proportion="0.3741403">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.guest.html">
+    <entry file="file://$PROJECT_DIR$/client/lib/helpers/d3.v3.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="55" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.22792023">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/app.layout.less">
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.navigation.links.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="14" selection-start="638" selection-end="638" vertical-scroll-proportion="0.54594594">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="18" selection-start="3663" selection-end="3663" vertical-scroll-proportion="0.30810812">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="25" selection-start="401" selection-end="401" vertical-scroll-proportion="0.4027972">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webide.jar!/resources/html5-schema/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="23" selection-start="3271" selection-end="3271" vertical-scroll-proportion="2.4729729">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="41" selection-start="699" selection-end="699" vertical-scroll-proportion="-11.076923">
+        <state line="36" column="14" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="362" column="0" selection-start="12731" selection-end="12731" vertical-scroll-proportion="0.0">
+        <state line="362" column="0" selection-start="12731" selection-end="12731" vertical-scroll-proportion="0.46518105">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/google.analytics.js">
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/google.analytics.tracker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="172" selection-end="492" vertical-scroll-proportion="0.10810811">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="32" selection-start="5455" selection-end="5455" vertical-scroll-proportion="-3.76">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.bar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="0" selection-start="2254" selection-end="2254" vertical-scroll-proportion="0.55431753">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="17" column="32" selection-start="696" selection-end="696" vertical-scroll-proportion="0.37883008">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.graphs.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="56" column="39" selection-start="3060" selection-end="3061" vertical-scroll-proportion="0.7284553">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/helpers/date.format.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="959" selection-end="959" vertical-scroll-proportion="0.15609756">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="20" selection-start="352" selection-end="352" vertical-scroll-proportion="0.15954416">
+        <state line="25" column="24" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.33195022">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.09202958">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="14" selection-start="7135" selection-end="7135" vertical-scroll-proportion="-39.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/datafile/flare.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="63" selection-start="927" selection-end="992" vertical-scroll-proportion="0.30463576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="58" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.68091166">
+        <state line="24" column="50" selection-start="799" selection-end="799" vertical-scroll-proportion="-15.36">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="47" selection-start="43" selection-end="74" vertical-scroll-proportion="0.01300813">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.bar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="29" selection-start="1168" selection-end="1168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="19" selection-start="1729" selection-end="1729" vertical-scroll-proportion="0.26366">
           <folding />
         </state>
       </provider>

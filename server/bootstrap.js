@@ -13,21 +13,21 @@ Meteor.startup(function () {
       },
       {name: "Emergency",
        contents: [
-         ["Contraindications of tamoxifen?", "drugs"],
-         ["Clinical protocol in case of tamoxifen shortage?", "protocols", "drugs", "supply chain"]
+         ["Reconcile tamoxifen side effects with current medications.", "medications"],
+         ["Evaluate risk of pulmonary embolism.", "medications", "risk evaluation"]
          ]
       },
       {name: "Urgent",
             contents: [
-                ["Contraindications of tamoxifen?", "drugs"],
-                ["Clinical protocol in case of tamoxifen shortage?", "protocols", "drugs", "supply chain"]
+                ["Double check insurance eligibility before end of month.", "insurance", "medications"],
+                ["Contact technetium-99m supplier for shortage routing instructions.", "protocols", "medications", "supply chain"]
             ]
       },
       {name: "Public",
        contents: [
-           ["Sea lettuce pumpkin salsify rock melon nori courgette celery parsnip burdock.","nutrition"],
-           ["Tatsoi garbanzo napa cabbage azuki bean.","nutrition"],
-           ["Jícama plantain leek chicory broccoli rabe asparagus beetroot.","nutrition"],
+           ["Provide smoking cessation education.","nutrition"],
+           ["Evaluate patient history for symptoms of hypertension.","nutrition"],
+           ["Rule out tachacardia arhythmia as cause of fainting.","nutrition"],
            ["Wakame zucchini gram spinach melon desert raisin seakale pumpkin spring onion.","nutrition"],
            ["Fennel gram sierra leone bologi pumpkin chickweed amaranth pea.","nutrition"],
            ["Kale desert raisin jícama cabbage broccoli azuki bean garlic seakale rutabaga.","nutrition"],

@@ -88,39 +88,44 @@
         <div class="spacer row"></div>
         <div id="userProfileCardExtended" class="user-card-detailed-extended">
             <div class="user-card-data-extended">
-                <div class="six columns no-left-padding">
-                    <div class="profile-list-label"><span class="pictograph">j</span> Carewatch</div>
-                    <div class="panel">
-                        <ul class="carewatch-data simple-user list">
-                            {{#each user_carewatch}}
-                            <li>
-                                <span class="collaborator">{{ name }}</span>
-                                <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
-                            </li>
-                            {{/each}}
-                        </ul>
+                <div class="row">
+                    <div class="six columns no-left-padding">
+                        <div class="profile-list-label"><span class="pictograph">j</span> Carewatch</div>
+                        <div class="panel">
+                            <ul class="carewatch-data simple-user list">
+                                {{#each user_carewatch}}
+                                <li>
+                                    <span class="collaborator">{{ name }}</span>
+                                    <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
                     </div>
-                    <div class="spacer row"></div>
-                    <div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>
-                    <div class="panel">
-                        <ul class="collaborators-data simple-user list">
-                            {{#each user_collaborators}}
-                            <li>
-                                <span class="collaborator">{{ name }}</span>
-                                <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
-                            </li>
-                            {{/each}}
-                        </ul>
+                    <div class="six columns no-right-padding">
+                        <div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>
+                        <div class="panel">
+                            <ul class="collaborators-data simple-user list">
+                                {{#each user_collaborators}}
+                                <li>
+                                    <span class="collaborator">{{ name }}</span>
+                                    <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="six columns no-right-padding">
-                    <div class="profile-list-label"><span class="pictograph">j</span> HIPAA Audit Log</div>
-                    <div class="panel">
-                        {{> hipaaLog }}
-                    </div>
+                <div class="spacer row"></div>
+                <div class="profile-list-label"><span class="pictograph">j</span> HIPAA Audit Log</div>
+                <div class="panel">
+                    {{> hipaaLog }}
                 </div>
             </div>
         </div>
+
+
+
     </div>
 
 </template>

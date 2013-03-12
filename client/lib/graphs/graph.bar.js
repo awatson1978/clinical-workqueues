@@ -55,7 +55,7 @@ function renderBarChart(){
                 .tooltips(false)
                 .showValues(true)
 
-            d3.select('#dataDrivenDocumentChart svg')
+            d3.select('#barGraphChart').append("svg")
                 .datum(historicalBarChart)
                 .transition().duration(500)
                 .call(chart);
@@ -67,17 +67,9 @@ function renderBarChart(){
         },
         callback: function(graph){
             window.onresize = function () {
-                var width = nv.utils.windowSize().width,
-                    height = nv.utils.windowSize().height - 40,
-                    margin = graph.margin();
-
-
-                if (width < margin.left + margin.right + 20)
-                    width = margin.left + margin.right + 20;
-
-                if (height < margin.top + margin.bottom + 20)
-                    height = margin.top + margin.bottom + 20;
-
+                var width = $('#statsColumn').width() - 40;
+                var height = 300;
+                var margin = graph.margin();
 
                 graph.width(width).height(height);
 
