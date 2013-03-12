@@ -100,8 +100,7 @@
                             {{/each}}
                         </ul>
                     </div>
-                </div>
-                <div class="six columns no-right-padding">
+                    <div class="spacer row"></div>
                     <div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>
                     <div class="panel">
                         <ul class="collaborators-data simple-user list">
@@ -114,9 +113,34 @@
                         </ul>
                     </div>
                 </div>
+                <div class="six columns no-right-padding">
+                    <div class="profile-list-label"><span class="pictograph">j</span> HIPAA Audit Log</div>
+                    <div class="panel">
+                        {{> hipaaLog }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </template>
+
+
+
+
+<template name="hipaaLog">
+    <div class="row">
+        <ul>
+            {{#each hipaaAudit}}
+            {{> hipaaEntry}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
+
+<template name="hipaaEntry">
+    <li><span class="darkgray">{{entry_timestamp}}, </span><span class="gray hidden">{{ owner }}, </span>{{text}}
+    </li>
+</template>
+
 
