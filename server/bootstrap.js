@@ -4,11 +4,11 @@ Meteor.startup(function () {
     var data = [
       {name: "Inbox",
        contents: [
-            ["Use list tabs to select a list.", "tutorial"],
-            ["Use tag tabs to filter and sort tags.", "tutorial"],
-             ["Select a recipient to messages to from the community page.", "tutorial"],
-             ["Double click on a task to view it in detailed mode.", "tutorial"],
-             ["Swipe left or right to send a task to a recipient.", "tutorial"]
+                 ["Provide smoking cessation education.","nutrition"],
+                ["Evaluate patient history for symptoms of hypertension.","nutrition"],
+           ["Rule out tachacardia arhythmia as cause of fainting.","nutrition"],
+           ["Review patient eating habits.  Discuss blood sugar level monitoring.","nutrition"],
+           ["Prescribe anti-nausea medication for motion sickness.","nutrition"]
        ]
       },
       {name: "Emergency",
@@ -25,44 +25,21 @@ Meteor.startup(function () {
       },
       {name: "Public",
        contents: [
-           ["Provide smoking cessation education.","nutrition"],
-           ["Evaluate patient history for symptoms of hypertension.","nutrition"],
-           ["Rule out tachacardia arhythmia as cause of fainting.","nutrition"],
-           ["Wakame zucchini gram spinach melon desert raisin seakale pumpkin spring onion.","nutrition"],
-           ["Fennel gram sierra leone bologi pumpkin chickweed amaranth pea.","nutrition"],
-           ["Kale desert raisin jícama cabbage broccoli azuki bean garlic seakale rutabaga.","nutrition"],
-           ["Turnip green bean plantain jícama epazote pea taro winter purslane.","nutrition"],
-           ["Bamboo shoot eggplant endive chickpea horseradish scallion leek.","nutrition"],
-           ["Parsnip turnip greens bok choy leek green bean.","nutrition"],
-           ["Broccoli rabe lotus root endive carrot chicory.","nutrition"],
-           ["Melon bush tomato jícama garbanzo potato peanut spinach.","nutrition"],
-           ["Beetroot fava bean wattle seed asparagus courgette potato.","nutrition"],
-           ["Lentil spring onion summer purslane bell pepper okra.","nutrition"],
-           ["Celery spinach garlic dulse broccoli earthnut pea.","nutrition"],
-           ["Wakame rock melon desert raisin lotus root chickpea pea komatsuna asparagus.","nutrition"],
-           ["Tomatillo cauliflower ricebean jícama epazote asparagus tomato beet.","nutrition"],
-           ["Greens parsley lentil pea sweet pepper bell pepper kale silver beet earthnut pea peanut. ","nutrition"],
-           ["Pea sprouts yarrow asparagus burdock okra endive fava bean grape coriander soko garlic chard.","nutrition"],
-           ["Spring onion asparagus nori aubergine soybean maize chicory cauliflower catsear.","nutrition"],
-           ["Squash cauliflower fennel black-eyed pea asparagus jícama salad.","nutrition"],
-           ["Leek radish radicchio bush tomato soybean.","nutrition"],
-           ["Lotus root leek horseradish celery jícama cucumber tigernut dandelion bunya nuts pea.","nutrition"],
-           ["Aubergine bitterleaf bell pepper courgette chicory caulie.","nutrition"],
-           ["Bush tomato napa cabbage dandelion sweet pepper yarrow welsh onion.","nutrition"],
-           ["Okra mustard lettuce celery gourd spring onion collard greens.","nutrition"],
-           ["Yarrow sweet pepper salsify swiss chard.","nutrition"],
-           ["Tigernut plantain avocado bell pepper arugula bitterleaf bush tomato.","nutrition"],
-           ["Sorrel maize yarrow gourd beet greens bell pepper sierra leone bologi lettuce sorrel chicory.","nutrition"],
-           ["Bok choy caulie parsnip coriander yarrow mung bean tigernut squash","nutrition"],
-           ["Sorrel collard greens sea lettuce ricebean napa cabbage soybean leek bok choy.","nutrition"],
-           ["Yarrow pumpkin catsear leek nori shallot parsley radish.","nutrition"],
-           ["Ricebean corn prairie turnip silver beet black-eyed pea cauliflower.","nutrition"],
-           ["Tatsoi sorrel summer purslane sweet pepper jícama horseradish burdock daikon taro.","nutrition"],
-           ["Artichoke daikon chicory summer purslane garbanzo black-eyed pea.","nutrition"],
-           ["Turnip greens daikon nori broccoli salsify bamboo shoot.","nutrition"],
-           ["Black-eyed pea bok choy winter purslane arugula.","nutrition"],
-           ["Summer purslane chicory chickweed scallion desert raisin welsh onion.","nutrition"],
-           ["Okra melon water chestnut cabbage eggplant komatsuna earthnut pea arugula.","nutrition"]
+           ["Get annual flu shot.","annual checkup"],
+           ["Donate blood.","community"],
+           ["Make organ donation decision.","community"],
+           ["Get mammogram.", "cancer screening"],
+           ["Take hypertension medication once a day.","medication tracking"],
+           ["Take vitamin supplement once a day.","medication tracking"],
+           ["Keep below 1500 calories per day.","nutrition"],
+           ["Replace milk with almond milk.","nutrition"],
+           ["Increase heart rate by at least 30 minutes today.","exercise"],
+           ["Yoga stretches for 30 minutes a day.","exercise"],
+           ["Get eye sight checked.","annual checkup"],
+           ["Annual dental visit.","annual checkup"],
+           ["Get blood type checked.","baseline"],
+           ["Buy genetic testing kit from 23andme. ","baseline", "genetics"],
+           ["Fill out family history worksheet for diabetes risks.","risk factors"],
        ]
       }
     ];
@@ -82,3 +59,6 @@ Meteor.startup(function () {
     }
   }
 });
+
+
+// Begoña is one of the best anatomists and medical illustrators I've ever had the opportunity to work with. In an age where people get distracted by the glitz and flash of the technical aspects of medical illustration and scientific visualization, she has an ability to focus in on the content of production unlike anybody else. Her attention to anatomical detail is simply masterful; at a level that I didn't know people even worked at. Not only is she a walking anatomy textbook, she networks with other professionals effortlessly, and is in the know on the latest industry trends ranging from telomere medications to 3D anatomical printing. Add to that a simply delightful personality that lights up whatever room she's in, and the result is a coworker who will be sorely missed. Do yourself a favor, and sponsor her for an H1B visa already!!

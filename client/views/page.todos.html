@@ -35,6 +35,7 @@
             </div>
         </div>
         <div class="six columns">
+            <div class="spacer row"></div>
             <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/pentasyllabics" data-widget-id="301557621440253952">Tweets by @pentasyllabics</a>
         </div>
     </div>
@@ -48,24 +49,27 @@
     <!--</div>-->
     {{> taskDetailCardTemplate }}
 </template>
+
+<!-- TODO: select better name for taskDetailCardTemplate  -->
 <template name="taskDetailCardTemplate">
     <!--<div class="simple_overlay" id="photo41">-->
         <!--<img src="/images/placeholder-240x240.gif" />-->
         <!--<div class="close"></div>-->
     <!--</div>-->
+    <!-- TODO: Extract showTaskDetail to outside of taskDetailCardTemplate  -->
     {{#if showTaskDetail}}
     <div class="spacer row"></div>
     <div class="padded row">
         <div id="taskDetailCard" class="panel user-card-detailed bottom-anchored no-background">
             <div class="card-header rounded-top-right">
-                <span class="white card-meta-data barcode">{{todo_id}}</span>
+                <span class="white card-meta-data">{{todo_id}}</span>
             </div>
             <img class="user-card-image" src="{{todo_image}}" />
             <div class="user-card-synopsis">
                 <div class="spacer row"></div>
                 <span class="user-card-synopsis-name">{{ todo_text }}</span><br>
                 <span class="user-card-synopsis-email">{{ todo_done }}</span><br>
-                <ul class="bottom-anchored detailed-task-card-tags">
+                <ul class="detailed-task-card-tags">
                     <!--<li class="bookend-left"></li>-->
                     {{#each tag_objs}}
                     <li class="tag removable_tag">
@@ -78,6 +82,7 @@
                         <input type="text" id="edittag-input-card" value="" />
                     </li>
                     {{else}}
+                    <li class="largish send-to-collaborator pictograph">o</li>
                     <li class="largish pictograph">J</li>
                     {{/if}}
                 </ul>
@@ -120,7 +125,7 @@
                 <input type="text" id="edittag-input" value="" />
             </li>
             {{else}}
-            <li class="pictograph largish addtag">J</li>
+            <li class="largish addtag pictograph">J</li>
             {{/if}}
         </ul>
         <!--<div class="bookend-right"></li>-->

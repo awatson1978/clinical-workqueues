@@ -10,15 +10,16 @@ Template.todos.rendered = function(){
 
 
     renderSunburst();
+    renderBarChart();
 
-    self.node = self.find("#dataDrivenDocumentChart svg");
-    if (! self.handle) {
-        self.handle = Meteor.autorun(function(){
-
-            renderBarChart();
-
-        });
-    };
+//    self.node = self.find("#barGraphChart svg");
+//    if (! self.handle) {
+//        self.handle = Meteor.autorun(function(){
+//
+//
+//
+//        });
+//    };
 };
 
 Template.todos.any_list_selected = function () {
@@ -190,11 +191,24 @@ Template.todo_item.events(okCancelEvents(
 
 //----------------------------------------------------------------------------------
 
+Template.taskDetailCardTemplate.events({
+    'click .send-to-collaborator':function(evt,tmpl){
+        alert('Active Collaborator: ' + Meteor.user().profile.activeCollaborator);
+        alert('Task Id: ' + Session.get('selected_task_id'));
+        try{
+            // Meteor.user().profile breaks when user is logged out
+            if(Meteor.user().profile){
+                Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set: { 'profile.dropbox': Session.get('selected_task_id')}});
+            }else{
+                log_event('Meteor profile not available.');
+            }
+        }
+        catch(err){
+            log_event(err, LogLevel.Error);
+        }
+    }
+});
 Template.taskDetailCardTemplate.rendered = function(){
-
-
-
-
     // TODO: Refactor these into CSS files
     $('#taskDetailCard').css('width', window.innerWidth - 240);
     $('#taskDetailCard').css('left', 220);

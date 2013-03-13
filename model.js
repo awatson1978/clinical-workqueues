@@ -3,7 +3,18 @@ Lists =     new Meteor.Collection("lists");
 usersDirectory =     new Meteor.Collection("usersDirectory");
 Hipaa =     new Meteor.Collection("hipaa");
 
-
+// TODO:  refactor usersDirector to UsersDirectory
+usersDirectory.allow({
+    insert: function(){
+        return true;
+    },
+    update: function () {
+        return true;
+    },
+    remove: function(){
+        return true;
+    }
+});
 Hipaa.allow({
     insert: function(){
         return true;
@@ -27,6 +38,7 @@ Meteor.users.allow({
             var allowed = [
                 "emails",
                 "profile",
+                "profile.dropbox",
                 "username"
             ];
             if (_.difference(fields, allowed).length)

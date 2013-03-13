@@ -38,7 +38,7 @@ Meteor.publish("usersDirectory", function () {
         'profile': true,
         'profile.name': true,
         'profile.avatar': true,
-        'profile.pushRecipients': true,
+        'profile.dropbox': true,
         'emails': true,
         'emails[0].address': true,
         'emails.address': true
@@ -56,7 +56,7 @@ Meteor.publish('userProfile', function (userId) {
         'profile.currentPage': true,
         'profile.pushRecipients': true,
         'profile.activeCollaborator': true,
-        'profile.dropBox': true,
+        'profile.dropbox': true,
         'emails': true,
         'emails[0].address': true
     }});
