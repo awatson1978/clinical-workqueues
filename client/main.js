@@ -17,6 +17,8 @@ Session.set('show_task_detail_panel', false);
 Session.set('display_profile_json_panel', false);
 Session.set('json_content', "panel for inspecting data objects");
 
+Session.set('showDropboxAlert', false);
+
 
 Session.set('is_supported_browser', false);
 

@@ -346,7 +346,24 @@ Template.userCardTemplate.user_image = function () {
 //};
 
 
+Template.userCardTemplate.receivedNewAlert = function(){
+    try{
+        if(Meteor.user().profile.dropbox == null){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    catch(err){
+        log_event(err, LogLevel.Error);
+    }
+};
 
+Template.dropboxAlert.events({
+    'click #dropboxAlert':function(){
+        Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
+    }
+});
 // --------------------------------------------------------
 // LOGGED IN, ETC
 

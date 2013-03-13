@@ -193,8 +193,6 @@ Template.todo_item.events(okCancelEvents(
 
 Template.taskDetailCardTemplate.events({
     'click .send-to-collaborator':function(evt,tmpl){
-        alert('Active Collaborator: ' + Meteor.user().profile.activeCollaborator);
-        alert('Task Id: ' + Session.get('selected_task_id'));
         try{
             // Meteor.user().profile breaks when user is logged out
             if(Meteor.user().profile){

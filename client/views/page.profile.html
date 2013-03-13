@@ -123,11 +123,10 @@
                 </div>
             </div>
         </div>
-
-
-
     </div>
-
+    {{#if receivedNewAlert }}
+        {{> dropboxAlert}}
+    {{/if }}
 </template>
 
 
@@ -148,4 +147,8 @@
     </li>
 </template>
 
-
+<template name="dropboxAlert">
+    <div id="dropboxAlert" class="notepad panel fullwidth top-anchored" style="z-index: 1000000">
+        foo
+    </div>
+</template>
