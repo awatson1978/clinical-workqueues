@@ -1,3 +1,5 @@
+
+
 //Template.graphsPageTemplate.destroyed = function () {
 //    this.handle && this.handle.stop();
 //};

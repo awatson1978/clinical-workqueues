@@ -1,36 +1,37 @@
 
-
+<!-- //TODO: refactor guest_page to guestPageTemplate -->
 <template name="guest_page">
-    <div style="margin-top: 40px;">
+    <div class="doesnt-overlap-header">
         <div class="twelve columns">
             <div class="row">
                 <div class="twelve columns">
                     <p class="itaintrocketscience startHere hide-for-small hide-for-medium">start here!</p>
                     <div class="six columns">
                         <div class="making-this itaintrocketscience hide-for-small hide-for-medium">Money shot!  This is what we're trying to create!</div>
-                        <div class="row">
-                            <img class="gray panel with-rounded-corners" src="/images/visionStatement/day-of-glass-money-shot.png">
+                        <div id="moneyShotContainer" class="row">
+                            <img rel="#moneyShot" class="gray moneyShot panel with-rounded-corners" src="/images/visionStatement/day-of-glass-money-shot.png">
                         </div>
                         <div class="making-this itaintrocketscience hide-for-small hide-for-medium">The healthcare related stuff begins at 6:23 into the video.</div>
                         <div class="row">
-                            <iframe class="gray panel with-rounded-corners" width="100%" height="300px" src="http://www.youtube.com/embed/X-GXO_urMow" frameborder="0" allowfullscreen></iframe>
+                            <iframe class="gray panel with-rounded-corners hidden-on-portrait" width="100%" height="300px" src="http://www.youtube.com/embed/X-GXO_urMow" frameborder="0" allowfullscreen></iframe>
                         </div>
                         <div class="spacer row"></div>
                         <a href="http://www.youtube.com/watch?v=6Cf7IL_eZ38">
-                            <div class="gray panel with-rounded-corners centered">
+                            <div class="centered gray panel with-rounded-corners hidden-on-portrait">
                                 <span class="largish pictograph">P  </span>See the original Day of Glass Video
                                 <!--<iframe class="gray panel with-rounded-corners" width="410" height="300" src="http://www.youtube.com/embed/6Cf7IL_eZ38" frameborder="0" allowfullscreen></iframe>-->
                             </div>
                         </a>
                         <div class="spacer row"></div>
-                        <p class="panel">A special thanks to Corning for making these wonderful Day of Glass Videos!  Buy their glass!  Buy products made with their glass!  We'll be working on the software and healthcare apps that you can use with their products!</p>
+                        <p class="panel hidden-on-portrait">A special thanks to Corning for making these wonderful Day of Glass Videos!  Buy their glass!  Buy products made with their glass!  We'll be working on the software and healthcare apps that you can use with their products!</p>
                     </div>
-
                     <div class="six columns">
                         <div class="row">
-                            <h2>Clinical Workqueues</h2>
-                            <p>Clinical Workqueues is the task management and workflow module to a new Personal Healthrecord Application (PHA).  Motivated by the HITECH and Affordable Care Acts, inspired by the Corning Day of Glass 2 Video, made possible by the iPad, and created using the Meteor framework using Node.js and MongoDB, the Clinical Workqueues App is a rethinking of what EMR and PHR applications can and should be.  </p>
-                            <div class="panel with-rounded-corners">
+                            <div class="hidden-on-portrait">
+                                <h2>Clinical Workqueues</h2>
+                                <p>Clinical Workqueues is the task management and workflow module to a new Personal Healthrecord Application (PHA).  Motivated by the HITECH and Affordable Care Acts, inspired by the Corning Day of Glass 2 Video, made possible by the iPad, and created using the Meteor framework using Node.js and MongoDB, the Clinical Workqueues App is a rethinking of what EMR and PHR applications can and should be.  </p>
+                            </div>
+                            <div class="panel with-rounded-corners hidden-on-portrait">
                                 <h5 class="bold">Features</h5>
                                 <hr>
                                 <p> Mobile<br>
@@ -44,7 +45,7 @@
                             </div>
 
                             <div class="spacer row"></div>
-                            <div class="notepad panel">
+                            <div class="notepad panel hipaa-notice">
                                 NOTICE:  Clinical Workqueues is currently in <bold class="red">ALPHA</bold>.  It is <bold>not</bold> HIPAA compliant (yet).  Information may be deleted or lost as we migrate to Beta release and move onto our production platform.  You have been warned!  This public demo is made available only for evaulation purposes at the current time.
                             </div>
                             <div class="spacer row"></div>
@@ -64,9 +65,13 @@
                             <!--<div class="panel"></div>-->
                         </div>
                     </div>
-
+                    <div class="simple_overlay" id="moneyShot">
+                        <div class="close"></div>
+                        <img src="/images/visionStatement/day-of-glass-money-shot-34ratio.png" />
+                    </div>
                 </div>
             </div>
+            <div class="spacer row"></div>
         </div>
     </div>
 </template>

@@ -20,7 +20,9 @@
 </template>
 <template name="communityInspectionColumn">
     <div id="communityInspectionBlock" class="top-anchored">
-        <input id="communitySearchInput" type="text" class="search" />
+        <div class="search-container">
+            <input id="communitySearchInput" type="text" class="search" value="search community members" />
+        </div>
         {{#if showQuickViewPanel}}
         <div class="spacer row"></div>
         <div id="userQuickViewPanel" class="card">
@@ -45,7 +47,7 @@
             </div>
         </div>
         {{else}}
-        <div class="itaintrocketscience hide-for-small">
+        <div class="itaintrocketscience hide-for-small hidden-on-portrait">
             <p>You can search by name, barcode, or user ID.  Try copying the barcode and pasting it in the box. (coming soon)</p>
         </div>
         {{/if}}

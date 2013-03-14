@@ -2,27 +2,19 @@
     <div id="dashboardPage" class="page">
         <div class="spacer row"></div>
         <div class="row">
+            {{#if receivedNewAlert }}
+            {{> dropboxAlert}}
+            {{/if }}
+        </div>
+        <div class="spacer row"></div>
+        <div class="row">
 
             <div id="statsColumn" class="six columns">
                 <div class="spacer row"></div>
 
                 <div class="card">
                     <div class="card-header clipped_corner rounded-top-right">
-                        <span class="white card-meta-data">My Stats</span>
-                    </div>
-                    <div class="panel">
-                        {{#constant}}
-                        <div class="d3chart" id="barGraphChart"></div>
-                        {{/constant}}
-                    </div>
-
-                </div>
-
-                <div class="spacer row"></div>
-
-                <div class="card">
-                    <div class="card-header clipped_corner rounded-top-right">
-                        <span class="white card-meta-data">My Stats</span>
+                        <span class="white card-meta-data">Community Stats</span>
                     </div>
                     <div id="sunburstPanel" class="panel">
                         {{#constant}}

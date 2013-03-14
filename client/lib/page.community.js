@@ -99,13 +99,13 @@ Template.communityInspectionColumn.isBroadcastRecipient = function(){
 };
 
 Template.communityInspectionColumn.events({
+    'touchmove .item-list' : function (e){
+        e.preventDefault();
+    },
     'click .transfer-icon': function (evt, tmpl) {
         toggleActiveCollaborator(Session.get('selected_community_member'));
     },
     'click .collaborator-icon': function (evt, tmpl) {
-
-
-
 
         alert("collaborator");
     },

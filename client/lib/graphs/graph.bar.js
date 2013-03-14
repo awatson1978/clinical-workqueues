@@ -55,9 +55,13 @@ function renderBarChart(){
                 .tooltips(false)
                 .showValues(true)
 
+            //var width = $('#statsColumn').width() - 40;
+
             d3.select('#barGraphChart').append("svg")
                 .datum(historicalBarChart)
                 .transition().duration(500)
+                .attr('width', 300)
+                .attr('height', 300)
                 .call(chart);
 
             nv.utils.windowResize(chart.update);
@@ -67,7 +71,8 @@ function renderBarChart(){
         },
         callback: function(graph){
             window.onresize = function () {
-                var width = $('#statsColumn').width() - 40;
+                //var width = $('#statsColumn').width() - 40;
+                var width = 300;
                 var height = 300;
                 var margin = graph.margin();
 

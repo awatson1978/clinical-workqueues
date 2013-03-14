@@ -345,8 +345,13 @@ Template.userCardTemplate.user_image = function () {
 //    return 'foo@hoo.com';
 //};
 
-
+Template.dashboardPageTemplate.receivedNewAlert = function(){
+    return monitorDropbox();
+};
 Template.profilePageTemplate.receivedNewAlert = function(){
+    return monitorDropbox();
+};
+function monitorDropbox(){
     try{
         if(Meteor.user().profile.dropbox == null){
             return false;
@@ -359,11 +364,17 @@ Template.profilePageTemplate.receivedNewAlert = function(){
     }
 };
 
+
 Template.dropboxAlert.events({
     'click #dropboxAlert':function(){
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
     }
 });
+Template.dropboxAlert.text = function(){
+    //var task = return Todos.findOne(Meteor.user().profile.dropbox);
+    return Meteor.user().profile.dropbox;
+};
+
 // --------------------------------------------------------
 // LOGGED IN, ETC
 

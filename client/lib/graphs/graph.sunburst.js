@@ -28,6 +28,7 @@ function renderSunburst(){
     log_event('d3 created arc(s).', LogLevel.Drawing);
 
     log_event('d3 loading input files', LogLevel.Drawing);
+
     d3.json("datafile/flare.json", function(error, root) {
         log_event('d3 loaded flare.json: ' + root, LogLevel.Drawing);
 

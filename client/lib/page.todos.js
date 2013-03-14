@@ -2,25 +2,7 @@
 
 
 //----------------------------------------------------------------------
-Template.dashboardPageTemplate.rendered = function(){
-    Session.set('show_sidebar_panel',true);
-    layoutWorkqueuesPageWithPanel();
 
-    $('.d3chart').css('height', '200px');
-
-
-    renderSunburst();
-    renderBarChart();
-
-//    self.node = self.find("#barGraphChart svg");
-//    if (! self.handle) {
-//        self.handle = Meteor.autorun(function(){
-//
-//
-//
-//        });
-//    };
-};
 
 Template.todos.any_list_selected = function () {
     if(Session.equals('list_id', undefined)){
@@ -191,19 +173,22 @@ Template.todo_item.events(okCancelEvents(
 
 //----------------------------------------------------------------------------------
 
+function sendToActiveCollaborator() {
+    try {
+        // Meteor.user().profile breaks when user is logged out
+        if (Meteor.user().profile) {
+            Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
+        } else {
+            log_event('Meteor profile not available.');
+        }
+    }
+    catch (err) {
+        log_event(err, LogLevel.Error);
+    }
+}
 Template.taskDetailCardTemplate.events({
     'click .send-to-collaborator':function(evt,tmpl){
-        try{
-            // Meteor.user().profile breaks when user is logged out
-            if(Meteor.user().profile){
-                Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set: { 'profile.dropbox': Session.get('selected_task_id')}});
-            }else{
-                log_event('Meteor profile not available.');
-            }
-        }
-        catch(err){
-            log_event(err, LogLevel.Error);
-        }
+        sendToActiveCollaborator();
     }
 });
 Template.taskDetailCardTemplate.rendered = function(){
@@ -221,10 +206,10 @@ Template.taskDetailCardTemplate.rendered = function(){
 //        Session.set('show_task_detail_panel',false);
 //    });
     $("#taskDetailCard").bind("swipeleft", function(){
-        alert('swipeleft!');
+        sendToActiveCollaborator();
     });
     $("#taskDetailCard").bind("swiperight", function(){
-        alert('swiperight!');
+        sendToActiveCollaborator();
     });
     $("#taskDetailCard").bind("swipeleftdown swipedown swiperightdown", function(){
         //alert('swipedown!');
