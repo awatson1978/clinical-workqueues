@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" afterPath="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.todos.js" afterPath="$PROJECT_DIR$/client/lib/page.todos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.profile.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.community.html" afterPath="$PROJECT_DIR$/client/views/page.community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.dashboard.html" afterPath="$PROJECT_DIR$/client/views/page.dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.todos.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.todos.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.profile.html" afterPath="$PROJECT_DIR$/client/views/page.profile.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/page.todos.html" afterPath="$PROJECT_DIR$/client/views/page.todos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/sidebar.html" afterPath="$PROJECT_DIR$/client/views/sidebar.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +25,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8098224">
+    <splitter split-orientation="horizontal" split-proportion="0.60035366">
       <split-first>
         <leaf>
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
@@ -44,34 +40,16 @@
           <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="25" selection-start="438" selection-end="438" vertical-scroll-proportion="-12.16">
+                <state line="42" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="-21.36">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="sidebar.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="10" selection-start="2044" selection-end="2044" vertical-scroll-proportion="-31.36">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.todos.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="56" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.29863015">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.profile.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="31" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+                <state line="348" column="28" selection-start="12423" selection-end="12423" vertical-scroll-proportion="0.5190343">
                   <folding />
                 </state>
               </provider>
@@ -81,22 +59,31 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="page.dashboard.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="page.dashboard.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/views/page.dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="33" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.8915663">
+                <state line="9" column="0" selection-start="286" selection-end="466" vertical-scroll-proportion="-5.76">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="page.profile.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="18" selection-start="407" selection-end="564" vertical-scroll-proportion="-9.6">
+                <state line="17" column="34" selection-start="507" selection-end="507" vertical-scroll-proportion="0.26407766">
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#template#4;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#template#4;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pages.todos.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.todos.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="174" column="12" selection-start="2928" selection-end="2928" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -136,28 +123,28 @@
       <list>
         <option value="$PROJECT_DIR$/client/lib/helpers/twitter.js" />
         <option value="$PROJECT_DIR$/server/bootstrap.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.todos.less" />
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/model.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
-        <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" />
-        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
         <option value="$PROJECT_DIR$/client/views/page.dashboard.html" />
         <option value="$PROJECT_DIR$/client/views/sidebar.html" />
         <option value="$PROJECT_DIR$/client/views/page.community.html" />
         <option value="$PROJECT_DIR$/client/views/page.todos.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.todos.less" />
+        <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
+        <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/views/page.profile.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="16" />
-    <option name="y" value="29" />
-    <option name="width" value="1223" />
-    <option name="height" value="916" />
+    <option name="x" value="889" />
+    <option name="y" value="186" />
+    <option name="width" value="1397" />
+    <option name="height" value="1238" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -422,13 +409,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="29" width="1223" height="916" extended-state="0" />
+    <frame x="889" y="186" width="1397" height="1238" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2025" sideWeight="0.9984252" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17685589" sideWeight="0.97940916" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -510,23 +497,9 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.dictionary.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="486" selection-end="486" vertical-scroll-proportion="0.3202669">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="23" selection-start="398" selection-end="398" vertical-scroll-proportion="0.17035218" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.todos.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="18" selection-start="2215" selection-end="2215" vertical-scroll-proportion="0.07533113">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/publish.js">
@@ -537,13 +510,6 @@
     <entry file="file://$PROJECT_DIR$/client/lib/ui.resize.rules.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="9" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.49668875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="11" selection-start="12196" selection-end="12196" vertical-scroll-proportion="0.020833334">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
@@ -567,36 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="31" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="407" selection-end="564" vertical-scroll-proportion="-9.6">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#template#4;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/page.dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="33" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.8915663">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="438" selection-end="438" vertical-scroll-proportion="-12.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.community.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="63" selection-start="1645" selection-end="1645" vertical-scroll-proportion="0.48022598">
@@ -604,17 +540,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
+    <entry file="file://$PROJECT_DIR$/client/views/page.dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="10" selection-start="2044" selection-end="2044" vertical-scroll-proportion="-31.36">
+        <state line="9" column="0" selection-start="286" selection-end="466" vertical-scroll-proportion="-5.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.todos.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="12" selection-start="2928" selection-end="2928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="12" selection-start="1331" selection-end="1331" vertical-scroll-proportion="0.099250935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/page.todos.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="56" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.29863015">
+        <state line="51" column="34" selection-start="2153" selection-end="2153" vertical-scroll-proportion="0.4291262">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="10" selection-start="2044" selection-end="2044" vertical-scroll-proportion="0.7452471">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="14" selection-start="853" selection-end="853" vertical-scroll-proportion="0.41100916">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1155" selection-end="1155" vertical-scroll-proportion="-21.36">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="348" column="28" selection-start="12423" selection-end="12423" vertical-scroll-proportion="0.5190343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/views/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="34" selection-start="507" selection-end="507" vertical-scroll-proportion="0.26407766">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#4;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

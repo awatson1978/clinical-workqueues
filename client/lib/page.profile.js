@@ -346,7 +346,7 @@ Template.userCardTemplate.user_image = function () {
 //};
 
 
-Template.userCardTemplate.receivedNewAlert = function(){
+Template.profilePageTemplate.receivedNewAlert = function(){
     try{
         if(Meteor.user().profile.dropbox == null){
             return false;

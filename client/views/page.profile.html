@@ -2,6 +2,9 @@
     <div class="page" id="profilePage">
 
         <div class="doesnt-overlap-header row"></div>
+        {{#if receivedNewAlert }}
+        {{> dropboxAlert}}
+        {{/if }}
         <div class="spacer row"></div>
         {{> userCardTemplate }}
     </div>
@@ -140,9 +143,6 @@
             </div>
         </div>
     </div>
-    {{#if receivedNewAlert }}
-        {{> dropboxAlert}}
-    {{/if }}
 </template>
 
 
@@ -164,7 +164,14 @@
 </template>
 
 <template name="dropboxAlert">
-    <div id="dropboxAlert" class="notepad panel fullwidth top-anchored" style="z-index: 1000000">
-        foo
+    <div class="row">
+        <div id="dropboxAlert" class="class" style="z-index: 1000000">
+            <div class="card-header clipped_corner rounded-top-right">
+                <span class="white card-meta-data">Alert</span>
+            </div>
+            <div class="panel">
+                foo
+            </div>
+        </div>
     </div>
 </template>
