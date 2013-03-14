@@ -5,11 +5,15 @@
 
 
 Template.todos.any_list_selected = function () {
-    if(Session.equals('list_id', undefined)){
-        return false;
-    }else{
-        return !Session.equals('list_id', null);
-    };
+   try{
+       if(Session.equals('list_id', undefined)){
+           return false;
+       }else{
+           return !Session.equals('list_id', null);
+       };
+   }catch(err){
+
+   }
 };
 
 Template.todos.events(okCancelEvents(

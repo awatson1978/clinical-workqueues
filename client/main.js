@@ -1,11 +1,14 @@
 
 
 // TODO: convert session variables into Meteor.user().profile items
-Session.set('list_id', null);
+//Session.set('list_id', null);
 Session.set('tag_filter', null);
 Session.set('current_page', '#main-pane');
 Session.set('selected_task_id', false);
 Session.set('show_sidebar_panel',true);
+
+//var seed = ;
+//Router.setList(seed);
 
 // session variables
 Session.set('editing_addtag', null);
@@ -32,6 +35,11 @@ if(isWebKit){
 $(window).resize(function(evt) {
     Session.set("resize", new Date());
 });
+
+//var seed = Lists.findOne();
+//console.log('seed: ' + JSON.stringify(seed));
+//Session.setDefault('list_id', seed._id);
+
 
 // we make sure that navigation history is enabled
 // this only runs when the server is started up

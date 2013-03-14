@@ -1,3 +1,4 @@
+
 Template.sidebarTemplate.sidebarIsVisible = function(){
     return Session.get('show_sidebar_panel');
 };
@@ -13,6 +14,11 @@ Template.sidebarTemplate.events({
     }
 });
 
+Template.sidebarTemplate.rendered = function(){
+  if(Session.get('list_id') == undefined){
+      Session.set('list_id', Lists.findOne()._id)
+  }
+};
 ////////// Lists //////////
 
 Template.lists.lists = function () {
