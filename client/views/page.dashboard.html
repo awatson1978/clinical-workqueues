@@ -1,0 +1,46 @@
+<template name="dashboardPageTemplate">
+    <div id="dashboardPage" class="page">
+        <div class="spacer row"></div>
+        <div class="row">
+
+            <div id="statsColumn" class="six columns">
+                <div class="spacer row"></div>
+
+                <div class="card">
+                    <div class="card-header clipped_corner rounded-top-right">
+                        <span class="white card-meta-data">My Stats</span>
+                    </div>
+                    <div class="panel">
+                        {{#constant}}
+                        <div class="d3chart" id="barGraphChart"></div>
+                        {{/constant}}
+                    </div>
+
+                </div>
+
+                <div class="spacer row"></div>
+
+                <div class="card">
+                    <div class="card-header clipped_corner rounded-top-right">
+                        <span class="white card-meta-data">My Stats</span>
+                    </div>
+                    <div id="sunburstPanel" class="panel">
+                        {{#constant}}
+                        <div class="d3chart" id="sunburstChart"></div>
+                        {{/constant}}
+                    </div>
+                </div>
+            </div>
+            <div class="six columns">
+                <div class="spacer row"></div>
+
+                <div class="card">
+                    <div class="card-header clipped_corner rounded-top-right">
+                        <span class="white card-meta-data">Tweets</span>
+                    </div>
+                    <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/pentasyllabics" data-widget-id="301557621440253952"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

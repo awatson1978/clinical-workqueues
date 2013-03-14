@@ -73,7 +73,7 @@ function renderBarChart(){
 
                 graph.width(width).height(height);
 
-                d3.select('#simpleLineChartGraphic')
+                d3.select('#barGraphChart')
                     .attr('width', width)
                     .attr('height', height)
                     .call(graph);

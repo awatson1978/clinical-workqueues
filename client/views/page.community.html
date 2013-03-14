@@ -23,12 +23,11 @@
         <input id="communitySearchInput" type="text" class="search" />
         {{#if showQuickViewPanel}}
         <div class="spacer row"></div>
-            <div id="userQuickViewPanel" class="panel user-card-detailed">
-                <div class="card-header rounded-top-right">
-                    <!--<div class="top_right"></div>-->
-                    <span class="white card-meta-data barcode">*{{user_id}}*</span>
-                    <!--<span class="userEmailDisplay card-northeast card-meta-data">{{user_email}}</span></li>-->
-                </div>
+        <div id="userQuickViewPanel" class="card">
+            <div class="card-header rounded-top-right">
+                <span class="white card-meta-data barcode">*{{user_id}}*</span>
+            </div>
+            <div class="panel user-card-detailed">
                 <img id="userCardImage" class="user-card-image" src="{{user_avatar}}" />
 
                 <div class="user-card-synopsis fullheight unselectable">

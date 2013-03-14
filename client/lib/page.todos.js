@@ -2,7 +2,7 @@
 
 
 //----------------------------------------------------------------------
-Template.todos.rendered = function(){
+Template.dashboardPageTemplate.rendered = function(){
     Session.set('show_sidebar_panel',true);
     layoutWorkqueuesPageWithPanel();
 

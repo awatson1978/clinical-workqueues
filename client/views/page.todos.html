@@ -13,32 +13,7 @@
         <!--<h5>Tutorial</h5><h5 class="pictograph right-anchored tutorial-close">X</h5>-->
         <!--<p>This is your dashboard.  Here you will find an overview of all your taks and todos.</p>-->
     <!--</div>-->
-    <div class="spacer row"></div>
-    <div class="row">
 
-        <div id="statsColumn" class="six columns">
-            <div class="spacer row"></div>
-            <div class="panel">
-                <h5>My Stats</h5>
-                <hr>
-                {{#constant}}
-                <div class="d3chart" id="barGraphChart"></div>
-                {{/constant}}
-            </div>
-            <div class="spacer row"></div>
-            <div id="sunburstPanel" class="panel">
-                <h5>Community Stats</h5>
-                <hr>
-                {{#constant}}
-                <div class="d3chart" id="sunburstChart"></div>
-                {{/constant}}
-            </div>
-        </div>
-        <div class="six columns">
-            <div class="spacer row"></div>
-            <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/pentasyllabics" data-widget-id="301557621440253952">Tweets by @pentasyllabics</a>
-        </div>
-    </div>
     {{/if}}
     <!--<div class="three columns">-->
     <!--<img class="dynamic panel" rel="#photo41" src="/images/placeholder-240x240.gif" />-->
@@ -60,33 +35,36 @@
     {{#if showTaskDetail}}
     <div class="spacer row"></div>
     <div class="padded row">
-        <div id="taskDetailCard" class="panel user-card-detailed bottom-anchored no-background">
+        <div id="taskDetailCard" class="bottom-anchored card">
             <div class="card-header rounded-top-right">
                 <span class="white card-meta-data">{{todo_id}}</span>
             </div>
-            <img class="user-card-image" src="{{todo_image}}" />
-            <div class="user-card-synopsis">
-                <div class="spacer row"></div>
-                <span class="user-card-synopsis-name">{{ todo_text }}</span><br>
-                <span class="user-card-synopsis-email">{{ todo_done }}</span><br>
-                <ul class="detailed-task-card-tags">
-                    <!--<li class="bookend-left"></li>-->
-                    {{#each tag_objs}}
-                    <li class="tag removable_tag">
-                        <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
+            <div class="panel user-card-detailed  no-background">
+                <img class="user-card-image" src="{{todo_image}}" />
+                <div class="user-card-synopsis">
+                    <div class="spacer row"></div>
+                    <span class="user-card-synopsis-name">{{ todo_text }}</span><br>
+                    <span class="user-card-synopsis-email">{{ todo_done }}</span><br>
+                    <ul class="detailed-task-card-tags">
+                        <!--<li class="bookend-left"></li>-->
+                        {{#each tag_objs}}
+                        <li class="tag removable_tag">
+                            <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
 
-                    </li>
-                    {{/each}}
-                    {{#if adding_tag}}
-                    <li class="tag edittag">
-                        <input type="text" id="edittag-input-card" value="" />
-                    </li>
-                    {{else}}
-                    <li class="largish send-to-collaborator pictograph">o</li>
-                    <li class="largish pictograph">J</li>
-                    {{/if}}
-                </ul>
+                        </li>
+                        {{/each}}
+                        {{#if adding_tag}}
+                        <li class="tag edittag">
+                            <input type="text" id="edittag-input-card" value="" />
+                        </li>
+                        {{else}}
+                        <li class="largish send-to-collaborator pictograph">o</li>
+                        <li class="largish pictograph">J</li>
+                        {{/if}}
+                    </ul>
+                </div>
             </div>
+
         </div>
     </div>
     {{/if}}
