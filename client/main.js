@@ -142,12 +142,25 @@ function toggleSidebarVisibility(){
         layoutWorkqueuesPageWithPanel();
     }
 }
+function setSidebarVisibility(){
+    if(Session.get('show_sidebar_panel')){
+        layoutWorkqueuesPageWithPanel();
+    }else{
+        layoutWorkqueuesPageWithoutPanel();
+    }
+
+}
 
 function layoutWorkqueuesPageWithPanel() {
-    //$('#main-pane').css('left', '195px');
+    $('#main-pane').removeClass('sidebar-hidden-landscape-layout');
+
+    $('#main-pane').addClass('sidebar-shown-landscape-layout');
     $('#main-pane').css('width', window.innerWidth - 195);
 }
 function layoutWorkqueuesPageWithoutPanel() {
-    //$('#main-pane').css('left', '0');
+    $('#main-pane').removeClass('sidebar-shown-landscape-layout');
+
+    $('#main-pane').addClass('sidebar-hidden-landscape-layout');
     $('#main-pane').css('width', window.innerWidth);
+
 }

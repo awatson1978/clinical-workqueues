@@ -207,11 +207,16 @@ textarea#guest-todo {
 
 // landscape orientation
 @media only screen and (min-width: 768px) {
-
+  #main-pane{
+    .sidebar-shown-landscape-layout;
+  }
 }
 
 //portrait orientation
 @media only screen and (max-width: 768px) {
+  #main-pane{
+    .sidebar-shown-portrait-layout;
+  }
   #taskDetailCard{
     position: fixed;
     bottom: 240px;
@@ -220,4 +225,19 @@ textarea#guest-todo {
   }
 }
 @media only screen and (max-width: 480px) {
+}
+
+.sidebar-shown-landscape-layout{
+  left: 195px;
+
+}
+.sidebar-shown-portrait-layout{
+  left:0;
+  width: 100%;
+}
+.sidebar-hidden-landscape-layout{
+  left:0 !important;
+}
+.sidebar-hidden-landscape-layout{
+  left:0 !important;
 }

@@ -6,43 +6,47 @@ function detectOrientation(){
 
     if(typeof window.onorientationchange != 'undefined'){
         if ( window.orientation == 0 ) {
-            //Do Something In Portrait Mode
-            //alert('orientation change!');
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
             else if(Session.equals('current_page', "#profilePage")){
                 resizeProfilePageForPortrait();
+            }
+            else if(Session.equals('current_page,"#main-pane')){
+                setSidebarVisibility();
             }
         }
         else if ( window.orientation == 90 ) {
-            //Do Something In Landscape Mode
-            //alert('orientation change!');
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
             }
             else if(Session.equals('current_page', "#profilePage")){
                 resizeProfilePageForLandscape();
+            }
+            else if(Session.equals('current_page,"#main-pane')){
+                setSidebarVisibility();
             }
         }
         else if ( window.orientation == -90 ) {
-            //Do Something In Landscape Mode
-            //alert('orientation change!');
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
             }
             else if(Session.equals('current_page', "#profilePage")){
                 resizeProfilePageForLandscape();
             }
+            else if(Session.equals('current_page,"#main-pane')){
+                setSidebarVisibility();
+            }
         }
         else if ( window.orientation == 180 ) {
-            //Do Something In Portrait Mode
-            //alert('orientation change!');
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
             else if(Session.equals('current_page', "#profilePage")){
                 resizeProfilePageForPortrait();
+            }
+            else if(Session.equals('current_page,"#main-pane')){
+                setSidebarVisibility();
             }
         }
     }

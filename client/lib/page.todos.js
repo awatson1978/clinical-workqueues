@@ -114,6 +114,9 @@ Template.todo_item.events({
         Session.set('selected_task_id', this._id);
         Session.set('selected_task_done_status', this.done);
         Session.set('selected_task_text', this.text);
+        if(!Session.get('show_task_detail_panel')){
+            Session.set('show_task_detail_panel', true);
+        }
     },
     'dblclick .todo': function(){
         //toggleTaskDetailPanel();

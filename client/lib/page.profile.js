@@ -371,11 +371,11 @@ Template.dropboxAlert.events({
     }
 });
 Template.dropboxAlert.text = function(){
-    //var task = return Todos.findOne(Meteor.user().profile.dropbox);
-    return Meteor.user().profile.dropbox;
+    var task = Todos.findOne(Meteor.user().profile.dropbox);
+    return task.text;
 };
 
-// --------------------------------------------------------
+// -------------------------------------------Meteor.user().profile.dropbo-------------
 // LOGGED IN, ETC
 
 Template.profilePageTemplate.loggedIn = function () {
