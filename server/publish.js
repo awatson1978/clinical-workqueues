@@ -39,6 +39,7 @@ Meteor.publish("usersDirectory", function () {
         'profile.name': true,
         'profile.avatar': true,
         'profile.dropbox': true,
+        'profile.activeCollaborator': true,
         'emails': true,
         'emails[0].address': true,
         'emails.address': true
