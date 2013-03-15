@@ -19,6 +19,9 @@ Meteor.publish('todos', function (list_id) {
 //        {$or: [{"public": true}, {list_id: list_id}, {invited: this.userId}, {owner: this.userId}]}
 //    );
 });
+Meteor.publish('allTodos', function (list_id) {
+    return Todos.find();
+});
 
 
 

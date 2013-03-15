@@ -1,3 +1,4 @@
+AllTodos =     new Meteor.Collection("allTodos");
 Todos =     new Meteor.Collection("todos");
 Lists =     new Meteor.Collection("lists");
 usersDirectory =     new Meteor.Collection("usersDirectory");
