@@ -10,7 +10,9 @@
 <template name="todos">
     <div>
         {{#if receivedNewAlert }}
-        {{> dropboxAlert}}
+        <div class="padded">
+            {{> dropboxAlert}}
+        </div>
         {{/if }}
     </div>
     <div id="items-view">

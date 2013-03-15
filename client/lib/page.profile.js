@@ -377,7 +377,9 @@ Template.dropboxAlert.events({
 });
 Template.dropboxAlert.text = function(){
     try{
+        console.log('dropbox: ' + Meteor.user().profile.dropbox);
         var task = Todos.findOne(Meteor.user().profile.dropbox);
+        console.log('dropbox task: ' + JSON.stringify(task));
         return JSON.stringify(task);
     }catch(error){
         catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
