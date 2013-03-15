@@ -380,7 +380,7 @@ Template.dropboxAlert.text = function(){
         var task = Todos.findOne(Meteor.user().profile.dropbox);
         return task.text;
     }catch(error){
-        catch_error('Template.dropboxAlert.text', err, LogLevel.Error, this);
+        catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
     }
 };
 

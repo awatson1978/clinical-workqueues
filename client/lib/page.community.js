@@ -5,7 +5,7 @@ Template.communityInspectionColumn.rendered = function(){
     log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
 
     if(isMobile){
-        $('.page').addClass('touch-enabled');
+        $('.page').removeClass('touch-disabled');
     }
 };
 Template.communityPageTemplate.events({

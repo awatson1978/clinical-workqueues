@@ -1,5 +1,5 @@
 <template name="profilePageTemplate">
-    <div class="page" id="profilePage">
+    <div class="touch-disabled page" id="profilePage">
 
         <div class="doesnt-overlap-header row"></div>
         {{#if receivedNewAlert }}
@@ -165,7 +165,7 @@
 
 <template name="dropboxAlert">
     <div class="row">
-        <div id="dropboxAlert" class="class" style="z-index: 1000000">
+        <div id="dropboxAlert" class="card with-margins" style="z-index: 1000000">
             <div class="card-header clipped_corner rounded-top-right">
                 <span class="white card-meta-data">Alert</span>
             </div>
