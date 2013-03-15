@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/subscriptions.js" afterPath="$PROJECT_DIR$/client/subscriptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.js" afterPath="$PROJECT_DIR$/model.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,7 +103,7 @@
           <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="381" column="24" selection-start="14125" selection-end="14125" vertical-scroll-proportion="0.2851153">
+                <state line="383" column="15" selection-start="14234" selection-end="14234" vertical-scroll-proportion="0.3186583">
                   <folding />
                 </state>
               </provider>
@@ -555,7 +552,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="381" column="24" selection-start="14125" selection-end="14125" vertical-scroll-proportion="0.2851153">
+        <state line="383" column="15" selection-start="14234" selection-end="14234" vertical-scroll-proportion="0.3186583">
           <folding />
         </state>
       </provider>
