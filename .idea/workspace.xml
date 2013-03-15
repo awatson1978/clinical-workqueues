@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/subscriptions.js" afterPath="$PROJECT_DIR$/client/subscriptions.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,7 +47,7 @@
           <file leaf-file-name="page.todos.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="189" column="41" selection-start="5510" selection-end="5510" vertical-scroll-proportion="2.0429184">
+                <state line="124" column="42" selection-start="3550" selection-end="3550" vertical-scroll-proportion="0.9270386">
                   <folding />
                 </state>
               </provider>
@@ -96,17 +98,19 @@
           <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="383" column="25" selection-start="14218" selection-end="14218" vertical-scroll-proportion="0.6813417">
+                <state line="395" column="10" selection-start="14582" selection-end="14582" vertical-scroll-proportion="0.8993711">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/model.js">
+          <file leaf-file-name="subscriptions.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="28" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -126,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/lib/page.dashboard.js" />
         <option value="$PROJECT_DIR$/client/lib/page.guest.js" />
         <option value="$PROJECT_DIR$/client/lib/page.todos.js" />
         <option value="$PROJECT_DIR$/client/templates/dropboxAlert.html" />
@@ -142,6 +145,7 @@
         <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
         <option value="$PROJECT_DIR$/client/templates/page.todos.html" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/subscriptions.js" />
       </list>
     </option>
   </component>
@@ -497,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="17" selection-start="3340" selection-end="3340" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.todos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="30" selection-start="449" selection-end="449" vertical-scroll-proportion="-8.32">
@@ -520,18 +517,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
+    <entry file="file://$PROJECT_DIR$/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="783" selection-end="783" vertical-scroll-proportion="0.47946727">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="35" selection-start="1204" selection-end="1204" vertical-scroll-proportion="0.80686694">
+        <state line="54" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -543,23 +531,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+        <state line="184" column="17" selection-start="3340" selection-end="3340" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="31" selection-start="1412" selection-end="1412" vertical-scroll-proportion="0.8888889">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="41" selection-start="5510" selection-end="5510" vertical-scroll-proportion="2.0429184">
+        <state line="124" column="42" selection-start="3550" selection-end="3550" vertical-scroll-proportion="0.9270386">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/subscriptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="383" column="25" selection-start="14218" selection-end="14218" vertical-scroll-proportion="0.6813417">
+        <state line="395" column="10" selection-start="14582" selection-end="14582" vertical-scroll-proportion="0.8993711">
           <folding />
         </state>
       </provider>
