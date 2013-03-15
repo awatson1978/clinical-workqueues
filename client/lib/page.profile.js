@@ -378,7 +378,7 @@ Template.dropboxAlert.events({
 Template.dropboxAlert.text = function(){
     try{
         //var task = ;
-        return Todos.findOne(Meteor.user().profile.dropbox).text;
+        return Todos.findOne(Meteor.user().profile.dropbox);
     }catch(error){
         catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
     }
