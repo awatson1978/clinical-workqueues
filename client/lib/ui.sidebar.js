@@ -21,9 +21,13 @@ Template.sidebarTemplate.events({
 });
 
 Template.sidebarTemplate.rendered = function(){
-  if(Session.get('list_id') == undefined){
-      Session.set('list_id', Lists.findOne()._id)
-  }
+    try{
+        if(Session.get('list_id') == undefined){
+            Session.set('list_id', Lists.findOne()._id)
+        }
+    }catch(error){
+        console.log(error);
+    }
 };
 ////////// Lists //////////
 

@@ -4,7 +4,7 @@
 
 Meteor.startup(function () {
     if (Meteor.users.find().count() === 0) {
-        log_event('no users in database!  adding some default users', LogLevel.Info);
+        log_event('no users in database!  adding some default users', LogLevel.Info, this);
 
         // crate our administrator
         var userId = Accounts.createUser({
@@ -19,7 +19,7 @@ Meteor.startup(function () {
                 carewatch: ''
             }
         });
-        log_event('Administrator account created: ' + userId, LogLevel.Info);
+        log_event('Administrator account created: ' + userId, LogLevel.Info, this);
 
         // and a default physician
         var userId = Accounts.createUser({
@@ -32,7 +32,7 @@ Meteor.startup(function () {
                 avatar: '/userspace/house/gregory.house.jpg'
             }
         });
-        log_event('Default physician account created: ' + userId, LogLevel.Info);
+        log_event('Default physician account created: ' + userId, LogLevel.Info, this);
 
 
         // now lets create some test patients
@@ -168,7 +168,7 @@ Meteor.startup(function () {
                     avatar: data[i].profile.avatar
                 }
             });
-            log_event('new user created: ' + userId, LogLevel.Info);
+            log_event('new user created: ' + userId, LogLevel.Info, this);
         }
 
 

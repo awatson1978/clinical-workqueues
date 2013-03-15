@@ -2,32 +2,12 @@ Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.communityInspectionColumn.helpers(genericUserDisplayObject);
 
 Template.communityInspectionColumn.rendered = function(){
-    //$('#community-inspection-block').css('width',$('#community-members-list').width());
+    log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
+
     if(isMobile){
-        $('#communityPage').removeClass('no-touch');
-
-//        $("#communityPage").bind("swipeleft", function(){
-//            alert('swipeleft!');
-//        });
-//        $("#communityPage").bind("swiperight", function(){
-//            alert('swipeleft!');
-//        });
-
-        //detectOrientation();
-    }else{
-//        if(window.innerWidth > 800){
-//            resizeCommunityPageForLandscape();
-//        }else{
-//            resizeCommunityPageForPortrait();
-//        }
+        $('.page').addClass('touch-enabled');
     }
 };
-
-
-
-//Template.communityPageTemplate.resize = function(){
-//  return Session.get('resize');
-//};
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
@@ -41,12 +21,12 @@ Template.communityPageTemplate.communityUsers = function () {
         return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
 };
 Template.communityInspectionColumn.showQuickViewPanel = function () {
-    log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace);
+    log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace, this);
     return Session.get('show_quick_view_panel');
 };
 
 Template.communityPageTemplate.user_count = function () {
-    log_event('Template.communityPageTemplate.user_count', LogLevel.Trace);
+    log_event('Template.communityPageTemplate.user_count', LogLevel.Trace, this);
     return Meteor.users.find().count();
 };
 
@@ -103,17 +83,23 @@ Template.communityInspectionColumn.events({
         e.preventDefault();
     },
     'click .transfer-icon': function (evt, tmpl) {
-        toggleActiveCollaborator(Session.get('selected_community_member'));
+        if(confirm('Toggle collaborator status?')){
+            setActiveCollaborator(Session.get('selected_community_member'));
+            // toggleActiveCollaborator(Session.get('selected_community_member'));
+        }
     },
     'click .collaborator-icon': function (evt, tmpl) {
-
-        alert("collaborator");
+        if(confirm('Add as a collaborator?')){
+            alert("Not implemented yet.  But soon!");
+        }
     },
     'click .carewatch-icon': function (evt, tmpl) {
         // TODO:  check if selected user's ID is currently in Meteor.user().profile.carewatch - if so, remove it
 
         // TODO:  add selected user's ID to Meteor.user().profile.carewatch
-        alert("carewatch");
+        if(confirm('Add to carewatch?')){
+            alert("Not implemented yet.  But soon!");
+        }
     }
 });
 
@@ -144,8 +130,8 @@ Template.userItemTemplate.events({
         log_hipaa_event("Permission granted to view health history belonging to " + Meteor.user().profile.name + ".", LogLevel.Hipaa, this._id);
 
     },
-    'click .user-card': function () {
-
+    'click .user-card': function (e) {
+        e.preventDefault();
         Session.set('json_content', JSON.stringify(this));
         Session.set('selected_community_member', this._id);
         Session.set('show_quick_view_panel', true);
@@ -154,19 +140,18 @@ Template.userItemTemplate.events({
 
         Meteor.flush();
     },
-    'click .transfer-icon': function () {
-        toggleActiveCollaborator(this._id);
-        //alert("transfer: " + JSON.stringify(this));
+    'click .transfer-icon': function (e) {
+        setActiveCollaborator(this._id);
     },
-    'click .collaborator-icon': function () {
+    'click .collaborator-icon': function (e) {
         //alert("collaborator: " + JSON.stringify(this));
     },
-    'click .carewatch-icon': function () {
+    'click .carewatch-icon': function (e) {
         //alert("carewatch: " + JSON.stringify(this));
     }
 });
 Template.userItemTemplate.userEmail = function () {
-    log_event('Template.userItemTemplate.userEmail', LogLevel.Trace);
+    log_event('Template.userItemTemplate.userEmail', LogLevel.Trace, this);
     if(this.emails){
         return this.emails.address;
     }else{
@@ -175,7 +160,7 @@ Template.userItemTemplate.userEmail = function () {
     //return JSON.stringify(this);
 };
 Template.userItemTemplate.userName = function () {
-    log_event('Template.userItemTemplate.userName', LogLevel.Trace);
+    log_event('Template.userItemTemplate.userName', LogLevel.Trace, this);
     if(this.emails){
         return this.profile.name;
     }else{
@@ -198,7 +183,7 @@ Template.userItemTemplate.isCarewatched = function () {
         }
     }
     catch(err){
-        log_event(err, LogLevel.Error);
+        catch_error('Template.userItemTemplate.isCarewatched', err, LogLevel.Error, this);
     }
 };
 var isCollaborator = false;
@@ -217,7 +202,7 @@ Template.userItemTemplate.isCollaborator = function () {
         }
     }
     catch(err){
-        log_event(err, LogLevel.Error);
+        catch_error('Template.userItemTemplate.isCollaborator', err, LogLevel.Error, this);
     }
 };
 Template.userItemTemplate.isActiveCollaborator = function () {
@@ -230,17 +215,21 @@ Template.userItemTemplate.isActiveCollaborator = function () {
         }
     }
     catch(err){
-        log_event(err, LogLevel.Error);
+        catch_error('Template.userItemTemplate.isActiveCollaborator', err, LogLevel.Error, this);
     }
 };
 Template.userItemTemplate.userImage = function () {
-    log_event('Template.userItemTemplate.user_image', LogLevel.Trace);
-    var src = "images/placeholder-240x240.gif";
-    if(this.profile){
-        src = $.trim(this.profile.avatar);
+    try{
+        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
+        var src = "images/placeholder-240x240.gif";
+        if(this.profile){
+            src = $.trim(this.profile.avatar);
+        }
+        log_event('profile avatar src: ' + src, LogLevel.Info, this);
+        return src;
+    }catch(error){
+        catch_error('Template.userItemTemplate.userImage',error,LogLevel.Error,this);
     }
-    log_event('profile avatar src: ' + src, LogLevel.Info);
-    return src;
 };
 
 
@@ -259,35 +248,29 @@ function toInteger(number){
 //--------------------------------------------------------------------
 // Toggles
 
+function setActiveCollaborator(selectedUserId) {
+    Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
+    Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator':selectedUserId }});
+}
 function toggleActiveCollaborator(selectedUserId) {
-    // TODO:  check if selected user's ID is currently the active collaborator - if so, remove it
     if (selectedUserId == Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
-        // TODO:  remove any active collaborator in the user profile
-        // TODO:  add selected user's ID to profile's active collaborator field
-        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
-        Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
+        setActiveCollaborator(selectedUserId);
     }
 }
 function toggleCollaboratorsMembership(selectedUserId) {
-    // TODO:  check if selected user's ID is currently the active collaborator - if so, remove it
     if (selectedUserId == Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
-        // TODO:  remove any active collaborator in the user profile
-        // TODO:  add selected user's ID to profile's active collaborator field
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
         Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
     }
 }
 function toggleCarewatchMembership(userId) {
-    // TODO:  check if selected user's ID is currently the active collaborator - if so, remove it
     if (selectedUserId == Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
-        // TODO:  remove any active collaborator in the user profile
-        // TODO:  add selected user's ID to profile's active collaborator field
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
         Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
     }

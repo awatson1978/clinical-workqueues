@@ -22,13 +22,7 @@
     </div>
 </template>
 
-<template name="workqueuesPageTemplate">
-    <!-- //TODO:  Refactor from main-pane to workqueuesPage -->
-    <div class="page" id="main-pane">
-        {{> todos}}
-        {{> sidebarTemplate }}
-    </div>
-</template>
+
 
 
 <template name="headerBarTemplate">
@@ -47,7 +41,7 @@
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         {{#if currentUser }}
         <ul class="nav-bar footer-nav-bar">
-            <li><a href="#" onclick='showPage("#dashboardPage");'><span class="pictographs">3  </span>Dashboard</a></li>
+            <!--<li><a href="#" onclick='showPage("#dashboardPage");'><span class="pictographs">3  </span>Dashboard</a></li>-->
             <li><a href="#" onclick='showPage("#main-pane");'><span class="pictographs">4  </span>Workqueues</a></li>
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">g  </span>Community</a></li>
             <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">k  </span>My Profile</a></li>

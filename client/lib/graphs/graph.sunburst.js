@@ -12,25 +12,25 @@ function renderSunburst(){
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height * .52 + ")");
-    log_event('d3 added SVG area to chart element.', LogLevel.Drawing);
+    log_event('d3 added SVG area to chart element.', LogLevel.Drawing, this);
 
     var partition = d3.layout.partition()
         .sort(null)
         .size([2 * Math.PI, radius * radius])
         .value(function(d) { return 1; });
-    log_event('d3 added created partition(s).', LogLevel.Drawing);
+    log_event('d3 added created partition(s).', LogLevel.Drawing, this);
 
     var arc = d3.svg.arc()
         .startAngle(function(d) { return d.x; })
         .endAngle(function(d) { return d.x + d.dx; })
         .innerRadius(function(d) { return Math.sqrt(d.y); })
         .outerRadius(function(d) { return Math.sqrt(d.y + d.dy); });
-    log_event('d3 created arc(s).', LogLevel.Drawing);
+    log_event('d3 created arc(s).', LogLevel.Drawing, this);
 
-    log_event('d3 loading input files', LogLevel.Drawing);
+    log_event('d3 loading input files', LogLevel.Drawing, this);
 
     d3.json("datafile/flare.json", function(error, root) {
-        log_event('d3 loaded flare.json: ' + root, LogLevel.Drawing);
+        log_event('d3 loaded flare.json: ' + root, LogLevel.Drawing, this);
 
         var path = svg.datum(root).selectAll("path")
             .data(partition.nodes)
@@ -47,7 +47,7 @@ function renderSunburst(){
             })
             .each(stash);
 
-        log_event('d3 created paths from datum.', LogLevel.Drawing);
+        log_event('d3 created paths from datum.', LogLevel.Drawing, this);
 
         d3.selectAll("input").on("change", function change() {
             var value = this.value === "count"

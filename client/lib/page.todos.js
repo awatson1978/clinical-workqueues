@@ -1,8 +1,13 @@
 ////////// Todos //////////
 
+//Template.workqueuesPage.rendered = function(){
+//    log_event("Template.workqueuesPage.rendered",LogLevel.Signpost,this);
+//};
 
 //----------------------------------------------------------------------
-
+Template.todos.receivedNewAlert = function(){
+    return monitorDropbox();
+};
 
 Template.todos.any_list_selected = function () {
    try{
@@ -71,33 +76,50 @@ Template.todos.todos = function () {
     // Determine which todos to display in main pane,
     // selected based on list_id and tag_filter.
 
-    var list_id = Session.get('list_id');
-    console.log('list_id:' + Session.get('list_id'));
+    try{
+        var list_id = Session.get('list_id');
+        console.log('list_id:' + Session.get('list_id'));
 
-    if (!list_id)
-        return {};
+        if (!list_id)
+            return {};
 
-    var sel = {list_id: list_id};
-    var tag_filter = Session.get('tag_filter');
-    if (tag_filter)
-        sel.tags = tag_filter;
+        var sel = {list_id: list_id};
+        var tag_filter = Session.get('tag_filter');
+        if (tag_filter)
+            sel.tags = tag_filter;
 
-    return Todos.find(sel, {sort: {timestamp: 1}});
+        return Todos.find(sel, {sort: {timestamp: 1}});
+
+    }catch(error){
+        console.log(error);
+    }
 };
 
 Template.todo_item.tag_objs = function () {
-    var todo_id = this._id;
-    return _.map(this.tags || [], function (tag) {
-        return {todo_id: todo_id, tag: tag};
-    });
+    try{
+        var todo_id = this._id;
+        return _.map(this.tags || [], function (tag) {
+            return {todo_id: todo_id, tag: tag};
+        });
+    }catch(error){
+        console.log(error);
+    }
 };
 
 Template.todo_item.done_class = function () {
-    return this.done ? 'done' : '';
+    try{
+        return this.done ? 'done' : '';
+    }catch(error){
+        console.log(error);
+    }
 };
 
 Template.todo_item.done_checkbox = function () {
-    return this.done ? 'checked="checked"' : '';
+    try{
+        return this.done ? 'checked="checked"' : '';
+    }catch(error){
+        console.log(error);
+    }
 };
 
 Template.todo_item.editing = function () {
@@ -182,15 +204,17 @@ Template.todo_item.events(okCancelEvents(
 
 function sendToActiveCollaborator() {
     try {
+        //alert('sending to collaborator');
         // Meteor.user().profile breaks when user is logged out
         if (Meteor.user().profile) {
+            //alert(Meteor.user().profile.activeCollaborator);
             Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
         } else {
             log_event('Meteor profile not available.');
         }
     }
     catch (err) {
-        log_event(err, LogLevel.Error);
+        catch_error("sendToActiveCollaborator()", err, LogLevel.Error, this);
     }
 }
 Template.taskDetailCardTemplate.events({
@@ -212,10 +236,14 @@ Template.taskDetailCardTemplate.rendered = function(){
 //        //alert('swipedown!');
 //        Session.set('show_task_detail_panel',false);
 //    });
+    $("#taskDetailCard").bind("mousemove", function(e){
+        e.preventDefault();
+    });
     $("#taskDetailCard").bind("swipeleft", function(){
         sendToActiveCollaborator();
     });
     $("#taskDetailCard").bind("swiperight", function(){
+        //alert('swiperight!');
         sendToActiveCollaborator();
     });
     $("#taskDetailCard").bind("swipeleftdown swipedown swiperightdown", function(){

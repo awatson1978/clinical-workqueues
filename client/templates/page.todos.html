@@ -1,6 +1,18 @@
+<template name="workqueuesPageTemplate">
+    <!-- //TODO:  Refactor from main-pane to workqueuesPage -->
+    <div class="page" id="main-pane">
+        {{> todos}}
+        {{> sidebarTemplate }}
+    </div>
+</template>
 
+        <!-- //TODO:  refactor 'todos' to 'todosListTemplate' or 'workqueueTemplate' -->
 <template name="todos">
-    {{#if any_list_selected}}
+    <div class="row">
+        {{#if receivedNewAlert }}
+        {{> dropboxAlert}}
+        {{/if }}
+    </div>
     <div id="items-view">
         <ul id="item-list">
             {{#each todos}}
@@ -8,32 +20,11 @@
             {{/each}}
         </ul>
     </div>
-    {{else}}
-    <!--<p class="padded">-->
-        <!--Welcom to Clinical Workqueues.-->
-    <!--</p>-->
-    <!--<div class="notepad panel">-->
-        <!--<h5>Tutorial</h5><h5 class="pictograph right-anchored tutorial-close">X</h5>-->
-        <!--<p>This is your dashboard.  Here you will find an overview of all your taks and todos.</p>-->
-    <!--</div>-->
-
-    {{/if}}
-    <!--<div class="three columns">-->
-    <!--<img class="dynamic panel" rel="#photo41" src="/images/placeholder-240x240.gif" />-->
-    <!--</div>-->
-    <!--<div class="simple_overlay" id="photo41">-->
-    <!--<img src="/images/placeholder-240x240.gif" />-->
-    <!--<div class="close"></div>-->
-    <!--</div>-->
     {{> taskDetailCardTemplate }}
 </template>
 
 <!-- TODO: select better name for taskDetailCardTemplate  -->
 <template name="taskDetailCardTemplate">
-    <!--<div class="simple_overlay" id="photo41">-->
-        <!--<img src="/images/placeholder-240x240.gif" />-->
-        <!--<div class="close"></div>-->
-    <!--</div>-->
     <!-- TODO: Extract showTaskDetail to outside of taskDetailCardTemplate  -->
     {{#if showTaskDetail}}
     <div class="spacer row"></div>

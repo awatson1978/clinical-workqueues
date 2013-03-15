@@ -1,4 +1,9 @@
+
+// TODO: refactor 'guest_page' to guestPage
+
 Template.guest_page.rendered = function(){
+    log_event("Template.guest_page.rendered",LogLevel.Signpost,this);
+
     if(!isMobile){
         $(".moneyShot").overlay({
             // custom top position

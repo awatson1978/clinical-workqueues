@@ -50,11 +50,11 @@ var genericUserDisplayObject = {
             if(Meteor.user().profile){
                 src = $.trim(Meteor.user().profile.avatar);
             }
-            log_event('profile avatar src: ' + src, LogLevel.Info);
+            log_event('profile avatar src: ' + src, LogLevel.Info, this);
             return src;
         }
         catch(err){
-            log_event(err, LogLevel.Error);
+            log_event(err, LogLevel.Error, this);
         }
     },
     isAdmin: function() {
