@@ -148,7 +148,13 @@ function setSidebarVisibility(){
     }else{
         layoutWorkqueuesPageWithoutPanel();
     }
-
+}
+function toggleButtonVisibility(){
+    if(Session.get('show_button_tiles')){
+        Session.set('show_button_tiles',false);
+    }else{
+        Session.set('show_button_tiles',true);
+    }
 }
 
 function layoutWorkqueuesPageWithPanel() {

@@ -3,26 +3,11 @@
     <!-- TODO:  refactor side-pane to sidebarPane -->
     <div class="doesnt-overlap-header fixed-layout hide-for-small" id="side-pane">
         {{> lists}}
-        <hr style="border: 1px solid lightgray;">
+        {{#if showButtonTiles }}
+        {{> buttonTilesTemplate }}
+        {{else }}
         {{> tag_filter}}
-        <hr style="border: 1px solid lightgray;">
-
-        <div class="sidebar-tiles">
-            <div class="six columns">
-                <img class="sidebar-tile" src="/iconsbw/CT_Scan.png">
-                <img class="sidebar-tile" src="/iconsbw/Blood_bag.png">
-                <img class="sidebar-tile" src="/iconsbw/Blood_pressure.png">
-                <img class="sidebar-tile" src="/iconsbw/Prescription.png">
-                <img class="sidebar-tile" src="/iconsbw/Xray.png">
-            </div>
-            <div class="six columns">
-                <img class="sidebar-tile" src="/iconsbw/Health_Meter.png">
-                <img class="sidebar-tile" src="/iconsbw/Hospital.png">
-                <img class="sidebar-tile" src="/iconsbw/ID_Bracelet.png">
-                <img class="sidebar-tile" src="/iconsbw/Insurance_Plan.png">
-                <img class="sidebar-tile" src="/iconsbw/Labs.png">
-            </div>
-        </div>
+        {{/if }}
     </div>
     {{/if}}
 </template>
@@ -63,14 +48,36 @@
 
 <!-- TODO: refactor to 'tagFilter -->
 <template name="tag_filter">
-    <div id="tag-filter" class="tag-list">
-        <!--<div class="label">Show:</div>-->
-        {{#each tags}}
-        <div class="sidebar-tab {{selected}}">
-            {{tag_text}} <span class="count">({{count}})</span>
+    <div id="tagTiles">
+        <hr style="border: 1px solid lightgray;">
+        <div id="tag-filter" class="tag-list">
+            <!--<div class="label">Show:</div>-->
+            {{#each tags}}
+            <div class="sidebar-tab {{selected}}">
+                {{tag_text}} <span class="count">({{count}})</span>
+            </div>
+            <!--<div class="sidebar-tab-accent"></div>-->
+            {{/each}}
         </div>
-        <!--<div class="sidebar-tab-accent"></div>-->
-        {{/each}}
     </div>
 </template>
 
+<template name="buttonTilesTemplate">
+    <div id="buttonTiles" class="sidebar-tiles container">
+        <hr style="border: 1px solid lightgray;">
+        <div class="six columns">
+            <img class="sidebar-tile" src="/iconsbw/CT_Scan.png">
+            <img class="sidebar-tile" src="/iconsbw/Blood_Bag.png">
+            <img class="sidebar-tile" src="/iconsbw/Blood_Pressure.png">
+            <img class="sidebar-tile" src="/iconsbw/Prescription.png">
+            <img class="sidebar-tile" src="/iconsbw/Xray.png">
+        </div>
+        <div class="six columns">
+            <img class="sidebar-tile" src="/iconsbw/Health_Meter.png">
+            <img class="sidebar-tile" src="/iconsbw/Hospital.png">
+            <img class="sidebar-tile" src="/iconsbw/ID_Bracelet.png">
+            <img class="sidebar-tile" src="/iconsbw/Insurance_Plan.png">
+            <img class="sidebar-tile" src="/iconsbw/Labs.png">
+        </div>
+    </div>
+</template>

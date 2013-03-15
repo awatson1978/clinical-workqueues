@@ -2,7 +2,13 @@
 Template.sidebarTemplate.sidebarIsVisible = function(){
     return Session.get('show_sidebar_panel');
 };
-
+Template.sidebarTemplate.showButtonTiles = function(){
+    if(Session.get('show_button_tiles')){
+        return true;
+    }else{
+        return false;
+    }
+};
 
 Template.sidebarTemplate.events({
     'click .sidebar-tile': function(){
