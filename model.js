@@ -4,6 +4,7 @@ usersDirectory =     new Meteor.Collection("usersDirectory");
 Hipaa =     new Meteor.Collection("hipaa");
 
 // TODO:  refactor usersDirector to UsersDirectory
+
 usersDirectory.allow({
     insert: function(){
         return true;
@@ -34,18 +35,19 @@ Meteor.users.allow({
         return true;
     },
     update: function (userId, todos, fields, modifier) {
-        return _.all(todos, function (todo) {
-            var allowed = [
-                "emails",
-                "profile",
-                "profile.dropbox",
-                "username"
-            ];
-            if (_.difference(fields, allowed).length)
-                return false; // tried to write to forbidden field
-
-            return true;
-        });
+//        return _.all(todos, function (todo) {
+//            var allowed = [
+//                "emails",
+//                "profile",
+//                "profile.dropbox",
+//                "username"
+//            ];
+//            if (_.difference(fields, allowed).length)
+//                return false; // tried to write to forbidden field
+//
+//            return true;
+//        });
+        return true;
     },
     remove: function(userId, todos){
         return true;
