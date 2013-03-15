@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.todos.html" afterPath="$PROJECT_DIR$/client/templates/page.todos.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +21,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46557117">
+    <splitter split-orientation="horizontal" split-proportion="0.4350548">
       <split-first>
         <leaf>
           <file leaf-file-name="lists.card.less" pinned="false" current="false" current-in-tab="false">
@@ -44,10 +42,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.todos.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="page.todos.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="246" column="13" selection-start="7455" selection-end="7455" vertical-scroll-proportion="0.944206">
+                <state line="189" column="41" selection-start="5510" selection-end="5510" vertical-scroll-proportion="2.0429184">
                   <folding />
                 </state>
               </provider>
@@ -95,19 +93,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="379" column="13" selection-start="13979" selection-end="13979" vertical-scroll-proportion="0.0">
+                <state line="383" column="25" selection-start="14218" selection-end="14218" vertical-scroll-proportion="0.6813417">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/model.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="18" selection-start="646" selection-end="646" vertical-scroll-proportion="0.5199161">
+                <state line="54" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -141,9 +139,9 @@
         <option value="$PROJECT_DIR$/client/templates/page.guest.html" />
         <option value="$PROJECT_DIR$/model.js" />
         <option value="$PROJECT_DIR$/server/publish.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
         <option value="$PROJECT_DIR$/client/templates/page.todos.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
       </list>
     </option>
   </component>
@@ -513,20 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="379" column="13" selection-start="13979" selection-end="13979" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="18" selection-start="646" selection-end="646" vertical-scroll-proportion="0.5199161">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="33" selection-start="2559" selection-end="2559" vertical-scroll-proportion="-32.0">
@@ -559,9 +543,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="3" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.todos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="246" column="13" selection-start="7455" selection-end="7455" vertical-scroll-proportion="0.944206">
+        <state line="189" column="41" selection-start="5510" selection-end="5510" vertical-scroll-proportion="2.0429184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="383" column="25" selection-start="14218" selection-end="14218" vertical-scroll-proportion="0.6813417">
           <folding />
         </state>
       </provider>
