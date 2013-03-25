@@ -95,13 +95,13 @@ function resizeCommunityPageForPortrait(){
 
 function resizeProfilePageForLandscape(){
     //TODO: set userProfileCardExtended width the same as userProfileCard
-    $('#userProfileCard').addClass('userProfileCard-landscape-layout');
-    $('#userProfileCard').removeClass('userProfileCard-portrait-layout');
+    //$('#userProfileCard').addClass('userProfileCard-landscape-layout');
+    //$('#userProfileCard').removeClass('userProfileCard-portrait-layout');
 };
 function resizeProfilePageForPortrait(){
     //TODO: set userProfileCardExtended width the same as userProfileCard
-    $('#userProfileCard').addClass('userProfileCard-portrait-layout');
-    $('#userProfileCard').removeClass('userProfileCard-landscape-layout');
+    //$('#userProfileCard').addClass('userProfileCard-portrait-layout');
+    //$('#userProfileCard').removeClass('userProfileCard-landscape-layout');
 };
 
 

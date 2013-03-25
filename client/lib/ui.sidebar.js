@@ -1,6 +1,10 @@
 
 Template.sidebarTemplate.sidebarIsVisible = function(){
-    return Session.get('show_sidebar_panel');
+    if(Session.get('appWidth') > 768){
+        return Session.get('show_sidebar_panel');
+    }else{
+        return false;
+    }
 };
 Template.sidebarTemplate.showButtonTiles = function(){
     if(Session.get('show_button_tiles')){

@@ -1,6 +1,17 @@
 Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.communityInspectionColumn.helpers(genericUserDisplayObject);
 
+
+Template.communityPageTemplate.resize = function(){
+    if(Session.get('show_sidebar_panel')){
+        $('#communityInspectionBlock').css('width',window.innerWidth - 195);
+        $('#communityInspectionBlock').css('left', (window.innerWidth - 195) * 0.05);
+    }else{
+        layoutWorkqueuesPageWithoutPanel();
+    }
+    return Session.get("appWidth");
+};
+
 Template.communityInspectionColumn.rendered = function(){
     log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
 

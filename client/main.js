@@ -28,6 +28,8 @@ Session.set('showDropboxAlert', false);
 
 Session.set('is_supported_browser', false);
 
+Session.set("appWidth", window.innerWidth);
+
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
     Session.set('is_supported_browser', true);

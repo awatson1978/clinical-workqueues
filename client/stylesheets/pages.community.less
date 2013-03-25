@@ -134,20 +134,11 @@
 }
 //---------------------------------------------
 
-// landscape orientation
-@media only screen and (min-width: 768px) {
-  #communityInspectionBlock {
-    .forty-percent-width;
-    .first-column-position;
-    .fixed-column-position;
-  }
-  #communityMembersList {
-    .forty-percent-width;
-    .second-column-position;
-  }
-  #userQuickViewPanel{
-  }
+// mobile phone layout
+@media only screen and (max-width: 480px) {
 }
+
+
 
 //portrait orientation
 @media only screen and (max-width: 768px) {
@@ -201,8 +192,22 @@
     color: gray;
   }
 }
-@media only screen and (max-width: 480px) {
+
+// landscape orientation
+@media only screen and (min-width: 768px) {
+  #communityInspectionBlock {
+    .forty-percent-width;
+    .first-column-position;
+    //.fixed-column-position;
+  }
+  #communityMembersList {
+    .forty-percent-width;
+    .second-column-position;
+  }
+  #userQuickViewPanel{
+  }
 }
+
 
 
 //------------------------------------------------

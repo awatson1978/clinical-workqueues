@@ -2,21 +2,18 @@ Template.profilePageTemplate.rendered = function(){
     log_event("Template.profilePageTemplate.rendered",LogLevel.Signpost,this);
 };
 
-Template.userCardTemplate.rendered = function(){
-    log_event("Template.userCardTemplate.rendered",LogLevel.Signpost, this);
-
-    // default to portrait, because it's a single column
-    //    if(window.innerWidth < 800){
-    //        resizeProfilePageForPortrait();
-    //    }else{
-    //        resizeProfilePageForLandscape();
-    //    }
-};
+//Template.userCardTemplate.rendered = function(){
+//    log_event("Template.userCardTemplate.rendered",LogLevel.Signpost, this);
+//};
 Template.userCardTemplate.resize = function(){
-    if(window.innerWidth > (768 + 195)){
-        resizeProfilePageForLandscape();
+    if(Session.get("appWidth") > 768){
+        if(Session.get('show_sidebar_panel')){
+            layoutWorkqueuesPageWithPanel();
+        }else{
+            layoutWorkqueuesPageWithoutPanel();
+        }
     }else{
-        resizeProfilePageForPortrait();
+        layoutWorkqueuesPageWithoutPanel();
     }
     $('#appTitle').html('width: ' + Session.get("appWidth"));
     $('#appTitle').html('width: ' + Session.get("appWidth"));

@@ -19,12 +19,17 @@ function toggleTaskDetailPanel(){
     }
 }
 function toggleSidebarVisibility(){
-    if(Session.get('show_sidebar_panel')){
-        Session.set('show_sidebar_panel',false);
-        layoutWorkqueuesPageWithoutPanel();
-    }else{
-        Session.set('show_sidebar_panel',true);
-        layoutWorkqueuesPageWithPanel();
+
+    // we don't want to display the sidebar on narrow pages
+    // there just isn't enough room
+    if(window.innerWidth > 768){
+        if(Session.get('show_sidebar_panel')){
+            Session.set('show_sidebar_panel',false);
+            layoutWorkqueuesPageWithoutPanel();
+        }else{
+            Session.set('show_sidebar_panel',true);
+            layoutWorkqueuesPageWithPanel();
+        }
     }
 }
 function setSidebarVisibility(){
