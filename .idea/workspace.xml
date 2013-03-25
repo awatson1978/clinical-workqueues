@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/app.platform.detection.js" />
-    </list>
+    <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="" />
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,37 +20,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page.guest.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.guest.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/templates/page.guest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="45" selection-start="372" selection-end="372" vertical-scroll-proportion="-4.48">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.guest.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.platform.detection.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/.packages/detect-browser/app.platform.detection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.platform.detection.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/lib/app.platform.detection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="48" selection-start="418" selection-end="418" vertical-scroll-proportion="0.2829932">
+            <state line="16" column="150" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.36728838">
               <folding />
             </state>
           </provider>
@@ -338,13 +309,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="546" width="1497" height="883" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40328696" sideWeight="0.9882721" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18453188" sideWeight="0.596713" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18453188" sideWeight="0.596713" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -511,30 +482,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
+    <entry file="file://$PROJECT_DIR$/client/lib/app.platform.detection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="23" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="45" selection-start="372" selection-end="372" vertical-scroll-proportion="-4.48">
+        <state line="14" column="69" selection-start="488" selection-end="488" vertical-scroll-proportion="0.30476192">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/.packages/detect-browser/app.platform.detection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="8" column="23" selection-start="212" selection-end="212" vertical-scroll-proportion="0.17414966">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/app.platform.detection.js">
+    <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="418" selection-end="418" vertical-scroll-proportion="0.2829932">
+        <state line="22" column="34" selection-start="693" selection-end="693" vertical-scroll-proportion="0.4122449">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="150" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.36728838">
           <folding />
         </state>
       </provider>
