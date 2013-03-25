@@ -1,8 +1,5 @@
-
-// TODO: refactor 'guest_page' to guestPage
-
-Template.guest_page.rendered = function(){
-    log_event("Template.guest_page.rendered",LogLevel.Signpost,this);
+Template.guestPageTemplate.rendered = function(){
+    log_event("Template.guestPageTemplate.rendered",LogLevel.Signpost,this);
 
     if(!isMobile){
         $(".moneyShot").overlay({
@@ -40,7 +37,7 @@ Template.guest_page.rendered = function(){
         });
     }
 };
-Template.guest_page.events({
+Template.guestPageTemplate.events({
     'mousedown .simple_overlay':function(){
         $('.simple_overlay .close').click();
     }

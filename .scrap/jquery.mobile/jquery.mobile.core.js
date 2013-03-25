@@ -88,7 +88,7 @@ define( [ "jquery", "./jquery.mobile.ns.js", "text!../version.txt" ], function( 
 		window: $( window ),
 		document: $( document ),
 
-		// TODO might be useful upstream in jquery itself ?
+		// TASK might be useful upstream in jquery itself ?
 		keyCode: {
 			ALT: 18,
 			BACKSPACE: 8,
@@ -187,7 +187,7 @@ define( [ "jquery", "./jquery.mobile.ns.js", "text!../version.txt" ], function( 
 			return ltr || defaultTheme || "a";
 		},
 
-		// TODO the following $ and $.fn extensions can/probably should be moved into jquery.mobile.core.helpers
+		// TASK the following $ and $.fn extensions can/probably should be moved into jquery.mobile.core.helpers
 		//
 		// Find the closest javascript page element to gather settings data jsperf test
 		// http://jsperf.com/single-complex-selector-vs-many-complex-selectors/edit

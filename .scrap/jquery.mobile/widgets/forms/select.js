@@ -55,7 +55,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 	// setup items that are generally necessary for select menu extension
 	_preExtension: function() {
 		var classes = "";
-		// TODO: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
+		// TASK: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
 		/* if ( $el[0].className.length ) {
 			classes = $el[0].className;
 		} */
@@ -92,7 +92,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 
 		// Allows for extension of the native select for custom selects and other plugins
 		// see select.custom for example extension
-		// TODO explore plugin registration
+		// TASK explore plugin registration
 		this._trigger( "beforeCreate" );
 
 		this.button = this._button();
@@ -110,7 +110,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 			// select first in this case
 			selectedIndex = this.select[ 0 ].selectedIndex === -1 ? 0 : this.select[ 0 ].selectedIndex,
 
-			// TODO values buttonId and menuId are undefined here
+			// TASK values buttonId and menuId are undefined here
 			button = this.button
 				.insertBefore( this.select )
 				.buttonMarkup( {
@@ -246,7 +246,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 				text = self.placeholder;
 			}
 
-			// TODO possibly aggregate multiple select option classes
+			// TASK possibly aggregate multiple select option classes
 			return span.text( text )
 				.addClass( self.select.attr( "class" ) )
 				.addClass( selected.attr( "class" ) );

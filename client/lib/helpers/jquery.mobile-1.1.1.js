@@ -1173,7 +1173,7 @@ $.widget( "mobile.widget", {
 	// decorate the parent _createWidget to trigger `widgetinit` for users
 	// who wish to do post post `widgetcreate` alterations/additions
 	//
-	// TODO create a pull request for jquery ui to trigger this event
+	// TASK create a pull request for jquery ui to trigger this event
 	// in the original _createWidget
 	_createWidget: function() {
 		$.Widget.prototype._createWidget.apply( this, arguments );
@@ -1213,7 +1213,7 @@ $.widget( "mobile.widget", {
 		$widgetElements = $.mobile.enhanceable( $widgetElements );
 
 		if ( useKeepNative && $widgetElements.length ) {
-			// TODO remove dependency on the page widget for the keepNative.
+			// TASK remove dependency on the page widget for the keepNative.
 			// Currently the keepNative value is defined on the page prototype so
 			// the method is as well
 			page = $.mobile.closestPageData( $widgetElements );
@@ -1315,7 +1315,7 @@ $.widget( "mobile.widget", {
 			hoverDelay: 200
 		},
 
-		// TODO might be useful upstream in jquery itself ?
+		// TASK might be useful upstream in jquery itself ?
 		keyCode: {
 			ALT: 18,
 			BACKSPACE: 8,
@@ -1411,7 +1411,7 @@ $.widget( "mobile.widget", {
 			return ltr || defaultTheme || "a";
 		},
 
-		// TODO the following $ and $.fn extensions can/probably should be moved into jquery.mobile.1.1.1.core.helpers
+		// TASK the following $ and $.fn extensions can/probably should be moved into jquery.mobile.1.1.1.core.helpers
 		//
 		// Find the closest javascript page element to gather settings data jsperf test
 		// http://jsperf.com/single-complex-selector-vs-many-complex-selectors/edit
@@ -1573,7 +1573,7 @@ var $window = $( window ),
 		$.mobile.media('@media screen and (-webkit-min-device-pixel-ratio: 2)') // tests for webkit 2x pixel ratio (iPhone 4)
 */
 $.mobile.media = (function() {
-	// TODO: use window.matchMedia once at least one UA implements it
+	// TASK: use window.matchMedia once at least one UA implements it
 	var cache = {},
 		testDiv = $( "<div id='jquery-mediatest'></div>" ),
 		fakeBody = $( "<body>" ).append( testDiv );
@@ -3108,7 +3108,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 						//page title regexp
 						newPageTitle = html.match( /<title[^>]*>([^<]*)/ ) && RegExp.$1,
 
-						// TODO handle dialogs again
+						// TASK handle dialogs again
 						pageElemRegex = new RegExp( "(<[^>]+\\bdata-" + $.mobile.ns + "role=[\"']?page[\"']?[^>]*>)" ),
 						dataUrlRegex = new RegExp( "\\bdata-" + $.mobile.ns + "url=[\"']?([^\"'>]*)[\"']?" );
 
@@ -3162,7 +3162,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 					}
 
 					//append to page and enhance
-					// TODO taging a page with external to make sure that embedded pages aren't removed
+					// TASK taging a page with external to make sure that embedded pages aren't removed
 					//      by the various page handling code is bad. Having page handling code in many
 					//      places is bad. Solutions post 1.0
 					page
@@ -3601,7 +3601,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 			var link = findClosestLink( event.target );
 
 			// split from the previous return logic to avoid find closest where possible
-			// TODO teach $.mobile.hijackable to operate on raw dom elements so the link wrapping
+			// TASK teach $.mobile.hijackable to operate on raw dom elements so the link wrapping
 			// can be avoided
 			if ( !$(link).jqmHijackable().length ) {
 				return;
@@ -3626,7 +3626,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 
 			// If there is no link associated with the click or its not a left
 			// click we want to ignore the click
-			// TODO teach $.mobile.hijackable to operate on raw dom elements so the link wrapping
+			// TASK teach $.mobile.hijackable to operate on raw dom elements so the link wrapping
 			// can be avoided
 			if ( !link || event.which > 1 || !$link.jqmHijackable().length ) {
 				return;
@@ -3691,7 +3691,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 				// requests to go through our page loading logic.
 
 				//check for protocol or rel and its not an embedded page
-				//TODO overlap in logic from isExternal, rel=external check should be
+				//TASK overlap in logic from isExternal, rel=external check should be
 				//     moved into more comprehensive isExternalLink
 				isExternal = useDefaultUrlHandling || ( path.isExternal( href ) && !path.isPermittedCrossDomainRequest(documentUrl, href) );
 
@@ -3839,7 +3839,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 	$( document ).one( "mobileinit", $.proxy( mobileinitDeferred, "resolve" ) );
 
 	$.extend( pushStateHandler, {
-		// TODO move to a path helper, this is rather common functionality
+		// TASK move to a path helper, this is rather common functionality
 		initialFilePath: (function() {
 			return url.pathname + url.search;
 		})(),
@@ -3874,7 +3874,7 @@ $.mobile.getMaxScrollForTransition = $.mobile.getMaxScrollForTransition || defau
 			return url;
 		},
 
-		// TODO sort out a single barrier to hashchange functionality
+		// TASK sort out a single barrier to hashchange functionality
 		nextHashChangePrevented: function( value ) {
 			$.mobile.urlHistory.ignoreNextHashChange = value;
 			self.onHashChangeDisabled = value;
@@ -4201,7 +4201,7 @@ $.mobile.page.prototype.options.contentTheme = null;
 
 // NOTE bind used to force this binding to run before the buttonMarkup binding
 //      which expects .ui-footer top be applied in its gigantic selector 
-// TODO remove the buttonMarkup giant selector and move it to the various modules
+// TASK remove the buttonMarkup giant selector and move it to the various modules
 //      on which it depends
 $( document ).bind( "pagecreate", function( e ) {
 	var $page = $( e.target ),
@@ -5265,7 +5265,7 @@ $.widget( "mobile.listview", $.mobile.widget, {
 		}
 	},
 
-	// TODO sort out a better way to track sub pages of the listview this is brittle
+	// TASK sort out a better way to track sub pages of the listview this is brittle
 	childPages: function(){
 		var parentUrl = this.parentPage.jqmData( "url" );
 
@@ -5365,7 +5365,7 @@ $.widget( "mobile.checkboxradio", $.mobile.widget, {
 
 				// trigger click handler's bound directly to the input as a substitute for
 				// how label clicks behave normally in the browsers
-				// TODO: it would be nice to let the browser's handle the clicks and pass them
+				// TASK: it would be nice to let the browser's handle the clicks and pass them
 				//       through to the associate input. we can swallow that click at the parent
 				//       wrapper element level
 				input.triggerHandler( 'click' );
@@ -5509,12 +5509,12 @@ $.widget( "mobile.button", $.mobile.widget, {
  	 	}
 
 		// get the inherited theme
-		// TODO centralize for all widgets
+		// TASK centralize for all widgets
 		if ( !this.options.theme ) {
 			this.options.theme = $.mobile.getInheritedTheme( this.element, "c" );
 		}
 
-		// TODO: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
+		// TASK: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
 		/* if( $el[0].className.length ) {
 			classes = $el[0].className;
 		} */
@@ -5988,7 +5988,7 @@ $.widget( "mobile.slider", $.mobile.widget, {
 
 	_create: function() {
 
-		// TODO: Each of these should have comments explain what they're for
+		// TASK: Each of these should have comments explain what they're for
 		var self = this,
 
 			control = this.element,
@@ -6432,7 +6432,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 	// setup items that are generally necessary for select menu extension
 	_preExtension: function(){
 		var classes = "";
-		// TODO: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
+		// TASK: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
 		/* if( $el[0].className.length ) {
 			classes = $el[0].className;
 		} */
@@ -6458,7 +6458,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 
  		// Allows for extension of the native select for custom selects and other plugins
 		// see select.custom for example extension
-		// TODO explore plugin registration
+		// TASK explore plugin registration
 		this._trigger( "beforeCreate" );
 
 		this.button = this._button();
@@ -6476,7 +6476,7 @@ $.widget( "mobile.selectmenu", $.mobile.widget, {
 			// select first in this case
 			selectedIndex = this.select[ 0 ].selectedIndex == -1 ? 0 : this.select[ 0 ].selectedIndex,
 
-			// TODO values buttonId and menuId are undefined here
+			// TASK values buttonId and menuId are undefined here
 			button = this.button
 				.text( $( this.select[ 0 ].options.item( selectedIndex ) ).text() )
 				.insertBefore( this.select )
@@ -6830,10 +6830,10 @@ $( document ).bind( "pagecreate create", function( e ){
 					self.list.appendTo( self.listbox );
 					self._focusButton();
 
-					// TODO centralize page removal binding / handling in the page plugin.
+					// TASK centralize page removal binding / handling in the page plugin.
 					// Suggestion from @jblas to do refcounting
 					//
-					// TODO extremely confusing dependency on the open method where the pagehide.remove
+					// TASK extremely confusing dependency on the open method where the pagehide.remove
 					// bindings are stripped to prevent the parent page from disappearing. The way
 					// we're keeping pages in the DOM right now sucks
 					//
@@ -6869,7 +6869,7 @@ $( document ).bind( "pagecreate create", function( e ){
 				var list = this.list.find( "li" ),
 					options = this._selectOptions();
 
-				// TODO exceedingly naive method to determine difference
+				// TASK exceedingly naive method to determine difference
 				// ignores value changes etc in favor of a forcedRebuild
 				// from the user in the refresh method
 				return options.text() !== list.text();
@@ -7151,11 +7151,11 @@ $( document ).bind( "pagecreate create", function( e ){
 				return $( "<a>", {
 					"href": "#",
 					"role": "button",
-					// TODO value is undefined at creation
+					// TASK value is undefined at creation
 					"id": this.buttonId,
 					"aria-haspopup": "true",
 
-					// TODO value is undefined at creation
+					// TASK value is undefined at creation
 					"aria-owns": this.menuId
 				});
 			}
@@ -7652,7 +7652,7 @@ $( document ).bind( "pagecreate create", function( e ){
 		$.mobile.defaultHomeScroll = ( !$.support.scrollTop || $(window).scrollTop() === 1 ) ? 0 : 1;
 
 
-		// TODO: Implement a proper registration mechanism with dependency handling in order to not have exceptions like the one below
+		// TASK: Implement a proper registration mechanism with dependency handling in order to not have exceptions like the one below
 		//auto self-init widgets for those widgets that have a soft dependency on others
 		if ( $.fn.controlgroup ) {
 			$( document ).bind( "pagecreate create", function( e ){

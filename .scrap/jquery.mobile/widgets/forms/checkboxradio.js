@@ -90,7 +90,7 @@ $.widget( "mobile.checkboxradio", $.mobile.widget, {
 
 				// trigger click handler's bound directly to the input as a substitute for
 				// how label clicks behave normally in the browsers
-				// TODO: it would be nice to let the browser's handle the clicks and pass them
+				// TASK: it would be nice to let the browser's handle the clicks and pass them
 				//       through to the associate input. we can swallow that click at the parent
 				//       wrapper element level
 				input.triggerHandler( 'click' );

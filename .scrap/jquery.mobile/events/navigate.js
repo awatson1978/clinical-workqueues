@@ -3,7 +3,7 @@
 //>>label: Navigate
 //>>group: Events
 
-// TODO break out pushstate support test so we don't depend on the whole thing
+// TASK break out pushstate support test so we don't depend on the whole thing
 define([
 	"jquery",
 	"depend!../jquery.hashchange[jquery]",
@@ -34,7 +34,7 @@ define([
 			return $.mobile.hashListeningEnabled === true;
 		},
 
-		// TODO a lot of duplication between popstate and hashchange
+		// TASK a lot of duplication between popstate and hashchange
 		popstate: function( event ) {
 			var newEvent = new $.Event( "navigate" ),
 				beforeNavigate = new $.Event( "beforenavigate" ),
@@ -86,13 +86,13 @@ define([
 				// Users that want to fully normalize the two events
 				// will need to do history management down the stack and
 				// add the state to the event before this binding is fired
-				// TODO consider allowing for the explicit addition of callbacks
+				// TASK consider allowing for the explicit addition of callbacks
 				//      to be fired before this value is set to avoid event timing issues
 				state: event.hashchangeState || {}
 			});
 		},
 
-		// TODO We really only want to set this up once
+		// TASK We really only want to set this up once
 		//      but I'm not clear if there's a beter way to achieve
 		//      this with the jQuery special event structure
 		setup: function( data, namespaces ) {

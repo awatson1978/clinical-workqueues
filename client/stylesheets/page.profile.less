@@ -1,14 +1,15 @@
-.drop-zone{
-  color: gray;
-  text-align: center;
-  cursor: pointer;
-}
+//.drop-zone{
+//  color: gray;
+//  text-align: center;
+//  cursor: pointer;
+//}
 
-.import_thumbnails {
-  height: 75px;
-  border: 1px solid #000;
-  margin: 10px 5px 0 0;
-}
+//.import_thumbnails {
+//  height: 75px;
+//  border: 1px solid #000;
+//  margin: 10px 5px 0 0;
+//}
+
 #profileItems li{
   cursor: pointer;
 }
@@ -113,9 +114,9 @@
   top: 20px;
 }
 
-.simple-user li{
-
-}
+//.simple-user li{
+//
+//}
 .simple-user li:hover{
   color: darksalmon;
   cursor:pointer;
@@ -125,24 +126,43 @@
   font-size: 1.2em;
 }
 
-.simple-user li{
+//.simple-user li{
+//
+//}
 
-}
-.margined, .with-margins{
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+
+.profile-social-groups{
+  min-height: 60px;
 }
 
+
+#carewatchCard{
+  top: 240px;
+  position: absolute;
+  width: 100%;
+}
+
+
+
+.fullwidth{
+}
 
 //----------------------------------------------------
 
-// landscape orientation
-@media only screen and (min-width: 768px) {
+
+// mobile phone layout
+@media only screen and (max-width: 480px) {
   #profilePage{
+    .card-header{
+      width: 480px;
+    }
     .user-card-detailed-extended{
-      top: 240px;
+      .no-right-padding{
+        left: 0px !important;
+      }
+    }
+    .user-card-data{
+      width: 480px;
     }
   }
 }
@@ -151,12 +171,34 @@
 @media only screen and (max-width: 768px) {
   #profilePage{
     .user-card-detailed-extended{
-      top: 200px;
+      top: 240px;
+      .no-right-padding{
+        margin-top: 20px;
+      }
+    }
+    .user-card-data{
+      width: 100%;
     }
   }
 }
-@media only screen and (max-width: 480px) {
+
+// landscape orientation
+@media only screen and (min-width: 768px) {
+  #profilePage{
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .user-card-detailed-extended{
+      top: 240px;
+    }
+    .user-card-data{
+      width: 768px;
+    }
+  }
 }
+
+
+
 
 //----------------------------------------------------
 

@@ -221,7 +221,7 @@ define( [
 			}
 
 			// define the container for navigation event bindings
-			// TODO this would be nice at the the mobile widget level
+			// TASK this would be nice at the the mobile widget level
 			this.options.container = this.options.container || $.mobile.pageContainer;
 
 			// Apply the proto
@@ -394,7 +394,7 @@ define( [
 				this[ setter ]( value );
 			}
 
-			// TODO REMOVE FOR 1.2.1 by moving them out to a default options object
+			// TASK REMOVE FOR 1.2.1 by moving them out to a default options object
 			exclusions = [
 				"initSelector",
 				"closeLinkSelector",
@@ -512,7 +512,7 @@ define( [
 			// NOTE before removing the default animation of the screen
 			//      this had an animate callback that would resolve the deferred
 			//      now the deferred is resolved immediately
-			// TODO remove the dependency on the screen deferred
+			// TASK remove the dependency on the screen deferred
 			this._ui.screen
 				.removeClass( args.classToRemove )
 				.addClass( args.screenClassToAdd );
@@ -604,7 +604,7 @@ define( [
 
 		_open: function( options ) {
 			var o = $.extend( {}, this.options, options ),
-				// TODO move blacklist to private method
+				// TASK move blacklist to private method
 				androidBlacklist = ( function() {
 					var w = window,
 						ua = navigator.userAgent,
@@ -644,7 +644,7 @@ define( [
 			this._reposition( o );
 
 			if ( this.options.overlayTheme && androidBlacklist ) {
-				/* TODO:
+				/* TASK:
 				The native browser on Android 4.0.X ("Ice Cream Sandwich") suffers from an issue where the popup overlay appears to be z-indexed
 				above the popup itself when certain other styles exist on the same page -- namely, any element set to `position: fixed` and certain
 				types of input. These issues are reminiscent of previously uncovered bugs in older versions of Android's native browser:
@@ -657,7 +657,7 @@ define( [
 				https://github.com/jquery/jquery-mobile/issues/4874
 				*/
 
-				// TODO sort out why this._page isn't working
+				// TASK sort out why this._page isn't working
 				this.element.closest( ".ui-page" ).addClass( "ui-popup-open" );
 			}
 			this._animate({
@@ -789,7 +789,7 @@ define( [
 				.one( this.options.closeEvents, $.proxy( this, "_closePopup" ) );
 		},
 
-		// TODO no clear deliniation of what should be here and
+		// TASK no clear deliniation of what should be here and
 		// what should be in _open. Seems to be "visual" vs "history" for now
 		open: function( options ) {
 			var self = this, opts = this.options, url, hashkey, activePage, currentIsDialog, hasHash, urlHistory;
@@ -878,7 +878,7 @@ define( [
 	});
 
 
-	// TODO this can be moved inside the widget
+	// TASK this can be moved inside the widget
 	$.mobile.popup.handleLink = function( $link ) {
 		var closestPage = $link.closest( ":jqmData(role='page')" ),
 			scope = ( ( closestPage.length === 0 ) ? $( "body" ) : closestPage ),
@@ -908,7 +908,7 @@ define( [
 		}, 300 );
 	};
 
-	// TODO move inside _create
+	// TASK move inside _create
 	$.mobile.document.bind( "pagebeforechange", function( e, data ) {
 		if ( data.options.role === "popup" ) {
 			$.mobile.popup.handleLink( data.options.link );

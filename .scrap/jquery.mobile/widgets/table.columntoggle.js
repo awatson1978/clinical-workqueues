@@ -40,7 +40,7 @@ $.mobile.document.delegate( ":jqmData(role='table')", "tablecreate", function() 
 
 	self.element.addClass( o.classes.columnToggleTable );
 
-	var id = ( $table.attr( "id" ) || o.classes.popup ) + "-popup", //TODO BETTER FALLBACK ID HERE
+	var id = ( $table.attr( "id" ) || o.classes.popup ) + "-popup", //TASK BETTER FALLBACK ID HERE
 		$menuButton = $( "<a href='#" + id + "' class='" + o.classes.columnBtn + "' data-" + ns + "rel='popup' data-" + ns + "mini='true'>" + o.columnBtnText + "</a>" ),
 		$popup = $( "<div data-" + ns + "role='popup' data-" + ns + "role='fieldcontain' class='" + o.classes.popup + "' id='" + id + "'></div>"),
 		$menu = $("<fieldset data-" + ns + "role='controlgroup'></fieldset>");
@@ -66,7 +66,7 @@ $.mobile.document.delegate( ":jqmData(role='table')", "tablecreate", function() 
 	});
 		$menu.appendTo( $popup );
 
-	// bind change event listeners to inputs - TODO: move to a private method?
+	// bind change event listeners to inputs - TASK: move to a private method?
 	$menu.on( "change", "input", function( e ){
 		if( this.checked ){
 			$( this ).jqmData( "cells" ).removeClass( "ui-table-cell-hidden" ).addClass( "ui-table-cell-visible" );

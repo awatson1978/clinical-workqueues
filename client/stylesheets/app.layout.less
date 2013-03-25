@@ -4,7 +4,7 @@
     width: 100%;
     height: 100%;
 }
-#main-pane {
+#mainLayoutPane {
     position: absolute;
     top: -5px;
     bottom: 0;
@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-#side-pane {
+#sidebarPane {
     position: fixed;
     top: 0px;
     bottom: 0px;
@@ -35,20 +35,32 @@
 }
 
 
-// landscape orientation
-@media only screen and (min-width: 768px) {
-  #main-pane {
-    left: 195px;
-    width: 100%;
+
+// mobile phone layout
+@media only screen and (max-width: 480px) {
+  #profilePage{
+    width: 480px;
   }
 }
 
 //portrait orientation
 @media only screen and (max-width: 768px) {
-  #main-pane {
+  #mainLayoutPane {
     left: 0px;
     width: 100%;
   }
+  #profilePage{
+    width: 100%;
+  }
 }
-@media only screen and (max-width: 480px) {
+
+// landscape orientation
+@media only screen and (min-width: 768px) {
+  #mainLayoutPane {
+    left: 195px;
+    width: (100% - 195px);
+  }
+  #profilePage{
+    width: 100%;
+  }
 }

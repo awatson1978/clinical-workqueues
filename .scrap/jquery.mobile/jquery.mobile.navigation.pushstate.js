@@ -21,7 +21,7 @@ define( [ "jquery", "./jquery.mobile.navigation", "depend!./jquery.hashchange[jq
 	$( document ).one( "mobileinit", $.proxy( mobileinitDeferred, "resolve" ) );
 
 	$.extend( pushStateHandler, {
-		// TODO move to a path helper, this is rather common functionality
+		// TASK move to a path helper, this is rather common functionality
 		initialFilePath: (function() {
 			return url.pathname + url.search;
 		})(),
@@ -57,7 +57,7 @@ define( [ "jquery", "./jquery.mobile.navigation", "depend!./jquery.hashchange[jq
 			return url;
 		},
 
-		// TODO sort out a single barrier to hashchange functionality
+		// TASK sort out a single barrier to hashchange functionality
 		nextHashChangePrevented: function( value ) {
 			$.mobile.urlHistory.ignoreNextHashChange = value;
 			self.onHashChangeDisabled = value;

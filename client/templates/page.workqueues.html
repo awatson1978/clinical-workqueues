@@ -1,9 +1,8 @@
 <template name="workqueuesPageTemplate">
-    <!-- //TODO:  Refactor from main-pane to workqueuesPage -->
-    <div class="touch-disabled page" id="main-pane">
+    <div id="workqueuesPage" class="page">
         {{> todos}}
-        {{> sidebarTemplate }}
     </div>
+    <div class="hidden resize-trigger">resied: {{resized}}</div>
 </template>
 
         <!-- //TODO:  refactor 'todos' to 'todosListTemplate' or 'workqueueTemplate' -->

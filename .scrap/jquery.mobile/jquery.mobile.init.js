@@ -122,7 +122,7 @@ define([
 				if( !$.event.special.navigate.isPushStateEnabled() ) {
 					$window.trigger( "hashchange", [true] );
 				} else {
-					// TODO figure out how to simplify this interaction with the initial history entry
+					// TASK figure out how to simplify this interaction with the initial history entry
 					// at the bottom js/navigate/navigate.js
 					$.mobile.navigate.history.stack = [];
 					$.mobile.navigate( $.mobile.path.isPath( location.hash ) ? location.hash : location.href );

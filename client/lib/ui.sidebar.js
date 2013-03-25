@@ -15,7 +15,7 @@ Template.sidebarTemplate.events({
         alert('this button could be configured to send data to and launch an existing applicatoin in *your* workflow.  Contact pentasyllabic.com to learn more.');
         //toggleTaskDetailPanel();
     },
-    'touchmove #side-pane' : function (e){
+    'touchmove #sidebarPane' : function (e){
         e.preventDefault();
     }
 });
@@ -31,7 +31,7 @@ Template.sidebarTemplate.rendered = function(){
 };
 ////////// Lists //////////
 
-Template.lists.lists = function () {
+Template.listsTemplate.lists = function () {
     return Lists.find({}, {sort: {name: 1}});
 };
 //Template.lists.count = function () {
@@ -39,7 +39,7 @@ Template.lists.lists = function () {
 //    return Todos.find({list_id: this._id}).count();
 //};
 
-Template.lists.events({
+Template.listsTemplate.events({
     'mousedown .list': function (evt) { // select list
         Router.setList(this._id);
         Session.set('list_id', this._id);
@@ -56,7 +56,7 @@ Template.lists.events({
     }
 });
 // Attach events to keydown, keyup, and blur on "New list" input box.
-Template.lists.events(okCancelEvents(
+Template.listsTemplate.events(okCancelEvents(
     '#new-list',
     {
         ok: function (text, evt) {
@@ -66,7 +66,7 @@ Template.lists.events(okCancelEvents(
         }
     }));
 
-Template.lists.events(okCancelEvents(
+Template.listsTemplate.events(okCancelEvents(
     '#list-name-input',
     {
         ok: function (value) {
@@ -78,15 +78,15 @@ Template.lists.events(okCancelEvents(
         }
     }));
 
-Template.lists.selected = function () {
+Template.listsTemplate.selected = function () {
     return Session.equals('list_id', this._id) ? 'selected' : '';
 };
 
-Template.lists.name_class = function () {
+Template.listsTemplate.name_class = function () {
     return this.name ? '' : 'empty';
 };
 
-Template.lists.editing = function () {
+Template.listsTemplate.editing = function () {
     return Session.equals('editing_listname', this._id);
 };
 
@@ -95,7 +95,7 @@ Template.lists.editing = function () {
 ////////// Tag Filter //////////
 
 // Pick out the unique tags from all todos in current list.
-Template.tag_filter.tags = function () {
+Template.tagFilterTemplate.tags = function () {
     var tag_infos = [];
     var total_count = 0;
 
@@ -116,15 +116,15 @@ Template.tag_filter.tags = function () {
     return tag_infos;
 };
 
-Template.tag_filter.tag_text = function () {
+Template.tagFilterTemplate.tag_text = function () {
     return this.tag || "All items";
 };
 
-Template.tag_filter.selected = function () {
+Template.tagFilterTemplate.selected = function () {
     return Session.equals('tag_filter', this.tag) ? 'selected' : '';
 };
 
-Template.tag_filter.events({
+Template.tagFilterTemplate.events({
     'mousedown .sidebar-tab': function () {
         if (Session.equals('tag_filter', this.tag))
             Session.set('tag_filter', null);

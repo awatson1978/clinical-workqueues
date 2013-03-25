@@ -48,12 +48,12 @@ $.widget( "mobile.button", $.mobile.widget, {
 		}
 
 		// get the inherited theme
-		// TODO centralize for all widgets
+		// TASK centralize for all widgets
 		if ( !this.options.theme ) {
 			this.options.theme = $.mobile.getInheritedTheme( this.element, "c" );
 		}
 
-		// TODO: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
+		// TASK: Post 1.1--once we have time to test thoroughly--any classes manually applied to the original element should be carried over to the enhanced element, with an `-enhanced` suffix. See https://github.com/jquery/jquery-mobile/issues/3577
 		/* if ( $el[0].className.length ) {
 			classes = $el[0].className;
 		} */

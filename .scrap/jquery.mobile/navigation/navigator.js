@@ -81,7 +81,7 @@ define(["jquery",
 			return hash;
 		},
 
-		// TODO reconsider name
+		// TASK reconsider name
 		go: function( url, data, noEvents ) {
 			var state, href, hash, popstateEvent,
 				isPopStateEvent = $.event.special.navigate.isPushStateEnabled();
@@ -156,7 +156,7 @@ define(["jquery",
 		// and completely prevent them from propagating. The popstate event will then be
 		// retriggered after execution resumes
 		//
-		// TODO grab the original event here and use it for the synthetic event in the
+		// TASK grab the original event here and use it for the synthetic event in the
 		//      second half of the navigate execution that will follow this binding
 		popstate: function( event ) {
 			var active, hash, state, closestIndex;
@@ -197,7 +197,7 @@ define(["jquery",
 			// when the hash is changed by assignment, and it won't have a state associated. We
 			// then need to squash the hash. See below for handling of hash assignment that
 			// matches an existing history entry
-			// TODO it might be better to only add to the history stack
+			// TASK it might be better to only add to the history stack
 			//      when the hash is adjacent to the active history entry
 			hash = path.parseLocation().hash;
 			if( !event.originalEvent.state && hash ) {
@@ -236,7 +236,7 @@ define(["jquery",
 		// NOTE must bind before `navigate` special event hashchange binding otherwise the
 		//      navigation data won't be attached to the hashchange event in time for those
 		//      bindings to attach it to the `navigate` special event
-		// TODO add a check here that `hashchange.navigate` is bound already otherwise it's
+		// TASK add a check here that `hashchange.navigate` is bound already otherwise it's
 		//      broken (exception?)
 		hashchange: function( event ) {
 			var history, hash;
@@ -278,7 +278,7 @@ define(["jquery",
 				// NOTE it's not entirely clear that this is the right thing to do given that we
 				//      can't know the users intention. It might be better to explicitly _not_
 				//      support location.hash assignment in preference to $.navigate calls
-				// TODO first arg to add should be the href, but it causes issues in identifying
+				// TASK first arg to add should be the href, but it causes issues in identifying
 				//      embeded pages
 				missing: function() {
 					history.add( hash, {

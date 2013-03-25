@@ -517,7 +517,7 @@ define( [
 						//page title regexp
 						newPageTitle = html.match( /<title[^>]*>([^<]*)/ ) && RegExp.$1,
 
-						// TODO handle dialogs again
+						// TASK handle dialogs again
 						pageElemRegex = new RegExp( "(<[^>]+\\bdata-" + $.mobile.ns + "role=[\"']?page[\"']?[^>]*>)" ),
 						dataUrlRegex = new RegExp( "\\bdata-" + $.mobile.ns + "url=[\"']?([^\"'>]*)[\"']?" );
 
@@ -571,7 +571,7 @@ define( [
 					}
 
 					//append to page and enhance
-					// TODO taging a page with external to make sure that embedded pages aren't removed
+					// TASK taging a page with external to make sure that embedded pages aren't removed
 					//      by the various page handling code is bad. Having page handling code in many
 					//      places is bad. Solutions post 1.0
 					page
@@ -891,12 +891,12 @@ define( [
 			var params;
 
 			// rebuilding the hash here since we loose it earlier on
-			// TODO preserve the originally passed in path
+			// TASK preserve the originally passed in path
 			if( !path.isPath( url ) && url.indexOf( "#" ) < 0 ) {
 				url = "#" + url;
 			}
 
-			// TODO the property names here are just silly
+			// TASK the property names here are just silly
 			params = {
 				transition: settings.transition,
 				title: pageTitle,
@@ -1106,7 +1106,7 @@ define( [
 					return;
 				}
 
-				// TODO teach $.mobile.hijackable to operate on raw dom elements so the
+				// TASK teach $.mobile.hijackable to operate on raw dom elements so the
 				// link wrapping can be avoided
 				if ( !$( target ).jqmHijackable().length ) {
 					return;
@@ -1153,7 +1153,7 @@ define( [
 
 			// If there is no link associated with the click or its not a left
 			// click we want to ignore the click
-			// TODO teach $.mobile.hijackable to operate on raw dom elements so the link wrapping
+			// TASK teach $.mobile.hijackable to operate on raw dom elements so the link wrapping
 			// can be avoided
 			if ( !link || event.which > 1 || !$link.jqmHijackable().length ) {
 				return;
@@ -1218,7 +1218,7 @@ define( [
 				// requests to go through our page loading logic.
 
 				//check for protocol or rel and its not an embedded page
-				//TODO overlap in logic from isExternal, rel=external check should be
+				//TASK overlap in logic from isExternal, rel=external check should be
 				//     moved into more comprehensive isExternalLink
 				isExternal = useDefaultUrlHandling || ( path.isExternal( href ) && !path.isPermittedCrossDomainRequest( documentUrl, href ) );
 
@@ -1332,7 +1332,7 @@ define( [
 			}
 		};
 
-		// TODO roll the logic here into the handleHashChange method
+		// TASK roll the logic here into the handleHashChange method
 		$window.bind( "navigate", function( e, data ) {
 			var url = $.event.special.navigate.originalEventName.indexOf( "hashchange" ) > -1 ? data.state.hash : data.state.url;
 

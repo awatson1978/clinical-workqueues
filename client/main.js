@@ -3,12 +3,15 @@
 // TODO: convert session variables into Meteor.user().profile items
 //Session.set('list_id', null);
 Session.set('tag_filter', null);
-Session.set('current_page', '#main-pane');
+Session.set('current_page', '#workqueuesPage');
 Session.set('selected_task_id', false);
 Session.set('show_sidebar_panel',true);
 
 //var seed = ;
 //Router.setList(seed);
+
+Session.set('show_header_breadcrumbs',false);
+Session.set('breadcrumb_text', '');
 
 // session variables
 Session.set('editing_addtag', null);
@@ -33,7 +36,8 @@ if(isWebKit){
 // layout is dependent upon viewport, which can change if the browser window is resized
 // or if the user rotates the screen
 $(window).resize(function(evt) {
-    Session.set("resize", new Date());
+    Session.set("resized", new Date());
+    Session.set("appWidth", window.innerWidth);
 });
 
 //var seed = Lists.findOne();
@@ -104,69 +108,3 @@ var app = {
 
 
 
-//-----------------------------------------------------
-// Controls for the JSON inspection and debugging panel
-
-Template.jsonContentPanelTemplate.showJsonPanel = function(){
-    return Session.get('display_profile_json_panel');
-};
-Template.jsonContentPanelTemplate.jsonData = function(){
-    return Session.get('json_content');
-};
-
-//-----------------------------------------------------
-// TODO: refactor toggle functions to helper.js ????
-
-function toggleJsonPanel(){
-    if(Session.get('display_profile_json_panel')){
-        Session.set('display_profile_json_panel',false);
-    }else{
-        Session.set('display_profile_json_panel',true);
-    }
-}
-function toggleTaskDetailPanel(){
-    if(Session.get('show_task_detail_panel')){
-        Session.set('show_task_detail_panel',false);
-        $('#new-todo-box').removeClass('hidden');
-    }else{
-        Session.set('show_task_detail_panel',true);
-        $('#new-todo-box').addClass('hidden');
-    }
-}
-function toggleSidebarVisibility(){
-    if(Session.get('show_sidebar_panel')){
-        Session.set('show_sidebar_panel',false);
-        layoutWorkqueuesPageWithoutPanel();
-    }else{
-        Session.set('show_sidebar_panel',true);
-        layoutWorkqueuesPageWithPanel();
-    }
-}
-function setSidebarVisibility(){
-    if(Session.get('show_sidebar_panel')){
-        layoutWorkqueuesPageWithPanel();
-    }else{
-        layoutWorkqueuesPageWithoutPanel();
-    }
-}
-function toggleButtonVisibility(){
-    if(Session.get('show_button_tiles')){
-        Session.set('show_button_tiles',false);
-    }else{
-        Session.set('show_button_tiles',true);
-    }
-}
-
-function layoutWorkqueuesPageWithPanel() {
-    $('#main-pane').removeClass('sidebar-hidden-landscape-layout');
-
-    $('#main-pane').addClass('sidebar-shown-landscape-layout');
-    $('#main-pane').css('width', window.innerWidth - 195);
-}
-function layoutWorkqueuesPageWithoutPanel() {
-    $('#main-pane').removeClass('sidebar-shown-landscape-layout');
-
-    $('#main-pane').addClass('sidebar-hidden-landscape-layout');
-    $('#main-pane').css('width', window.innerWidth);
-
-}

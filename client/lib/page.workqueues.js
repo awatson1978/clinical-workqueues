@@ -4,6 +4,33 @@
 //    log_event("Template.workqueuesPage.rendered",LogLevel.Signpost,this);
 //};
 
+Template.workqueuesPageTemplate.resized = function(){
+    if(window.innerWidth < 800){
+        //layoutWorkqueuesPageWithoutPanel();
+        if(Session.get('show_sidebar_panel')){
+            $('#mainLayoutPane').css('width', window.innerWidth - 195);
+        }else{
+            $('#mainLayoutPane').css('width', window.innerWidth);
+        }
+    }else if(window.innerWidth < 480){
+        //layoutWorkqueuesPageWithPanel();
+        if(Session.get('show_sidebar_panel')){
+            $('#mainLayoutPane').css('width', window.innerWidth - 195);
+        }else{
+            $('#mainLayoutPane').css('width', window.innerWidth);
+        }
+    }else{
+        //layoutWorkqueuesPageWithPanel();
+        if(Session.get('show_sidebar_panel')){
+            $('#mainLayoutPane').css('width', window.innerWidth);
+        }else{
+            $('#mainLayoutPane').css('width', window.innerWidth);
+        }
+    }
+    return Session.get("resized");
+};
+
+
 //----------------------------------------------------------------------
 Template.todos.receivedNewAlert = function(){
     return monitorDropbox();
@@ -223,6 +250,7 @@ Template.taskDetailCardTemplate.events({
     }
 });
 Template.taskDetailCardTemplate.rendered = function(){
+
     // TODO: Refactor these into CSS files
     $('#taskDetailCard').css('width', window.innerWidth - 240);
     $('#taskDetailCard').css('left', 220);
@@ -278,6 +306,10 @@ Template.taskDetailCardTemplate.tag_objs = function(){
 Template.taskDetailCardTemplate.adding_tag = function(){
     return false;
 };
+
+
+
+
 
 
 //Template.taskDetailCardTemplate.tag_objs = function () {

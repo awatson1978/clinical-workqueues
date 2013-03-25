@@ -1,20 +1,18 @@
 <template name="sidebarTemplate">
     {{#if sidebarIsVisible }}
-    <!-- TODO:  refactor side-pane to sidebarPane -->
-    <div class="doesnt-overlap-header fixed-layout hide-for-small" id="side-pane">
-        {{> lists}}
+    <div class="doesnt-overlap-header fixed-layout hide-for-small" id="sidebarPane">
+        {{> listsTemplate}}
         {{#if showButtonTiles }}
         {{> buttonTilesTemplate }}
         {{else }}
-        {{> tag_filter}}
+        {{> tagFilterTemplate}}
         {{/if }}
     </div>
     {{/if}}
 </template>
 
-<!-- TODO: refactor to 'listsTemplate -->
-<template name="lists">
-    <div id="lists">
+<template name="listsTemplate">
+    <div id="listsTemplate">
         {{#each lists}}
             <div class="list {{selected}}">
                 <div class="sidebar-tab note">
@@ -46,8 +44,7 @@
     </div>
 </template>
 
-<!-- TODO: refactor to 'tagFilter -->
-<template name="tag_filter">
+<template name="tagFilterTemplate">
     <div id="tagTiles">
         <hr style="border: 1px solid lightgray;">
         <div id="tag-filter" class="tag-list">

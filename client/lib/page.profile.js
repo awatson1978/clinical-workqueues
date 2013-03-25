@@ -3,21 +3,24 @@ Template.profilePageTemplate.rendered = function(){
 };
 
 Template.userCardTemplate.rendered = function(){
-    log_event("Template.userCardTemplate.rendered",LogLevel.Signpost,this);
-    // TODO:  think through whether it's better to default to portrait or landscape
-    if(window.innerWidth > 800){
-        resizeProfilePageForLandscape();
-    }else{
-        resizeProfilePageForPortrait();
-    }
+    log_event("Template.userCardTemplate.rendered",LogLevel.Signpost, this);
+
+    // default to portrait, because it's a single column
+    //    if(window.innerWidth < 800){
+    //        resizeProfilePageForPortrait();
+    //    }else{
+    //        resizeProfilePageForLandscape();
+    //    }
 };
 Template.userCardTemplate.resize = function(){
-    if(window.innerWidth > 1024){
+    if(window.innerWidth > (768 + 195)){
         resizeProfilePageForLandscape();
     }else{
         resizeProfilePageForPortrait();
     }
-    return Session.get("resize");
+    $('#appTitle').html('width: ' + Session.get("appWidth"));
+    $('#appTitle').html('width: ' + Session.get("appWidth"));
+    return Session.get("appWidth");
 };
 Template.userCardTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace, this);

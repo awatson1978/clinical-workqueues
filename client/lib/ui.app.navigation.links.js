@@ -16,9 +16,9 @@ function showPage(page){
 }
 function showHomePage(){
    //if(Meteor.userId()){
-        showPage("#main-pane");
+        showPage("#workqueuesPage");
     //}else{
-    //    showPage("#guest_page");
+    //    showPage("#guestPageTemplate");
     //}
 }
 function showCurrentSessionPage(){

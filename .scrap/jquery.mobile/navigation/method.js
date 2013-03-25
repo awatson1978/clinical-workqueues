@@ -6,9 +6,9 @@ define([ "jquery", "./path", "./history", "./navigator" ], function( jQuery ) {
 //>>excludeEnd("jqmBuildExclude");
 
 (function( $, undefined ) {
-	// TODO consider queueing navigation activity until previous activities have completed
+	// TASK consider queueing navigation activity until previous activities have completed
 	//      so that end users don't have to think about it. Punting for now
-	// TODO !! move the event bindings into callbacks on the navigate event
+	// TASK !! move the event bindings into callbacks on the navigate event
 	$.mobile.navigate = function( url, data, noEvents ) {
 		$.mobile.navigate.navigator.go( url, data, noEvents );
 	};

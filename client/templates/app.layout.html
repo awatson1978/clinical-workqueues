@@ -1,0 +1,16 @@
+<template name="app_container">
+    <div class="content">
+        {{#if loggedIn}}
+        <div class="touch-disabled" id="mainLayoutPane">
+            {{> dashboardPageTemplate}}
+            {{> workqueuesPageTemplate }}
+            {{> profilePageTemplate }}
+            {{> communityPageTemplate }}
+        </div>
+        {{> sidebarTemplate }}
+        {{else }}
+        {{> guest_page }}
+        {{/if }}
+    </div>
+</template>
+

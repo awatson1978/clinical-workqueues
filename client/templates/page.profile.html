@@ -1,7 +1,7 @@
 <template name="profilePageTemplate">
-    <div class="touch-disabled page" id="profilePage">
+    <div id="profilePage" class="touch-disabled page">
 
-        <div class="doesnt-overlap-header row"></div>
+        <!--<div class="doesnt-overlap-header row"></div>-->
         {{#if receivedNewAlert }}
             <div class="row">
                 {{> dropboxAlert}}
@@ -14,8 +14,9 @@
 
 
 <template name="userCardTemplate">
-    <div class="user-card-block row">
+    <div class="user-card-block">
         <div class="hidden">{{resize}}</div>
+
         <div id="userProfileCard" class="card">
             <div class="card-header clipped_corner rounded-top-right">
                 <span class="white card-meta-data barcode">*{{user_id}}*</span>
@@ -91,60 +92,53 @@
         </div>
 
         <div class="spacer row"></div>
-        <div id="userProfileCardExtended" class="user-card-detailed-extended">
-            <div class="user-card-data-extended">
-                <div class="row">
-                    <div class="six columns no-left-padding">
-                        <div class="card">
-                            <div class="card-header clipped_corner rounded-top-right">
-                                <span class="pictograph">j</span> Carewatch
-                            </div>
-                            <div class="panel">
-                                <ul class="carewatch-data simple-user list">
-                                    {{#each user_carewatch}}
-                                    <li>
-                                        <span class="collaborator">{{ name }}</span>
-                                        <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
-                                    </li>
-                                    {{/each}}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="six columns no-right-padding">
-                        <div class="card">
-                            <div class="card-header clipped_corner rounded-top-right">
-                                <span class="pictograph">a</span> Collaborators
-                            </div>
-                            <!--<div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>-->
-                            <div class="panel">
-                                <ul class="collaborators-data simple-user list">
-                                    {{#each user_collaborators}}
-                                    <li>
-                                        <span class="collaborator">{{ name }}</span>
-                                        <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
-                                    </li>
-                                    {{/each}}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer row"></div>
-                <div class="card">
-                    <div class="card-header clipped_corner rounded-top-right">
-                        <span class="pictograph">j</span> HIPAA Audit Log
-                    </div>
-                    <div class="panel">
-                        {{> hipaaLog }}
-                    </div>
-                <div>
-                    <!--<div class="profile-list-label"><span class="pictograph">j</span> HIPAA Audit Log</div>-->
-                </div>
-
+        <div id="carewatchCard" class="card">
+            <div class="card-header clipped_corner rounded-top-right">
+                <span class="pictograph">j</span> Carewatch
+            </div>
+            <div class="panel">
+                <ul class="carewatch-data simple-user list">
+                    {{#each user_carewatch}}
+                    <li>
+                        <span class="collaborator">{{ name }}</span>
+                        <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                    </li>
+                    {{/each}}
+                </ul>
             </div>
         </div>
-    </div>
+
+        <div class="spacer row"></div>
+        <div id="collaboratorsCard" class="hidden card">
+            <div class="card-header clipped_corner rounded-top-right">
+                <span class="pictograph">a</span> Collaborators
+            </div>
+            <!--<div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>-->
+            <div class="panel">
+                <ul class="collaborators-data simple-user list">
+                    {{#each user_collaborators}}
+                    <li>
+                        <span class="collaborator">{{ name }}</span>
+                        <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <div class="spacer row"></div>
+        <div id="hipaaCard" class="hidden card">
+            <div class="card-header clipped_corner rounded-top-right">
+                <span class="pictograph">j</span> HIPAA Audit Log
+            </div>
+            <div class="panel">
+                {{> hipaaLog }}
+            </div>
+            <div>
+
+
+
+            </div>
 </template>
 
 

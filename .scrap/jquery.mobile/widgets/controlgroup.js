@@ -101,7 +101,7 @@ define( [ "jquery",
 
 	$.widget( "mobile.controlgroup", $.mobile.controlgroup, $.mobile.behaviors.addFirstLastClasses );
 
-	// TODO: Implement a mechanism to allow widgets to become enhanced in the
+	// TASK: Implement a mechanism to allow widgets to become enhanced in the
 	// correct order when their correct enhancement depends on other widgets in
 	// the page being correctly enhanced already.
 	//

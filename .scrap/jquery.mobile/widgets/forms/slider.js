@@ -23,7 +23,7 @@ $.widget( "mobile.slider", $.mobile.widget, {
 
 	_create: function() {
 
-		// TODO: Each of these should have comments explain what they're for
+		// TASK: Each of these should have comments explain what they're for
 		var self = this,
 			control = this.element,
 			parentTheme = $.mobile.getInheritedTheme( control, "c" ),

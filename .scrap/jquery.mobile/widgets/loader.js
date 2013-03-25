@@ -37,7 +37,7 @@ define( [ "jquery",	"../jquery.mobile.core.js", "../jquery.mobile.widget" ], fun
 		}
 	});
 
-	// TODO move loader class down into the widget settings
+	// TASK move loader class down into the widget settings
 	var loaderClass = "ui-loader", $html = $( "html" ), $window = $.mobile.window;
 
 	$.widget( "mobile.loader", {
@@ -96,7 +96,7 @@ define( [ "jquery",	"../jquery.mobile.core.js", "../jquery.mobile.widget" ], fun
 		// Turn on/off page loading message. Theme doubles as an object argument
 		// with the following shape: { theme: '', text: '', html: '', textVisible: '' }
 		// NOTE that the $.mobile.loading* settings and params past the first are deprecated
-		// TODO sweet jesus we need to break some of this out
+		// TASK sweet jesus we need to break some of this out
 		show: function( theme, msgText, textonly ) {
 			var textVisible, message, $header, loadSettings;
 
@@ -142,7 +142,7 @@ define( [ "jquery",	"../jquery.mobile.core.js", "../jquery.mobile.widget" ], fun
 					" ui-loader-" + ( textVisible || msgText || theme.text ? "verbose" : "default" ) +
 					( loadSettings.textonly || textonly ? " ui-loader-textonly" : "" ) );
 
-				// TODO verify that jquery.fn.html is ok to use in both cases here
+				// TASK verify that jquery.fn.html is ok to use in both cases here
 				//      this might be overly defensive in preventing unknowing xss
 				// if the html attribute is defined on the loading settings, use that
 				// otherwise use the fallbacks from above

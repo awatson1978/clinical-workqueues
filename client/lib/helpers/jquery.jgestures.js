@@ -519,7 +519,7 @@
 		        * removing the eventlistener
 		        * @return {Void}
 		        */
-		        // @TODO: maybe rework teardown to work with event type?!
+		        // @TASK: maybe rework teardown to work with event type?!
 		        teardown: function () {
 		            // split the arguments to necessary controll arguements
 		            var _aSplit = sInternal_.split('_');

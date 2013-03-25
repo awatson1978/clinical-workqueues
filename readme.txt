@@ -1,10 +1,31 @@
 
 
-Phone Displays
-Tablet - Landscape
-Tablet - Portrait
-Desktop - Portrait
-Desktop - Landsape
+.PhoneLandscape{
+}
+.PhonePortrait{
+}
+.TabletLandscape{
+}
+.TabletPortrait{
+}
+.DesktopPortrait{
+}
+.DesktopLandsape{
+}
 
-onrotation
-onresize
+onrotation(
+    switch(){
+        case: landscape{
+
+        },
+        case: portrait{
+
+        }
+    }
+);
+onresize(
+
+);
+
+
+

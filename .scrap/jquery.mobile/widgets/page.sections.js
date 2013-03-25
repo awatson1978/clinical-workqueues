@@ -16,7 +16,7 @@ $.mobile.page.prototype.options.contentTheme = null;
 
 // NOTE bind used to force this binding to run before the buttonMarkup binding
 //      which expects .ui-footer top be applied in its gigantic selector
-// TODO remove the buttonMarkup giant selector and move it to the various modules
+// TASK remove the buttonMarkup giant selector and move it to the various modules
 //      on which it depends
 $.mobile.document.bind( "pagecreate", function( e ) {
 	var $page = $( e.target ),

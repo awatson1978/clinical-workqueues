@@ -92,7 +92,7 @@ define([ "jquery", "./../jquery.mobile.ns.js", "./path" ], function( jQuery ) {
 			// of the slice must then be added to the result to get the element index
 			// in the original history stack :( :(
 			//
-			// TODO this is hyper confusing and should be cleaned up (ugh so bad)
+			// TASK this is hyper confusing and should be cleaned up (ugh so bad)
 			if( closest === undefined ) {
 				closest = this.find( url, this.stack.slice(a), true );
 				closest = closest === undefined ? closest : closest + a;
@@ -113,7 +113,7 @@ define([ "jquery", "./../jquery.mobile.ns.js", "./path" ], function( jQuery ) {
 
 			// invoke callbacks where appropriate
 			//
-			// TODO this is also convoluted and confusing
+			// TASK this is also convoluted and confusing
 			if ( newActiveIndex < a ) {
 				( opts.present || opts.back || $.noop )( this.getActive(), 'back' );
 			} else if ( newActiveIndex > a ) {

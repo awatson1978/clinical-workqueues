@@ -272,7 +272,7 @@ var cordova = {
      * Called by native code when returning error result from an action.
      */
     callbackError: function(callbackId, args) {
-        // TODO: Deprecate callbackSuccess and callbackError in favour of callbackFromNative.
+        // TASK: Deprecate callbackSuccess and callbackError in favour of callbackFromNative.
         // Derive success from status.
         try {
             cordova.callbackFromNative(callbackId, false, args.status, args.message, args.keepCallback);
@@ -1768,7 +1768,7 @@ var argscheck = require('cordova/argscheck'),
  * {boolean} isDirectory always true (readonly)
  * {DOMString} name of the directory, excluding the path leading to it (readonly)
  * {DOMString} fullPath the absolute full path to the directory (readonly)
- * TODO: implement this!!! {FileSystem} filesystem on which the directory resides (readonly)
+ * TASK: implement this!!! {FileSystem} filesystem on which the directory resides (readonly)
  */
 var DirectoryEntry = function(name, fullPath) {
      DirectoryEntry.__super__.constructor.call(this, false, true, name, fullPath);
@@ -2520,7 +2520,7 @@ FileReader.prototype.readAsBinaryString = function(file) {
     if (initRead(this, file)) {
         return this._realReader.readAsBinaryString(file);
     }
-    // TODO - Can't return binary data to browser.
+    // TASK - Can't return binary data to browser.
     console.log('method "readAsBinaryString" is not supported at this time.');
     this.abort();
 };
@@ -2534,7 +2534,7 @@ FileReader.prototype.readAsArrayBuffer = function(file) {
     if (initRead(this, file)) {
         return this._realReader.readAsArrayBuffer(file);
     }
-    // TODO - Can't return binary data to browser.
+    // TASK - Can't return binary data to browser.
     console.log('This method is not supported at this time.');
     this.abort();
 };
@@ -3349,7 +3349,7 @@ _MediaError.MEDIA_ERR_ABORTED        = _MediaError.MEDIA_ERR_ABORTED        || 1
 _MediaError.MEDIA_ERR_NETWORK        = _MediaError.MEDIA_ERR_NETWORK        || 2;
 _MediaError.MEDIA_ERR_DECODE         = _MediaError.MEDIA_ERR_DECODE         || 3;
 _MediaError.MEDIA_ERR_NONE_SUPPORTED = _MediaError.MEDIA_ERR_NONE_SUPPORTED || 4;
-// TODO: MediaError.MEDIA_ERR_NONE_SUPPORTED is legacy, the W3 spec now defines it as below.
+// TASK: MediaError.MEDIA_ERR_NONE_SUPPORTED is legacy, the W3 spec now defines it as below.
 // as defined by http://dev.w3.org/html5/spec-author-view/video.html#error-codes
 _MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED = _MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED || 4;
 
@@ -3499,7 +3499,7 @@ var ProgressEvent = (function() {
                 }
             }
             if (data.target) {
-                // TODO: cannot call <some_custom_object>.dispatchEvent
+                // TASK: cannot call <some_custom_object>.dispatchEvent
                 // need to first figure out how to implement EventTarget
             }
         }
@@ -5032,7 +5032,7 @@ define("cordova/plugin/ios/Entry", function(require, exports, module) {
 
 module.exports = {
     toURL:function() {
-        // TODO: refactor path in a cross-platform way so we can eliminate
+        // TASK: refactor path in a cross-platform way so we can eliminate
         // these kinds of platform-specific hacks.
         return "file://localhost" + this.fullPath;
     },

@@ -12,7 +12,7 @@ $.mobile.listview.prototype.options.filter = false;
 $.mobile.listview.prototype.options.filterPlaceholder = "Filter items...";
 $.mobile.listview.prototype.options.filterTheme = "c";
 $.mobile.listview.prototype.options.filterReveal = false;
-// TODO rename callback/deprecate and default to the item itself as the first argument
+// TASK rename callback/deprecate and default to the item itself as the first argument
 var defaultFilterCallback = function( text, searchValue, item ) {
 		return text.toString().toLowerCase().indexOf( searchValue ) === -1;
 	};
