@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/page.guest.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/jquery.tools.overlay.js" afterPath="$PROJECT_DIR$/client/lib/helpers/jquery.tools.overlay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,19 +23,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page.guest.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="page.guest.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/page.guest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.25615764">
+            <state line="7" column="45" selection-start="372" selection-end="372" vertical-scroll-proportion="-4.48">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page.guest.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.guest.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="14" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+            <state line="19" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.35764706">
               <folding />
             </state>
           </provider>
@@ -219,6 +220,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -256,11 +279,11 @@
       <recent name="$PROJECT_DIR$/client/lib/helpers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/lib/helpers" />
+      <recent name="$PROJECT_DIR$/client/lib" />
       <recent name="$PROJECT_DIR$/.scrap" />
       <recent name="$PROJECT_DIR$/client/packages" />
       <recent name="$PROJECT_DIR$/" />
-      <recent name="$PROJECT_DIR$/packages/fonts" />
-      <recent name="$PROJECT_DIR$/packages/font" />
     </key>
   </component>
   <component name="RunManager">
@@ -328,7 +351,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4036488" sideWeight="0.9882721" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1614654" sideWeight="0.5963512" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18453188" sideWeight="0.5963512" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -509,16 +532,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/page.guest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="14" selection-start="544" selection-end="544" vertical-scroll-proportion="0.0">
+        <state line="7" column="45" selection-start="372" selection-end="372" vertical-scroll-proportion="-4.48">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.guest.html">
+    <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="840" selection-end="840" vertical-scroll-proportion="0.25615764">
+        <state line="19" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.35764706">
           <folding />
         </state>
       </provider>
