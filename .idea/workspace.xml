@@ -2,8 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/jquery.tools.overlay.js" afterPath="$PROJECT_DIR$/client/lib/helpers/jquery.tools.overlay.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_client.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/facebook_client.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_common.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/facebook_common.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_configure.html" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/facebook_configure.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_configure.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/facebook_configure.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_login_button.css" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/facebook_login_button.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/facebook_server.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/facebook_server.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-facebook/package.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-facebook/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/accounts_ui.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/accounts_ui.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/accounts_ui_tests.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/accounts_ui_tests.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons.html" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dialogs.html" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_dialogs.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dialogs.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_dialogs.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dropdown.html" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_dropdown.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_dropdown.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_dropdown.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_session.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_session.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_single.html" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_single.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/login_buttons_single.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/login_buttons_single.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui-unstyled/package.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui-unstyled/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui/login_buttons.less" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui/login_buttons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/.accounts-ui/package.js" afterPath="$PROJECT_DIR$/client/.packages/.accounts-ui/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/audio/audio.js" afterPath="$PROJECT_DIR$/client/.packages/audio/audio.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/audio/package.js" afterPath="$PROJECT_DIR$/client/.packages/audio/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/detect-browser/app.platform.detection.js" afterPath="$PROJECT_DIR$/client/.packages/detect-browser/app.platform.detection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/detect-browser/package.js" afterPath="$PROJECT_DIR$/client/.packages/detect-browser/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/detect-browser/page.unsupported.html" afterPath="$PROJECT_DIR$/client/.packages/detect-browser/page.unsupported.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/3OF9_NEW.TTF" afterPath="$PROJECT_DIR$/client/.packages/fonts/3OF9_NEW.TTF" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/ChalkDust.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/ChalkDust.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/FontAwesome.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/FontAwesome.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/Freehand.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/Freehand.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/HarabaraHand.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/HarabaraHand.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/ItAintRocketScience.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/ItAintRocketScience.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/ModernPictographs.otf" afterPath="$PROJECT_DIR$/client/.packages/fonts/ModernPictographs.otf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/Pictonic.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/Pictonic.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/ShelterMe.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/ShelterMe.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/WildScript.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/WildScript.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/Windsong.ttf" afterPath="$PROJECT_DIR$/client/.packages/fonts/Windsong.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/package.js" afterPath="$PROJECT_DIR$/client/.packages/fonts/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/fonts/syntax.fonts.css" afterPath="$PROJECT_DIR$/client/.packages/fonts/syntax.fonts.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/mobile/mobile-fixed-layout.html" afterPath="$PROJECT_DIR$/client/.packages/mobile/mobile-fixed-layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/mobile/mobile-fixed-layout.js" afterPath="$PROJECT_DIR$/client/.packages/mobile/mobile-fixed-layout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/packages/mobile/package.js" afterPath="$PROJECT_DIR$/client/.packages/mobile/package.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +75,7 @@
       <file leaf-file-name="page.guest.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.35764706">
+            <state line="19" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.39790577">
               <folding />
             </state>
           </provider>
@@ -75,9 +115,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="24" />
-    <option name="y" value="431" />
+    <option name="y" value="517" />
     <option name="width" value="1497" />
-    <option name="height" value="998" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -134,111 +174,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,14 +280,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="24" y="431" width="1497" height="998" extended-state="0" />
-    <editor active="true" />
+    <frame x="24" y="517" width="1497" height="912" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4036488" sideWeight="0.9882721" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40328696" sideWeight="0.9882721" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18453188" sideWeight="0.5963512" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18453188" sideWeight="0.596713" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -541,7 +477,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.35764706">
+        <state line="19" column="11" selection-start="613" selection-end="613" vertical-scroll-proportion="0.39790577">
           <folding />
         </state>
       </provider>

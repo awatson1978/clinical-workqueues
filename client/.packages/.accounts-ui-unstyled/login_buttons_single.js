@@ -36,7 +36,7 @@
 
   Template._loginButtonsLoggedOutSingleLoginButton.capitalizedName = function () {
     if (this.name === 'github')
-      // XXX we should allow service packages to set their capitalized name
+      // XXX we should allow service .packages to set their capitalized name
       return 'GitHub';
     else
       return capitalize(this.name);

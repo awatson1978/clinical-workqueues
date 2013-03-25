@@ -135,7 +135,7 @@
     // files such as facebook_client.js. This would have the added
     // benefit of allow us to unify facebook_{client,common,server}.js
     // into one file, which would encourage people to build more login
-    // services packages.
+    // services .packages.
     _.each(_.keys(Meteor), function(methodName) {
       var match;
       if ((match = methodName.match(/^loginWith(.*)/))) {
