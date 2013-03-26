@@ -32,10 +32,10 @@
     <!-- TODO: Extract showTaskDetail to outside of taskDetailCardTemplate  -->
     {{#if showTaskDetail}}
     <div class="spacer row"></div>
-    <div class="padded row" style="background-color: orange;">
+    <div class="padded row">
         <div id="taskDetailCard" class="margined card">
             <div class="card-header rounded-top-right">
-                <span class="white card-meta-data">{{todo_id}}</span>
+                <span class="white card-meta-data barcode">{{todo_id}}</span>
             </div>
             <div class="panel user-card-detailed  no-background">
                 <img class="user-card-image" src="{{todo_image}}" />

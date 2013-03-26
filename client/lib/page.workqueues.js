@@ -1,8 +1,6 @@
 ////////// Todos //////////
 
-//Template.workqueuesPage.rendered = function(){
-//    log_event("Template.workqueuesPage.rendered",LogLevel.Signpost,this);
-//};
+
 
 Template.workqueuesPageTemplate.resized = function(){
     if(window.innerWidth < 800){
@@ -29,8 +27,16 @@ Template.workqueuesPageTemplate.resized = function(){
     }
     return Session.get("resized");
 };
+Template.workqueuesPageTemplate.events({
+    'click #newTaskInput': function(evt,tmpl){
+        if($('#newTaskInput').val() == 'add new task'){
+            $('#newTaskInput').removeClass('lightgray');
+            $('#newTaskInput').val('');
+        }
+    }
+});
 Template.taskDetailCardTemplate.events({
-    'click .user-card-image': function(){
+    'click .user-card-image': function(evt,tmpl){
         alert('click!');
     }
 });
@@ -52,8 +58,8 @@ Template.todos.any_list_selected = function () {
    }
 };
 
-Template.todos.events(okCancelEvents(
-    '#new-todo',
+Template.workqueuesPageTemplate.events(okCancelEvents(
+    '#newTaskInput',
     {
         ok: function (text, evt) {
             console.log('ok called on new todo item');

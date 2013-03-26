@@ -2,6 +2,8 @@ Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.communityInspectionColumn.helpers(genericUserDisplayObject);
 
 
+
+
 Template.communityPageTemplate.resize = function(){
     if(Session.get('show_sidebar_panel')){
         $('#communityInspectionBlock').css('width',window.innerWidth - 195);
@@ -19,6 +21,13 @@ Template.communityInspectionColumn.rendered = function(){
         $('.page').removeClass('touch-disabled');
     }
 };
+Template.communityInspectionColumn.search_text_color = function(){
+    if(Session.get('community_members_filter') == null){
+        return "lightgray";
+    }else{
+        return "";
+    }
+};
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
         Meteor.users.update(Meteor.userId(), {$pull: { 'profile.collaborators': this }});
@@ -26,6 +35,11 @@ Template.communityPageTemplate.events({
     'keyup #communitySearchInput': function (evt, tmpl) {
         Session.set('community_members_filter', $('#communitySearchInput').val());
         Meteor.flush();
+    },
+    'click #communitySearchInput': function(evt,tmpl){
+        if($('#communitySearchInput').val() == 'search community members'){
+            $('#communitySearchInput').val('');
+        }
     }
 });
 Template.communityPageTemplate.communityUsers = function () {

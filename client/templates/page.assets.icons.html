@@ -1,0 +1,23 @@
+<template name="iconAssetsPageTemplate">
+    <div id="iconAssetsPage" class="page">
+        <div class="row">
+            <div id="snomed-anatomy-list">
+                <input type="text" class="search" placeholder="filter {{snomed_count}} records" />
+                <ul class="anatomy-images list">
+                    {{#each snomed_reference}}
+                    {{> anatomyItemTemplate}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+
+<template name="anatomyItemTemplate">
+    <li class="two column anatomy-item with-rounded-corners">
+        <div class="hidden anatomy-name">{{anatomy_image}}</div>
+        <img src="{{anatomy_image}}">
+    </li>
+</template>
