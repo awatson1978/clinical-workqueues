@@ -3,9 +3,10 @@
 // TODO: convert session variables into Meteor.user().profile items
 //Session.set('list_id', null);
 Session.set('tag_filter', null);
-Session.set('current_page', '#workqueuesPage');
 Session.set('selected_task_id', false);
 Session.set('show_sidebar_panel',true);
+//Session.set('current_page', '#workqueuesPage');
+Session.set('current_page', '#profilePage');
 
 //var seed = ;
 //Router.setList(seed);

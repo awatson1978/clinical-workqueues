@@ -29,7 +29,11 @@ Template.workqueuesPageTemplate.resized = function(){
     }
     return Session.get("resized");
 };
-
+Template.taskDetailCardTemplate.events({
+    'click .user-card-image': function(){
+        alert('click!');
+    }
+});
 
 //----------------------------------------------------------------------
 Template.todos.receivedNewAlert = function(){
@@ -251,9 +255,17 @@ Template.taskDetailCardTemplate.events({
 });
 Template.taskDetailCardTemplate.rendered = function(){
 
-    // TODO: Refactor these into CSS files
-    $('#taskDetailCard').css('width', window.innerWidth - 240);
-    $('#taskDetailCard').css('left', 220);
+    if(Session.get('show_sidebar_panel')){
+        $('#taskDetailCard').css('width', window.innerWidth - 237);
+
+        //$('#taskDetailCard').css('width', window.innerWidth - 240);
+        $('#taskDetailCard').css('left', 197);
+    }else{
+        $('#taskDetailCard').css('width', window.innerWidth);
+        //$('#taskDetailCard').css('width', window.innerWidth - 40);
+        $('#taskDetailCard').css('left', 0);
+    }
+
 //    $("#taskDetailCard").bind("swipeleft", function(){
 //        alert('swipeleft!');
 //    });

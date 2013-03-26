@@ -1,5 +1,8 @@
 <template name="workqueuesPageTemplate">
     <div id="workqueuesPage" class="page">
+        <div class="new-task-container">
+            <input id="newTaskInput" type="text" class="search lightgray" value="add new task" />
+        </div>
         {{> todos}}
     </div>
     <div class="hidden resize-trigger">resied: {{resized}}</div>
@@ -29,8 +32,8 @@
     <!-- TODO: Extract showTaskDetail to outside of taskDetailCardTemplate  -->
     {{#if showTaskDetail}}
     <div class="spacer row"></div>
-    <div class="padded row">
-        <div id="taskDetailCard" class="card">
+    <div class="padded row" style="background-color: orange;">
+        <div id="taskDetailCard" class="margined card">
             <div class="card-header rounded-top-right">
                 <span class="white card-meta-data">{{todo_id}}</span>
             </div>

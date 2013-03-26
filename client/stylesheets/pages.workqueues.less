@@ -29,10 +29,7 @@
     width: 100%;
 }
 
-#items-view {
-    margin-top: 5px;
-    margin-left: 5px;
-}
+
 
 #item-list .todo {
     display: block;
@@ -151,7 +148,7 @@
 .horizontal-tags{
   position: absolute;
   top: 8.5px;
-  right: 0px;
+  right: 5px;
   background-color: white;
 }
 .bookend-right{
@@ -198,17 +195,20 @@
 
 #taskDetailCard{
   position: fixed;
-  bottom: 260px;
+  bottom: 240px;
   width: 100%;
   z-index: 1000;
 }
 
 //---------------------------------------------
 
-// landscape orientation
-@media only screen and (min-width: 768px) {
-  #mainLayoutPane{
-    .sidebar-shown-landscape-layout;
+// mobile phone layout
+@media only screen and (max-width: 480px) {
+  #workqueuesPage{
+    #items-view {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
   }
 }
 
@@ -217,6 +217,33 @@
   #mainLayoutPane{
     .sidebar-shown-portrait-layout;
   }
+  #workqueuesPage{
+    #items-view {
+      margin-top: 54px;
+      margin-left: 5px;
+    }
+    .new-task-container{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    .new-task-container{
+      position: fixed;
+      width: 100%;
+      top: 39px;
+      left: 0px;
+      height: 50px;
+      background-color: #666666;
+      padding: 10px;
+      color: gray;
+      margin-left: 0px;
+      margin-right: 5px;
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+  }
+
   #taskDetailCard{
     position: fixed;
     bottom: 240px;
@@ -232,9 +259,21 @@
     padding-top: 45px;
   }
 }
-@media only screen and (max-width: 480px) {
-}
+// landscape orientation
+@media only screen and (min-width: 768px) {
+  #mainLayoutPane{
+    .sidebar-shown-landscape-layout;
+  }
+  #workqueuesPage{
+    .new-task-container{
+      margin-left: 20px;
+      margin-right: 15px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+  }
 
+}
 
 //---------------------------------------------
 
