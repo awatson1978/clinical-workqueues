@@ -1,10 +1,15 @@
 
 Template.sidebarTemplate.sidebarIsVisible = function(){
-    if(Session.get('appWidth') > 768){
-        return Session.get('show_sidebar_panel');
-    }else{
-        return false;
-    }
+    //if(Session.get('is_sidebar_available')){
+        if(Session.get('appWidth') > 768){
+            return Session.get('show_sidebar_panel');
+        }else{
+            //layoutWorkqueuesPageWithPanel();
+            return false;
+        }
+    //}else{
+    //    return false;
+    //}
 };
 Template.sidebarTemplate.showButtonTiles = function(){
     if(Session.get('show_button_tiles')){

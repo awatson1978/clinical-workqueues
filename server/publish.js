@@ -22,6 +22,9 @@ Meteor.publish('todos', function (list_id) {
 Meteor.publish('allTodos', function (list_id) {
     return Todos.find();
 });
+Meteor.publish('categoryIcons', function () {
+    return CategoryIcons.find();
+});
 
 
 

@@ -9,7 +9,7 @@ Template.communityPageTemplate.resize = function(){
         $('#communityInspectionBlock').css('width',window.innerWidth - 195);
         $('#communityInspectionBlock').css('left', (window.innerWidth - 195) * 0.05);
     }else{
-        layoutWorkqueuesPageWithoutPanel();
+        layoutAppWithoutSidebar();
     }
     return Session.get("appWidth");
 };

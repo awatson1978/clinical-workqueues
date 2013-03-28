@@ -1,35 +1,52 @@
 
 
-// TODO: convert session variables into Meteor.user().profile items
+
+
+
+// navigation variables
 //Session.set('list_id', null);
+Session.set('current_page', '#workqueuesPage');
 Session.set('tag_filter', null);
-Session.set('selected_task_id', false);
-Session.set('show_sidebar_panel',true);
-//Session.set('current_page', '#workqueuesPage');
-Session.set('current_page', '#profilePage');
 
-//var seed = ;
-//Router.setList(seed);
 
+// page layout variables
+// these should be written to the user's profile, so it can persist through sessions
+// TODO:  sync terminology between 'show' and 'display'
+// TODO: convert session variables into Meteor.user().profile items
+Session.set('is_supported_browser', false);
+Session.set('show_sidebar_panel',false);
 Session.set('show_header_breadcrumbs',false);
-Session.set('breadcrumb_text', '');
+Session.set('show_new_task_input', true);
+Session.set('show_community_search_input', true);
+Session.set('show_task_detail_panel', false);
+Session.set('display_profile_json_panel', false);
+Session.set('showDropboxAlert', false);
+Session.set('is_sidebar_available',true);
 
-// session variables
+
+
+
+// editing flags
+// these should always default to null, and don't need to persist between refreshes
 Session.set('editing_addtag', null);
 Session.set('editing_listname', null);
 Session.set('editing_itemname', null);
 
-// TODO:  sync terminology between 'show' and 'display'
-Session.set('show_task_detail_panel', false);
-Session.set('display_profile_json_panel', false);
+
+// data drops
+// these should be written to the user's profile, so they can persist through sessions
+Session.set('selected_task_id', false);
 Session.set('json_content', "panel for inspecting data objects");
+Session.set('breadcrumb_text', '');
 
-Session.set('showDropboxAlert', false);
-//Session.set('community_members_filter','search community members');
 
-Session.set('is_supported_browser', false);
 
+// rendering variables
+// these should always default to null, and don't need to persist between refreshes
 Session.set("appWidth", window.innerWidth);
+Session.set('is_modal_dialog', false);
+
+
 
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
@@ -38,9 +55,12 @@ if(isWebKit){
 
 // layout is dependent upon viewport, which can change if the browser window is resized
 // or if the user rotates the screen
+
 $(window).resize(function(evt) {
     Session.set("resized", new Date());
     Session.set("appWidth", window.innerWidth);
+
+    setSidebarAvailability();
 });
 
 //var seed = Lists.findOne();
@@ -58,7 +78,16 @@ Meteor.startup(function () {
 // it will fire for each sub-template, and often fires two dozen times or more
 Template.app_container.rendered = function(){
     showCurrentSessionPage();
+    setSidebarAvailability();
 };
+
+
+function setSidebarAvailability() {
+    if (window.innerWidth < 768) {
+        Session.set('is_sidebar_available', false);
+    }
+}
+
 
 
 Template.app_container.loggedIn = function () {

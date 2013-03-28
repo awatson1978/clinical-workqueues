@@ -8,12 +8,12 @@ Template.profilePageTemplate.rendered = function(){
 Template.userCardTemplate.resize = function(){
     if(Session.get("appWidth") > 768){
         if(Session.get('show_sidebar_panel')){
-            layoutWorkqueuesPageWithPanel();
+            layoutAppWithSidebar();
         }else{
-            layoutWorkqueuesPageWithoutPanel();
+            layoutAppWithoutSidebar();
         }
     }else{
-        layoutWorkqueuesPageWithoutPanel();
+        layoutAppWithoutSidebar();
     }
     $('#appTitle').html('width: ' + Session.get("appWidth"));
     $('#appTitle').html('width: ' + Session.get("appWidth"));

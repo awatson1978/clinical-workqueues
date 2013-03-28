@@ -19,24 +19,16 @@ function toggleTaskDetailPanel(){
     }
 }
 function toggleSidebarVisibility(){
-
     // we don't want to display the sidebar on narrow pages
     // there just isn't enough room
     if(window.innerWidth > 768){
         if(Session.get('show_sidebar_panel')){
             Session.set('show_sidebar_panel',false);
-            layoutWorkqueuesPageWithoutPanel();
+            layoutAppWithoutSidebar();
         }else{
             Session.set('show_sidebar_panel',true);
-            layoutWorkqueuesPageWithPanel();
+            layoutAppWithSidebar();
         }
-    }
-}
-function setSidebarVisibility(){
-    if(Session.get('show_sidebar_panel')){
-        layoutWorkqueuesPageWithPanel();
-    }else{
-        layoutWorkqueuesPageWithoutPanel();
     }
 }
 function toggleButtonVisibility(){
@@ -47,3 +39,31 @@ function toggleButtonVisibility(){
     }
 }
 
+
+
+function setSidebarVisibility(){
+    if(Session.get('is_sidebar_available')){
+        if(Session.get('show_sidebar_panel')){
+            layoutAppWithSidebar();
+        }else{
+            layoutAppWithoutSidebar();
+        }
+    }else{
+        layoutAppWithoutSidebar();
+    }
+}
+function layoutAppWithSidebar() {
+    console.log('layoutAppWithSidebar();');
+
+    $('#mainLayoutPane').removeClass('sidebar-hidden-landscape-layout');
+
+    $('#mainLayoutPane').addClass('sidebar-shown-landscape-layout');
+    $('#mainLayoutPane').css('width', window.innerWidth - 195);
+}
+function layoutAppWithoutSidebar() {
+    console.log('layoutAppWithoutSidebar();');
+    $('#mainLayoutPane').removeClass('sidebar-shown-landscape-layout');
+
+    $('#mainLayoutPane').addClass('sidebar-hidden-landscape-layout');
+    $('#mainLayoutPane').css('width', window.innerWidth);
+}

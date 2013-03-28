@@ -53,23 +53,7 @@ function detectOrientation(){
 }
 
 
-//-----------------------------------------------------
-// LAYOUT FUNCTIONS
 
-
-function layoutWorkqueuesPageWithPanel() {
-    $('#mainLayoutPane').removeClass('sidebar-hidden-landscape-layout');
-
-    $('#mainLayoutPane').addClass('sidebar-shown-landscape-layout');
-    $('#mainLayoutPane').css('width', window.innerWidth - 195);
-}
-function layoutWorkqueuesPageWithoutPanel() {
-    $('#mainLayoutPane').removeClass('sidebar-shown-landscape-layout');
-
-    $('#mainLayoutPane').addClass('sidebar-hidden-landscape-layout');
-    $('#mainLayoutPane').css('width', window.innerWidth);
-
-}
 
 //-----------------------------------------------------
 // LANDSCAPE/PORTRAIT FUNCTIONS

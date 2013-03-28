@@ -3,6 +3,9 @@
 
 
 
+//---------------------------------------------------
+// basic card
+
 .card .panel{
   border: 1px solid #666666;
 }
@@ -89,3 +92,108 @@
   padding-left: 15px;
   padding: right: 15px;
 }
+
+
+//---------------------------------------------------
+// detailed card
+
+
+.horizontal-tags-container{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.lower-horizontal-tags{
+  position: relative;
+  right: 5px;
+  float: right;
+}
+.task-detail-container{
+  .well-behaved;
+  padding: 20px;
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+}
+.task-detail-card{
+  .well-behaved;
+//width: 100%;
+  background-color: #cccccc;
+}
+.task-detail-card-body{
+  .well-behaved;
+
+  background-color: #eeeeee;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  height: 162px;
+  width: 100%;
+}
+.task-detail-tag-footer{
+  .well-behaved;
+  background: #eeeeee;
+  height: 40px;
+  width: 100%;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.task-detail-image-container{
+  .well-behaved;
+
+  position: relative;
+  float: left;
+  height: 200px;
+  border-right: 1px solid gray;
+  cursor:pointer;
+}
+.task-detail-card-image-image{
+  .well-behaved;
+
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding:10px;
+}
+.detailed-task-text{
+  font-size: 24px !important;
+  line-height: 1.5;
+  position: relative;
+  top: 20px;
+  padding-left: 220px;
+}
+.detailed-task-card-modal-mask{
+  background-color: orange;
+  position: absolute;
+  left: -20px;
+  width: 120%;
+  height: 500px;
+  padding-left: 10px;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+.detailed-task-card-modal-mask-gradient{
+//background-color: blue;
+  position: absolute;
+  left: -20px;
+  width: 120%;
+  height: 20px;
+  margin-top: -20px;
+
+  background: -webkit-gradient(linear,
+  right top,
+  left top,
+  color-stop(0, rgba(255, 255, 255, 1)),
+  color-stop(1, rgba(255, 255, 255, 0)));
+  background: -ms-linear-gradient(bottom,
+  rgba(255, 255, 255, 1),
+  rgba(255, 255, 255, 0));
+  background: -moz-linear-gradient(center bottom,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(255, 255, 255, 0) 100%);
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",#00f2f2f2,#FFf2f2f2));
+
+}
+

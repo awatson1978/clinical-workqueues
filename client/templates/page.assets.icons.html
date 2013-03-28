@@ -1,11 +1,12 @@
 <template name="iconAssetsPageTemplate">
     <div id="iconAssetsPage" class="page">
+        <div class="spacer row"></div>
         <div class="row">
             <div id="snomed-anatomy-list">
                 <input type="text" class="search" placeholder="filter {{snomed_count}} records" />
                 <ul class="anatomy-images list">
-                    {{#each snomed_reference}}
-                    {{> anatomyItemTemplate}}
+                    {{#each icon_list}}
+                    {{> iconAssetTemplate}}
                     {{/each}}
                 </ul>
             </div>
@@ -15,9 +16,9 @@
 
 
 
-<template name="anatomyItemTemplate">
-    <li class="two column anatomy-item with-rounded-corners">
-        <div class="hidden anatomy-name">{{anatomy_image}}</div>
-        <img src="{{anatomy_image}}">
+<template name="iconAssetTemplate">
+    <li class="two column icon-item with-rounded-corners">
+        <div class="hidden icon-name">{{icon_image}}</div>
+        <img class="panel gray-border with-rounded-corners" src="{{icon_image}}">
     </li>
 </template>

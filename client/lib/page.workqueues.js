@@ -1,31 +1,43 @@
-////////// Todos //////////
+
+//--------------------------------------------------------------------------
+// LAYOUT FUNCTIONS
 
 
 
-Template.workqueuesPageTemplate.resized = function(){
-    if(window.innerWidth < 800){
-        //layoutWorkqueuesPageWithoutPanel();
-        if(Session.get('show_sidebar_panel')){
+
+function layoutWorkqueuesPage() {
+    console.log('layoutworkquesPage()');
+
+    if (window.innerWidth > 768) {
+        if (Session.get('show_sidebar_panel')) {
             $('#mainLayoutPane').css('width', window.innerWidth - 195);
-        }else{
+            $('#taskDetailCardBody').css('width', window.innerWidth - 235);
+            $('#taskDetailTagFooter').css('width', window.innerWidth - 235);
+        } else {
             $('#mainLayoutPane').css('width', window.innerWidth);
+            $('#taskDetailCardBody').css('width', window.innerWidth - 40);
+            $('#taskDetailTagFooter').css('width', window.innerWidth - 40);
         }
-    }else if(window.innerWidth < 480){
-        //layoutWorkqueuesPageWithPanel();
-        if(Session.get('show_sidebar_panel')){
-            $('#mainLayoutPane').css('width', window.innerWidth - 195);
-        }else{
-            $('#mainLayoutPane').css('width', window.innerWidth);
-        }
-    }else{
-        //layoutWorkqueuesPageWithPanel();
-        if(Session.get('show_sidebar_panel')){
-            $('#mainLayoutPane').css('width', window.innerWidth);
-        }else{
-            $('#mainLayoutPane').css('width', window.innerWidth);
-        }
+    } else if (window.innerWidth < 768) {
+        $('#mainLayoutPane').css('width', window.innerWidth);
+        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
+        $('#taskDetailTagFooter').css('width', window.innerWidth - 40);
+    } else if (window.innerWidth < 480) {
+        $('#mainLayoutPane').css('width', window.innerWidth);
+        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
+        $('#taskDetailTagFooter').css('width', window.innerWidth - 40);
     }
+}
+Template.workqueuesPageTemplate.rendered = function(){
+    console.log('Template.workqueuesPageTemplate.rendered');
+    layoutWorkqueuesPage();
+};
+Template.workqueuesPageTemplate.resized = function(){
+
+    setSidebarVisibility();
+    layoutWorkqueuesPage();
     return Session.get("resized");
+    //Meteor.flush();
 };
 Template.workqueuesPageTemplate.events({
     'click #newTaskInput': function(evt,tmpl){
@@ -35,29 +47,6 @@ Template.workqueuesPageTemplate.events({
         }
     }
 });
-Template.taskDetailCardTemplate.events({
-    'click .user-card-image': function(evt,tmpl){
-        alert('click!');
-    }
-});
-
-//----------------------------------------------------------------------
-Template.todos.receivedNewAlert = function(){
-    return monitorDropbox();
-};
-
-Template.todos.any_list_selected = function () {
-   try{
-       if(Session.equals('list_id', undefined)){
-           return false;
-       }else{
-           return !Session.equals('list_id', null);
-       };
-   }catch(err){
-
-   }
-};
-
 Template.workqueuesPageTemplate.events(okCancelEvents(
     '#newTaskInput',
     {
@@ -109,6 +98,30 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
 );
 
 
+
+
+
+//----------------------------------------------------------------------
+
+Template.todos.receivedNewAlert = function(){
+    return monitorDropbox();
+};
+
+Template.todos.any_list_selected = function () {
+   try{
+       if(Session.equals('list_id', undefined)){
+           return false;
+       }else{
+           return !Session.equals('list_id', null);
+       };
+   }catch(err){
+
+   }
+};
+
+
+
+
 Template.todos.todos = function () {
     // Determine which todos to display in main pane,
     // selected based on list_id and tag_filter.
@@ -142,6 +155,9 @@ Template.todo_item.tag_objs = function () {
         console.log(error);
     }
 };
+Template.todo_item.adding_tag = function () {
+    return Session.equals('editing_addtag', this._id);
+};
 
 Template.todo_item.done_class = function () {
     try{
@@ -163,9 +179,7 @@ Template.todo_item.editing = function () {
     return Session.equals('editing_itemname', this._id);
 };
 
-Template.todo_item.adding_tag = function () {
-    return Session.equals('editing_addtag', this._id);
-};
+
 
 Template.todo_item.events({
     'click .todo': function(){
@@ -173,6 +187,9 @@ Template.todo_item.events({
         Session.set('selected_task_id', this._id);
         Session.set('selected_task_done_status', this.done);
         Session.set('selected_task_text', this.text);
+        //alert(JSON.stringify(this));
+        Session.set('json_content', JSON.stringify(this));
+
         if(!Session.get('show_task_detail_panel')){
             Session.set('show_task_detail_panel', true);
         }
@@ -254,22 +271,90 @@ function sendToActiveCollaborator() {
         catch_error("sendToActiveCollaborator()", err, LogLevel.Error, this);
     }
 }
+
+
+
+//----------------------------------------------------------------------
+
+
+Template.taskDetailCardTemplate.tag_list = function () {
+    //console.log('*-----------------------------------------------------');
+    //console.log('selected_task_id: ' + Session.get('selected_task_id'));
+
+    try{
+        //var todo_id = Session.get('selected_task_id');
+        var selectedTodo = Todos.findOne(Session.get('selected_task_id'));
+        //console.log('selectedTodo: ' + JSON.stringify(selectedTodo));
+        return _.map(selectedTodo.tags || [], function (tag) {
+            return {todo_id: Session.get('selected_task_id'), tag: tag};
+        });
+    }catch(error){
+        console.log(error);
+    }
+};
+Template.taskDetailCardTemplate.adding_detailed_tag = function () {
+    return Session.equals('editing_addtag', Session.get('selected_task_id'));
+};
+
+
 Template.taskDetailCardTemplate.events({
+    'click .task-detail-image-container': function(evt,tmpl){
+        Session.set('is_modal_dialog', true);
+        Session.set('pre_modal_sidebar_panel_state', Session.get('show_sidebar_panel'));
+        Session.set('show_sidebar_panel',false);
+        Session.set('pre_modal_page', '#workqueuesPage');
+        showPage('#iconAssetsPage');
+    },
     'click .send-to-collaborator':function(evt,tmpl){
         sendToActiveCollaborator();
+    },
+    'click #detailedTaskAddTagIcon': function (evt) {
+        //alert('foo');
+        Session.set('editing_addtag', Session.get('selected_task_id'));
+        Meteor.flush();
+        //activateInput(tmpl.find('#edittagInputDetailed'));
+
+        $('#edittagInputDetailed').focus();
+        $('#edittagInputDetailed').select();
+    },
+    'click .remove': function (evt) {
+        var tag = this.tag;
+        var id = this.todo_id;
+
+        evt.target.parentNode.style.opacity = 0;
+        // wait for CSS animation to finish
+        Meteor.setTimeout(function () {
+            Todos.update({_id: id}, {$pull: {tags: tag}});
+        }, 300);
     }
 });
+Template.taskDetailCardTemplate.events(okCancelEvents(
+    '#edittagInputDetailed',
+    {
+        ok: function (value) {
+            Todos.update(Session.get('selected_task_id'), {$addToSet: {tags: value}});
+            Session.set('editing_addtag', null);
+        },
+        cancel: function () {
+            Session.set('editing_addtag', null);
+        }
+}));
+
+
+
 Template.taskDetailCardTemplate.rendered = function(){
 
     if(Session.get('show_sidebar_panel')){
-        $('#taskDetailCard').css('width', window.innerWidth - 237);
+        //$('#taskDetailCard').css('width', window.innerWidth - 237);
 
-        //$('#taskDetailCard').css('width', window.innerWidth - 240);
-        $('#taskDetailCard').css('left', 197);
+        $('#taskDetailCardBody').css('width', window.innerWidth - 240);
+        $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
+        //$('#taskDetailCard').css('left', 197);
     }else{
-        $('#taskDetailCard').css('width', window.innerWidth);
-        //$('#taskDetailCard').css('width', window.innerWidth - 40);
-        $('#taskDetailCard').css('left', 0);
+        //$('#taskDetailCard').css('width', window.innerWidth);
+        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
+        $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
+        //$('#taskDetailCard').css('left', 0);
     }
 
 //    $("#taskDetailCard").bind("swipeleft", function(){
@@ -311,7 +396,14 @@ Template.taskDetailCardTemplate.todo_done = function(){
     return Session.get('selected_task_done_status') ? 'checked="checked"' : '';
 };
 Template.taskDetailCardTemplate.todo_image = function(){
-    return '/images/placeholder-240x240.gif';
+    //Todos.findOne(Session.get('selected_task_id'), {$set: { image: this.image }});
+
+    var foo = Todos.findOne(Session.get('selected_task_id'));
+    if(foo.image){
+        return foo.image;
+    }else{
+        return '/images/placeholder-240x240.gif';
+    }
 };
 Template.taskDetailCardTemplate.tag_objs = function(){
     return _.map(this.tags || [], function (tag) {

@@ -3,6 +3,7 @@ Todos =     new Meteor.Collection("todos");
 Lists =     new Meteor.Collection("lists");
 usersDirectory =     new Meteor.Collection("usersDirectory");
 Hipaa =     new Meteor.Collection("hipaa");
+CategoryIcons = new Meteor.Collection("categoryIcons");
 
 // TODO:  refactor usersDirector to UsersDirectory
 

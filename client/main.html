@@ -19,7 +19,10 @@
                 <img class="pentasyllabicLogo" src="/images/pentasyllabic.logo.square.transparent.png">
             </li>
             <li><a id="appTitle"  href="#">clinical-workqueues.herokuapp.com</a></li>
-            <li style="position: fixed; right: 0px;"><a href="#">{{loginButtons align="right"}}</a></li>
+        </ul>
+        <ul class="nav-bar header-nav-bar-right">
+            <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">k  </span>My Profile</a></li>
+            <li><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
 </template>
@@ -31,7 +34,6 @@
             <!--<li><a href="#" onclick='showPage("#dashboardPage");'><span class="pictographs">3  </span>Dashboard</a></li>-->
             <li><a href="#" onclick='showPage("#workqueuesPage");'><span class="pictographs">4  </span>Workqueues</a></li>
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">g  </span>Community</a></li>
-            <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="pictographs">k  </span>My Profile</a></li>
 
             <!--<li><a href="#" onclick='showPage("#dropboxPage");'><span class="pictographs">m  </span>Dropbox</a></li>-->
             <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
