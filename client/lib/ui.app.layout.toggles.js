@@ -9,15 +9,17 @@ function toggleJsonPanel(){
         Session.set('display_profile_json_panel',true);
     }
 }
-function toggleTaskDetailPanel(){
-    if(Session.get('show_task_detail_panel')){
-        Session.set('show_task_detail_panel',false);
-        $('#new-todo-box').removeClass('hidden');
+function toggleButtonVisibility(){
+    if(Session.get('show_button_tiles')){
+        Session.set('show_button_tiles',false);
     }else{
-        Session.set('show_task_detail_panel',true);
-        $('#new-todo-box').addClass('hidden');
+        Session.set('show_button_tiles',true);
     }
 }
+
+//--------------------------------------------------------------
+
+
 function toggleSidebarVisibility(){
     // we don't want to display the sidebar on narrow pages
     // there just isn't enough room
@@ -31,16 +33,6 @@ function toggleSidebarVisibility(){
         }
     }
 }
-function toggleButtonVisibility(){
-    if(Session.get('show_button_tiles')){
-        Session.set('show_button_tiles',false);
-    }else{
-        Session.set('show_button_tiles',true);
-    }
-}
-
-
-
 function setSidebarVisibility(){
     if(Session.get('is_sidebar_available')){
         if(Session.get('show_sidebar_panel')){
@@ -66,4 +58,31 @@ function layoutAppWithoutSidebar() {
 
     $('#mainLayoutPane').addClass('sidebar-hidden-landscape-layout');
     $('#mainLayoutPane').css('width', window.innerWidth);
+}
+
+//--------------------------------------------------------------
+
+function toggleTaskDetailPanel(){
+    if(Session.get('show_task_detail_panel')){
+        Session.set('show_task_detail_panel', false);
+        layoutAppWithoutDetailedTask();
+    }else{
+        Session.set('show_task_detail_panel', true);
+        layoutAppWithDetailedTask();
+    }
+}
+function setTaskDetailVisibility(){
+    if(Session.get('show_task_detail_panel')){
+        layoutAppWithDetailedTask();
+    }else{
+        layoutAppWithoutDetailedTask();
+    }
+}
+function layoutAppWithDetailedTask(){
+    $('#new-todo-box').removeClass('hidden');
+    $('#items-view').css('padding-bottom','260px');
+}
+function layoutAppWithoutDetailedTask(){
+    $('#new-todo-box').addClass('hidden');
+    $('#items-view').css('padding-bottom','0px');
 }

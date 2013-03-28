@@ -119,6 +119,7 @@
   .well-behaved;
 //width: 100%;
   background-color: #cccccc;
+  z-index: 1000;
 }
 .task-detail-card-body{
   .well-behaved;
@@ -129,6 +130,7 @@
   border-top: 1px solid gray;
   height: 162px;
   width: 100%;
+  z-index: 1000;
 }
 .task-detail-tag-footer{
   .well-behaved;
@@ -165,14 +167,15 @@
   padding-left: 220px;
 }
 .detailed-task-card-modal-mask{
-  background-color: orange;
+  background-color: white;
   position: absolute;
   left: -20px;
+
   width: 120%;
   height: 500px;
   padding-left: 10px;
-  margin-top: 20px;
-  opacity: 0.5;
+  opacity: 1;
+  z-index: -1;
 }
 .detailed-task-card-modal-mask-gradient{
 //background-color: blue;
@@ -183,7 +186,7 @@
   margin-top: -20px;
 
   background: -webkit-gradient(linear,
-  right top,
+  left bottom,
   left top,
   color-stop(0, rgba(255, 255, 255, 1)),
   color-stop(1, rgba(255, 255, 255, 0)));

@@ -1,8 +1,4 @@
 
-
-
-
-
 // navigation variables
 //Session.set('list_id', null);
 Session.set('current_page', '#workqueuesPage');

@@ -76,9 +76,11 @@
     {{#if showTaskDetail}}
     <div class="spacer row"></div>
     <div id="taskDetailCard" class="task-detail-container">
-        <div class="detailed-task-card-modal-mask-gradient"></div>
-        <!--<div class="task-detail-card"><div>-->
-        <!--</div>-->
+        {{#if showTaskDetailModalMask }}
+            <div class="detailed-task-card-modal-mask-gradient"></div>
+            <div class="detailed-task-card-modal-mask"></div>
+        {{/if }}
+
         <div class="card-header rounded-top-right">
             <span class="white card-meta-data barcode">{{todo_id}}</span>
         </div>

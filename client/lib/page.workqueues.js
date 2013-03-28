@@ -193,6 +193,7 @@ Template.todo_item.events({
         if(!Session.get('show_task_detail_panel')){
             Session.set('show_task_detail_panel', true);
         }
+        setTaskDetailVisibility();
     },
     'dblclick .todo': function(){
         //toggleTaskDetailPanel();
@@ -385,6 +386,9 @@ Template.taskDetailCardTemplate.rendered = function(){
 };
 Template.taskDetailCardTemplate.showTaskDetail = function(){
     return Session.get('show_task_detail_panel');
+};
+Template.taskDetailCardTemplate.showTaskDetailModalMask = function(){
+    return true;
 };
 Template.taskDetailCardTemplate.todo_id = function(){
     return Session.get('selected_task_id');
