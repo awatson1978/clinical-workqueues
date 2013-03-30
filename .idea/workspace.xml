@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.sidebar.js" afterPath="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,19 +33,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="pages.workqueues.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="pages.workqueues.less" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="220" column="3" selection-start="3967" selection-end="3967" vertical-scroll-proportion="-21.5">
+                <state line="220" column="3" selection-start="3967" selection-end="3967" vertical-scroll-proportion="0.67155427">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.workqueues.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="page.workqueues.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="48" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.82364154">
+                <state line="41" column="40" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -73,10 +73,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ui.app.layout.toggles.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ui.app.layout.toggles.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="30" selection-start="718" selection-end="718" vertical-scroll-proportion="0.37664783">
+                <state line="39" column="14" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ui.sidebar.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="6" selection-start="785" selection-end="785" vertical-scroll-proportion="0.38131553">
                   <folding />
                 </state>
               </provider>
@@ -100,7 +109,6 @@
         <option value="$PROJECT_DIR$/client/templates/page.guest.html" />
         <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
-        <option value="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
         <option value="$PROJECT_DIR$/client/lib/page.assets.icons.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.assets.icons.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/app.core.less" />
@@ -113,6 +121,7 @@
         <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
+        <option value="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
       </list>
     </option>
   </component>
@@ -467,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="27" selection-start="858" selection-end="858" vertical-scroll-proportion="0.42270058">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.assets.icons.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="925" selection-end="925" vertical-scroll-proportion="0.37573385">
@@ -523,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="3" selection-start="3967" selection-end="3967" vertical-scroll-proportion="-21.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="40" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.39171374">
@@ -544,13 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="48" selection-start="2020" selection-end="2020" vertical-scroll-proportion="0.82364154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="5" selection-start="2903" selection-end="2903" vertical-scroll-proportion="0.0">
@@ -558,9 +546,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="40" selection-start="1579" selection-end="1579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="3" selection-start="3967" selection-end="3967" vertical-scroll-proportion="0.67155427">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="30" selection-start="718" selection-end="718" vertical-scroll-proportion="0.37664783">
+        <state line="39" column="14" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="6" selection-start="785" selection-end="785" vertical-scroll-proportion="0.38131553">
           <folding />
         </state>
       </provider>

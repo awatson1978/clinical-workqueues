@@ -1,7 +1,7 @@
 
 Template.sidebarTemplate.sidebarIsVisible = function(){
     //if(Session.get('is_sidebar_available')){
-        if(Session.get('appWidth') > 768){
+        if(Session.get('appWidth') > 767){
             return Session.get('show_sidebar_panel');
         }else{
             //layoutWorkqueuesPageWithPanel();
