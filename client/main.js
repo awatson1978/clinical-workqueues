@@ -79,7 +79,7 @@ Template.app_container.rendered = function(){
 
 
 function setSidebarAvailability() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 767) {
         Session.set('is_sidebar_available', false);
     }
 }

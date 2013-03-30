@@ -8,7 +8,7 @@
 function layoutWorkqueuesPage() {
     console.log('layoutworkquesPage()');
 
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 767) {
         if (Session.get('show_sidebar_panel')) {
             $('#mainLayoutPane').css('width', window.innerWidth - 195);
             $('.card-body-resize').css('width', window.innerWidth - 235);
@@ -18,7 +18,7 @@ function layoutWorkqueuesPage() {
             $('.card-body-resize').css('width', window.innerWidth - 40);
             $('.card-footer-resize').css('width', window.innerWidth - 40);
         }
-    } else if (window.innerWidth < 768) {
+    } else if (window.innerWidth < 767) {
         $('#mainLayoutPane').css('width', window.innerWidth);
         $('.card-body-resize').css('width', window.innerWidth - 40);
         $('.card-footer-resize').css('width', window.innerWidth - 40);
