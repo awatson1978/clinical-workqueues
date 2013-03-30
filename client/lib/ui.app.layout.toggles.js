@@ -23,7 +23,7 @@ function toggleButtonVisibility(){
 function toggleSidebarVisibility(){
     // we don't want to display the sidebar on narrow pages
     // there just isn't enough room
-    if(window.innerWidth > 768){
+    if(window.innerWidth > 767){
         if(Session.get('show_sidebar_panel')){
             Session.set('show_sidebar_panel',false);
             layoutAppWithoutSidebar();
