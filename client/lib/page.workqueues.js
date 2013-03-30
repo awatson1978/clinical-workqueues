@@ -11,21 +11,21 @@ function layoutWorkqueuesPage() {
     if (window.innerWidth > 768) {
         if (Session.get('show_sidebar_panel')) {
             $('#mainLayoutPane').css('width', window.innerWidth - 195);
-            $('#taskDetailCardBody').css('width', window.innerWidth - 235);
-            $('#taskDetailTagFooter').css('width', window.innerWidth - 235);
+            $('.card-body-resize').css('width', window.innerWidth - 235);
+            $('.card-footer-resize').css('width', window.innerWidth - 235);
         } else {
             $('#mainLayoutPane').css('width', window.innerWidth);
-            $('#taskDetailCardBody').css('width', window.innerWidth - 40);
-            $('#taskDetailTagFooter').css('width', window.innerWidth - 40);
+            $('.card-body-resize').css('width', window.innerWidth - 40);
+            $('.card-footer-resize').css('width', window.innerWidth - 40);
         }
     } else if (window.innerWidth < 768) {
         $('#mainLayoutPane').css('width', window.innerWidth);
-        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
-        $('#taskDetailTagFooter').css('width', window.innerWidth - 40);
+        $('.card-body-resize').css('width', window.innerWidth - 40);
+        $('.card-footer-resize').css('width', window.innerWidth - 40);
     } else if (window.innerWidth < 480) {
         $('#mainLayoutPane').css('width', window.innerWidth);
-        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
-        $('#taskDetailTagFooter').css('width', window.innerWidth - 40);
+        $('.card-body-resize').css('width', window.innerWidth - 40);
+        $('.card-footer-resize').css('width', window.innerWidth - 40);
     }
 }
 Template.workqueuesPageTemplate.rendered = function(){

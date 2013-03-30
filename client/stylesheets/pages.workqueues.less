@@ -1,22 +1,66 @@
 
 
 
-#item-list .todo {
-    display: block;
-    height: 50px;
-    position: relative;
-    overflow: hidden;
-    border-top: 1px solid #ccc;
-    cursor: pointer;
+
+//#item-list .todo .destroy {
+//    cursor: pointer;
+//    position: absolute;
+//    right: 12px;
+//    top: 15px;
+//    height: 20px;
+//    width: 20px;
+//}
+//#todo-input {
+//  width: 500px;
+//  position: relative;
+//  margin-top: -10px;
+//}
+//#item-list .done .todo-text {
+//  text-decoration: line-through;
+//  color: #999;
+//}
+//#item-list .todo .item-tags .tag {
+//  margin-top: 15px;
+//}
+//
+//#item-list .todo .item-tags .removable_tag {
+//  padding-right: 22px;
+//}
+//
+//#item-list .todo .item-tags .tag .remove {
+//  position: absolute;
+//  top: 0;
+//  right: 4px;
+//  bottom: 0;
+//  width: 16px;
+//  background: url("/close_16.png") no-repeat 0 center;
+//}
+//#item-list .todo .edit input {
+//  margin-left: 35px;
+//  maring-top: 5px;
+//}
+
+
+//------------------------------------------------------
+
+
+
+
+
+#item-list .todo .item-tags {
+  overflow: auto;
+  float: right;
+  margin-right: 40px;
+  margin-top: -7px;
 }
 
-#item-list .todo .destroy {
-    cursor: pointer;
-    position: absolute;
-    right: 12px;
-    top: 15px;
-    height: 20px;
-    width: 20px;
+#item-list .todo {
+  display: block;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  cursor: pointer;
 }
 
 #item-list .todo .display, #item-list .todo .edit {
@@ -28,16 +72,8 @@
     line-height: 1;
 }
 
-#todo-input {
-    width: 500px;
-    position: relative;
-    margin-top: -10px;
-}
 
-#item-list .done .todo-text {
-    text-decoration: line-through;
-    color: #999;
-}
+
 
 #item-list .todo:hover .destroy {
     background: url('/destroy.png') no-repeat 0 0;
@@ -49,29 +85,7 @@
   z-index: 1000;
 }
 
-#item-list .todo .item-tags {
-    overflow: auto;
-    float: right;
-    margin-right: 40px;
-    margin-top: -7px;
-}
 
-#item-list .todo .item-tags .tag {
-    margin-top: 15px;
-}
-
-#item-list .todo .item-tags .removable_tag {
-    padding-right: 22px;
-}
-
-#item-list .todo .item-tags .tag .remove {
-    position: absolute;
-    top: 0;
-    right: 4px;
-    bottom: 0;
-    width: 16px;
-    background: url("/close_16.png") no-repeat 0 center;
-}
 
 #item-list .todo .item-tags .tag .remove:hover {
     background-position: -16px center;
@@ -95,17 +109,14 @@
     height: 16px;
 }
 
-#item-list .todo .edit input {
-    margin-left: 35px;
-    maring-top: 5px;
-}
 
-#edittag-input {
-    width: 80px;
-    height: 27px !important;
-    padding: 0px;
-    margin: 0px;
-}
+
+//#edittag-input {
+//    width: 80px;
+//    height: 27px !important;
+//    padding: 0px;
+//    margin: 0px;
+//}
 
 //--------------------------------
 
@@ -115,36 +126,36 @@
   right: 5px;
   background-color: white;
 }
-.bookend-right{
-  position: absolute;
-  background: white;
-  width: 40px;
-  height: 30px;
-  right: 0px;
-  top: 10px;
-  z-index: 100;
-}
-.bookend-left{
-  position: absolute;
-  top: 0px;
-  left: -20px;
-  height: 35px;
-  width: 20px;
-  z-index: 0;
-
-  background: -webkit-gradient(linear,
-  right top,
-  left top,
-  color-stop(0, rgba(255, 255, 255, 1)),
-  color-stop(1, rgba(255, 255, 255, 0)));
-  background: -ms-linear-gradient(bottom,
-  rgba(255, 255, 255, 1),
-  rgba(255, 255, 255, 0));
-  background: -moz-linear-gradient(center bottom,
-  rgba(255, 255, 255, 1) 0%,
-  rgba(255, 255, 255, 0) 100%);
-  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",#00f2f2f2,#FFf2f2f2));
-}
+//.bookend-right{
+//  position: absolute;
+//  background: white;
+//  width: 40px;
+//  height: 30px;
+//  right: 0px;
+//  top: 10px;
+//  z-index: 100;
+//}
+//.bookend-left{
+//  position: absolute;
+//  top: 0px;
+//  left: -20px;
+//  height: 35px;
+//  width: 20px;
+//  z-index: 0;
+//
+//  background: -webkit-gradient(linear,
+//  right top,
+//  left top,
+//  color-stop(0, rgba(255, 255, 255, 1)),
+//  color-stop(1, rgba(255, 255, 255, 0)));
+//  background: -ms-linear-gradient(bottom,
+//  rgba(255, 255, 255, 1),
+//  rgba(255, 255, 255, 0));
+//  background: -moz-linear-gradient(center bottom,
+//  rgba(255, 255, 255, 1) 0%,
+//  rgba(255, 255, 255, 0) 100%);
+//  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",#00f2f2f2,#FFf2f2f2));
+//}
 
 
 
@@ -156,12 +167,15 @@
 //---------------------------------------------
 // page specific elements
 
-#edittagInputDetailed{
-  margin: 0 0 0 0 !important;
-  padding: 6px !important;
-  height: 27px !important;
-}
+//#edittagInputDetailed{
+//  margin: 0 0 0 0 !important;
+//  padding: 6px !important;
+//  height: 27px !important;
+//}
 
+.new-task-container{
+
+}
 
 //---------------------------------------------
 
@@ -179,7 +193,7 @@
 }
 
 //portrait orientation
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
   #mainLayoutPane{
     .sidebar-shown-portrait-layout;
   }
@@ -187,12 +201,6 @@
     #items-view {
       margin-top: 54px;
       margin-left: 5px;
-    }
-    .new-task-container{
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-top: 20px;
-      margin-bottom: 10px;
     }
     .new-task-container{
       position: fixed;
@@ -204,6 +212,7 @@
       padding: 10px;
       color: gray;
       z-index: 10000;
+
       margin-left: 0px;
       margin-right: 5px;
       margin-top: 0px;
@@ -217,17 +226,17 @@
     //left: 0px !important;
     //width: 100% !important;
   }
-  .container{
-    .columns{
-      width: 50% !important!;
-    }
-  }
+//  .container{
+//    .columns{
+//      width: 50% !important!;
+//    }
+//  }
   #sidebarPane{
     padding-top: 45px;
   }
 }
 // landscape orientation
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #mainLayoutPane{
     .sidebar-shown-landscape-layout;
   }
@@ -249,7 +258,6 @@
 }
 .sidebar-shown-portrait-layout{
   left:0;
-  //width: 100%;
 }
 .sidebar-hidden-landscape-layout{
   left:0 !important;

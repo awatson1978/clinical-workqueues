@@ -6,7 +6,11 @@ function detectOrientation(){
 
     if(typeof window.onorientationchange != 'undefined'){
         if ( window.orientation == 0 ) {
-            if(Session.equals('current_page', "#communityPage")){
+            if(Session.equals('current_page', "#workqueuesPage")){
+                //$('.new-task-container').css('margin-left','0');
+                //$('.new-task-container').css('margin-top','0');
+            }
+            else if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
             else if(Session.equals('current_page', "#profilePage")){
@@ -39,7 +43,11 @@ function detectOrientation(){
             }
         }
         else if ( window.orientation == 180 ) {
-            if(Session.equals('current_page', "#communityPage")){
+            if(Session.equals('current_page', "#workqueuesPage")){
+                //$('.new-task-container').css('margin-left','0');
+                //$('.new-task-container').css('margin-top','0');
+            }
+            else if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
             else if(Session.equals('current_page', "#profilePage")){

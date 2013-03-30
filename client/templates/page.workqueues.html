@@ -85,14 +85,14 @@
             <span class="white card-meta-data barcode">{{todo_id}}</span>
         </div>
 
-        <div id="taskDetailCardBody" class="task-detail-card-body">
+        <div class="task-detail-card-body card-body-resize">
             <!--<div class="absolute-anchor">-->
                 <div class="task-detail-image-container"><img class="task-detail-card-image-image" src="{{todo_image}}" /></div>
                 <div class="detailed-task-text">{{ todo_text }}</div>
                 <div class="horizontal-tags-container">
                 </div>
         </div>
-        <div id="taskDetailTagFooter" class="task-detail-tag-footer">
+        <div class="task-detail-tag-footer card-footer-resize">
             <ul class="lower-horizontal-tags">
                 <!--<li class="bookend-left"></li>-->
                 {{#each tag_list}}
