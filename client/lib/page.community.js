@@ -45,14 +45,15 @@ Template.communityPageTemplate.events({
 Template.communityPageTemplate.communityUsers = function () {
         return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
 };
-Template.communityInspectionColumn.showQuickViewPanel = function () {
-    log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace, this);
-    return Session.get('show_quick_view_panel');
-};
-
 Template.communityPageTemplate.user_count = function () {
     log_event('Template.communityPageTemplate.user_count', LogLevel.Trace, this);
     return Meteor.users.find().count();
+};
+
+
+Template.communityInspectionColumn.showQuickViewPanel = function () {
+    log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace, this);
+    return Session.get('show_quick_view_panel');
 };
 
 

@@ -55,6 +55,9 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
             var tag = Session.get('tag_filter');
             console.log('tags: ' + tag);
 
+            var book = {};
+            book.foo = "test";
+
 //            Todos.insert({
 //                text: text,
 //                list_id: Session.get('list_id'),
@@ -69,7 +72,8 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
                 console.log('owner: ' + Meteor.userId());
 
                 Meteor.call('createQuestion', {
-                    text: text,
+                    //text: text,
+                    text: book.foo,
                     list_id: Session.get('list_id'),
                     done: false,
                     timestamp: (new Date()).getTime(),
@@ -120,7 +124,13 @@ Template.todos.any_list_selected = function () {
 };
 
 
-
+Template.todo_item.showDeleteButton = function(){
+  if(Session.get('selected_task__delete_id') == this._id){
+      return true;
+  }else{
+      return false;
+  }
+};
 
 Template.todos.todos = function () {
     // Determine which todos to display in main pane,
@@ -182,9 +192,19 @@ Template.todo_item.editing = function () {
 
 
 Template.todo_item.events({
+    'touchstart':function(eventHandler){
+        Session.set('swipe_start', eventHandler.touches[0].pageX);
+    },
+    'touchend':function(eventHandler){
+        //alert(Math.abs(Session.get('swipe_start') - eventHandler.pageX));
+        //alert((Math.abs(Session.get('swipe_start') - eventHandler.pageX) > 100));
+
+        if(Math.abs((Session.get('swipe_start') - eventHandler.pageX)) > 100){
+            Session.set('selected_task__delete_id', this._id);
+        }
+    },
     'click .todo': function(){
         //toggleTaskDetailPanel();
-        Session.set('selected_task_id', this._id);
         Session.set('selected_task_done_status', this.done);
         Session.set('selected_task_text', this.text);
         //alert(JSON.stringify(this));
@@ -192,6 +212,9 @@ Template.todo_item.events({
 
         if(!Session.get('show_task_detail_panel')){
             Session.set('show_task_detail_panel', true);
+        }
+        if(Session.get('selected_task__delete_id') != null){
+            Session.set('selected_task__delete_id',null);
         }
         setTaskDetailVisibility();
     },
@@ -202,17 +225,17 @@ Template.todo_item.events({
     'click .check': function () {
         Todos.update(this._id, {$set: {done: !this.done}});
     },
-
     'click .destroy': function () {
         Todos.remove(this._id);
     },
-
+    'click .delete-button': function () {
+        Todos.remove(this._id);
+    },
     'click .addtag': function (evt, tmpl) {
         Session.set('editing_addtag', this._id);
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#edittag-input"));
     },
-
     'dblclick .display .todo-text': function (evt, tmpl) {
         Session.set('editing_itemname', this._id);
         Meteor.flush(); // update DOM before focus

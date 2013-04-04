@@ -57,7 +57,8 @@ Template.userCardTemplate.events(
                 Session.set('editing_profile_carewatch_members', "false");
             }
         })
-);Template.userCardTemplate.events(
+);
+Template.userCardTemplate.events(
     okCancelEvents('#userCollaboratorsInput',
         {
             ok: function (value) {
@@ -109,7 +110,6 @@ Template.userCardTemplate.events(
                 log_event('userNameInput - ok', LogLevel.Trace, this);
                 Meteor.users.update(Meteor.userId(), {$set: { 'profile.name': value }});
                 Session.set('editing_profile_name', "false");
-                //Meteor.flush(); // update DOM before focus
             },
             cancel: function () {
                 log_event('userNameInput - cancel', LogLevel.Trace, this);
@@ -433,3 +433,6 @@ Template.hipaaLog.hipaaAuditSize = function () {
 Template.hipaaEntry.entry_timestamp = function(){
     return new Date(this.timestamp).format("yyyy, mmm d, ddd, HH:MM Z");
 }
+
+
+

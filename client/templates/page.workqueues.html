@@ -48,23 +48,32 @@
 
             </li>
         </ul>
-        <ul class="horizontal-tags">
-            <!--<li class="bookend-left"></li>-->
-            {{#each tag_objs}}
-            <li class="tag removable_tag">
-                <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
-
-            </li>
-            {{/each}}
-            {{#if adding_tag}}
-            <li class="tag edittag">
-                <input type="text" id="edittag-input" value="" />
-            </li>
-            {{else}}
-            <li class="largish addtag pictograph">J</li>
-            {{/if}}
-        </ul>
-        <!--<div class="bookend-right"></li>-->
+        {{#if showDeleteButton}}
+            <ul class="horizontal-tags">
+                <li class="delete-button removable_tag tag">
+                    <div class="name">
+                        Delete
+                    </div>
+                </li>
+                <li class="largish addtag pictograph"> </li>
+            </ul>
+        {{else}}
+            <ul class="horizontal-tags">
+                <!--<li class="bookend-left"></li>-->
+                {{#each tag_objs}}
+                <li class="tag removable_tag">
+                    <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
+                </li>
+                {{/each}}
+                {{#if adding_tag}}
+                <li class="tag edittag">
+                    <input type="text" id="edittag-input" value="" />
+                </li>
+                {{else}}
+                <li class="largish addtag pictograph">J</li>
+                {{/if}}
+            </ul>
+        {{/if }}
     </li>
 </template>
 

@@ -25,7 +25,6 @@
                         <a class="list-name {{name_class}}" href="/{{_id}}">
                             {{name}}
                         </a>
-                        <!--<p class="list-count">{{count}}</p>-->
                     </div>
                     {{/if}}
                 </div>
@@ -48,12 +47,10 @@
     <div id="tagTiles">
         <hr style="border: 1px solid lightgray;">
         <div id="tag-filter" class="tag-list">
-            <!--<div class="label">Show:</div>-->
             {{#each tags}}
             <div class="sidebar-tab {{selected}}">
                 {{tag_text}} <span class="count">({{count}})</span>
             </div>
-            <!--<div class="sidebar-tab-accent"></div>-->
             {{/each}}
         </div>
     </div>
