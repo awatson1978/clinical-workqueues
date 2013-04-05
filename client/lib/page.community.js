@@ -263,7 +263,7 @@ Template.userItemTemplate.userImage = function () {
 //--------------------------------------------------------------------
 // HELPER FUNCTIONS
 
-function toInteger(number){
+toInteger = function(number){
     return Math.round(
         Number(number)
     );
@@ -274,18 +274,18 @@ function toInteger(number){
 //--------------------------------------------------------------------
 // Toggles
 
-function setActiveCollaborator(selectedUserId) {
+setActiveCollaborator = function(selectedUserId) {
     Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
     Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator':selectedUserId }});
 }
-function toggleActiveCollaborator(selectedUserId) {
+toggleActiveCollaborator = function(selectedUserId) {
     if (selectedUserId == Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
         setActiveCollaborator(selectedUserId);
     }
 }
-function toggleCollaboratorsMembership(selectedUserId) {
+toggleCollaboratorsMembership = function(selectedUserId) {
     if (selectedUserId == Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
@@ -293,7 +293,7 @@ function toggleCollaboratorsMembership(selectedUserId) {
         Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
     }
 }
-function toggleCarewatchMembership(userId) {
+toggleCarewatchMembership = function(userId) {
     if (selectedUserId == Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {

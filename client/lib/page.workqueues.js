@@ -5,7 +5,7 @@
 
 
 
-function layoutWorkqueuesPage() {
+layoutWorkqueuesPage = function() {
     console.log('layoutworkquesPage()');
 
     if (window.innerWidth > 767) {
@@ -192,51 +192,56 @@ Template.todo_item.editing = function () {
 
 
 Template.todo_item.events({
-    'touchstart':function(eventHandler){
+    'touchstart .inline-list':function(eventHandler){
+        Session.set('json_content', JSON.stringify(this));
         Session.set('swipe_start', eventHandler.touches[0].pageX);
-        Session.set('selected_task_id', this._id);
         Meteor.flush();
     },
-    'touchend':function(eventHandler){
+    'touchend .inline-list':function(eventHandler){
         //alert(Math.abs(Session.get('swipe_start') - eventHandler.pageX));
         //alert((Math.abs(Session.get('swipe_start') - eventHandler.pageX) > 100));
 
-        if(Math.abs((Session.get('swipe_start') - eventHandler.pageX)) > 100){
-            //alert(this._id);
-            Session.set('selected_task_delete_id', this._id);
+        if(Session.get('selected_task_delete_id') != null){
+            Session.set('selected_task_delete_id', null);
+        }else{
+            if(Math.abs((Session.get('swipe_start') - eventHandler.pageX)) < 200){
+                //alert(this._id);
+                Session.set('selected_task_delete_id', this._id);
+            }else{
+                Session.set('selected_task_delete_id', null);
+                Session.set('selected_task_id', this._id);
+                Session.set('selected_task_done_status', this.done);
+                Session.set('selected_task_text', this.text);
+                Session.set('show_task_detail_panel', true);
+                setTaskDetailVisibility();
+            }
         }
         Meteor.flush();
     },
     'click .todo': function(){
-        //toggleTaskDetailPanel();
-        Session.set('selected_task_delete_id', null);
-        Session.set('selected_task_done_status', this.done);
-        Session.set('selected_task_text', this.text);
-        //alert(JSON.stringify(this));
-        Session.set('json_content', JSON.stringify(this));
-
-        if(!Session.get('show_task_detail_panel')){
-            Session.set('show_task_detail_panel', true);
-        }
-        if(Session.get('selected_task__delete_id') != null){
-            Session.set('selected_task__delete_id',null);
-        }
-        setTaskDetailVisibility();
+//        if(Session.get('selected_task_delete_id') != null){
+//            Session.set('selected_task_delete_id',null);
+//        }else{
+//        }
         Meteor.flush();
     },
     'dblclick .todo': function(){
         //toggleTaskDetailPanel();
         Session.set('show_task_detail_panel', true);
+        Meteor.flush();
     },
     'click .check': function () {
         Todos.update(this._id, {$set: {done: !this.done}});
+        Meteor.flush();
     },
     'click .destroy': function () {
         Todos.remove(this._id);
+        Meteor.flush();
     },
     'click .delete-button': function () {
         Todos.remove(this._id);
         Session.set('selected_task_delete_id', null);
+        Meteor.flush();
     },
     'click .addtag': function (evt, tmpl) {
         Session.set('editing_addtag', this._id);
@@ -287,7 +292,7 @@ Template.todo_item.events(okCancelEvents(
 
 //----------------------------------------------------------------------------------
 
-function sendToActiveCollaborator() {
+sendToActiveCollaborator = function() {
     try {
         //alert('sending to collaborator');
         // Meteor.user().profile breaks when user is logged out
