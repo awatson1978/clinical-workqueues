@@ -2,14 +2,14 @@
 //-----------------------------------------------------
 // SESSION TOGGLE FUNCTIONS
 
-function toggleJsonPanel(){
+toggleJsonPanel = function(){
     if(Session.get('display_profile_json_panel')){
         Session.set('display_profile_json_panel',false);
     }else{
         Session.set('display_profile_json_panel',true);
     }
 }
-function toggleButtonVisibility(){
+toggleButtonVisibility = function(){
     if(Session.get('show_button_tiles')){
         Session.set('show_button_tiles',false);
     }else{
@@ -20,7 +20,7 @@ function toggleButtonVisibility(){
 //--------------------------------------------------------------
 
 
-function toggleSidebarVisibility(){
+toggleSidebarVisibility = function(){
     // we don't want to display the sidebar on narrow pages
     // there just isn't enough room
     if(window.innerWidth > 767){
@@ -33,7 +33,7 @@ function toggleSidebarVisibility(){
         }
     }
 }
-function setSidebarVisibility(){
+setSidebarVisibility = function(){
     if(Session.get('is_sidebar_available')){
         if(Session.get('show_sidebar_panel')){
             layoutAppWithSidebar();
@@ -44,7 +44,7 @@ function setSidebarVisibility(){
         layoutAppWithoutSidebar();
     }
 }
-function layoutAppWithSidebar() {
+layoutAppWithSidebar = function() {
     console.log('layoutAppWithSidebar();');
 
     $('#mainLayoutPane').removeClass('sidebar-hidden-landscape-layout');
@@ -52,7 +52,7 @@ function layoutAppWithSidebar() {
     $('#mainLayoutPane').addClass('sidebar-shown-landscape-layout');
     $('#mainLayoutPane').css('width', window.innerWidth - 195);
 }
-function layoutAppWithoutSidebar() {
+layoutAppWithoutSidebar = function() {
     console.log('layoutAppWithoutSidebar();');
     $('#mainLayoutPane').removeClass('sidebar-shown-landscape-layout');
 
@@ -62,7 +62,7 @@ function layoutAppWithoutSidebar() {
 
 //--------------------------------------------------------------
 
-function toggleTaskDetailPanel(){
+toggleTaskDetailPanel = function(){
     if(Session.get('show_task_detail_panel')){
         Session.set('show_task_detail_panel', false);
         layoutAppWithoutDetailedTask();
@@ -71,18 +71,18 @@ function toggleTaskDetailPanel(){
         layoutAppWithDetailedTask();
     }
 }
-function setTaskDetailVisibility(){
+setTaskDetailVisibility = function(){
     if(Session.get('show_task_detail_panel')){
         layoutAppWithDetailedTask();
     }else{
         layoutAppWithoutDetailedTask();
     }
 }
-function layoutAppWithDetailedTask(){
+layoutAppWithDetailedTask = function(){
     $('#new-todo-box').removeClass('hidden');
     $('#items-view').css('padding-bottom','260px');
 }
-function layoutAppWithoutDetailedTask(){
+layoutAppWithoutDetailedTask = function(){
     $('#new-todo-box').addClass('hidden');
     $('#items-view').css('padding-bottom','0px');
 }

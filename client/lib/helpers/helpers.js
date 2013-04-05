@@ -4,7 +4,7 @@
 // "blur" events on a text input (given by selector) and interprets them
 // as "ok" or "cancel".
 
-var okCancelEvents = function (selector, callbacks) {
+okCancelEvents = function (selector, callbacks) {
     var ok = callbacks.ok || function () {};
     var cancel = callbacks.cancel || function () {};
 
@@ -28,7 +28,7 @@ var okCancelEvents = function (selector, callbacks) {
     return events;
 };
 
-var activateInput = function (input) {
+activateInput = function (input) {
     input.focus();
     input.select();
 };
@@ -36,7 +36,7 @@ var activateInput = function (input) {
 
 // Generic template interface for user objects.
 
-var genericUserDisplayObject = {
+genericUserDisplayObject = {
     userName: function() {
         return Meteor.user().profile.name;
     },

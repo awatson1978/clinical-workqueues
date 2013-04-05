@@ -125,7 +125,7 @@ Template.todos.any_list_selected = function () {
 
 
 Template.todo_item.showDeleteButton = function(){
-  if(Session.get('selected_task__delete_id') == this._id){
+  if(Session.get('selected_task_delete_id') == this._id){
       return true;
   }else{
       return false;
@@ -194,17 +194,22 @@ Template.todo_item.editing = function () {
 Template.todo_item.events({
     'touchstart':function(eventHandler){
         Session.set('swipe_start', eventHandler.touches[0].pageX);
+        Session.set('selected_task_id', this._id);
+        Meteor.flush();
     },
     'touchend':function(eventHandler){
         //alert(Math.abs(Session.get('swipe_start') - eventHandler.pageX));
         //alert((Math.abs(Session.get('swipe_start') - eventHandler.pageX) > 100));
 
         if(Math.abs((Session.get('swipe_start') - eventHandler.pageX)) > 100){
-            Session.set('selected_task__delete_id', this._id);
+            //alert(this._id);
+            Session.set('selected_task_delete_id', this._id);
         }
+        Meteor.flush();
     },
     'click .todo': function(){
         //toggleTaskDetailPanel();
+        Session.set('selected_task_delete_id', null);
         Session.set('selected_task_done_status', this.done);
         Session.set('selected_task_text', this.text);
         //alert(JSON.stringify(this));
@@ -217,6 +222,7 @@ Template.todo_item.events({
             Session.set('selected_task__delete_id',null);
         }
         setTaskDetailVisibility();
+        Meteor.flush();
     },
     'dblclick .todo': function(){
         //toggleTaskDetailPanel();
@@ -230,6 +236,7 @@ Template.todo_item.events({
     },
     'click .delete-button': function () {
         Todos.remove(this._id);
+        Session.set('selected_task_delete_id', null);
     },
     'click .addtag': function (evt, tmpl) {
         Session.set('editing_addtag', this._id);

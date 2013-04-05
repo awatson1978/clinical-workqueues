@@ -1,5 +1,5 @@
 
-function renderBarChart(){
+renderBarChart = function(){
 
 
     historicalBarChart = [

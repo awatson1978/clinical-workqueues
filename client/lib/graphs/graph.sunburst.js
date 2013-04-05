@@ -1,4 +1,4 @@
-function renderSunburst(){
+renderSunburst = function(){
     var width = $('#statsColumn').width() - 40,
         height = 300,
         radius = Math.min(width, height) / 2,

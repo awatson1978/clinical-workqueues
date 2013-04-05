@@ -1,9 +1,9 @@
-function hidePages(){
+hidePages = function(){
     console.log('hiding pages');
     $('.page').addClass('hidden');
 }
 
-function showPage(page){
+showPage = function(page){
     hidePages();
     $(page).removeClass('hidden');
     Session.set('current_page', page);
@@ -14,17 +14,17 @@ function showPage(page){
     //console.log('current page: ' + page);
     //parseBreadCrumbs(page);
 }
-function showHomePage(){
+showHomePage = function(){
    //if(Meteor.userId()){
         showPage("#workqueuesPage");
     //}else{
     //    showPage("#guestPageTemplate");
     //}
 }
-function showCurrentSessionPage(){
+showCurrentSessionPage = function(){
     showPage(Session.get('current_page'));
 }
-function parseBreadCrumbs(page){
+parseBreadCrumbs = function(page){
     switch(page){
     case '#hipaaPage':
             $('#breadCrumbLink').html('HIPAA Audit');

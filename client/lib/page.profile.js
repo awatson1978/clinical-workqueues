@@ -15,8 +15,7 @@ Template.userCardTemplate.resize = function(){
     }else{
         layoutAppWithoutSidebar();
     }
-    $('#appTitle').html('width: ' + Session.get("appWidth"));
-    $('#appTitle').html('width: ' + Session.get("appWidth"));
+    //$('#appTitle').html('width: ' + Session.get("appWidth"));
     return Session.get("appWidth");
 };
 Template.userCardTemplate.editing_email = function () {
@@ -356,7 +355,7 @@ Template.dashboardPageTemplate.receivedNewAlert = function(){
 Template.profilePageTemplate.receivedNewAlert = function(){
     return monitorDropbox();
 };
-function monitorDropbox(){
+monitorDropbox = function(){
     try{
         if(Meteor.user().profile.dropbox == null){
             return false;
