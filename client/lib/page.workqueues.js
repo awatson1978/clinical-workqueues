@@ -398,9 +398,11 @@ Template.taskDetailCardTemplate.rendered = function(){
     if(Session.get('show_sidebar_panel')){
         $('#taskDetailCardBody').css('width', window.innerWidth - 240);
         $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
+        $('.card-delete-button').css('right', 215);
     }else{
         $('#taskDetailCardBody').css('width', window.innerWidth - 40);
         $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
+        $('.card-delete-button').css('right', 21);
     }
     $("#taskDetailCard").bind("mousemove", function(e){
         e.preventDefault();

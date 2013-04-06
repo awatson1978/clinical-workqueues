@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.workqueues.js" afterPath="$PROJECT_DIR$/client/lib/page.workqueues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.card.less" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.profile.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/tags.less" afterPath="$PROJECT_DIR$/client/stylesheets/tags.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/page.workqueues.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,19 +23,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="page.workqueues.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page.workqueues.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="367" column="6" selection-start="11793" selection-end="11793" vertical-scroll-proportion="0.0">
+            <state line="402" column="60" selection-start="13048" selection-end="13048" vertical-scroll-proportion="0.33576643">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="2317" selection-end="2441" vertical-scroll-proportion="0.6805293">
+            <state line="27" column="11" selection-start="959" selection-end="959" vertical-scroll-proportion="-17.28">
               <folding />
             </state>
           </provider>
@@ -57,16 +53,7 @@
       <file leaf-file-name="page.workqueues.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="24" selection-start="3453" selection-end="3471" vertical-scroll-proportion="-24.92">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lists.card.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="41" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0">
+            <state line="100" column="24" selection-start="3453" selection-end="3471" vertical-scroll-proportion="-24.28">
               <folding />
             </state>
           </provider>
@@ -95,18 +82,18 @@
         <option value="$PROJECT_DIR$/client/lib/app.platform.detection.js" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/tags.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
-        <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
         <option value="$PROJECT_DIR$/client/templates/page.workqueues.html" />
-        <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
         <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
+        <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
+        <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
-    <option name="y" value="387" />
+    <option name="x" value="43" />
+    <option name="y" value="157" />
     <option name="width" value="1681" />
     <option name="height" value="1244" />
   </component>
@@ -389,7 +376,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="387" width="1681" height="1244" extended-state="0" />
+    <frame x="43" y="157" width="1681" height="1244" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -542,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="812" selection-end="812" vertical-scroll-proportion="-2.383195">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="73" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
@@ -556,9 +536,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="367" column="6" selection-start="11793" selection-end="11793" vertical-scroll-proportion="0.0">
+        <state line="222" column="0" selection-start="4017" selection-end="4017" vertical-scroll-proportion="0.540146">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="11" selection-start="959" selection-end="959" vertical-scroll-proportion="-17.28">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="28" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.5620438">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="24" selection-start="3453" selection-end="3471" vertical-scroll-proportion="-24.28">
           <folding />
         </state>
       </provider>
@@ -570,23 +571,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+    <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="41" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="24" selection-start="3453" selection-end="3471" vertical-scroll-proportion="-24.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="2317" selection-end="2441" vertical-scroll-proportion="0.6805293">
+        <state line="402" column="60" selection-start="13048" selection-end="13048" vertical-scroll-proportion="0.33576643">
           <folding />
         </state>
       </provider>
