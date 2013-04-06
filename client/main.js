@@ -27,7 +27,7 @@ Session.set('is_sidebar_available',true);
 Session.set('editing_addtag', null);
 Session.set('editing_listname', null);
 Session.set('editing_itemname', null);
-
+Session.set('editing_detailed_addtag', null);
 
 // data drops
 // these should be written to the user's profile, so they can persist through sessions

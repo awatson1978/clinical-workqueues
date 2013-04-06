@@ -332,7 +332,7 @@ Template.taskDetailCardTemplate.tag_list = function () {
     }
 };
 Template.taskDetailCardTemplate.adding_detailed_tag = function () {
-    return Session.equals('editing_addtag', Session.get('selected_task_id'));
+    return Session.equals('editing_detailed_addtag', Session.get('selected_task_id'));
 };
 
 
@@ -349,7 +349,7 @@ Template.taskDetailCardTemplate.events({
     },
     'click #detailedTaskAddTagIcon': function (evt) {
         //alert('foo');
-        Session.set('editing_addtag', Session.get('selected_task_id'));
+        Session.set('editing_detailed_addtag', Session.get('selected_task_id'));
         Meteor.flush();
         //activateInput(tmpl.find('#edittagInputDetailed'));
 
@@ -385,10 +385,10 @@ Template.taskDetailCardTemplate.events(okCancelEvents(
     {
         ok: function (value) {
             Todos.update(Session.get('selected_task_id'), {$addToSet: {tags: value}});
-            Session.set('editing_addtag', null);
+            Session.set('editing_detailed_addtag', null);
         },
         cancel: function () {
-            Session.set('editing_addtag', null);
+            Session.set('editing_detailed_addtag', null);
         }
 }));
 
