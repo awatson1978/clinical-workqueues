@@ -59,7 +59,6 @@
             </ul>
         {{else}}
             <ul class="horizontal-tags">
-                <!--<li class="bookend-left"></li>-->
                 {{#each tag_objs}}
                 <li class="tag removable_tag">
                     <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
@@ -71,6 +70,7 @@
                 </li>
                 {{else}}
                 <li class="largish addtag pictograph">J</li>
+                <li class="largish pictograph">x</li>
                 {{/if}}
             </ul>
         {{/if }}
@@ -92,18 +92,17 @@
 
         <div class="card-header rounded-top-right">
             <span class="white card-meta-data barcode">{{todo_id}}</span>
+            <span class="pictograph close-task-card hide-on-mobile">u</span>
         </div>
 
         <div class="task-detail-card-body card-body-resize">
-            <!--<div class="absolute-anchor">-->
-                <div class="task-detail-image-container"><img class="task-detail-card-image-image" src="{{todo_image}}" /></div>
-                <div class="detailed-task-text">{{ todo_text }}</div>
-                <div class="horizontal-tags-container">
-                </div>
+            <div class="task-detail-image-container"><img class="task-detail-card-image-image" src="{{todo_image}}" /></div>
+            <div class="detailed-task-text">{{ todo_text }}</div>
+            <div class="card-delete-button largish pictograph">x</div>
         </div>
+
         <div class="task-detail-tag-footer card-footer-resize">
             <ul class="lower-horizontal-tags">
-                <!--<li class="bookend-left"></li>-->
                 {{#each tag_list}}
                 <li class="tag removable_tag">
                     <div class="name">{{tag}}<span class="pictographs remove"> X</span></div>
@@ -119,43 +118,6 @@
             </ul>
         </div>
         <div class="spacer row"></div>
-
-
-        <!--<div class="task-detail-card">-->
-            <!--&lt;!&ndash;<div class="detailed-task-card-modal-mask-gradient"></div>&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="detailed-task-card-modal-mask"></div>&ndash;&gt;-->
-
-            <!--<div class="user-card-detailed no-background">-->
-
-                <!--<div class="user-card-synopsis">-->
-                    <!--<div class="spacer row"></div>-->
-                    <!--&lt;!&ndash;<span class="user-card-synopsis-email">{{ todo_done }}</span><br>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<ul class="detailed-task-card-tags">&ndash;&gt;-->
-                        <!--&lt;!&ndash;&lt;!&ndash;<li class="bookend-left"></li>&ndash;&gt;&ndash;&gt;-->
-                        <!--&lt;!&ndash;{{#each tag_objs}}&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="tag removable_tag">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<div class="name">{{tag}}<span class="pictographs remove"> X</span></div>&ndash;&gt;-->
-
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;{{/each}}&ndash;&gt;-->
-                        <!--&lt;!&ndash;{{#if adding_tag}}&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="tag edittag">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<input type="text" id="edittag-input-card" value="" />&ndash;&gt;-->
-                        <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;{{else}}&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="largish send-to-collaborator pictograph">o</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<li class="largish pictograph">J</li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;{{/if}}&ndash;&gt;-->
-                    <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-                <!--</div>-->
-                <!---->
-
-            <!--</div>-->
-
-        <!--</div>-->
-
-        <!--<div class="task-detail-card"></div>-->
-
     </div>
     {{/if}}
 </template>

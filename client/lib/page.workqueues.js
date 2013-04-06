@@ -218,11 +218,12 @@ Template.todo_item.events({
         }
         Meteor.flush();
     },
-    'click .todo': function(){
-//        if(Session.get('selected_task_delete_id') != null){
-//            Session.set('selected_task_delete_id',null);
-//        }else{
-//        }
+    'mousedown .todo': function(){
+        Session.set('selected_task_id', this._id);
+        Session.set('selected_task_done_status', this.done);
+        Session.set('selected_task_text', this.text);
+        Session.set('show_task_detail_panel', true);
+        setTaskDetailVisibility();
         Meteor.flush();
     },
     'dblclick .todo': function(){
@@ -239,8 +240,8 @@ Template.todo_item.events({
         Meteor.flush();
     },
     'click .delete-button': function () {
-        Todos.remove(this._id);
         Session.set('selected_task_delete_id', null);
+        Todos.remove(this._id);
         Meteor.flush();
     },
     'click .addtag': function (evt, tmpl) {
@@ -252,6 +253,7 @@ Template.todo_item.events({
         Session.set('editing_itemname', this._id);
         Meteor.flush(); // update DOM before focus
         activateInput(tmpl.find("#todo-input"));
+        Meteor.flush();
     },
     'click .remove': function (evt) {
         var tag = this.tag;
@@ -262,6 +264,7 @@ Template.todo_item.events({
         Meteor.setTimeout(function () {
             Todos.update({_id: id}, {$pull: {tags: tag}});
         }, 300);
+        Meteor.flush();
     }
 });
 
@@ -362,6 +365,19 @@ Template.taskDetailCardTemplate.events({
         Meteor.setTimeout(function () {
             Todos.update({_id: id}, {$pull: {tags: tag}});
         }, 300);
+    },
+    'click .card-header': function (evt, tmpl) {
+        Session.set('show_task_detail_panel', false);
+        setTaskDetailVisibility();
+        Meteor.flush();
+    },
+    'click .card-delete-button': function(evt){
+        if(confirm('Are you sure you want to delete task ' + Session.get('selected_task_id') + '?')){
+            Session.set('show_task_detail_panel', false);
+            setTaskDetailVisibility();
+            Todos.remove(Session.get('selected_task_id'));
+            Meteor.flush();
+        }
     }
 });
 Template.taskDetailCardTemplate.events(okCancelEvents(
@@ -379,30 +395,13 @@ Template.taskDetailCardTemplate.events(okCancelEvents(
 
 
 Template.taskDetailCardTemplate.rendered = function(){
-
     if(Session.get('show_sidebar_panel')){
-        //$('#taskDetailCard').css('width', window.innerWidth - 237);
-
         $('#taskDetailCardBody').css('width', window.innerWidth - 240);
         $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
-        //$('#taskDetailCard').css('left', 197);
     }else{
-        //$('#taskDetailCard').css('width', window.innerWidth);
         $('#taskDetailCardBody').css('width', window.innerWidth - 40);
         $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
-        //$('#taskDetailCard').css('left', 0);
     }
-
-//    $("#taskDetailCard").bind("swipeleft", function(){
-//        alert('swipeleft!');
-//    });
-//    $("#taskDetailCard").bind("swiperight", function(){
-//        alert('swipeleft!');
-//    });
-//    $("#taskDetailCard").bind("swipedown", function(){
-//        //alert('swipedown!');
-//        Session.set('show_task_detail_panel',false);
-//    });
     $("#taskDetailCard").bind("mousemove", function(e){
         e.preventDefault();
     });
@@ -410,11 +409,9 @@ Template.taskDetailCardTemplate.rendered = function(){
         sendToActiveCollaborator();
     });
     $("#taskDetailCard").bind("swiperight", function(){
-        //alert('swiperight!');
         sendToActiveCollaborator();
     });
     $("#taskDetailCard").bind("swipeleftdown swipedown swiperightdown", function(){
-        //alert('swipedown!');
         Session.set('show_task_detail_panel',false);
         Meteor.flush();
     });
