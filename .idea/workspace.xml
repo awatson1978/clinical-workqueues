@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.workqueues.js" afterPath="$PROJECT_DIR$/client/lib/page.workqueues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.error-page-incompatible-browser/detect.incompatible.browser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.error-page-incompatible-browser/package.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/page.accounts.public.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/page.demo.accounts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/close_16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/destroy.png" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/main.css" afterPath="$PROJECT_DIR$/client/index.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/main.html" afterPath="$PROJECT_DIR$/client/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/main.js" afterPath="$PROJECT_DIR$/client/index.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/page.assets.icons.html" afterPath="$PROJECT_DIR$/client/templates/modal.dialogs/page.assets.icons.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/page.community.html" afterPath="$PROJECT_DIR$/client/templates/modal.dialogs/page.community.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/page.unsupported.html" afterPath="$PROJECT_DIR$/packages/.error-page-incompatible-browser/page.unsupported.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/sidebar.html" afterPath="$PROJECT_DIR$/client/templates/app.sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,62 +36,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="page.workqueues.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="387" column="48" selection-start="12591" selection-end="12591" vertical-scroll-proportion="0.7518248">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="36" selection-start="1008" selection-end="1031" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.accounts.public.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/page.accounts.public.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="11" selection-start="959" selection-end="959" vertical-scroll-proportion="-17.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.profile.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="19" selection-start="3212" selection-end="3212" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.workqueues.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="40" selection-start="3935" selection-end="3935" vertical-scroll-proportion="-31.32">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -90,11 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/hipaa.logging.js" />
-        <option value="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
-        <option value="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" />
-        <option value="$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js" />
-        <option value="$PROJECT_DIR$/client/lib/ui.app.navigation.links.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
         <option value="$PROJECT_DIR$/client/lib/app.platform.detection.js" />
@@ -102,18 +56,23 @@
         <option value="$PROJECT_DIR$/client/templates/page.workqueues.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
         <option value="$PROJECT_DIR$/client/main.html" />
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
         <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
+        <option value="$PROJECT_DIR$/client/templates/sidebar.html" />
+        <option value="$PROJECT_DIR$/client/templates/page.unsupported.html" />
+        <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/packages/.error-page-incompatible-browser/package.json" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="157" />
-    <option name="width" value="1681" />
-    <option name="height" value="1244" />
+    <option name="x" value="27" />
+    <option name="y" value="35" />
+    <option name="width" value="964" />
+    <option name="height" value="1022" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -141,7 +100,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -170,7 +128,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -184,39 +142,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value=".error-page-incompatible-browser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -252,8 +182,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modal.dialogs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".scrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,11 +256,11 @@
       <recent name="$PROJECT_DIR$/client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/templates/modal.dialogs" />
+      <recent name="$PROJECT_DIR$/client/templates/public.access" />
+      <recent name="$PROJECT_DIR$/packages/error-page-incompatible-browser/" />
       <recent name="$PROJECT_DIR$/client/lib/" />
       <recent name="$PROJECT_DIR$/.scrap/.packages" />
-      <recent name="$PROJECT_DIR$/" />
-      <recent name="$PROJECT_DIR$/.scrap" />
-      <recent name="$PROJECT_DIR$/client/lib/helpers" />
     </key>
   </component>
   <component name="RunManager">
@@ -354,14 +321,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="157" width="1681" height="1244" extended-state="0" />
-    <editor active="true" />
+    <frame x="27" y="35" width="964" height="1022" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3998219" sideWeight="0.9957627" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16827503" sideWeight="0.6001781" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34439835" sideWeight="0.9423459" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -370,6 +336,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39956802" sideWeight="0.9957627" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -442,83 +409,9 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/lib/graphs/graph.bar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="17" selection-start="18" selection-end="18" vertical-scroll-proportion="-0.40145984">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/sidebar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="10" selection-start="322" selection-end="322" vertical-scroll-proportion="0.13610587">
-          <folding>
-            <element signature="n#style#0;n#hr#0;n#div#0;n#template#4;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="40" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="22" selection-start="9069" selection-end="9069" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.assets.icons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/app.platform.detection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/tags.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="26" selection-start="1300" selection-end="1300" vertical-scroll-proportion="-0.32963988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="2200" selection-end="2200" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="0" selection-start="4017" selection-end="4017" vertical-scroll-proportion="0.540146">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="11" selection-start="959" selection-end="959" vertical-scroll-proportion="-17.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="28" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.5620438">
-          <folding />
-        </state>
+        <state line="192" column="28" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.5620438" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
@@ -528,30 +421,100 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.accounts.public.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="40" selection-start="3935" selection-end="3935" vertical-scroll-proportion="-31.32">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="1008" selection-end="1031" vertical-scroll-proportion="0.0">
+        <state line="111" column="40" selection-start="3935" selection-end="3935" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="387" column="48" selection-start="12591" selection-end="12591" vertical-scroll-proportion="0.7518248">
+        <state line="387" column="48" selection-start="12591" selection-end="12591" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/app.core.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/app.layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/app.sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="322" selection-end="322" vertical-scroll-proportion="-6.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/.error-page-incompatible-browser/page.unsupported.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="11" selection-start="186" selection-end="186" vertical-scroll-proportion="-3.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="36" selection-start="1008" selection-end="1031" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="411" selection-end="411" vertical-scroll-proportion="-7.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/.error-page-incompatible-browser/detect.incompatible.browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/.error-page-incompatible-browser/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="112" selection-end="112" vertical-scroll-proportion="0.07119021">
           <folding />
         </state>
       </provider>

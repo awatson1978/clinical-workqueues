@@ -7,6 +7,19 @@
         {{else }}
         {{> tagFilterTemplate}}
         {{/if }}
+
+        {{#if isWorkqueuesPage }}
+        {{> workqueuesPageSidebarTemplate}}
+        {{/if}}
+
+        {{#if isProfilePage }}
+        {{> profilePageSidebarTemplate}}
+        {{/if}}
+
+        {{#if isCommunityPage }}
+        {{> communityPageSidebarTemplate}}
+        {{/if}}
+
     </div>
     {{/if}}
 </template>

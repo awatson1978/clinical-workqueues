@@ -1,7 +1,5 @@
 <template name="profilePageTemplate">
     <div id="profilePage" class="touch-disabled page">
-
-        <!--<div class="doesnt-overlap-header row"></div>-->
         {{#if receivedNewAlert }}
             <div class="row">
                 {{> dropboxAlert}}
@@ -9,9 +7,19 @@
         {{/if }}
         <div class="spacer row"></div>
         {{> userCardTemplate }}
+
+        <!-- TODO:  add activeCollaboratorCardTemplate block-->
+        {{!> activeCollaboratorCardTemplate }}
+
     </div>
 </template>
 
+
+
+<!-- TODO:  create activeCollaboratorCardTemplate-->
+<template name="activeCollaboratorCardTemplate">
+
+</template>
 
 <template name="userCardTemplate">
     <div class="user-card-block">
@@ -25,9 +33,8 @@
                 <img class="user-card-image drop-zone gray-border" id="drop_zone" src="{{user_image}}" />
 
                 <div class="user-card-data">
-                    <!--<div class="two columns">-->
-                    <!--</div>-->
 
+                    <!-- TODO:  remove foundation.css twelve column usage -->
                     <div class="twelve columns">
                         <ul id="profileItems" class="profile-items card-data dictionary">
                             <li>
@@ -79,6 +86,8 @@
                                     <span id="profile-display-active-collaborator" class="gray dictionary-value">{{user_active_collaborator}}</span>
                                 </div>
                             </li>
+
+                            <!-- TODO:  hide currentPage input; convert to detailedInfoCard -->
                             <li>
                                 <div id="profile-display-lastpage-label" class="dictionary-key">Current Page</div>
                                 <div id="userLastPageDisplay" class="userAvatarDisplay display dictionary-value-editing">
@@ -90,6 +99,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- TODO:  refactor carewatchCard into external file -->
+        <!-- TODO:  move carewatchCard out of ClinicalWorkqueues and into Symptomatic project-->
+        <!-- TODO:  do the same for associated Javascript and CSS files -->
+        <!-- TODO:  move link to carewatchCard to profilePageSidebarTemplate -->
 
         <div class="spacer row"></div>
         <div id="carewatchCard" class="card">
@@ -107,6 +121,11 @@
                 </ul>
             </div>
         </div>
+
+        <!-- TODO:  refactor collaboratorsCard into external file -->
+        <!-- TODO:  move collaboratorsCard out of ClinicalWorkqueues and into Symptomatic project-->
+        <!-- TODO:  do the same for associated Javascript and CSS files -->
+        <!-- TODO:  move link to collaboratorsCard to profilePageSidebarTemplate -->
 
         <div class="spacer row"></div>
         <div id="collaboratorsCard" class="hidden card">
@@ -126,6 +145,12 @@
             </div>
         </div>
 
+        <!-- TODO:  refactor hipaaCard into external file -->
+        <!-- TODO:  refactor hipaaCard to hipaaCardTemplate template -->
+        <!-- TODO:  move hipaaCard out of ClinicalWorkqueues and into Symptomatic project-->
+        <!-- TODO:  do the same for associated Javascript and CSS files -->
+        <!-- TODO:  move link to hipaaCard to profilePageSidebarTemplate -->
+
         <div class="spacer row"></div>
         <div id="hipaaCard" class="hidden card">
             <div class="card-header clipped_corner rounded-top-right">
@@ -135,15 +160,14 @@
                 {{> hipaaLog }}
             </div>
         <div>
-
-
-
     </div>
 </template>
 
 
 
+<template name="hipaaCardTemplate">
 
+</template>
 <template name="hipaaLog">
     <div class="row">
         <ul>
@@ -153,7 +177,6 @@
         </ul>
     </div>
 </template>
-
 <template name="hipaaEntry">
     <li><span class="darkgray">{{entry_timestamp}}, </span><span class="gray hidden">{{ owner }}, </span>{{text}}
     </li>

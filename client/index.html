@@ -5,10 +5,10 @@
 
 <body>
     {{> headerBarTemplate }}
+    <!-- TODO:  rename app_container to appTemplate -->
     {{> app_container }}
     {{> footerBarTemplate }}
 </body>
-
 
 
 
@@ -34,21 +34,21 @@
             <!--<li><a href="#" onclick='showPage("#dashboardPage");'><span class="pictographs">3  </span>Dashboard</a></li>-->
             <li><a href="#" onclick='showPage("#workqueuesPage");'><span class="pictographs">4  </span>Workqueues</a></li>
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">g  </span>Community</a></li>
-
-            <!--<li><a href="#" onclick='showPage("#dropboxPage");'><span class="pictographs">m  </span>Dropbox</a></li>-->
-            <!--<li><a href="#" onclick='Session.set("selected_graph","powersOfTenChart"); showPage("#graphsPage");'><span class="pictographs">4  </span>Powers of Ten</a></li>-->
-            <!--<li><a href="#" onclick='showPage("#snomedPage");'><span class="pictographs">4  </span>Anatomy Browser</a></li>-->
         </ul>
         <ul class="nav-bar footer-nav-bar-right">
+            <!-- TODO:  repurpose toggleButtonVisibility into sidebar functionality -->
+            <!-- TODO:  maybe buttons should go into communityPageSidebar or iconAssetsSidebar? -->
             <li><a href="#" onclick='toggleButtonVisibility();'><span class="largish pictographs">Z  </span></a></li>
-            <!--<li><a href="#" onclick='toggleSidebarVisibility();'><span class="largish pictographs">7 </span></a></li>-->
-            <!--<li><a href="#" onclick='toggleTaskDetailPanel();'><span class="largish pictographs">_  </span></a></li>-->
+
+            <!-- TODO:  move toggleJsonPanel to profilePageSidebarTemplate -->
             <li><a href="#" onclick='toggleJsonPanel();'><span class="largish pictographs">(  </span></a></li>
         </ul>
         {{/if}}
     </div>
 </template>
 
+
+<!-- TODO:  move jsonContentPanelTemplate to app.layout.html -->
 <template name="jsonContentPanelTemplate">
     {{#if showJsonPanel }}
     <div id="json-content" class="row panel jsondata notepad">
