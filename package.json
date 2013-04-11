@@ -1,6 +1,13 @@
+// TODO: confirm package.json is needed with CloudBees
+// TODO: confirm package.json is needed with NPM
+// TODO: confirm package.json is needed with Meteorite/Atmosphere
+
+//--------------------------------------------------------------------------
+// Global Package Description
+
 {
-    "name": "second-opinion",
-    "version": "0.0.1",
+    "name": "clinical-workqueues",
+    "version": "2013.4.10",
     "engines": {
         "node": "0.8.x",
         "npm":  "1.1.x"

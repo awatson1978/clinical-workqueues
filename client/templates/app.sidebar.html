@@ -2,6 +2,7 @@
     {{#if sidebarIsVisible }}
     <div class="doesnt-overlap-header fixed-layout hide-for-small" id="sidebarPane">
         {{> listsTemplate}}
+
         {{#if showButtonTiles }}
         {{> buttonTilesTemplate }}
         {{else }}
@@ -24,6 +25,7 @@
     {{/if}}
 </template>
 
+<!-- TODO:  onclick, make sure the workqueues page is opened -->
 <template name="listsTemplate">
     <div id="listsTemplate">
         {{#each lists}}
@@ -44,10 +46,9 @@
             </div>
         {{/each}}
     </div>
-    <div id="createList" style="display:none;">
-        <input type="text" id="new-list" placeholder="New list" />
-    </div>
 </template>
+
+<!-- TODO:  confirm if dashboardTab is needed? -->
 <template name="dashboardTab">
     <div class="sidebar-tab note dashboard">
         <div class="display">

@@ -1,3 +1,5 @@
+// TODO:  convert user profiles to jpgs; remove png files
+
 // if the database is empty on server start, create some sample data.
 // we create a separate bootstrap.users.js file
 // because we'll be wanting to set up a number of patient-scenario test users

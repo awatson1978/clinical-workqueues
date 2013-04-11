@@ -27,7 +27,7 @@
     {{> taskDetailCardTemplate }}
 </template>
 
-
+<!-- TODO:  refacotor 'todo_item' to 'todoItemTemplate' -->
 <template name="todo_item">
     <li class="todo {{done_class}}">
         <ul class="inline-list">
@@ -36,9 +36,13 @@
                 <input id="todo-input" type="text" value="{{!text}}" />
             </li>
             {{else}}
-            <!--<li class="destroy"></li>-->
             <li class="display">
+                <!-- TODO:  convert done_checkbox into pictograph toggle button -->
                 <input class="check" name="markdone" type="checkbox" {{{done_checkbox}}} />
+
+                <!-- TODO:  rename 'destroy' button as 'todo-delete-button' -->
+                <!-- TODO:  renenable button, and conditionally display it on non-mobile devices -->
+                <!--<li class="destroy"></li>-->
             </li>
             <li class="display">
                 <span class="todo-text">{{text}}</span>

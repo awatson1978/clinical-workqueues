@@ -31,8 +31,11 @@
     <div id="footerActionBar" data-role="footer" data-theme="none" class="nav-bar bottom-anchor">
         {{#if currentUser }}
         <ul class="nav-bar footer-nav-bar">
+            <!-- TODO:  reenable dashboardPage -->
             <!--<li><a href="#" onclick='showPage("#dashboardPage");'><span class="pictographs">3  </span>Dashboard</a></li>-->
             <li><a href="#" onclick='showPage("#workqueuesPage");'><span class="pictographs">4  </span>Workqueues</a></li>
+
+            <!-- TODO:  hide communityPageButton and make completely a modal button-->
             <li><a href="#" onclick='showPage("#communityPage");'><span class="pictographs">g  </span>Community</a></li>
         </ul>
         <ul class="nav-bar footer-nav-bar-right">

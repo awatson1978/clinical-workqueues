@@ -1,4 +1,8 @@
-// if the database is empty on server start, create some sample data.
+// TODO:  purchase medical icon pack
+// TODO:  write generic license file to include in packages
+// TODO:
+
+// If the database is empty on server start, create a collection to store icon paths and data
 Meteor.startup(function () {
     if (CategoryIcons.find().count() === 0) {
         var data = [

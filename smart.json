@@ -1,0 +1,30 @@
+//--------------------------------------------------------------------------
+//  Package Description for Meteorite Packages
+//
+//  https://github.com/oortcloud/meteorite
+//
+
+
+
+//{
+//    "meteor": {
+//        "tag": "v0.5.4"
+//    },
+//    "packages": {
+//        "moment": {},
+//        "router": "0.3.4",
+//        "roles": {
+//            "version": "1.0.1"
+//        },
+//        "accounts-persona": {
+//            "git": "https://github.com/vladikoff/meteor-accounts-persona"
+//        },
+//        "normalize.css": {
+//            "git": "https://github.com/rithis/meteor-normalize.css",
+//            "tag": "v2.0.1"
+//        },
+//        "my-experiment": {
+//            "path": "/path/to/local/package"
+//        }
+//    }
+//}

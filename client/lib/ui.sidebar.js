@@ -1,15 +1,10 @@
 
 Template.sidebarTemplate.sidebarIsVisible = function(){
-    //if(Session.get('is_sidebar_available')){
-        if(Session.get('appWidth') > 767){
-            return Session.get('show_sidebar_panel');
-        }else{
-            //layoutWorkqueuesPageWithPanel();
-            return false;
-        }
-    //}else{
-    //    return false;
-    //}
+    if(Session.get('appWidth') > 767){
+        return Session.get('show_sidebar_panel');
+    }else{
+        return false;
+    }
 };
 Template.sidebarTemplate.showButtonTiles = function(){
     if(Session.get('show_button_tiles')){
@@ -22,7 +17,6 @@ Template.sidebarTemplate.showButtonTiles = function(){
 Template.sidebarTemplate.events({
     'click .sidebar-tile': function(){
         alert('this button could be configured to send data to and launch an existing applicatoin in *your* workflow.  Contact pentasyllabic.com to learn more.');
-        //toggleTaskDetailPanel();
     },
     'touchmove #sidebarPane' : function (e){
         e.preventDefault();
@@ -43,27 +37,23 @@ Template.sidebarTemplate.rendered = function(){
 Template.listsTemplate.lists = function () {
     return Lists.find({}, {sort: {name: 1}});
 };
-//Template.lists.count = function () {
-//    //TODO:  add tally of number of todos in a list
-//    return Todos.find({list_id: this._id}).count();
-//};
 
 Template.listsTemplate.events({
     'mousedown .list': function (evt) { // select list
         Router.setList(this._id);
         Session.set('list_id', this._id);
-        //alert(this._id);
     },
     'click .list': function (evt) {
         // prevent clicks on <a> from refreshing the page.
         evt.preventDefault();
     },
-    'dblclick .list': function (evt, tmpl) { // start editing list name
+    'dblclick .list': function (evt, tmpl) {
         Session.set('editing_listname', this._id);
-        Meteor.flush(); // force DOM redraw, so we can focus the edit field
+        Meteor.flush();
         activateInput(tmpl.find("#list-name-input"));
     }
 });
+
 // Attach events to keydown, keyup, and blur on "New list" input box.
 Template.listsTemplate.events(okCancelEvents(
     '#new-list',
