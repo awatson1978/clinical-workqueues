@@ -32,9 +32,7 @@ Meteor.publish('categoryIcons', function () {
 // USERS
 
 
-Meteor.publish('hipaa', function () {
-    return Hipaa.find();
-});
+
 
 // Publish users directory and user profile
 Meteor.publish("usersDirectory", function () {

@@ -147,41 +147,24 @@
             </div>
         </div>
 
-        <!-- TODO:  refactor hipaaCard into external file -->
-        <!-- TODO:  refactor hipaaCard to hipaaCardTemplate template -->
-        <!-- TODO:  move hipaaCard out of ClinicalWorkqueues and into Symptomatic project-->
-        <!-- TODO:  do the same for associated Javascript and CSS files -->
         <!-- TODO:  move link to hipaaCard to profilePageSidebarTemplate -->
-
         <div class="spacer row"></div>
-        <div id="hipaaCard" class="hidden card">
-            <div class="card-header clipped_corner rounded-top-right">
-                <span class="pictograph">j</span> HIPAA Audit Log
-            </div>
-            <div class="panel">
-                {{> hipaaLog }}
-            </div>
+        {{> hipaaAuditLogTemplate}}
+
+    </div>
+</template>
+
+
+
+<template name="hipaaAuditLogTemplate">
+    <div id="hipaaAuditLog" class="hidden card">
+        <div class="card-header clipped_corner rounded-top-right">
+            <span class="pictograph">j</span> HIPAA Audit Log
+        </div>
+        <div class="panel">
+            {{> hipaaLog }}
+        </div>
         <div>
-    </div>
-</template>
-
-
-
-<template name="hipaaCardTemplate">
-
-</template>
-<template name="hipaaLog">
-    <div class="row">
-        <ul>
-            {{#each hipaaAudit}}
-            {{> hipaaEntry}}
-            {{/each}}
-        </ul>
-    </div>
-</template>
-<template name="hipaaEntry">
-    <li><span class="darkgray">{{entry_timestamp}}, </span><span class="gray hidden">{{ owner }}, </span>{{text}}
-    </li>
 </template>
 
 

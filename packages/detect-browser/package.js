@@ -1,10 +1,11 @@
-//TODO:  Create package; publish to Atmosphere
+//TODO:  Publish to Atmosphere
 
-//Package.describe({
-//  summary: "Adds logic for detecting browsers."
-//});
-//
-//Package.on_use(function (api) {
-//    api.add_files(['app.platform.detection.js'], 'client/lib');
-//    api.add_files(['page.unsupported.html'], 'client/lib');
-//});
+
+Package.describe({
+    summary: "detect-browser provides helper functions and basic syntax for checking for specific browsers."
+});
+
+Package.on_use(function (api) {
+    api.add_files('unsupported.browser.html', "client");
+    api.add_files('browser.detection.js', "client");
+});

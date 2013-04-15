@@ -3,10 +3,10 @@
 // SESSION TOGGLE FUNCTIONS
 
 toggleJsonPanel = function(){
-    if(Session.get('display_profile_json_panel')){
-        Session.set('display_profile_json_panel',false);
+    if(Session.get('show_profile_json_panel')){
+        Session.set('show_profile_json_panel',false);
     }else{
-        Session.set('display_profile_json_panel',true);
+        Session.set('show_profile_json_panel',true);
     }
 }
 toggleButtonVisibility = function(){

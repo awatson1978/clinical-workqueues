@@ -1,5 +1,3 @@
-// TODO:  convert user profiles to jpgs; remove png files
-
 // if the database is empty on server start, create some sample data.
 // we create a separate bootstrap.users.js file
 // because we'll be wanting to set up a number of patient-scenario test users
@@ -16,7 +14,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Administrator',
                 role: 'Administrator',
-                avatar: '/userspace/house/lisa.cuddy.jpg',
+                avatar: '/userspace/lisa.cuddy.jpg',
                 collaborators: '',
                 carewatch: ''
             }
@@ -31,7 +29,7 @@ Meteor.startup(function () {
             profile: {
                 name: 'Gregory House, MD',
                 role: 'Physician',
-                avatar: '/userspace/house/gregory.house.jpg'
+                avatar: '/userspace/gregory.house.jpg'
             }
         });
         log_event('Default physician account created: ' + userId, LogLevel.Info, this);
@@ -45,7 +43,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Jane Doe',
                     role: 'Patient',
-                    avatar: '/userspace/spokepersons/rita.hayworth.jpg'
+                    avatar: '/userspace/rita.hayworth.jpg'
                 }
             },
             {   username: 'chase',
@@ -54,7 +52,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Robert Chase, MD',
                     role: 'Surgeon',
-                    avatar: '/userspace/house/robert.chase.jpg'
+                    avatar: '/userspace/robert.chase.jpg'
                 }
             },
             {   username: 'camron',
@@ -63,7 +61,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Allison Camron',
                     role: 'Physician',
-                    avatar: '/userspace/house/allison.camron.jpg'
+                    avatar: '/userspace/allison.camron.jpg'
                 }
             },
             {   username: 'ada',
@@ -72,7 +70,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Ada Lovelace',
                     role: 'Patient',
-                    avatar: '/userspace/others/ada.lovelace.jpg'
+                    avatar: '/userspace/ada.lovelace.jpg'
                 }
             },
             {   username: 'florence',
@@ -81,7 +79,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Florence Nightingale',
                     role: 'Nurse',
-                    avatar: '/userspace/others/florence.nightingale.jpg'
+                    avatar: '/userspace/florence.nightingale.jpg'
                 }
             },
             {   username: 'kurt',
@@ -90,7 +88,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Kurt Vonnegut',
                     role: 'Patient',
-                    avatar: '/userspace/others/kurt.vonnegut.jpg'
+                    avatar: '/userspace/kurt.vonnegut.jpg'
                 }
             },
             {   username: 'curie',
@@ -99,7 +97,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Madam Curie',
                     role: 'Radiologist',
-                    avatar: '/userspace/others/madam.curie.jpg'
+                    avatar: '/userspace/madam.curie.jpg'
                 }
             },
             {   username: 'teresa',
@@ -108,7 +106,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Mother Teresa',
                     role: 'Nurse',
-                    avatar: '/userspace/others/mother.teresa.jpg'
+                    avatar: '/userspace/mother.teresa.jpg'
                 }
             },
             {   username: 'samuel',
@@ -117,7 +115,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Samuel Clemens',
                     role: 'Patient',
-                    avatar: '/userspace/others/samuel.clemens.jpg'
+                    avatar: '/userspace/samuel.clemens.jpg'
                 }
             },
             {   username: 'octavia',
@@ -126,7 +124,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Octavia Butler',
                     role: 'Patient',
-                    avatar: '/userspace/others/octavia.butler.jpg'
+                    avatar: '/userspace/octavia.butler.jpg'
                 }
             },
             {   username: 'carver',
@@ -135,7 +133,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'George Washington Carver',
                     role: 'Chemist',
-                    avatar: '/userspace/others/george.washington.carver.jpg'
+                    avatar: '/userspace/george.washington.carver.jpg'
                 }
             },
             {   username: 'shelley',
@@ -144,7 +142,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'Mary Shelley',
                     role: 'Author',
-                    avatar: '/userspace/others/mary.shelley.jpg'
+                    avatar: '/userspace/mary.shelley.jpg'
                 }
             },
             {   username: 'johndoe',
@@ -153,7 +151,7 @@ Meteor.startup(function () {
                 profile: {
                     name: 'John Doe',
                     role: 'Patient',
-                    avatar: '/userspace/spokepersons/michael.j.fox.jpg'
+                    avatar: '/userspace/michael.j.fox.jpg'
                 }
             }
         ];

@@ -2,12 +2,10 @@
 //--------------------------------------------------------------------------
 // Collections Definitions
 
-// TODO:  refactor usersDirector to UsersDirectory
 AllTodos =          new Meteor.Collection("allTodos");
 Todos =             new Meteor.Collection("todos");
 Lists =             new Meteor.Collection("lists");
-usersDirectory =    new Meteor.Collection("usersDirectory");
-Hipaa =             new Meteor.Collection("hipaa");
+UsersDirectory =    new Meteor.Collection("usersDirectory");
 CategoryIcons =     new Meteor.Collection("categoryIcons");
 
 
@@ -15,7 +13,7 @@ CategoryIcons =     new Meteor.Collection("categoryIcons");
 //--------------------------------------------------------------------------
 // Collections Access/Deny Rules
 
-usersDirectory.allow({
+UsersDirectory.allow({
     insert: function(){
         return true;
     },
@@ -26,17 +24,7 @@ usersDirectory.allow({
         return true;
     }
 });
-Hipaa.allow({
-    insert: function(){
-        return true;
-    },
-    update: function () {
-        return true;
-    },
-    remove: function(){
-        return true;
-    }
-});
+
 
 Meteor.users.allow({
     insert: function(userId, todo){

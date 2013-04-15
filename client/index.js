@@ -6,19 +6,17 @@ Session.set('tag_filter', null);
 
 
 // page layout variables
-// these should be written to the user's profile, so it can persist through sessions
-// TODO:  sync terminology between 'show' and 'display'
-// TODO: convert session variables into Meteor.user().profile items
 Session.set('is_supported_browser', false);
+Session.set('is_sidebar_available',true);
+
+// these should be written to the user's profile, so it can persist through sessions
+// TODO: convert session variables into Meteor.user().profile items
 Session.set('show_sidebar_panel',false);
 Session.set('show_header_breadcrumbs',false);
 Session.set('show_new_task_input', true);
 Session.set('show_community_search_input', true);
 Session.set('show_task_detail_panel', false);
-Session.set('display_profile_json_panel', false);
-Session.set('showDropboxAlert', false);
-Session.set('is_sidebar_available',true);
-
+Session.set('show_profile_json_panel', false);
 
 
 

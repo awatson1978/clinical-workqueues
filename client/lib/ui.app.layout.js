@@ -104,7 +104,7 @@ function resizeProfilePageForPortrait(){
 // Controls for the JSON inspection and debugging panel
 
 Template.jsonContentPanelTemplate.showJsonPanel = function(){
-    return Session.get('display_profile_json_panel');
+    return Session.get('show_profile_json_panel');
 };
 Template.jsonContentPanelTemplate.jsonData = function(){
     return Session.get('json_content');
