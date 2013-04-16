@@ -49,6 +49,9 @@ Template.reactiveOverlaysTemplate.imageSrc = function(){
 Template.reactiveOverlaysTemplate.events({
     'click .overlay-mask': function(evt){
         hideOverlay();
+    },
+    'click .overlay-image': function(evt){
+        hideOverlay();
     }
 });
 Template.reactiveOverlaysTemplate.rendered = function(){
@@ -65,8 +68,8 @@ Template.reactiveOverlaysTemplate.rendered = function(){
 // API Functions
 
 showImageOverlay = function(elementId){
-    $(elementId).removeClass('hidden');
-    Session.set('overlay_image_id', elementId);
+//    $(elementId).removeClass('hidden');
+//    Session.set('overlay_image_id', elementId);
     Session.set('overlay_image_path', $(elementId).attr('src'));
     Session.set('show_reactive_overlay', true);
     Session.set('show_overlay_image', true);
@@ -77,7 +80,7 @@ showTutorialOverlay = function(elementId){
     Session.set('show_overlay_template', true);
 };
 hideOverlay = function(){
-    $(Session.get('overlay_image_id')).addClass('hidden');
+//    $(Session.get('overlay_image_id')).addClass('hidden');
     Session.set('show_overlay_image', false);
     Session.set('show_overlay_template', false);
     Session.set('show_reactive_overlay', false);

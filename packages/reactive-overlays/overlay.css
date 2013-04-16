@@ -1,10 +1,9 @@
-
 .overlay-mask{
   position: fixed !important;
   top: 0px !important;
   background-color: #000;
-  opacity: .7;
-  filter: alpha(opacity=70);
+  opacity: .8;
+  filter: alpha(opacity=80);
   position: absolute; top: 0; left: 0;
   width: 100%; height: 100%;
   z-index: 10000;
@@ -15,9 +14,20 @@
     z-index: 10000;
     width: 880px;
     position: fixed;
+    cursor: pointer;
 }
 .overlay-image img{
-    width: 940px;
     margin-left: -50%;
-    margin-bottom: -50%;
+    margin-top: -50px;
+}
+
+.with-rounded-corners {
+    -moz-border-radius: .4em;
+    -webkit-border-radius: .4em;
+    border-radius: .4em;
+
+    border: 2px solid lightgray;
+}
+.hidden{
+  visibility: hidden;
 }
