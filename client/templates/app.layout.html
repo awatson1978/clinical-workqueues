@@ -1,5 +1,5 @@
 <template name="appContainerTemplate">
-    <!-- //TODO:  refactor 'content' to 'appContent' -->
+    <!-- //TODO:  refactor 'content' to 'app-content' -->
     <div class="content">
         {{#if loggedIn}}
         <div class="touch-disabled" id="mainLayoutPane">
@@ -14,12 +14,14 @@
         {{> guestPageTemplate }}
         {{/if }}
     </div>
-    {{> tutorialOverlayTemplate }}
+    {{> reactiveOverlaysTemplate }}
 </template>
 
 
-<template name="tutorialOverlayTemplate">
+<template name="reactiveOverlaysTemplate">
     {{#if isVisible}}
-    <div class="overlay-mask"></div>
+        <div id="overlayMask" class="overlay-mask"></div>
+        <div id="overlayImage" class="{{isImageVisible}} overlay-image"><img src="{{imageSrc}}"></img></div>
+        <div id="overlayTemplate"  class="{{isTemplateVisible}} overlay-template"></div>
     {{/if}}
 </template>

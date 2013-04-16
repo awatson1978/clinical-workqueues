@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/ui.app.tutorials.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.css" afterPath="$PROJECT_DIR$/packages/tutorial-overlay/overlay.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlay/overlay.css" afterPath="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlay/overlay.js" afterPath="$PROJECT_DIR$/packages/reactive-overlays/overlay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlay/package.js" afterPath="$PROJECT_DIR$/packages/reactive-overlays/package.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.guest.js" afterPath="$PROJECT_DIR$/client/lib/page.guest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.tutorials.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.tutorials.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/tutorial-overlay/package.js" afterPath="$PROJECT_DIR$/packages/tutorial-overlay/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,13 +27,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46014878">
+    <splitter split-orientation="horizontal" split-proportion="0.4375">
       <split-first>
         <leaf>
           <file leaf-file-name="app.layout.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="36" selection-start="683" selection-end="683" vertical-scroll-proportion="0.35024875">
+                <state line="26" column="11" selection-start="929" selection-end="929" vertical-scroll-proportion="0.3382114">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.guest.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="114" column="42" selection-start="7113" selection-end="7113" vertical-scroll-proportion="-27.44">
                   <folding />
                 </state>
               </provider>
@@ -41,53 +51,45 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="page.guest.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="10" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ui.app.layout.toggles.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ui.app.tutorials.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/ui.app.tutorials.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/package.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.1904762">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="overlay.css" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/overlay.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="vertical" split-proportion="0.6301158">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="page.guest.js" pinned="false" current="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="38" column="6" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.0">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="ui.app.tutorials.js" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/client/lib/ui.app.tutorials.js">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="30" column="24" selection-start="846" selection-end="846" vertical-scroll-proportion="0.6233766">
+                      <folding>
+                        <element signature="n#!!doc" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="overlay.css" pinned="false" current="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.css">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="16" column="20" selection-start="321" selection-end="321" vertical-scroll-proportion="0.5688889">
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -102,7 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/packages/detect-browser/package.js" />
         <option value="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js" />
         <option value="$PROJECT_DIR$/packages/aoverlays/package.js" />
         <option value="$PROJECT_DIR$/.scrap/vision.statement.txt" />
@@ -110,22 +111,23 @@
         <option value="$PROJECT_DIR$/packages/jquery-tools-overlay/package.js" />
         <option value="$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.less" />
         <option value="$PROJECT_DIR$/packages/tutorial-overlay/overlay.js" />
-        <option value="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.guest.js" />
-        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
-        <option value="$PROJECT_DIR$/client/lib/ui.app.tutorials.js" />
         <option value="$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.css" />
         <option value="$PROJECT_DIR$/packages/tutorial-overlay/package.js" />
+        <option value="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.guest.js" />
+        <option value="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" />
+        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
+        <option value="$PROJECT_DIR$/client/lib/ui.app.tutorials.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="16" />
-    <option name="y" value="250" />
-    <option name="width" value="1174" />
-    <option name="height" value="1166" />
+    <option name="y" value="25" />
+    <option name="width" value="1481" />
+    <option name="height" value="1391" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -209,6 +211,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -227,7 +247,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial-overlay" />
+              <option name="myItemId" value="reactive-overlays" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,6 +298,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public.access" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -416,14 +458,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="250" width="1174" height="1166" extended-state="0" />
+    <frame x="16" y="25" width="1481" height="1391" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41214952" sideWeight="0.99718046" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19846678" sideWeight="0.58785045" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15732613" sideWeight="0.9953668" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -488,7 +530,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -546,13 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="30" selection-start="6337" selection-end="6337" vertical-scroll-proportion="0.22482197">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="0.17904374">
@@ -567,51 +602,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/overlay.js">
+    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="8" selection-start="56" selection-end="56" vertical-scroll-proportion="0.031746034">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/package.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="126" selection-end="126" vertical-scroll-proportion="0.083333336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="33" column="5" selection-start="975" selection-end="975" vertical-scroll-proportion="-0.016666668">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="42" selection-start="7113" selection-end="7113" vertical-scroll-proportion="-27.44">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="10" selection-start="2527" selection-end="2527" vertical-scroll-proportion="0.0">
+        <state line="38" column="6" selection-start="1481" selection-end="1481" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="321" selection-end="321" vertical-scroll-proportion="0.5688889">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.tutorials.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/overlay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="286" selection-end="286" vertical-scroll-proportion="0.1904762">
-          <folding />
+        <state line="30" column="24" selection-start="846" selection-end="846" vertical-scroll-proportion="0.6233766">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="36" selection-start="683" selection-end="683" vertical-scroll-proportion="0.35024875">
+        <state line="26" column="11" selection-start="929" selection-end="929" vertical-scroll-proportion="0.3382114">
           <folding />
         </state>
       </provider>

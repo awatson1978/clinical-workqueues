@@ -11,3 +11,13 @@
 
   cursor: pointer;
 }
+.overlay-image{
+    z-index: 10000;
+    width: 880px;
+    position: fixed;
+}
+.overlay-image img{
+    width: 940px;
+    margin-left: -50%;
+    margin-bottom: -50%;
+}
