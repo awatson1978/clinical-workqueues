@@ -1,0 +1,73 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "master",
+    "commit": "0ffea1c4c308ed24906984f99b13b8fca5a0956c"
+  },
+  "dependencies": {
+    "basePackages": {
+      "audio-click": {
+        "git": "https://github.com/awatson1978/audio-click.git",
+        "branch": "master"
+      },
+      "fonts-barcode": {
+        "git": "https://github.com/awatson1978/fonts-barcode.git",
+        "branch": "master"
+      },
+      "fonts-handwritten": {
+        "git": "https://github.com/awatson1978/fonts-handwritten.git",
+        "branch": "master"
+      },
+      "fonts-helveticas": {
+        "git": "https://github.com/awatson1978/fonts-helveticas.git",
+        "branch": "master"
+      },
+      "fonts-pictographs": {
+        "git": "https://github.com/awatson1978/fonts-pictographs.git",
+        "branch": "master"
+      },
+      "hipaa-audit-log": {
+        "git": "https://github.com/awatson1978/hipaa-audit-log.git",
+        "branch": "master"
+      },
+      "pretty-checkable": {}
+    },
+    "packages": {
+      "audio-click": {
+        "git": "https://github.com/awatson1978/audio-click.git",
+        "branch": "master",
+        "commit": "6eff5499a761785882774c4e8b940b2ea0a61eff"
+      },
+      "fonts-barcode": {
+        "git": "https://github.com/awatson1978/fonts-barcode.git",
+        "branch": "master",
+        "commit": "7e67fb78e4c644e7bb7a2879309f8d7311f283db"
+      },
+      "fonts-handwritten": {
+        "git": "https://github.com/awatson1978/fonts-handwritten.git",
+        "branch": "master",
+        "commit": "8f37bb36c1524b5638aedc191f6a6d003ecd93c7"
+      },
+      "fonts-helveticas": {
+        "git": "https://github.com/awatson1978/fonts-helveticas.git",
+        "branch": "master",
+        "commit": "f8a2a09a32e4c69b016ecfd351de9ad9873c8220"
+      },
+      "fonts-pictographs": {
+        "git": "https://github.com/awatson1978/fonts-pictographs.git",
+        "branch": "master",
+        "commit": "cb97a9a2728349ef866abaf4c416314ce45fcd87"
+      },
+      "hipaa-audit-log": {
+        "git": "https://github.com/awatson1978/hipaa-audit-log.git",
+        "branch": "master",
+        "commit": "7bab148ba55a9d56e1130883de2874653e803ea5"
+      },
+      "pretty-checkable": {
+        "git": "https://github.com/TimHeckel/meteor-pretty-checkable.git",
+        "tag": "v0.0.1",
+        "commit": "eb48da65693f4a798d255a597f5cdb6dbc272c1c"
+      }
+    }
+  }
+}
