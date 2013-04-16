@@ -1,9 +1,11 @@
 
 //--------------------------------------------------------------------------
-// LAYOUT FUNCTIONS
+// Layout Helper Functions
 
 
-
+// this is the main workhorse function that is responsible for actually rendering
+// the workqueues page correctly; it gets called on render, resize, orientation change,
+// and a few other situations.
 
 layoutWorkqueuesPage = function() {
     console.log('layoutworkquesPage()');
@@ -28,17 +30,35 @@ layoutWorkqueuesPage = function() {
         $('.card-footer-resize').css('width', window.innerWidth - 40);
     }
 }
+
+
+//--------------------------------------------------------------------------
+// Workqueues Templates
+
 Template.workqueuesPageTemplate.rendered = function(){
     console.log('Template.workqueuesPageTemplate.rendered');
     layoutWorkqueuesPage();
 };
-Template.workqueuesPageTemplate.resized = function(){
 
+
+// the secret sauce for getting an app to resize correctly is to use a Monad
+// note how we begin with a template variable that we want to calculate
+// and how the reactive session variable is defined last
+Template.workqueuesPageTemplate.resized = function(){
     setSidebarVisibility();
     layoutWorkqueuesPage();
     return Session.get("resized");
-    //Meteor.flush();
 };
+
+// TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
+Template.workqueueTemplate.receivedNewAlert = function(){
+    return monitorDropbox();
+};
+
+
+//--------------------------------------------------------------------------
+// New Task Input Bar
+
 Template.workqueuesPageTemplate.events({
     'click #newTaskInput': function(evt,tmpl){
         if($('#newTaskInput').val() == 'add new task'){
@@ -72,34 +92,25 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
                 }, function (error, todo) {
                     console.log('error: ' + error);
                     console.log('todo: ' + todo);
-//                    if (! error) {
-//                        Session.set("selected", todo);
-//                        if (! public && Meteor.users.find().count() > 1)
-//                            openInviteDialog();
-//                    }
                 });
-                //Session.set("showCreateDialog", false);
             } else {
                 Session.set("createError",
                     "It needs a title and a description, or why bother?");
             }
-
             evt.target.value = '';
+        },
+        cancel: function(text,evt){
+            $('#newTaskInput').addClass('lightgray');
+            $('#newTaskInput').val('add new task');
         }
     })
 );
 
+//--------------------------------------------------------------------------
+// New Task Input Bar
 
-
-
-
-//----------------------------------------------------------------------
-
-Template.todos.receivedNewAlert = function(){
-    return monitorDropbox();
-};
-
-Template.todos.any_list_selected = function () {
+// TODO:  confirm if this is still being used; delete if not
+Template.workqueueTemplate.any_list_selected = function () {
    try{
        if(Session.equals('list_id', undefined)){
            return false;
@@ -111,17 +122,9 @@ Template.todos.any_list_selected = function () {
    }
 };
 
-
-Template.todo_item.showDeleteButton = function(){
-  if(Session.get('selected_task_delete_id') == this._id){
-      return true;
-  }else{
-      return false;
-  }
-};
-
-Template.todos.todos = function () {
-    // Determine which todos to display in main pane,
+// TODO:  refactor todos to taskList
+Template.workqueueTemplate.todos = function () {
+    // Determine which tasks to display in the taskList,
     // selected based on list_id and tag_filter.
 
     try{
@@ -143,7 +146,22 @@ Template.todos.todos = function () {
     }
 };
 
-Template.todo_item.tag_objs = function () {
+
+
+
+//----------------------------------------------------------------------
+
+
+Template.taskItemTemplate.showDeleteButton = function(){
+  if(Session.get('selected_task_delete_id') == this._id){
+      return true;
+  }else{
+      return false;
+  }
+};
+
+
+Template.taskItemTemplate.tag_objs = function () {
     try{
         var todo_id = this._id;
         return _.map(this.tags || [], function (tag) {
@@ -153,11 +171,11 @@ Template.todo_item.tag_objs = function () {
         console.log(error);
     }
 };
-Template.todo_item.adding_tag = function () {
+Template.taskItemTemplate.adding_tag = function () {
     return Session.equals('editing_addtag', this._id);
 };
 
-Template.todo_item.done_class = function () {
+Template.taskItemTemplate.done_class = function () {
     try{
         return this.done ? 'done' : '';
     }catch(error){
@@ -165,21 +183,28 @@ Template.todo_item.done_class = function () {
     }
 };
 
-Template.todo_item.done_checkbox = function () {
+Template.taskItemTemplate.done_checkbox = function () {
     try{
-        return this.done ? 'checked="checked"' : '';
+        return this.done ? 'green' : 'lightgray';
     }catch(error){
         console.log(error);
     }
 };
+//Template.taskItemTemplate.done_checkbox = function () {
+//    try{
+//        return this.done ? 'green' : 'lightgray';
+//    }catch(error){
+//        console.log(error);
+//    }
+//};
 
-Template.todo_item.editing = function () {
+Template.taskItemTemplate.editing = function () {
     return Session.equals('editing_itemname', this._id);
 };
 
 
 
-Template.todo_item.events({
+Template.taskItemTemplate.events({
     'touchstart .inline-list':function(eventHandler){
         Session.set('json_content', JSON.stringify(this));
         Session.set('swipe_start', eventHandler.touches[0].pageX);
@@ -219,8 +244,9 @@ Template.todo_item.events({
         Session.set('show_task_detail_panel', true);
         Meteor.flush();
     },
-    'click .check': function () {
+    'click .checkmark': function (e) {
         Todos.update(this._id, {$set: {done: !this.done}});
+        e.preventDefault();
         Meteor.flush();
     },
     'click .destroy': function () {
@@ -256,7 +282,7 @@ Template.todo_item.events({
     }
 });
 
-Template.todo_item.events(okCancelEvents(
+Template.taskItemTemplate.events(okCancelEvents(
     '#todo-input',
     {
         ok: function (value) {
@@ -268,7 +294,7 @@ Template.todo_item.events(okCancelEvents(
         }
     }));
 
-Template.todo_item.events(okCancelEvents(
+Template.taskItemTemplate.events(okCancelEvents(
     '#edittag-input',
     {
         ok: function (value) {
@@ -336,10 +362,8 @@ Template.taskDetailCardTemplate.events({
         sendToActiveCollaborator();
     },
     'click #detailedTaskAddTagIcon': function (evt) {
-        //alert('foo');
         Session.set('editing_detailed_addtag', Session.get('selected_task_id'));
         Meteor.flush();
-        //activateInput(tmpl.find('#edittagInputDetailed'));
 
         $('#edittagInputDetailed').focus();
         $('#edittagInputDetailed').select();
@@ -436,9 +460,6 @@ Template.taskDetailCardTemplate.tag_objs = function(){
         return {todo_id: ession.get('selected_task_id'), tag: tag};
     });
 };
-//Template.taskDetailCardTemplate.tag = function(){
-//    return Session.get('selected_task_tags');
-//};
 Template.taskDetailCardTemplate.adding_tag = function(){
     return false;
 };
@@ -446,28 +467,3 @@ Template.taskDetailCardTemplate.adding_tag = function(){
 
 
 
-
-
-//Template.taskDetailCardTemplate.tag_objs = function () {
-//    return _.map(Todos.findOne(Session.set('selected_task_id')).tags || [], function (tag) {
-//        return {todo_id: Session.set('selected_task_id'), tag: tag};
-//    });
-//};
-//
-//Template.taskDetailCardTemplate.done_class = function () {
-//    var todo = Todos.findOne(Session.set('selected_task_id'));
-//    return todo.done ? 'done' : '';
-//};
-//
-//Template.taskDetailCardTemplate.done_checkbox = function () {
-//    var todo = Todos.findOne(Session.set('selected_task_id'));
-//    return todo.done ? 'checked="checked"' : '';
-//};
-//
-//Template.taskDetailCardTemplate.editing = function () {
-//    return Session.equals('editing_itemname', Session.set('selected_task_id'));
-//};
-//
-//Template.taskDetailCardTemplate.adding_tag = function () {
-//    return Session.equals('editing_addtag', Session.set('selected_task_id'));
-//};

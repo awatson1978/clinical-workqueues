@@ -1,5 +1,5 @@
 
-
+// TODO:  refactor 'item-list' to 'mainWorkqueue'
 #item-list .todo .item-tags {
   overflow: auto;
   float: right;
@@ -52,13 +52,6 @@
 
 
 
-//#edittag-input {
-//    width: 80px;
-//    height: 27px !important;
-//    padding: 0px;
-//    margin: 0px;
-//}
-
 //--------------------------------
 
 .horizontal-tags{
@@ -67,6 +60,7 @@
   right: 5px;
   background-color: white;
 }
+// TODO:  decide if we want to keep the bookends
 //.bookend-right{
 //  position: absolute;
 //  background: white;
@@ -107,18 +101,57 @@
   color: red;
 }
 
-//---------------------------------------------
-// page specific elements
-
-//#edittagInputDetailed{
-//  margin: 0 0 0 0 !important;
-//  padding: 6px !important;
-//  height: 27px !important;
-//}
-
-.new-task-container{
-
+#workqueuesPage{
+  .todo{
+    padding-left: 20px;
+    .inline-list li{
+      margin-left: 0px;
+    }
+    .display{
+      padding-top: 14px;
+    }
+    .todo-text{
+      margin-left: 0px;
+      padding-left: 10px;
+    }
+    .checkmark:hover{
+      color: darkgreen !important;
+    }
+    .task-star:hover{
+      color: darkgoldenrod !important;
+    }
+    .task-delete:hover{
+      color: maroon !important;
+    }
+  }
+  .touch-disabled .todo:hover{
+    .checkmark{
+      //color: darkseagreen;
+      color: steelblue;
+    }
+    .task-star{
+      //color: goldenrod;
+      color: steelblue;
+    }
+    .task-delete{
+      //color: indianred;
+      color: steelblue;
+    }
+    .todo-text{
+      //color: black;
+      color: steelblue;
+    }
+    .horizontal-tags .addtag{
+      color: steelblue;
+    }
+  // TOOD:  refactor removable_tag to removable-tag
+    .horizontal-tags .removable_tag{
+      background-color: steelblue;
+    }
+  }
 }
+
+
 
 //---------------------------------------------
 
@@ -165,19 +198,12 @@
 
   #taskDetailCard{
     position: fixed;
-    //bottom: 240px;
-    //left: 0px !important;
-    //width: 100% !important;
   }
-//  .container{
-//    .columns{
-//      width: 50% !important!;
-//    }
-//  }
   #sidebarPane{
     padding-top: 45px;
   }
 }
+
 // landscape orientation
 @media only screen and (min-width: 769px) {
   #mainLayoutPane{

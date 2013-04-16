@@ -1,0 +1,21 @@
+<!-- TODO:  create accounts-collaborator package -->
+<!-- TODO:  move link to collaboratorsCard to profilePageSidebarTemplate -->
+
+<template name="collaboratorsCardTemplate">
+    <div id="collaboratorsCard" class="hidden card">
+        <div class="card-header clipped_corner rounded-top-right">
+            <span class="pictograph">a</span> Collaborators
+        </div>
+        <!--<div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>-->
+        <div class="panel">
+            <ul class="collaborators-data simple-user list">
+                {{#each user_collaborators}}
+                <li>
+                    <span class="collaborator">{{ name }}</span>
+                    <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

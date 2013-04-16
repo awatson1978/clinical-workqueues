@@ -1,3 +1,8 @@
+Template.appContainerTemplate.rendered = function(){
+    if(isMobile){
+        $('.touch-trigger').removeClass('touch-disabled');
+    }
+}
 
 //-----------------------------------------------------
 // SESSION TOGGLE FUNCTIONS

@@ -1,15 +1,17 @@
+<!-- TODO:  add workqueue sorting buttons to footer bar;  date, completed, alphabetical/name, id, etc -->
+
 <template name="workqueuesPageTemplate">
-    <div id="workqueuesPage" class="page">
+    <div id="workqueuesPage" class="page ">
         <div class="new-task-container">
             <input id="newTaskInput" type="text" class="search lightgray" value="add new task" />
         </div>
-        {{> todos}}
+        {{> workqueueTemplate}}
     </div>
-    <div class="hidden resize-trigger">resied: {{resized}}</div>
+    <div class="hidden resize-trigger">resized: {{resized}}</div>
 </template>
 
-<!-- //TODO:  refactor 'todos' to 'workqueueTemplate' -->
-<template name="todos">
+
+<template name="workqueueTemplate">
     <div>
         {{#if receivedNewAlert }}
         <div class="padded">
@@ -17,18 +19,17 @@
         </div>
         {{/if }}
     </div>
-    <div id="items-view">
+    <div id="items-view" class="touch-trigger touch-disabled">
         <ul id="item-list">
             {{#each todos}}
-            {{> todo_item}}
+            {{> taskItemTemplate}}
             {{/each}}
         </ul>
     </div>
     {{> taskDetailCardTemplate }}
 </template>
 
-<!-- TODO:  refacotor 'todo_item' to 'todoItemTemplate' -->
-<template name="todo_item">
+<template name="taskItemTemplate">
     <li class="todo {{done_class}}">
         <ul class="inline-list">
             {{#if editing}}
@@ -37,12 +38,17 @@
             </li>
             {{else}}
             <li class="display">
-                <!-- TODO:  convert done_checkbox into pictograph toggle button -->
-                <input class="check" name="markdone" type="checkbox" {{{done_checkbox}}} />
+                <span class="largish {{done_checkbox}} checkmark pictogram">%</span>
 
                 <!-- TODO:  rename 'destroy' button as 'todo-delete-button' -->
                 <!-- TODO:  renenable button, and conditionally display it on non-mobile devices -->
                 <!--<li class="destroy"></li>-->
+            </li>
+            <li class="display">
+                <span class="largish lightgray {{task_star}} task-star pictogram">*</span>
+            </li>
+            <li class="display">
+                <span class="largish lightgray {{task_delete}} task-delete pictogram">x</span>
             </li>
             <li class="display">
                 <span class="todo-text">{{text}}</span>
@@ -74,7 +80,6 @@
                 </li>
                 {{else}}
                 <li class="largish addtag pictograph">J</li>
-                <li class="largish pictograph">x</li>
                 {{/if}}
             </ul>
         {{/if }}

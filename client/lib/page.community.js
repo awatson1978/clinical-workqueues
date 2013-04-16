@@ -16,10 +16,6 @@ Template.communityPageTemplate.resize = function(){
 
 Template.communityInspectionColumn.rendered = function(){
     log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
-
-    if(isMobile){
-        $('.page').removeClass('touch-disabled');
-    }
 };
 Template.communityInspectionColumn.search_text_color = function(){
     if(Session.get('community_members_filter') == null){

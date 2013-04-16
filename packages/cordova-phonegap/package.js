@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Adds logic for detecting browsers."
+  summary: "Adds support for mobile hardware via Cordova Phonegap."
 });
 
 Package.on_use(function (api) {

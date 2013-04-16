@@ -1,0 +1,20 @@
+<!-- TODO:  create accounts-carewatch package -->
+<!-- TODO:  move link to carewatchCard to profilePageSidebarTemplate -->
+
+<template name="carewatchCardTemplate">
+    <div id="carewatchCard" class="card">
+        <div class="card-header clipped_corner rounded-top-right">
+            <span class="pictograph">j</span> Carewatch
+        </div>
+        <div class="panel">
+            <ul class="carewatch-data simple-user list">
+                {{#each user_carewatch}}
+                <li>
+                    <span class="collaborator">{{ name }}</span>
+                    <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</template>

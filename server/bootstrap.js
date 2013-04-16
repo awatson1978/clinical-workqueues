@@ -17,13 +17,13 @@ Meteor.startup(function () {
          ["Evaluate risk of pulmonary embolism.", "medications", "risk evaluation"]
          ]
       },
-      {name: "Urgent",
+      {name: "Completed",
             contents: [
                 ["Double check insurance eligibility before end of month.", "insurance", "medications"],
                 ["Contact technetium-99m supplier for shortage routing instructions.", "protocols", "medications", "supply chain"]
             ]
       },
-      {name: "Public",
+      {name: "Routine",
        contents: [
            ["Get annual flu shot.","annual checkup"],
            ["Donate blood.","community"],

@@ -6,11 +6,10 @@
             </div>
         {{/if }}
         <div class="spacer row"></div>
-        {{> userCardTemplate }}
-
-        <!-- TODO:  add activeCollaboratorCardTemplate block-->
-        {{!> activeCollaboratorCardTemplate }}
-
+        <div class="row">
+            {{> userCardTemplate }}
+            {{> activeCollaboratorCardTemplate }}
+        </div>
     </div>
 </template>
 
@@ -18,140 +17,121 @@
 
 <!-- TODO:  create activeCollaboratorCardTemplate-->
 <template name="activeCollaboratorCardTemplate">
+    <div class="clickable synopsis card-container with-bottom-spacer">
+        <div class="card-header rounded-top-right">
+            <span class="white card-meta-data">Active Collaborator</span>
+        </div>
+        <div class="user-profile-card card-body">
+            <div class="user-card-detailed">
+                <img class="user-card-image collaborator-image gray-border" id="originImage" src="/images/placeholder-240x240.gif" />
+            </div>
+        </div>
+        <div class="card-footer"></div>
+    </div>
 
     <!-- TODO:  collaboratorImage.onclick opens communityModalPage -->
 
 </template>
 
 <template name="userCardTemplate">
-    <div class="user-card-block">
+    <!--<div class="user-card-block">-->
         <div class="hidden">{{resize}}</div>
 
-        <div id="userProfileCard" class="card">
-            <div class="card-header clipped_corner rounded-top-right">
+        <div class="clickable synopsis card-container with-bottom-spacer">
+            <div class="card-header rounded-top-right">
                 <span class="white card-meta-data barcode">*{{user_id}}*</span>
             </div>
-            <div class="panel user-card-detailed">
-                <img class="user-card-image drop-zone gray-border" id="drop_zone" src="{{user_image}}" />
+            <div class="user-profile-card card-body ">
+                <div class="user-card-detailed">
+                    <img class="user-card-image drop-zone gray-border" id="drop_zone" src="{{user_image}}" />
 
-                <div class="user-card-data">
+                    <div class="user-card-data">
 
-                    <!-- TODO:  remove foundation.css twelve column usage -->
-                    <div class="twelve columns">
-                        <ul id="profileItems" class="profile-items card-data dictionary">
-                            <li>
-                                <div id="profile-display-name-label" class="dictionary-key hidden-top-row">Name</div>
-                                {{#if editing_name}}
-                                <div id="userNameInput" class="edit dictionary-value-editing hidden-top-row">
-                                    <input id="profile-input-name" type="text" placeholder="Jane Doe" value="{{user_name}}" />
-                                </div>
-                                {{else}}
-                                <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing hidden-top-row">
-                                    <span id="profile-display-name" class="dictionary-value hidden-top-row">{{user_name}}</span>
-                                </div>
-                                {{/if}}
-                            </li>
+                        <!-- TODO:  remove foundation.css twelve column usage -->
+                        <div class="twelve columns">
+                            <ul id="profileItems" class="profile-items card-data dictionary">
+                                <li>
+                                    <div id="profile-display-name-label" class="dictionary-key hidden-top-row">Name</div>
+                                    {{#if editing_name}}
+                                    <div id="userNameInput" class="edit dictionary-value-editing hidden-top-row">
+                                        <input id="profile-input-name" type="text" placeholder="Jane Doe" value="{{user_name}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userNameDisplay" class="userNameDisplay display dictionary-value-editing hidden-top-row">
+                                        <span id="profile-display-name" class="dictionary-value hidden-top-row">{{user_name}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
 
-                            <li >
-                                <div id="profile-display-birthdate-label" class="dictionary-key">Birthdate</div>
-                                {{#if editing_birthdate}}
-                                <div id="userDateOfBirthInput" class="edit dictionary-value-editing">
-                                    <input id="profile-input-birth-date" type="text" placeholder="1969/01/27" value="{{user_birthdate}}" />
-                                </div>
-                                {{else}}
-                                <div id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display dictionary-value-editing">
-                                    <span id="profile-display-birth-date" class="dictionary-value">{{user_birthdate}}</span>
-                                </div>
-                                {{/if}}
-                            </li>
-                            <li>
-                                <div id="profile-display-avatar-label" class="dictionary-key">Avatar</div>
-                                {{#if editing_avatar}}
-                                <div id="userAvatarInput" class="edit dictionary-value-editing">
-                                    <input id="profile-input-avatar" type="text" placeholder="28371d8c-42be-4a67-83aa-27a863fe9060.png" value="{{user_avatar}}" />
-                                </div>
-                                {{else}}
-                                <div id="userAvatarDisplay" class="userAvatarDisplay display dictionary-value-editing">
-                                    <span id="profile-display-avatar" class="dictionary-value">{{user_avatar}}</span>
-                                </div>
-                                {{/if}}
-                            </li>
-                            <li>
-                                <div id="profile-display-dropbox-label" class="dictionary-key">Dropbox</div>
-                                <div id="userDropBoxDisplay" class="userAvatarDisplay display dictionary-value-editing">
-                                    <span id="profile-display-dropbox" class="gray dictionary-value">{{user_dropbox}}</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div id="profile-display-active-collaborator-label" class="dictionary-key">Collaborator</div>
-                                <div id="userActiveCollaboratorDisplay" class="userAvatarDisplay display dictionary-value-editing">
-                                    <span id="profile-display-active-collaborator" class="gray dictionary-value">{{user_active_collaborator}}</span>
-                                </div>
-                            </li>
+                                <li >
+                                    <div id="profile-display-birthdate-label" class="dictionary-key">Birthdate</div>
+                                    {{#if editing_birthdate}}
+                                    <div id="userDateOfBirthInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-birth-date" type="text" placeholder="1969/01/27" value="{{user_birthdate}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userDateOfBirthDisplay" class="userDateOfBirthDisplay display dictionary-value-editing">
+                                        <span id="profile-display-birth-date" class="dictionary-value">{{user_birthdate}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
+                                <li>
+                                    <div id="profile-display-avatar-label" class="dictionary-key">Avatar</div>
+                                    {{#if editing_avatar}}
+                                    <div id="userAvatarInput" class="edit dictionary-value-editing">
+                                        <input id="profile-input-avatar" type="text" placeholder="28371d8c-42be-4a67-83aa-27a863fe9060.png" value="{{user_avatar}}" />
+                                    </div>
+                                    {{else}}
+                                    <div id="userAvatarDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                        <span id="profile-display-avatar" class="dictionary-value">{{user_avatar}}</span>
+                                    </div>
+                                    {{/if}}
+                                </li>
+                                <li>
+                                    <div id="profile-display-dropbox-label" class="dictionary-key">Dropbox</div>
+                                    <div id="userDropBoxDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                        <span id="profile-display-dropbox" class="gray dictionary-value">{{user_dropbox}}</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div id="profile-display-active-collaborator-label" class="dictionary-key">Collaborator</div>
+                                    <div id="userActiveCollaboratorDisplay" class="userAvatarDisplay display dictionary-value-editing">
+                                        <span id="profile-display-active-collaborator" class="gray dictionary-value">{{user_active_collaborator}}</span>
+                                    </div>
+                                </li>
 
-                            <!-- TODO:  hide currentPage input; convert to detailedInfoCard -->
-                            <li>
-                                <div id="profile-display-lastpage-label" class="dictionary-key">Current Page</div>
-                                <div id="userLastPageDisplay" class="userAvatarDisplay display dictionary-value-editing">
-                                    <span id="profile-display-lastpage" class="gray dictionary-value">{{user_currentpage}}</span>
-                                </div>
-                            </li>
-                        </ul>
+                                <!-- TODO:  move currentPage input to detailedUsersInfoCard -->
+                                <!--<li>-->
+                                <!--<div id="profile-display-lastpage-label" class="dictionary-key">Current Page</div>-->
+                                <!--<div id="userLastPageDisplay" class="userAvatarDisplay display dictionary-value-editing">-->
+                                <!--<span id="profile-display-lastpage" class="gray dictionary-value">{{!user_currentpage}}</span>-->
+                                <!--</div>-->
+                                <!--</li>-->
+                            </ul>
+                        </div>
                     </div>
+
                 </div>
             </div>
+            <div class="card-footer"></div>
         </div>
 
-        <!-- TODO:  refactor carewatchCard into external file -->
-        <!-- TODO:  move carewatchCard out of ClinicalWorkqueues and into Symptomatic project-->
-        <!-- TODO:  do the same for associated Javascript and CSS files -->
-        <!-- TODO:  move link to carewatchCard to profilePageSidebarTemplate -->
 
-        <div class="spacer row"></div>
-        <div id="carewatchCard" class="card">
-            <div class="card-header clipped_corner rounded-top-right">
-                <span class="pictograph">j</span> Carewatch
-            </div>
-            <div class="panel">
-                <ul class="carewatch-data simple-user list">
-                    {{#each user_carewatch}}
-                    <li>
-                        <span class="collaborator">{{ name }}</span>
-                        <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
 
-        <!-- TODO:  refactor collaboratorsCard into external file -->
-        <!-- TODO:  move collaboratorsCard out of ClinicalWorkqueues and into Symptomatic project-->
-        <!-- TODO:  do the same for associated Javascript and CSS files -->
-        <!-- TODO:  move link to collaboratorsCard to profilePageSidebarTemplate -->
+        <!--<div id="userProfileCard" class="card">-->
+            <!--<div class="card-header clipped_corner rounded-top-right">-->
+                <!--<span class="white card-meta-data barcode"></span>-->
+            <!--</div>-->
+            <!--<div class="panel user-card-detailed">-->
+            <!--</div>-->
+        <!--</div>-->
 
-        <div class="spacer row"></div>
-        <div id="collaboratorsCard" class="hidden card">
-            <div class="card-header clipped_corner rounded-top-right">
-                <span class="pictograph">a</span> Collaborators
-            </div>
-            <!--<div class="profile-list-label fullwidth"><span class="pictograph">a  </span>Collaborators</div>-->
-            <div class="panel">
-                <ul class="collaborators-data simple-user list">
-                    {{#each user_collaborators}}
-                    <li>
-                        <span class="collaborator">{{ name }}</span>
-                        <span class="right-padded float-right destroy"><span class="pictograph">x</span></span>
-                    </li>
-                    {{/each}}
-                </ul>
-            </div>
-        </div>
+
+
 
         <!-- TODO:  move link to hipaaCard to profilePageSidebarTemplate -->
-        <div class="spacer row"></div>
-        {{> hipaaAuditLogTemplate}}
-
-    </div>
+        {{!> hipaaAuditLogTemplate}}
+    <!--</div>-->
 </template>
 
 

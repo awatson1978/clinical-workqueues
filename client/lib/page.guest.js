@@ -2,9 +2,6 @@ Template.guestPageTemplate.rendered = function(){
     log_event("Template.guestPageTemplate.rendered",LogLevel.Signpost,this);
 };
 Template.guestPageTemplate.events({
-    // TODO:  hide elements on page load by default
-    // TODO:  moneyShot should display on synopsis and roadmap
-
     'click .synopsis-tab': function(){
         $('.card-container').addClass('hidden');
         $('.vision').addClass('hidden');
@@ -40,16 +37,7 @@ Template.guestPageTemplate.events({
         $('.vision').removeClass('hidden');
     },
     'click .moneyShot': function(){
-        //showImageOverlay($('#day-of-glass-money-shot-34ratio').attr('src'));
         showImageOverlay('#day-of-glass-money-shot-34ratio');
-    }
-});
-
-
-
-Template.samplePageTemplate.events({
-    'click .thumbnail-image-a': function(){
-        showImageOverlay('#thumbnailImageA');
     }
 });
 
