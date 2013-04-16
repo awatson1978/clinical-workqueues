@@ -30,7 +30,10 @@
         "git": "https://github.com/awatson1978/hipaa-audit-log.git",
         "branch": "master"
       },
-      "pretty-checkable": {}
+      "reactive-overlays": {
+        "git": "https://github.com/awatson1978/reactive-overlays.git",
+        "branch": "master"
+      }
     },
     "packages": {
       "audio-click": {
@@ -61,12 +64,12 @@
       "hipaa-audit-log": {
         "git": "https://github.com/awatson1978/hipaa-audit-log.git",
         "branch": "master",
-        "commit": "7bab148ba55a9d56e1130883de2874653e803ea5"
+        "commit": "09c435c9a28c7a735d0725b4e83bd92d1f6dcd86"
       },
-      "pretty-checkable": {
-        "git": "https://github.com/TimHeckel/meteor-pretty-checkable.git",
-        "tag": "v0.0.1",
-        "commit": "eb48da65693f4a798d255a597f5cdb6dbc272c1c"
+      "reactive-overlays": {
+        "git": "https://github.com/awatson1978/reactive-overlays.git",
+        "branch": "master",
+        "commit": "8dcb64f12a5c64c17f15381a6bb293f28b94ed3a"
       }
     }
   }

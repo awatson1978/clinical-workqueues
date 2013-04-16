@@ -8,7 +8,7 @@
                     <div class="nine columns">
                         <div class="row">
 
-                            <div class="synopsis card-container with-bottom-spacer">
+                            <div class="clickable synopsis card-container with-bottom-spacer">
                                 <div class="card-header rounded-top-right">
                                     <span class="white card-meta-data">Synopsis</span>
                                 </div>
@@ -20,7 +20,7 @@
 
 
 
-                            <div class="features card-container with-bottom-spacer">
+                            <div class="hidden clickable features card-container with-bottom-spacer">
                                 <div class="card-header rounded-top-right">
                                     <span class="white card-meta-data">Features</span>
                                 </div>
@@ -39,7 +39,7 @@
 
 
 
-                            <div class="accounts card-container with-bottom-spacer">
+                            <div class="hidden clickable accounts card-container with-bottom-spacer">
                                 <div class="card-header rounded-top-right">
                                     <span class="white card-meta-data">Demo Accounts</span>
                                 </div>
@@ -77,7 +77,7 @@
 
 
 
-                            <div class="betatest card-container with-bottom-spacer">
+                            <div class="hidden clickable betatest card-container with-bottom-spacer">
                                 <div class="card-header rounded-top-right">
                                     <span class="white card-meta-data">Beta Testing Program</span>
                                 </div>
@@ -91,11 +91,11 @@
 
 
                             <div class="making-this itaintrocketscience hide-for-small hide-for-medium vision">Money shot!  This is what we're trying to create!</div>
-                            <div id="moneyShotContainer" class="row with-bottom-spacer">
-                                <img rel="#moneyShot" class="gray moneyShot panel with-rounded-corners" src="/images/visionStatement/day-of-glass-money-shot.png">
+                            <div id="moneyShotContainer" class="vision row with-bottom-spacer">
+                                <img rel="#moneyShot" class="gray clickable moneyShot panel with-rounded-corners" src="/images/visionStatement/day-of-glass-money-shot.png">
                             </div>
-                            <div class="making-this itaintrocketscience hide-for-small hide-for-medium vision">The healthcare related stuff begins at 6:23 into the video.</div>
-                            <div class="vision row with-bottom-spacer">
+                            <div class="making-this itaintrocketscience hide-for-small hide-for-medium hidden vision">The healthcare related stuff begins at 6:23 into the video.</div>
+                            <div id="dayOfGlassMedicalVideo" class="hidden vision row with-bottom-spacer">
                                 <iframe class="gray panel with-rounded-corners hidden-on-portrait" width="100%" height="300px" src="http://www.youtube.com/embed/Muv3R_6AXls" frameborder="0" allowfullscreen></iframe>
                             </div>
                         </div>
@@ -103,23 +103,23 @@
                     <div class="three columns">
                         <div class="panel with-rounded-corners without-right-padding">
                             <div class="list {{selected}}">
-                                <div class="synopsis-tab sidebar-tab note">
-                                    Synopsis
+                                <div class="synopsis-tab sidebar-tab helveticas note">
+                                    SYNOPSIS
                                 </div>
-                                <div class="features-tab sidebar-tab note">
-                                    Features
+                                <div class="features-tab sidebar-tab helveticas note">
+                                    FEATURES
                                 </div>
-                                <div class="vision-tab sidebar-tab note">
-                                    Vision
+                                <div class="vision-tab sidebar-tab helveticas note">
+                                    VISION
                                 </div>
-                                <!--<div class="roadmap-tab sidebar-tab note">-->
-                                    <!--Roadmap-->
-                                <!--</div>-->
-                                <div class="accounts-tab sidebar-tab note">
-                                    Demo Accounts
+                                <div class="accounts-tab sidebar-tab helveticas note">
+                                    DEMO ACCOUNTS
                                 </div>
-                                <div class="betatest-tab sidebar-tab note">
-                                    Beta Testing Program
+                                <div class="betatest-tab sidebar-tab helveticas note">
+                                    BETA TESTING
+                                </div>
+                                <div class="all-tab sidebar-tab helveticas note">
+                                    ALL
                                 </div>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
 
                     <div class="simple_overlay" id="moneyShot">
                         <div class="close"></div>
-                        <img id="day-of-glass-money-shot-34ratio" src="/images/visionStatement/day-of-glass-money-shot-34ratio.png" />
+                        <img id="day-of-glass-money-shot-34ratio" class="hidden" src="/images/visionStatement/day-of-glass-money-shot-34ratio.png" />
                     </div>
                 </div>
             </div>

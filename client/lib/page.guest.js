@@ -4,14 +4,12 @@ Template.guestPageTemplate.rendered = function(){
 Template.guestPageTemplate.events({
     // TODO:  hide elements on page load by default
     // TODO:  moneyShot should display on synopsis and roadmap
-    // TODO:  fix overlay so it works repeatdely
-    // TODO:  factor out overlay into package
-    // TODO:  move if/then isMobile code into event handler
 
     'click .synopsis-tab': function(){
         $('.card-container').addClass('hidden');
         $('.vision').addClass('hidden');
         $('.synopsis').removeClass('hidden');
+        $('#moneyShotContainer').removeClass('hidden');
     },
     'click .features-tab': function(){
         $('.card-container').addClass('hidden');
@@ -37,8 +35,21 @@ Template.guestPageTemplate.events({
         $('.vision').addClass('hidden');
         $('.betatest').removeClass('hidden');
     },
+    'click .all-tab': function(){
+        $('.card-container').removeClass('hidden');
+        $('.vision').removeClass('hidden');
+    },
     'click .moneyShot': function(){
-        showImageOverlay($('#day-of-glass-money-shot-34ratio').attr('src'));
+        //showImageOverlay($('#day-of-glass-money-shot-34ratio').attr('src'));
+        showImageOverlay('#day-of-glass-money-shot-34ratio');
+    }
+});
+
+
+
+Template.samplePageTemplate.events({
+    'click .thumbnail-image-a': function(){
+        showImageOverlay('#thumbnailImageA');
     }
 });
 
