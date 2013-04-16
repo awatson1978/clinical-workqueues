@@ -7,19 +7,13 @@ showPage = function(page){
     hidePages();
     $(page).removeClass('hidden');
     Session.set('current_page', page);
-    //Session.set('json_content', page);
     if(isMobile){
         detectOrientation();
     }
-    //console.log('current page: ' + page);
     //parseBreadCrumbs(page);
 }
 showHomePage = function(){
-   //if(Meteor.userId()){
-        showPage("#workqueuesPage");
-    //}else{
-    //    showPage("#guestPageTemplate");
-    //}
+    showPage("#workqueuesPage");
 }
 showCurrentSessionPage = function(){
     showPage(Session.get('current_page'));
@@ -27,33 +21,13 @@ showCurrentSessionPage = function(){
 parseBreadCrumbs = function(page){
     switch(page){
     case '#hipaaPage':
-            $('#breadCrumbLink').html('HIPAA Audit');
-            break;
-    case '#newsPage':
-        $('#breadCrumbLink').html('Carewatch');
-        break;
-    case '#historyPage':
-        $('#breadCrumbLink').html('History');
-        break;
-    case '#communityPage':
-        $('#breadCrumbLink').html('Community');
+        $('#appTitle').html('HIPAA Audit');
         break;
     case '#profilePage':
-        $('#breadCrumbLink').html('Profile');
-        break;
-    case '#snomedPage':
-        if(Session.get('selecting_anatomy')){
-            $('#breadCrumbLink').html('Select the Anatomy of Interest');
-        }else{
-            $('#breadCrumbLink').html('Snomed Anatomy (Alpha)');
-        }
-        break;
-    case '#icd10Page':
-        $('#breadCrumbLink').html('International Classificaiton of Diseases');
+        $('#appTitle').html('Profile');
         break;
     default:
-        $('#breadCrumbLink').html('');
-        //alert(page);
+        $('#breadCrumbLink').html('clinical-workqueues.herokuapp.com');
     }
 }
 

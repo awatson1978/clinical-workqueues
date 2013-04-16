@@ -1,3 +1,7 @@
+Template.dashboardPageTemplate.receivedNewAlert = function(){
+    return monitorDropbox();
+};
+
 Template.dashboardPageTemplate.rendered = function(){
     log_event("Template.dashboardPageTemplate.rendered",LogLevel.Signpost,this);
 

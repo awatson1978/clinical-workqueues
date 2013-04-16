@@ -7,5 +7,5 @@ Package.describe({
 
 Package.on_use(function (api) {
     api.add_files('unsupported.browser.html', "client");
-    api.add_files('browser.detection.js', "client");
+    //api.add_files('browser.detection.js', "client");
 });

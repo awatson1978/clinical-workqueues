@@ -1,4 +1,3 @@
-//TODO:  Publish to Atmosphere
 
 Package.describe({
     summary: "d3-graphs-flare provides sample templates and graphs using the flare.json dataset"

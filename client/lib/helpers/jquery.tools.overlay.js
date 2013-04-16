@@ -9,17 +9,14 @@
  * Since: March 2008
  * Date: @DATE 
  */
-(function($) { 
-
+(function($) {
 	// static constructs
 	$.tools = $.tools || {version: '@VERSION'};
 	
 	$.tools.overlay = {
-		
 		addEffect: function(name, loadFn, closeFn) {
 			effects[name] = [loadFn, closeFn];	
 		},
-	
 		conf: {  
 			close: null,	
 			closeOnClick: true,

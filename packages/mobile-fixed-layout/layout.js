@@ -1,7 +1,7 @@
 //function preventDefault(e) { e.preventDefault(); };
 ////document.addEventListener('touchmove', preventDefault, false);
 //
-//Template.app_container.rendered = function () {
+//Template.appContainerTemplate.rendered = function () {
 //    jQuery(window).bind('touchmove', function(e){
 //        e.preventDefault();
 //    });
@@ -9,7 +9,7 @@
 //        alert('pinch');
 //    });
 //};
-//Template.app_container.resize = function(){
+//Template.appContainerTemplate.resize = function(){
 //    return Session.get("last_resize");
 //};
 //Meteor.startup = function() {

@@ -1,17 +1,23 @@
-<template name="app_container">
+<template name="appContainerTemplate">
+    <!-- //TODO:  refactor 'content' to 'appContent' -->
     <div class="content">
         {{#if loggedIn}}
         <div class="touch-disabled" id="mainLayoutPane">
-            {{> dashboardPageTemplate}}
             {{> workqueuesPageTemplate }}
             {{> profilePageTemplate }}
             {{> communityPageTemplate }}
             {{> iconAssetsPageTemplate }}
+            {{!> dashboardPageTemplate}}
         </div>
         {{> sidebarTemplate }}
         {{else }}
         {{> guestPageTemplate }}
         {{/if }}
     </div>
+    {{> tutorialOverlayTemplate }}
 </template>
 
+
+<template name="tutorialOverlayTemplate">
+    <div class="hidden tutorial-overlay"></div>
+</template>

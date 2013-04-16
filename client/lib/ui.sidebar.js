@@ -1,4 +1,8 @@
 
+
+//--------------------------------------------------------
+// Sidebar Rendering
+
 Template.sidebarTemplate.sidebarIsVisible = function(){
     if(Session.get('appWidth') > 767){
         return Session.get('show_sidebar_panel');
@@ -32,7 +36,32 @@ Template.sidebarTemplate.rendered = function(){
         console.log(error);
     }
 };
-////////// Lists //////////
+Template.sidebarTemplate.isWorkqueuesPage = function(){
+    if(Session.get('current_page') == "#workqueuesPage"){
+        return true;
+    }else{
+        return false;
+    }
+};
+Template.sidebarTemplate.isProfilePage = function(){
+    if(Session.get('current_page') == "#profilePage"){
+        return true;
+    }else{
+        return false;
+    }
+};
+Template.sidebarTemplate.isCommunityPage = function(){
+    if(Session.get('current_page') == "#communityPage"){
+        return true;
+    }else{
+        return false;
+    }
+};
+
+
+
+//--------------------------------------------------------
+// Workqueues List
 
 Template.listsTemplate.lists = function () {
     return Lists.find({}, {sort: {name: 1}});
@@ -42,6 +71,8 @@ Template.listsTemplate.events({
     'mousedown .list': function (evt) { // select list
         Router.setList(this._id);
         Session.set('list_id', this._id);
+        showPage("#workqueuesPage");
+        Meteor.flush();
     },
     'click .list': function (evt) {
         // prevent clicks on <a> from refreshing the page.

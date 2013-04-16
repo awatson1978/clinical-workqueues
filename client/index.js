@@ -57,10 +57,6 @@ $(window).resize(function(evt) {
     setSidebarAvailability();
 });
 
-//var seed = Lists.findOne();
-//console.log('seed: ' + JSON.stringify(seed));
-//Session.setDefault('list_id', seed._id);
-
 
 // we make sure that navigation history is enabled
 // this only runs when the server is started up
@@ -70,7 +66,7 @@ Meteor.startup(function () {
 
 // warning:  generally speaking, app_container.rendered isn't the correct place to add page specific rendering code
 // it will fire for each sub-template, and often fires two dozen times or more
-Template.app_container.rendered = function(){
+Template.appContainerTemplate.rendered = function(){
     showCurrentSessionPage();
     setSidebarAvailability();
 };
@@ -84,7 +80,7 @@ setSidebarAvailability = function() {
 
 
 
-Template.app_container.loggedIn = function () {
+Template.appContainerTemplate.loggedIn = function () {
     console.log('loggedIn called');
     if(Meteor.userId() != null){
         console.log('Meteor.userId() is null');
@@ -95,42 +91,6 @@ Template.app_container.loggedIn = function () {
     }
 };
 
-
-
-//-------------------------------------------------------
-// CORDOVOA PHONE GAP
-
-var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicity call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
-    }
-};
 
 
 

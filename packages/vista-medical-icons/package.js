@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "Adds famous dead people to the Meteor.users collection."
+  summary: "Adds logic for detecting gestures, swipes, and other touch events."
 });
 Package.register_extension(
     "png", function (bundle, source_path, serve_path, where) {
@@ -12,6 +12,5 @@ Package.register_extension(
     }
 );
 Package.on_use(function (api) {
-    api.add_files('bootstrap.users.js', 'server');
-    //api.add_files('fonts/ColaborateLight.otf', "client");
+    api.add_files('bootstrap.icons.js', 'client');
 });

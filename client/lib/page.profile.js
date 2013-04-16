@@ -349,9 +349,7 @@ Template.userCardTemplate.user_image = function () {
 //    return 'foo@hoo.com';
 //};
 
-Template.dashboardPageTemplate.receivedNewAlert = function(){
-    return monitorDropbox();
-};
+
 Template.profilePageTemplate.receivedNewAlert = function(){
     return monitorDropbox();
 };

@@ -3,12 +3,6 @@
     <div class="doesnt-overlap-header fixed-layout hide-for-small" id="sidebarPane">
         {{> listsTemplate}}
 
-        {{#if showButtonTiles }}
-        {{> buttonTilesTemplate }}
-        {{else }}
-        {{> tagFilterTemplate}}
-        {{/if }}
-
         {{#if isWorkqueuesPage }}
         {{> workqueuesPageSidebarTemplate}}
         {{/if}}
@@ -25,9 +19,9 @@
     {{/if}}
 </template>
 
-<!-- TODO:  onclick, make sure the workqueues page is opened -->
+
 <template name="listsTemplate">
-    <div id="listsTemplate">
+    <div id="listsTemplate" class="list-tab-container">
         {{#each lists}}
             <div class="list {{selected}}">
                 <div class="sidebar-tab note">
@@ -48,15 +42,11 @@
     </div>
 </template>
 
-<!-- TODO:  confirm if dashboardTab is needed? -->
-<template name="dashboardTab">
-    <div class="sidebar-tab note dashboard">
-        <div class="display">
-            Dashboard
-        </div>
-    </div>
-</template>
 
+
+<template name="workqueuesPageSidebarTemplate">
+    {{> tagFilterTemplate}}
+</template>
 <template name="tagFilterTemplate">
     <div id="tagTiles">
         <hr style="border: 1px solid lightgray;">
@@ -70,6 +60,12 @@
     </div>
 </template>
 
+
+
+
+<template name="communityPageSidebarTemplate">
+    {{> buttonTilesTemplate }}
+</template>
 <template name="buttonTilesTemplate">
     <div id="buttonTiles" class="sidebar-tiles column-container">
         <hr style="border: 1px solid lightgray;">
@@ -88,4 +84,9 @@
             <img class="sidebar-tile" src="/iconsbw/Labs.png">
         </div>
     </div>
+</template>
+
+
+<template name="profilePageSidebarTemplate">
+
 </template>

@@ -2,262 +2,175 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/acounts-carewatch/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/cordova-phonegap/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/d3-datafiles/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/d3-graphs/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/datetime/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/gestures/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-analytics/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/hipaa-audit-log/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/hipaa-audit-log/smart.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/mobile-fixed-layout/package.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/tutorial-overlays/package.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/.error-page-incompatible-browser/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/.error-page-incompatible-browser/page.unsupported.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/audio/audio.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/audio/audio.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/audio/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/audio/smart.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/Iaso.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/ada.lovelace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/alan.turing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/alexis.carrel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/allison.camron.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/asclepius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/bumblebee.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/caduceus-staff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/chandrasekhar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/christina.applegate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/edward.doisy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/edward.tatum.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/eric.foreman.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/florence.nightingale.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/galen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/george.beadle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/george.wald.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/george.washington.carver.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/girl-headphones.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/gregory.house.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/hermann.muller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/hippocrates.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/hygea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/james.watson.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/james.wilson.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/john.eccles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/kurt.vonnegut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/lance.armstrong.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/lawrence.kutner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/lisa.cuddy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/madam.curie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/mary.shelley.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/michael.j.fox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/mother.teresa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/octavia.butler.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/pastel-flowers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/rabbit_animal_green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/rabbit_animal_pink_cute.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/rabbit_animal_pink_smile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/rabbit_animal_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/rita.hayworth.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/robert.chase.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/rod_of_asclepius.pxm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/roger.sperry.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/samuel.clemens.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/sheryl.crow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/staff_of_asclepius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/all/thirteen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/bumblebee.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/caduceus-staff.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/girl-headphones.jpeg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/pastel-flowers.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_pink_cute.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_pink_smile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/rabbit_animal_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/rod_of_asclepius.pxm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/defaults/staff_of_asclepius.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/greeks/Iaso.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/greeks/asclepius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/greeks/galen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/greeks/hippocrates.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/greeks/hygea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/allison.camron.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/eric.foreman.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/gregory.house.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/james.wilson.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/lawrence.kutner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/lisa.cuddy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/robert.chase.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/house/thirteen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/ada.lovelace.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/alan.turing.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/chandrasekhar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/florence.nightingale.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/george.washington.carver.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/kurt.vonnegut.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/madam.curie.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/mary.shelley.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/mother.teresa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/octavia.butler.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/others/samuel.clemens.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/spokepersons/christina.applegate.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/spokepersons/lance.armstrong.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/spokepersons/michael.j.fox.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/spokepersons/rita.hayworth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/spokepersons/sheryl.crow.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/Iaso.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/Iaso_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/ada.lovelace.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/alan.turing.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/alan.turing_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/alexis.carrel.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/alexis.carrel_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/allison.camron.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/allison.camron_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/asclepius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/asclepius_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/bumblebee.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/bumblebee_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/caduceus-staff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/caduceus-staff_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/chandrasekhar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/chandrasekhar_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/christina.applegate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/christina.applegate_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/edward.doisy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/edward.doisy_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/edward.tatum.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/edward.tatum_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/eric.foreman.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/eric.foreman_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/florence.nightingale.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/florence.nightingale_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/galen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/galen_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/george.beadle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/george.beadle_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/george.wald.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/george.wald_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/george.washington.carver.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/george.washington.carver_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/girl-headphones.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/girl-headphones_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/gregory.house.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/gregory.house_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/hermann.muller.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/hermann.muller_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/hippocrates.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/hippocrates_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/hygea.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/hygea_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/james.watson.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/james.watson_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/james.wilson.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/james.wilson_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/john.eccles.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/john.eccles_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/kurt.vonnegut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/kurt.vonnegut_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/lance.armstrong.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/lance.armstrong_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/lawrence.kutner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/lawrence.kutner_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/lisa.cuddy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/lisa.cuddy_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/madam.curie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/madam.curie_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/mary.shelley.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/mary.shelley_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/michael.j.fox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/michael.j.fox_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/mother.teresa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/mother.teresa_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/octavia.butler.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/octavia.butler_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/pastel-flowers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/pastel-flowers_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_green_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_pink_cute.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_pink_cute_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_pink_smile.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_pink_smile_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rabbit_animal_white_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rita.hayworth.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/rita.hayworth_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/robert.chase.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/robert.chase_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/roger.sperry.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/roger.sperry_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/samuel.clemens.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/samuel.clemens_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/sheryl.crow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/sheryl.crow_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/staff_of_asclepius.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/staff_of_asclepius_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/thirteen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/thirteen_tn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/alexis.carrel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/edward.doisy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/edward.tatum.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/george.beadle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/george.wald.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/hermann.muller.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/james.watson.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/john.eccles.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/uchicago/roger.sperry.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/cordova-2.5.0rc1.js" afterPath="$PROJECT_DIR$/packages/cordova-phonegap/cordova-2.5.0rc1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/app.platform.detection.js" afterPath="$PROJECT_DIR$/packages/detect-browser/browser.detection.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/graphs/graph.bar.js" afterPath="$PROJECT_DIR$/packages/d3-graphs/graph.bar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js" afterPath="$PROJECT_DIR$/packages/d3-graphs/graph.sunburst.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/jquery.tools.overlay.js" afterPath="$PROJECT_DIR$/packages/tutorial-overlays/jquery.tools.overlay.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/nv.d3.js" afterPath="$PROJECT_DIR$/.scrap/nv.d3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/app.platform.detection.less" afterPath="$PROJECT_DIR$/license.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/jquery.mobile.overlay.less" afterPath="$PROJECT_DIR$/packages/tutorial-overlays/jquery.mobile.overlay.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/jquery.tools.overlay.less" afterPath="$PROJECT_DIR$/packages/tutorial-overlays/jquery.tools.overlay.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/media.less" afterPath="$PROJECT_DIR$/client/stylesheets/app.media.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.base.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.mixins.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.fonts.less" afterPath="$PROJECT_DIR$/.scrap/syntax.fonts.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.tutorials.less" afterPath="$PROJECT_DIR$/packages/tutorial-overlays/syntax.tutorials.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/hipaa.logging.js" afterPath="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.logging.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.error-page-incompatible-browser/detect.incompatible.browser.js" afterPath="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/detect-browser/page.unsupported.html" afterPath="$PROJECT_DIR$/packages/detect-browser/unsupported.browser.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile/mobile-fixed-layout.html" afterPath="$PROJECT_DIR$/packages/mobile-fixed-layout/mobile-fixed-layout.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile/mobile-fixed-layout.js" afterPath="$PROJECT_DIR$/packages/mobile-fixed-layout/mobile-fixed-layout.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile/package.js" afterPath="$PROJECT_DIR$/packages/accounts-collaborators/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/datafile/flare.json" afterPath="$PROJECT_DIR$/packages/d3-datafiles/flare.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/3OF9_NEW.TTF" afterPath="$PROJECT_DIR$/.scrap/font/3OF9_NEW.TTF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/ChalkDust.ttf" afterPath="$PROJECT_DIR$/.scrap/font/ChalkDust.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/FontAwesome.ttf" afterPath="$PROJECT_DIR$/.scrap/font/FontAwesome.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/Freehand.ttf" afterPath="$PROJECT_DIR$/.scrap/font/Freehand.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/HarabaraHand.ttf" afterPath="$PROJECT_DIR$/.scrap/font/HarabaraHand.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/ItAintRocketScience.ttf" afterPath="$PROJECT_DIR$/.scrap/font/ItAintRocketScience.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/ModernPictographs.otf" afterPath="$PROJECT_DIR$/.scrap/font/ModernPictographs.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/Pictonic.ttf" afterPath="$PROJECT_DIR$/.scrap/font/Pictonic.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/ShelterMe.ttf" afterPath="$PROJECT_DIR$/.scrap/font/ShelterMe.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/WildScript.ttf" afterPath="$PROJECT_DIR$/.scrap/font/WildScript.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/font/Windsong.ttf" afterPath="$PROJECT_DIR$/.scrap/font/Windsong.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/thumbnails/ada.lovelace_tn.jpg" afterPath="$PROJECT_DIR$/public/userspace/ada.lovelace.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/facebook.js" afterPath="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/.gitignore" afterPath="$PROJECT_DIR$/.meteor/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/release" afterPath="$PROJECT_DIR$/.meteor/release" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.scrap/vision.statement.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/cordova-phonegap/app.initialization.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/google-analytics-pentasyllabic/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/jquery-tools-overlay/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/tutorial-overlay/overlay.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/tutorial-overlay/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/vista-medical-icons/package.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/tutorial-overlays/package.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Allergy_Vials.png" afterPath="$PROJECT_DIR$/public/iconsbw/Allergy_Vials.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Ambulance.png" afterPath="$PROJECT_DIR$/public/iconsbw/Ambulance.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Baby_Bottle.png" afterPath="$PROJECT_DIR$/public/iconsbw/Baby_Bottle.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Baby_Carriage.png" afterPath="$PROJECT_DIR$/public/iconsbw/Baby_Carriage.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Bacteria.png" afterPath="$PROJECT_DIR$/public/iconsbw/Bacteria.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Band_Aid.png" afterPath="$PROJECT_DIR$/public/iconsbw/Band_Aid.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Bandage_Roll.png" afterPath="$PROJECT_DIR$/public/iconsbw/Bandage_Roll.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Blood_Bag.png" afterPath="$PROJECT_DIR$/public/iconsbw/Blood_Bag.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Blood_Pressure.png" afterPath="$PROJECT_DIR$/public/iconsbw/Blood_Pressure.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Brain.png" afterPath="$PROJECT_DIR$/public/iconsbw/Brain.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/CT_Scan.png" afterPath="$PROJECT_DIR$/public/iconsbw/CT_Scan.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Chemicals.png" afterPath="$PROJECT_DIR$/public/iconsbw/Chemicals.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Conception.png" afterPath="$PROJECT_DIR$/public/iconsbw/Conception.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/DNA.png" afterPath="$PROJECT_DIR$/public/iconsbw/DNA.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Dental_Chair.png" afterPath="$PROJECT_DIR$/public/iconsbw/Dental_Chair.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Dentistry.png" afterPath="$PROJECT_DIR$/public/iconsbw/Dentistry.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Donar_List.png" afterPath="$PROJECT_DIR$/public/iconsbw/Donar_List.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Drinking.png" afterPath="$PROJECT_DIR$/public/iconsbw/Drinking.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Drinking_and_Smoking.png" afterPath="$PROJECT_DIR$/public/iconsbw/Drinking_and_Smoking.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/EKG.png" afterPath="$PROJECT_DIR$/public/iconsbw/EKG.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Ear.png" afterPath="$PROJECT_DIR$/public/iconsbw/Ear.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Emergency_Room.png" afterPath="$PROJECT_DIR$/public/iconsbw/Emergency_Room.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Eye_Ball.png" afterPath="$PROJECT_DIR$/public/iconsbw/Eye_Ball.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Eye_Chart.png" afterPath="$PROJECT_DIR$/public/iconsbw/Eye_Chart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/First_Aid.png" afterPath="$PROJECT_DIR$/public/iconsbw/First_Aid.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Group_Children.png" afterPath="$PROJECT_DIR$/public/iconsbw/Group_Children.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Group_Doctors.png" afterPath="$PROJECT_DIR$/public/iconsbw/Group_Doctors.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Group_Doctors_2.png" afterPath="$PROJECT_DIR$/public/iconsbw/Group_Doctors_2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Group_Medical_Team.png" afterPath="$PROJECT_DIR$/public/iconsbw/Group_Medical_Team.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Group_Patients.png" afterPath="$PROJECT_DIR$/public/iconsbw/Group_Patients.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Group_Surgical_Team.png" afterPath="$PROJECT_DIR$/public/iconsbw/Group_Surgical_Team.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Health_Meter.png" afterPath="$PROJECT_DIR$/public/iconsbw/Health_Meter.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Heart-Orange.png" afterPath="$PROJECT_DIR$/public/iconsbw/Heart-Orange.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Heart.png" afterPath="$PROJECT_DIR$/public/iconsbw/Heart.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Heart_Donor.png" afterPath="$PROJECT_DIR$/public/iconsbw/Heart_Donor.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Herb_Mix.png" afterPath="$PROJECT_DIR$/public/iconsbw/Herb_Mix.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Hospital.png" afterPath="$PROJECT_DIR$/public/iconsbw/Hospital.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Hospital_Bed.png" afterPath="$PROJECT_DIR$/public/iconsbw/Hospital_Bed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Human_Anatomy.png" afterPath="$PROJECT_DIR$/public/iconsbw/Human_Anatomy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/ID_Bracelet.png" afterPath="$PROJECT_DIR$/public/iconsbw/ID_Bracelet.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/IV_Bag.png" afterPath="$PROJECT_DIR$/public/iconsbw/IV_Bag.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Inhaler.png" afterPath="$PROJECT_DIR$/public/iconsbw/Inhaler.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Injury.png" afterPath="$PROJECT_DIR$/public/iconsbw/Injury.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Insurance_Plan.png" afterPath="$PROJECT_DIR$/public/iconsbw/Insurance_Plan.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Intestine.png" afterPath="$PROJECT_DIR$/public/iconsbw/Intestine.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Labs.png" afterPath="$PROJECT_DIR$/public/iconsbw/Labs.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Liver.png" afterPath="$PROJECT_DIR$/public/iconsbw/Liver.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/MRI.png" afterPath="$PROJECT_DIR$/public/iconsbw/MRI.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Bag.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Bag.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Database.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Database.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Insurance.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Insurance.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Invoice.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Invoice.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Knowledge_Base.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Knowledge_Base.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Office.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Office.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Report.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Report.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medical_Symbol.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medical_Symbol.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medicine_Liquid.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medicine_Liquid.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Medicine_and_Water.png" afterPath="$PROJECT_DIR$/public/iconsbw/Medicine_and_Water.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pager.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pager.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pediatrics.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pediatrics.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Petri_Dish.png" afterPath="$PROJECT_DIR$/public/iconsbw/Petri_Dish.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pharmacy.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pharmacy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pill.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pill.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pills.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pills.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pills_Strip.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pills_Strip.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Poison.png" afterPath="$PROJECT_DIR$/public/iconsbw/Poison.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Pregnant.png" afterPath="$PROJECT_DIR$/public/iconsbw/Pregnant.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Prescription.png" afterPath="$PROJECT_DIR$/public/iconsbw/Prescription.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Qualifications.png" afterPath="$PROJECT_DIR$/public/iconsbw/Qualifications.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Safety_Glasses.png" afterPath="$PROJECT_DIR$/public/iconsbw/Safety_Glasses.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Safety_Pin.png" afterPath="$PROJECT_DIR$/public/iconsbw/Safety_Pin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Sanitation.png" afterPath="$PROJECT_DIR$/public/iconsbw/Sanitation.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Sanitation_Gloves.png" afterPath="$PROJECT_DIR$/public/iconsbw/Sanitation_Gloves.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Scalpel.png" afterPath="$PROJECT_DIR$/public/iconsbw/Scalpel.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Skin.png" afterPath="$PROJECT_DIR$/public/iconsbw/Skin.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Skull.png" afterPath="$PROJECT_DIR$/public/iconsbw/Skull.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Smoking.png" afterPath="$PROJECT_DIR$/public/iconsbw/Smoking.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Sperm.png" afterPath="$PROJECT_DIR$/public/iconsbw/Sperm.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Stethoscope.png" afterPath="$PROJECT_DIR$/public/iconsbw/Stethoscope.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Admitted.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Admitted.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Air_Transport.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Air_Transport.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Discharged.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Discharged.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Hospital.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Hospital.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Male.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Male.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Men.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Men.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Restrooms.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Restrooms.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Smoking_Prohibited.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Smoking_Prohibited.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Transferred.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Transferred.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Symbol_Women.png" afterPath="$PROJECT_DIR$/public/iconsbw/Symbol_Women.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Syringe_and_Vial.png" afterPath="$PROJECT_DIR$/public/iconsbw/Syringe_and_Vial.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Thumbs.db" afterPath="$PROJECT_DIR$/public/iconsbw/Thumbs.db" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Toddler.png" afterPath="$PROJECT_DIR$/public/iconsbw/Toddler.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Tooth.png" afterPath="$PROJECT_DIR$/public/iconsbw/Tooth.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Transfusion.png" afterPath="$PROJECT_DIR$/public/iconsbw/Transfusion.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Urine_Sample.png" afterPath="$PROJECT_DIR$/public/iconsbw/Urine_Sample.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Baby_Boy.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Baby_Boy.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Baby_Girl.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Baby_Girl.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Deceased_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Deceased_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Dentist.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Dentist.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Doctor_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Doctor_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Doctor_Female_2.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Doctor_Female_2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Doctor_Male.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Doctor_Male.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Intensive_Care_Male.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Intensive_Care_Male.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Intern_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Intern_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Nurse_Army_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Nurse_Army_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Nurse_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Nurse_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Nurse_Female_2.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Nurse_Female_2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Patient_Female.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Patient_Female.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Patient_Male.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Patient_Male.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/User_Surgeon_Male.png" afterPath="$PROJECT_DIR$/public/iconsbw/User_Surgeon_Male.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Vial_and_Pills.png" afterPath="$PROJECT_DIR$/public/iconsbw/Vial_and_Pills.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Virus.png" afterPath="$PROJECT_DIR$/public/iconsbw/Virus.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Walker.png" afterPath="$PROJECT_DIR$/public/iconsbw/Walker.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Water.png" afterPath="$PROJECT_DIR$/public/iconsbw/Water.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Wheel_Chair.png" afterPath="$PROJECT_DIR$/public/iconsbw/Wheel_Chair.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Xray.png" afterPath="$PROJECT_DIR$/public/iconsbw/Xray.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Xray_Broken_Bone.png" afterPath="$PROJECT_DIR$/public/iconsbw/Xray_Broken_Bone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Xray_Mamography.png" afterPath="$PROJECT_DIR$/public/iconsbw/Xray_Mamography.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Xray_Tooth.png" afterPath="$PROJECT_DIR$/public/iconsbw/Xray_Tooth.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/iconsbw/Zygote.png" afterPath="$PROJECT_DIR$/public/iconsbw/Zygote.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/nv.d3.js" afterPath="$PROJECT_DIR$/.scrap/dashboard/nv.d3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/d3.v3.min.js" afterPath="$PROJECT_DIR$/.scrap/dashboard/d3.v3.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/date.format.js" afterPath="$PROJECT_DIR$/packages/datetime-format/date.format.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/google.analytics.js" afterPath="$PROJECT_DIR$/packages/google-analytics/google.analytics.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/google.analytics.tracker.js" afterPath="$PROJECT_DIR$/packages/google-analytics-pentasyllabic/google.analytics.tracker.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/jquery.jgestures.js" afterPath="$PROJECT_DIR$/packages/gestures/jquery.jgestures.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/page.dashboard.js" afterPath="$PROJECT_DIR$/.scrap/dashboard/page.dashboard.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.js" afterPath="$PROJECT_DIR$/client/ui.app.layout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/page.dashboard.html" afterPath="$PROJECT_DIR$/.scrap/dashboard/page.dashboard.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-collaborators/package.js" afterPath="$PROJECT_DIR$/packages/.accounts-collaborators/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/acounts-carewatch/package.js" afterPath="$PROJECT_DIR$/packages/.acounts-carewatch/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/datetime/package.js" afterPath="$PROJECT_DIR$/packages/datetime-format/package.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/detect-browser/browser.detection.js" afterPath="$PROJECT_DIR$/client/lib/browser.detection.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile-fixed-layout/mobile-fixed-layout.html" afterPath="$PROJECT_DIR$/packages/mobile-fixed-layout/layout.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile-fixed-layout/mobile-fixed-layout.js" afterPath="$PROJECT_DIR$/packages/mobile-fixed-layout/layout.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlays/jquery.mobile.overlay.less" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile.overlay.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlays/jquery.tools.overlay.js" afterPath="$PROJECT_DIR$/client/lib/helpers/jquery.tools.overlay.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlays/jquery.tools.overlay.less" afterPath="$PROJECT_DIR$/client/stylesheets/jquery.tools.overlay.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/tutorial-overlays/syntax.tutorials.less" afterPath="$PROJECT_DIR$/packages/jquery-tools-overlay/syntax.tutorials.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/bootstrap.icons.js" afterPath="$PROJECT_DIR$/packages/vista-medical-icons/bootstrap.icons.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/server/bootstrap.users.js" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people/bootstrap.users.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.dashboard.js" afterPath="$PROJECT_DIR$/client/lib/page.dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.guest.js" afterPath="$PROJECT_DIR$/client/lib/page.guest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model.js" afterPath="$PROJECT_DIR$/model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.navigation.links.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.navigation.links.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.sidebar.js" afterPath="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.sidebar.html" afterPath="$PROJECT_DIR$/client/templates/app.sidebar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/page.workqueues.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/package.js" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/package.js" afterPath="$PROJECT_DIR$/packages/cordova-phonegap/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/d3-datafiles/package.js" afterPath="$PROJECT_DIR$/packages/d3-datafiles/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/d3-graphs/package.js" afterPath="$PROJECT_DIR$/packages/d3-graphs/package.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/detect-browser/package.js" afterPath="$PROJECT_DIR$/packages/detect-browser/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.icons.js" afterPath="$PROJECT_DIR$/server/bootstrap.icons.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.users.js" afterPath="$PROJECT_DIR$/server/bootstrap.users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/gestures/package.js" afterPath="$PROJECT_DIR$/packages/gestures/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/mobile-fixed-layout/package.js" afterPath="$PROJECT_DIR$/packages/mobile-fixed-layout/package.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -276,119 +189,89 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52">
+    <splitter split-orientation="horizontal" split-proportion="0.5204617">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.5">
-          <split-first>
-            <leaf>
-              <file leaf-file-name="package.js" pinned="false" current="true" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/packages/tutorial-overlays/package.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="10" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.26143792">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/package.json">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="14" column="1" selection-start="417" selection-end="417" vertical-scroll-proportion="0.37271214">
-                      <folding>
-                        <element signature="n#!!doc" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="smart.json" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/smart.json">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="25" column="1" selection-start="678" selection-end="678" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file leaf-file-name="page.guest.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="140" column="0" selection-start="8559" selection-end="8559" vertical-scroll-proportion="0.89216685">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.layout.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="22" column="11" selection-start="684" selection-end="684" vertical-scroll-proportion="-14.08">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-7.04">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/packages/jquery-tools-overlay/package.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="vision.statement.txt" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.scrap/vision.statement.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+          <file leaf-file-name="page.guest.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="172" column="24" selection-start="7674" selection-end="7674" vertical-scroll-proportion="-26.461538">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/d3-datafiles/package.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/d3-graphs/package.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="google.analytics.tracker.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/helpers/google.analytics.tracker.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="0" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="date.format.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/helpers/date.format.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="28" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/package.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+                <state line="83" column="21" selection-start="2472" selection-end="2485" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/packages/cordova-phonegap/package.js">
+            <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/package.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="11" column="3" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17460318">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="graph.bar.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/d3-graphs/graph.bar.js">
+          <file leaf-file-name="overlay.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/overlay.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="55" column="33" selection-start="1499" selection-end="1499" vertical-scroll-proportion="-21.153847">
+                <state line="11" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="syntax.tutorials.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="16" column="28" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -409,30 +292,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/logging.js" />
-        <option value="$PROJECT_DIR$/lib/hipaa.logging.js" />
-        <option value="$PROJECT_DIR$/packages/hipaa-audit-log/smart.json" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
-        <option value="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.html" />
-        <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
-        <option value="$PROJECT_DIR$/smart.json" />
-        <option value="$PROJECT_DIR$/model.js" />
-        <option value="$PROJECT_DIR$/server/publish.js" />
-        <option value="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js" />
+        <option value="$PROJECT_DIR$/packages/overlays/package.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
         <option value="$PROJECT_DIR$/packages/detect-browser/package.js" />
-        <option value="$PROJECT_DIR$/client/lib/graphs/graph.sunburst.js" />
-        <option value="$PROJECT_DIR$/packages/d3-datafiles/package.js" />
-        <option value="$PROJECT_DIR$/packages/d3-graphs/package.js" />
-        <option value="$PROJECT_DIR$/packages/hipaa-audit-log/package.js" />
-        <option value="$PROJECT_DIR$/packages/tutorial-overlays/package.js" />
+        <option value="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js" />
+        <option value="$PROJECT_DIR$/packages/aoverlays/package.js" />
+        <option value="$PROJECT_DIR$/.scrap/vision.statement.txt" />
+        <option value="$PROJECT_DIR$/client/lib/jquery.tools.overlay.js" />
+        <option value="$PROJECT_DIR$/packages/jquery-tools-overlay/package.js" />
+        <option value="$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.less" />
+        <option value="$PROJECT_DIR$/client/lib/page.guest.js" />
+        <option value="$PROJECT_DIR$/packages/tutorial-overlay/package.js" />
+        <option value="$PROJECT_DIR$/packages/tutorial-overlay/overlay.js" />
+        <option value="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
+        <option value="$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.css" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="33" />
-    <option name="width" value="1412" />
-    <option name="height" value="1384" />
+    <option name="x" value="16" />
+    <option name="y" value="250" />
+    <option name="width" value="1078" />
+    <option name="height" value="1166" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -519,8 +402,22 @@
               <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial-overlays" />
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tutorial-overlay" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -535,6 +432,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-tools-overlay" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -567,24 +468,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -651,18 +534,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/tutorial-overlay" />
+      <recent name="$PROJECT_DIR$/packages/vista-medical-icons" />
+      <recent name="$PROJECT_DIR$/packages/google-analytics-pentasyllabic" />
       <recent name="$PROJECT_DIR$/packages/accounts-collaborators" />
       <recent name="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
-      <recent name="$PROJECT_DIR$/packages/acounts-carewatch" />
-      <recent name="$PROJECT_DIR$/packages/cordova-phonegap" />
-      <recent name="$PROJECT_DIR$/packages/datetime" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/packages/cordova-phonegap" />
-      <recent name="$PROJECT_DIR$/packages/tutorial-overlays" />
-      <recent name="$PROJECT_DIR$/packages/d3-graphs" />
+      <recent name="$PROJECT_DIR$/client/lib/helpers" />
+      <recent name="$PROJECT_DIR$/client/lib" />
+      <recent name="$PROJECT_DIR$/packages/jquery-tools-overlay" />
       <recent name="$PROJECT_DIR$/.scrap" />
-      <recent name="$PROJECT_DIR$/packages/d3-datafiles" />
+      <recent name="$PROJECT_DIR$/client" />
     </key>
   </component>
   <component name="RunManager">
@@ -723,14 +606,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="33" width="1412" height="1384" extended-state="0" />
+    <frame x="16" y="250" width="1078" height="1166" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4122671" sideWeight="0.99718046" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41214952" sideWeight="0.99718046" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20325778" sideWeight="0.5877329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.216141" sideWeight="0.58785045" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -795,7 +678,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -811,118 +694,114 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/packages/gestures/package.js">
+    <entry file="file://$PROJECT_DIR$/packages/d3-datafiles/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.11111111">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/datetime/package.js">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/jquery.tools.overlay.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/acounts-carewatch/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="-8.32">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/accounts-famous-dead-people/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/accounts-collaborators/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.colors.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.mixins.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="1" selection-start="417" selection-end="417" vertical-scroll-proportion="0.37271214">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/date.format.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="28" selection-start="1095" selection-end="1095" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.pentasyllabic.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+        <state line="33" column="1" selection-start="639" selection-end="639" vertical-scroll-proportion="0.506232">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="437" selection-end="437" vertical-scroll-proportion="0.1904762">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/cordova-phonegap/package.js">
+    <entry file="file://$PROJECT_DIR$/packages/d3-graphs/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="9" column="0" selection-start="253" selection-end="253" vertical-scroll-proportion="0.14285715">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlays/package.js">
+    <entry file="file://$PROJECT_DIR$/.scrap/vision.statement.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="357" selection-end="357" vertical-scroll-proportion="0.26143792">
+        <state line="9" column="0" selection-start="3059" selection-end="3059" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/jquery-tools-overlay/package.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.guest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="21" selection-start="2472" selection-end="2485" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/helpers/jquery.tools.overlay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="287" column="0" selection-start="6417" selection-end="6431" vertical-scroll-proportion="0.85714287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.app.navigation.links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="5" selection-start="265" selection-end="265" vertical-scroll-proportion="0.17849898">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/syntax.tutorials.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/overlay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="160" selection-end="160" vertical-scroll-proportion="-7.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/tutorial-overlay/package.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="3" selection-start="294" selection-end="294" vertical-scroll-proportion="0.17460318">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="11" selection-start="684" selection-end="684" vertical-scroll-proportion="-14.08">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="5" selection-start="480" selection-end="480" vertical-scroll-proportion="0.25963488">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="8559" selection-end="8559" vertical-scroll-proportion="0.89216685">
           <folding />
         </state>
       </provider>
