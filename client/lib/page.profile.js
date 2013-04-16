@@ -272,6 +272,21 @@ Template.activeCollaboratorCardTemplate.events({
     }
 });
 
+
+// TODO:  this probably needs to go into page.profile.js
+Template.profilePageSidebarTemplate.events({
+    'click .object-inspector-tab': function(){
+        toggleJsonPanel();
+    },
+    'click .hipaa-audit-tab': function(){
+        // nothing yet
+    },
+    'click .collaborators-tab': function(){
+        // nothing yet
+    }
+
+});
+
 //---------------------------------------------------
 monitorDropbox = function(){
     try{

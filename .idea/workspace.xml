@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/cordova-phonegap/smart.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/.hipaa-audit-log" afterPath="$PROJECT_DIR$/packages/.hipaa-audit-log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.guest.js" afterPath="$PROJECT_DIR$/client/lib/page.guest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.workqueues.js" afterPath="$PROJECT_DIR$/client/lib/page.workqueues.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.guest.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.profile.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/modal.dialogs/page.assets.icons.html" afterPath="$PROJECT_DIR$/client/templates/modal.dialogs/page.assets.icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/page.workqueues.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/package.js" afterPath="$PROJECT_DIR$/packages/cordova-phonegap/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/bootstrap.js" afterPath="$PROJECT_DIR$/server/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.sidebar.html" afterPath="$PROJECT_DIR$/client/templates/app.sidebar.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,16 +25,28 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43601537">
+    <splitter split-orientation="horizontal" split-proportion="0.63984674">
       <split-first>
-        <splitter split-orientation="vertical" split-proportion="0.38301158">
+        <splitter split-orientation="vertical" split-proportion="0.5660232">
           <split-first>
             <leaf>
-              <file leaf-file-name="page.workqueues.html" pinned="false" current="true" current-in-tab="true">
+              <file leaf-file-name="page.workqueues.html" pinned="false" current="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="21" column="31" selection-start="683" selection-end="683" vertical-scroll-proportion="0.41217798">
+                    <state line="18" column="14" selection-start="623" selection-end="623" vertical-scroll-proportion="-5.12">
                       <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="app.sidebar.html" pinned="false" current="true" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/client/templates/app.sidebar.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state line="110" column="0" selection-start="3484" selection-end="3484" vertical-scroll-proportion="0.95173454">
+                      <folding>
+                        <element signature="n#style#0;n#hr#0;n#template#6;n#!!top" expanded="true" />
+                        <element signature="n#style#0;n#hr#1;n#template#6;n#!!top" expanded="true" />
+                      </folding>
                     </state>
                   </provider>
                 </entry>
@@ -75,7 +69,7 @@
               <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/client/index.html">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state line="13" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="0.2849315">
+                    <state line="30" column="28" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.3846154">
                       <folding />
                     </state>
                   </provider>
@@ -114,24 +108,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ui.app.layout.toggles.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="1" selection-start="427" selection-end="427" vertical-scroll-proportion="0.19261637">
+                <state line="275" column="40" selection-start="8826" selection-end="8826" vertical-scroll-proportion="0.6481013">
                   <folding>
-                    <marker date="1366139719000" expanded="true" signature="57:135" placeholder="..." />
+                    <element signature="n#!!doc" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+          <file leaf-file-name="ui.app.layout.toggles.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="273" column="0" selection-start="8784" selection-end="8784" vertical-scroll-proportion="-34.46154">
+                <state line="51" column="5" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
                   <folding>
-                    <element signature="n#!!doc" expanded="true" />
+                    <marker date="1366141667000" expanded="true" signature="57:135" placeholder="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ui.sidebar.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="122" column="0" selection-start="3190" selection-end="3190" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -151,28 +154,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.html" />
-        <option value="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
         <option value="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.js" />
         <option value="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.js" />
         <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
-        <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
         <option value="$PROJECT_DIR$/packages/cordova-phonegap/package.js" />
         <option value="$PROJECT_DIR$/packages/cordova-phonegap/smart.json" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
         <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
         <option value="$PROJECT_DIR$/client/templates/page.workqueues.html" />
-        <option value="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
         <option value="$PROJECT_DIR$/server/bootstrap.js" />
+        <option value="$PROJECT_DIR$/client/lib/ui.sidebar.js" />
+        <option value="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/templates/app.sidebar.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="112" />
+    <option name="x" value="46" />
+    <option name="y" value="31" />
     <option name="width" value="1603" />
     <option name="height" value="1391" />
   </component>
@@ -469,14 +472,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="112" width="1603" height="1391" extended-state="0" />
-    <editor active="false" />
+    <frame x="46" y="31" width="1603" height="1391" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.411583" sideWeight="0.99718046" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18590143" sideWeight="0.588417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18590143" sideWeight="0.588417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -557,27 +560,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="84" selection-start="632" selection-end="632" vertical-scroll-proportion="0.0882353">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/cordova-phonegap/smart.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.10569777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/cordova-phonegap/package.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="66" selection-start="36" selection-end="85" vertical-scroll-proportion="0.0128410915">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/cordova-phonegap/app.initialization.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="45" selection-start="1180" selection-end="1180" vertical-scroll-proportion="0.41091493">
@@ -585,30 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="21" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="173" selection-end="173" vertical-scroll-proportion="-2.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="20" selection-start="916" selection-end="916" vertical-scroll-proportion="0.03892944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="0.2849315">
           <folding />
         </state>
       </provider>
@@ -627,25 +588,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="1" selection-start="427" selection-end="427" vertical-scroll-proportion="0.19261637">
-          <folding>
-            <marker date="1366139719000" expanded="true" signature="57:135" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="13" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.627451">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="31" selection-start="683" selection-end="683" vertical-scroll-proportion="0.41217798">
           <folding />
         </state>
       </provider>
@@ -668,6 +613,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="2" selection-start="2515" selection-end="2515" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/page.workqueues.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="14" selection-start="623" selection-end="623" vertical-scroll-proportion="-5.12">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="29" selection-start="173" selection-end="173" vertical-scroll-proportion="-2.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="0" selection-start="3190" selection-end="3190" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="5" selection-start="1442" selection-end="1442" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1366141667000" expanded="true" signature="57:135" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="21" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="275" column="40" selection-start="8826" selection-end="8826" vertical-scroll-proportion="0.6481013">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="28" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.3846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/app.sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3484" selection-end="3484" vertical-scroll-proportion="0.95173454">
+          <folding>
+            <element signature="n#style#0;n#hr#0;n#template#6;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#1;n#template#6;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

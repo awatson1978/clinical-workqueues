@@ -14,6 +14,8 @@ toggleJsonPanel = function(){
         Session.set('show_profile_json_panel',true);
     }
 }
+
+// TODO:  determine if this is needed any more
 toggleButtonVisibility = function(){
     if(Session.get('show_button_tiles')){
         Session.set('show_button_tiles',false);
