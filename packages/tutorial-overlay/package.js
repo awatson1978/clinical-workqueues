@@ -7,6 +7,6 @@ Package.describe({
 Package.on_use(function (api) {
     //api.use('less', "client");
 
-    api.add_files('syntax.tutorials.css', "client");
+    api.add_files('overlay.css', "client");
     api.add_files('overlay.js', "client");
 });

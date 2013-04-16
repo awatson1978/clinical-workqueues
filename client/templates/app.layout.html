@@ -19,5 +19,7 @@
 
 
 <template name="tutorialOverlayTemplate">
-    <div class="hidden tutorial-overlay"></div>
+    {{#if isVisible}}
+    <div class="overlay-mask"></div>
+    {{/if}}
 </template>

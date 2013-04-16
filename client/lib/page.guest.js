@@ -80,8 +80,10 @@ Template.guestPageTemplate.events({
         $('.betatest').removeClass('hidden');
     },
     'click .moneyShot': function(){
+        Session.set('show_tutorial_overlay', true);
+
         //alert('click!');
-        createOverlay();
+        //createOverlay();
 
 //        $("#moneyShot").overlay({
 //                // custom top position
