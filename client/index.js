@@ -41,6 +41,9 @@ Session.set("appWidth", window.innerWidth);
 Session.set('is_modal_dialog', false);
 
 
+// initialize cordova phonegap and mobile hardware support
+app.initialize(window);
+
 
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
@@ -91,6 +94,71 @@ Template.appContainerTemplate.loggedIn = function () {
     }
 };
 
+
+
+Template.footerBarTemplate.events({
+    'click .sort-completed': function(){
+        if(Session.get('sort_workqueues_completed')){
+            Session.set('sort_workqueues_completed', false);
+            Session.set('sort_workqueues_starred', false);
+            Session.set('sort_workqueues_alphabetically', false);
+        }else{
+            Session.set('sort_workqueues_completed', true);
+            Session.set('sort_workqueues_starred', false);
+            Session.set('sort_workqueues_alphabetically', false);
+        }
+        Meteor.flush();
+    },
+    'click .sort-starred': function(){
+        if(Session.get('sort_workqueues_starred')){
+            Session.set('sort_workqueues_completed', true);
+            Session.set('sort_workqueues_starred', false);
+            Session.set('sort_workqueues_alphabetically', false);
+        }else{
+            Session.set('sort_workqueues_completed', false);
+            Session.set('sort_workqueues_starred', true);
+            Session.set('sort_workqueues_alphabetically', false);
+        }
+        Meteor.flush();
+    },
+    'click .sort-alphabetical': function(){
+        if(Session.get('sort_workqueues_alphabetically')){
+            Session.set('sort_workqueues_completed', false);
+            Session.set('sort_workqueues_starred', false);
+            Session.set('sort_workqueues_alphabetically', false);
+        }else{
+            Session.set('sort_workqueues_completed', false);
+            Session.set('sort_workqueues_starred', false);
+            Session.set('sort_workqueues_alphabetically', true);
+        }
+        Meteor.flush();
+    },
+    'click .tutorial': function(){
+        Session.set('show_reactive_overlay', true);
+    }
+});
+
+Template.footerBarTemplate.sortCompletedSelected = function(){
+    if(Session.get('sort_workqueues_completed')){
+        return 'selected-font';
+    }else{
+        return '';
+    }
+};
+Template.footerBarTemplate.sortStarredSelected = function(){
+    if(Session.get('sort_workqueues_starred')){
+        return 'selected-font';
+    }else{
+        return '';
+    }
+};
+Template.footerBarTemplate.sortAlphabeticallySelected = function(){
+    if(Session.get('sort_workqueues_alphabetically')){
+        return 'selected-font';
+    }else{
+        return '';
+    }
+};
 
 
 

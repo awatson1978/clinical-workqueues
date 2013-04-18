@@ -17,7 +17,7 @@
             <li class="pentasyllabicLogoListItem">
                 <img onclick='toggleSidebarVisibility();' class="pentasyllabicLogo" src="/images/pentasyllabic.logo.square.transparent.png">
             </li>
-            <li><a id="appTitle" href="#">clinical-workqueues.herokuapp.com</a></li>
+            <li><a id="appTitle" onclick='showPage("#workqueuesPage");' href="#">clinical-workqueues.herokuapp.com</a></li>
         </ul>
         <ul class="nav-bar header-nav-bar-right">
             <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="largish profile-icon pictograph">k  </span></a></li>
@@ -31,8 +31,15 @@
         {{#if currentUser }}
         <ul class="nav-bar footer-nav-bar">
             <!--<li><a href="#" onclick='showPage("#workqueuesPage");'><span class="pictographs">4  </span>Workqueues</a></li>-->
+
+            <li class="sort-completed"><a href="#"><span class="largish {{sortCompletedSelected}} pictographs">%</span></a></li>
+            <li class="sort-starred"><a href="#"><span class="largish {{sortStarredSelected}} pictographs">*</span></a></li>
+            <li class="sort-alphabetical"><a href="#"><span class="largish {{sortAlphabeticallySelected}} pictographs">4</span></a></li>
+
         </ul>
         <ul class="nav-bar footer-nav-bar-right">
+            <li class="tutorial"><a href="#" onclick=''><span class="largish pictograph">?</span></a></li>
+            <li>{{> mobileDeviceStatus }}</li>
             <!-- TODO:  maybe buttons should go into communityPageSidebar or iconAssetsSidebar? -->
             <!--<li><a href="#" onclick='toggleButtonVisibility();'><span class="largish pictographs">Z  </span></a></li>-->
         </ul>

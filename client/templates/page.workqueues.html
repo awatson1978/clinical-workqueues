@@ -1,7 +1,7 @@
 <!-- TODO:  add workqueue sorting buttons to footer bar;  date, completed, alphabetical/name, id, etc -->
 
 <template name="workqueuesPageTemplate">
-    <div id="workqueuesPage" class="page ">
+    <div id="workqueuesPage" class="page helveticas">
         <div class="new-task-container">
             <input id="newTaskInput" type="text" class="search lightgray" value="add new task" />
         </div>
@@ -38,20 +38,22 @@
             </li>
             {{else}}
             <li class="display">
-                <span class="largish {{done_checkbox}} checkmark pictogram">%</span>
-
-                <!-- TODO:  rename 'destroy' button as 'todo-delete-button' -->
-                <!-- TODO:  renenable button, and conditionally display it on non-mobile devices -->
-                <!--<li class="destroy"></li>-->
+                <span class="largish unselectable {{task_complete}} checkmark pictogram">%</span>
             </li>
             <li class="display">
-                <span class="largish lightgray {{task_star}} task-star pictogram">*</span>
+                <span class="largish unselectable {{task_star}} task-star pictogram">*</span>
             </li>
             <li class="display">
-                <span class="largish lightgray {{task_delete}} task-delete pictogram">x</span>
+                <span class="largish unselectable lightgray task-info pictogram hide-for-small">b</span>
+            </li>
+            <!--<li class="display">-->
+                <!--<span class="largish lightgray {{task_delete}} task-send pictogram">o</span>-->
+            <!--</li>-->
+            <li class="display">
+                <span class="largish unselectable lightgray task-delete pictogram hide-for-small">x</span>
             </li>
             <li class="display">
-                <span class="todo-text">{{text}}</span>
+                <span class="todo-text {{task_text_complete}}">{{text}}</span>
             </li>
             {{/if}}
             <li class="item-tags">

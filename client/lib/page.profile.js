@@ -286,6 +286,14 @@ Template.profilePageSidebarTemplate.events({
     }
 
 });
+Template.profilePageSidebarTemplate.selected = function(){
+    if(Session.get('show_profile_json_panel')){
+        return 'selected';
+    }else{
+        return '';
+    }
+};
+
 
 //---------------------------------------------------
 monitorDropbox = function(){

@@ -1,6 +1,6 @@
 <template name="sidebarTemplate">
     {{#if sidebarIsVisible }}
-    <div class="doesnt-overlap-header fixed-layout hide-for-small" id="sidebarPane">
+    <div class="doesnt-overlap-header fixed-layout hide-for-small helveticas" id="sidebarPane">
         {{> listsTemplate}}
 
         {{#if isWorkqueuesPage }}
@@ -21,10 +21,11 @@
 
 
 <template name="listsTemplate">
+    <!-- //TODO:  rename listsTEmplate to something else? -->
     <div id="listsTemplate" class="list-tab-container">
         {{#each lists}}
-            <div class="list {{selected}}">
-                <div class="sidebar-tab note">
+            <div class="list">
+                <div class="{{selected}} sidebar-tab note">
                     {{#if editing}}
                     <div class="edit">
                         <input class="list-name-input" id="list-name-input" type="text" value="{{name}}" />
@@ -89,7 +90,7 @@
 
 <template name="profilePageSidebarTemplate">
     <hr style="border: 1px solid lightgray;">
-    <div class="object-inspector-tab sidebar-tab note">
+    <div class="{{selected}} unselectable object-inspector-tab sidebar-tab note">
         <div class="display">
             <span class="pictograph">(</span>
             Object Inspector
@@ -98,13 +99,13 @@
     <hr style="border: 1px solid lightgray;">
     <div class="collaborators-tab sidebar-tab note">
         <div class="display">
-            <span class="pictograph">(</span>
+            <span class="pictograph">g</span>
             Collaborators
         </div>
     </div>
     <div class="hipaa-audit-tab sidebar-tab note">
         <div class="display">
-            <span class="pictograph">(</span>
+            <span class="pictograph">4</span>
             HIPAA Audit Log
         </div>
     </div>

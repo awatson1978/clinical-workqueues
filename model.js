@@ -139,6 +139,7 @@ Meteor.methods({
             text: options.text,
             timestamp: options.timestamp,
             done: options.done,
+            star: options.star,
             list_id: options.list_id,
             public: !! options.public
         });

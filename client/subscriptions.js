@@ -2,7 +2,6 @@
 // subscribe to the collections nececssary to run the application
 Meteor.subscribe('allTodos');
 Meteor.subscribe('usersDirectory');
-Meteor.subscribe('hipaa');
 Meteor.subscribe('categoryIcons');
 Meteor.subscribe('facebook_avatar_url');
 Meteor.subscribe('userProfile', Meteor.userId());

@@ -2,7 +2,7 @@
   "meteor": {
     "git": "https://github.com/meteor/meteor.git",
     "branch": "master",
-    "commit": "0ffea1c4c308ed24906984f99b13b8fca5a0956c"
+    "commit": "1dfc7171f237a029cca74cbf25024acbf6ed5b75"
   },
   "dependencies": {
     "basePackages": {
@@ -32,6 +32,10 @@
       },
       "reactive-overlays": {
         "git": "https://github.com/awatson1978/reactive-overlays.git",
+        "branch": "master"
+      },
+      "cordova-phonegap": {
+        "git": "https://github.com/awatson1978/cordova-phonegap.git",
         "branch": "master"
       }
     },
@@ -69,7 +73,12 @@
       "reactive-overlays": {
         "git": "https://github.com/awatson1978/reactive-overlays.git",
         "branch": "master",
-        "commit": "8dcb64f12a5c64c17f15381a6bb293f28b94ed3a"
+        "commit": "23993dd05925e2ea608c9b4379610d4b4df70df8"
+      },
+      "cordova-phonegap": {
+        "git": "https://github.com/awatson1978/cordova-phonegap.git",
+        "branch": "master",
+        "commit": "4c40791384a6cb6c428ba975b9c6fe440cffc966"
       }
     }
   }

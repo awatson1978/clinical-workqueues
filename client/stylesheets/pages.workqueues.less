@@ -60,37 +60,6 @@
   right: 5px;
   background-color: white;
 }
-// TODO:  decide if we want to keep the bookends
-//.bookend-right{
-//  position: absolute;
-//  background: white;
-//  width: 40px;
-//  height: 30px;
-//  right: 0px;
-//  top: 10px;
-//  z-index: 100;
-//}
-//.bookend-left{
-//  position: absolute;
-//  top: 0px;
-//  left: -20px;
-//  height: 35px;
-//  width: 20px;
-//  z-index: 0;
-//
-//  background: -webkit-gradient(linear,
-//  right top,
-//  left top,
-//  color-stop(0, rgba(255, 255, 255, 1)),
-//  color-stop(1, rgba(255, 255, 255, 0)));
-//  background: -ms-linear-gradient(bottom,
-//  rgba(255, 255, 255, 1),
-//  rgba(255, 255, 255, 0));
-//  background: -moz-linear-gradient(center bottom,
-//  rgba(255, 255, 255, 1) 0%,
-//  rgba(255, 255, 255, 0) 100%);
-//  filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",#00f2f2f2,#FFf2f2f2));
-//}
 
 .delete-button{
   background-color: red !important;
@@ -115,38 +84,54 @@
       padding-left: 10px;
     }
     .checkmark:hover{
-      color: darkgreen !important;
+      color: coral !important;
     }
     .task-star:hover{
-      color: darkgoldenrod !important;
+      color: coral !important;
+    }
+    .task-info:hover{
+      color: coral !important;
+    }
+    .task-send:hover{
+      color: coral !important;
     }
     .task-delete:hover{
-      color: maroon !important;
+      color: coral !important;
     }
   }
   .touch-disabled .todo:hover{
     .checkmark{
-      //color: darkseagreen;
-      color: steelblue;
+      //color: steelblue;
+      color: dimgray;
     }
     .task-star{
-      //color: goldenrod;
-      color: steelblue;
+    //color: steelblue;
+      color: dimgray;
+    }
+    .task-info{
+    //color: steelblue;
+      color: dimgray;
+    }
+    .task-send{
+    //color: steelblue;
+      color: dimgray;
     }
     .task-delete{
-      //color: indianred;
-      color: steelblue;
+    //color: steelblue;
+      color: dimgray;
     }
     .todo-text{
-      //color: black;
-      color: steelblue;
+    //color: steelblue;
+      color: dimgray;
     }
     .horizontal-tags .addtag{
-      color: steelblue;
+    //color: steelblue;
+      color: dimgray;
     }
   // TOOD:  refactor removable_tag to removable-tag
     .horizontal-tags .removable_tag{
-      background-color: steelblue;
+      //background-color: steelblue;
+      background-color: dimgray;
     }
   }
 }

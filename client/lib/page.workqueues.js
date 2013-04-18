@@ -84,6 +84,7 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
                     text: text,
                     list_id: Session.get('list_id'),
                     done: false,
+                    star: false,
                     timestamp: (new Date()).getTime(),
                     tags: tag ? [tag] : [],
                     owner: Meteor.userId,
@@ -134,12 +135,27 @@ Template.workqueueTemplate.todos = function () {
         if (!list_id)
             return {};
 
-        var sel = {list_id: list_id};
+        var selection = {list_id: list_id};
         var tag_filter = Session.get('tag_filter');
         if (tag_filter)
-            sel.tags = tag_filter;
+            selection.tags = tag_filter;
 
-        return Todos.find(sel, {sort: {timestamp: 1}});
+//        var sortCompleted = 0;
+//        var sortStarred = 0;
+//        var sortAlphabetically = 0;
+//        var sortTimestamp = 0;
+
+        var sortObject = {timestamp: 1};
+        if(Session.get('sort_workqueues_completed')){
+            sortObject = {done: 1};
+        }
+        if(Session.get('sort_workqueues_starred')){
+            sortObject = {star: 1};
+        }
+        if(Session.get('sort_workqueues_alphabetically')){
+            sortObject = {text: 1};
+        }
+        return Todos.find(selection, {sort: sortObject});
 
     }catch(error){
         console.log(error);
@@ -183,9 +199,23 @@ Template.taskItemTemplate.done_class = function () {
     }
 };
 
-Template.taskItemTemplate.done_checkbox = function () {
+Template.taskItemTemplate.task_complete = function () {
     try{
         return this.done ? 'green' : 'lightgray';
+    }catch(error){
+        console.log(error);
+    }
+};
+Template.taskItemTemplate.task_text_complete = function () {
+    try{
+        return this.done ? 'strikeout' : '';
+    }catch(error){
+        console.log(error);
+    }
+};
+Template.taskItemTemplate.task_star = function () {
+    try{
+        return this.star ? 'goldenrod' : 'lightgray';
     }catch(error){
         console.log(error);
     }
@@ -232,13 +262,10 @@ Template.taskItemTemplate.events({
         Meteor.flush();
     },
     'mousedown .todo': function(){
-        Session.set('selected_task_id', this._id);
-        Session.set('selected_task_done_status', this.done);
-        Session.set('selected_task_text', this.text);
-        Session.set('show_task_detail_panel', true);
-        setTaskDetailVisibility();
-        Meteor.flush();
+        Session.set('json_content', JSON.stringify(this));
     },
+
+
     'dblclick .todo': function(){
         //toggleTaskDetailPanel();
         Session.set('show_task_detail_panel', true);
@@ -249,9 +276,28 @@ Template.taskItemTemplate.events({
         e.preventDefault();
         Meteor.flush();
     },
-    'click .destroy': function () {
-        Todos.remove(this._id);
+    'click .task-star': function (e) {
+        Todos.update(this._id, {$set: {star: !this.star}});
+        e.preventDefault();
         Meteor.flush();
+    },
+    'click .task-info': function (e) {
+        if(Session.get('show_task_detail_panel')){
+            Session.set('show_task_detail_panel', false);
+        }else{
+            Session.set('show_task_detail_panel', true);
+            Session.set('selected_task_id', this._id);
+            Session.set('selected_task_done_status', this.done);
+            Session.set('selected_task_text', this.text);
+        }
+        setTaskDetailVisibility();
+        Meteor.flush();
+    },
+    'click .task-delete': function (e) {
+        if(confirm('Are you sure you want to delete task ' + Session.get('selected_task_id') + '?')){
+            Todos.remove(this._id);
+            Meteor.flush();
+        }
     },
     'click .delete-button': function () {
         Session.set('selected_task_delete_id', null);
@@ -328,7 +374,8 @@ sendToActiveCollaborator = function() {
 
 
 //----------------------------------------------------------------------
-
+//----------------------------------------------------------------------
+// TASK DETAIL CARD
 
 Template.taskDetailCardTemplate.tag_list = function () {
     //console.log('*-----------------------------------------------------');

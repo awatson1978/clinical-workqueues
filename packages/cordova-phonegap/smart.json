@@ -3,6 +3,6 @@
     "description": "Meteorite package providing support for mobile hardware via Cordova Phonegap.",
     "homepage": "https://github.com/awatson1978/cordova-phonegap",
     "author": "Abigail Watson  (http://www.pentasyllabic.com)",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "git": "https://github.com/awatson1978/cordova-phonegap.git"
 }

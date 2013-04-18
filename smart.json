@@ -23,6 +23,9 @@
     },
     "reactive-overlays": {
         "git": "https://github.com/awatson1978/reactive-overlays.git"
+    },
+    "cordova-phonegap": {
+        "git": "https://github.com/awatson1978/cordova-phonegap.git"
     }
   }
 }
