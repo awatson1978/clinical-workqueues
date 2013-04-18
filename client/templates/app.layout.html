@@ -1,6 +1,5 @@
 <template name="appContainerTemplate">
-    <!-- //TODO:  refactor 'content' to 'app-content' -->
-    <div class="content">
+    <div class="mainLayoutPaneContainer">
         {{#if loggedIn}}
         <div id="mainLayoutPane">
             {{> workqueuesPageTemplate }}
@@ -18,3 +17,10 @@
 </template>
 
 
+<template name="jsonContentPanelTemplate">
+    {{#if showJsonPanel }}
+    <div id="json-content" class="row panel jsondata notepad">
+        {{ jsonData }}
+    </div>
+    {{/if }}
+</template>

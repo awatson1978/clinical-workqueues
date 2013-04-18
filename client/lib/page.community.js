@@ -1,7 +1,12 @@
+//--------------------------------------------------------------------
+// set up commonly used helper functions
+
 Template.communityPageTemplate.helpers(genericUserDisplayObject);
 Template.communityInspectionColumn.helpers(genericUserDisplayObject);
 
 
+//--------------------------------------------------------------------
+// set up commonly used helpers
 
 
 Template.communityPageTemplate.resize = function(){
@@ -12,17 +17,6 @@ Template.communityPageTemplate.resize = function(){
         layoutAppWithoutSidebar();
     }
     return Session.get("appWidth");
-};
-
-Template.communityInspectionColumn.rendered = function(){
-    log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
-};
-Template.communityInspectionColumn.search_text_color = function(){
-    if(Session.get('community_members_filter') == null){
-        return "lightgray";
-    }else{
-        return "";
-    }
 };
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
@@ -38,18 +32,24 @@ Template.communityPageTemplate.events({
         }
     }
 });
-Template.communityPageTemplate.communityUsers = function () {
-        return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
-};
-Template.communityPageTemplate.user_count = function () {
-    log_event('Template.communityPageTemplate.user_count', LogLevel.Trace, this);
-    return Meteor.users.find().count();
-};
 
+
+//--------------------------------------------------------------------
+// communite inspection column (left column)
 
 Template.communityInspectionColumn.showQuickViewPanel = function () {
     log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace, this);
     return Session.get('show_quick_view_panel');
+};
+Template.communityInspectionColumn.rendered = function(){
+    log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
+};
+Template.communityInspectionColumn.search_text_color = function(){
+    if(Session.get('community_members_filter') == null){
+        return "lightgray";
+    }else{
+        return "";
+    }
 };
 
 
@@ -57,7 +57,7 @@ Template.communityInspectionColumn.showQuickViewPanel = function () {
 // quickViewPanelTemplate
 
 
-Template.communityInspectionColumn.user_id = function () {
+Template.userQuickViewCard.user_id = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     if(user){
         return user._id;
@@ -65,34 +65,32 @@ Template.communityInspectionColumn.user_id = function () {
         return false;
     }
 }
-Template.communityInspectionColumn.user_name = function () {
+Template.userQuickViewCard.user_name = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     return user.profile.name;
 }
-Template.communityInspectionColumn.user_email = function () {
+Template.userQuickViewCard.user_email = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     if(user.emails){
         return user.emails.address;
     }
 }
-Template.communityInspectionColumn.user_avatar = function () {
-//    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
-//    if(user.profile){
-//        return user.profile.avatar;
-//    }
+Template.userQuickViewCard.user_avatar = function () {
     return Session.get('selected_community_member_avatar_path');
 }
 
 //--------------------------------------------------------------------
 // taskDetailCardTemplate
 
+
+
 Template.communityInspectionColumn.isBroadcastRecipient = function(){
     var isRecipient = false;
-//    try{
-//        Meteor.user().profile.pushRecipients.contains(Session.get('selected_community_member'));
-//    }catch{
-//
-//    }
+    //    try{
+    //        Meteor.user().profile.pushRecipients.contains(Session.get('selected_community_member'));
+    //    }catch{
+    //
+    //    }
     if(isRecipient){
         return "";
     }else{
@@ -104,26 +102,19 @@ Template.communityInspectionColumn.events({
     'touchmove .item-list' : function (e){
         e.preventDefault();
     },
-    'click .transfer-icon': function (evt, tmpl) {
-        if(confirm('Toggle collaborator status?')){
-            setActiveCollaborator(Session.get('selected_community_member'));
-            // toggleActiveCollaborator(Session.get('selected_community_member'));
-        }
-    },
-    'click .collaborator-icon': function (evt, tmpl) {
-        if(confirm('Add as a collaborator?')){
-            alert("Not implemented yet.  But soon!");
-        }
-    },
-    'click .carewatch-icon': function (evt, tmpl) {
-        // TODO:  check if selected user's ID is currently in Meteor.user().profile.carewatch - if so, remove it
-
-        // TODO:  add selected user's ID to Meteor.user().profile.carewatch
-        if(confirm('Add to carewatch?')){
-            alert("Not implemented yet.  But soon!");
-        }
+    'click #userQuickViewPanel': function(evt){
+        setActiveCollaborator(Session.get('selected_community_member'));
+        showPage("#profilePage");
     }
 });
+
+
+//--------------------------------------------------------------------
+// communite inspection column (right column)
+
+Template.communityMembersList.communityUsers = function () {
+    return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
+};
 
 //--------------------------------------------------------------------
 // userItemTemplate

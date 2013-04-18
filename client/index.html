@@ -40,19 +40,9 @@
         <ul class="nav-bar footer-nav-bar-right">
             <li class="tutorial"><a href="#" onclick=''><span class="largish pictograph">?</span></a></li>
             <li>{{> mobileDeviceStatus }}</li>
-            <!-- TODO:  maybe buttons should go into communityPageSidebar or iconAssetsSidebar? -->
-            <!--<li><a href="#" onclick='toggleButtonVisibility();'><span class="largish pictographs">Z  </span></a></li>-->
         </ul>
         {{/if}}
     </div>
 </template>
 
 
-<!-- TODO:  move jsonContentPanelTemplate to app.layout.html -->
-<template name="jsonContentPanelTemplate">
-    {{#if showJsonPanel }}
-    <div id="json-content" class="row panel jsondata notepad">
-        {{ jsonData }}
-    </div>
-    {{/if }}
-</template>

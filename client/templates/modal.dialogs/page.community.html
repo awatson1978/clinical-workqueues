@@ -5,13 +5,7 @@
         <div class="doesnt-overlap-header">
             <div class="spacer row"></div>
             <div class="spacer row hide-for-small"></div>
-            <div id="communityMembersList">
-                <ul id="item-list" class="list dont-overlap-user-card">
-                    {{#each communityUsers}}
-                    {{> userItemTemplate}}
-                    {{/each}}
-                </ul>
-            </div>
+                {{> communityMembersList}}
             <div class="spacer row hide-for-small"></div>
             <div id="communityInspectionColumn">
                 {{> communityInspectionColumn }}
@@ -19,39 +13,17 @@
         </div>
     </div>
 </template>
+
+<!-- ------------------------------------------------------------ -->
+<!-- LEFT COLUMN -->
+
 <template name="communityInspectionColumn">
     <div id="communityInspectionBlock" class="top-anchored">
         <div class="search-container">
             <input id="communitySearchInput" type="text" class="search {{search_text_color}}" value="search community members" />
         </div>
         {{#if showQuickViewPanel}}
-
-        <!-- TODO:  extract userQuickViewPanel to userQuickViewCard -->
-        <!-- TODO:  restructure userQuickViewCard with taskDetailCard markup -->
-        <!-- //TODO: comment out isCollaborator and isCarewatched pictographs -->
-
-        <div class="spacer row"></div>
-        <div id="userQuickViewPanel" class="card">
-            <div class="card-header rounded-top-right">
-                <span class="white card-meta-data barcode">*{{user_id}}*</span>
-            </div>
-            <div class="panel user-card-detailed">
-                <img id="userCardImage" class="user-card-image" src="{{user_avatar}}" />
-
-                <div class="user-card-synopsis fullheight unselectable">
-                    <div class="spacer row"></div>
-                    <span class="user-card-synopsis-name">{{ user_name }}</span><br>
-                    <span class="user-card-synopsis-email">{{ user_email }}</span><br>
-                    <span id="broadcastIcon" class="{{isBroadcastRecipient}} communication-recipient-icon pictograph">^</span>
-
-                    <ul class="card-southeast-bottom pictograph-buttons">
-                        <li class="largish transfer-icon pictograph">o</li>
-                        <li class="largish collaborator-icon pictograph">a</li>
-                        <li class="largish carewatch-icon pictograph">j</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+            {{> userQuickViewCard }}
         {{else}}
         <div class="itaintrocketscience hide-for-small hidden-on-portrait">
             <p>You can search by name, barcode, or user ID.  Try copying the barcode and pasting it in the box. (coming soon)</p>
@@ -60,8 +32,38 @@
     </div>
 </template>
 
-<!-- //TODO: mouseover entire card should activate pointer cursor -->
-<!-- //TODO: comment out isCollaborator and isCarewatched pictographs -->
+<!-- TODO:  restructure userQuickViewCard with taskDetailCard markup -->
+<template name="userQuickViewCard">
+    <div class="spacer row"></div>
+    <div id="userQuickViewPanel" class="card">
+        <div class="card-header rounded-top-right">
+            <span class="white card-meta-data barcode">*{{user_id}}*</span>
+        </div>
+        <div class="panel user-card-detailed">
+            <img id="userCardImage" class="user-card-image" src="{{user_avatar}}" />
+
+            <div class="user-card-synopsis fullheight unselectable">
+                <div class="spacer row"></div>
+                <span class="user-card-synopsis-name">{{ user_name }}</span><br>
+                <span class="user-card-synopsis-email">{{ user_email }}</span><br>
+                <span id="broadcastIcon" class="{{isBroadcastRecipient}} communication-recipient-icon pictograph">^</span>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- ------------------------------------------------------------ -->
+<!-- RIGHT COLUMN -->
+
+<template name="communityMembersList">
+    <div id="communityMembersList">
+        <ul id="item-list" class="list dont-overlap-user-card">
+            {{#each communityUsers}}
+            {{> userItemTemplate}}
+            {{/each}}
+        </ul>
+    </div>
+</template>
 
 <template name="userItemTemplate">
     <li class="rounded-corners user-card without-padding">
@@ -69,19 +71,7 @@
         <div class="card-data">
             <div class="card-northwest gray card-meta-data without-padding barcode">*{{ _id }}*</div>
             <div class="card-northwest-secondary user-email bold">{{ userName }}</div>
-            <ul class="card-southeast pictograph-buttons">
-                <li class="{{isActiveCollaborator}} largish transfer-icon pictograph">o</li>
-                <li class="{{isCollaborator}} largish collaborator-icon pictograph">a</li>
-                <li class="{{isCarewatched}} largish carewatch-icon pictograph">j</li>
-            </ul>
         </div>
     </li>
 </template>
 
-<!-- //TODO:  move collaboratorItem from ClinicalWorkqueues to Symptomatic project -->
-<template name="collaboratorItem">
-    <li>
-        <span class="collaborator">{{name}}</span>
-        <span class="destroy"></span>
-    </li>
-</template>

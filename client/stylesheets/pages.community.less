@@ -13,12 +13,10 @@
   border: 1px solid white;
   position: relative;
   height: 80px;
+  cursor: pointer;
 
-//  -webkit-border-radius: 4px;
-//  -moz-border-radius: 4px;
-//  border-radius: 4px;
 }
-.touch-enabled .user-card:hover{
+.touch-disabled .user-card:hover{
   border: 1px solid @highlight-color;
   background-color: @highlight-color;
 
@@ -31,7 +29,7 @@
 .user-card:hover .user-id{
   color: white;
 }
-.touch-enabled .user-card:hover .user-select{
+.touch-disabled .user-card:hover .user-select{
   visibility: visible;
   display: block;
 }

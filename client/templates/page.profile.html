@@ -15,24 +15,6 @@
 
 
 
-<!-- TODO:  create activeCollaboratorCardTemplate-->
-<template name="activeCollaboratorCardTemplate">
-    <div class="clickable synopsis card-container with-bottom-spacer">
-        <div class="card-header rounded-top-right">
-            <span class="white card-meta-data">Active Collaborator</span>
-        </div>
-        <div class="user-profile-card card-body">
-            <div class="user-card-detailed">
-                <img class="user-card-image collaborator-image gray-border" id="originImage" src="/images/placeholder-240x240.gif" />
-            </div>
-        </div>
-        <div class="card-footer"></div>
-    </div>
-
-    <!-- TODO:  collaboratorImage.onclick opens communityModalPage -->
-
-</template>
-
 <template name="userCardTemplate">
     <!--<div class="user-card-block">-->
         <div class="hidden">{{resize}}</div>
@@ -93,12 +75,12 @@
                                         <span id="profile-display-dropbox" class="gray dictionary-value">{{user_dropbox}}</span>
                                     </div>
                                 </li>
-                                <li>
-                                    <div id="profile-display-active-collaborator-label" class="dictionary-key">Collaborator</div>
-                                    <div id="userActiveCollaboratorDisplay" class="userAvatarDisplay display dictionary-value-editing">
-                                        <span id="profile-display-active-collaborator" class="gray dictionary-value">{{user_active_collaborator}}</span>
-                                    </div>
-                                </li>
+                                <!--<li>-->
+                                    <!--<div id="profile-display-active-collaborator-label" class="dictionary-key">Collaborator</div>-->
+                                    <!--<div id="userActiveCollaboratorDisplay" class="userAvatarDisplay display dictionary-value-editing">-->
+                                        <!--<span id="profile-display-active-collaborator" class="gray dictionary-value">{{user_active_collaborator}}</span>-->
+                                    <!--</div>-->
+                                <!--</li>-->
 
                                 <!-- TODO:  move currentPage input to detailedUsersInfoCard -->
                                 <!--<li>-->
@@ -132,6 +114,48 @@
         <!-- TODO:  move link to hipaaCard to profilePageSidebarTemplate -->
         {{!> hipaaAuditLogTemplate}}
     <!--</div>-->
+</template>
+
+
+
+
+<!-- TODO:  create activeCollaboratorCardTemplate-->
+<template name="activeCollaboratorCardTemplate">
+    <div class="clickable synopsis card-container with-bottom-spacer">
+        <div class="card-header rounded-top-right">
+            <span class="white card-meta-data">Active Collaborator</span>
+        </div>
+        <div class="user-profile-card card-body">
+            <div class="user-card-detailed">
+                <img class="user-card-image collaborator-image gray-border" id="originImage" src="{{collaborator_avatar}}" />
+
+                <div class="user-card-data">
+
+                    <!-- TODO:  remove foundation.css twelve column usage -->
+                    <div class="twelve columns">
+                        <ul class="profile-items card-data dictionary">
+                            <li>
+                                <div class="dictionary-key hidden-top-row">Collaborator</div>
+                                <div class="userNameDisplay display dictionary-value-editing hidden-top-row">
+                                    <span class="dictionary-value hidden-top-row">{{collaborator_name}}</span>
+                                </div>
+                            </li>
+
+                            <li >
+                                <div class="dictionary-key">Birthdate</div>
+                                <div class="userDateOfBirthDisplay display dictionary-value-editing">
+                                    <span class="dictionary-value">{{collaborator_birthdate}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card-footer"></div>
+    </div>
 </template>
 
 

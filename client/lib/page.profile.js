@@ -32,10 +32,6 @@ Template.userCardTemplate.resize = function(){
 };
 
 
-
-
-
-
 Template.userCardTemplate.editing_email = function () {
     log_event('Template.profilePageTemplate.editing_email', LogLevel.Trace, this);
     return Session.equals('editing_profile_email', "true");
@@ -265,6 +261,7 @@ Template.profilePageTemplate.receivedNewAlert = function(){
 
 
 //----------------------------------------------------------------
+// active collaborator card
 
 Template.activeCollaboratorCardTemplate.events({
     'click .collaborator-image': function(){
@@ -272,8 +269,49 @@ Template.activeCollaboratorCardTemplate.events({
     }
 });
 
+Template.activeCollaboratorCardTemplate.collaborator_avatar = function () {
+    try{
+        if(Meteor.user().profile.avatar){
+            return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.avatar;
+        }else{
+            return "/images/placeholder-240x240.gif";
+        }
+    }
+    catch(err){
+        catch_error('Template.userCardTemplate.collaborator_avatar', err, LogLevel.Error, this);
+    }
+};
+Template.activeCollaboratorCardTemplate.collaborator_birthdate = function () {
+    try{
+        if(Meteor.user().profile.birthdate){
+            return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.birthdate;
+        }else{
+            return "----/--/--";
+        }
+    }
+    catch(err){
+        catch_error('Template.userCardTemplate.collaborator_birthdate', err, LogLevel.Error, this);
+    }
+};
+Template.activeCollaboratorCardTemplate.collaborator_name = function () {
+    try{
+        if(Meteor.user().profile.name){
+            return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name;
+        }else{
+            return "System Ghost";
+        }
+    }
+    catch(err){
+        catch_error('Template.userCardTemplate.collaborator_name', err, LogLevel.Error, this);
+    }
+};
 
-// TODO:  this probably needs to go into page.profile.js
+
+//----------------------------------------------------------------
+// sidebar
+
+
+
 Template.profilePageSidebarTemplate.events({
     'click .object-inspector-tab': function(){
         toggleJsonPanel();
@@ -326,6 +364,3 @@ Template.dropboxAlert.text = function(){
         catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
     }
 };
-
-// -------------------------------------------Meteor.user().profile.dropbo-------------
-// LOGGED IN, ETC
