@@ -1,15 +1,12 @@
 
 <template name="workqueuesPageTemplate">
     <div id="workqueuesPage" class="page helveticas">
+        {{#if receivedNewAlert }}
+        {{> dropboxAlertTemplate}}
+        {{/if }}
+
         <div class="new-task-container">
             <input id="newTaskInput" type="text" class="search lightgray" value="add new task" />
-        </div>
-        <div>
-            {{#if receivedNewAlert }}
-            <div class="padded">
-                {{> dropboxAlertTemplate}}
-            </div>
-            {{/if }}
         </div>
         {{> workqueueTemplate}}
     </div>
@@ -26,7 +23,7 @@
         </ul>
     </div>
     {{#if showTaskDetail}}
-    {{> taskDetailCardTemplate }}
+    {{> taskDetailAnchorTemplate }}
     {{/if}}
 </template>
 
@@ -87,14 +84,19 @@
 </template>
 
 
-
-<template name="taskDetailCardTemplate">
+<template name="taskDetailAnchorTemplate">
     <div id="taskDetailCard" class="task-detail-container">
         {{#if showTaskDetailModalMask }}
-            <div class="detailed-task-card-modal-mask-gradient"></div>
-            <div class="detailed-task-card-modal-mask"></div>
+        <div class="detailed-task-card-modal-mask-gradient"></div>
+        <div class="detailed-task-card-modal-mask"></div>
         {{/if }}
+        {{> taskDetailCardTemplate }}
+    </div>
+    <div class="spacer row"></div>
+</template>
 
+
+<template name="taskDetailCardTemplate">
         <div class="card-header rounded-top-right">
             <span class="white neo-card-meta-data barcode">{{todo_id}}</span>
         </div>
@@ -109,8 +111,6 @@
                     <span class="web-link-text">---------------------------------------------------------------------------------------</span>
                 </li>
             </ul>
-
-
             <ul class="detailed-task-card-controls">
                 <li class="task-detail-checkmark curved-control-button">
                     <span class="control-button {{detailed_task_complete}} pictograph">%</span>
@@ -144,6 +144,4 @@
                 {{/if}}
             </ul>
         </div>
-        <div class="spacer row"></div>
-    </div>
 </template>

@@ -495,7 +495,7 @@ Template.taskDetailCardTemplate.rendered = function(){
 };
 
 
-Template.taskDetailCardTemplate.showTaskDetailModalMask = function(){
+Template.taskDetailAnchorTemplate.showTaskDetailModalMask = function(){
     return true;
 };
 Template.taskDetailCardTemplate.todo_id = function(){

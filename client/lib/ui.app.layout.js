@@ -118,6 +118,10 @@ monitorDropbox = function(){
         if(Meteor.user().profile.dropbox == null){
             return false;
         }else{
+            Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
+            Session.set('selected_task_done_status', Todos.findOne(Meteor.user().profile.dropbox).done);
+            Session.set('selected_task_star_status', Todos.findOne(Meteor.user().profile.dropbox).star);
+            Session.set('selected_task_text', Todos.findOne(Meteor.user().profile.dropbox).text);
             return true;
         }
     }
@@ -132,13 +136,42 @@ Template.dropboxAlertTemplate.events({
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
     }
 });
-Template.dropboxAlertTemplate.text = function(){
+Template.dropboxAlertTemplate.alert_text = function(){
     try{
-        //console.log('dropbox: ' + Meteor.user().profile.dropbox);
-        //var task = Todos.findOne(Meteor.user().profile.dropbox);
-        var task = Todos.findOne(Meteor.user().profile.dropbox);
-        //console.log('dropbox task: ' + task.text);
-        return task.text;
+        return Todos.findOne(Meteor.user().profile.dropbox).text;
+    }catch(error){
+        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+    }
+};
+Template.dropboxAlertTemplate.alert_image = function(){
+    try{
+        var foo = Todos.findOne(Session.get('selected_task_id'));
+        if(foo.image){
+            return foo.image;
+        }else{
+            return '/images/placeholder-240x240.gif';
+        }
+    }catch(error){
+        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+    }
+};
+Template.dropboxAlertTemplate.alert_id = function(){
+    try{
+        return Todos.findOne(Meteor.user().profile.dropbox)._id;
+    }catch(error){
+        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+    }
+};
+Template.dropboxAlertTemplate.alert_tag_list = function(){
+    try{
+        return Todos.findOne(Meteor.user().profile.dropbox).text;
+    }catch(error){
+        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+    }
+};
+Template.dropboxAlertTemplate.alert_link = function(){
+    try{
+        return Todos.findOne(Meteor.user().profile.dropbox).weblink;
     }catch(error){
         catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
     }
