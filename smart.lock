@@ -68,7 +68,7 @@
       "hipaa-audit-log": {
         "git": "https://github.com/awatson1978/hipaa-audit-log.git",
         "branch": "master",
-        "commit": "09c435c9a28c7a735d0725b4e83bd92d1f6dcd86"
+        "commit": "b6e901ad693360f4885b6c84410f87d6693c40c4"
       },
       "reactive-overlays": {
         "git": "https://github.com/awatson1978/reactive-overlays.git",
@@ -78,7 +78,7 @@
       "cordova-phonegap": {
         "git": "https://github.com/awatson1978/cordova-phonegap.git",
         "branch": "master",
-        "commit": "4c40791384a6cb6c428ba975b9c6fe440cffc966"
+        "commit": "70a610e0574b4a4cc9b78872712a821034c83b6a"
       }
     }
   }

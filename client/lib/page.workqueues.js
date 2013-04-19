@@ -16,22 +16,26 @@ layoutWorkqueuesPage = function() {
             $('.card-body-resize').css('width', window.innerWidth - 235);
             $('.card-footer-resize').css('width', window.innerWidth - 235);
             $('.web-link-controls').css('width', window.innerWidth - 500);
+            $('.detailed-task-card-controls').css('right', 217);
         } else {
             $('#mainLayoutPane').css('width', window.innerWidth);
             $('.card-body-resize').css('width', window.innerWidth - 40);
             $('.card-footer-resize').css('width', window.innerWidth - 40);
             $('.web-link-controls').css('width', window.innerWidth - 260);
+            $('.detailed-task-card-controls').css('right', 21);
         }
     } else if (window.innerWidth < 767) {
         $('#mainLayoutPane').css('width', window.innerWidth);
         $('.card-body-resize').css('width', window.innerWidth - 40);
         $('.card-footer-resize').css('width', window.innerWidth - 40);
         $('.web-link-controls').css('width', window.innerWidth - 260);
+        $('.detailed-task-card-controls').css('right', 21);
     } else if (window.innerWidth < 480) {
         $('#mainLayoutPane').css('width', window.innerWidth);
         $('.card-body-resize').css('width', window.innerWidth - 40);
         $('.card-footer-resize').css('width', window.innerWidth - 40);
         $('.web-link-controls').css('width', window.innerWidth - 260);
+        $('.detailed-task-card-controls').css('right', 21);
     }
 }
 
@@ -55,8 +59,17 @@ Template.workqueuesPageTemplate.resized = function(){
 };
 
 // TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
-Template.workqueueTemplate.receivedNewAlert = function(){
-    return monitorDropbox();
+Template.workqueuesPageTemplate.receivedNewAlert = function(){
+    try{
+        if(Meteor.user().profile.dropbox == null){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    catch(err){
+        catch_error('monitorDropbox()', err, LogLevel.Notice, this);
+    }
 };
 
 
@@ -425,6 +438,9 @@ Template.taskDetailCardTemplate.events({
         e.preventDefault();
         Meteor.flush();
     },
+    'click .task-detail-send': function(e){
+        sendToActiveCollaborator();
+    },
     'click .task-detail-delete': function (e) {
         if(confirm('Are you sure you want to delete task ' + Session.get('selected_task_id') + '?')){
             Session.set('show_task_detail_panel', false);
@@ -514,7 +530,15 @@ Template.taskDetailCardTemplate.detailed_task_star = function () {
     }
 };
 Template.taskDetailCardTemplate.activeCollaboratorName = function(){
-    return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name;
+    try{
+        if(Meteor.user().profile.activeCollaborator){
+            return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name;
+        }else{
+            return " ";
+        }
+    }catch(error){
+        console.log(error);
+    }
 }
 
 

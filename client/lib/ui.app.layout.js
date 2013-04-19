@@ -127,12 +127,12 @@ monitorDropbox = function(){
 };
 
 
-Template.dropboxAlert.events({
-    'click #dropboxAlert':function(){
+Template.dropboxAlertTemplate.events({
+    'click #dropboxAlertCard':function(){
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
     }
 });
-Template.dropboxAlert.text = function(){
+Template.dropboxAlertTemplate.text = function(){
     try{
         //console.log('dropbox: ' + Meteor.user().profile.dropbox);
         //var task = Todos.findOne(Meteor.user().profile.dropbox);
@@ -140,6 +140,6 @@ Template.dropboxAlert.text = function(){
         //console.log('dropbox task: ' + task.text);
         return task.text;
     }catch(error){
-        catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
+        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
     }
 };

@@ -4,6 +4,13 @@
         <div class="new-task-container">
             <input id="newTaskInput" type="text" class="search lightgray" value="add new task" />
         </div>
+        <div>
+            {{#if receivedNewAlert }}
+            <div class="padded">
+                {{> dropboxAlertTemplate}}
+            </div>
+            {{/if }}
+        </div>
         {{> workqueueTemplate}}
     </div>
     <div class="hidden resize-trigger">resized: {{resized}}</div>
@@ -11,13 +18,6 @@
 
 
 <template name="workqueueTemplate">
-    <div>
-        {{#if receivedNewAlert }}
-        <div class="padded">
-            {{> dropboxAlertTemplate}}
-        </div>
-        {{/if }}
-    </div>
     <div id="items-view" class="touch-trigger touch-disabled">
         <ul id="item-list">
             {{#each todos}}
@@ -96,7 +96,7 @@
         {{/if }}
 
         <div class="card-header rounded-top-right">
-            <span class="white card-meta-data barcode">{{todo_id}}</span>
+            <span class="white neo-card-meta-data barcode">{{todo_id}}</span>
         </div>
 
         <div class="task-detail-card-body card-body-resize">
@@ -118,7 +118,7 @@
                 <li class="task-detail-star">
                     <span class="control-button {{detailed_task_star}} pictograph">*</span>
                 </li>
-                <li>
+                <li class="task-detail-send">
                     <span class="control-button pictograph">o</span>
                     <span class="sender-name">{{activeCollaboratorName}}</span>
                 </li>
