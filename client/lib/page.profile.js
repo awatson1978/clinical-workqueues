@@ -316,51 +316,36 @@ Template.profilePageSidebarTemplate.events({
     'click .object-inspector-tab': function(){
         toggleJsonPanel();
     },
-    'click .hipaa-audit-tab': function(){
-        // nothing yet
-    },
     'click .collaborators-tab': function(){
-        // nothing yet
-    }
-
-});
-Template.profilePageSidebarTemplate.selected = function(){
-    if(Session.get('show_profile_json_panel')){
-        return 'selected';
-    }else{
-        return '';
-    }
-};
-
-
-//---------------------------------------------------
-monitorDropbox = function(){
-    try{
-        if(Meteor.user().profile.dropbox == null){
-            return false;
+        if(Session.get('show_active_collaborator_card')){
+            Session.set('show_active_collaborator_card', false);
         }else{
-            return true;
+            Session.set('show_active_collaborator_card', true);
+        }
+    },
+    'click .hipaa-audit-tab': function(){
+        if(Session.get('show_hipaa_audit_log_card')){
+            Session.set('show_hipaa_audit_log_card', false);
+        }else{
+            Session.set('show_hipaa_audit_log_card', true);
         }
     }
-    catch(err){
-        catch_error('monitorDropbox()', err, LogLevel.Notice, this);
-    }
-};
 
-
-Template.dropboxAlert.events({
-    'click #dropboxAlert':function(){
-        Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
-    }
 });
-Template.dropboxAlert.text = function(){
-    try{
-        //console.log('dropbox: ' + Meteor.user().profile.dropbox);
-        //var task = Todos.findOne(Meteor.user().profile.dropbox);
-        var task = Todos.findOne(Meteor.user().profile.dropbox);
-        //console.log('dropbox task: ' + task.text);
-        return task.text;
-    }catch(error){
-        catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
-    }
+Template.profilePageSidebarTemplate.json_inspector_selected = function(){
+    return (Session.get('show_profile_json_panel') ? "selected" : "");
 };
+Template.profilePageSidebarTemplate.colaborators_selected = function(){
+    return (Session.get('show_active_collaborator_card') ? "selected" : "");
+};
+Template.profilePageSidebarTemplate.hipaa_log_selected = function(){
+    return (Session.get('show_hipaa_audit_log_card') ? "selected" : "");
+};
+
+Template.profilePageTemplate.isActiveCollaboratorVisible = function(){
+    return Session.get('show_active_collaborator_card');
+}
+Template.profilePageTemplate.isHipaaAuditLogVisible = function(){
+    return Session.get('show_hipaa_audit_log_card');
+}
+

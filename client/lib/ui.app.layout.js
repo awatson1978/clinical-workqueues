@@ -109,3 +109,37 @@ Template.jsonContentPanelTemplate.showJsonPanel = function(){
 Template.jsonContentPanelTemplate.jsonData = function(){
     return Session.get('json_content');
 };
+
+
+
+//---------------------------------------------------
+monitorDropbox = function(){
+    try{
+        if(Meteor.user().profile.dropbox == null){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    catch(err){
+        catch_error('monitorDropbox()', err, LogLevel.Notice, this);
+    }
+};
+
+
+Template.dropboxAlert.events({
+    'click #dropboxAlert':function(){
+        Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
+    }
+});
+Template.dropboxAlert.text = function(){
+    try{
+        //console.log('dropbox: ' + Meteor.user().profile.dropbox);
+        //var task = Todos.findOne(Meteor.user().profile.dropbox);
+        var task = Todos.findOne(Meteor.user().profile.dropbox);
+        //console.log('dropbox task: ' + task.text);
+        return task.text;
+    }catch(error){
+        catch_error('Template.dropboxAlert.text', error, LogLevel.Error, this);
+    }
+};

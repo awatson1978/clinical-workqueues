@@ -1,4 +1,3 @@
-<!-- TODO:  add workqueue sorting buttons to footer bar;  date, completed, alphabetical/name, id, etc -->
 
 <template name="workqueuesPageTemplate">
     <div id="workqueuesPage" class="page helveticas">
@@ -15,7 +14,7 @@
     <div>
         {{#if receivedNewAlert }}
         <div class="padded">
-            {{> dropboxAlert}}
+            {{> dropboxAlertTemplate}}
         </div>
         {{/if }}
     </div>
@@ -26,7 +25,9 @@
             {{/each}}
         </ul>
     </div>
+    {{#if showTaskDetail}}
     {{> taskDetailCardTemplate }}
+    {{/if}}
 </template>
 
 <template name="taskItemTemplate">
@@ -46,9 +47,6 @@
             <li class="display">
                 <span class="largish unselectable lightgray task-info pictogram hide-for-small">b</span>
             </li>
-            <!--<li class="display">-->
-                <!--<span class="largish lightgray {{task_delete}} task-send pictogram">o</span>-->
-            <!--</li>-->
             <li class="display">
                 <span class="largish unselectable lightgray task-delete pictogram hide-for-small">x</span>
             </li>
@@ -90,11 +88,7 @@
 
 
 
-<!-- TODO: select better name for taskDetailCardTemplate  -->
 <template name="taskDetailCardTemplate">
-    <!-- TODO: Extract showTaskDetail to outside of taskDetailCardTemplate  -->
-    {{#if showTaskDetail}}
-    <div class="spacer row"></div>
     <div id="taskDetailCard" class="task-detail-container">
         {{#if showTaskDetailModalMask }}
             <div class="detailed-task-card-modal-mask-gradient"></div>
@@ -103,13 +97,35 @@
 
         <div class="card-header rounded-top-right">
             <span class="white card-meta-data barcode">{{todo_id}}</span>
-            <span class="pictograph close-task-card hide-on-mobile">u</span>
         </div>
 
         <div class="task-detail-card-body card-body-resize">
             <div class="task-detail-image-container"><img class="task-detail-card-image-image" src="{{todo_image}}" /></div>
             <div class="detailed-task-text">{{ todo_text }}</div>
-            <div class="card-delete-button largish pictograph">x</div>
+
+            <ul class="web-link-controls">
+                <li>
+                    <span class="web-icon pictograph">w</span>
+                    <span class="web-link-text">---------------------------------------------------------------------------------------</span>
+                </li>
+            </ul>
+
+
+            <ul class="detailed-task-card-controls">
+                <li class="task-detail-checkmark curved-control-button">
+                    <span class="control-button {{detailed_task_complete}} pictograph">%</span>
+                </li>
+                <li class="task-detail-star">
+                    <span class="control-button {{detailed_task_star}} pictograph">*</span>
+                </li>
+                <li>
+                    <span class="control-button pictograph">o</span>
+                    <span class="sender-name">{{activeCollaboratorName}}</span>
+                </li>
+                <li class="task-detail-delete">
+                    <span class="control-button pictograph">x</span>
+                </li>
+            </ul>
         </div>
 
         <div class="task-detail-tag-footer card-footer-resize">
@@ -130,5 +146,4 @@
         </div>
         <div class="spacer row"></div>
     </div>
-    {{/if}}
 </template>

@@ -2,13 +2,18 @@
     <div id="profilePage" class="touch-disabled page helveticas">
         {{#if receivedNewAlert }}
             <div class="row">
-                {{> dropboxAlert}}
+                {{> dropboxAlertTemplate}}
             </div>
         {{/if }}
         <div class="spacer row"></div>
         <div class="row">
             {{> userCardTemplate }}
-            {{> activeCollaboratorCardTemplate }}
+            {{#if isActiveCollaboratorVisible }}
+                {{> activeCollaboratorCardTemplate }}
+            {{/if}}
+            {{#if isHipaaAuditLogVisible }}
+            {{> hipaaAuditLogTemplate }}
+            {{/if}}
         </div>
     </div>
 </template>
@@ -97,29 +102,10 @@
             </div>
             <div class="card-footer"></div>
         </div>
-
-
-
-        <!--<div id="userProfileCard" class="card">-->
-            <!--<div class="card-header clipped_corner rounded-top-right">-->
-                <!--<span class="white card-meta-data barcode"></span>-->
-            <!--</div>-->
-            <!--<div class="panel user-card-detailed">-->
-            <!--</div>-->
-        <!--</div>-->
-
-
-
-
-        <!-- TODO:  move link to hipaaCard to profilePageSidebarTemplate -->
-        {{!> hipaaAuditLogTemplate}}
-    <!--</div>-->
 </template>
 
 
 
-
-<!-- TODO:  create activeCollaboratorCardTemplate-->
 <template name="activeCollaboratorCardTemplate">
     <div class="clickable synopsis card-container with-bottom-spacer">
         <div class="card-header rounded-top-right">
@@ -161,7 +147,7 @@
 
 
 <template name="hipaaAuditLogTemplate">
-    <div id="hipaaAuditLog" class="hidden card">
+    <div id="hipaaAuditLog" class="card">
         <div class="card-header clipped_corner rounded-top-right">
             <span class="pictograph">j</span> HIPAA Audit Log
         </div>
@@ -172,16 +158,3 @@
 </template>
 
 
-<!-- TODO:  extract dropboxAlertCard to external template? -->
-<template name="dropboxAlert">
-        <div id="dropboxAlert" class="card" style="z-index: 1000000">
-            <!-- TODO:  add task icon to alert -->
-            <!-- TODO:  replace with task detail card? -->
-            <div class="card-header clipped_corner rounded-top-right">
-                <span class="white card-meta-data">Alert</span>
-            </div>
-            <div class="panel">
-                {{ text }}
-            </div>
-        </div>
-</template>

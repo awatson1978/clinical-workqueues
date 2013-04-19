@@ -15,19 +15,23 @@ layoutWorkqueuesPage = function() {
             $('#mainLayoutPane').css('width', window.innerWidth - 195);
             $('.card-body-resize').css('width', window.innerWidth - 235);
             $('.card-footer-resize').css('width', window.innerWidth - 235);
+            $('.web-link-controls').css('width', window.innerWidth - 500);
         } else {
             $('#mainLayoutPane').css('width', window.innerWidth);
             $('.card-body-resize').css('width', window.innerWidth - 40);
             $('.card-footer-resize').css('width', window.innerWidth - 40);
+            $('.web-link-controls').css('width', window.innerWidth - 260);
         }
     } else if (window.innerWidth < 767) {
         $('#mainLayoutPane').css('width', window.innerWidth);
         $('.card-body-resize').css('width', window.innerWidth - 40);
         $('.card-footer-resize').css('width', window.innerWidth - 40);
+        $('.web-link-controls').css('width', window.innerWidth - 260);
     } else if (window.innerWidth < 480) {
         $('#mainLayoutPane').css('width', window.innerWidth);
         $('.card-body-resize').css('width', window.innerWidth - 40);
         $('.card-footer-resize').css('width', window.innerWidth - 40);
+        $('.web-link-controls').css('width', window.innerWidth - 260);
     }
 }
 
@@ -162,6 +166,9 @@ Template.workqueueTemplate.todos = function () {
     }
 };
 
+Template.workqueueTemplate.showTaskDetail = function(){
+    return Session.get('show_task_detail_panel');
+};
 
 
 
@@ -175,8 +182,6 @@ Template.taskItemTemplate.showDeleteButton = function(){
       return false;
   }
 };
-
-
 Template.taskItemTemplate.tag_objs = function () {
     try{
         var todo_id = this._id;
@@ -190,7 +195,6 @@ Template.taskItemTemplate.tag_objs = function () {
 Template.taskItemTemplate.adding_tag = function () {
     return Session.equals('editing_addtag', this._id);
 };
-
 Template.taskItemTemplate.done_class = function () {
     try{
         return this.done ? 'done' : '';
@@ -198,7 +202,6 @@ Template.taskItemTemplate.done_class = function () {
         console.log(error);
     }
 };
-
 Template.taskItemTemplate.task_complete = function () {
     try{
         return this.done ? 'green' : 'lightgray';
@@ -220,13 +223,6 @@ Template.taskItemTemplate.task_star = function () {
         console.log(error);
     }
 };
-//Template.taskItemTemplate.done_checkbox = function () {
-//    try{
-//        return this.done ? 'green' : 'lightgray';
-//    }catch(error){
-//        console.log(error);
-//    }
-//};
 
 Template.taskItemTemplate.editing = function () {
     return Session.equals('editing_itemname', this._id);
@@ -241,6 +237,7 @@ Template.taskItemTemplate.events({
         Meteor.flush();
     },
     'touchend .inline-list':function(eventHandler){
+        // might be some useful syntax in the future
         //alert(Math.abs(Session.get('swipe_start') - eventHandler.pageX));
         //alert((Math.abs(Session.get('swipe_start') - eventHandler.pageX) > 100));
 
@@ -288,6 +285,7 @@ Template.taskItemTemplate.events({
             Session.set('show_task_detail_panel', true);
             Session.set('selected_task_id', this._id);
             Session.set('selected_task_done_status', this.done);
+            Session.set('selected_task_star_status', this.star);
             Session.set('selected_task_text', this.text);
         }
         setTaskDetailVisibility();
@@ -357,10 +355,7 @@ Template.taskItemTemplate.events(okCancelEvents(
 
 sendToActiveCollaborator = function() {
     try {
-        //alert('sending to collaborator');
-        // Meteor.user().profile breaks when user is logged out
         if (Meteor.user().profile) {
-            //alert(Meteor.user().profile.activeCollaborator);
             Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
         } else {
             log_event('Meteor profile not available.');
@@ -378,13 +373,8 @@ sendToActiveCollaborator = function() {
 // TASK DETAIL CARD
 
 Template.taskDetailCardTemplate.tag_list = function () {
-    //console.log('*-----------------------------------------------------');
-    //console.log('selected_task_id: ' + Session.get('selected_task_id'));
-
     try{
-        //var todo_id = Session.get('selected_task_id');
         var selectedTodo = Todos.findOne(Session.get('selected_task_id'));
-        //console.log('selectedTodo: ' + JSON.stringify(selectedTodo));
         return _.map(selectedTodo.tags || [], function (tag) {
             return {todo_id: Session.get('selected_task_id'), tag: tag};
         });
@@ -425,18 +415,28 @@ Template.taskDetailCardTemplate.events({
             Todos.update({_id: id}, {$pull: {tags: tag}});
         }, 300);
     },
-    'click .card-header': function (evt, tmpl) {
-        Session.set('show_task_detail_panel', false);
-        setTaskDetailVisibility();
+    'click .task-detail-checkmark': function (e) {
+        Todos.update(Session.get('selected_task_id'), {$set: {done: !Todos.findOne(Session.get('selected_task_id')).done}});
+        e.preventDefault();
         Meteor.flush();
     },
-    'click .card-delete-button': function(evt){
+    'click .task-detail-star': function (e) {
+        Todos.update(Session.get('selected_task_id'), {$set: {star: !Todos.findOne(Session.get('selected_task_id')).star}});
+        e.preventDefault();
+        Meteor.flush();
+    },
+    'click .task-detail-delete': function (e) {
         if(confirm('Are you sure you want to delete task ' + Session.get('selected_task_id') + '?')){
             Session.set('show_task_detail_panel', false);
             setTaskDetailVisibility();
             Todos.remove(Session.get('selected_task_id'));
             Meteor.flush();
         }
+    },
+    'click .card-header': function (evt, tmpl) {
+        Session.set('show_task_detail_panel', false);
+        setTaskDetailVisibility();
+        Meteor.flush();
     }
 });
 Template.taskDetailCardTemplate.events(okCancelEvents(
@@ -477,9 +477,8 @@ Template.taskDetailCardTemplate.rendered = function(){
         Meteor.flush();
     });
 };
-Template.taskDetailCardTemplate.showTaskDetail = function(){
-    return Session.get('show_task_detail_panel');
-};
+
+
 Template.taskDetailCardTemplate.showTaskDetailModalMask = function(){
     return true;
 };
@@ -492,9 +491,34 @@ Template.taskDetailCardTemplate.todo_text = function(){
 Template.taskDetailCardTemplate.todo_done = function(){
     return Session.get('selected_task_done_status') ? 'checked="checked"' : '';
 };
-Template.taskDetailCardTemplate.todo_image = function(){
-    //Todos.findOne(Session.get('selected_task_id'), {$set: { image: this.image }});
 
+Template.taskDetailCardTemplate.detailed_task_complete = function () {
+    try{
+        return Todos.findOne(Session.get('selected_task_id')).done ? 'green' : 'dimgray';
+    }catch(error){
+        console.log(error);
+    }
+};
+Template.taskDetailCardTemplate.detailed_task_text_complete = function () {
+    try{
+        return Todos.findOne(Session.get('selected_task_id')).done ? 'strikeout' : '';
+    }catch(error){
+        console.log(error);
+    }
+};
+Template.taskDetailCardTemplate.detailed_task_star = function () {
+    try{
+        return Todos.findOne(Session.get('selected_task_id')).star ? 'goldenrod' : 'dimgray';
+    }catch(error){
+        console.log(error);
+    }
+};
+Template.taskDetailCardTemplate.activeCollaboratorName = function(){
+    return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name;
+}
+
+
+Template.taskDetailCardTemplate.todo_image = function(){
     var foo = Todos.findOne(Session.get('selected_task_id'));
     if(foo.image){
         return foo.image;

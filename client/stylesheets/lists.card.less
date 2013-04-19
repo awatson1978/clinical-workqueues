@@ -145,8 +145,7 @@
   font-size: 24px !important;
   line-height: 1.5;
   position: relative;
-  top: 20px;
-  padding-left: 220px;
+  top: 50px;  padding-left: 220px;
 }
 .detailed-task-card-modal-mask{
   background-color: white;
@@ -182,37 +181,93 @@
 
 }
 
-.close-task-card{
-  left: 290px;
-  position: absolute;
-}
-.close-task-card:hover{
-  cursor:pointer;
-}
+
+
 .card-header:hover{
-  background-color: #e9967a;
+  background-color: coral;
 }
 
-.card-delete-button{
-  position: absolute;
-  top: 40px;
-  float:right;
-  right: 215px;
-  padding-top: 7px;
-  padding-left: 10px;
-  border: 1px solid gray;
-  //border-left: 1px solid gray;
-  //border-bottom: 1px solid gray;
 
+.detailed-task-card-controls{
+  position: absolute;
+  top: 41px;
+  float:right;
+  right: 217px;
+}
+.detailed-task-card-controls li{
+  display: inline-block;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+  background-color: lightgray;
+  padding-left: 16px;
+  margin-left: -5px;
+  height: 42px;
+  .well-behaved;
+  .unselectable;
+}
+.curved-control-button{
+  .well-behaved;
   -webkit-border-bottom-left-radius: 10px;
   -moz-border-radius-bottomleft: 10px;
   border-bottom-left-radius: 10px;
-
-  background-color: lightgray;
+}
+.control-button{
+  .well-behaved;
+  width: 40px;
+  font-size: 28px !important;
+  padding: 0px;
+  padding-right: 15px;
+}
+.send-control-button{
+  .well-behaved;
+  padding-left: 30px;
+  margin-top: 1px;
+}
+.sender-name{
+  .well-behaved;
+  padding-right: 15px;
+  font-size: 16px;
+  margin-left: -10px;
+}
+.card-delete-button{
+  .well-behaved;
+  padding-left: 10px;
+  border: 1px solid gray;
 }
 
-.card-delete-button:hover{
+.detailed-task-card-controls li:hover{
   background-color: gray;
-  color:white;
+  color:white !important;
   cursor:pointer;
+}
+
+.touch-disabled .task-detail-card-body{
+  .detailed-task-card-controls{
+    visibility: hidden;
+  }
+}
+.touch-disabled .task-detail-card-body:hover{
+  .detailed-task-card-controls{
+    visibility: visible;
+  }
+}
+
+.web-link-controls{
+  position: absolute;
+  top: 45px;
+  float: left;
+  left: 240px;
+  color: gray;
+  height: 40px;
+  overflow: hidden;
+}
+.web-icon{
+  .well-behaved;
+  width: 40px;
+  font-size: 20px !important;
+  padding-right: 5px;
+}
+.web-link-text{
+  font-size: 20px;
+  width: 90%;
 }

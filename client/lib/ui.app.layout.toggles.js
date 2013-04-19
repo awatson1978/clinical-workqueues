@@ -15,12 +15,18 @@ toggleJsonPanel = function(){
     }
 }
 
-// TODO:  determine if this is needed any more
 toggleButtonVisibility = function(){
     if(Session.get('show_button_tiles')){
         Session.set('show_button_tiles',false);
     }else{
         Session.set('show_button_tiles',true);
+    }
+}
+toggleSession = function(sessionVariable){
+    if(Session.get(sessionVariable)){
+        Session.set(sessionVariable,false);
+    }else{
+        Session.set(sessionVariable,true);
     }
 }
 

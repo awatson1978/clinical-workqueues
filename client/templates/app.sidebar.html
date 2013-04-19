@@ -50,7 +50,7 @@
 </template>
 <template name="tagFilterTemplate">
     <div id="tagTiles">
-        <hr style="border: 1px solid lightgray;">
+        <hr class="gray-line">
         <div id="tag-filter" class="tag-list">
             {{#each tags}}
             <div class="sidebar-tab {{selected}}">
@@ -90,20 +90,20 @@
 
 <template name="profilePageSidebarTemplate">
     <hr style="border: 1px solid lightgray;">
-    <div class="{{selected}} unselectable object-inspector-tab sidebar-tab note">
+    <div class="{{json_inspector_selected}} unselectable object-inspector-tab sidebar-tab note">
         <div class="display">
             <span class="pictograph">(</span>
             Object Inspector
         </div>
     </div>
-    <hr style="border: 1px solid lightgray;">
-    <div class="collaborators-tab sidebar-tab note">
+    <hr class="gray-line">
+    <div class="{{colaborators_selected}} collaborators-tab sidebar-tab note">
         <div class="display">
             <span class="pictograph">g</span>
             Collaborators
         </div>
     </div>
-    <div class="hipaa-audit-tab sidebar-tab note">
+    <div class="{{hipaa_log_selected}} hipaa-audit-tab sidebar-tab note">
         <div class="display">
             <span class="pictograph">4</span>
             HIPAA Audit Log

@@ -24,3 +24,17 @@
     </div>
     {{/if }}
 </template>
+
+
+<template name="dropboxAlertTemplate">
+    <div id="dropboxAlertCard" class="card" style="z-index: 1000000">
+        <!-- TODO:  add task icon to alert -->
+        <!-- TODO:  replace with task detail card? -->
+        <div class="card-header clipped_corner rounded-top-right">
+            <span class="white card-meta-data">Alert</span>
+        </div>
+        <div class="panel">
+            {{ text }}
+        </div>
+    </div>
+</template>
