@@ -2,119 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/.hipaa-audit-log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/bootstrap.users.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/Iaso.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/ada.lovelace.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/alan.turing.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/alexis.carrel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/chandrasekhar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/edward.doisy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/edward.tatum.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/florence.nightingale.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/galen.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/george.beadle.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/george.wald.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/george.washington.carver.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/hermann.muller.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/hippocrates.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/hygea.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/james.watson.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/john.eccles.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/kurt.vonnegut.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/madam.curie.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/mary.shelley.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/mother.teresa.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/octavia.butler.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/rita.hayworth.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/roger.sperry.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/userspace/samuel.clemens.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.css" afterPath="$PROJECT_DIR$/.scrap/.accounts-collaborators/collaborators.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.html" afterPath="$PROJECT_DIR$/.scrap/.accounts-collaborators/collaborators.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-collaborators/collaborators.js" afterPath="$PROJECT_DIR$/.scrap/.accounts-collaborators/collaborators.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-collaborators/package.js" afterPath="$PROJECT_DIR$/.scrap/.accounts-collaborators/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-doe-family/bootstrap.users.js" afterPath="$PROJECT_DIR$/.scrap/accounts-doe-family/bootstrap.users.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-doe-family/package.js" afterPath="$PROJECT_DIR$/.scrap/accounts-doe-family/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/bootstrap.users.js" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/bootstrap.users.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/allison.camron.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/allison.camron.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/eric.foreman.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/eric.foreman.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/gregory.house.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/gregory.house.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/james.wilson.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/james.wilson.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/lawrence.kutner.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/lawrence.kutner.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/lisa.cuddy.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/lisa.cuddy.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/robert.chase.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/robert.chase.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/housemd/thirteen.jpg" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/housemd/thirteen.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.accounts-housemd/package.js" afterPath="$PROJECT_DIR$/.scrap/accounts-housemd/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.css" afterPath="$PROJECT_DIR$/.scrap/.acounts-carewatch/carewatch.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.html" afterPath="$PROJECT_DIR$/.scrap/.acounts-carewatch/carewatch.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.acounts-carewatch/carewatch.js" afterPath="$PROJECT_DIR$/.scrap/.acounts-carewatch/carewatch.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/.acounts-carewatch/package.js" afterPath="$PROJECT_DIR$/.scrap/.acounts-carewatch/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/Iaso.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/Iaso.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/ada.lovelace.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/ada.lovelace.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/alan.turing.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/alan.turing.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/alexis.carrel.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/alexis.carrel.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/chandrasekhar.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/chandrasekhar.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/edward.doisy.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/edward.doisy.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/edward.tatum.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/edward.tatum.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/florence.nightingale.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/florence.nightingale.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/galen.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/galen.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/george.beadle.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/george.beadle.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/george.wald.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/george.wald.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/george.washington.carver.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/george.washington.carver.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/hermann.muller.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/hermann.muller.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/hippocrates.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/hippocrates.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/hygea.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/hygea.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/james.watson.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/james.watson.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/john.eccles.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/john.eccles.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/kurt.vonnegut.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/kurt.vonnegut.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/madam.curie.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/madam.curie.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/mary.shelley.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/mary.shelley.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/mother.teresa.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/mother.teresa.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/octavia.butler.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/octavia.butler.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/rita.hayworth.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/rita.hayworth.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/roger.sperry.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/roger.sperry.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people/famous.dead.people/samuel.clemens.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/samuel.clemens.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/d3-datafiles/flare.json" afterPath="$PROJECT_DIR$/.scrap/d3-datafiles/flare.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/d3-datafiles/package.js" afterPath="$PROJECT_DIR$/.scrap/d3-datafiles/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/d3-graphs/graph.bar.js" afterPath="$PROJECT_DIR$/.scrap/d3-graphs/graph.bar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/d3-graphs/graph.sunburst.js" afterPath="$PROJECT_DIR$/.scrap/d3-graphs/graph.sunburst.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/d3-graphs/package.js" afterPath="$PROJECT_DIR$/.scrap/d3-graphs/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/datetime-format/date.format.js" afterPath="$PROJECT_DIR$/packages/datetime-libraries/date.format.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/datetime-format/package.js" afterPath="$PROJECT_DIR$/packages/datetime-libraries/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile-fixed-layout/layout.html" afterPath="$PROJECT_DIR$/.scrap/mobile-fixed-layout/layout.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile-fixed-layout/layout.js" afterPath="$PROJECT_DIR$/.scrap/mobile-fixed-layout/layout.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/mobile-fixed-layout/package.js" afterPath="$PROJECT_DIR$/.scrap/mobile-fixed-layout/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/vista-medical-icons/bootstrap.icons.js" afterPath="$PROJECT_DIR$/server/bootstrap.icons.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/vista-medical-icons/package.js" afterPath="$PROJECT_DIR$/.scrap/vista-medical-icons/package.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/allison.camron.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/allison.camron.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/asclepius.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/asclepius.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/bumblebee.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/bumblebee.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/caduceus-staff.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/caduceus-staff.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/christina.applegate.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/christina.applegate.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/eric.foreman.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/eric.foreman.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/girl-headphones.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/girl-headphones.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/gregory.house.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/gregory.house.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/james.wilson.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/james.wilson.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/lance.armstrong.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/lance.armstrong.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/lawrence.kutner.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/lawrence.kutner.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/lisa.cuddy.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/lisa.cuddy.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/michael.j.fox.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/michael.j.fox.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/robert.chase.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/robert.chase.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/rod_of_asclepius.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/rod_of_asclepius.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/sheryl.crow.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/sheryl.crow.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/staff_of_asclepius.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/staff_of_asclepius.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/userspace/thirteen.jpg" afterPath="$PROJECT_DIR$/.scrap/userspace/thirteen.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/modal.dialogs/page.community.html" afterPath="$PROJECT_DIR$/client/templates/modal.dialogs/page.community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/detect-browser/package.js" afterPath="$PROJECT_DIR$/packages/detect-browser/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/detect-browser/unsupported.browser.html" afterPath="$PROJECT_DIR$/packages/detect-browser/unsupported.browser.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.lock" afterPath="$PROJECT_DIR$/smart.lock" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -230,7 +119,7 @@
           <file leaf-file-name="page.community.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="245" column="35" selection-start="8406" selection-end="8412" vertical-scroll-proportion="0.35905766">
+                <state line="240" column="0" selection-start="8151" selection-end="8456" vertical-scroll-proportion="0.30706742">
                   <folding />
                 </state>
               </provider>
@@ -730,7 +619,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="245" column="35" selection-start="8406" selection-end="8412" vertical-scroll-proportion="0.35905766">
+        <state line="240" column="0" selection-start="8151" selection-end="8456" vertical-scroll-proportion="0.30706742">
           <folding />
         </state>
       </provider>

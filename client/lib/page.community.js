@@ -238,20 +238,22 @@ Template.userItemTemplate.isActiveCollaborator = function () {
 };
 Template.userItemTemplate.userImage = function () {
     try{
-//        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
-//        var src = "images/placeholder-240x240.gif";
-//        if(this.profile){
-//            src = $.trim(this.profile.avatar);
-//        }
-//        log_event('profile avatar src: ' + src, LogLevel.Info, this);
-//        return src;
-        if(Meteor.user().services.facebook){
-            return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
-        }else if(Meteor.user().profile){
-            return $.trim(Meteor.user().profile.avatar);
-        }else{
-            return "/images/placeholder-240x240.gif";
+        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
+        var src = "images/placeholder-240x240.gif";
+        if(this.profile){
+            src = $.trim(this.profile.avatar);
         }
+        log_event('profile avatar src: ' + src, LogLevel.Info, this);
+        return src;
+//        if(this.services){
+//            if(this.services.facebook){
+//                return "http://graph.facebook.com/" + this.services.facebook.id + "/picture/?type=large";
+//            }
+//        }else if(this.profile){
+//            return $.trim(this.profile.avatar);
+//        }else{
+//            return "/images/placeholder-240x240.gif";
+//        }
     }catch(error){
         catch_error('Template.userItemTemplate.userImage',error,LogLevel.Error,this);
     }
