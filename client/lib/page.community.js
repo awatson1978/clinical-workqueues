@@ -113,7 +113,7 @@ Template.communityInspectionColumn.events({
 // communite inspection column (right column)
 
 Template.communityMembersList.communityUsers = function () {
-    return Meteor.users.find({sort: {'profile.name': 1}});
+    return Meteor.users.find();
     //return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } }, {sort: {'profile.name': 1}});
 };
 
@@ -187,56 +187,56 @@ Template.userItemTemplate.userName = function () {
     }
 };
 var isCarewatched = false;
-Template.userItemTemplate.isCarewatched = function () {
-    try{
-        isCarewatched = false;
-        for(var i = 0; i < Meteor.user().profile.carewatch.length; i++) {
-            if (Meteor.user().profile.carewatch[i]._id == this._id) {
-                isCarewatched = true;
-            }
-        }
-        if(isCarewatched){
-            return "red";
-        }else{
-            return "gray";
-        }
-    }
-    catch(err){
-        catch_error('Template.userItemTemplate.isCarewatched', err, LogLevel.Error, this);
-    }
-};
-var isCollaborator = false;
-Template.userItemTemplate.isCollaborator = function () {
-    try{
-        isCollaborator = false;
-        for(var i = 0; i < Meteor.user().profile.collaborators.length; i++) {
-            if (Meteor.user().profile.collaborators[i]._id == this._id) {
-                isCollaborator = true;
-            }
-        }
-        if(isCollaborator){
-            return "red";
-        }else{
-            return "gray";
-        }
-    }
-    catch(err){
-        catch_error('Template.userItemTemplate.isCollaborator', err, LogLevel.Error, this);
-    }
-};
-Template.userItemTemplate.isActiveCollaborator = function () {
-    try{
-        //TODO:  check Meteor.user().profile.activeCollaboator and return "selected" or null
-        if(Meteor.user().profile.activeCollaborator == this._id){
-            return "red";
-        }else{
-            return "gray";
-        }
-    }
-    catch(err){
-        catch_error('Template.userItemTemplate.isActiveCollaborator', err, LogLevel.Error, this);
-    }
-};
+//Template.userItemTemplate.isCarewatched = function () {
+//    try{
+//        isCarewatched = false;
+//        for(var i = 0; i < Meteor.user().profile.carewatch.length; i++) {
+//            if (Meteor.user().profile.carewatch[i]._id == this._id) {
+//                isCarewatched = true;
+//            }
+//        }
+//        if(isCarewatched){
+//            return "red";
+//        }else{
+//            return "gray";
+//        }
+//    }
+//    catch(err){
+//        catch_error('Template.userItemTemplate.isCarewatched', err, LogLevel.Error, this);
+//    }
+//};
+//var isCollaborator = false;
+//Template.userItemTemplate.isCollaborator = function () {
+//    try{
+//        isCollaborator = false;
+//        for(var i = 0; i < Meteor.user().profile.collaborators.length; i++) {
+//            if (Meteor.user().profile.collaborators[i]._id == this._id) {
+//                isCollaborator = true;
+//            }
+//        }
+//        if(isCollaborator){
+//            return "red";
+//        }else{
+//            return "gray";
+//        }
+//    }
+//    catch(err){
+//        catch_error('Template.userItemTemplate.isCollaborator', err, LogLevel.Error, this);
+//    }
+//};
+//Template.userItemTemplate.isActiveCollaborator = function () {
+//    try{
+//        //TODO:  check Meteor.user().profile.activeCollaboator and return "selected" or null
+//        if(Meteor.user().profile.activeCollaborator == this._id){
+//            return "red";
+//        }else{
+//            return "gray";
+//        }
+//    }
+//    catch(err){
+//        catch_error('Template.userItemTemplate.isActiveCollaborator', err, LogLevel.Error, this);
+//    }
+//};
 Template.userItemTemplate.userImage = function () {
     try{
 //        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
