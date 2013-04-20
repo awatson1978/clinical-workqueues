@@ -4,7 +4,9 @@
 
 //--------------------------------------------------------------------------
 // Global Package Description
+// necessary for Heroku
 
+// needed for other platforms?
 {
     "name": "clinical-workqueues",
     "version": "2013.4.10",

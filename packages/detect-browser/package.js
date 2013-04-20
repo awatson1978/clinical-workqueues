@@ -1,6 +1,3 @@
-//TODO:  Publish to Atmosphere
-
-
 Package.describe({
     summary: "detect-browser provides helper functions and basic syntax for checking for specific browsers."
 });

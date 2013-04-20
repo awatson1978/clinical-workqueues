@@ -11,8 +11,7 @@ Session.set('is_sidebar_available',true);
 
 // these should be written to the user's profile, so it can persist through sessions
 // TODO: convert session variables into Meteor.user().profile items
-Session.set('show_sid' +
-    'ebar_panel',false);
+Session.set('show_sidebar_panel',true);
 Session.set('show_header_breadcrumbs',false);
 Session.set('show_new_task_input', true);
 Session.set('show_community_search_input', true);

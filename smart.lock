@@ -37,6 +37,10 @@
       "cordova-phonegap": {
         "git": "https://github.com/awatson1978/cordova-phonegap.git",
         "branch": "master"
+      },
+      "accounts-famous-dead-people": {
+        "git": "https://github.com/awatson1978/accounts-famous-dead-people.git",
+        "branch": "master"
       }
     },
     "packages": {
@@ -79,6 +83,11 @@
         "git": "https://github.com/awatson1978/cordova-phonegap.git",
         "branch": "master",
         "commit": "70a610e0574b4a4cc9b78872712a821034c83b6a"
+      },
+      "accounts-famous-dead-people": {
+        "git": "https://github.com/awatson1978/accounts-famous-dead-people.git",
+        "branch": "master",
+        "commit": "605bb10e0e489a7ce7663c16cc097b58328db382"
       }
     }
   }

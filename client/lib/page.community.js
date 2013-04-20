@@ -99,7 +99,7 @@ Template.communityInspectionColumn.isBroadcastRecipient = function(){
 };
 
 Template.communityInspectionColumn.events({
-    'touchmove .item-list' : function (e){
+    'touchmove #communityList' : function (e){
         e.preventDefault();
     },
     'click #userQuickViewPanel': function(evt){
@@ -113,7 +113,7 @@ Template.communityInspectionColumn.events({
 // communite inspection column (right column)
 
 Template.communityMembersList.communityUsers = function () {
-    return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } });
+    return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } }, {sort: {'profile.name': 1}});
 };
 
 //--------------------------------------------------------------------
@@ -148,9 +148,14 @@ Template.userItemTemplate.events({
         Session.set('json_content', JSON.stringify(this));
         Session.set('selected_community_member', this._id);
         Session.set('show_quick_view_panel', true);
-        Session.set('selected_community_member_avatar_path', this.profile.avatar);
-        //$('#userCardImage').attr('src', '/images/placeholder-240x240.gif');
 
+        if(Meteor.user().services.facebook){
+            Session.set('selected_community_member_avatar_path', "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large");
+        }else if(Meteor.user().profile){
+            Session.set('selected_community_member_avatar_path', $.trim(Meteor.user().profile.avatar));
+        }else{
+            Session.set('selected_community_member_avatar_path', "/images/placeholder-240x240.gif");
+        }
         Meteor.flush();
     },
     'click .transfer-icon': function (e) {
@@ -233,13 +238,20 @@ Template.userItemTemplate.isActiveCollaborator = function () {
 };
 Template.userItemTemplate.userImage = function () {
     try{
-        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
-        var src = "images/placeholder-240x240.gif";
-        if(this.profile){
-            src = $.trim(this.profile.avatar);
+//        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
+//        var src = "images/placeholder-240x240.gif";
+//        if(this.profile){
+//            src = $.trim(this.profile.avatar);
+//        }
+//        log_event('profile avatar src: ' + src, LogLevel.Info, this);
+//        return src;
+        if(Meteor.user().services.facebook){
+            return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
+        }else if(Meteor.user().profile){
+            return $.trim(Meteor.user().profile.avatar);
+        }else{
+            return "/images/placeholder-240x240.gif";
         }
-        log_event('profile avatar src: ' + src, LogLevel.Info, this);
-        return src;
     }catch(error){
         catch_error('Template.userItemTemplate.userImage',error,LogLevel.Error,this);
     }

@@ -231,7 +231,6 @@ Template.userCardTemplate.user_active_collaborator = function () {
 
 Template.userCardTemplate.user_image = function () {
     try{
-
         if(Meteor.user().services.facebook){
             return "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large";
         }else if(Meteor.user().profile){
@@ -271,7 +270,7 @@ Template.activeCollaboratorCardTemplate.events({
 
 Template.activeCollaboratorCardTemplate.collaborator_avatar = function () {
     try{
-        if(Meteor.user().profile.avatar){
+        if(Meteor.user().profile.activeCollaborator){
             return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.avatar;
         }else{
             return "/images/placeholder-240x240.gif";
