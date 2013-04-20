@@ -119,7 +119,7 @@
           <file leaf-file-name="page.community.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="240" column="0" selection-start="8151" selection-end="8456" vertical-scroll-proportion="0.30706742">
+                <state line="254" column="18" selection-start="8784" selection-end="8784" vertical-scroll-proportion="0.64419174">
                   <folding />
                 </state>
               </provider>
@@ -619,7 +619,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="0" selection-start="8151" selection-end="8456" vertical-scroll-proportion="0.30706742">
+        <state line="254" column="18" selection-start="8784" selection-end="8784" vertical-scroll-proportion="0.64419174">
           <folding />
         </state>
       </provider>

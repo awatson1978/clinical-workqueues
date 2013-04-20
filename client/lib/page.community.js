@@ -149,10 +149,10 @@ Template.userItemTemplate.events({
         Session.set('selected_community_member', this._id);
         Session.set('show_quick_view_panel', true);
 
-        if(Meteor.user().services.facebook){
-            Session.set('selected_community_member_avatar_path', "http://graph.facebook.com/" + Meteor.user().services.facebook.id + "/picture/?type=large");
-        }else if(Meteor.user().profile){
-            Session.set('selected_community_member_avatar_path', $.trim(Meteor.user().profile.avatar));
+        if(this.services && this.services.facebook){
+            Session.set('selected_community_member_avatar_path', "http://graph.facebook.com/" + this.services.facebook.id + "/picture/?type=large");
+        }else if(this.profile){
+            Session.set('selected_community_member_avatar_path', $.trim(this.profile.avatar));
         }else{
             Session.set('selected_community_member_avatar_path', "/images/placeholder-240x240.gif");
         }
@@ -238,22 +238,20 @@ Template.userItemTemplate.isActiveCollaborator = function () {
 };
 Template.userItemTemplate.userImage = function () {
     try{
-        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
-        var src = "images/placeholder-240x240.gif";
-        if(this.profile){
-            src = $.trim(this.profile.avatar);
-        }
-        log_event('profile avatar src: ' + src, LogLevel.Info, this);
-        return src;
-//        if(this.services){
-//            if(this.services.facebook){
-//                return "http://graph.facebook.com/" + this.services.facebook.id + "/picture/?type=large";
-//            }
-//        }else if(this.profile){
-//            return $.trim(this.profile.avatar);
-//        }else{
-//            return "/images/placeholder-240x240.gif";
+//        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
+//        var src = "images/placeholder-240x240.gif";
+//        if(this.profile){
+//            src = $.trim(this.profile.avatar);
 //        }
+//        log_event('profile avatar src: ' + src, LogLevel.Info, this);
+//        return src;
+        if(this.services && this.services.facebook){
+            return "http://graph.facebook.com/" + this.services.facebook.id + "/picture/?type=large";
+        }else if(this.profile){
+            return $.trim(this.profile.avatar);
+        }else{
+            return "/images/placeholder-240x240.gif";
+        }
     }catch(error){
         catch_error('Template.userItemTemplate.userImage',error,LogLevel.Error,this);
     }
