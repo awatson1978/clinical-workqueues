@@ -63,10 +63,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="publish.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="publish.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/publish.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="37" column="30" selection-start="874" selection-end="888" vertical-scroll-proportion="0.30040485">
+                <state line="50" column="25" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.4688259">
                   <folding />
                 </state>
               </provider>
@@ -125,7 +125,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="model.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/model.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="26" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.33684212">
@@ -605,16 +605,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
+    <entry file="file://$PROJECT_DIR$/model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="30" selection-start="874" selection-end="888" vertical-scroll-proportion="0.30040485">
+        <state line="26" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.33684212">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model.js">
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.33684212">
+        <state line="50" column="25" selection-start="1277" selection-end="1277" vertical-scroll-proportion="0.4688259">
           <folding />
         </state>
       </provider>

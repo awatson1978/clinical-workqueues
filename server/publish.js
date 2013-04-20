@@ -48,6 +48,8 @@ Meteor.publish("usersDirectory", function () {
         'emails[0].address': true,
         'emails.address': true,
 
+        'services': true,
+        'services.facebook': true,
         'services.facebook.id': true,
         'services.facebook.name': true,
         'services.facebook.gender': true,
