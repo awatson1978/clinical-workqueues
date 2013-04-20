@@ -48,14 +48,14 @@ Meteor.publish("usersDirectory", function () {
         'emails[0].address': true,
         'emails.address': true,
 
-        'services': true,
-        'services.facebook': true,
-        'services.facebook.id': true,
-        'services.facebook.name': true,
-        'services.facebook.gender': true,
-        'services.facebook.picture': true,
-        'services.facebook.picture.data': true,
-        'services.facebook.picture.data.url': true
+//        'services': true,
+//        'services.facebook': true,
+//        'services.facebook.id': true,
+//        'services.facebook.name': true,
+//        'services.facebook.gender': true,
+//        'services.facebook.picture': true,
+//        'services.facebook.picture.data': true,
+//        'services.facebook.picture.data.url': true
 
     }});
 });
@@ -77,13 +77,13 @@ Meteor.publish('userProfile', function (userId) {
     }});
 });
 
-Meteor.publish("facebook_avatar_url", function() {
-    return Meteor.users.find({_id: this.userId}, {fields: {
-        'services.facebook.id': 1,
-        'services.facebook.name': 1,
-        'services.facebook.gender': 1,
-        'services.facebook.picture': 1,
-        'services.facebook.picture.data': 1,
-        'services.facebook.picture.data.url': 1
-    }});
-});
+//Meteor.publish("facebook_avatar_url", function() {
+//    return Meteor.users.find({_id: this.userId}, {fields: {
+//        'services.facebook.id': 1,
+//        'services.facebook.name': 1,
+//        'services.facebook.gender': 1,
+//        'services.facebook.picture': 1,
+//        'services.facebook.picture.data': 1,
+//        'services.facebook.picture.data.url': 1
+//    }});
+//});

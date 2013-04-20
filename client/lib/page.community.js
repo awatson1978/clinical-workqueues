@@ -113,7 +113,8 @@ Template.communityInspectionColumn.events({
 // communite inspection column (right column)
 
 Template.communityMembersList.communityUsers = function () {
-    return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } }, {sort: {'profile.name': 1}});
+    return UsersDirectory.find({'profile.name': { $regex: Session.get('community_members_filter'), $options: 'i' } }, {sort: {'profile.name': 1}});
+    //return Meteor.users.find({'emails.address': { $regex: Session.get('community_members_filter'), $options: 'i' } }, {sort: {'profile.name': 1}});
 };
 
 //--------------------------------------------------------------------
