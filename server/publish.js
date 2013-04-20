@@ -46,7 +46,15 @@ Meteor.publish("usersDirectory", function () {
         'profile.activeCollaborator': true,
         'emails': true,
         'emails[0].address': true,
-        'emails.address': true
+        'emails.address': true,
+
+        'services.facebook.id': true,
+        'services.facebook.name': true,
+        'services.facebook.gender': true,
+        'services.facebook.picture': true,
+        'services.facebook.picture.data': true,
+        'services.facebook.picture.data.url': true
+
     }});
 });
 Meteor.publish('userProfile', function (userId) {

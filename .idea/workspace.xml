@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +22,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.24525318">
+    <splitter split-orientation="horizontal" split-proportion="0.49287978">
       <split-first>
         <leaf>
           <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="false">
@@ -63,19 +63,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="publish.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="publish.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server/publish.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="3" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+                <state line="37" column="30" selection-start="874" selection-end="888" vertical-scroll-proportion="0.30040485">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="337" column="56" selection-start="11081" selection-end="11081" vertical-scroll-proportion="0.7816961">
+                <state line="345" column="1" selection-start="11380" selection-end="11380" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -108,7 +108,7 @@
           <file leaf-file-name="bootstrap.users.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/packages/accounts-famous-dead-people/bootstrap.users.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="343" column="22" selection-start="11114" selection-end="11114" vertical-scroll-proportion="0.0">
+                <state line="346" column="41" selection-start="11228" selection-end="11228" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -116,10 +116,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.community.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="page.community.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="254" column="18" selection-start="8784" selection-end="8784" vertical-scroll-proportion="0.64419174">
+                <state line="102" column="23" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="model.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/model.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.33684212">
                   <folding />
                 </state>
               </provider>
@@ -158,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/app.layout.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
@@ -174,6 +182,7 @@
         <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/lib/page.community.js" />
+        <option value="$PROJECT_DIR$/server/publish.js" />
       </list>
     </option>
   </component>
@@ -298,20 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value=".scrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -506,26 +501,10 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="42" selection-start="513" selection-end="513" vertical-scroll-proportion="-0.7012987">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="128" column="0" selection-start="2142" selection-end="2142" vertical-scroll-proportion="0.18466611">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/accounts-famous-dead-people/bootstrap.users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="343" column="22" selection-start="11114" selection-end="11114" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -601,16 +580,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/publish.js">
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="345" column="1" selection-start="11380" selection-end="11380" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+    <entry file="file://$PROJECT_DIR$/packages/accounts-famous-dead-people/bootstrap.users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="337" column="56" selection-start="11081" selection-end="11081" vertical-scroll-proportion="0.7816961">
+        <state line="346" column="41" selection-start="11228" selection-end="11228" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -619,7 +600,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="18" selection-start="8784" selection-end="8784" vertical-scroll-proportion="0.64419174">
+        <state line="102" column="23" selection-start="3303" selection-end="3303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="30" selection-start="874" selection-end="888" vertical-scroll-proportion="0.30040485">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.33684212">
           <folding />
         </state>
       </provider>
