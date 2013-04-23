@@ -14,16 +14,18 @@ A)  This application contains restricted media, including icons and fonts, which
   http://www.professional-icons.com/icon-sets/vista-medical-icons.aspx  
   https://www.professional-icons.com/legal/stock-license.aspx
 
-B)  The code itself is currently available as open-source via the Creative Commons license, but is currently restricted to non-commercial and non-derivative uses.  
+C)  I'm currently refactoring the prohibited components (fonts and icons) into separate packages, and will eventually release the entire Clinical Workqueues application under the Artistic License 2.0.  
+
+  Aristic License 2.0
+  http://opensource.org/licenses/Artistic-2.0
+
+
+B)  In the meantime, the code itself is currently available as open-source via the Creative Commons license, but is currently restricted to non-commercial, non-derivative, educational uses.  
 
   Creative Commons License. (c) 2013 pentasyllabic.com  
   Attribution + Noncommercial + NoDerivatives  
   http://creativecommons.org/licenses/by-nc-nd/3.0/  
   
-C)  I'm currently refactoring the prohibited components (fonts and icons) into separate packages, and will eventually release the entire application under the Artistic License 2.0.  
-
-  Aristic License 2.0
-  http://opensource.org/licenses/Artistic-2.0
 
 D)  Portions of the application are already available under the MIT license:
 
@@ -34,11 +36,7 @@ D)  Portions of the application are already available under the MIT license:
   https://github.com/awatson1978/reactive-overlays  
 
 
-D)  In the meantime, please feel free to use the codebase for educational non-profit purposes under the Creative Commons Attribution, NonCommercial, and NoDerivatives license.  
-
-E)  Lastly, besides the icons and fonts, there are some issues surrounding HIPAA Compliancy that need to be addressed before going into production.  
-
-F)  Contact me directly if you have any questions about licensing it for use in commercial or clinical environments.  
+E)  Lastly, besides the licensing issues with icons and fonts, there are some issues surrounding HIPAA Compliancy that need to be addressed before going into production with this software.  (This is one of the reasons for the limitation to the Artistic License, rather than the Creative Commons or MIT license, as their are compliancy issues related to meeting HIPAA requirements and gaining FDA and CCHIT regulatory approval that require carving out a Standard Version.)  Contact me directly if you have any questions about licensing it for use in commercial or clinical environments, and we can discuss working through those issues.  
 
 
 
