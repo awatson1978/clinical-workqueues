@@ -14,9 +14,9 @@ A)  This application contains restricted media, including icons and fonts, which
   http://www.professional-icons.com/icon-sets/vista-medical-icons.aspx  
   https://www.professional-icons.com/legal/stock-license.aspx
 
-C)  I'm currently refactoring the prohibited components (fonts and icons) into separate packages, and will eventually release the entire Clinical Workqueues application under the Artistic License 2.0.  
+C)  I'm currently refactoring the prohibited components (fonts and icons) into separate packages, and will eventually release the entire Clinical Workqueues application under the Artistic License 2.0.   
 
-  Aristic License 2.0
+  Aristic License 2.0  
   http://opensource.org/licenses/Artistic-2.0
 
 
