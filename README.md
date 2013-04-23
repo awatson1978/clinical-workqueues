@@ -8,9 +8,6 @@ clinical workqueues inspired by the day of glass concept video
 
 NOTICE:  THIS IS NOT FREE SOFTWARE AND HAS RESTRICTIONS
 
-------------------------
-#### Overview
-
 A)  This application contains restricted media, including icons and fonts, which require purchasing a license for use.  Specifically, the Vista Medical Icons require licensure before you can legally fork, modify, and make derivative works from this repostiory.
  
   Vista Medical Icons  
