@@ -13,18 +13,22 @@ NOTICE:  THIS IS NOT FREE SOFTWARE AND HAS RESTRICTIONS
 
 A)  This application contains restricted media, including icons and fonts, which require purchasing a license for use.  Specifically, the Vista Medical Icons require licensure before you can legally fork, modify, and make derivative works from this repostiory.
  
-  Vista Medical Icons
+  Vista Medical Icons  
   http://www.professional-icons.com/icon-sets/vista-medical-icons.aspx
 
-  Vista Medical Icons License
+  Vista Medical Icons License  
   https://www.professional-icons.com/legal/stock-license.aspx
 
-B)  The code itself is available as open-source via the Creative Commons license, but is restricted to non-commercial and non-derivative uses.  
+B)  The code itself is currently available as open-source via the Creative Commons license, but is currently restricted to non-commercial and non-derivative uses.  
 
   Creative Commons License. (c) 2013 pentasyllabic.com  
   Attribution + Noncommercial + NoDerivatives  
+  http://creativecommons.org/licenses/by-nc-nd/3.0/  
+  
+C)  I'm currently refactoring the prohibited components (fonts and icons) into separate packages, and will eventually release the entire application under the Artistic License 2.0.  
 
-C)  I'm currently refactoring the prohibited components (fonts and icons) into separate packages, and hope to eventually release the entire application under the MIT license.  
+  Aristic License 2.0
+  http://opensource.org/licenses/Artistic-2.0
 
 D)  Portions of the application are already available under the MIT license:
 
