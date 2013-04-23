@@ -370,6 +370,7 @@ sendToActiveCollaborator = function() {
     try {
         if (Meteor.user().profile) {
             Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
+            //TODO:  log_hipaa_event() on callback
         } else {
             log_event('Meteor profile not available.');
         }

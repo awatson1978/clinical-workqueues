@@ -22,6 +22,8 @@ toggleButtonVisibility = function(){
         Session.set('show_button_tiles',true);
     }
 }
+
+// TODO:  revisit toggleSession function, and see how many functions we can replace with it
 toggleSession = function(sessionVariable){
     if(Session.get(sessionVariable)){
         Session.set(sessionVariable,false);

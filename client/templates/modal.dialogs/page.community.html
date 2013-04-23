@@ -1,3 +1,5 @@
+<!-- //TODO:  setup communityPageTemplate as modal dialog; shouldn't show sidebar -->
+
 <template name="communityPageTemplate">
     <div class="touch-disabled page helveticas" id="communityPage">
         <div class="hidden">{{resize}}</div>
@@ -17,8 +19,12 @@
 <!-- ------------------------------------------------------------ -->
 <!-- LEFT COLUMN -->
 
+<!-- //TODO: rename communityInspectionColumn to communityInspectionColumnTemplate -->
 <template name="communityInspectionColumn">
+    <!-- //extract #communityInspectionBlock css styling into .community-inspection-block class -->
+    <!-- //move .community-expection-block class outside of communityInspectionColumnTemplate -->
     <div id="communityInspectionBlock" class="top-anchored">
+        <!-- //TODO:  extract search input into communitySearchInputTemplate-->
         <div class="search-container">
             <input id="communitySearchInput" type="text" class="search {{search_text_color}}" value="search community members" />
         </div>
@@ -32,9 +38,13 @@
     </div>
 </template>
 
-<!-- TODO:  restructure userQuickViewCard with taskDetailCard markup -->
+<!-- //TODO:  restructure userQuickViewCard with taskDetailCard markup -->
+<!-- //TODO:  rename userQuickViewCard to userQuickViewTemplate-->
 <template name="userQuickViewCard">
     <div class="spacer row"></div>
+
+    <!-- //TODO: extract #userQuickViewPanel styling to .user-quick-view-panel class -->
+    <!-- //TODO: move .user-quickview-panel class outisde of userQuickViewTemplate -->
     <div id="userQuickViewPanel" class="card">
         <div class="card-header rounded-top-right">
             <span class="white card-meta-data barcode">*{{user_id}}*</span>
@@ -55,7 +65,10 @@
 <!-- ------------------------------------------------------------ -->
 <!-- RIGHT COLUMN -->
 
+<!-- TODO:// rename communityMemberList to communityMemberListTemplate-->
 <template name="communityMembersList">
+    <!-- //TODO:  extract #communityMemberList css styling to .community-member-list class-->
+    <!-- //TODO:  move .community-member-list class outside of communityMemberListTemplate -->
     <div id="communityMembersList">
         <ul id="communityList" class="list dont-overlap-user-card">
             {{#each communityUsers}}

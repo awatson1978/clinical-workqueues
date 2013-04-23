@@ -32,13 +32,18 @@
         <ul class="nav-bar footer-nav-bar">
             <!--<li><a href="#" onclick='showPage("#workqueuesPage");'><span class="pictographs">4  </span>Workqueues</a></li>-->
 
+
+            <!-- //TODO:  extract sort button into workqueuesSortFooterTemplate -->
+            <!-- //TODO:  trigger workqueuesSortFooterTemplate to only display on workqueuesPage -->
             <li class="sort-completed"><a href="#"><span class="largish {{sortCompletedSelected}} pictographs">%</span></a></li>
             <li class="sort-starred"><a href="#"><span class="largish {{sortStarredSelected}} pictographs">*</span></a></li>
             <li class="sort-alphabetical"><a href="#"><span class="largish {{sortAlphabeticallySelected}} pictographs">4</span></a></li>
 
         </ul>
         <ul class="nav-bar footer-nav-bar-right">
+            <!-- //TODO:  add webBrowserVisibility icon and appropriate toggles -->
             <li class="tutorial"><a href="#" onclick=''><span class="largish pictograph">?</span></a></li>
+            <!-- //TODO:  add mobileDeviceStatus icons to listening/connected -->
             <li>{{> mobileDeviceStatus }}</li>
         </ul>
         {{/if}}

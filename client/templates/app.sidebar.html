@@ -21,8 +21,14 @@
 
 
 <template name="listsTemplate">
-    <!-- //TODO:  rename listsTEmplate to something else? -->
+    <!-- //TODO:  rename listsTemplate to something else? -->
     <div id="listsTemplate" class="list-tab-container">
+        <!-- //TODO:  create static lists buttons-->
+        <!-- //TODO:  create list of personally owned tasks -->
+        <!-- //TODO:  create list of personally owned, completed tasks -->
+        <!-- //TODO:  create list of personally owned, uncompleted tasks -->
+        <!-- //TODO:  create list of personally owned, starred tasks -->
+
         {{#each lists}}
             <div class="list">
                 <div class="{{selected}} sidebar-tab note">
@@ -65,10 +71,16 @@
 
 
 <template name="communityPageSidebarTemplate">
+    <!-- //TODO:  create webBrowserSidebarTemplate -->
+    <!-- //TODO:  move buttonTilesTemplate to webBrowserSidebarTemplate -->
     {{> buttonTilesTemplate }}
 </template>
+
+
 <template name="buttonTilesTemplate">
     <div id="buttonTiles" class="sidebar-tiles column-container">
+        <!-- //TODO:  research default weblinks for each category -->
+        <!-- //TODO:  trigger navigation to webpage on each button -->
         <hr style="border: 1px solid lightgray;">
         <div class="column-one-of-two">
             <img class="sidebar-tile" src="/iconsbw/CT_Scan.png">
