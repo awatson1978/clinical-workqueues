@@ -20,7 +20,7 @@ C)  I'm currently refactoring the prohibited components (fonts and icons) into s
   http://opensource.org/licenses/Artistic-2.0
 
 
-B)  In the meantime, the code itself is currently available as open-source via the Creative Commons license, but is currently restricted to non-commercial, non-derivative, educational uses.  
+B)  In the meantime, the code itself is temporarily available as open-source via the Creative Commons license, but is currently restricted to non-commercial, non-derivative, educational uses.  
 
   Creative Commons License. (c) 2013 pentasyllabic.com  
   Attribution + Noncommercial + NoDerivatives  
