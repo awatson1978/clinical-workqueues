@@ -101,6 +101,7 @@ function resizeProfilePageForPortrait(){
 
 
 //-----------------------------------------------------
+// JSON Inspection Panel
 // Controls for the JSON inspection and debugging panel
 
 Template.jsonContentPanelTemplate.showJsonPanel = function(){
@@ -113,6 +114,8 @@ Template.jsonContentPanelTemplate.jsonData = function(){
 
 
 //---------------------------------------------------
+// DropBox Alert
+
 monitorDropbox = function(){
     try{
         if(Meteor.user().profile.dropbox == null){

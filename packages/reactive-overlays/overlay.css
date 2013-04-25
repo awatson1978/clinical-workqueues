@@ -20,7 +20,15 @@
     margin-left: -50%;
     margin-top: -50px;
 }
-
+.overlay-template{
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    z-index: 10000;
+    text-align: center;
+    position: absolute;
+    .unselectable;
+}
 .with-rounded-corners {
     -moz-border-radius: .4em;
     -webkit-border-radius: .4em;
@@ -30,4 +38,8 @@
 }
 .hidden{
   visibility: hidden;
+}
+
+.tutorial{
+    color: white;
 }

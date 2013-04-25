@@ -139,6 +139,7 @@
   height: 200px;
   border-right: 1px solid gray;
   cursor:pointer;
+  z-index: 100000;
 }
 .task-detail-card-image-image{
   .well-behaved;
@@ -191,7 +192,7 @@
 
 
 .card-header:hover{
-  background-color: coral;
+  background-color: darksalmon;
   cursor:pointer;
 
 }
@@ -260,7 +261,9 @@
     visibility: visible;
   }
 }
-
+.task-detail-image-container:hover{
+  background-color: darksalmon !important;
+}
 .web-link-controls{
   position: absolute;
   top: 45px;

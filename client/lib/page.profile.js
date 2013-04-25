@@ -263,7 +263,7 @@ Template.profilePageTemplate.receivedNewAlert = function(){
 // active collaborator card
 
 Template.activeCollaboratorCardTemplate.events({
-    'click .collaborator-image': function(){
+    'click #activeCollaboratorProfileCard': function(){
         showPage("#communityPage");
     }
 });

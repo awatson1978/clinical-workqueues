@@ -49,9 +49,11 @@ Template.reactiveOverlaysTemplate.imageSrc = function(){
 Template.reactiveOverlaysTemplate.events({
     'click .overlay-mask': function(evt){
         hideOverlay();
+        $(Session.get('overlay_template_reference_id')).addClass('hidden');
     },
     'click .overlay-image': function(evt){
         hideOverlay();
+        $(Session.get('overlay_template_reference_id')).addClass('hidden');
     }
 });
 Template.reactiveOverlaysTemplate.rendered = function(){
@@ -60,6 +62,8 @@ Template.reactiveOverlaysTemplate.rendered = function(){
         $('.overlay-image').css('top', (window.innerHeight / 4));
     }else if(Session.get('show_overlay_template')){
         $('#overlayTemplate').append($(Session.get('overlay_template_reference_id')).html())
+        $(Session.get('overlay_template_reference_id')).removeClass('hidden');
+        $('.overlay-template').css('top', (window.innerHeight / 2));
     }
 }
 

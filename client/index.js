@@ -134,7 +134,9 @@ Template.footerBarTemplate.events({
         Meteor.flush();
     },
     'click .tutorial': function(){
-        Session.set('show_reactive_overlay', true);
+        //this just sets a mask over the entire application; useful for testing, but not much else
+        //Session.set('show_reactive_overlay', true);
+        showTutorialOverlay('#workqueuesPageTutorial');
     }
 });
 

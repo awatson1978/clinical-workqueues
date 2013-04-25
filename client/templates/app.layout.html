@@ -9,6 +9,8 @@
         {{#if loggedIn}}
         <div id="mainLayoutPane">
             {{> workqueuesPageTemplate }}
+            {{> workqueuesPageTutorialTemplate }}
+
             {{> profilePageTemplate }}
             {{> communityPageTemplate }}
             {{> iconAssetsPageTemplate }}
@@ -20,6 +22,7 @@
 
             {{!> webBrowserPageTemplate }}
             {{!> dashboardPageTemplate}}
+
         </div>
         {{> sidebarTemplate }}
         {{else }}
