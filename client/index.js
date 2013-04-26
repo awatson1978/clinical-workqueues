@@ -71,8 +71,8 @@ Meteor.startup(function () {
 // it will fire for each sub-template, and often fires two dozen times or more
 Template.appContainerTemplate.rendered = function(){
     console.log('Template.appContainerTemplate.rendered');
-    showHomePage();
-    //showCurrentSessionPage();
+    //showHomePage();
+    showCurrentSessionPage();
     setSidebarAvailability();
 };
 

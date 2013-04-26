@@ -24,7 +24,8 @@ showHomePage = function(){
     console.log('showHomePage();');
     try{
         if(Meteor.userId()){
-            showPage("#workqueuesPage");
+            showCurrentSessionPage();
+            //showPage("#workqueuesPage");
         }else{
             showPage("#guestPage");
         }
@@ -35,10 +36,14 @@ showHomePage = function(){
 showCurrentSessionPage = function(){
     console.log('showCurrentSessionPage();');
     try{
-        if(Session.get('current_page') != null){
-            showPage(Session.get('current_page'));
+        if(Meteor.userId()){
+            if(Session.get('current_page') != null){
+                showPage(Session.get('current_page'));
+            }else{
+                showPage("#workqueuesPage");
+            }
         }else{
-            showHomePage();
+            showPage("#guestPage");
         }
     }catch(err){
         console.log(err);
