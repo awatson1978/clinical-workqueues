@@ -1,12 +1,13 @@
 Template.guestPageTemplate.rendered = function(){
     log_event("Template.guestPageTemplate.rendered",LogLevel.Signpost,this);
+    alert($('#dayOfGlassMedicalVideo').width());
 };
 Template.guestPageTemplate.events({
     'click .synopsis-tab': function(){
         $('.card-container').addClass('hidden');
         $('.vision').addClass('hidden');
         $('.synopsis').removeClass('hidden');
-        $('#moneyShotContainer').removeClass('hidden');
+        $('#currentScreenshotContainer').removeClass('hidden');
     },
     'click .features-tab': function(){
         $('.card-container').addClass('hidden');
@@ -16,6 +17,7 @@ Template.guestPageTemplate.events({
     'click .vision-tab': function(){
         $('.card-container').addClass('hidden');
         $('.vision').removeClass('hidden');
+        $('#currentScreenshotContainer').addClass('hidden');
     },
     'click .roadmap-tab': function(){
         $('.card-container').addClass('hidden');
@@ -38,6 +40,9 @@ Template.guestPageTemplate.events({
     },
     'click .moneyShot': function(){
         showImageOverlay('#day-of-glass-money-shot-34ratio');
+    },
+    'click #currentScreenshot': function(){
+        showImageOverlay('#currentScreenshotImage');
     }
 });
 

@@ -68,7 +68,7 @@ Template.workqueuesPageTemplate.receivedNewAlert = function(){
         }
     }
     catch(err){
-        catch_error('monitorDropbox()', err, LogLevel.Notice, this);
+        //catch_error('monitorDropbox()', err, LogLevel.Notice, this);
     }
 };
 
@@ -577,9 +577,8 @@ Template.taskDetailCardTemplate.activeCollaboratorName = function(){
 
 Template.taskDetailCardTemplate.todo_image = function(){
     try{
-        var foo = Todos.findOne(Session.get('selected_task_id'));
-        if(foo.image){
-            return foo.image;
+        if(Todos.findOne(Session.get('selected_task_id')).image){
+            return Todos.findOne(Session.get('selected_task_id')).image;
         }else{
             return '/images/placeholder-240x240.gif';
         }

@@ -7,8 +7,8 @@ Template.profilePageTemplate.rendered = function(){
 
 
 Template.profilePageTemplate.receivedNewAlert = function(){
-    return false;
-    //return monitorDropbox();
+    //return false;
+    return monitorDropbox();
 };
 
 

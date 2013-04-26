@@ -13,13 +13,30 @@
                                     <span class="white card-meta-data">Synopsis</span>
                                 </div>
                                 <div class="padded card-body">
-                                    <p>Clinical Workqueues is the task management and workflow module to a new Personal Healthrecord Application (PHA).  Motivated by the HITECH and Affordable Care Acts, inspired by the Corning Day of Glass 2 Video, made possible by the iPad, and created using the Meteor framework using Node.js and MongoDB, the Clinical Workqueues App is a rethinking of what EMR and PHR applications can and should be.  </p>
-                                    <!-- //TODO:  convert workqueues description into JSON object -->
+                                    <p>Clinical Workqueues is a task management application designed to facility workflow in clinical settings.  It's an application designed to meet the particular demographic and market needs of a society dealing with aging Baby Boomers.  Initially motivated by the HITECH and Affordable Care Acts, Clinical Workqueues is a mobile task management application, designed from the ground-up with the latest in real-time mobile web technologies, to facilitate bedside computing and ad-hoc accountable care organizations. </p>
+                                    <!--<pre>-->
+                                        <!--<span>{</span><br>-->
+                                        <!--<span>  inspiration: "Corning Day of Glass Video",</span><br>-->
+                                        <!--<span>  hardware: {</span><br>-->
+                                        <!--<span>    multitouch:   true,</span><br>-->
+                                        <!--<span>    platforms:    [ios, android, web]</span><br>-->
+                                        <!--<span>  }</span><br>-->
+                                        <!--<bspanr>  framework: {</span><br>-->
+                                        <!--<span>    database:   mongodb,</span><br>-->
+                                        <!--<span>    webserver:  node.js,</span><br>-->
+                                        <!--<span>    graphing:   d3.js</span><br>-->
+                                        <!--<span>  }</span><br>-->
+                                        <!--<span>  market: {</span><br>-->
+                                        <!--<span>    consumer:    ["App Stores", "Premium Subscriptions"],</span><br>-->
+                                        <!--<span>    clinical:    "EMR Site Licenses",</span><br>-->
+                                        <!--<span>    insurance:   "Capitated Reimbursement Groups"</span><br>-->
+                                        <!--<span>  }</span><br>-->
+                                        <!--<span>{</span><br>-->
+                                        <!--&lt;!&ndash; //TODO:  convert workqueues description into JSON object &ndash;&gt;-->
+                                    <!--</pre>-->
                                 </div>
                                 <div class="card-footer"></div>
                             </div>
-
-
 
                             <div class="hidden clickable features card-container with-bottom-spacer">
                                 <div class="card-header rounded-top-right">
@@ -102,18 +119,23 @@
                             </div>
 
 
-
-                            <div class="making-this itaintrocketscience hide-for-small hide-for-medium vision">Money shot!  This is what we're trying to create!</div>
-                            <div id="moneyShotContainer" class="vision row with-bottom-spacer">
+                            <div id="currentScreenshotContainer" class="vision row with-bottom-spacer">
+                                <img id="currentScreenshot" class="gray clickable panel with-rounded-corners" src="/images/april-screenshot-alpha-launch.jpg">
+                            </div>
+                            <!--<div class="making-this itaintrocketscience hide-for-small hide-for-medium hidden vision">Money shot!  This is what we're trying to create!</div>-->
+                            <div id="moneyShotContainer" class="hidden vision row with-bottom-spacer">
                                 <img rel="#moneyShot" class="gray clickable moneyShot panel with-rounded-corners" src="/images/visionStatement/day-of-glass-money-shot.png">
                             </div>
-                            <div class="making-this itaintrocketscience hide-for-small hide-for-medium hidden vision">The healthcare related stuff begins at 6:23 into the video.</div>
+                            <!--<div class="making-this itaintrocketscience hide-for-small hide-for-medium hidden vision">The healthcare related stuff begins at 6:23 into the video.</div>-->
                             <div id="dayOfGlassMedicalVideo" class="hidden vision row with-bottom-spacer">
-                                <iframe class="gray panel with-rounded-corners hidden-on-portrait" width="100%" height="300px" src="http://www.youtube.com/embed/Muv3R_6AXls" frameborder="0" allowfullscreen></iframe>
+                                <iframe class="gray panel with-rounded-corners hidden-on-portrait" width="100%" height="400px" src="http://www.youtube.com/embed/Muv3R_6AXls" frameborder="0" allowfullscreen></iframe>
                             </div>
 
-                            <!-- //TODO:  create clinical-workqueues screenshot img -->
-                            <!-- //TODO:  add third image: screenshots of clinical-workqueues application -->
+                            <div class="notepad panel hipaa-notice with-rounded-corners">
+                                NOTICE:  Clinical Workqueues is currently in <bold class="red">ALPHA</bold>.  It is <bold>not</bold> HIPAA compliant (yet).  Information may be deleted or lost as we migrate to Beta release and move onto our production platform.  You have been warned!  This public demo is made available only for evaulation purposes at the current time.
+                            </div>
+
+
 
                         </div>
                     </div>
@@ -143,18 +165,11 @@
                             </div>
                         </div>
 
-                        <!-- //TODO: move HIPAA notice out of sidebar into main body -->
-                        <div class="spacer row"></div>
-                        <div class="notepad panel hipaa-notice with-rounded-corners">
-                            NOTICE:  Clinical Workqueues is currently in <bold class="red">ALPHA</bold>.  It is <bold>not</bold> HIPAA compliant (yet).  Information may be deleted or lost as we migrate to Beta release and move onto our production platform.  You have been warned!  This public demo is made available only for evaulation purposes at the current time.
-                        </div>
 
                     </div>
 
-                    <div class="simple_overlay" id="moneyShot">
-                        <div class="close"></div>
-                        <img id="day-of-glass-money-shot-34ratio" class="hidden" src="/images/visionStatement/day-of-glass-money-shot-34ratio.png" />
-                    </div>
+                    <img id="day-of-glass-money-shot-34ratio" class="hidden" src="/images/visionStatement/day-of-glass-money-shot-34ratio.png" />
+                    <img id="currentScreenshotImage" class="hidden" src="/images/april-screenshot-alpha-launch.jpg" />
                 </div>
             </div>
             <div class="spacer row"></div>
