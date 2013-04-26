@@ -4,13 +4,21 @@
 Template.profilePageTemplate.rendered = function(){
     log_event("Template.profilePageTemplate.rendered",LogLevel.Signpost,this);
 };
-Template.profilePageTemplate.loggedIn = function () {
-    if(Meteor.userId()){
-        return true;
-    }else{
-        return false;
-    }
+
+
+Template.profilePageTemplate.receivedNewAlert = function(){
+    return false;
+    //return monitorDropbox();
 };
+
+
+//Template.profilePageTemplate.loggedIn = function () {
+//    if(Meteor.userId()){
+//        return true;
+//    }else{
+//        return false;
+//    }
+//};
 
 //-----------------------------------------------------------------
 // userCardTemplate
@@ -246,11 +254,6 @@ Template.userCardTemplate.user_image = function () {
 
 
 
-
-Template.profilePageTemplate.receivedNewAlert = function(){
-    return false;
-    //return monitorDropbox();
-};
 
 
 
