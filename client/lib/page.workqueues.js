@@ -134,7 +134,7 @@ Template.workqueueTemplate.any_list_selected = function () {
            return false;
        }else{
            return !Session.equals('list_id', null);
-       };
+       }
    }catch(err){
 
    }
@@ -180,7 +180,11 @@ Template.workqueueTemplate.todos = function () {
 };
 
 Template.workqueueTemplate.showTaskDetail = function(){
-    return Session.get('show_task_detail_panel');
+    try{
+        return Session.get('show_task_detail_panel');
+    }catch(error){
+        console.log(error);
+    }
 };
 
 
@@ -189,11 +193,15 @@ Template.workqueueTemplate.showTaskDetail = function(){
 
 
 Template.taskItemTemplate.showDeleteButton = function(){
-  if(Session.get('selected_task_delete_id') == this._id){
-      return true;
-  }else{
-      return false;
-  }
+    try{
+        if(Session.get('selected_task_delete_id') == this._id){
+            return true;
+        }else{
+            return false;
+        }
+    }catch(error){
+        console.log(error);
+    }
 };
 Template.taskItemTemplate.tag_objs = function () {
     try{
@@ -238,7 +246,11 @@ Template.taskItemTemplate.task_star = function () {
 };
 
 Template.taskItemTemplate.editing = function () {
-    return Session.equals('editing_itemname', this._id);
+    try{
+        return Session.equals('editing_itemname', this._id);
+    }catch(error){
+        console.log(error);
+    }
 };
 
 
@@ -397,7 +409,11 @@ Template.taskDetailCardTemplate.tag_list = function () {
     }
 };
 Template.taskDetailCardTemplate.adding_detailed_tag = function () {
-    return Session.equals('editing_detailed_addtag', Session.get('selected_task_id'));
+    try{
+        return Session.equals('editing_detailed_addtag', Session.get('selected_task_id'));
+    }catch(error){
+        console.log(error);
+    }
 };
 
 
@@ -497,16 +513,32 @@ Template.taskDetailCardTemplate.rendered = function(){
 
 
 Template.taskDetailAnchorTemplate.showTaskDetailModalMask = function(){
-    return true;
+    try{
+        return true;
+    }catch(error){
+        console.log(error);
+    }
 };
 Template.taskDetailCardTemplate.todo_id = function(){
-    return Session.get('selected_task_id');
+    try{
+        return Session.get('selected_task_id');
+    }catch(error){
+        console.log(error);
+    }
 };
 Template.taskDetailCardTemplate.todo_text = function(){
-    return Session.get('selected_task_text');
+    try{
+        return Session.get('selected_task_text');
+    }catch(error){
+        console.log(error);
+    }
 };
 Template.taskDetailCardTemplate.todo_done = function(){
-    return Session.get('selected_task_done_status') ? 'checked="checked"' : '';
+    try{
+        return Session.get('selected_task_done_status') ? 'checked="checked"' : '';
+    }catch(error){
+        console.log(error);
+    }
 };
 
 Template.taskDetailCardTemplate.detailed_task_complete = function () {
@@ -544,20 +576,32 @@ Template.taskDetailCardTemplate.activeCollaboratorName = function(){
 
 
 Template.taskDetailCardTemplate.todo_image = function(){
-    var foo = Todos.findOne(Session.get('selected_task_id'));
-    if(foo.image){
-        return foo.image;
-    }else{
-        return '/images/placeholder-240x240.gif';
+    try{
+        var foo = Todos.findOne(Session.get('selected_task_id'));
+        if(foo.image){
+            return foo.image;
+        }else{
+            return '/images/placeholder-240x240.gif';
+        }
+    }catch(error){
+        console.log(error);
     }
 };
 Template.taskDetailCardTemplate.tag_objs = function(){
-    return _.map(this.tags || [], function (tag) {
-        return {todo_id: ession.get('selected_task_id'), tag: tag};
-    });
+    try{
+        return _.map(this.tags || [], function (tag) {
+            return {todo_id: ession.get('selected_task_id'), tag: tag};
+        });
+    }catch(error){
+        console.log(error);
+    }
 };
 Template.taskDetailCardTemplate.adding_tag = function(){
-    return false;
+    try{
+        return false;
+    }catch(error){
+        console.log(error);
+    }
 };
 
 
