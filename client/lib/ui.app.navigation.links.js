@@ -9,13 +9,17 @@ hidePages = function(){
 showPage = function(page){
     console.log('showPage(' + page + ');');
     try{
-        hidePages();
-        $(page).removeClass('hidden');
-        Session.set('current_page', page);
-        if(isMobile){
-            detectOrientation();
+        if(Meteor.userId()){
+            hidePages();
+            $(page).removeClass('hidden');
+            Session.set('current_page', page);
+            if(isMobile){
+                detectOrientation();
+            }
+            //parseBreadCrumbs(page);
+        }else{
+            showPage("#guestPage");
         }
-        //parseBreadCrumbs(page);
     }catch(err){
         console.log(err);
     }
