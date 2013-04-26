@@ -243,18 +243,13 @@ Template.userCardTemplate.user_image = function () {
         catch_error('Template.userCardTemplate.user_image', err, LogLevel.Error, this);
     }
 };
-//Template.profilePageTemplate.user_json = function () {
-//    var selectedUser = Meteor.user();
-//    return JSON.stringify(selectedUser);
-//};
-//Template.profilePageTemplate.rendered = function(){
-//    Session.set('json_content', JSON.stringify(Meteor.user()));
-//};
+
 
 
 
 Template.profilePageTemplate.receivedNewAlert = function(){
-    return monitorDropbox();
+    return false;
+    //return monitorDropbox();
 };
 
 
@@ -343,8 +338,8 @@ Template.profilePageSidebarTemplate.hipaa_log_selected = function(){
 
 Template.profilePageTemplate.isActiveCollaboratorVisible = function(){
     return Session.get('show_active_collaborator_card');
-}
+};
 Template.profilePageTemplate.isHipaaAuditLogVisible = function(){
     return Session.get('show_hipaa_audit_log_card');
-}
+};
 

@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/reactive-overlays/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/reactive-overlays/overlay.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/reactive-overlays/overlay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/reactive-overlays/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/reactive-overlays/smart.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/client/lib/helpers/jquery.mobile-1.1.1.js" afterPath="$PROJECT_DIR$/.scrap/jquery.mobile-1.1.1.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/packages/google-analytics-pentasyllabic/google.analytics.tracker.js" afterPath="$PROJECT_DIR$/packages/google-analytics/google.analytics.tracker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/lists.card.less" afterPath="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.profile.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.community.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/modal.dialogs/page.community.html" afterPath="$PROJECT_DIR$/client/templates/modal.dialogs/page.community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/page.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.assets.icons.html" afterPath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.assets.icons.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.community.html" afterPath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.community.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.profile.html" afterPath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.sidebar.html" afterPath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" afterPath="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays/overlay.html" afterPath="$PROJECT_DIR$/packages/reactive-overlays/overlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays/overlay.js" afterPath="$PROJECT_DIR$/packages/reactive-overlays/overlay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,127 +31,19 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="page.guest.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="43" selection-start="2082" selection-end="2082" vertical-scroll-proportion="-19.84">
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="129" column="32" selection-start="7296" selection-end="7296" vertical-scroll-proportion="-23.92">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="overlay.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="11" selection-start="371" selection-end="371" vertical-scroll-proportion="0.14333707">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.51148224">
-          <split-first>
-            <leaf>
-              <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="287" column="32" selection-start="9544" selection-end="9544" vertical-scroll-proportion="0.0">
-                      <folding>
-                        <element signature="n#!!doc" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="overlay.js" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="65" column="65" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.52401745">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/index.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="133" column="23" selection-start="4481" selection-end="4481" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="app.layout.html" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="12" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-7.68">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="ui.app.layout.toggles.js" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="13" column="18" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="tutorial.workqueues.html" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="4" column="11" selection-start="219" selection-end="219" vertical-scroll-proportion="-2.56">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="overlay.css" pinned="false" current="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.css">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="20" column="22" selection-start="409" selection-end="409" vertical-scroll-proportion="0.4885845">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/client/index.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state line="14" column="50" selection-start="248" selection-end="248" vertical-scroll-proportion="-8.96">
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="page.profile.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="343" column="2" selection-start="11265" selection-end="11265" vertical-scroll-proportion="5.894737">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -172,28 +56,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.community.html" />
-        <option value="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.assets.icons.html" />
-        <option value="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.sidebar.html" />
         <option value="$PROJECT_DIR$/client/templates/modal.dialogs/page.community.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/client/templates/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/stylesheets/page.profile.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/lists.card.less" />
         <option value="$PROJECT_DIR$/client/lib/ui.app.layout.js" />
         <option value="$PROJECT_DIR$/client/index.js" />
-        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
         <option value="$PROJECT_DIR$/packages/reactive-overlays/overlay.html" />
         <option value="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html" />
         <option value="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" />
         <option value="$PROJECT_DIR$/packages/reactive-overlays/overlay.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
+        <option value="$PROJECT_DIR$/packages/google-analytics/google.analytics.tracker.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="216" />
-    <option name="y" value="24" />
+    <option name="y" value="31" />
     <option name="width" value="1905" />
     <option name="height" value="1054" />
   </component>
@@ -252,57 +136,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactive-overlays" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="packages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts-famous-dead-people" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,46 +169,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tutorial.overlays" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clinical-workqueues" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,11 +227,11 @@
       <recent name="$PROJECT_DIR$/packages/.accounts-housemd" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/google-analytics" />
       <recent name="$PROJECT_DIR$/.scrap" />
       <recent name="$PROJECT_DIR$/packages" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
-      <recent name="$PROJECT_DIR$/packages/.accounts-housemd" />
     </key>
   </component>
   <component name="RunManager">
@@ -498,7 +292,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="24" width="1905" height="1054" extended-state="0" />
+    <frame x="216" y="31" width="1905" height="1054" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -586,56 +380,55 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
+    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="17" selection-start="2693" selection-end="2693" vertical-scroll-proportion="-29.423077">
+        <state line="20" column="22" selection-start="409" selection-end="409" vertical-scroll-proportion="0.4885845">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.profile.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="204" selection-end="204" vertical-scroll-proportion="-2.56">
+        <state line="4" column="11" selection-start="219" selection-end="219" vertical-scroll-proportion="0.15496369">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="2082" selection-end="2082" vertical-scroll-proportion="-19.84">
+        <state line="16" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.28959277">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="38" selection-start="4301" selection-end="4301" vertical-scroll-proportion="2.3035715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="488" selection-end="488" vertical-scroll-proportion="0.27497315">
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <marker date="1366908290000" expanded="true" signature="336:488" placeholder="{&quot;name&quot;: &quot;clinical-workqueues&quot;...}" />
+            <marker date="1366908290000" expanded="true" signature="422:484" placeholder="{&quot;node&quot;: &quot;0.8.x&quot;...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.js">
+    <entry file="file://$PROJECT_DIR$/smart.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="24" selection-start="3972" selection-end="3972" vertical-scroll-proportion="1.795207">
+        <state line="10" column="6" selection-start="243" selection-end="243" vertical-scroll-proportion="0.17185822">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
+    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="229" column="1" selection-start="4007" selection-end="4007" vertical-scroll-proportion="4.107623">
+        <state line="77" column="47" selection-start="2488" selection-end="2488" vertical-scroll-proportion="0.65628356">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="36" selection-start="2623" selection-end="2623" vertical-scroll-proportion="0.8453276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="287" column="32" selection-start="9544" selection-end="9544" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -646,59 +439,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="23" selection-start="4481" selection-end="4481" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="248" selection-end="248" vertical-scroll-proportion="-8.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="-7.68">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/page.profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="32" selection-start="7296" selection-end="7296" vertical-scroll-proportion="-23.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="11" selection-start="219" selection-end="219" vertical-scroll-proportion="-2.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="65" selection-start="2140" selection-end="2140" vertical-scroll-proportion="0.52401745">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="22" selection-start="409" selection-end="409" vertical-scroll-proportion="0.4885845">
+        <state line="54" column="42" selection-start="2617" selection-end="2617" vertical-scroll-proportion="0.95364237">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/reactive-overlays/overlay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="371" selection-end="371" vertical-scroll-proportion="0.14333707">
+        <state line="8" column="11" selection-start="371" selection-end="371" vertical-scroll-proportion="-5.12">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/helpers/jquery.jgestures.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="3" selection-start="1071" selection-end="1071" vertical-scroll-proportion="-0.052287582">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="62" selection-start="2101" selection-end="2101" vertical-scroll-proportion="-19.84">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/google-analytics-pentasyllabic/package.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/google-analytics/google.analytics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/google-analytics/google.analytics.tracker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="10" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="343" column="2" selection-start="11265" selection-end="11265" vertical-scroll-proportion="5.894737">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
