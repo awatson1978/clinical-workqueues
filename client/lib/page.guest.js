@@ -1,6 +1,5 @@
 Template.guestPageTemplate.rendered = function(){
     log_event("Template.guestPageTemplate.rendered",LogLevel.Signpost,this);
-    alert($('#dayOfGlassMedicalVideo').width());
 };
 Template.guestPageTemplate.events({
     'click .synopsis-tab': function(){

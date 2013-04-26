@@ -8,7 +8,7 @@
 // and a few other situations.
 
 layoutWorkqueuesPage = function() {
-    console.log('layoutworkquesPage()');
+    console.log('layoutworkquesPage();');
 
     if (window.innerWidth > 767) {
         if (Session.get('show_sidebar_panel')) {
