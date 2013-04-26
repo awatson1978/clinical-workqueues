@@ -37,7 +37,7 @@ layoutWorkqueuesPage = function() {
         $('.web-link-controls').css('width', window.innerWidth - 260);
         $('.detailed-task-card-controls').css('right', 21);
     }
-}
+};
 
 
 //--------------------------------------------------------------------------
@@ -378,7 +378,7 @@ sendToActiveCollaborator = function() {
     catch (err) {
         catch_error("sendToActiveCollaborator()", err, LogLevel.Error, this);
     }
-}
+};
 
 
 
@@ -540,7 +540,7 @@ Template.taskDetailCardTemplate.activeCollaboratorName = function(){
     }catch(error){
         console.log(error);
     }
-}
+};
 
 
 Template.taskDetailCardTemplate.todo_image = function(){

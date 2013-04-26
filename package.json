@@ -6,12 +6,11 @@
 // Global Package Description
 // necessary for Heroku
 
-// needed for other platforms?
-//{
-//    "name": "clinical-workqueues",
-//    "version": "2013.4.10",
-//    "engines": {
-//        "node": "0.8.x",
-//        "npm":  "1.1.x"
-//    }
-//}
+{
+    "name": "clinical-workqueues",
+    "version": "2013.4.26",
+    "engines": {
+        "node": "0.8.x",
+        "npm":  "1.1.x"
+    }
+}

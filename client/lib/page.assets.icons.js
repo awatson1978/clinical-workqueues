@@ -1,6 +1,3 @@
-Template.iconAssetsPageTemplate.rendered = function (){
-
-};
 
 
 Template.iconAssetsPageTemplate.icon_list = function () {
