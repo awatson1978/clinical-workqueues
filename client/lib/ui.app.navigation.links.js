@@ -7,6 +7,7 @@ hidePages = function(){
 }
 
 showPage = function(page){
+    console.log('showPage(' + page + ');');
     try{
         hidePages();
         $(page).removeClass('hidden');
@@ -20,13 +21,19 @@ showPage = function(page){
     }
 }
 showHomePage = function(){
+    console.log('showHomePage();');
     try{
-        showPage("#workqueuesPage");
+        if(Meteor.userId()){
+            showPage("#workqueuesPage");
+        }else{
+            showPage("#guestPage");
+        }
     }catch(err){
         console.log(err);
     }
 }
 showCurrentSessionPage = function(){
+    console.log('showCurrentSessionPage();');
     try{
         if(Session.get('current_page') != null){
             showPage(Session.get('current_page'));

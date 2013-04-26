@@ -70,7 +70,9 @@ Meteor.startup(function () {
 // warning:  generally speaking, app_container.rendered isn't the correct place to add page specific rendering code
 // it will fire for each sub-template, and often fires two dozen times or more
 Template.appContainerTemplate.rendered = function(){
-    showCurrentSessionPage();
+    console.log('Template.appContainerTemplate.rendered');
+    showHomePage();
+    //showCurrentSessionPage();
     setSidebarAvailability();
 };
 
