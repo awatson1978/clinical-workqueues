@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays" afterPath="$PROJECT_DIR$/packages/reactive-overlays" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" afterPath="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +27,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="app.layout.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="app.layout.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="38" selection-start="277" selection-end="277" vertical-scroll-proportion="0.22958058">
+                <state line="8" column="25" selection-start="112" selection-end="112" vertical-scroll-proportion="0.14128035">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="25" selection-start="1186" selection-end="1197" vertical-scroll-proportion="-18.16">
                   <folding />
                 </state>
               </provider>
@@ -40,10 +49,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="ui.app.layout.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ui.app.layout.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="66" column="0" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.5577342">
+                <state line="72" column="0" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.2962963">
                   <folding />
                 </state>
               </provider>
@@ -80,7 +89,6 @@
         <option value="$PROJECT_DIR$/client/templates/tutorial.overlays/tutorial.workqueues.html" />
         <option value="$PROJECT_DIR$/packages/reactive-overlays/overlay.css" />
         <option value="$PROJECT_DIR$/packages/reactive-overlays/overlay.js" />
-        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
         <option value="$PROJECT_DIR$/packages/google-analytics/google.analytics.tracker.js" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/index.html" />
@@ -89,6 +97,7 @@
         <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
         <option value="$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js" />
         <option value="$PROJECT_DIR$/client/lib/ui.app.layout.js" />
+        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
       </list>
     </option>
   </component>
@@ -471,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="108" selection-start="815" selection-end="815" vertical-scroll-proportion="-14.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="342" selection-end="497" vertical-scroll-proportion="0.0">
@@ -494,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="277" selection-end="277" vertical-scroll-proportion="0.22958058">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.toggles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -508,9 +503,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="25" selection-start="1186" selection-end="1197" vertical-scroll-proportion="-18.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/ui.app.layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.5577342">
+        <state line="72" column="0" selection-start="2700" selection-end="2700" vertical-scroll-proportion="0.2962963">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="25" selection-start="112" selection-end="112" vertical-scroll-proportion="0.14128035">
           <folding />
         </state>
       </provider>

@@ -6,7 +6,7 @@
 
 <template name="appContainerTemplate">
     <div class="mainLayoutPaneContainer">
-        {{#if loggedIn}}
+        {{#if currentUser}}
         <div id="mainLayoutPane">
             {{> workqueuesPageTemplate }}
             {{> workqueuesPageTutorialTemplate }}

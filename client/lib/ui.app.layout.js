@@ -70,13 +70,7 @@ Template.appContainerTemplate.rendered = function(){
         $('.touch-trigger').removeClass('touch-disabled');
     }
 }
-Template.appContainerTemplate.loggedIn = function () {
-    if(Meteor.userId()){
-        return true;
-    }else{
-        return false;
-    }
-};
+
 
 //-----------------------------------------------------
 // LANDSCAPE/PORTRAIT FUNCTIONS
