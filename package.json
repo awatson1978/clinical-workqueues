@@ -1,11 +1,3 @@
-// TODO: confirm package.json is needed with CloudBees
-// TODO: confirm package.json is needed with NPM
-// TODO: confirm package.json is needed with Meteorite/Atmosphere
-
-//--------------------------------------------------------------------------
-// Global Package Description
-// necessary for Heroku
-
 {
     "name": "clinical-workqueues",
     "version": "2013.4.26",
