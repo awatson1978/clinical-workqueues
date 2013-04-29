@@ -2,19 +2,19 @@ Template.userCardTemplate.events(
     okCancelEvents('#userCollaboratorsInput',
         {
             ok: function (value) {
-                log_event('userCollaboratorsInput - ok', LogLevel.Trace, this);
+                console.log('userCollaboratorsInput - ok');
                 Meteor.users.update(Meteor.userId(), {$set: { 'profile.collaborators': [{address: value}] }});
                 Session.set('editing_profile_collaborators', "false");
                 //Meteor.flush(); // update DOM before focus
             },
             cancel: function () {
-                log_event('userCollaboratorsInput - cancel', LogLevel.Trace, this);
+                console.log('userCollaboratorsInput - cancel');
                 Session.set('editing_profile_collaborators', "false");
             }
         })
 );
 Template.userCardTemplate.editing_collaborators = function () {
-    log_event('Template.profilePageTemplate.editing_collaborators', LogLevel.Trace, this);
+    console.log('Template.profilePageTemplate.editing_collaborators');
     return Session.equals('editing_profile_collaborators', "true");
 };
 
@@ -45,7 +45,6 @@ Template.userCardTemplate.events({
 
 Template.userCardTemplate.user_collaborators = function () {
     try{
-        // Meteor.user().profile breaks when user is logged out
         if(Meteor.user().profile){
             return Meteor.user().profile.collaborators;
         }else{
@@ -53,6 +52,6 @@ Template.userCardTemplate.user_collaborators = function () {
         }
     }
     catch(err){
-        catch_error('Template.userCardTemplate.user_collaborators', err, LogLevel.Error, this);
+        console.log(err);
     }
 };

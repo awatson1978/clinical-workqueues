@@ -54,12 +54,18 @@ if(isWebKit){
 // or if the user rotates the screen
 
 $(window).resize(function(evt) {
-    Session.set("resized", new Date());
-    Session.set("appWidth", window.innerWidth);
+    try{
+        Session.set("resized", new Date());
+        Session.set("appWidth", window.innerWidth);
 
-    setSidebarAvailability();
+        setSidebarAvailability();
+    }catch(err){
+        console.log(err);
+    }
 });
-
+//$(window).onerror(function(message, url, lineNumber) {
+//    console.log("Error: "+message+" in "+url+" at line "+lineNumber);
+//});
 
 // we make sure that navigation history is enabled
 // this only runs when the server is started up
@@ -70,29 +76,42 @@ Meteor.startup(function () {
 // warning:  generally speaking, app_container.rendered isn't the correct place to add page specific rendering code
 // it will fire for each sub-template, and often fires two dozen times or more
 Template.appContainerTemplate.rendered = function(){
-    console.log('Template.appContainerTemplate.rendered');
-    //showHomePage();
-    showCurrentSessionPage();
-    setSidebarAvailability();
+    try{
+        console.log('Template.appContainerTemplate.rendered');
+        //showHomePage();
+        showCurrentSessionPage();
+        setSidebarAvailability();
+    }catch(err){
+        console.log(err);
+    }
 };
 
 
 setSidebarAvailability = function() {
-    if (window.innerWidth < 767) {
-        Session.set('is_sidebar_available', false);
+    try{
+        if (window.innerWidth < 767) {
+            Session.set('is_sidebar_available', false);
+        }
+
+    }catch(err){
+        console.log(err);
     }
 }
 
 
 
 Template.appContainerTemplate.loggedIn = function () {
-    console.log('loggedIn called');
-    if(Meteor.userId() != null){
-        console.log('Meteor.userId() is null');
-        return true;
-    }else{
-        console.log('Meteor.userId(): ' + Meteor.userId());
-        return false;
+    try{
+        console.log('loggedIn called');
+        if(Meteor.userId() != null){
+            console.log('Meteor.userId() is null');
+            return true;
+        }else{
+            console.log('Meteor.userId(): ' + Meteor.userId());
+            return false;
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 
@@ -143,24 +162,37 @@ Template.footerBarTemplate.events({
 });
 
 Template.footerBarTemplate.sortCompletedSelected = function(){
-    if(Session.get('sort_workqueues_completed')){
-        return 'selected-font';
-    }else{
-        return '';
+    try{
+        if(Session.get('sort_workqueues_completed')){
+            return 'selected-font';
+        }else{
+            return '';
+        }
+
+    }catch(err){
+        console.log(err);
     }
 };
 Template.footerBarTemplate.sortStarredSelected = function(){
-    if(Session.get('sort_workqueues_starred')){
-        return 'selected-font';
-    }else{
-        return '';
+    try{
+        if(Session.get('sort_workqueues_starred')){
+            return 'selected-font';
+        }else{
+            return '';
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 Template.footerBarTemplate.sortAlphabeticallySelected = function(){
-    if(Session.get('sort_workqueues_alphabetically')){
-        return 'selected-font';
-    }else{
-        return '';
+    try{
+        if(Session.get('sort_workqueues_alphabetically')){
+            return 'selected-font';
+        }else{
+            return '';
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 

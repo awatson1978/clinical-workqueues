@@ -19,10 +19,11 @@ okCancelEvents = function (selector, callbacks) {
                 evt.type === "focusout") {
                 // blur/return/enter = ok/submit if non-empty
                 var value = String(evt.target.value || "");
-                if (value)
+                if (value){
                     ok.call(this, value, evt);
-                else
+                }else{
                     cancel.call(this, evt);
+                }
             }
         };
     return events;
@@ -50,15 +51,15 @@ genericUserDisplayObject = {
             if(Meteor.user().profile){
                 src = $.trim(Meteor.user().profile.avatar);
             }
-            log_event('profile avatar src: ' + src, LogLevel.Info, this);
+            console.log('profile avatar src: ' + src);
             return src;
         }
         catch(err){
-            log_event(err, LogLevel.Error, this);
+            console.log(err);
         }
     },
     isAdmin: function() {
-        if(Meteor.user().profile.role == "Administrator"){
+        if(Meteor.user().profile.role === "Administrator"){
             return true;
         }else{
             return false;

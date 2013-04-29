@@ -10,13 +10,17 @@ Template.communityInspectionColumn.helpers(genericUserDisplayObject);
 
 
 Template.communityPageTemplate.resize = function(){
-    if(Session.get('show_sidebar_panel')){
-        $('#communityInspectionBlock').css('width',window.innerWidth - 195);
-        $('#communityInspectionBlock').css('left', (window.innerWidth - 195) * 0.05);
-    }else{
-        layoutAppWithoutSidebar();
+    try{
+        if(Session.get('show_sidebar_panel')){
+            $('#communityInspectionBlock').css('width',window.innerWidth - 195);
+            $('#communityInspectionBlock').css('left', (window.innerWidth - 195) * 0.05);
+        }else{
+            layoutAppWithoutSidebar();
+        }
+        return Session.get("appWidth");
+    }catch(err){
+        console.log(err);
     }
-    return Session.get("appWidth");
 };
 Template.communityPageTemplate.events({
     'click .destroy': function (evt, tmpl) {
@@ -38,17 +42,29 @@ Template.communityPageTemplate.events({
 // communite inspection column (left column)
 
 Template.communityInspectionColumn.showQuickViewPanel = function () {
-    log_event('Template.communityPageTemplate.showQuickViewPanel', LogLevel.Trace, this);
-    return Session.get('show_quick_view_panel');
+    try{
+        console.log('Template.communityPageTemplate.showQuickViewPanel');
+        return Session.get('show_quick_view_panel');
+    }catch(err){
+        console.log(err);
+    }
 };
 Template.communityInspectionColumn.rendered = function(){
-    log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
+    try{
+        console.log("Template.communityInspectionColumn.rendered");
+    }catch(err){
+        console.log(err);
+    }
 };
 Template.communityInspectionColumn.search_text_color = function(){
-    if(Session.get('community_members_filter') === null){
-        return "lightgray";
-    }else{
-        return "";
+    try{
+        if(Session.get('community_members_filter') === null){
+            return "lightgray";
+        }else{
+            return "";
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 
@@ -58,25 +74,43 @@ Template.communityInspectionColumn.search_text_color = function(){
 
 
 Template.userQuickViewCard.user_id = function () {
-    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
-    if(user){
-        return user._id;
-    }else{
-        return false;
+    try{
+        var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+        if(user){
+            return user._id;
+        }else{
+            return false;
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 Template.userQuickViewCard.user_name = function () {
-    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
-    return user.profile.name;
+    try{
+        var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+        return user.profile.name;
+    }catch(err){
+        console.log(err);
+    }
 };
 Template.userQuickViewCard.user_email = function () {
-    var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
-    if(user.emails){
-        return user.emails.address;
+    try{
+        var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
+        if(user.emails){
+            return user.emails.address;
+        }
+
+    }catch(err){
+        console.log(err);
     }
 };
 Template.userQuickViewCard.user_avatar = function () {
-    return Session.get('selected_community_member_avatar_path');
+    try{
+        return Session.get('selected_community_member_avatar_path');
+    }catch(err){
+        console.log(err);
+    }
+
 };
 
 //--------------------------------------------------------------------
@@ -85,11 +119,15 @@ Template.userQuickViewCard.user_avatar = function () {
 
 
 Template.communityInspectionColumn.isBroadcastRecipient = function(){
-    var isRecipient = false;
-    if(isRecipient){
-        return "";
-    }else{
-        return "hidden";
+    try{
+        var isRecipient = false;
+        if(isRecipient){
+            return "";
+        }else{
+            return "hidden";
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 
@@ -159,19 +197,27 @@ Template.userItemTemplate.events({
     }
 });
 Template.userItemTemplate.userEmail = function () {
-    log_event('Template.userItemTemplate.userEmail', LogLevel.Trace, this);
-    if(this.emails){
-        return this.emails.address;
-    }else{
-        return 'Emails not available.';
+    try{
+        console.log('Template.userItemTemplate.userEmail');
+        if(this.emails){
+            return this.emails.address;
+        }else{
+            return 'Emails not available.';
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 Template.userItemTemplate.userName = function () {
-    log_event('Template.userItemTemplate.userName', LogLevel.Trace, this);
-    if(this.emails){
-        return this.profile.name;
-    }else{
-        return 'User name not available.';
+    try{
+        console.log('Template.userItemTemplate.userName');
+        if(this.emails){
+            return this.profile.name;
+        }else{
+            return 'User name not available.';
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 Template.userItemTemplate.userImage = function () {
@@ -184,7 +230,7 @@ Template.userItemTemplate.userImage = function () {
             return "/images/placeholder-240x240.gif";
         }
     }catch(error){
-        catch_error('Template.userItemTemplate.userImage',error,LogLevel.Error,this);
+        console.log(err);
     }
 };
 
@@ -205,29 +251,45 @@ toInteger = function(number){
 // Toggles
 
 setActiveCollaborator = function(selectedUserId) {
-    Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
-    Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator':selectedUserId }});
+    try{
+        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
+        Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator':selectedUserId }});
+    }catch(err){
+        console.log(err);
+    }
 };
 toggleActiveCollaborator = function(selectedUserId) {
-    if (selectedUserId === Meteor.user().profile.activeCollaborator) {
-        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
-    } else {
-        setActiveCollaborator(selectedUserId);
+    try{
+        if (selectedUserId === Meteor.user().profile.activeCollaborator) {
+            Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
+        } else {
+            setActiveCollaborator(selectedUserId);
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 toggleCollaboratorsMembership = function(selectedUserId) {
-    if (selectedUserId === Meteor.user().profile.activeCollaborator) {
-        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
-    } else {
-        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
-        Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
+    try{
+        if (selectedUserId === Meteor.user().profile.activeCollaborator) {
+            Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
+        } else {
+            Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
+            Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
+        }
+    }catch(err){
+        console.log(err);
     }
 };
 toggleCarewatchMembership = function(userId) {
-    if (selectedUserId === Meteor.user().profile.activeCollaborator) {
-        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
-    } else {
-        Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
-        Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
+    try{
+        if (selectedUserId === Meteor.user().profile.activeCollaborator) {
+            Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
+        } else {
+            Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
+            Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
+        }
+    }catch(err){
+        console.log(err);
     }
 };

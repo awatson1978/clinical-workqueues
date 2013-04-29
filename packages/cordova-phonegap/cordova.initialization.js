@@ -79,19 +79,31 @@ Session.set('deviceready', false);
 //Session.set('volueupbutton', false);
 
 Template.mobileDeviceStatus.isDeviceReady = function(){
-    return Session.get('deviceready');
+    try{
+        return Session.get('deviceready');
+    }catch(err){
+        console.log(err);
+    }
 }
 Template.mobileDeviceStatus.deviceStatusText = function(){
-    if(Session.get('deviceready')){
-        return 'Device is Ready';
-    }else{
-        return 'Connecting to Device';
+    try{
+        if(Session.get('deviceready')){
+            return 'Device is Ready';
+        }else{
+            return 'Connecting to Device';
+        }
+    }catch(err){
+        console.log(err);
     }
 }
 Template.mobileDeviceStatus.deviceStatus = function(){
-    if(Session.get('deviceready')){
-        return 'receiving';
-    }else{
-        return 'blink listening';
+    try{
+        if(Session.get('deviceready')){
+            return 'receiving';
+        }else{
+            return 'blink listening';
+        }
+    }catch(err){
+        console.log(err);
     }
 }

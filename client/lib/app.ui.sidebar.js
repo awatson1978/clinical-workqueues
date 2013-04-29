@@ -4,17 +4,26 @@
 // Sidebar Rendering
 
 Template.sidebarTemplate.sidebarIsVisible = function(){
-    if(Session.get('appWidth') > 767){
-        return Session.get('show_sidebar_panel');
-    }else{
-        return false;
+    try{
+        if(Session.get('appWidth') > 767){
+            return Session.get('show_sidebar_panel');
+        }else{
+            return false;
+        }
+    }catch(error){
+        console.log(error);
     }
 };
 Template.sidebarTemplate.showButtonTiles = function(){
-    if(Session.get('show_button_tiles')){
-        return true;
-    }else{
-        return false;
+    try{
+        if(Session.get('show_button_tiles')){
+            return true;
+        }else{
+            return false;
+        }
+
+    }catch(error){
+        console.log(error);
     }
 };
 
@@ -37,24 +46,36 @@ Template.sidebarTemplate.rendered = function(){
     }
 };
 Template.sidebarTemplate.isWorkqueuesPage = function(){
-    if(Session.get('current_page') === "#workqueuesPage"){
-        return true;
-    }else{
-        return false;
+    try{
+        if(Session.get('current_page') === "#workqueuesPage"){
+            return true;
+        }else{
+            return false;
+        }
+    }catch(error){
+        console.log(error);
     }
 };
 Template.sidebarTemplate.isProfilePage = function(){
-    if(Session.get('current_page') === "#profilePage"){
-        return true;
-    }else{
-        return false;
+    try{
+        if(Session.get('current_page') === "#profilePage"){
+            return true;
+        }else{
+            return false;
+        }
+    }catch(error){
+        console.log(error);
     }
 };
 Template.sidebarTemplate.isCommunityPage = function(){
-    if(Session.get('current_page') === "#communityPage"){
-        return true;
-    }else{
-        return false;
+    try{
+        if(Session.get('current_page') === "#communityPage"){
+            return true;
+        }else{
+            return false;
+        }
+    }catch(error){
+        console.log(error);
     }
 };
 
@@ -64,7 +85,11 @@ Template.sidebarTemplate.isCommunityPage = function(){
 // Workqueues List
 
 Template.listsTemplate.lists = function () {
-    return Lists.find({}, {sort: {name: 1}});
+    try{
+        return Lists.find({}, {sort: {name: 1}});
+    }catch(err){
+        console.log(err);
+    }
 };
 
 Template.listsTemplate.events({
@@ -109,15 +134,27 @@ Template.listsTemplate.events(okCancelEvents(
     }));
 
 Template.listsTemplate.selected = function () {
-    return Session.equals('list_id', this._id) ? 'selected' : '';
+    try{
+        return Session.equals('list_id', this._id) ? 'selected' : '';
+    }catch(err){
+        console.log(err);
+    }
 };
 
 Template.listsTemplate.name_class = function () {
-    return this.name ? '' : 'empty';
+    try{
+        return this.name ? '' : 'empty';
+    }catch(err){
+        console.log(err);
+    }
 };
 
 Template.listsTemplate.editing = function () {
-    return Session.equals('editing_listname', this._id);
+    try{
+        return Session.equals('editing_listname', this._id);
+    }catch(err){
+        console.log(err);
+    }
 };
 
 

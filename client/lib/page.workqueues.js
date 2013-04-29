@@ -44,8 +44,12 @@ layoutWorkqueuesPage = function() {
 // Workqueues Templates
 
 Template.workqueuesPageTemplate.rendered = function(){
-    console.log('Template.workqueuesPageTemplate.rendered');
-    layoutWorkqueuesPage();
+    try{
+        console.log('Template.workqueuesPageTemplate.rendered');
+        layoutWorkqueuesPage();
+    }catch(err){
+        console.log(err);
+    }
 };
 
 
@@ -53,9 +57,13 @@ Template.workqueuesPageTemplate.rendered = function(){
 // note how we begin with a template variable that we want to calculate
 // and how the reactive session variable is defined last
 Template.workqueuesPageTemplate.resized = function(){
-    setSidebarVisibility();
-    layoutWorkqueuesPage();
-    return Session.get("resized");
+    try{
+        setSidebarVisibility();
+        layoutWorkqueuesPage();
+        return Session.get("resized");
+    }catch(err){
+        console.log(err);
+    }
 };
 
 // TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
@@ -78,9 +86,13 @@ Template.workqueuesPageTemplate.receivedNewAlert = function(){
 
 Template.workqueuesPageTemplate.events({
     'click #newTaskInput': function(evt,tmpl){
-        if($('#newTaskInput').val() === 'add new task'){
-            $('#newTaskInput').removeClass('lightgray');
-            $('#newTaskInput').val('');
+        try{
+            if($('#newTaskInput').val() === 'add new task'){
+                $('#newTaskInput').removeClass('lightgray');
+                $('#newTaskInput').val('');
+            }
+        }catch(err){
+            console.log(err);
         }
     }
 });
@@ -88,33 +100,37 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
     '#newTaskInput',
     {
         ok: function (text, evt) {
-            console.log('ok called on new todo item');
-            var tag = Session.get('tag_filter');
+            try{
+                console.log('ok called on new todo item');
+                var tag = Session.get('tag_filter');
 
-            console.log('text.length: ' + text.length);
-            if (text.length) {
-                console.log('text: ' + text);
-                console.log('list_id: ' + Session.get('list_id'));
-                console.log('owner: ' + Meteor.userId());
+                console.log('text.length: ' + text.length);
+                if (text.length) {
+                    console.log('text: ' + text);
+                    console.log('list_id: ' + Session.get('list_id'));
+                    console.log('owner: ' + Meteor.userId());
 
-                Meteor.call('createNewTask', {
-                    text: text,
-                    list_id: Session.get('list_id'),
-                    done: false,
-                    star: false,
-                    timestamp: (new Date()).getTime(),
-                    owner: Meteor.userId,
-                    tags: tag ? [tag] : [],
-                    public: 'public'
-                }, function (error, todo) {
-                    console.log('error: ' + error);
-                    console.log('todo: ' + todo);
-                });
-            } else {
-                Session.set("createError",
-                    "It needs a title and a description, or why bother?");
+                    Meteor.call('createNewTask', {
+                        text: text,
+                        list_id: Session.get('list_id'),
+                        done: false,
+                        star: false,
+                        timestamp: (new Date()).getTime(),
+                        owner: Meteor.userId,
+                        tags: tag ? [tag] : [],
+                        public: 'public'
+                    }, function (error, todo) {
+                        console.log('error: ' + error);
+                        console.log('todo: ' + todo);
+                    });
+                } else {
+                    Session.set("createError",
+                        "It needs a title and a description, or why bother?");
+                }
+                evt.target.value = '';
+            }catch(err){
+                console.log(err);
             }
-            evt.target.value = '';
         },
         cancel: function(text,evt){
             $('#newTaskInput').addClass('lightgray');
@@ -215,7 +231,11 @@ Template.taskItemTemplate.tag_objs = function () {
     }
 };
 Template.taskItemTemplate.adding_tag = function () {
-    return Session.equals('editing_addtag', this._id);
+    try{
+        return Session.equals('editing_addtag', this._id);
+    }catch(err){
+        console.log(err);
+    }
 };
 Template.taskItemTemplate.done_class = function () {
     try{
@@ -385,11 +405,11 @@ sendToActiveCollaborator = function() {
             Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
             //TODO:  log_hipaa_event() on callback
         } else {
-            log_event('Meteor profile not available.');
+            console.log('Meteor profile not available.');
         }
     }
     catch (err) {
-        catch_error("sendToActiveCollaborator()", err, LogLevel.Error, this);
+        console.log(err);
     }
 };
 

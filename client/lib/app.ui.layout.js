@@ -100,7 +100,7 @@ Template.jsonContentPanelTemplate.jsonData = function(){
 
 monitorDropbox = function(){
     try{
-        if(Meteor.user().profile.dropbox === null){
+        if(typeof Meteor.user().profile.dropbox){
             return false;
         }else{
             Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
@@ -111,7 +111,7 @@ monitorDropbox = function(){
         }
     }
     catch(err){
-        catch_error('monitorDropbox()', err, LogLevel.Notice, this);
+        console.log(err);
     }
 };
 
@@ -126,7 +126,7 @@ Template.dropboxAlertTemplate.alert_text = function(){
     try{
         return Todos.findOne(Meteor.user().profile.dropbox).text;
     }catch(error){
-        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+        console.log(err);
     }
 };
 Template.dropboxAlertTemplate.alert_image = function(){
@@ -138,27 +138,27 @@ Template.dropboxAlertTemplate.alert_image = function(){
             return '/images/placeholder-240x240.gif';
         }
     }catch(error){
-        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+        console.log(err);
     }
 };
 Template.dropboxAlertTemplate.alert_id = function(){
     try{
         return Todos.findOne(Meteor.user().profile.dropbox)._id;
     }catch(error){
-        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+        console.log(err);
     }
 };
 Template.dropboxAlertTemplate.alert_tag_list = function(){
     try{
         return Todos.findOne(Meteor.user().profile.dropbox).text;
     }catch(error){
-        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+        console.log(err);
     }
 };
 Template.dropboxAlertTemplate.alert_link = function(){
     try{
         return Todos.findOne(Meteor.user().profile.dropbox).weblink;
     }catch(error){
-        catch_error('Template.dropboxAlertTemplate.text', error, LogLevel.Error, this);
+        console.log(err);
     }
 };

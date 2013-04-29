@@ -24,9 +24,6 @@
     "reactive-overlays": {
         "git": "https://github.com/awatson1978/reactive-overlays.git"
     },
-    "cordova-phonegap": {
-        "git": "https://github.com/awatson1978/cordova-phonegap.git"
-    },
     "accounts-famous-dead-people": {
         "git": "https://github.com/awatson1978/accounts-famous-dead-people.git"
     }
