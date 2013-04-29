@@ -41,10 +41,6 @@ Session.set("appWidth", window.innerWidth);
 Session.set('is_modal_dialog', false);
 
 
-// initialize cordova phonegap and mobile hardware support
-app.initialize(window);
-
-
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
     Session.set('is_supported_browser', true);
@@ -198,3 +194,5 @@ Template.footerBarTemplate.sortAlphabeticallySelected = function(){
 
 
 
+// initialize cordova phonegap and mobile hardware support
+app.initialize(window);

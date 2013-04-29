@@ -1,7 +1,11 @@
 
 // Publish complete set of lists to all clients.
 Meteor.publish('lists', function () {
-    return Lists.find();
+    try{
+        return Lists.find();
+    }catch(error){
+        console.log(error);
+    }
 });
 
 
@@ -34,16 +38,29 @@ Meteor.publish('todos', function (list_id) {
     //TODO:  if completed = false, only return uncompleted tasks
     //TODO:  if completed = null, return all tasks
 
-    return Todos.find({list_id: list_id});
+    try{
+        return Todos.find({list_id: list_id});
+    }catch(error){
+        console.log(error);
+    }
+
 //    return Todos.find(
 //        {$or: [{"public": true}, {list_id: list_id}, {invited: this.userId}, {owner: this.userId}]}
 //    );
 });
 Meteor.publish('allTodos', function (list_id) {
-    return Todos.find();
+    try{
+        return Todos.find();
+    }catch(error){
+        console.log(error);
+    }
 });
 Meteor.publish('categoryIcons', function () {
-    return CategoryIcons.find();
+    try{
+        return CategoryIcons.find();
+    }catch(error){
+        console.log(error);
+    }
 });
 
 
@@ -56,17 +73,22 @@ Meteor.publish('categoryIcons', function () {
 
 // Publish users directory and user profile
 Meteor.publish("usersDirectory", function () {
-    return Meteor.users.find({}, {fields: {
-        '_id': true,
-        'username': true,
-        'profile': true,
-        'profile.name': true,
-        'profile.avatar': true,
-        'profile.dropbox': true,
-        'profile.activeCollaborator': true,
-        'emails': true,
-        'emails[0].address': true,
-        'emails.address': true
+    try{
+        return Meteor.users.find({}, {fields: {
+            '_id': true,
+            'username': true,
+            'profile': true,
+            'profile.name': true,
+            'profile.avatar': true,
+            'profile.dropbox': true,
+            'profile.activeCollaborator': true,
+            'emails': true,
+            'emails[0].address': true,
+            'emails.address': true
+        }});
+    }catch(error){
+        console.log(error);
+    }
 
 //        'services': true,
 //        'services.facebook': true,
@@ -77,33 +99,43 @@ Meteor.publish("usersDirectory", function () {
 //        'services.facebook.picture.data': true,
 //        'services.facebook.picture.data.url': true
 
-    }});
+
 });
 Meteor.publish('userProfile', function (userId) {
-    return Meteor.users.find({_id: this.userId}, {fields: {
-        '_id': true,
-        'username': true,
-        'profile': true,
-        'profile.name': true,
-        'profile.avatar': true,
-        'profile.collaborators': true,
-        'profile.carewatch': true,
-        'profile.currentPage': true,
-        'profile.pushRecipients': true,
-        'profile.activeCollaborator': true,
-        'profile.dropbox': true,
-        'emails': true,
-        'emails[0].address': true
-    }});
+    try{
+        return Meteor.users.find({_id: this.userId}, {fields: {
+            '_id': true,
+            'username': true,
+            'profile': true,
+            'profile.name': true,
+            'profile.avatar': true,
+            'profile.collaborators': true,
+            'profile.carewatch': true,
+            'profile.currentPage': true,
+            'profile.pushRecipients': true,
+            'profile.activeCollaborator': true,
+            'profile.dropbox': true,
+            'emails': true,
+            'emails[0].address': true
+        }});
+
+    }catch(error){
+        console.log(error);
+    }
 });
 
 Meteor.publish("facebook_avatar_url", function() {
-    return Meteor.users.find({_id: this.userId}, {fields: {
-        'services.facebook.id': 1,
-        'services.facebook.name': 1,
-        'services.facebook.gender': 1,
-        'services.facebook.picture': 1,
-        'services.facebook.picture.data': 1,
-        'services.facebook.picture.data.url': 1
-    }});
+    try{
+        return Meteor.users.find({_id: this.userId}, {fields: {
+            'services.facebook.id': 1,
+            'services.facebook.name': 1,
+            'services.facebook.gender': 1,
+            'services.facebook.picture': 1,
+            'services.facebook.picture.data': 1,
+            'services.facebook.picture.data.url': 1
+        }});
+
+    }catch(error){
+        console.log(error);
+    }
 });

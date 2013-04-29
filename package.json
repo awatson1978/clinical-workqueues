@@ -1,8 +1,31 @@
 {
-    "name": "clinical-workqueues",
-    "version": "2013.4.26",
-    "engines": {
-        "node": "0.8.x",
-        "npm":  "1.1.x"
-    }
+  "name": "clinical-workqueues",
+  "description": "clinical-workqueues - automatically converted by Demeteorizer. https://github.com/onmodulus/demeteorizer",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "clean-css": "0.8.3",
+    "connect": "1.9.2",
+    "fibers": "1.0.0",
+    "fstream": "0.1.21",
+    "gzippo": "0.1.7",
+    "handlebars": "1.0.7",
+    "http-proxy": "0.8.5",
+    "kexec": "0.1.1",
+    "keypress": "0.1.0",
+    "npm": "1.2.2",
+    "optimist": "0.3.5",
+    "progress": "0.0.5",
+    "request": "2.12.0",
+    "semver": "1.1.0",
+    "shell-quote": "0.0.1",
+    "tar": "0.1.14",
+    "uglify-js": "2.2.5",
+    "underscore": "1.4.2",
+    "useragent": "2.0.1",
+    "sockjs": "0.3.4",
+    "websocket": "1.0.7",
+    "mongodb": "1.2.13",
+    "mailcomposer": "0.1.15"
+  }
 }

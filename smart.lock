@@ -2,7 +2,7 @@
   "meteor": {
     "git": "https://github.com/meteor/meteor.git",
     "branch": "master",
-    "commit": "1dfc7171f237a029cca74cbf25024acbf6ed5b75"
+    "commit": "bfe4b72ebec4367eaddcdf0887fcf5e649d9dcb8"
   },
   "dependencies": {
     "basePackages": {
@@ -34,10 +34,6 @@
         "git": "https://github.com/awatson1978/reactive-overlays.git",
         "branch": "master"
       },
-      "cordova-phonegap": {
-        "git": "https://github.com/awatson1978/cordova-phonegap.git",
-        "branch": "master"
-      },
       "accounts-famous-dead-people": {
         "git": "https://github.com/awatson1978/accounts-famous-dead-people.git",
         "branch": "master"
@@ -47,7 +43,7 @@
       "audio-click": {
         "git": "https://github.com/awatson1978/audio-click.git",
         "branch": "master",
-        "commit": "6eff5499a761785882774c4e8b940b2ea0a61eff"
+        "commit": "9686fd33bc959eb215f8c7df7c12f3edcad98399"
       },
       "fonts-barcode": {
         "git": "https://github.com/awatson1978/fonts-barcode.git",
@@ -72,22 +68,17 @@
       "hipaa-audit-log": {
         "git": "https://github.com/awatson1978/hipaa-audit-log.git",
         "branch": "master",
-        "commit": "b6e901ad693360f4885b6c84410f87d6693c40c4"
+        "commit": "7dbeb3b74ba7139b3a01986011389d02edc1fd59"
       },
       "reactive-overlays": {
         "git": "https://github.com/awatson1978/reactive-overlays.git",
         "branch": "master",
-        "commit": "23993dd05925e2ea608c9b4379610d4b4df70df8"
-      },
-      "cordova-phonegap": {
-        "git": "https://github.com/awatson1978/cordova-phonegap.git",
-        "branch": "master",
-        "commit": "70a610e0574b4a4cc9b78872712a821034c83b6a"
+        "commit": "86ff67c20f92f5265541b6b21531ca258b23ead9"
       },
       "accounts-famous-dead-people": {
         "git": "https://github.com/awatson1978/accounts-famous-dead-people.git",
         "branch": "master",
-        "commit": "605bb10e0e489a7ce7663c16cc097b58328db382"
+        "commit": "5d9ce41b4fe6be2e6a8af1f5d06f122cda4de10f"
       }
     }
   }
