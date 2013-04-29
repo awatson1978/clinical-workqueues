@@ -61,14 +61,14 @@ Template.workqueuesPageTemplate.resized = function(){
 // TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
 Template.workqueuesPageTemplate.receivedNewAlert = function(){
     try{
-        if(Meteor.user().profile.dropbox == null){
+        if(Meteor.user().profile.dropbox === null){
             return false;
         }else{
             return true;
         }
     }
     catch(err){
-        //catch_error('monitorDropbox()', err, LogLevel.Notice, this);
+        console.log(err);
     }
 };
 
@@ -78,7 +78,7 @@ Template.workqueuesPageTemplate.receivedNewAlert = function(){
 
 Template.workqueuesPageTemplate.events({
     'click #newTaskInput': function(evt,tmpl){
-        if($('#newTaskInput').val() == 'add new task'){
+        if($('#newTaskInput').val() === 'add new task'){
             $('#newTaskInput').removeClass('lightgray');
             $('#newTaskInput').val('');
         }
@@ -103,7 +103,6 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
                     done: false,
                     star: false,
                     timestamp: (new Date()).getTime(),
-                    tags: tag ? [tag] : [],
                     owner: Meteor.userId,
                     tags: tag ? [tag] : [],
                     public: 'public'
@@ -149,13 +148,15 @@ Template.workqueueTemplate.todos = function () {
         var list_id = Session.get('list_id');
         console.log('list_id:' + Session.get('list_id'));
 
-        if (!list_id)
+        if (!list_id){
             return {};
+        }
 
         var selection = {list_id: list_id};
         var tag_filter = Session.get('tag_filter');
-        if (tag_filter)
+        if (tag_filter){
             selection.tags = tag_filter;
+        }
 
 //        var sortCompleted = 0;
 //        var sortStarred = 0;
@@ -194,7 +195,7 @@ Template.workqueueTemplate.showTaskDetail = function(){
 
 Template.taskItemTemplate.showDeleteButton = function(){
     try{
-        if(Session.get('selected_task_delete_id') == this._id){
+        if(Session.get('selected_task_delete_id') === this._id){
             return true;
         }else{
             return false;
@@ -266,7 +267,7 @@ Template.taskItemTemplate.events({
         //alert(Math.abs(Session.get('swipe_start') - eventHandler.pageX));
         //alert((Math.abs(Session.get('swipe_start') - eventHandler.pageX) > 100));
 
-        if(Session.get('selected_task_delete_id') != null){
+        if(Session.get('selected_task_delete_id') !== null){
             Session.set('selected_task_delete_id', null);
         }else{
             if(Math.abs((Session.get('swipe_start') - eventHandler.pageX)) < 200){

@@ -4,13 +4,9 @@ function detectOrientation(){
     console.log('detecting orientation: ' + window.orientation);
     //resizeCommunityPageForLandscape();
 
-    if(typeof window.onorientationchange != 'undefined'){
-        if ( window.orientation == 0 ) {
-            if(Session.equals('current_page', "#workqueuesPage")){
-                //$('.new-task-container').css('margin-left','0');
-                //$('.new-task-container').css('margin-top','0');
-            }
-            else if(Session.equals('current_page', "#communityPage")){
+    if(typeof window.onorientationchange !== 'undefined'){
+        if ( window.orientation === 0 ) {
+            if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
             else if(Session.equals('current_page', "#profilePage")){
@@ -20,7 +16,7 @@ function detectOrientation(){
                 setSidebarVisibility();
             }
         }
-        else if ( window.orientation == 90 ) {
+        else if ( window.orientation === 90 ) {
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
             }
@@ -31,7 +27,7 @@ function detectOrientation(){
                 setSidebarVisibility();
             }
         }
-        else if ( window.orientation == -90 ) {
+        else if ( window.orientation === -90 ) {
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
             }
@@ -42,12 +38,8 @@ function detectOrientation(){
                 setSidebarVisibility();
             }
         }
-        else if ( window.orientation == 180 ) {
-            if(Session.equals('current_page', "#workqueuesPage")){
-                //$('.new-task-container').css('margin-left','0');
-                //$('.new-task-container').css('margin-top','0');
-            }
-            else if(Session.equals('current_page', "#communityPage")){
+        else if ( window.orientation === 180 ) {
+            if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForPortrait();
             }
             else if(Session.equals('current_page', "#profilePage")){
@@ -69,7 +61,7 @@ Template.appContainerTemplate.rendered = function(){
     if(isMobile){
         $('.touch-trigger').removeClass('touch-disabled');
     }
-}
+};
 
 
 //-----------------------------------------------------
@@ -83,7 +75,7 @@ function resizeCommunityPageForLandscape(){
 
     $('#communityInspectionBlock').addClass('forty-percent-width');
     $('#communityInspectionBlock').addClass('first-column-position');
-};
+}
 function resizeCommunityPageForPortrait(){
     $('#communityInspectionBlock').removeClass('forty-percent-width');
     $('#communityInspectionBlock').removeClass('first-column-position');
@@ -92,18 +84,18 @@ function resizeCommunityPageForPortrait(){
 
     $('#communityInspectionBlock').addClass('bottom-anchored');
     $('#communityInspectionColumn').addClass('fullwidth padded');
-};
+}
 
 function resizeProfilePageForLandscape(){
     //TODO: set userProfileCardExtended width the same as userProfileCard
     //$('#userProfileCard').addClass('userProfileCard-landscape-layout');
     //$('#userProfileCard').removeClass('userProfileCard-portrait-layout');
-};
+}
 function resizeProfilePageForPortrait(){
     //TODO: set userProfileCardExtended width the same as userProfileCard
     //$('#userProfileCard').addClass('userProfileCard-portrait-layout');
     //$('#userProfileCard').removeClass('userProfileCard-landscape-layout');
-};
+}
 
 
 
@@ -127,7 +119,7 @@ Template.jsonContentPanelTemplate.jsonData = function(){
 
 monitorDropbox = function(){
     try{
-        if(Meteor.user().profile.dropbox == null){
+        if(Meteor.user().profile.dropbox === null){
             return false;
         }else{
             Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);

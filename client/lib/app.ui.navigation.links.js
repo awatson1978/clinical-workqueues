@@ -4,7 +4,7 @@ hidePages = function(){
     }catch(err){
         console.log(err);
     }
-}
+};
 
 showPage = function(page){
     console.log('showPage(' + page + ');');
@@ -23,7 +23,7 @@ showPage = function(page){
     }catch(err){
         console.log(err);
     }
-}
+};
 showHomePage = function(){
     console.log('showHomePage();');
     try{
@@ -36,12 +36,12 @@ showHomePage = function(){
     }catch(err){
         console.log(err);
     }
-}
+};
 showCurrentSessionPage = function(){
     console.log('showCurrentSessionPage();');
     try{
         if(Meteor.userId()){
-            if(Session.get('current_page') != null){
+            if(Session.get('current_page') !== null){
                 showPage(Session.get('current_page'));
             }else{
                 showPage("#workqueuesPage");
@@ -52,7 +52,7 @@ showCurrentSessionPage = function(){
     }catch(err){
         console.log(err);
     }
-}
+};
 parseBreadCrumbs = function(page){
     try{
         switch(page){
@@ -68,6 +68,6 @@ parseBreadCrumbs = function(page){
     }catch(err){
         console.log(err);
     }
-}
+};
 
 

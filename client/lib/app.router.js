@@ -7,7 +7,7 @@ var TodosRouter = Backbone.Router.extend({
     main: function (list_id) {
         // cordova wants to manually specify index.html
         // and sometimes it borks the route on safari browsers
-        if(list_id == "index.html"){
+        if(list_id === "index.html"){
             Session.set("list_id", null);
             Session.set("tag_filter", null);
         }else{
@@ -19,4 +19,4 @@ var TodosRouter = Backbone.Router.extend({
         this.navigate(list_id, true);
     }
 });
-Router = new TodosRouter;
+Router = new TodosRouter();

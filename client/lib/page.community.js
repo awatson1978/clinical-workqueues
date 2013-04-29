@@ -27,7 +27,7 @@ Template.communityPageTemplate.events({
         Meteor.flush();
     },
     'click #communitySearchInput': function(evt,tmpl){
-        if($('#communitySearchInput').val() == 'search community members'){
+        if($('#communitySearchInput').val() === 'search community members'){
             $('#communitySearchInput').val('');
         }
     }
@@ -45,7 +45,7 @@ Template.communityInspectionColumn.rendered = function(){
     log_event("Template.communityInspectionColumn.rendered",LogLevel.Signpost,this);
 };
 Template.communityInspectionColumn.search_text_color = function(){
-    if(Session.get('community_members_filter') == null){
+    if(Session.get('community_members_filter') === null){
         return "lightgray";
     }else{
         return "";
@@ -64,20 +64,20 @@ Template.userQuickViewCard.user_id = function () {
     }else{
         return false;
     }
-}
+};
 Template.userQuickViewCard.user_name = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     return user.profile.name;
-}
+};
 Template.userQuickViewCard.user_email = function () {
     var user = Meteor.users.findOne({ _id: Session.get('selected_community_member') });
     if(user.emails){
         return user.emails.address;
     }
-}
+};
 Template.userQuickViewCard.user_avatar = function () {
     return Session.get('selected_community_member_avatar_path');
-}
+};
 
 //--------------------------------------------------------------------
 // taskDetailCardTemplate
@@ -86,11 +86,6 @@ Template.userQuickViewCard.user_avatar = function () {
 
 Template.communityInspectionColumn.isBroadcastRecipient = function(){
     var isRecipient = false;
-    //    try{
-    //        Meteor.user().profile.pushRecipients.contains(Session.get('selected_community_member'));
-    //    }catch{
-    //
-    //    }
     if(isRecipient){
         return "";
     }else{
@@ -161,12 +156,6 @@ Template.userItemTemplate.events({
     },
     'click .transfer-icon': function (e) {
         setActiveCollaborator(this._id);
-    },
-    'click .collaborator-icon': function (e) {
-        //alert("collaborator: " + JSON.stringify(this));
-    },
-    'click .carewatch-icon': function (e) {
-        //alert("carewatch: " + JSON.stringify(this));
     }
 });
 Template.userItemTemplate.userEmail = function () {
@@ -174,78 +163,19 @@ Template.userItemTemplate.userEmail = function () {
     if(this.emails){
         return this.emails.address;
     }else{
-        return 'Emails not available.'
+        return 'Emails not available.';
     }
-    //return JSON.stringify(this);
 };
 Template.userItemTemplate.userName = function () {
     log_event('Template.userItemTemplate.userName', LogLevel.Trace, this);
     if(this.emails){
         return this.profile.name;
     }else{
-        return 'User name not available.'
+        return 'User name not available.';
     }
 };
-var isCarewatched = false;
-//Template.userItemTemplate.isCarewatched = function () {
-//    try{
-//        isCarewatched = false;
-//        for(var i = 0; i < Meteor.user().profile.carewatch.length; i++) {
-//            if (Meteor.user().profile.carewatch[i]._id == this._id) {
-//                isCarewatched = true;
-//            }
-//        }
-//        if(isCarewatched){
-//            return "red";
-//        }else{
-//            return "gray";
-//        }
-//    }
-//    catch(err){
-//        catch_error('Template.userItemTemplate.isCarewatched', err, LogLevel.Error, this);
-//    }
-//};
-//var isCollaborator = false;
-//Template.userItemTemplate.isCollaborator = function () {
-//    try{
-//        isCollaborator = false;
-//        for(var i = 0; i < Meteor.user().profile.collaborators.length; i++) {
-//            if (Meteor.user().profile.collaborators[i]._id == this._id) {
-//                isCollaborator = true;
-//            }
-//        }
-//        if(isCollaborator){
-//            return "red";
-//        }else{
-//            return "gray";
-//        }
-//    }
-//    catch(err){
-//        catch_error('Template.userItemTemplate.isCollaborator', err, LogLevel.Error, this);
-//    }
-//};
-//Template.userItemTemplate.isActiveCollaborator = function () {
-//    try{
-//        //TODO:  check Meteor.user().profile.activeCollaboator and return "selected" or null
-//        if(Meteor.user().profile.activeCollaborator == this._id){
-//            return "red";
-//        }else{
-//            return "gray";
-//        }
-//    }
-//    catch(err){
-//        catch_error('Template.userItemTemplate.isActiveCollaborator', err, LogLevel.Error, this);
-//    }
-//};
 Template.userItemTemplate.userImage = function () {
     try{
-//        log_event('Template.userItemTemplate.user_image', LogLevel.Trace, this);
-//        var src = "images/placeholder-240x240.gif";
-//        if(this.profile){
-//            src = $.trim(this.profile.avatar);
-//        }
-//        log_event('profile avatar src: ' + src, LogLevel.Info, this);
-//        return src;
         if(this.services && this.services.facebook){
             return "http://graph.facebook.com/" + this.services.facebook.id + "/picture/?type=large";
         }else if(this.profile){
@@ -277,27 +207,27 @@ toInteger = function(number){
 setActiveCollaborator = function(selectedUserId) {
     Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
     Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator':selectedUserId }});
-}
+};
 toggleActiveCollaborator = function(selectedUserId) {
-    if (selectedUserId == Meteor.user().profile.activeCollaborator) {
+    if (selectedUserId === Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
         setActiveCollaborator(selectedUserId);
     }
-}
+};
 toggleCollaboratorsMembership = function(selectedUserId) {
-    if (selectedUserId == Meteor.user().profile.activeCollaborator) {
+    if (selectedUserId === Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
         Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
     }
-}
+};
 toggleCarewatchMembership = function(userId) {
-    if (selectedUserId == Meteor.user().profile.activeCollaborator) {
+    if (selectedUserId === Meteor.user().profile.activeCollaborator) {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator': selectedUserId }});
     } else {
         Meteor.users.update(Meteor.userId(), {$unset:{ 'profile.activeCollaborator':'' }});
         Meteor.users.update(Meteor.userId(), {$set:{ 'profile.activeCollaborator': selectedUserId }});
     }
-}
+};

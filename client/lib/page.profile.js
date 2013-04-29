@@ -152,7 +152,7 @@ Template.userCardTemplate.user_name = function () {
         if(Meteor.user().profile){
             return Meteor.user().profile.name;
         }else{
-            return "User profile not created yet."
+            return "User profile not created yet.";
         }
     }
     catch(err){
@@ -164,7 +164,7 @@ Template.userCardTemplate.user_id = function () {
         if(Meteor.user()){
             return Meteor.user()._id;
         }else{
-            return "UserId not found."
+            return "UserId not found.";
         }
     }
     catch(err){
@@ -190,7 +190,7 @@ Template.userCardTemplate.user_birthdate = function () {
         if(Meteor.user().profile){
             return Meteor.user().profile.dateOfBirth;
         }else{
-            return "User profile not created yet."
+            return "User profile not created yet.";
         }
     }
     catch(err){
@@ -202,7 +202,7 @@ Template.userCardTemplate.user_avatar = function () {
         if(Meteor.user().profile){
             return Meteor.user().profile.avatar;
         }else{
-            return "User profile not created yet."
+            return "User profile not created yet.";
         }
     }
     catch(err){
