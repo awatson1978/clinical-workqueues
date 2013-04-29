@@ -2,7 +2,6 @@ detectOrientation();
 window.onorientationchange = detectOrientation;
 function detectOrientation(){
     console.log('detecting orientation: ' + window.orientation);
-    //resizeCommunityPageForLandscape();
 
     if(typeof window.onorientationchange !== 'undefined'){
         if ( window.orientation === 0 ) {
@@ -20,9 +19,6 @@ function detectOrientation(){
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
             }
-            else if(Session.equals('current_page', "#profilePage")){
-                resizeProfilePageForLandscape();
-            }
             else if(Session.equals('current_page,"#workqueuesPage')){
                 setSidebarVisibility();
             }
@@ -30,9 +26,6 @@ function detectOrientation(){
         else if ( window.orientation === -90 ) {
             if(Session.equals('current_page', "#communityPage")){
                 resizeCommunityPageForLandscape();
-            }
-            else if(Session.equals('current_page', "#profilePage")){
-                resizeProfilePageForLandscape();
             }
             else if(Session.equals('current_page,"#workqueuesPage')){
                 setSidebarVisibility();
@@ -86,18 +79,6 @@ function resizeCommunityPageForPortrait(){
     $('#communityInspectionColumn').addClass('fullwidth padded');
 }
 
-function resizeProfilePageForLandscape(){
-    //TODO: set userProfileCardExtended width the same as userProfileCard
-    //$('#userProfileCard').addClass('userProfileCard-landscape-layout');
-    //$('#userProfileCard').removeClass('userProfileCard-portrait-layout');
-}
-function resizeProfilePageForPortrait(){
-    //TODO: set userProfileCardExtended width the same as userProfileCard
-    //$('#userProfileCard').addClass('userProfileCard-portrait-layout');
-    //$('#userProfileCard').removeClass('userProfileCard-landscape-layout');
-}
-
-
 
 
 
@@ -138,6 +119,7 @@ monitorDropbox = function(){
 Template.dropboxAlertTemplate.events({
     'click #dropboxAlertCard':function(){
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
+        Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
     }
 });
 Template.dropboxAlertTemplate.alert_text = function(){

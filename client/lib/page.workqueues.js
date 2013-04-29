@@ -61,7 +61,7 @@ Template.workqueuesPageTemplate.resized = function(){
 // TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
 Template.workqueuesPageTemplate.receivedNewAlert = function(){
     try{
-        if(Meteor.user().profile.dropbox === null){
+        if(Meteor.user().profile.dropbox == null){
             return false;
         }else{
             return true;
