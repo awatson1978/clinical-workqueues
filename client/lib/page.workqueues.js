@@ -628,5 +628,3 @@ Template.taskDetailCardTemplate.adding_tag = function(){
 };
 
 
-
-

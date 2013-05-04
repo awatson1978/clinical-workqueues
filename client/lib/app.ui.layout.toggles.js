@@ -32,15 +32,19 @@ toggleSession = function(sessionVariable){
 
 
 toggleSidebarVisibility = function(){
-    // we don't want to display the sidebar on narrow pages
-    // there just isn't enough room
-    if(window.innerWidth > 767){
-        if(Session.get('show_sidebar_panel')){
-            Session.set('show_sidebar_panel',false);
-            layoutAppWithoutSidebar();
-        }else{
-            Session.set('show_sidebar_panel',true);
-            layoutAppWithSidebar();
+    // only toggle the sidebar if a user is logged in
+    // it doesn't do anything on the guest page, except freeze the interface
+    if(Meteor.userId()){
+        // we don't want to display the sidebar on narrow pages
+        // there just isn't enough room
+        if(window.innerWidth > 767){
+            if(Session.get('show_sidebar_panel')){
+                Session.set('show_sidebar_panel',false);
+                layoutAppWithoutSidebar();
+            }else{
+                Session.set('show_sidebar_panel',true);
+                layoutAppWithSidebar();
+            }
         }
     }
 };

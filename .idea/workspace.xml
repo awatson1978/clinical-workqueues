@@ -2,701 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/linker.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/obj.target/validation/src/validation.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/obj.target/xor/src/xor.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/validation.node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/xor.node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/Release/bson.node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/Release/linker.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/Release/obj.target/bson/ext/bson.o" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/win32/ia32/bson.node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/win32/x64/bson.node" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/data/test_gs_weird_bug.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine_favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/ada.lovelace.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/alan.turing.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/alexis.carrel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/barbara.mcclintock.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/carl.gauss.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/claude.shannon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/edward.doisy.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/edward.tatum.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/elizabeth.blackwell.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/florence.nightingale.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/galen.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/george.beadle.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/george.wald.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/george.washington.carver.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/gertrude.elion.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/grace.hopper.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/hermann.muller.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/hygea.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/james.watson.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/john.eccles.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/kurt.vonnegut.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/madam.curie.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/maria.mayer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/mary.shelley.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/mother.teresa.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/nicola.tesla.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/octavia.butler.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/rachel.carson.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/rita.levi.montalcini.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/roger.sperry.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/rosalind.franklin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/avatars/samuel.clemens.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/3OF9_NEW.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ChalkDust.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ColaborateBold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ColaborateLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ColaborateMedium.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ColaborateRegular.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ColaborateThin.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ExistenceLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ExistenceStencilLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ExistenceUnicaseLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/Freehand.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/HarabaraHand.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ItAintRocketScience.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ModernPictographs.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/PrintClearly.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/PrintClearlyBold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/PrintClearlyDashed.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandBold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandBoldOblique.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandBook.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandBookOblique.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandDash.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandLight.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/QuicksandLightOblique.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/ShelterMe.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/WildScript.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/fonts/Windsong.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Allergy_Vials.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Ambulance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Baby_Bottle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Baby_Carriage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Bacteria.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Band_Aid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Bandage_Roll.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Blood_Bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Blood_Pressure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Brain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/CT_Scan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Chemicals.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Conception.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/DNA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Dental_Chair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Dentistry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Donar_List.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Drinking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Drinking_and_Smoking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/EKG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Ear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Emergency_Room.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Eye_Ball.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Eye_Chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/First_Aid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Group_Children.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Group_Doctors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Group_Doctors_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Group_Medical_Team.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Group_Patients.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Group_Surgical_Team.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Health_Meter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Heart-Orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Heart_Donor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Herb_Mix.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Hospital.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Hospital_Bed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Human_Anatomy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/ID_Bracelet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/IV_Bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Inhaler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Injury.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Insurance_Plan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Intestine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Labs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Liver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/MRI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Database.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Insurance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Invoice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Knowledge_Base.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Office.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Report.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medical_Symbol.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medicine_Liquid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Medicine_and_Water.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pager.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pediatrics.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Petri_Dish.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pharmacy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pill.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pills.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pills_Strip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Poison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Pregnant.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Prescription.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Qualifications.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Safety_Glasses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Safety_Pin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Sanitation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Sanitation_Gloves.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Scalpel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Skin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Skull.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Smoking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Sperm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Stethoscope.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Admitted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Air_Transport.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Discharged.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Hospital.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Men.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Restrooms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Smoking_Prohibited.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Transferred.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Symbol_Women.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Syringe_and_Vial.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Toddler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Tooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Transfusion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Urine_Sample.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Baby_Boy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Baby_Girl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Deceased_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Dentist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Doctor_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Doctor_Female_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Doctor_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Intensive_Care_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Intern_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Nurse_Army_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Nurse_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Nurse_Female_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Patient_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Patient_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/User_Surgeon_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Vial_and_Pills.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Virus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Walker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Water.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Wheel_Chair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Xray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Xray_Broken_Bone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Xray_Mamography.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Xray_Tooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/icons/Zygote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Allergy_Vials.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Ambulance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Baby_Bottle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Baby_Carriage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Bacteria.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Band_Aid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Bandage_Roll.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Blood_Bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Blood_Pressure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Brain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/CT_Scan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Chemicals.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Conception.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/DNA.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Dental_Chair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Dentistry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Donar_List.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Drinking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Drinking_and_Smoking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/EKG.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Ear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Emergency_Room.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Eye_Ball.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Eye_Chart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/First_Aid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Group_Children.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Group_Doctors.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Group_Doctors_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Group_Medical_Team.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Group_Patients.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Group_Surgical_Team.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Health_Meter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Heart-Orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Heart.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Heart_Donor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Herb_Mix.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Hospital.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Hospital_Bed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Human_Anatomy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/ID_Bracelet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/IV_Bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Inhaler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Injury.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Insurance_Plan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Intestine.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Labs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Liver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/MRI.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Bag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Database.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Insurance.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Invoice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Knowledge_Base.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Office.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Report.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medical_Symbol.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medicine_Liquid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Medicine_and_Water.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pager.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pediatrics.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Petri_Dish.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pharmacy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pill.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pills.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pills_Strip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Poison.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Pregnant.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Prescription.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Qualifications.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Safety_Glasses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Safety_Pin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Sanitation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Sanitation_Gloves.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Scalpel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Skin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Skull.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Smoking.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Sperm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Stethoscope.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Admitted.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Air_Transport.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Discharged.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Hospital.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Men.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Restrooms.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Smoking_Prohibited.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Transferred.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Symbol_Women.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Syringe_and_Vial.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Toddler.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Tooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Transfusion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Urine_Sample.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Baby_Boy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Baby_Girl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Deceased_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Dentist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Doctor_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Doctor_Female_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Doctor_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Intensive_Care_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Intern_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Nurse_Army_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Nurse_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Nurse_Female_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Patient_Female.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Patient_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/User_Surgeon_Male.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Vial_and_Pills.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Virus.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Walker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Water.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Wheel_Chair.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Xray.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Xray_Broken_Bone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Xray_Mamography.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Xray_Tooth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/iconsbw/Zygote.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/ajax-loader.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/april-screenshot-alpha-launch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/close.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/pentasyllabic.logo.square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/pentasyllabic.logo.square.transparent.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/placeholder-240x240.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/uuid-for-beta-testing-program.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/visionStatement/day-of-glass-app-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/visionStatement/day-of-glass-app-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/visionStatement/day-of-glass-money-shot-34ratio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/visionStatement/day-of-glass-money-shot.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/images/visionStatement/day-of-glass-screenshot.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/packages/audio-click/audio/click1.wav" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/packages/cordova-phonegap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-base/accounts_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-base/accounts_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-facebook/facebook_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-facebook/facebook_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-famous-dead-people/bootstrap.users.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-oauth-helper/oauth_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-oauth-helper/oauth_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-oauth2-helper/oauth2_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-oauth2-helper/oauth2_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-password/email_templates.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-password/password_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-password/password_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/accounts-urls/url_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/backbone/backbone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/deps/deps.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/ejson/base64.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/ejson/ejson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/email.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/lib/dkim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/lib/mailcomposer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/lib/punycode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/lib/urlfetch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/content-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/doc.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/mime-functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/node_modules/mimelib-noiconv/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/test/dkim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/test/mailcomposer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/test/test_private.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/test/test_public.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/mailcomposer/test/textfile.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/lib/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/lib/pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/lib/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/lib/starttls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/cert/cert.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/cert/key.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/examples/smtp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/lib/mockup.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/lib/rai.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/lib/starttls.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/rai/test/rai.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/xoauth2/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/xoauth2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/xoauth2/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/node_modules/xoauth2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/test/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/test/pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/test/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/simplesmtp/test/testmessage.eml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/lib/constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/lib/readable_streambuffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/lib/streambuffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/lib/writable_streambuffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/test/fixtures.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/test/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/test/readable_streambuffer.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/email/node_modules/stream-buffers/test/writable_streambuffer.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/handlebars/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/hipaa-audit-log/hipaa.logging.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/http/httpcall_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/http/httpcall_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/json/json2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/crossbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/livedata_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/livedata_connection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/livedata_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/.pidfile.pid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/COPYING" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/Changelog" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/LICENSE-MIT-SockJS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/echo/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/echo/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/echo/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/echo/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/express-3.x/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/express-3.x/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/express-3.x/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/express/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/express/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/express/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/haproxy.cfg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/multiplex/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/multiplex/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/multiplex/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/multiplex/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/test_server/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/test_server/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/test_server/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/test_server/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/examples/test_server/sockjs_app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/chunking-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/iframe.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/sockjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/trans-eventsource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/trans-htmlfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/trans-jsonp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/trans-websocket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/trans-xhr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/transport.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/lib/webjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/CHANGELOG.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/README.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/examples/autobahn_client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/examples/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/examples/haproxy.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/examples/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/examples/sse.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/examples/ws.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/eventsource.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api/event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api/event_target.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/draft75_parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/draft76_parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/hybi_parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/hybi_parser/handshake.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/hybi_parser/stream_reader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/faye/websocket/client_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/faye/websocket/draft75parser_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/faye/websocket/draft76parser_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/faye/websocket/hybi_parser_spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/runner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/server.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/faye-websocket/spec/server.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/benchmark/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/benchmark/bench.gnu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/benchmark/bench.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/benchmark/benchmark-native.c" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/benchmark/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/test/compare_v1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/test/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/node_modules/node-uuid/uuid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/sockjs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/binding.gyp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/.deps/Release/obj.target/validation/src/validation.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/.deps/Release/obj.target/xor/src/xor.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/.deps/Release/validation.node.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/Release/.deps/Release/xor.node.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/binding.Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/config.gypi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/gyp-mac-tool" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/validation.target.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/build/xor.target.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/install.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/Constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/Validation.fallback.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/Validation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketClient.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketConnection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketFrame.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketRouter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketRouterRequest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/WebSocketServer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/websocket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/xor.fallback.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/lib/xor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/src/validation.cc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/src/xor.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/vendor/FastBufferList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/vendor/node-ctype/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/node_modules/websocket/vendor/node-ctype/ctio-faster.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/server_convenience.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/stream_client_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/stream_client_nodejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/stream_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/livedata/writefence.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/logging/logging.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/dynamics_nodejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/errors.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/fiber_helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/server_environment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/timers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/url_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/meteor/url_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/minimongo/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/minimongo/minimongo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/minimongo/modify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/minimongo/objectid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/minimongo/selector.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/collection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/local_collection_driver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/mongo_driver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/install.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/admin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/collection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/base_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/db_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/delete_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/get_more_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/insert_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/kill_cursor_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/query_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/commands/update_command.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/connection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/connection_pool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/connection_utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/mongos.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/read_preference.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/repl_set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/strategies/ping_strategy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/strategies/statistics_strategy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/connection/url_parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/cursor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/cursorstream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/db.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/gridfs/chunk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/gridfs/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/gridfs/gridstore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/gridfs/readstream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/mongo_client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/responses/mongo_reply.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/lib/mongodb/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/benchmarks/benchmarks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/binding.gyp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/browser_build/bson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/browser_build/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/Release/.deps/Release/bson.node.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/Release/.deps/Release/obj.target/bson/ext/bson.o.d" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/binding.Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/bson.target.mk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/config.gypi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build/gyp-mac-tool" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/build_browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/builderror.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/bson.cc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/bson.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/ext/wscript" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/binary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/binary_parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/bson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/db_ref.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/double.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/float_parser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/long.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/max_key.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/min_key.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/objectid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/lib/bson/timestamp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/browser/browser_example.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/browser/bson_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/browser/nodeunit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/browser/suite2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/browser/suite3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/browser/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/bson_array_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/bson_parser_comparision_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/bson_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/bson_typed_array_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/test_full_bson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/to_bson_test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/test/node/tools/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/tools/gleak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/MIT.LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine-html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/node_modules/bson/tools/jasmine-1.1.0/jasmine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/node_modules/mongodb/upload.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/mongo-livedata/remote_collection_driver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/ordered-dict/ordered_dict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/past/past.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/random/random.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/routepolicy/routepolicy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/spiderable/spiderable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/srp/biginteger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/srp/sha256.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/srp/srp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/startup/startup_server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/packages/underscore/underscore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/server/bootstrap.icons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/server/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/app/server/publish.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/dependencies.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/server/.bundle_version.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/server/server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static/packages/detect-browser/unsupported.browser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static_cacheable/30cca691a8172949d179ce170eea065a9f70faa4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.demeteorized/static_cacheable/91d86687ef61e11dac7b6b69ef36f660c89e3f1d.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova-android-2.4.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova-ios-2.4.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova-webos-2.4.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova-windows8-2.4.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/cordova.initialization.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/packages/cordova-phonegap/smart.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.scrap/jquery.jgestures.js" afterPath="$PROJECT_DIR$/client/lib/helpers/jquery.jgestures.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/cordova-phonegap" afterPath="$PROJECT_DIR$/packages/cordova-phonegap" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays" afterPath="$PROJECT_DIR$/packages/reactive-overlays" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/app.ui.layout.toggles.js" afterPath="$PROJECT_DIR$/client/lib/app.ui.layout.toggles.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" afterPath="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.workqueues.js" afterPath="$PROJECT_DIR$/client/lib/page.workqueues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/page.guest.less" afterPath="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" afterPath="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/page.webbrowser.html" afterPath="$PROJECT_DIR$/client/templates/authenticated.access/page.webbrowser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -715,40 +33,31 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.2676282">
+    <splitter split-orientation="horizontal" split-proportion="0.55496186">
       <split-first>
         <leaf>
-          <file leaf-file-name="page.guest.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
+          <file leaf-file-name="app.ui.layout.toggles.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/app.ui.layout.toggles.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="3" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
+                <state line="41" column="56" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="page.workqueues.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="page.workqueues.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="311" column="33" selection-start="9817" selection-end="9817" vertical-scroll-proportion="0.5943001">
+                <state line="585" column="27" selection-start="18726" selection-end="18726" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jquery.jgestures.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/helpers/jquery.jgestures.js">
+          <file leaf-file-name="app.layout.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="349" column="30" selection-start="12817" selection-end="12817" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.ui.navigation.links.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/lib/app.ui.navigation.links.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="14" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
+                <state line="23" column="27" selection-start="751" selection-end="751" vertical-scroll-proportion="0.30363035">
                   <folding />
                 </state>
               </provider>
@@ -758,48 +67,37 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/templates/authenticated.access/page.profile.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="64" column="44" selection-start="3255" selection-end="3255" vertical-scroll-proportion="-26.24">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page.guest.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="94" column="273" selection-start="6249" selection-end="6249" vertical-scroll-proportion="0.6518152">
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="lists.card.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="48" column="1" selection-start="754" selection-end="754" vertical-scroll-proportion="-18.538462">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="pages.community.less" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="72" column="21" selection-start="1256" selection-end="1256" vertical-scroll-proportion="-9.230769">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="84" column="0" selection-start="2723" selection-end="2723" vertical-scroll-proportion="0.0">
+                <state line="158" column="19" selection-start="5287" selection-end="5287" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.webbrowser.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/authenticated.access/page.webbrowser.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="11" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.1210084">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pages.workqueues.less" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="115" column="23" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.workqueues.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="125" column="61" selection-start="4701" selection-end="4701" vertical-scroll-proportion="-80.0">
                   <folding />
                 </state>
               </provider>
@@ -820,29 +118,29 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.scrap/.accounts-collaborators/collaborators.js" />
-        <option value="$PROJECT_DIR$/.scrap/.acounts-carewatch/carewatch.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.community.js" />
-        <option value="$PROJECT_DIR$/client/lib/app.ui.layout.js" />
         <option value="$PROJECT_DIR$/server/publish.js" />
         <option value="$PROJECT_DIR$/client/subscriptions.js" />
-        <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
-        <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
+        <option value="$PROJECT_DIR$/client/lib/app.ui.layout.toggles.js" />
+        <option value="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
         <option value="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/page.guest.less" />
+        <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
+        <option value="$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html" />
         <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
-        <option value="$PROJECT_DIR$/client/templates/public.access/page.guest.html" />
+        <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/index.js" />
+        <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
+        <option value="$PROJECT_DIR$/client/templates/authenticated.access/page.webbrowser.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="41" />
     <option name="y" value="48" />
-    <option name="width" value="1582" />
+    <option name="width" value="1575" />
     <option name="height" value="1373" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -871,6 +169,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -977,6 +276,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="authenticated.access" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinical-workqueues" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1005,7 +362,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1021,16 +377,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="408" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1202" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1202" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="408" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="404" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1106,14 +462,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="48" width="1582" height="1373" extended-state="0" />
+    <frame x="41" y="48" width="1575" height="1373" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23962411" sideWeight="0.9683582" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2404072" sideWeight="0.9980952" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21112517" sideWeight="0.76037586" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16825397" sideWeight="0.7595928" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979593" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1194,48 +550,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.layout.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="2" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="6" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="58" selection-start="1139" selection-end="1139" vertical-scroll-proportion="-18.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/authenticated.access/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="44" selection-start="3255" selection-end="3255" vertical-scroll-proportion="-26.24">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.community.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="21" selection-start="1256" selection-end="1256" vertical-scroll-proportion="-9.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.demeteorized/static_cacheable/91d86687ef61e11dac7b6b69ef36f660c89e3f1d.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="93030" selection-start="93030" selection-end="93030" vertical-scroll-proportion="0.0">
@@ -1246,13 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="9" selection-start="2822" selection-end="2822" vertical-scroll-proportion="0.8988764">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/lists.card.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="1" selection-start="754" selection-end="754" vertical-scroll-proportion="-18.538462">
@@ -1260,25 +567,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.navigation.links.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="655" selection-end="655" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2723" selection-end="2723" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="361" selection-end="361" vertical-scroll-proportion="-3.8620975">
-          <folding />
-        </state>
+        <state line="13" column="5" selection-start="361" selection-end="361" vertical-scroll-proportion="-3.8620975" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/stylesheets/page.guest.less">
@@ -1290,24 +581,85 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/helpers/jquery.jgestures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="30" selection-start="12817" selection-end="12817" vertical-scroll-proportion="0.0">
+        <state line="349" column="30" selection-start="12817" selection-end="12817" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="61" selection-start="451" selection-end="451" vertical-scroll-proportion="-5.12">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.navigation.links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="16" selection-start="423" selection-end="423" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.layout.toggles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="56" selection-start="1278" selection-end="1278" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/syntax.custom.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="8" selection-start="909" selection-end="909" vertical-scroll-proportion="0.25315392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="23" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="19" selection-start="5287" selection-end="5287" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.660066">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="311" column="33" selection-start="9817" selection-end="9817" vertical-scroll-proportion="0.5943001">
+        <state line="585" column="27" selection-start="18726" selection-end="18726" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/public.access/page.guest.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="273" selection-start="6249" selection-end="6249" vertical-scroll-proportion="0.6518152">
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="23" column="27" selection-start="751" selection-end="751" vertical-scroll-proportion="0.30363035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="61" selection-start="4701" selection-end="4701" vertical-scroll-proportion="-80.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/authenticated.access/page.webbrowser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.1210084">
+          <folding />
         </state>
       </provider>
     </entry>

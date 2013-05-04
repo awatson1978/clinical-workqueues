@@ -127,7 +127,7 @@ Template.footerBarTemplate.events({
     },
     'click .sort-starred': function(){
         if(Session.get('sort_workqueues_starred')){
-            Session.set('sort_workqueues_completed', true);
+            Session.set('sort_workqueues_completed', false);
             Session.set('sort_workqueues_starred', false);
             Session.set('sort_workqueues_alphabetically', false);
         }else{
@@ -153,10 +153,20 @@ Template.footerBarTemplate.events({
         //this just sets a mask over the entire application; useful for testing, but not much else
         //Session.set('show_reactive_overlay', true);
         showTutorialOverlay('#workqueuesPageTutorial');
+    },
+    'click .webviewer': function(){
+        //Session.set('current_page', 'webBrowserPage');
+        showPage('#webBrowserPage');
+        //toggleSession('');
+        //alert('foo!');
     }
 });
 
-Template.footerBarTemplate.sortCompletedSelected = function(){
+
+//-------------------------------------------------------------------------
+// Add the 'selected-font' class to the sort buttons
+
+Template.workqueuesSortingTemplate.sortCompletedSelected = function(){
     try{
         if(Session.get('sort_workqueues_completed')){
             return 'selected-font';
@@ -168,7 +178,7 @@ Template.footerBarTemplate.sortCompletedSelected = function(){
         console.log(err);
     }
 };
-Template.footerBarTemplate.sortStarredSelected = function(){
+Template.workqueuesSortingTemplate.sortStarredSelected = function(){
     try{
         if(Session.get('sort_workqueues_starred')){
             return 'selected-font';
@@ -179,7 +189,7 @@ Template.footerBarTemplate.sortStarredSelected = function(){
         console.log(err);
     }
 };
-Template.footerBarTemplate.sortAlphabeticallySelected = function(){
+Template.workqueuesSortingTemplate.sortAlphabeticallySelected = function(){
     try{
         if(Session.get('sort_workqueues_alphabetically')){
             return 'selected-font';
@@ -192,6 +202,6 @@ Template.footerBarTemplate.sortAlphabeticallySelected = function(){
 };
 
 
-
+//-------------------------------------------------------------------------
 // initialize cordova phonegap and mobile hardware support
 app.initialize(window);

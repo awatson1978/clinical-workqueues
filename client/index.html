@@ -17,10 +17,12 @@
             <li class="pentasyllabicLogoListItem">
                 <img onclick='toggleSidebarVisibility();' class="pentasyllabicLogo" src="/images/pentasyllabic.logo.square.transparent.png">
             </li>
-            <li><a id="appTitle" onclick='showPage("#workqueuesPage");' href="#">clinical-workqueues.pentasyllabic.com</a></li>
+            <li><a id="appTitle" onclick='showHomePage();' href="#">clinical-workqueues.pentasyllabic.com</a></li>
         </ul>
         <ul class="nav-bar header-nav-bar-right">
+            {{#if currentUser }}
             <li><a href="#" onclick='showPage("#profilePage"); Session.set("json_content", JSON.stringify(Meteor.user()));'><span class="largish profile-icon pictograph">k  </span></a></li>
+            {{/if}}
             <li><a href="#">{{loginButtons align="right"}}</a></li>
         </ul>
     </div>
@@ -32,16 +34,11 @@
         <ul class="nav-bar footer-nav-bar">
             <!--<li><a href="#" onclick='showPage("#workqueuesPage");'><span class="pictographs">4  </span>Workqueues</a></li>-->
 
-
-            <!-- //TODO:  extract sort button into workqueuesSortFooterTemplate -->
             <!-- //TODO:  trigger workqueuesSortFooterTemplate to only display on workqueuesPage -->
-            <li class="sort-completed"><a href="#"><span class="largish {{sortCompletedSelected}} pictographs">%</span></a></li>
-            <li class="sort-starred"><a href="#"><span class="largish {{sortStarredSelected}} pictographs">*</span></a></li>
-            <li class="sort-alphabetical"><a href="#"><span class="largish {{sortAlphabeticallySelected}} pictographs">4</span></a></li>
-
+            {{> workqueuesSortingTemplate }}
         </ul>
         <ul class="nav-bar footer-nav-bar-right">
-            <!-- //TODO:  add webBrowserVisibility icon and appropriate toggles -->
+            <li class="webviewer"><a href="#" onclick=''><span class="largish pictograph">W</span></a></li>
             <li class="tutorial"><a href="#" onclick=''><span class="largish pictograph">?</span></a></li>
             <!-- //TODO:  add mobileDeviceStatus icons to listening/connected -->
             <li>{{> mobileDeviceStatus }}</li>

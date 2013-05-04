@@ -24,8 +24,8 @@ showHomePage = function(){
     console.log('showHomePage();');
     try{
         if(Meteor.userId()){
-            showCurrentSessionPage();
-            //showPage("#workqueuesPage");
+            //showCurrentSessionPage();
+            showPage("#workqueuesPage");
         }else{
             showPage("#guestPage");
         }
@@ -65,5 +65,3 @@ parseBreadCrumbs = function(page){
         console.log(err);
     }
 };
-
-
