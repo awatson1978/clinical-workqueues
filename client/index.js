@@ -41,6 +41,8 @@ Session.set("appWidth", window.innerWidth);
 Session.set('is_modal_dialog', false);
 
 
+Session.set('browser_window_location', 'http://www.google.com');
+
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
     Session.set('is_supported_browser', true);
