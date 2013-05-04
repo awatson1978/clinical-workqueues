@@ -419,6 +419,33 @@ sendToActiveCollaborator = function() {
 //----------------------------------------------------------------------
 // TASK DETAIL CARD
 
+
+Template.taskDetailCardTemplate.rendered = function(){
+    if(Session.get('show_sidebar_panel')){
+        $('#taskDetailCardBody').css('width', window.innerWidth - 240);
+        $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
+        $('.card-delete-button').css('right', 215);
+    }else{
+        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
+        $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
+        $('.card-delete-button').css('right', 21);
+    }
+    $("#taskDetailCard").bind("mousemove", function(e){
+        e.preventDefault();
+    });
+    $("#taskDetailCard").bind("swipeleft", function(){
+        sendToActiveCollaborator();
+    });
+    $("#taskDetailCard").bind("swiperight", function(){
+        sendToActiveCollaborator();
+    });
+    $("#taskDetailCard").bind("swipeleftdown swipedown swiperightdown", function(){
+        Session.set('show_task_detail_panel',false);
+        Meteor.flush();
+    });
+};
+
+
 Template.taskDetailCardTemplate.tag_list = function () {
     try{
         var selectedTodo = Todos.findOne(Session.get('selected_task_id'));
@@ -507,30 +534,6 @@ Template.taskDetailCardTemplate.events(okCancelEvents(
 
 
 
-Template.taskDetailCardTemplate.rendered = function(){
-    if(Session.get('show_sidebar_panel')){
-        $('#taskDetailCardBody').css('width', window.innerWidth - 240);
-        $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
-        $('.card-delete-button').css('right', 215);
-    }else{
-        $('#taskDetailCardBody').css('width', window.innerWidth - 40);
-        $('#taskDetailTagFooter').css('width', window.innerWidth - 240);
-        $('.card-delete-button').css('right', 21);
-    }
-    $("#taskDetailCard").bind("mousemove", function(e){
-        e.preventDefault();
-    });
-    $("#taskDetailCard").bind("swipeleft", function(){
-        sendToActiveCollaborator();
-    });
-    $("#taskDetailCard").bind("swiperight", function(){
-        sendToActiveCollaborator();
-    });
-    $("#taskDetailCard").bind("swipeleftdown swipedown swiperightdown", function(){
-        Session.set('show_task_detail_panel',false);
-        Meteor.flush();
-    });
-};
 
 
 Template.taskDetailAnchorTemplate.showTaskDetailModalMask = function(){

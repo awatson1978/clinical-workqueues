@@ -1,0 +1,2919 @@
+{
+  "load": [
+    "app/packages/underscore/underscore.js",
+    "app/packages/meteor/server_environment.js",
+    "app/packages/meteor/helpers.js",
+    "app/packages/meteor/timers.js",
+    "app/packages/meteor/errors.js",
+    "app/packages/meteor/fiber_helpers.js",
+    "app/packages/meteor/dynamics_nodejs.js",
+    "app/packages/meteor/url_server.js",
+    "app/packages/meteor/url_common.js",
+    "app/packages/deps/deps.js",
+    "app/packages/random/random.js",
+    "app/packages/json/json2.js",
+    "app/packages/ejson/ejson.js",
+    "app/packages/ejson/base64.js",
+    "app/packages/logging/logging.js",
+    "app/packages/routepolicy/routepolicy.js",
+    "app/packages/livedata/stream_client_nodejs.js",
+    "app/packages/livedata/stream_client_common.js",
+    "app/packages/livedata/stream_server.js",
+    "app/packages/ordered-dict/ordered_dict.js",
+    "app/packages/minimongo/minimongo.js",
+    "app/packages/minimongo/selector.js",
+    "app/packages/minimongo/modify.js",
+    "app/packages/minimongo/diff.js",
+    "app/packages/minimongo/objectid.js",
+    "app/packages/livedata/writefence.js",
+    "app/packages/livedata/crossbar.js",
+    "app/packages/livedata/livedata_common.js",
+    "app/packages/livedata/livedata_connection.js",
+    "app/packages/livedata/livedata_server.js",
+    "app/packages/livedata/server_convenience.js",
+    "app/packages/mongo-livedata/mongo_driver.js",
+    "app/packages/mongo-livedata/local_collection_driver.js",
+    "app/packages/mongo-livedata/remote_collection_driver.js",
+    "app/packages/mongo-livedata/collection.js",
+    "app/packages/startup/startup_server.js",
+    "app/packages/handlebars/parse.js",
+    "app/packages/past/past.js",
+    "app/packages/backbone/backbone.js",
+    "app/packages/spiderable/spiderable.js",
+    "app/packages/accounts-urls/url_server.js",
+    "app/packages/accounts-base/accounts_common.js",
+    "app/packages/accounts-base/accounts_server.js",
+    "app/packages/srp/biginteger.js",
+    "app/packages/srp/sha256.js",
+    "app/packages/srp/srp.js",
+    "app/packages/email/email.js",
+    "app/packages/accounts-password/email_templates.js",
+    "app/packages/accounts-password/password_server.js",
+    "app/packages/accounts-password/password_common.js",
+    "app/packages/accounts-oauth-helper/oauth_common.js",
+    "app/packages/accounts-oauth-helper/oauth_server.js",
+    "app/packages/accounts-oauth2-helper/oauth2_common.js",
+    "app/packages/accounts-oauth2-helper/oauth2_server.js",
+    "app/packages/http/httpcall_common.js",
+    "app/packages/http/httpcall_server.js",
+    "app/packages/accounts-facebook/facebook_common.js",
+    "app/packages/accounts-facebook/facebook_server.js",
+    "app/packages/accounts-famous-dead-people/bootstrap.users.js",
+    "app/packages/hipaa-audit-log/hipaa.logging.js",
+    "app/server/bootstrap.icons.js",
+    "app/server/bootstrap.js",
+    "app/server/publish.js",
+    "app/model.js"
+  ],
+  "manifest": [
+    {
+      "path": "static_cacheable/30cca691a8172949d179ce170eea065a9f70faa4.js",
+      "where": "client",
+      "type": "js",
+      "cacheable": true,
+      "url": "/30cca691a8172949d179ce170eea065a9f70faa4.js",
+      "size": 640283,
+      "hash": "30cca691a8172949d179ce170eea065a9f70faa4"
+    },
+    {
+      "path": "static_cacheable/91d86687ef61e11dac7b6b69ef36f660c89e3f1d.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/91d86687ef61e11dac7b6b69ef36f660c89e3f1d.css",
+      "size": 118882,
+      "hash": "91d86687ef61e11dac7b6b69ef36f660c89e3f1d"
+    },
+    {
+      "path": "static/icons/Allergy_Vials.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Allergy_Vials.png",
+      "size": 16507,
+      "hash": "e82edb3acc40f1bca74f00ccc3d7ef6112c44e60"
+    },
+    {
+      "path": "static/icons/Ambulance.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Ambulance.png",
+      "size": 21259,
+      "hash": "3314f48208599dc2086193f3582f44140fa11c7d"
+    },
+    {
+      "path": "static/icons/Baby_Bottle.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Baby_Bottle.png",
+      "size": 11167,
+      "hash": "b7d2934c2996adfb77f43ddd768de8fb3a15ad07"
+    },
+    {
+      "path": "static/icons/Baby_Carriage.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Baby_Carriage.png",
+      "size": 24542,
+      "hash": "431f700e2699ce0226c47d5d8e0df860c5bf8076"
+    },
+    {
+      "path": "static/icons/Bacteria.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Bacteria.png",
+      "size": 21928,
+      "hash": "8ee0c4c17e5a6d71da344bf3ef48c2ad0dc559dd"
+    },
+    {
+      "path": "static/icons/Band_Aid.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Band_Aid.png",
+      "size": 19606,
+      "hash": "6322f957dadc0cf6e99264b538bdb8683648b02e"
+    },
+    {
+      "path": "static/icons/Bandage_Roll.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Bandage_Roll.png",
+      "size": 15741,
+      "hash": "34be38a79aa3685745a324e7ccf0f6c55be31c5b"
+    },
+    {
+      "path": "static/icons/Blood_Bag.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Blood_Bag.png",
+      "size": 15155,
+      "hash": "2849d788e299dfa6e440c8bc9116208349e72718"
+    },
+    {
+      "path": "static/icons/Blood_Pressure.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Blood_Pressure.png",
+      "size": 21579,
+      "hash": "fc13b91f33c08ae279b496f25494eb8fec380892"
+    },
+    {
+      "path": "static/icons/Brain.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Brain.png",
+      "size": 22907,
+      "hash": "49aebca317c9970b78028f3b2fdadfd58c8f8155"
+    },
+    {
+      "path": "static/icons/Chemicals.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Chemicals.png",
+      "size": 14443,
+      "hash": "7ffde71ffccdb88df39d7e77918c1d3273279fd1"
+    },
+    {
+      "path": "static/icons/Conception.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Conception.png",
+      "size": 23737,
+      "hash": "d949c86d867a32c72f5dd0ed83dc4e8da06ff54c"
+    },
+    {
+      "path": "static/icons/CT_Scan.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/CT_Scan.png",
+      "size": 26017,
+      "hash": "cae2d3d72cf9da3884ff17354e7169511cec7188"
+    },
+    {
+      "path": "static/icons/Dental_Chair.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Dental_Chair.png",
+      "size": 19914,
+      "hash": "3041aef9c08458b62bc82c65d52eb3e1fb1da418"
+    },
+    {
+      "path": "static/icons/Dentistry.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Dentistry.png",
+      "size": 18098,
+      "hash": "268a9175f52cedf8aff1bc183ab591ab1834f617"
+    },
+    {
+      "path": "static/icons/DNA.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/DNA.png",
+      "size": 23894,
+      "hash": "3c980bd53effd780306587c278f6cbf3cbae3ce5"
+    },
+    {
+      "path": "static/icons/Donar_List.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Donar_List.png",
+      "size": 21962,
+      "hash": "34f8e45795890d78cc280378220c5d4ed3e2cfd5"
+    },
+    {
+      "path": "static/icons/Drinking.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Drinking.png",
+      "size": 17091,
+      "hash": "99a9a9e9d1d95b101adcbdd97359e4a76a240706"
+    },
+    {
+      "path": "static/icons/Drinking_and_Smoking.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Drinking_and_Smoking.png",
+      "size": 19696,
+      "hash": "ae352019a83d6a062c8f133eabd4ba988e62661d"
+    },
+    {
+      "path": "static/icons/Ear.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Ear.png",
+      "size": 21625,
+      "hash": "396f3fad905a15a7c77967e3d5d761bdbb1c0bca"
+    },
+    {
+      "path": "static/icons/EKG.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/EKG.png",
+      "size": 20453,
+      "hash": "727a1a28cdc37ceb7726e2d2ce88dd9223fc1db3"
+    },
+    {
+      "path": "static/icons/Emergency_Room.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Emergency_Room.png",
+      "size": 12002,
+      "hash": "b31d5ef803a87e7c500289ec72f86c134750c031"
+    },
+    {
+      "path": "static/icons/Eye_Ball.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Eye_Ball.png",
+      "size": 18650,
+      "hash": "af6ab19cd1187da0c6b00cc9487b6c7b8798c975"
+    },
+    {
+      "path": "static/icons/Eye_Chart.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Eye_Chart.png",
+      "size": 12604,
+      "hash": "a08090ab4d0d3b13f28a073d3fa4a897016929a1"
+    },
+    {
+      "path": "static/icons/First_Aid.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/First_Aid.png",
+      "size": 18391,
+      "hash": "3bcdfbe42cbecd39dcb04f9dc9983e8847a37fcb"
+    },
+    {
+      "path": "static/icons/Group_Children.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Group_Children.png",
+      "size": 24907,
+      "hash": "8d7a05e4d84e9b69a982e2a86bcf7b463892d5e5"
+    },
+    {
+      "path": "static/icons/Group_Doctors.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Group_Doctors.png",
+      "size": 24873,
+      "hash": "d0703bb6e303d6b805c0a4a29d0839fcc5ebd014"
+    },
+    {
+      "path": "static/icons/Group_Doctors_2.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Group_Doctors_2.png",
+      "size": 23973,
+      "hash": "93682a1e14a0922cb9d3fb33e3faec44e8e81b1a"
+    },
+    {
+      "path": "static/icons/Group_Medical_Team.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Group_Medical_Team.png",
+      "size": 21343,
+      "hash": "28404e1e9dc078260198ad441131e94f27e2c985"
+    },
+    {
+      "path": "static/icons/Group_Patients.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Group_Patients.png",
+      "size": 23178,
+      "hash": "eb308dd365fbb1d2a8471b8d1aab38d620187f9e"
+    },
+    {
+      "path": "static/icons/Group_Surgical_Team.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Group_Surgical_Team.png",
+      "size": 21665,
+      "hash": "ebb0be67201992cf9254acedcde186d0407df92c"
+    },
+    {
+      "path": "static/icons/Health_Meter.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Health_Meter.png",
+      "size": 19529,
+      "hash": "ccdcd323fddbd07030c26281d072755a9fcce5f1"
+    },
+    {
+      "path": "static/icons/Heart-Orange.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Heart-Orange.png",
+      "size": 24784,
+      "hash": "c8535533bc5e5af38574d63eb0166f7b8d045fe4"
+    },
+    {
+      "path": "static/icons/Heart.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Heart.png",
+      "size": 22132,
+      "hash": "bf686cc3316475ac74854f5df759395645faad00"
+    },
+    {
+      "path": "static/icons/Heart_Donor.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Heart_Donor.png",
+      "size": 27252,
+      "hash": "3605edc9ae81a77b5c989a2f88db69e02b611c92"
+    },
+    {
+      "path": "static/icons/Herb_Mix.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Herb_Mix.png",
+      "size": 15388,
+      "hash": "275439b307536acc4379fe65f8818378479af500"
+    },
+    {
+      "path": "static/icons/Hospital.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Hospital.png",
+      "size": 17737,
+      "hash": "8c40e65e7485bf1bd7eb62d9fd6061d32e2956e4"
+    },
+    {
+      "path": "static/icons/Hospital_Bed.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Hospital_Bed.png",
+      "size": 19050,
+      "hash": "7211509f9878ef55570e6245977e8f6043d6045d"
+    },
+    {
+      "path": "static/icons/Human_Anatomy.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Human_Anatomy.png",
+      "size": 25414,
+      "hash": "42e7e5d8f31d590a04024fe5a714da0b3e742b2d"
+    },
+    {
+      "path": "static/icons/ID_Bracelet.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/ID_Bracelet.png",
+      "size": 16799,
+      "hash": "286fe6329836337f63c9db898d1916a8555985e6"
+    },
+    {
+      "path": "static/icons/Inhaler.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Inhaler.png",
+      "size": 9861,
+      "hash": "09e59dd6f9bc9a42207b79b31af5a0615004f0f0"
+    },
+    {
+      "path": "static/icons/Injury.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Injury.png",
+      "size": 19019,
+      "hash": "a6b133313875714ffb28af59fedbe126472ba105"
+    },
+    {
+      "path": "static/icons/Insurance_Plan.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Insurance_Plan.png",
+      "size": 15096,
+      "hash": "27e7014ea6740be822d64f04b1c0c0b5c02568e8"
+    },
+    {
+      "path": "static/icons/Intestine.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Intestine.png",
+      "size": 27716,
+      "hash": "ac07bd5596753b3ecf4551a7338c01d5bcf6fd4f"
+    },
+    {
+      "path": "static/icons/IV_Bag.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/IV_Bag.png",
+      "size": 13913,
+      "hash": "0dd5b391a709c899890a55665a8bb44b1c494998"
+    },
+    {
+      "path": "static/icons/Labs.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Labs.png",
+      "size": 11748,
+      "hash": "73abde93be78ab3be28dd214e40f3463e4d54ea2"
+    },
+    {
+      "path": "static/icons/Liver.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Liver.png",
+      "size": 18694,
+      "hash": "66b048feaa180727c41886ea3e057bc3c6f12e63"
+    },
+    {
+      "path": "static/icons/Medical_Bag.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Bag.png",
+      "size": 17119,
+      "hash": "2ce7cbaa8235c684825ffa1f2ebb18ad993ca43e"
+    },
+    {
+      "path": "static/icons/Medical_Database.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Database.png",
+      "size": 17974,
+      "hash": "cd13a0116cc36234fc8b913d84f8e3eacbcf78e1"
+    },
+    {
+      "path": "static/icons/Medical_Insurance.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Insurance.png",
+      "size": 18306,
+      "hash": "4a723f8e47b6979a685586ce483cdada31f481a4"
+    },
+    {
+      "path": "static/icons/Medical_Invoice.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Invoice.png",
+      "size": 5900,
+      "hash": "df2dab3f284f143b79a5575291690fce78f67889"
+    },
+    {
+      "path": "static/icons/Medical_Knowledge_Base.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Knowledge_Base.png",
+      "size": 14466,
+      "hash": "d91b113c51c00409d95e83501515ff7fed30b6e1"
+    },
+    {
+      "path": "static/icons/Medical_Office.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Office.png",
+      "size": 18997,
+      "hash": "9fde8ad15e9cf290dd113a657048d0c9b8a98648"
+    },
+    {
+      "path": "static/icons/Medical_Report.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Report.png",
+      "size": 12004,
+      "hash": "21b130f793d613c344675f686f6d843d29e7e203"
+    },
+    {
+      "path": "static/icons/Medical_Symbol.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medical_Symbol.png",
+      "size": 21294,
+      "hash": "b13ecdf17e204874c9e4c025d069abfd16ac4863"
+    },
+    {
+      "path": "static/icons/Medicine_and_Water.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medicine_and_Water.png",
+      "size": 21525,
+      "hash": "7b28cebf70dcddc6f0c83007e64028263a766b20"
+    },
+    {
+      "path": "static/icons/Medicine_Liquid.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Medicine_Liquid.png",
+      "size": 18973,
+      "hash": "1c4a2122813700816af362ace8d3ebf66ffc3657"
+    },
+    {
+      "path": "static/icons/MRI.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/MRI.png",
+      "size": 14403,
+      "hash": "13e44dbcf7f49c3e5a01ba45561cfd2482cb0467"
+    },
+    {
+      "path": "static/icons/Pager.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pager.png",
+      "size": 14519,
+      "hash": "dd629a637a2c3446cb06d93480aa1560459d3cd3"
+    },
+    {
+      "path": "static/icons/Pediatrics.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pediatrics.png",
+      "size": 24408,
+      "hash": "8bdd6c967ce46f48ad9199ee92254286bda4bbaf"
+    },
+    {
+      "path": "static/icons/Petri_Dish.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Petri_Dish.png",
+      "size": 19676,
+      "hash": "33bfb17bcb2bcfc92554cb8a6994fd650cebe38c"
+    },
+    {
+      "path": "static/icons/Pharmacy.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pharmacy.png",
+      "size": 10602,
+      "hash": "a5cae97c292db0899ef7377d9aca65913002b1b2"
+    },
+    {
+      "path": "static/icons/Pill.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pill.png",
+      "size": 14511,
+      "hash": "2e3f92ba1486bb5d2ed5131a8a5dcc2efa538a68"
+    },
+    {
+      "path": "static/icons/Pills.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pills.png",
+      "size": 11328,
+      "hash": "a763f5bb78d2f434d6117b284b2a64505263482c"
+    },
+    {
+      "path": "static/icons/Pills_Strip.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pills_Strip.png",
+      "size": 16581,
+      "hash": "8fef7923479fa91718e3f8b10578223cf3ba7e87"
+    },
+    {
+      "path": "static/icons/Poison.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Poison.png",
+      "size": 11904,
+      "hash": "0c3f4c75656726dbd4c8a738087331c0cd56280f"
+    },
+    {
+      "path": "static/icons/Pregnant.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Pregnant.png",
+      "size": 17737,
+      "hash": "067b2946963cc478b3ac30c4f4f8bbd92cfa1272"
+    },
+    {
+      "path": "static/icons/Prescription.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Prescription.png",
+      "size": 17813,
+      "hash": "3526e49d2b347206f6e24c60642ffb504269b8ac"
+    },
+    {
+      "path": "static/icons/Qualifications.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Qualifications.png",
+      "size": 12063,
+      "hash": "6ca3409cbc065448ea743e7b9ddfef96a5db36d2"
+    },
+    {
+      "path": "static/icons/Safety_Glasses.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Safety_Glasses.png",
+      "size": 13909,
+      "hash": "e494ac77c6e50d9439aabc07e22fd65b9234022d"
+    },
+    {
+      "path": "static/icons/Safety_Pin.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Safety_Pin.png",
+      "size": 19238,
+      "hash": "f9a44e45aef43c7eb21a29799d39aeec62d533d9"
+    },
+    {
+      "path": "static/icons/Sanitation.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Sanitation.png",
+      "size": 17921,
+      "hash": "b456adb9ef49679f25433b8f7f75d4e8a5cb6c5a"
+    },
+    {
+      "path": "static/icons/Sanitation_Gloves.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Sanitation_Gloves.png",
+      "size": 16976,
+      "hash": "f6bf675a8847eb8369d59992f17d5b03268a7691"
+    },
+    {
+      "path": "static/icons/Scalpel.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Scalpel.png",
+      "size": 12983,
+      "hash": "ce1d99eaa5b1e5d84fe3147bbaa47c406e2ed10b"
+    },
+    {
+      "path": "static/icons/Skin.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Skin.png",
+      "size": 35345,
+      "hash": "60f7ac535befb3be6b330dd1cf4c5b27a89f8c1f"
+    },
+    {
+      "path": "static/icons/Skull.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Skull.png",
+      "size": 17533,
+      "hash": "a9d5d9e711da47ba65242d65569c8cb3b49d11b7"
+    },
+    {
+      "path": "static/icons/Smoking.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Smoking.png",
+      "size": 16635,
+      "hash": "1f5b78038acb44b6ed5e5f202e597dd883299543"
+    },
+    {
+      "path": "static/icons/Sperm.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Sperm.png",
+      "size": 14311,
+      "hash": "ac23e414185057d921c13feafd836438cead917e"
+    },
+    {
+      "path": "static/icons/Stethoscope.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Stethoscope.png",
+      "size": 14695,
+      "hash": "145ff1027db29e9607fd23b7094970088f6517bf"
+    },
+    {
+      "path": "static/icons/Symbol_Admitted.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Admitted.png",
+      "size": 10472,
+      "hash": "1472c4d2babf500934fe240a2769c66997d873e7"
+    },
+    {
+      "path": "static/icons/Symbol_Air_Transport.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Air_Transport.png",
+      "size": 12047,
+      "hash": "8f3dd0f8dc8f4d9230bf1bae0476e3fd47357b4b"
+    },
+    {
+      "path": "static/icons/Symbol_Discharged.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Discharged.png",
+      "size": 12619,
+      "hash": "94115b4ee61f67ef8b3270d6c6e4de59a81e2132"
+    },
+    {
+      "path": "static/icons/Symbol_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Female.png",
+      "size": 14246,
+      "hash": "46f47774b4f3663144ee3ae08aa591205e1c6e9e"
+    },
+    {
+      "path": "static/icons/Symbol_Hospital.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Hospital.png",
+      "size": 9550,
+      "hash": "e097079c457bb6d349daf343b16238aecd8bcddd"
+    },
+    {
+      "path": "static/icons/Symbol_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Male.png",
+      "size": 15168,
+      "hash": "525e2f76f92901801e2e253d16b7db2fe4db2d4a"
+    },
+    {
+      "path": "static/icons/Symbol_Men.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Men.png",
+      "size": 10950,
+      "hash": "a917b92c37a7c6fa910c99c5223c7487d9e5beac"
+    },
+    {
+      "path": "static/icons/Symbol_Restrooms.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Restrooms.png",
+      "size": 12977,
+      "hash": "87e063337bb8fe401c9c946cc375a6a8a3508689"
+    },
+    {
+      "path": "static/icons/Symbol_Smoking_Prohibited.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Smoking_Prohibited.png",
+      "size": 12717,
+      "hash": "44ca557ea2eb79b6ccfb4619359d97e42ec78958"
+    },
+    {
+      "path": "static/icons/Symbol_Transferred.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Transferred.png",
+      "size": 12245,
+      "hash": "71d84a18c059a4a6ad98ffa392b51ff9e8ca9639"
+    },
+    {
+      "path": "static/icons/Symbol_Women.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Symbol_Women.png",
+      "size": 11947,
+      "hash": "5dad48d869e0327169703ecabb1ea3fc54021640"
+    },
+    {
+      "path": "static/icons/Syringe_and_Vial.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Syringe_and_Vial.png",
+      "size": 14465,
+      "hash": "09810b94b684cfd7faa106c4f73ccd4944eeb6b3"
+    },
+    {
+      "path": "static/icons/Toddler.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Toddler.png",
+      "size": 20456,
+      "hash": "89b2d650e5b9bd80d9056cb8cc8b054972a36465"
+    },
+    {
+      "path": "static/icons/Tooth.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Tooth.png",
+      "size": 10180,
+      "hash": "dcdd871f550f7d399f6c08dca194f8324827cdc8"
+    },
+    {
+      "path": "static/icons/Transfusion.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Transfusion.png",
+      "size": 15810,
+      "hash": "1ca6bf23f92ee1b049ec1131bcabdba0138fe35d"
+    },
+    {
+      "path": "static/icons/Urine_Sample.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Urine_Sample.png",
+      "size": 17342,
+      "hash": "858b99291f1852891de139f0df39ea1ed03a2457"
+    },
+    {
+      "path": "static/icons/User_Baby_Boy.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Baby_Boy.png",
+      "size": 19318,
+      "hash": "fdf11f58ccb3eabd6f9d89ca60b6b1d793ff7029"
+    },
+    {
+      "path": "static/icons/User_Baby_Girl.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Baby_Girl.png",
+      "size": 19417,
+      "hash": "a70811f7b58671a1c4a394c7e4a90851fd7be822"
+    },
+    {
+      "path": "static/icons/User_Deceased_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Deceased_Female.png",
+      "size": 23144,
+      "hash": "761c5aa9b1f46640cedd006b01130320852e5795"
+    },
+    {
+      "path": "static/icons/User_Dentist.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Dentist.png",
+      "size": 17779,
+      "hash": "7932e859c57a174e5b40276af296ce0bacd5d2cb"
+    },
+    {
+      "path": "static/icons/User_Doctor_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Doctor_Female.png",
+      "size": 17978,
+      "hash": "4314b9e1a046fd2a1be93b9c50632e126f97d5cc"
+    },
+    {
+      "path": "static/icons/User_Doctor_Female_2.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Doctor_Female_2.png",
+      "size": 17231,
+      "hash": "cf47b10c8f741c01072f0bbf7bdecff00da354bd"
+    },
+    {
+      "path": "static/icons/User_Doctor_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Doctor_Male.png",
+      "size": 17383,
+      "hash": "283802e0b510a9b7c68c2d8aef8657197bc6d238"
+    },
+    {
+      "path": "static/icons/User_Intensive_Care_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Intensive_Care_Male.png",
+      "size": 21225,
+      "hash": "c7a43200eae92b64c29a922baabb83529acdd652"
+    },
+    {
+      "path": "static/icons/User_Intern_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Intern_Female.png",
+      "size": 18019,
+      "hash": "6ae0e666725309726b21fb3accfe421b42416fd0"
+    },
+    {
+      "path": "static/icons/User_Nurse_Army_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Nurse_Army_Female.png",
+      "size": 19748,
+      "hash": "34fae2820ce7f147bbcf2673fa9748820f1c1bbc"
+    },
+    {
+      "path": "static/icons/User_Nurse_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Nurse_Female.png",
+      "size": 14278,
+      "hash": "70311916dc639940a4d89c39a208a090b9f3c190"
+    },
+    {
+      "path": "static/icons/User_Nurse_Female_2.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Nurse_Female_2.png",
+      "size": 14341,
+      "hash": "65e33e969ba54616741ee7d957e70ee1556b9039"
+    },
+    {
+      "path": "static/icons/User_Patient_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Patient_Female.png",
+      "size": 19043,
+      "hash": "79731ef9411214a32e9e2ea6c64b98b73d72c2bc"
+    },
+    {
+      "path": "static/icons/User_Patient_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Patient_Male.png",
+      "size": 20454,
+      "hash": "f645779a48f622f3fcbd33431d1da25126f90a2d"
+    },
+    {
+      "path": "static/icons/User_Surgeon_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/User_Surgeon_Male.png",
+      "size": 18331,
+      "hash": "9a1ed6384613208121e695b6487ebab1d57ae3fb"
+    },
+    {
+      "path": "static/icons/Vial_and_Pills.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Vial_and_Pills.png",
+      "size": 15267,
+      "hash": "81133d2009043e070dba05684886ac3329ae9383"
+    },
+    {
+      "path": "static/icons/Virus.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Virus.png",
+      "size": 28011,
+      "hash": "cbc7d3f591480152d68f139b59b9cd700b970b85"
+    },
+    {
+      "path": "static/icons/Walker.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Walker.png",
+      "size": 14681,
+      "hash": "669d06018961d49cf1301abfac95477ed7fa2287"
+    },
+    {
+      "path": "static/icons/Water.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Water.png",
+      "size": 15847,
+      "hash": "e6b173a9aab0a3b7f2e9f40c6ad2cc5f0c4aacd0"
+    },
+    {
+      "path": "static/icons/Wheel_Chair.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Wheel_Chair.png",
+      "size": 23752,
+      "hash": "ce81a3a13236908c5320fff906402fc024bd4453"
+    },
+    {
+      "path": "static/icons/Xray.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Xray.png",
+      "size": 16829,
+      "hash": "27f597b51c6fbbe913245e0fdb021985f1af465e"
+    },
+    {
+      "path": "static/icons/Xray_Broken_Bone.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Xray_Broken_Bone.png",
+      "size": 16088,
+      "hash": "d8b387cfd7f008560bdefc6a4e14ea2d1f81cd2e"
+    },
+    {
+      "path": "static/icons/Xray_Mamography.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Xray_Mamography.png",
+      "size": 20825,
+      "hash": "d6c2d2ae5672e235357811eacb3b9778d1379b9d"
+    },
+    {
+      "path": "static/icons/Xray_Tooth.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Xray_Tooth.png",
+      "size": 11831,
+      "hash": "fd5c49bf4cd54e53dd8fa1803dba5af2e638fa05"
+    },
+    {
+      "path": "static/icons/Zygote.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/icons/Zygote.png",
+      "size": 25994,
+      "hash": "0bba762b74d89d94cb8736c06fdeb1900c40d693"
+    },
+    {
+      "path": "static/iconsbw/Allergy_Vials.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Allergy_Vials.png",
+      "size": 15349,
+      "hash": "436788bad808526bee19e172947a91d09dd6640b"
+    },
+    {
+      "path": "static/iconsbw/Ambulance.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Ambulance.png",
+      "size": 20757,
+      "hash": "613d76f4f10cc3378bd0de8de9e01a11d017995d"
+    },
+    {
+      "path": "static/iconsbw/Baby_Bottle.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Baby_Bottle.png",
+      "size": 11086,
+      "hash": "b2949473b2f58ba8c201bce9cfd61b052a09b494"
+    },
+    {
+      "path": "static/iconsbw/Baby_Carriage.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Baby_Carriage.png",
+      "size": 22296,
+      "hash": "a4b8d729abe9ec14e59f34e299c8886b434c3d0c"
+    },
+    {
+      "path": "static/iconsbw/Bacteria.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Bacteria.png",
+      "size": 18346,
+      "hash": "932aa1d148199e8731c675576b438fc3edcc8796"
+    },
+    {
+      "path": "static/iconsbw/Band_Aid.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Band_Aid.png",
+      "size": 17976,
+      "hash": "d806e06ef860a7797578a3166d695aea54afe0c5"
+    },
+    {
+      "path": "static/iconsbw/Bandage_Roll.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Bandage_Roll.png",
+      "size": 17791,
+      "hash": "423d980a9ae9655f67739b5f98e0c9d35c9448df"
+    },
+    {
+      "path": "static/iconsbw/Blood_Bag.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Blood_Bag.png",
+      "size": 16983,
+      "hash": "d41c43bc0bd0c0f082b2c9102dd5a83e1d7656ff"
+    },
+    {
+      "path": "static/iconsbw/Blood_Pressure.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Blood_Pressure.png",
+      "size": 20995,
+      "hash": "05a87fa8cc747daae17ea91d3474e499596babde"
+    },
+    {
+      "path": "static/iconsbw/Brain.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Brain.png",
+      "size": 20573,
+      "hash": "97d43a84d982a57d501297dafa876ecfbd5e7636"
+    },
+    {
+      "path": "static/iconsbw/Chemicals.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Chemicals.png",
+      "size": 13934,
+      "hash": "c2cde30d336ba91ec7a951ed3ba72cad66eb53a6"
+    },
+    {
+      "path": "static/iconsbw/Conception.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Conception.png",
+      "size": 20755,
+      "hash": "894a86ea7f33f5c289aadc4361f02db9f78aafc7"
+    },
+    {
+      "path": "static/iconsbw/CT_Scan.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/CT_Scan.png",
+      "size": 25203,
+      "hash": "e5b8f2e87890950498090fa218c2747881fa5008"
+    },
+    {
+      "path": "static/iconsbw/Dental_Chair.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Dental_Chair.png",
+      "size": 18996,
+      "hash": "5f156a80185d620b1cd9c342eb0e2de5c16f2187"
+    },
+    {
+      "path": "static/iconsbw/Dentistry.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Dentistry.png",
+      "size": 16485,
+      "hash": "0ac4ff22e06cca85eec9c16d1ba6e893d80b5056"
+    },
+    {
+      "path": "static/iconsbw/DNA.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/DNA.png",
+      "size": 19617,
+      "hash": "084cc8169fbe47429e6e732785039237c04b0c1f"
+    },
+    {
+      "path": "static/iconsbw/Donar_List.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Donar_List.png",
+      "size": 20548,
+      "hash": "46ef5f99a8c3d0d5fcb0544fa8488d445a693f6e"
+    },
+    {
+      "path": "static/iconsbw/Drinking.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Drinking.png",
+      "size": 16623,
+      "hash": "a059c9087be7d89781f7144b45e2ce895f115e16"
+    },
+    {
+      "path": "static/iconsbw/Drinking_and_Smoking.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Drinking_and_Smoking.png",
+      "size": 19354,
+      "hash": "7d321b7cad61c515dbe829ab5740050e26906ef9"
+    },
+    {
+      "path": "static/iconsbw/Ear.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Ear.png",
+      "size": 20645,
+      "hash": "1da55f35137f6ec830e1934234b3305bac5cddd1"
+    },
+    {
+      "path": "static/iconsbw/EKG.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/EKG.png",
+      "size": 20932,
+      "hash": "73de7dfb83d111570fc6fb0b542a0feebdbb29ee"
+    },
+    {
+      "path": "static/iconsbw/Emergency_Room.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Emergency_Room.png",
+      "size": 14751,
+      "hash": "9f2a0719446bbe1f9e4b36bcba373fb5b1ba0011"
+    },
+    {
+      "path": "static/iconsbw/Eye_Ball.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Eye_Ball.png",
+      "size": 18365,
+      "hash": "3c7b52b4b0aa6d0a439cc52c129f77d3fcb3878f"
+    },
+    {
+      "path": "static/iconsbw/Eye_Chart.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Eye_Chart.png",
+      "size": 14020,
+      "hash": "fea7f1dbfa2a39b9f334a7ee14b660f700c5c79f"
+    },
+    {
+      "path": "static/iconsbw/First_Aid.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/First_Aid.png",
+      "size": 19006,
+      "hash": "942cb0731f128bd0114b3b5a18bdf1780c0cbd29"
+    },
+    {
+      "path": "static/iconsbw/Group_Children.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Group_Children.png",
+      "size": 23607,
+      "hash": "221b0eb30128ae560b46519113e8e87d5cf55289"
+    },
+    {
+      "path": "static/iconsbw/Group_Doctors.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Group_Doctors.png",
+      "size": 24014,
+      "hash": "fd7be02f22d79d19ab11f1b9d732f4d6e661a6ce"
+    },
+    {
+      "path": "static/iconsbw/Group_Doctors_2.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Group_Doctors_2.png",
+      "size": 24152,
+      "hash": "4a78133c4a8bea4577083d08b41072de869568db"
+    },
+    {
+      "path": "static/iconsbw/Group_Medical_Team.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Group_Medical_Team.png",
+      "size": 22746,
+      "hash": "41e8ad4423a144457d97953893456d5b26bc856f"
+    },
+    {
+      "path": "static/iconsbw/Group_Patients.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Group_Patients.png",
+      "size": 23079,
+      "hash": "47e099f8097362ba854ab76e4ec7a4e0c7824f6c"
+    },
+    {
+      "path": "static/iconsbw/Group_Surgical_Team.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Group_Surgical_Team.png",
+      "size": 21256,
+      "hash": "07171cc7e23860e7297dd2e5bf9f01225b2275c3"
+    },
+    {
+      "path": "static/iconsbw/Health_Meter.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Health_Meter.png",
+      "size": 21691,
+      "hash": "6281a2607a0ba5b577feacd3ce57fb081a26fe6d"
+    },
+    {
+      "path": "static/iconsbw/Heart-Orange.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Heart-Orange.png",
+      "size": 18793,
+      "hash": "2ca013a86ee7b90f4e57a98cd56520ee96e48778"
+    },
+    {
+      "path": "static/iconsbw/Heart.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Heart.png",
+      "size": 19341,
+      "hash": "9dd7477487602ba2e248d8170d571f6fbc6dd373"
+    },
+    {
+      "path": "static/iconsbw/Heart_Donor.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Heart_Donor.png",
+      "size": 23321,
+      "hash": "f167f3e487f5dbd73c2cafd979e8ee07ce085870"
+    },
+    {
+      "path": "static/iconsbw/Herb_Mix.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Herb_Mix.png",
+      "size": 16963,
+      "hash": "b86b9015d9906805736d3ea47f97623433f49207"
+    },
+    {
+      "path": "static/iconsbw/Hospital.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Hospital.png",
+      "size": 18082,
+      "hash": "66b50898150cd45fe467a6c5103c836a91c05850"
+    },
+    {
+      "path": "static/iconsbw/Hospital_Bed.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Hospital_Bed.png",
+      "size": 17729,
+      "hash": "c060677fc828b1c64d59bb461c1bb71d8213e388"
+    },
+    {
+      "path": "static/iconsbw/Human_Anatomy.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Human_Anatomy.png",
+      "size": 23983,
+      "hash": "6f67bc8ca7824dcc660f272d66ee95339fda1737"
+    },
+    {
+      "path": "static/iconsbw/ID_Bracelet.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/ID_Bracelet.png",
+      "size": 15914,
+      "hash": "998549a9c36448b199fc4d8759673beaf6607fae"
+    },
+    {
+      "path": "static/iconsbw/Inhaler.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Inhaler.png",
+      "size": 10593,
+      "hash": "cc08d48c78cd84aa0e81785cf08c91e7fa6d1581"
+    },
+    {
+      "path": "static/iconsbw/Injury.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Injury.png",
+      "size": 18306,
+      "hash": "c53732a3532426480ad52b2eeddc288e3bd3375f"
+    },
+    {
+      "path": "static/iconsbw/Insurance_Plan.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Insurance_Plan.png",
+      "size": 15663,
+      "hash": "7f723da14cabfa1e68279c2e858005dba581277a"
+    },
+    {
+      "path": "static/iconsbw/Intestine.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Intestine.png",
+      "size": 22586,
+      "hash": "4289aeb744d1ed106a9d027395c800b6137ee1ec"
+    },
+    {
+      "path": "static/iconsbw/IV_Bag.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/IV_Bag.png",
+      "size": 14797,
+      "hash": "6c7b54834827b0a34b0b6c33cdc786a4cece8238"
+    },
+    {
+      "path": "static/iconsbw/Labs.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Labs.png",
+      "size": 13797,
+      "hash": "7c3fdcc39e21e3428a0602d20f64f07c46570da8"
+    },
+    {
+      "path": "static/iconsbw/Liver.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Liver.png",
+      "size": 18359,
+      "hash": "5e69aa110b174b83c9b18469200ed2215ef7a8e9"
+    },
+    {
+      "path": "static/iconsbw/Medical_Bag.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Bag.png",
+      "size": 21448,
+      "hash": "8e56255f37eb8ed0e4b982db93cb75aa02a88885"
+    },
+    {
+      "path": "static/iconsbw/Medical_Database.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Database.png",
+      "size": 18482,
+      "hash": "07e32d3edd85ac7537883e69586b32217f46756b"
+    },
+    {
+      "path": "static/iconsbw/Medical_Insurance.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Insurance.png",
+      "size": 18578,
+      "hash": "46eb254268dc762ebaeb602e89916979b87734a0"
+    },
+    {
+      "path": "static/iconsbw/Medical_Invoice.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Invoice.png",
+      "size": 7612,
+      "hash": "3013ee3a70481a0ec7df79d5f8a981c022f931d8"
+    },
+    {
+      "path": "static/iconsbw/Medical_Knowledge_Base.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Knowledge_Base.png",
+      "size": 18513,
+      "hash": "b706424bd5fea8ea3ac9c21915e718c0946753a7"
+    },
+    {
+      "path": "static/iconsbw/Medical_Office.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Office.png",
+      "size": 20039,
+      "hash": "72bdbe47c1b190765549c8d082f3b6d995ca35be"
+    },
+    {
+      "path": "static/iconsbw/Medical_Report.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Report.png",
+      "size": 13494,
+      "hash": "24aa93ad2689f7543e93e80098de16cd8c1e3661"
+    },
+    {
+      "path": "static/iconsbw/Medical_Symbol.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medical_Symbol.png",
+      "size": 17220,
+      "hash": "94a1fa50475d14b1b56cff505c4faf80d481fd90"
+    },
+    {
+      "path": "static/iconsbw/Medicine_and_Water.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medicine_and_Water.png",
+      "size": 20193,
+      "hash": "8c5b25646350605191815a38ed1574a700cebf5d"
+    },
+    {
+      "path": "static/iconsbw/Medicine_Liquid.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Medicine_Liquid.png",
+      "size": 18537,
+      "hash": "a276eeef519ca5d6dd2dec8ea435f1d957537a4b"
+    },
+    {
+      "path": "static/iconsbw/MRI.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/MRI.png",
+      "size": 17941,
+      "hash": "ada5605f6718075d750de70d029bbed19498ff93"
+    },
+    {
+      "path": "static/iconsbw/Pager.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pager.png",
+      "size": 17640,
+      "hash": "84166f7c4d38449fddf6520ac158f4d4378380e6"
+    },
+    {
+      "path": "static/iconsbw/Pediatrics.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pediatrics.png",
+      "size": 23312,
+      "hash": "073ddc4c1e6e45a75a5ae298286b5ab3511a929a"
+    },
+    {
+      "path": "static/iconsbw/Petri_Dish.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Petri_Dish.png",
+      "size": 18401,
+      "hash": "0e23f0173b15ad18bc9dfa051fdbaafb680518bc"
+    },
+    {
+      "path": "static/iconsbw/Pharmacy.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pharmacy.png",
+      "size": 11734,
+      "hash": "0c4740b4a80e2fba16b9c2bb7eda2ce93da680aa"
+    },
+    {
+      "path": "static/iconsbw/Pill.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pill.png",
+      "size": 15883,
+      "hash": "87d1533ac8fb6cb48ebf0197d82b11b7aa6682cf"
+    },
+    {
+      "path": "static/iconsbw/Pills.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pills.png",
+      "size": 13743,
+      "hash": "3b125c63b133715902cfdf3b8be4e946e6dc7d73"
+    },
+    {
+      "path": "static/iconsbw/Pills_Strip.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pills_Strip.png",
+      "size": 18011,
+      "hash": "9f112e0d1340ed59216aa58adddcb0cf0f0e0fe6"
+    },
+    {
+      "path": "static/iconsbw/Poison.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Poison.png",
+      "size": 13712,
+      "hash": "39d74801340e0214367b05924e98c0b075550bb7"
+    },
+    {
+      "path": "static/iconsbw/Pregnant.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Pregnant.png",
+      "size": 17085,
+      "hash": "50b13852d5867577a012771d6765ef5e1551d6de"
+    },
+    {
+      "path": "static/iconsbw/Prescription.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Prescription.png",
+      "size": 17889,
+      "hash": "db3ff6d94228bcc409c4910a847e81feb8b70524"
+    },
+    {
+      "path": "static/iconsbw/Qualifications.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Qualifications.png",
+      "size": 12543,
+      "hash": "fb029055be515c4120db09d4fbb3594c16824e84"
+    },
+    {
+      "path": "static/iconsbw/Safety_Glasses.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Safety_Glasses.png",
+      "size": 14472,
+      "hash": "2bd699fe243102e3deb13159b567cc04487a1ed2"
+    },
+    {
+      "path": "static/iconsbw/Safety_Pin.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Safety_Pin.png",
+      "size": 16690,
+      "hash": "cc7d292f5de4388a97dd9ef647f5d97229837936"
+    },
+    {
+      "path": "static/iconsbw/Sanitation.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Sanitation.png",
+      "size": 17234,
+      "hash": "d513937ef5034c97af33ad31f6541bf0b363c6f6"
+    },
+    {
+      "path": "static/iconsbw/Sanitation_Gloves.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Sanitation_Gloves.png",
+      "size": 17458,
+      "hash": "9e5eff567941d6529f1273335d779d8ada02ea77"
+    },
+    {
+      "path": "static/iconsbw/Scalpel.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Scalpel.png",
+      "size": 12876,
+      "hash": "c5287f1db36bc74842ba814f3f68be8d0bf8e9c6"
+    },
+    {
+      "path": "static/iconsbw/Skin.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Skin.png",
+      "size": 26604,
+      "hash": "d7b8e49b3bd6db6d56573841bdc9d02ae50b9d16"
+    },
+    {
+      "path": "static/iconsbw/Skull.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Skull.png",
+      "size": 19011,
+      "hash": "198eeef973ca2ada3070229be54faa638e7f297d"
+    },
+    {
+      "path": "static/iconsbw/Smoking.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Smoking.png",
+      "size": 17610,
+      "hash": "72aa78bc59288f5125de2a2faec1678c52054f90"
+    },
+    {
+      "path": "static/iconsbw/Sperm.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Sperm.png",
+      "size": 12592,
+      "hash": "e953ae07b7d554b85375bcde59baea1e33bc2c99"
+    },
+    {
+      "path": "static/iconsbw/Stethoscope.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Stethoscope.png",
+      "size": 13265,
+      "hash": "3971315633c92e10e566d8cfa09d5c4ee4faa9ed"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Admitted.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Admitted.png",
+      "size": 14004,
+      "hash": "8b50b56308f49a78c379dae5dbfba41d87937e4f"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Air_Transport.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Air_Transport.png",
+      "size": 15416,
+      "hash": "b18a40b3b53786604eea0774ec5bd382dc5e0f9c"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Discharged.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Discharged.png",
+      "size": 15087,
+      "hash": "36549721e1c6e7398bcd4a2c4baf51534542ebb5"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Female.png",
+      "size": 13446,
+      "hash": "751aa139a3aab41dc6fd71834d3e76b81ffbc87f"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Hospital.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Hospital.png",
+      "size": 12721,
+      "hash": "1cabe1c68d597b07b9e5152392eed048872cfcf6"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Male.png",
+      "size": 14312,
+      "hash": "a92f07f8ff6fb6fcb58fd62dd291053d62d4fdbe"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Men.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Men.png",
+      "size": 16588,
+      "hash": "e49001bf9a6b0c244dcf3664a2ec0194b29b487e"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Restrooms.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Restrooms.png",
+      "size": 17125,
+      "hash": "5f0f56a86b4b8dde76b365effb2c41037443033b"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Smoking_Prohibited.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Smoking_Prohibited.png",
+      "size": 16989,
+      "hash": "3415509355a6db79cd32417a0c2cc590b5ba7f49"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Transferred.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Transferred.png",
+      "size": 15301,
+      "hash": "d8e73f48c17d8dedcbc93483a7b67341e707ff8a"
+    },
+    {
+      "path": "static/iconsbw/Symbol_Women.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Symbol_Women.png",
+      "size": 17197,
+      "hash": "59f86fb24d2542cee97be3fa248a62e9352b2c5b"
+    },
+    {
+      "path": "static/iconsbw/Syringe_and_Vial.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Syringe_and_Vial.png",
+      "size": 12969,
+      "hash": "51bebe48d0490852e5cf0c37d458fd7841596898"
+    },
+    {
+      "path": "static/iconsbw/Toddler.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Toddler.png",
+      "size": 18356,
+      "hash": "578a78a690261cf4cf7e03d99c6384e026345017"
+    },
+    {
+      "path": "static/iconsbw/Tooth.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Tooth.png",
+      "size": 12723,
+      "hash": "26a304c36634d6a089578ff3cea7f8fa1adecfcc"
+    },
+    {
+      "path": "static/iconsbw/Transfusion.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Transfusion.png",
+      "size": 17271,
+      "hash": "8030e0826bdf9c07d8ad5b82789246a63b216680"
+    },
+    {
+      "path": "static/iconsbw/Urine_Sample.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Urine_Sample.png",
+      "size": 17010,
+      "hash": "c8d7d329f3c5a21dc3c71dcceb6b911340130743"
+    },
+    {
+      "path": "static/iconsbw/User_Baby_Boy.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Baby_Boy.png",
+      "size": 18469,
+      "hash": "3718acc9e9e8c68bfc949add6e735e3f76251209"
+    },
+    {
+      "path": "static/iconsbw/User_Baby_Girl.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Baby_Girl.png",
+      "size": 18968,
+      "hash": "d2a79f4e448bd0d08580d007900ed7f1901d83a1"
+    },
+    {
+      "path": "static/iconsbw/User_Deceased_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Deceased_Female.png",
+      "size": 22323,
+      "hash": "de9cce9f1f13ff93192f8eeb2539a86d71f348a0"
+    },
+    {
+      "path": "static/iconsbw/User_Dentist.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Dentist.png",
+      "size": 17327,
+      "hash": "bcac130eff6ee4aa6c21db7d3bdff7e46da49a37"
+    },
+    {
+      "path": "static/iconsbw/User_Doctor_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Doctor_Female.png",
+      "size": 17523,
+      "hash": "6298f5a14cc84a01ee3933c0f6601044ec8154bc"
+    },
+    {
+      "path": "static/iconsbw/User_Doctor_Female_2.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Doctor_Female_2.png",
+      "size": 18300,
+      "hash": "8187e692148a8b1390d879a4cf477e91ec8a8752"
+    },
+    {
+      "path": "static/iconsbw/User_Doctor_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Doctor_Male.png",
+      "size": 17247,
+      "hash": "1bd97435ab11de9a1d64ecd8dc1db09e323b451a"
+    },
+    {
+      "path": "static/iconsbw/User_Intensive_Care_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Intensive_Care_Male.png",
+      "size": 19245,
+      "hash": "e40b27fe6c4e7f4a13e9e28c053da28677cbe57a"
+    },
+    {
+      "path": "static/iconsbw/User_Intern_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Intern_Female.png",
+      "size": 17509,
+      "hash": "86e637461508281a06dfe0bd33c0ac7cf7fbd6d1"
+    },
+    {
+      "path": "static/iconsbw/User_Nurse_Army_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Nurse_Army_Female.png",
+      "size": 17478,
+      "hash": "f76c749175dfbb80a944a9e12f66dd7bea14393c"
+    },
+    {
+      "path": "static/iconsbw/User_Nurse_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Nurse_Female.png",
+      "size": 14954,
+      "hash": "e89db145ee85c1ee7b85b5bb16ef9a74f5b54d0e"
+    },
+    {
+      "path": "static/iconsbw/User_Nurse_Female_2.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Nurse_Female_2.png",
+      "size": 16173,
+      "hash": "955feed879f02ba0aa681d5f343ce7d6a9b72c03"
+    },
+    {
+      "path": "static/iconsbw/User_Patient_Female.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Patient_Female.png",
+      "size": 19026,
+      "hash": "18c94dfd103df11a7847e8f674cf5b338324ddcb"
+    },
+    {
+      "path": "static/iconsbw/User_Patient_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Patient_Male.png",
+      "size": 18391,
+      "hash": "86ae2ebf40296f174e835738038e46ddef8b3dd5"
+    },
+    {
+      "path": "static/iconsbw/User_Surgeon_Male.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/User_Surgeon_Male.png",
+      "size": 16881,
+      "hash": "0c2f84d57fb79039a08b1523bd6e3d0d68678d4f"
+    },
+    {
+      "path": "static/iconsbw/Vial_and_Pills.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Vial_and_Pills.png",
+      "size": 15229,
+      "hash": "d40c0003c62cca6628ae7e89974d544e202bd4c9"
+    },
+    {
+      "path": "static/iconsbw/Virus.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Virus.png",
+      "size": 23954,
+      "hash": "46eb2322e81eaa7d8a7c4ddf165287b7d4b54bd5"
+    },
+    {
+      "path": "static/iconsbw/Walker.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Walker.png",
+      "size": 12582,
+      "hash": "76257f1783ea91d92f2de572b1616095088a17dd"
+    },
+    {
+      "path": "static/iconsbw/Water.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Water.png",
+      "size": 14957,
+      "hash": "710410dc6e231af4a42e77e4546cad979ea9a2fe"
+    },
+    {
+      "path": "static/iconsbw/Wheel_Chair.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Wheel_Chair.png",
+      "size": 24186,
+      "hash": "4685d5746dd80c55d8393e0c7575305e88e965d8"
+    },
+    {
+      "path": "static/iconsbw/Xray.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Xray.png",
+      "size": 22161,
+      "hash": "2e4081b26d56acbc8dfcee2e7c390b638b07dd0a"
+    },
+    {
+      "path": "static/iconsbw/Xray_Broken_Bone.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Xray_Broken_Bone.png",
+      "size": 22413,
+      "hash": "38f98f8119db7015a61c63bc8da8d5ea2c965af6"
+    },
+    {
+      "path": "static/iconsbw/Xray_Mamography.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Xray_Mamography.png",
+      "size": 23759,
+      "hash": "9e6163e4f6b9a5f180572e1d70928adbe5fb0c90"
+    },
+    {
+      "path": "static/iconsbw/Xray_Tooth.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Xray_Tooth.png",
+      "size": 17737,
+      "hash": "afb24a715b9529ecc5bbbda131e2294ab03d57b1"
+    },
+    {
+      "path": "static/iconsbw/Zygote.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/iconsbw/Zygote.png",
+      "size": 23516,
+      "hash": "d3633db405b738b9e96799426d78c70cf3361686"
+    },
+    {
+      "path": "static/images/ajax-loader.gif",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/ajax-loader.gif",
+      "size": 7825,
+      "hash": "afb5a8d515ec7b2c4e5d8bfccb490fb5b60311c3"
+    },
+    {
+      "path": "static/images/ajax-loader.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/ajax-loader.png",
+      "size": 340,
+      "hash": "350d22f25087b1cc1fac7cd404e33be6e5435238"
+    },
+    {
+      "path": "static/images/april-screenshot-alpha-launch.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/april-screenshot-alpha-launch.jpg",
+      "size": 484315,
+      "hash": "3c6de6912af2389b6f77ae8eaceac3f12eef9626"
+    },
+    {
+      "path": "static/images/close.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/close.png",
+      "size": 1996,
+      "hash": "61cfbbc08de7e34c4a8ee5e5e8066de10a3c73af"
+    },
+    {
+      "path": "static/images/pentasyllabic.logo.square.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/pentasyllabic.logo.square.png",
+      "size": 28581,
+      "hash": "d8bc556904d9c23ddc3d43e202b37e44473bd52f"
+    },
+    {
+      "path": "static/images/pentasyllabic.logo.square.transparent.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/pentasyllabic.logo.square.transparent.png",
+      "size": 28887,
+      "hash": "09a2b60f7eb0faa146d28a05908f4939b515ab40"
+    },
+    {
+      "path": "static/images/placeholder-240x240.gif",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/placeholder-240x240.gif",
+      "size": 932,
+      "hash": "60581cffb91743a94e6a802544a80e77b97d643d"
+    },
+    {
+      "path": "static/images/uuid-for-beta-testing-program.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/uuid-for-beta-testing-program.png",
+      "size": 148246,
+      "hash": "d977f8488be5887bd8cc6ea3489ef1cc2ce6d162"
+    },
+    {
+      "path": "static/images/visionStatement/day-of-glass-app-1.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/visionStatement/day-of-glass-app-1.jpg",
+      "size": 26746,
+      "hash": "a1f3f62ec346c277e8e9dcbe4750c1b52989a8ca"
+    },
+    {
+      "path": "static/images/visionStatement/day-of-glass-app-2.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/visionStatement/day-of-glass-app-2.jpg",
+      "size": 29897,
+      "hash": "b65b6b73f22e80ca3acfe0793e50dea954b2d4ee"
+    },
+    {
+      "path": "static/images/visionStatement/day-of-glass-money-shot-34ratio.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/visionStatement/day-of-glass-money-shot-34ratio.png",
+      "size": 1626903,
+      "hash": "641212f860e1ae136a2f7d890366e8be4e3a0b7d"
+    },
+    {
+      "path": "static/images/visionStatement/day-of-glass-money-shot.png",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/visionStatement/day-of-glass-money-shot.png",
+      "size": 2042355,
+      "hash": "27391feca6d5ed53517d0c0f53441ac40ef1e657"
+    },
+    {
+      "path": "static/images/visionStatement/day-of-glass-screenshot.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/images/visionStatement/day-of-glass-screenshot.jpg",
+      "size": 58151,
+      "hash": "62bfaed51e622069a72bd472f8284c70b976b1d7"
+    },
+    {
+      "path": "static/fonts/3OF9_NEW.TTF",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/3OF9_NEW.TTF",
+      "size": 21736,
+      "hash": "c67d52bb5b29fd0cf1ea901eea7048f83fa89256"
+    },
+    {
+      "path": "static/fonts/ChalkDust.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ChalkDust.ttf",
+      "size": 68380,
+      "hash": "b6a1b6c3364a2c09bb42200d9c86bb4f0144cbe4"
+    },
+    {
+      "path": "static/fonts/Freehand.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/Freehand.ttf",
+      "size": 97092,
+      "hash": "79a9c12f27e72221a076ccfa2ac470c8c8aaf89f"
+    },
+    {
+      "path": "static/fonts/HarabaraHand.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/HarabaraHand.ttf",
+      "size": 111688,
+      "hash": "370b397d5c3fa7888976bbb987237c16e5692fb3"
+    },
+    {
+      "path": "static/fonts/ItAintRocketScience.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ItAintRocketScience.ttf",
+      "size": 23728,
+      "hash": "0967cd7784c062b1ac4a3a3a178fbd23bba707e3"
+    },
+    {
+      "path": "static/fonts/ShelterMe.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ShelterMe.ttf",
+      "size": 37896,
+      "hash": "1639694ab8173102ed3d0d463a2eb73f97e27de8"
+    },
+    {
+      "path": "static/fonts/WildScript.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/WildScript.ttf",
+      "size": 33696,
+      "hash": "9762e4a927d37a3369db03b21fee5c3226b91884"
+    },
+    {
+      "path": "static/fonts/Windsong.ttf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/Windsong.ttf",
+      "size": 84852,
+      "hash": "c8ba6f60c08910497ccf1e0f4e9e8551a29ba948"
+    },
+    {
+      "path": "static/fonts/ModernPictographs.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ModernPictographs.otf",
+      "size": 26616,
+      "hash": "eb33a1a59f4ccdaaecdb004e2e5275d05fa90b17"
+    },
+    {
+      "path": "static/packages/audio-click/audio/click1.wav",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/packages/audio-click/audio/click1.wav",
+      "size": 7752,
+      "hash": "9f111d1af10c4add9943a52d0284a77f93ca20da"
+    },
+    {
+      "path": "static/fonts/ColaborateLight.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ColaborateLight.otf",
+      "size": 24340,
+      "hash": "f314c11aab7291faeba396b30037b29e49234664"
+    },
+    {
+      "path": "static/fonts/ColaborateBold.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ColaborateBold.otf",
+      "size": 24696,
+      "hash": "345dd0e6af7191616a0ab43de37b36576c2386f2"
+    },
+    {
+      "path": "static/fonts/ColaborateMedium.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ColaborateMedium.otf",
+      "size": 24348,
+      "hash": "eb07c2355be15b8cd850d49b255c7df06415d249"
+    },
+    {
+      "path": "static/fonts/ColaborateRegular.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ColaborateRegular.otf",
+      "size": 24388,
+      "hash": "55c059a3c44d92bae479034c1dcfa2959c4398e4"
+    },
+    {
+      "path": "static/fonts/ColaborateThin.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ColaborateThin.otf",
+      "size": 24032,
+      "hash": "b0e2797b90467b35fe495756d7790476377cbd81"
+    },
+    {
+      "path": "static/fonts/ExistenceLight.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ExistenceLight.otf",
+      "size": 39392,
+      "hash": "e1cad1c4b9da2bd3b2e34bea2f9ecce04ba35077"
+    },
+    {
+      "path": "static/fonts/ExistenceStencilLight.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ExistenceStencilLight.otf",
+      "size": 39172,
+      "hash": "8c9906c6b0aedf727136a591bbbefe51425c0eb0"
+    },
+    {
+      "path": "static/fonts/ExistenceUnicaseLight.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/ExistenceUnicaseLight.otf",
+      "size": 41004,
+      "hash": "93ef9d24187aa5be8c841746ade835eb6177eff7"
+    },
+    {
+      "path": "static/fonts/PrintClearly.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/PrintClearly.otf",
+      "size": 28472,
+      "hash": "13b520b40dccbe7a9491c48d3c03b353b47d0bf4"
+    },
+    {
+      "path": "static/fonts/PrintClearlyBold.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/PrintClearlyBold.otf",
+      "size": 34756,
+      "hash": "236fef0ef7670fceccd0982ea8b0630de058d405"
+    },
+    {
+      "path": "static/fonts/PrintClearlyDashed.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/PrintClearlyDashed.otf",
+      "size": 58276,
+      "hash": "6fcaee794e064aa3ce6f3634e2756b4d0cc26f78"
+    },
+    {
+      "path": "static/fonts/QuicksandBold.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandBold.otf",
+      "size": 37812,
+      "hash": "931cde819d5c3057923620f72ba8a5cdf53a6ba1"
+    },
+    {
+      "path": "static/fonts/QuicksandBoldOblique.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandBoldOblique.otf",
+      "size": 38172,
+      "hash": "85da01e7b9d02bf0fb00fc8f17ea568e9bade9ed"
+    },
+    {
+      "path": "static/fonts/QuicksandBook.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandBook.otf",
+      "size": 36656,
+      "hash": "63a1c72addf5c0a5f6d931275b02a94222842115"
+    },
+    {
+      "path": "static/fonts/QuicksandBookOblique.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandBookOblique.otf",
+      "size": 38752,
+      "hash": "b267d652f12a962fc3b76eca5bc940b5e78a5e05"
+    },
+    {
+      "path": "static/fonts/QuicksandDash.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandDash.otf",
+      "size": 60244,
+      "hash": "06c02e63a27e070c7ca9c4fb34488e3d99e8dc20"
+    },
+    {
+      "path": "static/fonts/QuicksandLight.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandLight.otf",
+      "size": 35504,
+      "hash": "41a9f7713d57aef0128bebca34d233345c1fae26"
+    },
+    {
+      "path": "static/fonts/QuicksandLightOblique.otf",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/fonts/QuicksandLightOblique.otf",
+      "size": 36548,
+      "hash": "f60a5a0d29a3a167eb5272c4211c31132f1d1c7e"
+    },
+    {
+      "path": "static/avatars/ada.lovelace.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/ada.lovelace.jpg",
+      "size": 8134,
+      "hash": "ce9b6fdd7d23c5910103f5baeb7c56931a69294f"
+    },
+    {
+      "path": "static/avatars/alan.turing.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/alan.turing.jpg",
+      "size": 27004,
+      "hash": "dda6cb3c1b8915eb0f69b7feeee1a35a8f456b6a"
+    },
+    {
+      "path": "static/avatars/alexis.carrel.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/alexis.carrel.jpg",
+      "size": 7847,
+      "hash": "f883716652306ab54dc3bb8630ade3a9997c4130"
+    },
+    {
+      "path": "static/avatars/edward.doisy.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/edward.doisy.jpg",
+      "size": 9259,
+      "hash": "8e813afd4034935da99c942bd627bf8469784f7f"
+    },
+    {
+      "path": "static/avatars/edward.tatum.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/edward.tatum.jpg",
+      "size": 34687,
+      "hash": "85adfc3f025c3006fe5ea8fcb1d1e70d69c79cb2"
+    },
+    {
+      "path": "static/avatars/florence.nightingale.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/florence.nightingale.jpg",
+      "size": 27758,
+      "hash": "e408e65ff35e9a995a488084c313425999761164"
+    },
+    {
+      "path": "static/avatars/galen.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/galen.jpg",
+      "size": 50218,
+      "hash": "0ff5cdd8480df18394020ff6498faec12518c6dc"
+    },
+    {
+      "path": "static/avatars/george.beadle.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/george.beadle.jpg",
+      "size": 8672,
+      "hash": "f3ac478d0df359fdf04788786de265a0aff1e03d"
+    },
+    {
+      "path": "static/avatars/george.wald.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/george.wald.jpg",
+      "size": 10067,
+      "hash": "8dfa760d5e405001c1a73580a243140e8a4a3a8a"
+    },
+    {
+      "path": "static/avatars/george.washington.carver.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/george.washington.carver.jpg",
+      "size": 10678,
+      "hash": "4fb2bb21724282e9cecd2752a50c951f5ee2c4ce"
+    },
+    {
+      "path": "static/avatars/hermann.muller.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/hermann.muller.jpg",
+      "size": 8611,
+      "hash": "6d3a178a7911e6150831a8b1d17ee62d22a3edda"
+    },
+    {
+      "path": "static/avatars/hygea.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/hygea.jpg",
+      "size": 35940,
+      "hash": "4335aa9bdf31269d663ccf3bac9d66b72eb8e773"
+    },
+    {
+      "path": "static/avatars/james.watson.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/james.watson.jpg",
+      "size": 9585,
+      "hash": "607b731e0f276e866d6bd082f9fb5dd20b46eb30"
+    },
+    {
+      "path": "static/avatars/john.eccles.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/john.eccles.jpg",
+      "size": 9873,
+      "hash": "39d28c2c06f124d13446985baadf72195b4e8296"
+    },
+    {
+      "path": "static/avatars/kurt.vonnegut.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/kurt.vonnegut.jpg",
+      "size": 19873,
+      "hash": "05e520a90539ebfbf18d3b4facd25c657d7d5891"
+    },
+    {
+      "path": "static/avatars/madam.curie.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/madam.curie.jpg",
+      "size": 15276,
+      "hash": "2f4a9df8297d8366aeca8125b11622bab1abb85d"
+    },
+    {
+      "path": "static/avatars/mary.shelley.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/mary.shelley.jpg",
+      "size": 43920,
+      "hash": "00dcefb041aa3d39c67ba96210fd398bdf4e7bb3"
+    },
+    {
+      "path": "static/avatars/mother.teresa.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/mother.teresa.jpg",
+      "size": 29648,
+      "hash": "9143e66bbd790b19683b1f73b45d69f95f6b74e5"
+    },
+    {
+      "path": "static/avatars/octavia.butler.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/octavia.butler.jpg",
+      "size": 96451,
+      "hash": "cffcd0cd25484538d00fc5169419c24fcba54b49"
+    },
+    {
+      "path": "static/avatars/roger.sperry.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/roger.sperry.jpg",
+      "size": 24910,
+      "hash": "f48c0213391233c80e7319b049b40f0843af804a"
+    },
+    {
+      "path": "static/avatars/samuel.clemens.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/samuel.clemens.jpg",
+      "size": 25001,
+      "hash": "56925c082989ea8372dde71e417ca58af681d9b0"
+    },
+    {
+      "path": "static/avatars/rosalind.franklin.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/rosalind.franklin.jpg",
+      "size": 30357,
+      "hash": "79d628ff8433be89069ad08973e87025adcc073c"
+    },
+    {
+      "path": "static/avatars/nicola.tesla.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/nicola.tesla.jpg",
+      "size": 19038,
+      "hash": "4a34ec6e615639ef91cf7f1a8bde3adfb858bd22"
+    },
+    {
+      "path": "static/avatars/grace.hopper.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/grace.hopper.jpg",
+      "size": 192560,
+      "hash": "9b47794e9be0d7eab280248bf93f6b3e4ec8ce89"
+    },
+    {
+      "path": "static/avatars/carl.gauss.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/carl.gauss.jpg",
+      "size": 28556,
+      "hash": "bab85af753313f42fd440f59aec227f0a2070824"
+    },
+    {
+      "path": "static/avatars/claude.shannon.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/claude.shannon.jpg",
+      "size": 16836,
+      "hash": "47320ebd906540e965c42ccff316e137d00c2f3a"
+    },
+    {
+      "path": "static/avatars/barbara.mcclintock.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/barbara.mcclintock.jpg",
+      "size": 17428,
+      "hash": "ebb3e0361a3c28fe5db5914db426ab641b702426"
+    },
+    {
+      "path": "static/avatars/gertrude.elion.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/gertrude.elion.jpg",
+      "size": 16272,
+      "hash": "ea47b1bb8ea4c23d184fc8a678340a6e55b7f358"
+    },
+    {
+      "path": "static/avatars/rachel.carson.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/rachel.carson.jpg",
+      "size": 16187,
+      "hash": "81d905d4498cd277942d801fca417de4d8faef85"
+    },
+    {
+      "path": "static/avatars/maria.mayer.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/maria.mayer.jpg",
+      "size": 12155,
+      "hash": "45eebdf16d73e721626a1de4ab5d004ef845944d"
+    },
+    {
+      "path": "static/avatars/rita.levi.montalcini.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/rita.levi.montalcini.jpg",
+      "size": 69083,
+      "hash": "98bc482dd22cce970ba0669ac593ccf876111b77"
+    },
+    {
+      "path": "static/avatars/elizabeth.blackwell.jpg",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/avatars/elizabeth.blackwell.jpg",
+      "size": 29991,
+      "hash": "5d116832c21c18477226cf70420eaf7ef48b1a23"
+    },
+    {
+      "path": "static/packages/detect-browser/unsupported.browser.html",
+      "where": "client",
+      "type": "static",
+      "cacheable": false,
+      "url": "/packages/detect-browser/unsupported.browser.html",
+      "size": 157,
+      "hash": "4dd6c8d2392be8c712bb45b69a6daab94231bb27"
+    },
+    {
+      "path": "app.html",
+      "where": "internal",
+      "hash": "09886b4edeb9e07327a96cf64643156250cd0bc9"
+    }
+  ]
+}

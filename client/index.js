@@ -88,7 +88,6 @@ setSidebarAvailability = function() {
         if (window.innerWidth < 767) {
             Session.set('is_sidebar_available', false);
         }
-
     }catch(err){
         console.log(err);
     }
