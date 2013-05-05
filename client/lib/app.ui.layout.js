@@ -49,13 +49,29 @@ function detectOrientation(){
 //-----------------------------------------------------
 // appContainerTemplate
 
-
 Template.appContainerTemplate.rendered = function(){
     if(isMobile){
         $('.touch-trigger').removeClass('touch-disabled');
     }
+    $(body).css('height', window.innerHeight);
+    $('#mainLayoutPaneContainer').css('height', window.innerHeight);
+    $('#mainLayoutPane').css('height', window.innerHeight);
+    $('#panelRight').css('height', window.innerHeight);
 };
-
+Template.appContainerTemplate.resized = function(){
+    try{
+        $(body).css('height', window.innerHeight);
+        $('#mainLayoutPaneContainer').css('height', window.innerHeight);
+        $('#mainLayoutPane').css('height', window.innerHeight);
+        $('#panelRight').css('height', window.innerHeight);
+        return Session.get("resized");
+    }catch(err){
+        console.log(err);
+    }
+};
+Template.appContainerTemplate.isDualPanelLayout = function(){
+  return Session.get('is_dual_panel_layout');
+};
 
 //-----------------------------------------------------
 // LANDSCAPE/PORTRAIT FUNCTIONS

@@ -8,6 +8,7 @@ Session.set('tag_filter', null);
 // page layout variables
 Session.set('is_supported_browser', false);
 Session.set('is_sidebar_available',true);
+Session.set('is_dual_panel_layout', false);
 
 // these should be written to the user's profile, so it can persist through sessions
 // TODO: convert session variables into Meteor.user().profile items
@@ -41,7 +42,6 @@ Session.set("appWidth", window.innerWidth);
 Session.set('is_modal_dialog', false);
 
 
-Session.set('browser_window_location', 'http://www.google.com');
 
 // first we check that the browser is supported and whether it's worth even trying to render
 if(isWebKit){
@@ -157,10 +157,8 @@ Template.footerBarTemplate.events({
         showTutorialOverlay('#workqueuesPageTutorial');
     },
     'click .webviewer': function(){
-        //Session.set('current_page', 'webBrowserPage');
-        showPage('#webBrowserPage');
-        //toggleSession('');
-        //alert('foo!');
+        toggleSession('is_dual_panel_layout');
+        //showPage('#webBrowserPage');
     }
 });
 
