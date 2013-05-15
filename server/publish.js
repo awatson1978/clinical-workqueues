@@ -22,7 +22,7 @@ Meteor.publish('lists', function () {
 // Publish all items for requested list_id.
 // TODO:  Meteor.publish('todos', function (ownerId, completed, starred) {
 
-Meteor.publish('todos', function (ownerId, completed, starred) {
+Meteor.publish('todos', function (ownerId, completedStatus, starred) {
 //Meteor.publish('todos', function (list_id) {
 
     // TODO:  add if/then to detect admin account (1st)

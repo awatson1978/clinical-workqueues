@@ -161,28 +161,61 @@ Template.workqueueTemplate.todos = function () {
     // selected based on list_id and tag_filter.
 
     try{
-        var selection = {owner: Meteor.userId()};
-        var tag_filter = Session.get('tag_filter');
-        if (tag_filter){
-            selection.tags = tag_filter;
+        var selectionQuery = {owner: Meteor.userId()};
+
+        if (Session.get('tag_filter')){
+            selectionQuery.tags = tag_filter;
         }
 
-        var sortObject = {timestamp: 1};
+        var sortSettings = {timestamp: 1};
         if(Session.get('sort_workqueues_completed')){
-            sortObject = {done: 1};
+            sortSettings = {done: 1};
         }
         if(Session.get('sort_workqueues_starred')){
-            sortObject = {star: 1};
+            sortSettings = {star: 1};
         }
         if(Session.get('sort_workqueues_alphabetically')){
-            sortObject = {text: 1};
+            sortSettings = {text: 1};
         }
 
-
-        console.log(Todos.find({owner: Meteor.userId()}, {sort: sortObject}));
-
-        //return Todos.find(selection, {sort: sortObject});
-        return Todos.find({owner: Meteor.userId()}, {sort: sortObject});
+        switch(Session.get('selected_list')){
+            case "all":
+                console.log('selected list - all');
+                return Todos.find(selectionQuery, {sort: sortSettings});
+                break;
+            case "urgent":
+                console.log('selected list - urgent');
+                selectionQuery.star = true;
+                return Todos.find(selectionQuery, {sort: sortSettings});
+                break;
+            case "routine":
+                console.log('selected list - routine');
+                selectionQuery.star = false;
+                return Todos.find(selectionQuery, {sort: sortSettings});
+                break;
+            case "finished":
+                console.log('selected list - finished');
+                selectionQuery.done = true;
+                return Todos.find(selectionQuery, {sort: sortSettings});
+                break;
+            case "unfinished":
+                console.log('selected list - unfinished');
+                selectionQuery.done = false;
+                return Todos.find(selectionQuery, {sort: sortSettings});
+                break;
+//            case "today":
+//                console.log('selected list - today');
+//                return Todos.find({owner: Meteor.userId()}, {sort: sortSettings});
+//                return Todos.find(selectionQuery, {sort: sortSettings});
+//                break;
+//            case "inbox":
+//                console.log('selected list - inbox');
+//                return Todos.find({owner: Meteor.userId()}, {sort: sortSettings});
+//                return Todos.find(selectionQuery, {sort: sortSettings});
+//                break;
+            default:
+                break;
+        }
 
     }catch(error){
         console.log(error);
@@ -584,7 +617,7 @@ Template.taskDetailCardTemplate.activeCollaboratorName = function(){
         if(Meteor.user().profile.activeCollaborator){
             return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name;
         }else{
-            return " ";
+            return " --- ";
         }
     }catch(error){
         console.log(error);

@@ -11,6 +11,20 @@ CategoryIcons =     new Meteor.Collection("categoryIcons");
 
 
 //--------------------------------------------------------------------------
+// Schemas
+
+// task.text
+// task.timestamp
+// task.tags
+// task.owner
+// task.creator
+// task.done
+// task.star
+// task.public
+
+
+
+//--------------------------------------------------------------------------
 // Collections Access/Deny Rules
 
 UsersDirectory.allow({

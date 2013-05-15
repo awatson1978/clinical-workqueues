@@ -24,7 +24,7 @@ Meteor.methods({
                     ["Annual dental visit.","annual checkup"],
                     ["Get blood type checked.","baseline"],
                     ["Buy genetic testing kit from 23andme. ","baseline", "genetics"],
-                    ["Fill out family history worksheet for diabetes risks.","risk factors"],
+                    ["Fill out family history worksheet for diabetes risks.","risk factors"]
                 ]
             }
         ];

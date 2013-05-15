@@ -108,28 +108,45 @@ Template.listsTemplate.events({
         Meteor.flush();
         activateInput(tmpl.find("#list-name-input"));
     },
-    'click .team-tasks-tab': function(){
+    'click .all-tasks-tab': function(){
         console.log('team');
+        Session.set('selected_list', 'all');
         showPage("#workqueuesPage");
         Meteor.flush();
     },
     'click .urgent-tasks-tab': function(){
         console.log('urgent');
+        Session.set('selected_list', 'urgent');
         showPage("#workqueuesPage");
         Meteor.flush();
     },
-    'click .completed-tasks-tab': function(){
+    'click .routine-tasks-tab': function(){
+        console.log('urgent');
+        Session.set('selected_list', 'routine');
+        showPage("#workqueuesPage");
+        Meteor.flush();
+    },
+    'click .finished-tasks-tab': function(){
         console.log('completed');
+        Session.set('selected_list', 'finished');
+        showPage("#workqueuesPage");
+        Meteor.flush();
+    },
+    'click .unfinished-tasks-tab': function(){
+        console.log('completed');
+        Session.set('selected_list', 'unfinished');
         showPage("#workqueuesPage");
         Meteor.flush();
     },
     'click .today-tasks-tab': function(){
         console.log('today');
+        Session.set('selected_list', 'today');
         showPage("#workqueuesPage");
         Meteor.flush();
     },
     'click .inbox-tasks-tab': function(){
         console.log('inbox');
+        Session.set('selected_list', 'inbox');
         showPage("#workqueuesPage");
         Meteor.flush();
     }

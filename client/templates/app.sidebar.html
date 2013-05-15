@@ -24,34 +24,9 @@
 <template name="listsTemplate">
     <div id="listsTemplate" class="list-tab-container">
 
-        <!-- //TODO:  create list of personally owned tasks -->
-        <!-- //TODO:  create list of personally owned, completed tasks -->
-        <!-- //TODO:  create list of personally owned, uncompleted tasks -->
-        <!-- //TODO:  create list of personally owned, starred tasks -->
-
-        {{#each lists}}
-            <div class="list">
-                <div class="{{selected}} sidebar-tab note">
-                    {{#if editing}}
-                    <div class="edit">
-                        <input class="list-name-input" id="list-name-input" type="text" value="{{name}}" />
-                    </div>
-                    {{else}}
-                    <div class="display">
-                        <a class="list-name {{name_class}}" href="/{{_id}}">
-                            {{name}}
-                        </a>
-                    </div>
-                    {{/if}}
-                </div>
-            </div>
-        {{/each}}
-    </div>
-    <hr class="gray-line">
-
-    <div class="team-tasks-tab sidebar-tab note">
+    <div class="all-tasks-tab sidebar-tab note">
         <div class="display">
-            Team Tasks
+            All Tasks
         </div>
     </div>
     <div class="urgent-tasks-tab sidebar-tab note">
@@ -59,21 +34,31 @@
             Urgent Tasks
         </div>
     </div>
-    <div class="completed-tasks-tab sidebar-tab note">
+    <div class="routine-tasks-tab sidebar-tab note">
         <div class="display">
-            Completed
+            Routine Tasks
         </div>
     </div>
-    <div class="today-tasks-tab sidebar-tab note">
+    <div class="finished-tasks-tab sidebar-tab note">
         <div class="display">
-            Today
+            Finished
         </div>
     </div>
-    <div class="inbox-tasks-tab sidebar-tab note">
+    <div class="unfinished-tasks-tab sidebar-tab note">
         <div class="display">
-            Inbox
+            Unfinished
         </div>
     </div>
+    <!--<div class="today-tasks-tab sidebar-tab note">-->
+        <!--<div class="display">-->
+            <!--Today-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="inbox-tasks-tab sidebar-tab note">-->
+        <!--<div class="display">-->
+            <!--Inbox-->
+        <!--</div>-->
+    <!--</div>-->
 
 
 </template>
