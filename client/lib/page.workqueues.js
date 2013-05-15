@@ -116,7 +116,7 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
                         done: false,
                         star: false,
                         timestamp: (new Date()).getTime(),
-                        owner: Meteor.userId,
+                        owner: Meteor.userId(),
                         tags: tag ? [tag] : [],
                         public: 'public'
                     }, function (error, todo) {
@@ -161,23 +161,11 @@ Template.workqueueTemplate.todos = function () {
     // selected based on list_id and tag_filter.
 
     try{
-        var list_id = Session.get('list_id');
-        console.log('list_id:' + Session.get('list_id'));
-
-        if (!list_id){
-            return {};
-        }
-
-        var selection = {list_id: list_id};
+        var selection = {owner: Meteor.userId()};
         var tag_filter = Session.get('tag_filter');
         if (tag_filter){
             selection.tags = tag_filter;
         }
-
-//        var sortCompleted = 0;
-//        var sortStarred = 0;
-//        var sortAlphabetically = 0;
-//        var sortTimestamp = 0;
 
         var sortObject = {timestamp: 1};
         if(Session.get('sort_workqueues_completed')){
@@ -189,7 +177,12 @@ Template.workqueueTemplate.todos = function () {
         if(Session.get('sort_workqueues_alphabetically')){
             sortObject = {text: 1};
         }
-        return Todos.find(selection, {sort: sortObject});
+
+
+        console.log(Todos.find({owner: Meteor.userId()}, {sort: sortObject}));
+
+        //return Todos.find(selection, {sort: sortObject});
+        return Todos.find({owner: Meteor.userId()}, {sort: sortObject});
 
     }catch(error){
         console.log(error);

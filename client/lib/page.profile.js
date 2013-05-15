@@ -276,6 +276,7 @@ Template.userCardTemplate.user_image = function () {
 
 
 
+
 //----------------------------------------------------------------
 // active collaborator card
 
@@ -345,8 +346,14 @@ Template.profilePageSidebarTemplate.events({
         }else{
             Session.set('show_hipaa_audit_log_card', true);
         }
+    },
+    'click .initialize-tasks-tab': function(){
+        console.log('lets initialize some tasks!');
+        alert('lets initialize some damn tasks!');
+        Meteor.call('initializeDefaultTasks', function(){
+            alert('tasks should be initilazed now');
+        });
     }
-
 });
 Template.profilePageSidebarTemplate.json_inspector_selected = function(){
     try{

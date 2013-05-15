@@ -1,4 +1,5 @@
 
+
 // Publish complete set of lists to all clients.
 Meteor.publish('lists', function () {
     try{
@@ -9,12 +10,7 @@ Meteor.publish('lists', function () {
 });
 
 
-// Todos -- {text: String,
-//           done: Boolean,
-//           tags: [String, ...],
-//           list_id: String,
-//           timestamp: Number}
-//Todos = new Meteor.Collection("todos");
+
 
 
 // TODO:  create personalTasks publish/subscribe functions
@@ -25,7 +21,9 @@ Meteor.publish('lists', function () {
 
 // Publish all items for requested list_id.
 // TODO:  Meteor.publish('todos', function (ownerId, completed, starred) {
-Meteor.publish('todos', function (list_id) {
+
+Meteor.publish('todos', function (ownerId, completed, starred) {
+//Meteor.publish('todos', function (list_id) {
 
     // TODO:  add if/then to detect admin account (1st)
     // TODO:  generalize if/then detection to detect admin role (2nd)
@@ -39,7 +37,8 @@ Meteor.publish('todos', function (list_id) {
     //TODO:  if completed = null, return all tasks
 
     try{
-        return Todos.find({list_id: list_id});
+        return Todos.find({owner: ownerId});
+        //return Todos.find({list_id: list_id});
     }catch(error){
         console.log(error);
     }
@@ -110,7 +109,6 @@ Meteor.publish('userProfile', function (userId) {
             'profile.name': true,
             'profile.avatar': true,
             'profile.collaborators': true,
-            'profile.carewatch': true,
             'profile.currentPage': true,
             'profile.pushRecipients': true,
             'profile.activeCollaborator': true,

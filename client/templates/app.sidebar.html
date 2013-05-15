@@ -20,10 +20,10 @@
 </template>
 
 
+<!-- //TODO:  rename listsTemplate to something else? -->
 <template name="listsTemplate">
-    <!-- //TODO:  rename listsTemplate to something else? -->
     <div id="listsTemplate" class="list-tab-container">
-        <!-- //TODO:  create static lists buttons-->
+
         <!-- //TODO:  create list of personally owned tasks -->
         <!-- //TODO:  create list of personally owned, completed tasks -->
         <!-- //TODO:  create list of personally owned, uncompleted tasks -->
@@ -47,6 +47,35 @@
             </div>
         {{/each}}
     </div>
+    <hr class="gray-line">
+
+    <div class="team-tasks-tab sidebar-tab note">
+        <div class="display">
+            Team Tasks
+        </div>
+    </div>
+    <div class="urgent-tasks-tab sidebar-tab note">
+        <div class="display">
+            Urgent Tasks
+        </div>
+    </div>
+    <div class="completed-tasks-tab sidebar-tab note">
+        <div class="display">
+            Completed
+        </div>
+    </div>
+    <div class="today-tasks-tab sidebar-tab note">
+        <div class="display">
+            Today
+        </div>
+    </div>
+    <div class="inbox-tasks-tab sidebar-tab note">
+        <div class="display">
+            Inbox
+        </div>
+    </div>
+
+
 </template>
 
 
@@ -81,7 +110,7 @@
     <div id="buttonTiles" class="sidebar-tiles column-container">
         <!-- //TODO:  research default weblinks for each category -->
         <!-- //TODO:  trigger navigation to webpage on each button -->
-        <hr style="border: 1px solid lightgray;">
+        <hr class="gray-line">
         <div class="column-one-of-two">
             <img class="sidebar-tile" src="/iconsbw/CT_Scan.png">
             <img class="sidebar-tile" src="/iconsbw/Blood_Bag.png">
@@ -101,7 +130,7 @@
 
 
 <template name="profilePageSidebarTemplate">
-    <hr style="border: 1px solid lightgray;">
+    <hr class="gray-line">
     <div class="{{json_inspector_selected}} unselectable object-inspector-tab sidebar-tab note">
         <div class="display">
             <span class="pictograph">(</span>
@@ -119,6 +148,13 @@
         <div class="display">
             <span class="pictograph">4</span>
             HIPAA Audit Log
+        </div>
+    </div>
+    <hr class="gray-line">
+    <div class="initialize-tasks-tab sidebar-tab note">
+        <div class="display">
+            <span class="pictograph">4</span>
+            Initialize Default Tasks
         </div>
     </div>
 </template>

@@ -60,7 +60,7 @@ Template.appContainerTemplate.rendered = function(){
 };
 Template.appContainerTemplate.resized = function(){
     try{
-        $(body).css('height', window.innerHeight);
+        //$(body).css('height', window.innerHeight);
         $('#mainLayoutPaneContainer').css('height', window.innerHeight);
         $('#mainLayoutPane').css('height', window.innerHeight);
         $('#panelRight').css('height', window.innerHeight);

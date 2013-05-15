@@ -38,9 +38,9 @@ Template.sidebarTemplate.events({
 
 Template.sidebarTemplate.rendered = function(){
     try{
-        if(Session.get('list_id') === undefined){
-            Session.set('list_id', Lists.findOne()._id);
-        }
+//        if(Session.get('list_id') === undefined){
+//            Session.set('list_id', Lists.findOne()._id);
+//        }
     }catch(error){
         console.log(error);
     }
@@ -107,6 +107,31 @@ Template.listsTemplate.events({
         Session.set('editing_listname', this._id);
         Meteor.flush();
         activateInput(tmpl.find("#list-name-input"));
+    },
+    'click .team-tasks-tab': function(){
+        console.log('team');
+        showPage("#workqueuesPage");
+        Meteor.flush();
+    },
+    'click .urgent-tasks-tab': function(){
+        console.log('urgent');
+        showPage("#workqueuesPage");
+        Meteor.flush();
+    },
+    'click .completed-tasks-tab': function(){
+        console.log('completed');
+        showPage("#workqueuesPage");
+        Meteor.flush();
+    },
+    'click .today-tasks-tab': function(){
+        console.log('today');
+        showPage("#workqueuesPage");
+        Meteor.flush();
+    },
+    'click .inbox-tasks-tab': function(){
+        console.log('inbox');
+        showPage("#workqueuesPage");
+        Meteor.flush();
     }
 });
 

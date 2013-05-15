@@ -5,12 +5,12 @@ Package.register_extension(
     "png", function (bundle, source_path, serve_path, where) {
         bundle.add_resource({
             type: "static",
-            path: '/icons/' + serve_path.split('/').pop(),
+            path: '/images/graysanatomy/' + serve_path.split('/').pop(),
             source_file: source_path,
             where: where
         });
     }
 );
 Package.on_use(function (api) {
-    api.add_files('bootstrap.icons.js', 'client');
+    api.add_files('bootstrap.grays.anatomy.js', 'client');
 });
