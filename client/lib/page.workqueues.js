@@ -164,7 +164,7 @@ Template.workqueueTemplate.todos = function () {
         var selectionQuery = {owner: Meteor.userId()};
 
         if (Session.get('tag_filter')){
-            selectionQuery.tags = tag_filter;
+            selectionQuery.tags = Session.get('tag_filter');
         }
 
         var sortSettings = {timestamp: 1};
