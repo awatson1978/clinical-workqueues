@@ -33,7 +33,7 @@ Session.set('editing_detailed_addtag', null);
 Session.set('selected_task_id', false);
 Session.set('json_content', "panel for inspecting data objects");
 Session.set('breadcrumb_text', '');
-
+Session.set('selected_list', 'none');
 
 
 // rendering variables

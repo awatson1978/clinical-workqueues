@@ -1,3 +1,5 @@
+
+
 hidePages = function(){
     try{
         $('.page').addClass('hidden');
@@ -49,19 +51,19 @@ showCurrentSessionPage = function(){
         console.log(err);
     }
 };
-parseBreadCrumbs = function(page){
-    try{
-        switch(page){
-            case '#hipaaPage':
-                $('#appTitle').html('HIPAA Audit');
-                break;
-            case '#profilePage':
-                $('#appTitle').html('Profile');
-                break;
-            default:
-                $('#breadCrumbLink').html('clinical-workqueues.herokuapp.com');
-        }
-    }catch(err){
-        console.log(err);
-    }
-};
+//parseBreadCrumbs = function(page){
+//    try{
+//        switch(page){
+//            case '#hipaaPage':
+//                $('#appTitle').html('HIPAA Audit');
+//                break;
+//            case '#profilePage':
+//                $('#appTitle').html('Profile');
+//                break;
+//            default:
+//                $('#breadCrumbLink').html('clinical-workqueues.herokuapp.com');
+//        }
+//    }catch(err){
+//        console.log(err);
+//    }
+//};

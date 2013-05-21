@@ -1,12 +1,15 @@
-
-
+<!--
+Creative Commons License. (c) 2013 pentasyllabic.com
+Attribution + Noncommercial + NoDerivatives
+http://creativecommons.org/licenses/by-nc-nd/3.0/
+-->
 
 
 
 <!-- //TODO:  set modal dialogs to display in second pane-->
 <!-- //TODO:  create triggers to display dual pane layout on sufficient window width-->
 
-<template name="appContainerTemplate">
+<template name="appContainerTemplate" xmlns="http://www.w3.org/1999/html">
     <div id="mainLayoutPaneContainer" class="fullheight mainLayoutPaneContainer">
         {{#if currentUser}}
         <div id="mainLayoutPane" class="fullheight">
@@ -24,14 +27,25 @@
                 {{> webBrowserTemplate }}
             </div>
             {{else}}
-            <div>
-                {{> workqueuesPageTemplate }}
-                {{> workqueuesPageTutorialTemplate }}
-                {{> profilePageTemplate }}
-                {{> communityPageTemplate }}
-                {{> iconAssetsPageTemplate }}
-                {{!> webBrowserPageTemplate }}
-                {{!> dashboardPageTemplate}}
+            <div id="singlePane">
+                {{#if isFirstVisit }}
+                <div id="introTutorial" class="harabarahand">
+                    <span class="largish">Welcome to Clinical Workqueues</span>
+                    <hr>
+                    <p>- Tap on All Tasks to get started.</p>
+                    <p>- Your profile is selected in the upper right hand corner with the person icon.</p>
+                    <p>- You can reinitialize your default tasks in your user profile.</p>
+                    <p>- Your profile is also where you can select a collaborator.</p>
+                </div>
+                {{else}}
+                    {{> workqueuesPageTemplate }}
+                    {{> workqueuesPageTutorialTemplate }}
+                    {{> profilePageTemplate }}
+                    {{> communityPageTemplate }}
+                    {{> iconAssetsPageTemplate }}
+                    {{!> webBrowserPageTemplate }}
+                    {{!> dashboardPageTemplate}}
+                {{/if}}
             </div>
             {{/if }}
         </div>

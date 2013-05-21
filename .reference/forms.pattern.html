@@ -1,0 +1,18 @@
+<template name="formTemplate">
+    <div id="formTemplate">
+        <ul id="formInputItems">
+            <li>
+                <div class="form-item1-label">Name</div>
+                {{#if editing_name}}
+                <div id="formItem1Input">
+                    <input id="form-item1-input" type="text" placeholder="Some text" value="{{ data_field1 }}" />
+                </div>
+                {{else}}
+                <div id="formItem1Display">
+                    <span id="form-item1-display">{{ data_field1 }}</span>
+                </div>
+                {{/if}}
+            </li>
+        </ul>
+    </div>
+</template>

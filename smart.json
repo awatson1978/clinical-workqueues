@@ -22,10 +22,11 @@
       "git": "https://github.com/awatson1978/hipaa-audit-log.git"
     },
     "reactive-overlays": {
-        "git": "https://github.com/awatson1978/reactive-overlays.git"
+      "git": "https://github.com/awatson1978/reactive-overlays.git"
     },
     "accounts-famous-dead-people": {
-        "git": "https://github.com/awatson1978/accounts-famous-dead-people.git"
-    }
+      "git": "https://github.com/awatson1978/accounts-famous-dead-people.git"
+    },
+    "device-detection": {}
   }
 }

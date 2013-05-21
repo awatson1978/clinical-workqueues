@@ -2,7 +2,7 @@
   "meteor": {
     "git": "https://github.com/meteor/meteor.git",
     "branch": "master",
-    "commit": "bfe4b72ebec4367eaddcdf0887fcf5e649d9dcb8"
+    "commit": "5d736d4bf0448c7db1f9b47124dfafc34a9631bb"
   },
   "dependencies": {
     "basePackages": {
@@ -37,7 +37,8 @@
       "accounts-famous-dead-people": {
         "git": "https://github.com/awatson1978/accounts-famous-dead-people.git",
         "branch": "master"
-      }
+      },
+      "device-detection": {}
     },
     "packages": {
       "audio-click": {
@@ -48,7 +49,7 @@
       "fonts-barcode": {
         "git": "https://github.com/awatson1978/fonts-barcode.git",
         "branch": "master",
-        "commit": "7e67fb78e4c644e7bb7a2879309f8d7311f283db"
+        "commit": "16bf810ab354a7cece50fcf10efb9a5c2e85affb"
       },
       "fonts-handwritten": {
         "git": "https://github.com/awatson1978/fonts-handwritten.git",
@@ -79,6 +80,11 @@
         "git": "https://github.com/awatson1978/accounts-famous-dead-people.git",
         "branch": "master",
         "commit": "5d9ce41b4fe6be2e6a8af1f5d06f122cda4de10f"
+      },
+      "device-detection": {
+        "git": "https://github.com/Mystor/meteor-device-detection.git",
+        "tag": "v0.1.3",
+        "commit": "8d865454f32f8ffe1a5281b6e9f9488b2c9bc142"
       }
     }
   }

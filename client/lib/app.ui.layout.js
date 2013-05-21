@@ -70,9 +70,16 @@ Template.appContainerTemplate.resized = function(){
     }
 };
 Template.appContainerTemplate.isDualPanelLayout = function(){
-  return Session.get('is_dual_panel_layout');
+    return Session.get('is_dual_panel_layout');
 };
 
+Template.appContainerTemplate.isFirstVisit = function(){
+    if(Session.get('selected_list') == "none"){
+        return true;
+    }else{
+        return false;
+    }
+}
 //-----------------------------------------------------
 // LANDSCAPE/PORTRAIT FUNCTIONS
 

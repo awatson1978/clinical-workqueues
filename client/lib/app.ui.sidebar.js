@@ -84,30 +84,30 @@ Template.sidebarTemplate.isCommunityPage = function(){
 //--------------------------------------------------------
 // Workqueues List
 
-Template.listsTemplate.lists = function () {
-    try{
-        return Lists.find({}, {sort: {name: 1}});
-    }catch(err){
-        console.log(err);
-    }
-};
+//Template.listsTemplate.lists = function () {
+//    try{
+//        return Lists.find({}, {sort: {name: 1}});
+//    }catch(err){
+//        console.log(err);
+//    }
+//};
 
 Template.listsTemplate.events({
-    'mousedown .list': function (evt) { // select list
-        Router.setList(this._id);
-        Session.set('list_id', this._id);
-        showPage("#workqueuesPage");
-        Meteor.flush();
-    },
-    'click .list': function (evt) {
-        // prevent clicks on <a> from refreshing the page.
-        evt.preventDefault();
-    },
-    'dblclick .list': function (evt, tmpl) {
-        Session.set('editing_listname', this._id);
-        Meteor.flush();
-        activateInput(tmpl.find("#list-name-input"));
-    },
+//    'mousedown .list': function (evt) { // select list
+//        Router.setList(this._id);
+//        Session.set('list_id', this._id);
+//        showPage("#workqueuesPage");
+//        Meteor.flush();
+//    },
+//    'click .list': function (evt) {
+//        // prevent clicks on <a> from refreshing the page.
+//        evt.preventDefault();
+//    },
+//    'dblclick .list': function (evt, tmpl) {
+//        Session.set('editing_listname', this._id);
+//        Meteor.flush();
+//        activateInput(tmpl.find("#list-name-input"));
+//    },
     'click .all-tasks-tab': function(){
         console.log('team');
         Session.set('selected_list', 'all');

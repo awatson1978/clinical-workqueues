@@ -321,25 +321,25 @@ Template.taskItemTemplate.events({
                 Session.set('selected_task_delete_id', this._id);
             }else{
                 Session.set('selected_task_delete_id', null);
-                Session.set('selected_task_id', this._id);
-                Session.set('selected_task_done_status', this.done);
-                Session.set('selected_task_text', this.text);
-                Session.set('show_task_detail_panel', true);
-                setTaskDetailVisibility();
+//                Session.set('selected_task_id', this._id);
+//                Session.set('selected_task_done_status', this.done);
+//                Session.set('selected_task_text', this.text);
+//                Session.set('show_task_detail_panel', true);
+//                setTaskDetailVisibility();
             }
         }
         Meteor.flush();
     },
-    'mousedown .todo': function(){
-        Session.set('json_content', JSON.stringify(this));
-    },
+//    'mousedown .todo': function(){
+//        Session.set('json_content', JSON.stringify(this));
+//    },
 
 
-    'dblclick .todo': function(){
-        //toggleTaskDetailPanel();
-        Session.set('show_task_detail_panel', true);
-        Meteor.flush();
-    },
+//    'dblclick .todo': function(){
+//        //toggleTaskDetailPanel();
+//        Session.set('show_task_detail_panel', true);
+//        Meteor.flush();
+//    },
     'click .checkmark': function (e) {
         Todos.update(this._id, {$set: {done: !this.done}});
         e.preventDefault();
@@ -457,6 +457,15 @@ Template.taskDetailCardTemplate.rendered = function(){
         $('.card-delete-button').css('right', 21);
     }
     $("#taskDetailCard").bind("mousemove", function(e){
+        e.preventDefault();
+    });
+    $(".task-detail-card-body").bind("mousemove", function(e){
+        e.preventDefault();
+    });
+    $(".detailed-task-text").bind("mousemove", function(e){
+        e.preventDefault();
+    });
+    $(".card-header").bind("mousemove", function(e){
         e.preventDefault();
     });
     $("#taskDetailCard").bind("swipeleft", function(){

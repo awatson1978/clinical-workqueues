@@ -1,3 +1,10 @@
+<!--
+Creative Commons License. (c) 2013 pentasyllabic.com
+Attribution + Noncommercial + NoDerivatives
+http://creativecommons.org/licenses/by-nc-nd/3.0/
+-->
+
+
 <head>
   <title>Clinical Workqueues</title>
 </head>
@@ -38,7 +45,9 @@
             {{> workqueuesSortingTemplate }}
         </ul>
         <ul class="nav-bar footer-nav-bar-right">
+            {{#if isDesktop }}
             <li class="webviewer"><a href="#" onclick=''><span class="largish pictograph">W</span></a></li>
+            {{/if}}
             <li class="tutorial"><a href="#" onclick=''><span class="largish pictograph">?</span></a></li>
             <!-- //TODO:  add mobileDeviceStatus icons to listening/connected -->
             <li>{{> mobileDeviceStatus }}</li>
