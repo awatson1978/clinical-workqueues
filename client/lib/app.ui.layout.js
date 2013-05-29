@@ -50,7 +50,7 @@ function detectOrientation(){
 // appContainerTemplate
 
 Template.appContainerTemplate.rendered = function(){
-    if(isMobile){
+    if(Meteor.Device.isTablet()){
         $('.touch-trigger').removeClass('touch-disabled');
     }
     $(body).css('height', window.innerHeight);
@@ -143,7 +143,12 @@ Template.dropboxAlertTemplate.events({
     'click #dropboxAlertCard':function(){
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
         Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
+    },
+    'tap #dropboxAlertCard':function(){
+        Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
+        Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
     }
+
 });
 Template.dropboxAlertTemplate.alert_text = function(){
     try{

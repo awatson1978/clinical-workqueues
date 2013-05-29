@@ -136,6 +136,7 @@ Template.communityInspectionColumn.events({
         e.preventDefault();
     },
     'click #userQuickViewPanel': function(evt){
+        console.log('selected_community_member: ' + Session.get('selected_community_member'));
         setActiveCollaborator(Session.get('selected_community_member'));
         showPage("#profilePage");
     }

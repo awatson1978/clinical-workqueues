@@ -2,39 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/forms.example.full.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/forms.example.full.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/forms.pattern.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/forms.pattern.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/generic.helpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/queue.pattern.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/scheduling.notes.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/todos.pattern.extended.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/todos.pattern.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.reference/todos.pattern.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/modal.dialogs/page.assets.icons.html" afterPath="$PROJECT_DIR$/client/templates/workflow/modal.dialogs/page.assets.icons.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/modal.dialogs/page.community.html" afterPath="$PROJECT_DIR$/client/templates/workflow/modal.dialogs/page.community.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/page.profile.html" afterPath="$PROJECT_DIR$/client/templates/workflow/page.profile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/page.webbrowser.html" afterPath="$PROJECT_DIR$/client/templates/workflow/page.webbrowser.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/workflow/page.workqueues.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/tutorial.overlays/tutorial.assets.icons.html" afterPath="$PROJECT_DIR$/client/templates/workflow/tutorial.overlays/tutorial.assets.icons.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/tutorial.overlays/tutorial.community.html" afterPath="$PROJECT_DIR$/client/templates/workflow/tutorial.overlays/tutorial.community.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/tutorial.overlays/tutorial.profile.html" afterPath="$PROJECT_DIR$/client/templates/workflow/tutorial.overlays/tutorial.profile.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/tutorial.overlays/tutorial.sidebar.html" afterPath="$PROJECT_DIR$/client/templates/workflow/tutorial.overlays/tutorial.sidebar.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/authenticated.access/tutorial.overlays/tutorial.workqueues.html" afterPath="$PROJECT_DIR$/client/templates/workflow/tutorial.overlays/tutorial.workqueues.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/client/templates/public.access/page.guest.html" afterPath="$PROJECT_DIR$/client/templates/workflow/page.guest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/lib/browser.detection.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/lib/app.browser.detection.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays" afterPath="$PROJECT_DIR$/packages/reactive-overlays" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.js" afterPath="$PROJECT_DIR$/client/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/app.ui.layout.js" afterPath="$PROJECT_DIR$/client/lib/app.ui.layout.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" afterPath="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/app.ui.sidebar.js" afterPath="$PROJECT_DIR$/client/lib/app.ui.sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.community.js" afterPath="$PROJECT_DIR$/client/lib/page.community.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.workqueues.js" afterPath="$PROJECT_DIR$/client/lib/page.workqueues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" afterPath="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.layout.html" afterPath="$PROJECT_DIR$/client/templates/app.layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.json" afterPath="$PROJECT_DIR$/smart.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/smart.lock" afterPath="$PROJECT_DIR$/smart.lock" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,39 +30,75 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.ui.layout.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/app.ui.layout.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="17" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="page.workqueues.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="465" column="27" selection-start="15470" selection-end="15470" vertical-scroll-proportion="0.0">
+            <state line="430" column="72" selection-start="14299" selection-end="14299" vertical-scroll-proportion="-16.115385">
               <folding>
-                <marker date="1369104901000" expanded="true" signature="11090:11160" placeholder="{...}" />
+                <marker date="1369800218000" expanded="true" signature="11090:11160" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/index.html">
+      <file leaf-file-name="model.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="18" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.6527778">
+            <state line="127" column="37" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-8.692307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.ui.sidebar.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/lib/app.ui.sidebar.js">
+      <file leaf-file-name="app.ui.layout.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/app.ui.layout.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.0">
+            <state line="146" column="35" selection-start="5128" selection-end="5128" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.layout.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="24" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.24092117">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.ui.navigation.links.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/app.ui.navigation.links.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.router.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/app.router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="2" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hipaa.audit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hipaa.logging.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.logging.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="6" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +107,16 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
+            <state line="58" column="33" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-14.884615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="browser.detection.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/lib/browser.detection.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,30 +135,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/model.js" />
-        <option value="$PROJECT_DIR$/server/bootstrap.individual.js" />
-        <option value="$PROJECT_DIR$/server/publish.js" />
-        <option value="$PROJECT_DIR$/client/stylesheets/syntax.custom.less" />
         <option value="$PROJECT_DIR$/client/templates/authenticated.access/page.workqueues.html" />
         <option value="$PROJECT_DIR$/client/templates/app.sidebar.html" />
         <option value="$PROJECT_DIR$/.reference/forms.pattern.js" />
         <option value="$PROJECT_DIR$/.reference/forms.pattern.html" />
         <option value="$PROJECT_DIR$/client/stylesheets/pages.workqueues.less" />
-        <option value="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" />
         <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/client/lib/app.ui.sidebar.js" />
-        <option value="$PROJECT_DIR$/client/lib/app.ui.layout.js" />
-        <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
         <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
         <option value="$PROJECT_DIR$/client/index.html" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.community.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.workqueues.js" />
+        <option value="$PROJECT_DIR$/client/lib/app.browser.detection.js" />
+        <option value="$PROJECT_DIR$/client/lib/app.ui.navigation.links.js" />
+        <option value="$PROJECT_DIR$/client/lib/browser.detection.js" />
+        <option value="$PROJECT_DIR$/client/lib/app.ui.layout.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="30" />
-    <option name="y" value="50" />
-    <option name="width" value="1157" />
-    <option name="height" value="1313" />
+    <option name="x" value="-2" />
+    <option name="y" value="89" />
+    <option name="width" value="1291" />
+    <option name="height" value="1299" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -165,7 +186,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -208,7 +228,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -225,6 +245,10 @@
               <option name="myItemId" value="packages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hipaa-audit-log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -272,11 +296,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="workflow" />
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -300,6 +320,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,16 +336,16 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="408" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1202" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1202" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1202" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="408" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="404" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -400,13 +421,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="30" y="50" width="1157" height="1313" extended-state="0" />
+    <frame x="-2" y="89" width="1291" height="1299" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4505403" sideWeight="0.9938811" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2437338" sideWeight="0.5494253" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27033308" sideWeight="0.5494597" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -415,7 +437,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45057473" sideWeight="0.9938811" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -488,62 +509,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="39" selection-start="5849" selection-end="5849" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/helpers/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="42" selection-start="741" selection-end="741" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.reference/queue.pattern.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.reference/generic.helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.reference/forms.pattern.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1107" selection-end="1107" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/workflow/page.workqueues.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="16" selection-start="2812" selection-end="2812" vertical-scroll-proportion="-8.96">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.reference/forms.pattern.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="11" selection-start="627" selection-end="627" vertical-scroll-proportion="0.2361111">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.navigation.links.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/app.ui.sidebar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="112" column="0" selection-start="2827" selection-end="2827" vertical-scroll-proportion="0.0">
@@ -551,53 +516,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/stylesheets/pages.workqueues.less">
+    <entry file="file://$PROJECT_DIR$/client/stylesheets/page.profile.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="562" selection-end="562" vertical-scroll-proportion="0.38991597">
+        <state line="7" column="17" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="41" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="345" column="14" selection-start="9851" selection-end="9851" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publish.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="46" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.3743501">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.community.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="32" selection-start="4865" selection-end="4975" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="430" column="72" selection-start="14299" selection-end="14299" vertical-scroll-proportion="-16.115385">
+          <folding>
+            <marker date="1369800218000" expanded="true" signature="11090:11160" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="127" column="37" selection-start="3756" selection-end="3756" vertical-scroll-proportion="-8.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.navigation.links.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="8" selection-start="636" selection-end="636" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/app.router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="2" selection-start="727" selection-end="727" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.logging.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="6" selection-start="1427" selection-end="1427" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="1050" selection-end="1050" vertical-scroll-proportion="0.0">
+        <state line="58" column="33" selection-start="1968" selection-end="1968" vertical-scroll-proportion="-14.884615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/client/lib/browser.detection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="10" selection-start="1095" selection-end="1253" vertical-scroll-proportion="0.33246753">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="155" vertical-scroll-proportion="-0.0">
+        <state line="30" column="0" selection-start="1019" selection-end="1019" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/app.ui.layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="17" selection-start="1685" selection-end="1685" vertical-scroll-proportion="0.0">
+        <state line="146" column="35" selection-start="5128" selection-end="5128" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.workqueues.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="465" column="27" selection-start="15470" selection-end="15470" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1369104901000" expanded="true" signature="11090:11160" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="18" selection-start="1809" selection-end="1809" vertical-scroll-proportion="0.6527778">
+        <state line="33" column="24" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.24092117">
           <folding />
         </state>
       </provider>

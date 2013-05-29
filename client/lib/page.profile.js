@@ -348,10 +348,9 @@ Template.profilePageSidebarTemplate.events({
         }
     },
     'click .initialize-tasks-tab': function(){
-        console.log('lets initialize some tasks!');
-        alert('lets initialize some damn tasks!');
+        console.log('lets initialize some tasks...');
         Meteor.call('initializeDefaultTasks', function(){
-            alert('tasks should be initilazed now');
+            console.log('tasks should be initilazed now...');
         });
     }
 });

@@ -427,9 +427,12 @@ Template.taskItemTemplate.events(okCancelEvents(
 
 sendToActiveCollaborator = function() {
     try {
-        if (Meteor.user().profile) {
+        if (Meteor.user().profile && Meteor.user().profile.activeCollaborator) {
             Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
             //TODO:  log_hipaa_event() on callback
+
+            //log_hipaa_event("Added " + this.profile.name + " to carewatch list.", LogLevel.Hipaa, Meteor.user()._id);
+
         } else {
             console.log('Meteor profile not available.');
         }

@@ -14,8 +14,11 @@ showPage = function(page){
         hidePages();
         $(page).removeClass('hidden');
         Session.set('current_page', page);
-        if(isMobile){
+        if(Meteor.Device.isTablet()){
             detectOrientation();
+        }
+        if(Meteor.Device.isDesktop()){
+            console.log('isDesktop!');
         }
         //parseBreadCrumbs(page);
     }catch(err){
