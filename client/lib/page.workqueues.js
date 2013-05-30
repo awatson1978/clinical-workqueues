@@ -69,9 +69,12 @@ Template.workqueuesPageTemplate.resized = function(){
 // TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
 Template.workqueuesPageTemplate.receivedNewAlert = function(){
     try{
-        if(Meteor.user().profile.dropbox == null){
+        if(Meteor.user().profile.dropbox == undefined){
             return false;
-        }else{
+        }else if(Meteor.user().profile.dropbox == ""){
+            return false;
+        }else {
+            console.log("profile.dropbox:  " + JSON.stringify(Meteor.user().profile.dropbox));
             return true;
         }
     }
@@ -642,7 +645,7 @@ Template.taskDetailCardTemplate.todo_image = function(){
         if(Todos.findOne(Session.get('selected_task_id')).image){
             return Todos.findOne(Session.get('selected_task_id')).image;
         }else{
-            return '/images/placeholder-240x240.gif';
+            return '/images/click-to-select-task-image.jpg';
         }
     }catch(error){
         console.log(error);

@@ -41,9 +41,10 @@ genericUserDisplayObject = {
     userName: function() {
         return Meteor.user().profile.name;
     },
+    // TODO:  review if this is needed
     userAvatar: function() {
         try{
-            var src = "images/placeholder-240x240.gif";
+            var src = "images/placeholder-240x240.jpg";
 
             // CONFLICT?
             // this wants to be Meteor.user().profile so the default image displays if there's no profile
@@ -58,6 +59,7 @@ genericUserDisplayObject = {
             console.log(err);
         }
     },
+    // TODO: delete isAdmin and replace with roles package
     isAdmin: function() {
         if(Meteor.user().profile.role === "Administrator"){
             return true;

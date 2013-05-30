@@ -44,9 +44,9 @@ Session.set('is_modal_dialog', false);
 
 
 // first we check that the browser is supported and whether it's worth even trying to render
-if(isWebKit){
-    Session.set('is_supported_browser', true);
-}
+//if(isWebKit){
+//    Session.set('is_supported_browser', true);
+//}
 
 // layout is dependent upon viewport, which can change if the browser window is resized
 // or if the user rotates the screen

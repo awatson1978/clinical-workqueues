@@ -263,7 +263,7 @@ Template.userCardTemplate.user_image = function () {
         }else if(Meteor.user().profile){
             return $.trim(Meteor.user().profile.avatar);
         }else{
-            return "/images/placeholder-240x240.gif";
+            return "/images/placeholder-240x240.jpg";
         }
     }
     catch(err){
@@ -291,7 +291,7 @@ Template.activeCollaboratorCardTemplate.collaborator_avatar = function () {
         if(Meteor.user().profile.activeCollaborator){
             return Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.avatar;
         }else{
-            return "/images/placeholder-240x240.gif";
+            return "/images/click-to-select-collaborator.jpg";
         }
     }
     catch(err){

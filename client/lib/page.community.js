@@ -189,7 +189,7 @@ Template.userItemTemplate.events({
         }else if(this.profile){
             Session.set('selected_community_member_avatar_path', $.trim(this.profile.avatar));
         }else{
-            Session.set('selected_community_member_avatar_path', "/images/placeholder-240x240.gif");
+            Session.set('selected_community_member_avatar_path', "/images/placeholder-240x240.jpg");
         }
         Meteor.flush();
     },
@@ -228,7 +228,7 @@ Template.userItemTemplate.userImage = function () {
         }else if(this.profile){
             return $.trim(this.profile.avatar);
         }else{
-            return "/images/placeholder-240x240.gif";
+            return "/images/placeholder-240x240.jpg";
         }
     }catch(error){
         console.log(err);
