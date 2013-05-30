@@ -69,14 +69,15 @@ Template.workqueuesPageTemplate.resized = function(){
 // TODO:  move dropboxAlert from workqueueTemplate to workqueuesPageTemplate
 Template.workqueuesPageTemplate.receivedNewAlert = function(){
     try{
-        if(Meteor.user().profile.dropbox == undefined){
-            return false;
-        }else if(Meteor.user().profile.dropbox == ""){
-            return false;
-        }else {
-            console.log("profile.dropbox:  " + JSON.stringify(Meteor.user().profile.dropbox));
-            return true;
-        }
+//        if(Meteor.user().profile.dropbox == undefined){
+//            return false;
+//        }else if(Meteor.user().profile.dropbox == ""){
+//            return false;
+//        }else {
+//            console.log("profile.dropbox:  " + JSON.stringify(Meteor.user().profile.dropbox));
+//            return true;
+//        }
+        return monitorDropbox();
     }
     catch(err){
         console.log(err);
@@ -110,18 +111,16 @@ Template.workqueuesPageTemplate.events(okCancelEvents(
                 console.log('text.length: ' + text.length);
                 if (text.length) {
                     console.log('text: ' + text);
-                    console.log('list_id: ' + Session.get('list_id'));
+//                    console.log('list_id: ' + Session.get('list_id'));
                     console.log('owner: ' + Meteor.userId());
 
                     Meteor.call('createNewTask', {
                         text: text,
-                        list_id: Session.get('list_id'),
                         done: false,
                         star: false,
                         timestamp: (new Date()).getTime(),
                         owner: Meteor.userId(),
-                        tags: tag ? [tag] : [],
-                        public: 'public'
+                        tags: tag ? [tag] : []
                     }, function (error, todo) {
                         console.log('error: ' + error);
                         console.log('todo: ' + todo);
@@ -319,6 +318,7 @@ Template.taskItemTemplate.events({
         if(Session.get('selected_task_delete_id') !== null){
             Session.set('selected_task_delete_id', null);
         }else{
+            // if swiperight
             if(Math.abs((Session.get('swipe_start') - eventHandler.pageX)) < 200){
                 //alert(this._id);
                 Session.set('selected_task_delete_id', this._id);
@@ -516,6 +516,7 @@ Template.taskDetailCardTemplate.events({
     },
     'click .send-to-collaborator':function(evt,tmpl){
         sendToActiveCollaborator();
+        Session.set('show_task_detail_panel', false);
     },
     'click #detailedTaskAddTagIcon': function (evt) {
         Session.set('editing_detailed_addtag', Session.get('selected_task_id'));
@@ -546,6 +547,11 @@ Template.taskDetailCardTemplate.events({
     },
     'click .task-detail-send': function(e){
         sendToActiveCollaborator();
+        Session.set('show_task_detail_panel', false);
+    },
+    'tap .task-detail-send': function(e){
+        sendToActiveCollaborator();
+        Session.set('show_task_detail_panel', false);
     },
     'click .task-detail-delete': function (e) {
         if(confirm('Are you sure you want to delete task ' + Session.get('selected_task_id') + '?')){

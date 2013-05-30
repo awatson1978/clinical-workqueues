@@ -115,51 +115,6 @@ Todos.allow({
 });
 
 
-//--------------------------------------------------------------------------
-// Server Side Helper Functions
-//
-// requires Meteor.call() from the client to initate
-// used to validate data before inserting new tasks into the database
-
-Meteor.methods({
-    createNewTask: function (options) {
-        options = options || {};
-        if (!(typeof options.text === "string" && options.text.length)){
-            throw new Meteor.Error(400, "Required parameter missing");
-        }
-
-        if (options.text.length > 100){
-            throw new Meteor.Error(413, "Title too long");
-        }
-
-        if (! options.list_id ){
-            throw new Meteor.Error(413, "No list id!");
-        }
-
-        if (! this.userId){
-            throw new Meteor.Error(403, "You must be logged in");
-        }
-
-        console.log('####################################################### ');
-        console.log('######### Inserting New Task');
-        console.log('this.userId:   ' + this.userId);
-        console.log('options: ' + JSON.stringify(options));
-        console.log('');
-
-        return Todos.insert({
-            owner: options.userId,
-            // TODO:  add 'creator' field to task
-            //creator: options.userId,
-            text: options.text,
-            timestamp: options.timestamp,
-            done: options.done,
-            star: options.star,
-            list_id: options.list_id,
-            public: !! options.public
-        });
-    }
-});
-
 
 
 

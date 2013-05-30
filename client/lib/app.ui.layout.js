@@ -123,15 +123,24 @@ Template.jsonContentPanelTemplate.jsonData = function(){
 
 monitorDropbox = function(){
     try{
-        if(Meteor.user().profile.dropbox){
+        if(Meteor.user().profile.dropbox == undefined){
             return false;
-        }else{
-//            Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
-//            Session.set('selected_task_done_status', Todos.findOne(Meteor.user().profile.dropbox).done);
-//            Session.set('selected_task_star_status', Todos.findOne(Meteor.user().profile.dropbox).star);
-//            Session.set('selected_task_text', Todos.findOne(Meteor.user().profile.dropbox).text);
+        }else if(Meteor.user().profile.dropbox == ""){
+            return false;
+        }else {
             return true;
         }
+
+
+//        if(Meteor.user().profile.dropbox){
+//            return false;
+//        }else{
+////            Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
+////            Session.set('selected_task_done_status', Todos.findOne(Meteor.user().profile.dropbox).done);
+////            Session.set('selected_task_star_status', Todos.findOne(Meteor.user().profile.dropbox).star);
+////            Session.set('selected_task_text', Todos.findOne(Meteor.user().profile.dropbox).text);
+//            return true;
+//        }
     }
     catch(err){
         console.log(err);
@@ -142,12 +151,15 @@ monitorDropbox = function(){
 Template.dropboxAlertTemplate.events({
     'click #dropboxAlertCard':function(){
         console.log('click #dropboxAlertCard');
+        console.log(JSON.stringify(Meteor.users.findOne(Meteor.userId()).profile.dropbox));
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
+        console.log(JSON.stringify(Meteor.users.findOne(Meteor.userId()).profile.dropbox));
         //Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
     },
     'tap #dropboxAlertCard':function(){
         console.log('tap #dropboxAlertCard');
         Meteor.users.update(Meteor.userId(), {$unset: { 'profile.dropbox': '' }}, function(){});
+        Meteor.flush();
         //Session.set('selected_task_id', Todos.findOne(Meteor.user().profile.dropbox)._id);
     }
 

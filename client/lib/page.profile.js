@@ -6,13 +6,13 @@ Template.profilePageTemplate.rendered = function(){
 };
 
 
-Template.profilePageTemplate.receivedNewAlert = function(){
-    try{
-        return monitorDropbox();
-    }catch(error){
-        console.log(error);
-    }
-};
+//Template.profilePageTemplate.receivedNewAlert = function(){
+//    try{
+//        return monitorDropbox();
+//    }catch(error){
+//        console.log(error);
+//    }
+//};
 
 
 //-----------------------------------------------------------------
