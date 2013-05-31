@@ -385,7 +385,7 @@ Template.profilePageTemplate.isActiveCollaboratorVisible = function(){
 };
 Template.profilePageTemplate.isHipaaAuditLogVisible = function(){
     try{
-        return Session.get('show_active_collaborator_card');
+        return Session.get('show_hipaa_audit_log_card');
     }catch(error){
         console.log(error);
     }

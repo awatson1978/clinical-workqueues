@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6af491ff-1daf-446b-9c77-0fbce59cf6d4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/accounts-famous-dead-people" afterPath="$PROJECT_DIR$/packages/accounts-famous-dead-people" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/hipaa-audit-log" afterPath="$PROJECT_DIR$/packages/hipaa-audit-log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/reactive-overlays" afterPath="$PROJECT_DIR$/packages/reactive-overlays" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.workqueues.js" afterPath="$PROJECT_DIR$/client/lib/page.workqueues.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/page.profile.js" afterPath="$PROJECT_DIR$/client/lib/page.profile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/app.sidebar.html" afterPath="$PROJECT_DIR$/client/templates/app.sidebar.html" />
     </list>
     <ignored path="second-opinion.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,13 +25,22 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49887303">
+    <splitter split-orientation="horizontal" split-proportion="0.43368596">
       <split-first>
         <leaf>
-          <file leaf-file-name="package.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/package.js">
+          <file leaf-file-name="app.sidebar.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/templates/app.sidebar.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="55" selection-start="330" selection-end="330" vertical-scroll-proportion="0.09548167">
+                <state line="144" column="0" selection-start="4389" selection-end="4389" vertical-scroll-proportion="0.9721254">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="page.profile.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/templates/workflow/page.profile.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="44" selection-start="593" selection-end="593" vertical-scroll-proportion="-7.68">
                   <folding />
                 </state>
               </provider>
@@ -39,19 +50,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="hipaa.audit.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js">
+          <file leaf-file-name="page.profile.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="1" selection-start="631" selection-end="631" vertical-scroll-proportion="0.34100598">
+                <state line="343" column="48" selection-start="9793" selection-end="9793" vertical-scroll-proportion="0.21883173">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="hipaa.logging.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.logging.js">
+          <file leaf-file-name="app.ui.sidebar.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/lib/app.ui.sidebar.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="65" column="29" selection-start="1616" selection-end="1616" vertical-scroll-proportion="0.0">
+                <state line="18" column="21" selection-start="437" selection-end="437" vertical-scroll-proportion="-10.076923">
                   <folding />
                 </state>
               </provider>
@@ -72,12 +83,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/client/stylesheets/pages.community.less" />
         <option value="$PROJECT_DIR$/client/stylesheets/test.less" />
         <option value="$PROJECT_DIR$/client/index.js" />
         <option value="$PROJECT_DIR$/client/templates/app.layout.html" />
         <option value="$PROJECT_DIR$/client/templates/workflow/page.profile.html" />
-        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
         <option value="$PROJECT_DIR$/client/lib/app.ui.layout.js" />
         <option value="$PROJECT_DIR$/model.js" />
         <option value="$PROJECT_DIR$/client/templates/workflow/scrap.js" />
@@ -88,12 +97,14 @@
         <option value="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js" />
         <option value="$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.logging.js" />
         <option value="$PROJECT_DIR$/packages/hipaa-audit-log/package.js" />
+        <option value="$PROJECT_DIR$/client/lib/page.profile.js" />
+        <option value="$PROJECT_DIR$/client/templates/app.sidebar.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="200" />
-    <option name="y" value="170" />
+    <option name="x" value="42" />
+    <option name="y" value="107" />
     <option name="width" value="1527" />
     <option name="height" value="1309" />
   </component>
@@ -380,14 +391,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="200" y="170" width="1527" height="1309" extended-state="0" />
+    <frame x="42" y="107" width="1527" height="1309" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.97709376" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3622951" sideWeight="0.98807395" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26855123" sideWeight="0.3237569" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17157826" sideWeight="0.9909316" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19515389" sideWeight="0.9909316" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32868853" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -468,39 +479,9 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/templates/app.layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="12" selection-start="2620" selection-end="2620" vertical-scroll-proportion="-0.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="-3.6923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="8" selection-start="3081" selection-end="3081" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1369861357000" expanded="true" signature="1620:1674" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/workflow/page.workqueues.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="0" selection-start="459" selection-end="491" vertical-scroll-proportion="-9.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/workflow/page.profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="25" selection-start="463" selection-end="463" vertical-scroll-proportion="-5.76">
           <folding />
         </state>
       </provider>
@@ -576,14 +557,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/package.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="55" selection-start="330" selection-end="330" vertical-scroll-proportion="0.09548167">
+        <state line="7" column="55" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/packages/hipaa-audit-log/hipaa.audit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="631" selection-end="631" vertical-scroll-proportion="0.34100598">
+        <state line="25" column="1" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/app.ui.sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="21" selection-start="437" selection-end="437" vertical-scroll-proportion="-10.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/page.profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="343" column="48" selection-start="9793" selection-end="9793" vertical-scroll-proportion="0.21883173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/workflow/page.profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="44" selection-start="593" selection-end="593" vertical-scroll-proportion="-7.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/app.sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="0" selection-start="4389" selection-end="4389" vertical-scroll-proportion="0.9721254">
           <folding />
         </state>
       </provider>

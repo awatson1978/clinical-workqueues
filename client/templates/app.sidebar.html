@@ -1,9 +1,9 @@
 <template name="sidebarTemplate">
     {{#if sidebarIsVisible }}
     <div class="doesnt-overlap-header fixed-layout hide-for-small helveticas" id="sidebarPane">
-        {{> listsTemplate}}
 
         {{#if isWorkqueuesPage }}
+        {{> listsTemplate}}
         {{> workqueuesPageSidebarTemplate}}
         {{/if}}
 
@@ -115,14 +115,7 @@
 
 
 <template name="profilePageSidebarTemplate">
-    <hr class="gray-line">
-    <div class="{{json_inspector_selected}} unselectable object-inspector-tab sidebar-tab note">
-        <div class="display">
-            <span class="pictograph">(</span>
-            Object Inspector
-        </div>
-    </div>
-    <hr class="gray-line">
+    <!--<hr class="gray-line">-->
     <div class="{{colaborators_selected}} collaborators-tab sidebar-tab note">
         <div class="display">
             <span class="pictograph">g</span>
@@ -140,6 +133,13 @@
         <div class="display">
             <span class="pictograph">4</span>
             Initialize Default Tasks
+        </div>
+    </div>
+    <hr class="gray-line">
+    <div class="{{json_inspector_selected}} unselectable object-inspector-tab sidebar-tab note">
+        <div class="display">
+            <span class="pictograph">(</span>
+            Object Inspector
         </div>
     </div>
 </template>
