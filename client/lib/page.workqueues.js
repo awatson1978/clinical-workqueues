@@ -434,7 +434,7 @@ sendToActiveCollaborator = function() {
             Meteor.users.update(Meteor.user().profile.activeCollaborator, {$set:{ 'profile.dropbox':Session.get('selected_task_id')}});
             //TODO:  log_hipaa_event() on callback
 
-            //log_hipaa_event("Added " + this.profile.name + " to carewatch list.", LogLevel.Hipaa, Meteor.user()._id);
+            log_hipaa_event("Sent task " + Session.get('selected_task_id') + " to " + Meteor.users.findOne(Meteor.user().profile.activeCollaborator).profile.name + " (" + Meteor.user().profile.activeCollaborator + " ).", LogLevel.Hipaa, Meteor.user()._id);
 
         } else {
             console.log('Meteor profile not available.');
