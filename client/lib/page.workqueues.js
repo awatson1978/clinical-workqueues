@@ -1,4 +1,3 @@
-
 //--------------------------------------------------------------------------
 // Layout Helper Functions
 
@@ -660,7 +659,7 @@ Template.taskDetailCardTemplate.todo_image = function(){
 Template.taskDetailCardTemplate.tag_objs = function(){
     try{
         return _.map(this.tags || [], function (tag) {
-            return {todo_id: ession.get('selected_task_id'), tag: tag};
+            return {todo_id: Session.get('selected_task_id'), tag: tag};
         });
     }catch(error){
         console.log(error);
